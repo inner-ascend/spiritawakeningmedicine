@@ -6,7 +6,7 @@ export default function SupportPage() {
     <div className="min-h-screen">
       <Navigation />
 
-      <div className="min-h-screen relative flex items-center justify-center bg-gradient-to-br from-earth-900 via-spirit-deep to-earth-800">
+      <div className="min-h-screen relative flex items-center justify-center bg-gradient-to-br from-earth-900 to-earth-800">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 -left-4 w-[600px] h-[600px] bg-desert-clay rounded-full mix-blend-screen filter blur-3xl" style={{animationDuration: '8s'}}></div>
           <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-desert-sage rounded-full mix-blend-screen filter blur-3xl" style={{animationDuration: '10s', animationDelay: '2s'}}></div>

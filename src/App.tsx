@@ -10,13 +10,20 @@ import PlacePreview from './components/PlacePreview';
 import SupportPage from './components/SupportPage';
 import PrivacyPage from './components/PrivacyPage';
 import AboutPageNew from './components/pages/AboutPageNew';
+import BufoCeremoniesPage from './components/pages/BufoCeremoniesPage';
+import PreparationPage from './components/pages/PreparationPage';
+import IntegrationPage from './components/pages/IntegrationPage';
+import FAQPage from './components/pages/FAQPage';
+import ContactPage from './components/pages/ContactPage';
+import TestimonialsPage from './components/pages/TestimonialsPage';
+import RetreatsPage from './components/pages/RetreatsPage';
+import ScrollToTop from './components/ScrollToTop';
+import ImagePlaceholder from './components/ImagePlaceholder';
+// Old pages - archived (keeping for backwards compatibility)
 import ServicesPage from './components/pages/ServicesPage';
 import InnerAscendPage from './components/pages/InnerAscendPage';
-import RetreatsPage from './components/pages/RetreatsPage';
 import ResourcesPage from './components/pages/ResourcesPage';
-import ContactPage from './components/pages/ContactPage';
 import CollaborationsPage from './components/pages/CollaborationsPage';
-import ScrollToTop from './components/ScrollToTop';
 // Removed old section components - now using visual storytelling approach
 
 // Main Landing Page Component
@@ -27,19 +34,7 @@ function LandingPage() {
   const t = language === 'es' ? esTranslations : language === 'ca' ? caTranslations : enTranslations;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-earth-900 via-spirit-deep to-earth-900 text-sacred-white overflow-hidden relative">
-      {/* Subtle earth-tone gradient overlays - natural, not cosmic */}
-      <div className="fixed inset-0 opacity-5">
-        <div className="absolute top-0 -left-4 w-[600px] h-[600px] bg-desert-clay rounded-full mix-blend-screen filter blur-3xl" style={{animationDuration: '12s'}}></div>
-        <div className="absolute top-1/4 -right-4 w-[500px] h-[500px] bg-medicine-toad rounded-full mix-blend-screen filter blur-3xl" style={{animationDuration: '15s', animationDelay: '3s'}}></div>
-      </div>
-
-      {/* Organic texture overlay - minimal */}
-      <div className="fixed inset-0 opacity-[0.015]" style={{
-        backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(200, 160, 92, 0.1) 1px, transparent 0)',
-        backgroundSize: '80px 80px'
-      }}></div>
-
+    <div className="min-h-screen bg-earth-900 text-sacred-white overflow-hidden relative">
       <div className="relative z-10">
         {/* Navigation */}
         <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-earth-900/80 border-b border-desert-sage/20">
@@ -54,26 +49,29 @@ function LandingPage() {
               </Link>
 
               {/* Nav Links - Hidden on mobile */}
-              <div className="hidden lg:flex items-center gap-6">
-                <Link to="/about" className="text-desert-sand/80 hover:text-sacred-gold transition-colors">
+              <div className="hidden lg:flex items-center gap-5">
+                <Link to="/about" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
                   About
                 </Link>
-                <Link to="/ceremonies" className="text-desert-sand/80 hover:text-sacred-gold transition-colors">
+                <Link to="/ceremonies" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
                   Ceremonies
                 </Link>
-                <Link to="/preparation" className="text-desert-sand/80 hover:text-sacred-gold transition-colors">
+                <Link to="/preparation" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
                   Preparation
                 </Link>
-                <Link to="/integration" className="text-desert-sand/80 hover:text-sacred-gold transition-colors">
+                <Link to="/integration" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
                   Integration
                 </Link>
-                <Link to="/testimonials" className="text-desert-sand/80 hover:text-sacred-gold transition-colors">
+                <Link to="/retreats" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
+                  Retreats
+                </Link>
+                <Link to="/testimonials" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
                   Testimonials
                 </Link>
-                <Link to="/faq" className="text-desert-sand/80 hover:text-sacred-gold transition-colors">
+                <Link to="/faq" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
                   FAQ
                 </Link>
-                <Link to="/contact" className="px-6 py-2 bg-sacred-gold text-earth-900 rounded-full font-semibold hover:bg-sacred-amber transition-all">
+                <Link to="/contact" className="px-6 py-2 bg-sacred-gold text-earth-900 rounded-full font-semibold hover:bg-sacred-amber transition-all text-sm">
                   Apply
                 </Link>
               </div>
@@ -83,16 +81,16 @@ function LandingPage() {
                 {/* Language Toggle */}
                 <button
                   onClick={() => setLanguage(language === 'en' ? 'es' : language === 'es' ? 'ca' : 'en')}
-                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-mystic-purple/20 backdrop-blur-xl border border-mystic-lavender/30 hover:bg-mystic-purple/30 transition-all"
+                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-earth-700/30 backdrop-blur-xl border border-desert-sage/30 hover:bg-earth-700/40 transition-all"
                 >
                   <Globe className="w-4 h-4 text-sacred-gold" />
-                  <span className="text-sm font-medium text-sacred-moon">{language === 'en' ? 'EN' : language === 'es' ? 'ES' : 'CA'}</span>
+                  <span className="text-sm font-medium text-desert-sand">{language === 'en' ? 'EN' : language === 'es' ? 'ES' : 'CA'}</span>
                 </button>
 
                 {/* Mobile Menu Button */}
                 <button
                   onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                  className="lg:hidden p-2 text-mystic-lavender hover:text-sacred-gold transition-colors"
+                  className="lg:hidden p-2 text-desert-sand hover:text-sacred-gold transition-colors"
                 >
                   {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                 </button>
@@ -101,27 +99,30 @@ function LandingPage() {
 
             {/* Mobile Menu */}
             {mobileMenuOpen && (
-              <div className="lg:hidden py-4 space-y-3 border-t border-mystic-purple/20">
-                <Link to="/about" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-mystic-lavender/80 hover:text-sacred-gold transition-colors">
+              <div className="lg:hidden py-4 space-y-3 border-t border-desert-sage/20">
+                <Link to="/about" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
                   About
                 </Link>
-                <Link to="/services" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-mystic-lavender/80 hover:text-sacred-gold transition-colors">
-                  Services
+                <Link to="/ceremonies" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
+                  Ceremonies
                 </Link>
-                <Link to="/inner-ascend" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-mystic-lavender/80 hover:text-sacred-gold transition-colors">
-                  Community
+                <Link to="/preparation" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
+                  Preparation
                 </Link>
-                <Link to="/retreats" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-mystic-lavender/80 hover:text-sacred-gold transition-colors">
+                <Link to="/integration" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
+                  Integration
+                </Link>
+                <Link to="/retreats" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
                   Retreats
                 </Link>
-                <Link to="/collaborations" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-mystic-lavender/80 hover:text-sacred-gold transition-colors">
-                  Collaborations
+                <Link to="/testimonials" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
+                  Testimonials
                 </Link>
-                <Link to="/resources" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-mystic-lavender/80 hover:text-sacred-gold transition-colors">
-                  Resources
+                <Link to="/faq" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
+                  FAQ
                 </Link>
                 <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-sacred-gold font-semibold">
-                  Contact
+                  Apply
                 </Link>
               </div>
             )}
@@ -130,607 +131,536 @@ function LandingPage() {
 
         {/* Full-Screen Hero */}
         <div className="h-screen relative flex items-center justify-center">
-          {/* Background Image Placeholder */}
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/40 via-cosmic-900/60 to-sacred-green/30">
-            <div className="absolute inset-0 opacity-5" style={{
-              backgroundImage: `radial-gradient(circle at 2px 2px, rgb(255 255 255 / 0.15) 1px, transparent 0)`,
-              backgroundSize: '50px 50px'
-            }}></div>
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          {/* Simple Desert Background */}
+          <div className="absolute inset-0 bg-gradient-to-b from-desert-dusk via-earth-700 to-earth-900"></div>
 
           {/* Hero Content */}
-          <div className="relative z-10 text-center px-4">
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif font-light text-sacred-moon mb-6 animate-fadeIn">
-              Astral Integration
+          <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-light text-sacred-white mb-6 animate-fadeIn leading-tight">
+              Spirit Awakening Medicine
             </h1>
-            <p className="text-xl md:text-2xl text-sacred-moon/80 font-light tracking-wide mb-8">
-              Guiding souls home to themselves
+            <p className="text-2xl md:text-4xl text-sacred-gold/90 font-serif font-light tracking-wide mb-6">
+              Open the Gates of Remembrance
             </p>
-            <p className="text-sm md:text-base text-sacred-moon/60 font-light italic max-w-2xl mx-auto">
-              For those who hear the call. For those ready to remember.
+            <p className="text-lg md:text-xl text-desert-sand/90 font-light mb-4">
+              The Sacred Medicine of Bufo Alvarius
             </p>
+            <p className="text-base md:text-lg text-desert-sand/70 font-light mb-8 max-w-3xl mx-auto">
+              Ego Dissolution | Non-Dual Consciousness | Divine Remembrance
+            </p>
+            <p className="text-sm md:text-base text-desert-sand/60 font-light italic max-w-2xl mx-auto mb-12">
+              [Not for everyone. Only for those who feel the call.]
+            </p>
+            <Link
+              to="/contact"
+              className="inline-block px-10 py-4 bg-sacred-gold/90 text-earth-900 rounded-full font-medium text-lg hover:bg-sacred-gold transition-all shadow-lg hover:shadow-xl"
+            >
+              Begin with Discernment
+            </Link>
           </div>
 
           {/* Scroll Indicator */}
           <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
-            <div className="w-6 h-10 border-2 border-sacred-moon/40 rounded-full flex items-start justify-center p-2">
-              <div className="w-1.5 h-1.5 bg-sacred-moon/60 rounded-full"></div>
+            <div className="w-6 h-10 border-2 border-sacred-gold/40 rounded-full flex items-start justify-center p-2">
+              <div className="w-1.5 h-1.5 bg-sacred-gold/60 rounded-full"></div>
             </div>
           </div>
         </div>
 
-        {/* Who This Is For - Wisdom Section */}
-        <div className="bg-gradient-to-b from-black via-cosmic-900/90 to-cosmic-900 py-32">
+        {/* Full-Width Image Section 1 - Desert/Medicine Setting */}
+        <div className="h-[70vh] relative overflow-hidden">
+          <ImagePlaceholder
+            aspectRatio="21/9"
+            altText="Sonoran Desert landscape at golden hour"
+            className="w-full h-full"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 to-earth-900/40"></div>
+        </div>
+
+        {/* What is Bufo Alvarius Section */}
+        <div className="bg-earth-800 py-48">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center space-y-12">
-              <div className="text-3xl text-sacred-gold/40">⊛</div>
-              <h2 className="text-3xl md:text-4xl font-serif text-sacred-moon leading-relaxed">
-                This work is for the ones who can no longer pretend
-              </h2>
-              <div className="space-y-6 text-sacred-moon/70 leading-relaxed text-lg max-w-3xl mx-auto">
-                <p>
-                  For those who've tried everything else. For the seekers who are tired of seeking.
-                  For the ones who know there's something deeper calling.
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-16">
+                <div className="text-4xl text-sacred-gold/40 mb-8">⊹</div>
+                <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-8 leading-tight">
+                  The Sacred Medicine of Bufo Alvarius
+                </h2>
+                <p className="text-xl md:text-2xl text-desert-sand/80 leading-relaxed italic max-w-3xl mx-auto">
+                  Die before you die
                 </p>
-                <p className="text-sacred-moon/60 italic">
-                  You're not broken. You're not lost. You're initiating.
+              </div>
+
+              <div className="space-y-8 text-desert-sand/80 leading-relaxed text-lg max-w-3xl mx-auto">
+                <p className="text-xl text-sacred-gold/90 font-serif text-center">
+                  The most potent and profound entheogenic compound on Earth
                 </p>
                 <p>
-                  This is for the souls ready to stop performing, stop bypassing, and start remembering
-                  what they came here to do.
+                  Bufo Alvarius—5-MeO-DMT—is the only substance that can reliably introduce individuals
+                  to a state of full non-dual awareness, override the energetic structure of the ego,
+                  and reveal the unitary nature of reality.
+                </p>
+                <p>
+                  This is not a psychedelic. It is a sacred teacher of death and pure remembrance.
+                  The effects begin within <span className="text-sacred-gold font-medium">seconds</span> of inhalation.
+                  Complete ego dissolution. Non-dual consciousness. The remembrance of what you've always been.
+                </p>
+                <p className="border-l-2 border-sacred-gold/40 pl-6 italic text-desert-sand/70">
+                  "This is not an offering we promote publicly. If you are here, you've been guided,
+                  invited, or felt the call. The toad is not for everyone, and it is not a shortcut.
+                  This path requires humility, surrender, and integration."
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Visual Story Section 1 - The Journey Begins */}
-        <div className="min-h-screen flex items-center bg-sacred-cream">
-          <div className="container mx-auto px-4 py-32">
-            <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
-              {/* Large Image */}
-              <div className="aspect-[4/5] relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-sacred-green/20 via-indigo-deep/30 to-mystic-purple/20 rounded-2xl"></div>
+        {/* Who This Is For / Not For Section */}
+        <div className="bg-sacred-cream py-48">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-20">
+                <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
+                  This Medicine Is For...
+                </h2>
+                <p className="text-lg text-earth-700/70 italic">
+                  (And who it's not for)
+                </p>
               </div>
 
-              {/* Minimal Text */}
-              <div className="space-y-8">
-                <p className="text-5xl md:text-6xl font-serif text-indigo-deep leading-tight">
-                  The journey begins with surrender.
+              <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
+                {/* FOR */}
+                <div className="space-y-6">
+                  <div className="flex items-center gap-3 mb-8">
+                    <div className="text-3xl text-sacred-gold">✓</div>
+                    <h3 className="text-2xl font-serif text-earth-800">This work is FOR:</h3>
+                  </div>
+                  <div className="space-y-4 text-earth-700/80 leading-relaxed">
+                    <p className="flex items-start gap-3">
+                      <span className="text-sacred-gold mt-1">•</span>
+                      <span>Those ready to die before they die</span>
+                    </p>
+                    <p className="flex items-start gap-3">
+                      <span className="text-sacred-gold mt-1">•</span>
+                      <span>Those who've done deep inner work and feel called to complete something</span>
+                    </p>
+                    <p className="flex items-start gap-3">
+                      <span className="text-sacred-gold mt-1">•</span>
+                      <span>Those seeking death of illusion, not an experience</span>
+                    </p>
+                    <p className="flex items-start gap-3">
+                      <span className="text-sacred-gold mt-1">•</span>
+                      <span>Those ready to surrender and integrate</span>
+                    </p>
+                    <p className="flex items-start gap-3">
+                      <span className="text-sacred-gold mt-1">•</span>
+                      <span>Seekers tired of seeking</span>
+                    </p>
+                    <p className="flex items-start gap-3">
+                      <span className="text-sacred-gold mt-1">•</span>
+                      <span>Those who can no longer pretend</span>
+                    </p>
+                  </div>
+                </div>
+
+                {/* NOT FOR */}
+                <div className="space-y-6">
+                  <div className="flex items-center gap-3 mb-8">
+                    <div className="text-3xl text-desert-clay">✗</div>
+                    <h3 className="text-2xl font-serif text-earth-800">This work is NOT for:</h3>
+                  </div>
+                  <div className="space-y-4 text-earth-700/80 leading-relaxed">
+                    <p className="flex items-start gap-3">
+                      <span className="text-desert-clay mt-1">•</span>
+                      <span>Those with untreated trauma or psychosis</span>
+                    </p>
+                    <p className="flex items-start gap-3">
+                      <span className="text-desert-clay mt-1">•</span>
+                      <span>Spiritual tourists or peak-seekers</span>
+                    </p>
+                    <p className="flex items-start gap-3">
+                      <span className="text-desert-clay mt-1">•</span>
+                      <span>Those expecting to be "fixed"</span>
+                    </p>
+                    <p className="flex items-start gap-3">
+                      <span className="text-desert-clay mt-1">•</span>
+                      <span>Those refusing integration</span>
+                    </p>
+                    <p className="flex items-start gap-3">
+                      <span className="text-desert-clay mt-1">•</span>
+                      <span>Those wanting quick fixes</span>
+                    </p>
+                    <p className="flex items-start gap-3">
+                      <span className="text-desert-clay mt-1">•</span>
+                      <span>Recreational seekers</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center mt-16 max-w-2xl mx-auto">
+                <p className="text-lg text-earth-700/70 italic leading-relaxed">
+                  "You're not broken. You're not lost. You're initiating."
                 </p>
-                <p className="text-lg text-indigo-deep/70 leading-relaxed">
-                  For over a decade, I've walked beside souls navigating the depths of transformation—through
-                  medicine work, energy healing, and the sacred art of letting go.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Image Section 2 - Ceremony Space / Toad Close-up */}
+        <div className="h-[60vh] relative overflow-hidden">
+          <ImagePlaceholder
+            aspectRatio="21/9"
+            altText="Bufo Alvarius toad - Sacred medicine"
+            className="w-full h-full"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-earth-900/30 to-earth-900/60"></div>
+        </div>
+
+        {/* Three-Phase Process: Preparation → Ceremony → Integration */}
+        <div className="bg-white py-48">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-20">
+                <div className="text-4xl text-sacred-gold/40 mb-6">⊹</div>
+                <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
+                  The Three-Phase Journey
+                </h2>
+                <p className="text-lg text-earth-700/70 max-w-2xl mx-auto">
+                  Sacred medicine work requires preparation, presence, and integration.
+                  This is not a shortcut. This is the work of a lifetime.
                 </p>
-                <Link to="/about" className="inline-block text-sacred-green hover:text-indigo-deep transition-colors font-medium">
-                  My story →
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-12 mb-16">
+                {/* Phase 1: Preparation */}
+                <div className="text-center space-y-6">
+                  <div className="text-5xl mb-4">🐚</div>
+                  <h3 className="text-2xl font-serif text-earth-800">Preparation</h3>
+                  <p className="text-earth-700/70 leading-relaxed">
+                    1-2 sessions to assess emotional readiness, anchor your nervous system,
+                    and create a sacred container for what's to come.
+                  </p>
+                  <p className="text-sm text-sacred-gold font-medium">€111 per session</p>
+                </div>
+
+                {/* Phase 2: Ceremony */}
+                <div className="text-center space-y-6">
+                  <div className="text-5xl mb-4">🔥</div>
+                  <h3 className="text-2xl font-serif text-earth-800">Ceremony</h3>
+                  <p className="text-earth-700/70 leading-relaxed">
+                    The sacred passage. Held in small, intimate settings (2-4 people max)
+                    in Mazunte, Oaxaca, Mexico. Full energetic holding and support.
+                  </p>
+                  <p className="text-sm text-sacred-gold font-medium">€300-500 per person</p>
+                </div>
+
+                {/* Phase 3: Integration */}
+                <div className="text-center space-y-6">
+                  <div className="text-5xl mb-4">🌿</div>
+                  <h3 className="text-2xl font-serif text-earth-800">Integration</h3>
+                  <p className="text-earth-700/70 leading-relaxed">
+                    Where the real work happens. Post-journey support, meaning-making,
+                    and embodying the remembrance into your daily life.
+                  </p>
+                  <p className="text-sm text-sacred-gold font-medium">€88-111 per session</p>
+                </div>
+              </div>
+
+              <div className="text-center max-w-3xl mx-auto border-t border-earth-700/10 pt-12">
+                <p className="text-lg text-earth-700/70 italic leading-relaxed">
+                  "Insight without integration is just spiritual entertainment.<br/>
+                  This isn't a quick fix. This isn't a weekend workshop.<br/>
+                  This is the work of a lifetime—compressed into the time your soul needs."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Seri Tribe Lineage & Credibility Section */}
+        <div className="relative py-48">
+          <div className="absolute inset-0 bg-gradient-to-b from-earth-700 to-earth-900"></div>
+          <div className="relative z-10 container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="text-4xl text-sacred-gold/60 mb-8">⊛</div>
+              <h2 className="text-3xl md:text-5xl font-serif text-sacred-white leading-relaxed mb-12">
+                Nina & Astral<br/>
+                Initiated by Seri Tribe Elders in the Sonoran Desert, Mexico
+              </h2>
+              <div className="space-y-6 text-desert-sand/80 leading-relaxed text-lg max-w-3xl mx-auto">
+                <p>
+                  This work is held with deep reverence for the indigenous lineage from which it comes.
+                  Nina and Astral have been initiated as daughter and son of the Seri Tribe by elders in the desert of Sonora, Mexico.
+                </p>
+                <p className="text-desert-sand/70">
+                  Years of training in trauma-informed approaches, energy healing, and the sacred art
+                  of holding space for ego dissolution. Guest speakers in facilitator training programs.
+                  Hundreds of ceremonies guided with safety, presence, and deep respect.
+                </p>
+                <p className="text-sacred-gold/90 italic font-serif text-xl mt-8">
+                  "We have sat with the medicine. We have died, dissolved, returned, and broken again.
+                  We hold this work with reverence. If you feel called, let's walk slowly.
+                  This is sacred territory—not a service."
+                </p>
+              </div>
+              <div className="mt-12">
+                <Link
+                  to="/about"
+                  className="inline-block text-sacred-gold hover:text-sacred-amber transition-colors text-lg font-medium"
+                >
+                  Read our story →
                 </Link>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Hero Stats Section - Elegant Social Proof */}
-        <div className="bg-gradient-to-b from-sacred-cream to-white py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto">
-              <div className="grid md:grid-cols-3 gap-12 text-center">
-                <div className="space-y-3">
-                  <div className="text-5xl md:text-6xl font-serif text-sacred-gold">1,500+</div>
-                  <div className="text-indigo-deep/70 font-light text-lg">Souls awakened</div>
-                </div>
-                <div className="space-y-3">
-                  <div className="text-5xl md:text-6xl font-serif text-sacred-gold">10,000+</div>
-                  <div className="text-indigo-deep/70 font-light text-lg">Healing hours</div>
-                </div>
-                <div className="space-y-3">
-                  <div className="text-5xl md:text-6xl font-serif text-sacred-gold">∞</div>
-                  <div className="text-indigo-deep/70 font-light text-lg">Ancient wisdom lineages</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Visual Quote Section */}
-        <div className="relative h-[70vh]">
-          <div className="absolute inset-0 bg-gradient-to-br from-mystic-purple/30 via-indigo-deep/40 to-sacred-green/20"></div>
-          <div className="absolute inset-0 bg-black/30"></div>
-          <div className="relative z-10 h-full flex items-center justify-center px-4">
-            <blockquote className="max-w-4xl text-center">
-              <p className="text-3xl md:text-5xl font-serif text-sacred-moon leading-relaxed mb-8">
-                "This work is not about becoming someone new.<br/>
-                It's about remembering who you've always been."
-              </p>
-            </blockquote>
-          </div>
-        </div>
-
-        {/* The Approach - Philosophy Section */}
-        <div className="bg-white py-32">
-          <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-serif text-indigo-deep mb-8">
-                  How This Work Happens
-                </h2>
-                <p className="text-xl text-indigo-deep/70 max-w-3xl mx-auto leading-relaxed">
-                  This isn't therapy. It isn't coaching. It's something older. Something that can't be rushed.
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-3 gap-12 mt-20">
-                <div className="space-y-4">
-                  <div className="text-sacred-gold text-3xl">✧</div>
-                  <h3 className="text-xl font-serif text-indigo-deep">Presence Over Technique</h3>
-                  <p className="text-indigo-deep/70 leading-relaxed">
-                    I don't fix you. I hold space for you to remember your own wholeness.
-                    The transformation happens in the field between us.
-                  </p>
-                </div>
-
-                <div className="space-y-4">
-                  <div className="text-sacred-gold text-3xl">✧</div>
-                  <h3 className="text-xl font-serif text-indigo-deep">Body. Heart. Soul.</h3>
-                  <p className="text-indigo-deep/70 leading-relaxed">
-                    Real healing isn't just mental. We work through the body, honor the heart,
-                    and listen to what your soul has been trying to say.
-                  </p>
-                </div>
-
-                <div className="space-y-4">
-                  <div className="text-sacred-gold text-3xl">✧</div>
-                  <h3 className="text-xl font-serif text-indigo-deep">Integration Is Everything</h3>
-                  <p className="text-indigo-deep/70 leading-relaxed">
-                    Insight without integration is just spiritual entertainment.
-                    We anchor the work into your daily life, your relationships, your reality.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Ways to Work Together - Visual */}
-        <div className="bg-sacred-cream py-32">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl md:text-6xl font-serif text-indigo-deep text-center mb-20">
-                Ways to Walk Together
-              </h2>
-
-              <div className="space-y-32">
-                {/* Circle Work */}
-                <div className="grid lg:grid-cols-5 gap-12 items-center">
-                  <div className="lg:col-span-3 aspect-[16/10] relative">
-                    <div className="absolute inset-0 bg-gradient-to-br from-mystic-purple/20 to-indigo-deep/30 rounded-2xl"></div>
-                  </div>
-                  <div className="lg:col-span-2 space-y-6">
-                    <h3 className="text-3xl font-serif text-indigo-deep">Sacred Circles</h3>
-                    <p className="text-indigo-deep/70 leading-relaxed">
-                      Join a container of souls committed to growth. Men's circles, women's leadership,
-                      and creative masterminds for healers and visionaries.
-                    </p>
-                    <Link to="/services" className="inline-block text-sacred-green hover:text-indigo-deep transition-colors">
-                      Explore circles →
-                    </Link>
-                  </div>
-                </div>
-
-                {/* Medicine Work */}
-                <div className="grid lg:grid-cols-5 gap-12 items-center">
-                  <div className="lg:col-span-2 space-y-6 order-2 lg:order-1">
-                    <h3 className="text-3xl font-serif text-indigo-deep">Medicine Journeys</h3>
-                    <p className="text-indigo-deep/70 leading-relaxed">
-                      Bufo Alvarius ceremonies held with reverence and deep preparation. A sacred passage
-                      to ego dissolution and divine remembrance.
-                    </p>
-                    <Link to="/services" className="inline-block text-sacred-green hover:text-indigo-deep transition-colors">
-                      Learn about medicine work →
-                    </Link>
-                  </div>
-                  <div className="lg:col-span-3 aspect-[16/10] relative order-1 lg:order-2">
-                    <div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/30 to-sacred-green/20 rounded-2xl"></div>
-                  </div>
-                </div>
-
-                {/* 1:1 Work */}
-                <div className="grid lg:grid-cols-5 gap-12 items-center">
-                  <div className="lg:col-span-3 aspect-[16/10] relative">
-                    <div className="absolute inset-0 bg-gradient-to-br from-sacred-green/20 to-mystic-purple/20 rounded-2xl"></div>
-                  </div>
-                  <div className="lg:col-span-2 space-y-6">
-                    <h3 className="text-3xl font-serif text-indigo-deep">One-to-One Journeys</h3>
-                    <p className="text-indigo-deep/70 leading-relaxed">
-                      Deep transformational work tailored to your unique path. Energy healing, family
-                      constellations, and bespoke mentorship.
-                    </p>
-                    <Link to="/services" className="inline-block text-sacred-green hover:text-indigo-deep transition-colors">
-                      Discover 1:1 work →
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* The Initiation Process - 4 Stages */}
-        <div className="bg-white py-32">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              {/* Title */}
-              <div className="text-center mb-20">
-                <div className="text-4xl text-sacred-gold/40 mb-6">⊹</div>
-                <h2 className="text-4xl md:text-5xl font-serif text-indigo-deep mb-4">
-                  The Initiation Process
-                </h2>
-                <p className="text-lg text-indigo-deep/60 font-light">
-                  Every transformation follows the same sacred pattern
-                </p>
-              </div>
-
-              {/* 4 Stages - Horizontal Flow */}
-              <div className="grid md:grid-cols-4 gap-8 md:gap-6">
-                {/* Stage 1: Dissolution */}
-                <div className="relative">
-                  <div className="text-center space-y-4">
-                    <div className="text-4xl text-sacred-gold mb-4">⊹</div>
-                    <div className="text-2xl font-serif text-indigo-deep mb-2">1</div>
-                    <h3 className="text-xl font-serif text-indigo-deep">Dissolution</h3>
-                    <p className="text-sm text-indigo-deep/70 leading-relaxed">
-                      Release what no longer serves. Clear ancestral patterns, childhood wounds, and energetic debris.
-                    </p>
-                  </div>
-                  {/* Arrow - hidden on mobile */}
-                  <div className="hidden md:block absolute top-12 -right-4 text-sacred-gold/30 text-2xl">→</div>
-                </div>
-
-                {/* Stage 2: Activation */}
-                <div className="relative">
-                  <div className="text-center space-y-4">
-                    <div className="text-4xl text-sacred-gold mb-4">⊛</div>
-                    <div className="text-2xl font-serif text-indigo-deep mb-2">2</div>
-                    <h3 className="text-xl font-serif text-indigo-deep">Activation</h3>
-                    <p className="text-sm text-indigo-deep/70 leading-relaxed">
-                      Awaken dormant gifts. Open your channel, activate intuition, remember your cosmic blueprint.
-                    </p>
-                  </div>
-                  <div className="hidden md:block absolute top-12 -right-4 text-sacred-gold/30 text-2xl">→</div>
-                </div>
-
-                {/* Stage 3: Integration */}
-                <div className="relative">
-                  <div className="text-center space-y-4">
-                    <div className="text-4xl text-sacred-gold mb-4">⊝</div>
-                    <div className="text-2xl font-serif text-indigo-deep mb-2">3</div>
-                    <h3 className="text-xl font-serif text-indigo-deep">Integration</h3>
-                    <p className="text-sm text-indigo-deep/70 leading-relaxed">
-                      Embody your truth. Anchor new frequencies, align actions with soul purpose, manifest your vision.
-                    </p>
-                  </div>
-                  <div className="hidden md:block absolute top-12 -right-4 text-sacred-gold/30 text-2xl">→</div>
-                </div>
-
-                {/* Stage 4: Mastery */}
-                <div className="text-center space-y-4">
-                  <div className="text-4xl text-sacred-gold mb-4">✧</div>
-                  <div className="text-2xl font-serif text-indigo-deep mb-2">4</div>
-                  <h3 className="text-xl font-serif text-indigo-deep">Mastery</h3>
-                  <p className="text-sm text-indigo-deep/70 leading-relaxed">
-                    Become the medicine. Step into service, hold space for others, create ripples of transformation.
-                  </p>
-                </div>
-              </div>
-
-              {/* Closing Wisdom */}
-              <div className="text-center mt-20 max-w-3xl mx-auto">
-                <p className="text-lg text-indigo-deep/60 leading-relaxed italic">
-                  This isn't a quick fix. This isn't a weekend workshop. This is the work of a lifetime—
-                  compressed into the time your soul needs.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* What People Don't Tell You - Truth Section */}
-        <div className="bg-gradient-to-b from-white via-sacred-cream to-white py-32">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto space-y-12">
-              <div className="text-center">
-                <h2 className="text-3xl md:text-4xl font-serif text-indigo-deep mb-8">
-                  What People Don't Tell You About Transformation
-                </h2>
-                <p className="text-xl text-indigo-deep/70 leading-relaxed mb-12">
-                  It's not all light. It's not all love. Sometimes it's messy. Sometimes it's uncomfortable.
-                  And that's exactly where the real work begins.
-                </p>
-              </div>
-
-              <div className="space-y-8 text-indigo-deep/70 leading-relaxed">
-                <div className="border-l-2 border-sacred-gold/40 pl-6">
-                  <p className="mb-2">
-                    <span className="font-serif text-indigo-deep text-lg">You might lose people.</span>
-                  </p>
-                  <p className="text-sm text-indigo-deep/60">
-                    Not everyone can hold space for who you're becoming. And that's okay.
-                  </p>
-                </div>
-
-                <div className="border-l-2 border-sacred-gold/40 pl-6">
-                  <p className="mb-2">
-                    <span className="font-serif text-indigo-deep text-lg">You might question everything.</span>
-                  </p>
-                  <p className="text-sm text-indigo-deep/60">
-                    Including this work. Including me. That's part of reclaiming your sovereignty.
-                  </p>
-                </div>
-
-                <div className="border-l-2 border-sacred-gold/40 pl-6">
-                  <p className="mb-2">
-                    <span className="font-serif text-indigo-deep text-lg">You might feel worse before you feel better.</span>
-                  </p>
-                  <p className="text-sm text-indigo-deep/60">
-                    Healing brings things to the surface. That's not a sign it's not working—it's a sign it is.
-                  </p>
-                </div>
-
-                <div className="border-l-2 border-sacred-gold/40 pl-6">
-                  <p className="mb-2">
-                    <span className="font-serif text-indigo-deep text-lg">You will have to do the work.</span>
-                  </p>
-                  <p className="text-sm text-indigo-deep/60">
-                    I can guide. I can hold. I can witness. But I can't do it for you. No one can.
-                  </p>
-                </div>
-              </div>
-
-              <div className="text-center mt-16">
-                <p className="text-lg text-indigo-deep/70 italic">
-                  If you're still reading, if this resonates—you're ready.
-                </p>
-              </div>
-            </div>
+        {/* Image Section 3 - Mazunte Beach / Nature */}
+        <div className="h-[70vh] relative overflow-hidden">
+          <ImagePlaceholder
+            aspectRatio="21/9"
+            altText="Mazunte beach at sunset - Oaxaca, Mexico"
+            className="w-full h-full"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-earth-900/40 to-earth-900/70 flex items-center justify-center">
+            <p className="text-3xl md:text-5xl font-serif text-sacred-white italic text-center px-4 max-w-4xl leading-tight">
+              "Die before you die, and discover<br/>there is no death."
+            </p>
           </div>
         </div>
 
         {/* Testimonials - Multiple Voices */}
-        <div className="relative py-32">
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/50 via-cosmic-900/60 to-black/70"></div>
+        <div className="relative py-48">
+          <div className="absolute inset-0 bg-earth-800"></div>
           <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-serif text-sacred-moon text-center mb-20">
+              <h2 className="text-4xl md:text-5xl font-serif text-sacred-white text-center mb-20">
                 Voices From The Journey
               </h2>
 
               <div className="space-y-20">
-                {/* Testimonial 1 */}
+                {/* Testimonial 1 - Holly */}
                 <div className="max-w-4xl mx-auto">
-                  <p className="text-2xl md:text-3xl font-serif text-sacred-moon leading-relaxed mb-8 italic">
-                    "Working with Astral changed my life. Not in a cliché way—in a 'I can't go back to who I was'
-                    way. He sees you. Really sees you. And he holds space for whatever needs to emerge."
+                  <p className="text-2xl md:text-3xl font-serif text-desert-sand leading-relaxed mb-8 italic">
+                    "The healings I went through with Astral were deep and transformative. Through his practice,
+                    he is able to prise issues from the mind and release them through the heart. His compassion
+                    and belief allows vulnerability in the unknown, acceptance of ugly realities and enables you
+                    to rise above blocks we accumulate along with our lives. He showed me how to love myself,
+                    that experience is strength, and our power runs further than this body."
                   </p>
-                  <p className="text-sacred-gold text-lg">— Maria, Barcelona</p>
+                  <p className="text-sacred-gold text-lg">— Holly</p>
                 </div>
 
-                {/* Testimonial 2 */}
+                {/* Testimonial 2 - Jon */}
                 <div className="max-w-4xl mx-auto">
-                  <p className="text-2xl md:text-3xl font-serif text-sacred-moon leading-relaxed mb-8 italic">
-                    "The Bufo ceremony was the most profound experience of my life. Astral's preparation, presence,
-                    and integration support made me feel completely safe to surrender. I finally understand what
-                    'coming home to myself' means."
+                  <p className="text-2xl md:text-3xl font-serif text-desert-sand leading-relaxed mb-8 italic">
+                    "Astral gave me a gift, by healing wounds that had been present in me since I was a child.
+                    We cleared issues that were causing me to have weird dynamics with women. He set me free
+                    and I'll never be the same. He made me a man. I feel confident in myself and my abilities now."
                   </p>
-                  <p className="text-sacred-gold text-lg">— David, USA</p>
+                  <p className="text-sacred-gold text-lg">— Jon</p>
                 </div>
 
-                {/* Testimonial 3 */}
+                {/* Testimonial 3 - Nina */}
                 <div className="max-w-4xl mx-auto">
-                  <p className="text-2xl md:text-3xl font-serif text-sacred-moon leading-relaxed mb-8 italic">
-                    "The men's circle gave me permission to feel everything I'd been holding back for decades.
-                    To cry. To rage. To laugh. To finally be myself without apology. This work saved my life."
+                  <p className="text-2xl md:text-3xl font-serif text-desert-sand leading-relaxed mb-8 italic">
+                    "I could feel his presence in the higher realms—helping me to go deeper into the quest.
+                    I felt secure, held, seen, and fully accepted so I could trust and surrender. I feel so young!
+                    Clear and joyful, like a child. I accept where I'm at and know myself better."
                   </p>
-                  <p className="text-sacred-gold text-lg">— Carlos, Mexico</p>
+                  <p className="text-sacred-gold text-lg">— Nina</p>
                 </div>
 
-                {/* Testimonial 4 */}
+                {/* Testimonial 4 - Hazel */}
                 <div className="max-w-4xl mx-auto">
-                  <p className="text-2xl md:text-3xl font-serif text-sacred-moon leading-relaxed mb-8 italic">
-                    "After years of therapy and self-help, I finally found someone who could hold space for the
-                    darkness without trying to 'fix' me. Astral helped me integrate my shadow and step into my power."
+                  <p className="text-2xl md:text-3xl font-serif text-desert-sand leading-relaxed mb-8 italic">
+                    "The work with Astral was one of the most profound transformations I have ever had.
+                    He takes you straight into the subconscious mind so together you find the cause of your
+                    limiting beliefs and clear them. This is the healing of the future, in the 5th dimension,
+                    working in the quantum field that enables healing to be instantaneous."
                   </p>
-                  <p className="text-sacred-gold text-lg">— Sofia, Spain</p>
+                  <p className="text-sacred-gold text-lg">— Hazel</p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
 
-        {/* FAQ Section - Common Questions */}
-        <div className="bg-sacred-cream py-32">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-serif text-indigo-deep text-center mb-20">
-                Questions You Might Have
-              </h2>
-
-              <div className="space-y-12">
-                <div className="border-b border-indigo-deep/10 pb-8">
-                  <h3 className="text-2xl font-serif text-indigo-deep mb-4">
-                    How is this different from therapy or coaching?
-                  </h3>
-                  <p className="text-indigo-deep/70 leading-relaxed">
-                    Therapy focuses on healing trauma and managing symptoms. Coaching focuses on goals and performance.
-                    This work goes deeper—into the soul, the body, the energy field. We're not just healing wounds or
-                    achieving goals. We're remembering who you are beyond all the conditioning. It's more shamanic than
-                    clinical, more mystical than methodical.
-                  </p>
-                </div>
-
-                <div className="border-b border-indigo-deep/10 pb-8">
-                  <h3 className="text-2xl font-serif text-indigo-deep mb-4">
-                    Do I need experience with plant medicine to work with you?
-                  </h3>
-                  <p className="text-indigo-deep/70 leading-relaxed">
-                    No. While I offer Bufo ceremonies and integration support for those working with plant medicines,
-                    many people come to me for energy healing, family constellations, or mentorship without ever touching
-                    medicine. The medicine is just one tool. What matters is your readiness to do deep work.
-                  </p>
-                </div>
-
-                <div className="border-b border-indigo-deep/10 pb-8">
-                  <h3 className="text-2xl font-serif text-indigo-deep mb-4">
-                    How long does this work take?
-                  </h3>
-                  <p className="text-indigo-deep/70 leading-relaxed">
-                    There's no fixed timeline. Some people have breakthrough moments in a single session. Others work with
-                    me for months or years. Transformation isn't linear. It's not about "fixing" you in 6 sessions—it's
-                    about supporting your unique unfolding for however long it takes. I offer single sessions, 3-month
-                    containers, and 6-month deep dives.
-                  </p>
-                </div>
-
-                <div className="border-b border-indigo-deep/10 pb-8">
-                  <h3 className="text-2xl font-serif text-indigo-deep mb-4">
-                    Is this work safe? How do you hold space?
-                  </h3>
-                  <p className="text-indigo-deep/70 leading-relaxed">
-                    Safety is paramount. For medicine work, I do thorough preparation, medical screening, and create a
-                    trauma-informed container. For all work, I hold space with presence, not technique. I've trained in
-                    energy healing, family constellations, and shamanic practices for over a decade. I work with your
-                    nervous system, not against it. And I never push you beyond what you're ready for.
-                  </p>
-                </div>
-
-                <div className="border-b border-indigo-deep/10 pb-8">
-                  <h3 className="text-2xl font-serif text-indigo-deep mb-4">
-                    Where are you based? Do you work online or in-person?
-                  </h3>
-                  <p className="text-indigo-deep/70 leading-relaxed">
-                    I split my time between Barcelona (Spain) and Mazunte (Mexico). I offer both in-person sessions
-                    (when I'm in your area or you travel to me) and online sessions via video call. Medicine ceremonies
-                    and retreats are always in-person. Energy healing and mentorship work beautifully online.
-                  </p>
-                </div>
-
-                <div className="pb-8">
-                  <h3 className="text-2xl font-serif text-indigo-deep mb-4">
-                    How do I know if this is right for me?
-                  </h3>
-                  <p className="text-indigo-deep/70 leading-relaxed">
-                    You'll know. If you've read this far and something inside you says "yes"—that's your signal.
-                    Book a discovery call. We'll talk. There's no pressure, no pitch. Just an honest conversation about
-                    where you are and whether I'm the right guide for your journey. Trust your intuition.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Newsletter Section - Inner Circle */}
-        <div className="relative py-32">
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/60 via-cosmic-900/70 to-black/80"></div>
-          <div className="relative z-10 container mx-auto px-4">
-            <div className="max-w-2xl mx-auto text-center">
-              <div className="text-4xl mb-8 text-sacred-gold animate-breathe opacity-60">⊹</div>
-              <h2 className="text-4xl md:text-5xl font-serif text-sacred-moon mb-6">
-                Join the Inner Circle
-              </h2>
-              <p className="text-lg text-sacred-moon/80 mb-4 font-light">
-                Receive transmissions, integration practices, and soul medicine
-              </p>
-              <p className="text-sm text-sacred-moon/60 mb-12 italic">
-                Sacred transmissions 2x monthly
-              </p>
-
-              {/* Newsletter Form */}
-              <form className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-                <input
-                  type="email"
-                  placeholder="Your email portal"
-                  className="flex-1 px-6 py-4 bg-cosmic-900/50 border border-sacred-moon/20 rounded-full text-sacred-moon placeholder-sacred-moon/40 focus:outline-none focus:border-sacred-gold/50 transition-colors"
-                />
-                <button
-                  type="submit"
-                  className="px-8 py-4 bg-sacred-gold text-cosmic-900 rounded-full font-medium hover:bg-sacred-glow transition-all"
+              <div className="text-center mt-16">
+                <Link
+                  to="/testimonials"
+                  className="inline-block text-sacred-gold hover:text-sacred-amber transition-colors text-lg font-medium"
                 >
-                  Enter the Mystery
-                </button>
-              </form>
+                  Read more testimonials →
+                </Link>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Gentle Invitation */}
-        <div className="bg-sacred-cream py-32">
+        {/* Pricing Transparency Section */}
+        <div className="bg-sacred-cream py-48">
           <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-20">
+                <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
+                  Investment & Accessibility
+                </h2>
+                <p className="text-lg text-earth-700/70 italic">
+                  Transparent pricing. Sliding scale available.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-8 mb-16">
+                {/* Preparation */}
+                <div className="bg-white rounded-2xl p-8 border border-earth-700/10">
+                  <div className="text-3xl mb-4 text-center">🐚</div>
+                  <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">Preparation</h3>
+                  <p className="text-earth-700/70 text-center mb-6 leading-relaxed">
+                    1-2 sessions required before ceremony
+                  </p>
+                  <div className="text-center">
+                    <div className="text-3xl font-serif text-sacred-gold mb-2">€111</div>
+                    <div className="text-sm text-earth-700/60">per session</div>
+                  </div>
+                </div>
+
+                {/* Ceremony */}
+                <div className="bg-white rounded-2xl p-8 border-2 border-sacred-gold/30 relative">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-sacred-gold text-earth-900 px-4 py-1 rounded-full text-sm font-medium">
+                    Sacred Passage
+                  </div>
+                  <div className="text-3xl mb-4 text-center">🔥</div>
+                  <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">Ceremony</h3>
+                  <p className="text-earth-700/70 text-center mb-6 leading-relaxed">
+                    2-4 people max, Mazunte, Mexico
+                  </p>
+                  <div className="text-center">
+                    <div className="text-3xl font-serif text-sacred-gold mb-2">€300-500</div>
+                    <div className="text-sm text-earth-700/60">per person</div>
+                  </div>
+                  <div className="mt-6 text-center text-sm text-earth-700/60 leading-relaxed">
+                    Includes pre-ceremony consultation, ceremony, integration within 48hrs, 2-week follow-up
+                  </div>
+                </div>
+
+                {/* Integration */}
+                <div className="bg-white rounded-2xl p-8 border border-earth-700/10">
+                  <div className="text-3xl mb-4 text-center">🌿</div>
+                  <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">Integration</h3>
+                  <p className="text-earth-700/70 text-center mb-6 leading-relaxed">
+                    Post-journey support
+                  </p>
+                  <div className="text-center">
+                    <div className="text-3xl font-serif text-sacred-gold mb-2">€88-111</div>
+                    <div className="text-sm text-earth-700/60 mb-4">per session</div>
+                    <div className="text-lg font-serif text-earth-800 mb-2">or</div>
+                    <div className="text-2xl font-serif text-sacred-gold mb-2">€300-400</div>
+                    <div className="text-sm text-earth-700/60">4-session package</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-medicine-venom rounded-2xl p-8 max-w-3xl mx-auto">
+                <h4 className="text-xl font-serif text-earth-800 mb-4 text-center">Accessibility</h4>
+                <div className="space-y-3 text-earth-700/80 text-center leading-relaxed">
+                  <p>Sliding scale available based on financial situation</p>
+                  <p>BIPOC and single parent discounts</p>
+                  <p>Payment plans offered</p>
+                  <p className="italic text-earth-700/70 pt-4">
+                    "No one is ever turned away for lack of funds when the call is genuine."
+                  </p>
+                </div>
+              </div>
+
+              <div className="text-center mt-12">
+                <p className="text-lg text-earth-700/70 leading-relaxed">
+                  <Link to="/faq" className="text-sacred-gold hover:text-sacred-amber transition-colors">
+                    Read FAQ & Safety Information →
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Application CTA Section */}
+        <div className="relative py-48">
+          <div className="absolute inset-0 bg-gradient-to-b from-earth-700 to-earth-900"></div>
+          <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center space-y-8">
-              <h2 className="text-4xl md:text-5xl font-serif text-indigo-deep">
-                Ready to begin?
+              <div className="text-4xl mb-8 text-sacred-gold/60">⊹</div>
+              <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
+                Ready to Begin?
               </h2>
-              <p className="text-xl text-indigo-deep/70">
-                Let's have a conversation about where you are and where you want to go.
+              <p className="text-2xl md:text-3xl text-desert-sand/80 font-serif italic mb-8 leading-relaxed">
+                "This work is never sold. Only offered."
               </p>
-              <Link
-                to="/contact"
-                className="inline-block px-12 py-4 bg-indigo-deep text-sacred-cream rounded-full hover:bg-indigo-deep/90 transition-colors font-medium text-lg"
-              >
-                Get in touch
-              </Link>
+              <p className="text-lg text-desert-sand/70 mb-8 leading-relaxed max-w-2xl mx-auto">
+                If you feel the call, begin with the application process. This is an invitation to discernment—
+                for both of us. Not everyone is a fit. And that's sacred.
+              </p>
+              <div className="space-y-4">
+                <Link
+                  to="/contact"
+                  className="inline-block px-12 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
+                >
+                  Begin Your Application
+                </Link>
+                <p className="text-sm text-desert-sand/60 italic">
+                  Private application · Discernment process · Medical screening required
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Footer */}
-        <footer className="container mx-auto px-4 py-20 border-t border-mystic-purple/20">
+        <footer className="container mx-auto px-4 py-20 border-t border-desert-sage/20 bg-earth-900">
           <div className="max-w-6xl mx-auto">
             {/* Sacred Symbol */}
             <div className="text-center mb-12">
-              <div className="text-4xl text-sacred-gold/40 animate-breathe mb-8">⊹</div>
+              <div className="text-4xl text-sacred-gold/40 mb-8">⊹</div>
             </div>
 
             <div className="text-center space-y-6 mb-12">
               {/* Logo */}
               <div className="flex items-center justify-center gap-3 mb-6">
-                <Sparkles className="w-8 h-8 text-mystic-violet animate-glow" />
-                <span className="text-xl font-serif bg-gradient-to-r from-mystic-lavender via-sacred-gold to-mystic-violet bg-clip-text text-transparent">
-                  Astral Integration
+                <Sparkles className="w-8 h-8 text-sacred-gold" />
+                <span className="text-xl font-serif text-sacred-gold">
+                  Spirit Awakening Medicine
                 </span>
               </div>
 
               {/* Sacred Blessing */}
               <div className="space-y-3 mb-8">
-                <p className="text-lg text-mystic-lavender/80 font-serif italic">
-                  The Mirror Path
+                <p className="text-lg text-desert-sand/80 font-serif italic">
+                  Sacred Bufo Alvarius Ceremonies
                 </p>
-                <p className="text-base text-mystic-lavender/60 font-serif">
-                  Reflect. Remember. Return.
+                <p className="text-base text-desert-sand/60 font-serif">
+                  Mazunte, Oaxaca, Mexico
                 </p>
               </div>
 
               {/* Sacred Divider */}
               <div className="flex justify-center items-center gap-4 my-8">
-                <div className="h-px w-20 bg-gradient-to-r from-transparent via-mystic-purple/50 to-transparent"></div>
+                <div className="h-px w-20 bg-gradient-to-r from-transparent via-desert-sage/50 to-transparent"></div>
                 <div className="text-xl text-sacred-gold/40">✧</div>
-                <div className="h-px w-20 bg-gradient-to-r from-transparent via-mystic-purple/50 to-transparent"></div>
+                <div className="h-px w-20 bg-gradient-to-r from-transparent via-desert-sage/50 to-transparent"></div>
               </div>
 
               {/* Email */}
               <p className="text-sm">
-                <a href={`mailto:${t.footer.email}`} className="text-mystic-lavender/70 hover:text-sacred-gold transition-colors font-serif">
+                <a href={`mailto:${t.footer.email}`} className="text-desert-sand/70 hover:text-sacred-gold transition-colors font-serif">
                   {t.footer.email}
                 </a>
               </p>
 
               {/* Social */}
               <div className="flex items-center justify-center gap-6 text-sm">
-                <a href={`https://instagram.com/${t.footer.social.instagram.replace('@', '')}`} target="_blank" rel="noopener noreferrer" className="text-mystic-lavender/60 hover:text-mystic-violet transition-colors font-serif">
+                <a href={`https://instagram.com/${t.footer.social.instagram.replace('@', '')}`} target="_blank" rel="noopener noreferrer" className="text-desert-sand/60 hover:text-sacred-gold transition-colors font-serif">
                   Instagram
                 </a>
-                <span className="text-mystic-purple/40">•</span>
-                <a href={`https://${t.footer.social.bio}`} target="_blank" rel="noopener noreferrer" className="text-mystic-lavender/60 hover:text-mystic-violet transition-colors font-serif">
+                <span className="text-desert-sage/40">•</span>
+                <a href={`https://${t.footer.social.bio}`} target="_blank" rel="noopener noreferrer" className="text-desert-sand/60 hover:text-sacred-gold transition-colors font-serif">
                   Bio Link
                 </a>
               </div>
@@ -738,38 +668,38 @@ function LandingPage() {
 
             {/* Links */}
             <div className="flex items-center justify-center gap-6 text-sm mb-8">
-              <Link to="/support" className="text-mystic-lavender/50 hover:text-sacred-gold transition-colors font-serif">
+              <Link to="/support" className="text-desert-sand/50 hover:text-sacred-gold transition-colors font-serif">
                 Support
               </Link>
-              <span className="text-mystic-purple/40">•</span>
-              <Link to="/privacy" className="text-mystic-lavender/50 hover:text-sacred-gold transition-colors font-serif">
+              <span className="text-desert-sage/40">•</span>
+              <Link to="/privacy" className="text-desert-sand/50 hover:text-sacred-gold transition-colors font-serif">
                 Privacy
               </Link>
             </div>
 
             {/* Sacred Closing Blessing */}
             <div className="text-center space-y-4 mb-8">
-              <p className="text-base text-mystic-lavender/70 font-serif italic">
-                May your return be soft, your voice be heard, and your path be lit from within.
+              <p className="text-base text-desert-sand/70 font-serif italic">
+                May your journey be held with reverence.
               </p>
-              <p className="text-sm text-mystic-lavender/50 font-serif">
-                May your path be lit with remembrance.
+              <p className="text-sm text-desert-sand/50 font-serif">
+                May you remember what you've always known.
               </p>
             </div>
 
             {/* Final Blessing */}
             <div className="text-center space-y-2">
-              <p className="text-sm text-mystic-lavender/60 font-serif">
-                Awaken. Remember. Embody. You are already home.
+              <p className="text-sm text-desert-sand/60 font-serif">
+                Die before you die. Surrender. Return. You are already whole.
               </p>
-              <p className="text-xs text-mystic-lavender/40 mt-4">
-                © 2025 Astral Integration. All rights reserved.
+              <p className="text-xs text-desert-sand/40 mt-4">
+                © 2025 Spirit Awakening Medicine. All rights reserved.
               </p>
             </div>
 
             {/* Bottom Symbol */}
             <div className="text-center mt-12">
-              <div className="text-2xl text-mystic-violet/30 animate-breathe">☉</div>
+              <div className="text-2xl text-sacred-gold/30">⊛</div>
             </div>
           </div>
         </footer>
@@ -802,12 +732,19 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutPageNew />} />
+        <Route path="/ceremonies" element={<BufoCeremoniesPage />} />
+        <Route path="/preparation" element={<PreparationPage />} />
+        <Route path="/integration" element={<IntegrationPage />} />
+        <Route path="/testimonials" element={<TestimonialsPage />} />
+        <Route path="/retreats" element={<RetreatsPage />} />
+        <Route path="/faq" element={<FAQPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        {/* Old routes - keeping for backwards compatibility */}
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/inner-ascend" element={<InnerAscendPage />} />
-        <Route path="/retreats" element={<RetreatsPage />} />
-        <Route path="/collaborations" element={<CollaborationsPage />} />
+        <Route path="/collaborations" element={<RetreatsPage />} />
         <Route path="/resources" element={<ResourcesPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        {/* Utility routes */}
         <Route path="/event/:id" element={<EventRoute />} />
         <Route path="/place/:id" element={<PlaceRoute />} />
         <Route path="/support" element={<SupportPage />} />

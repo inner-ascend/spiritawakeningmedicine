@@ -1,117 +1,233 @@
 import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
+import Footer from '../Footer';
+import ImagePlaceholder from '../ImagePlaceholder';
 
 export default function RetreatsPage() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-earth-900">
       <Navigation />
-      {/* Full-Screen Opening */}
-      <div className="h-screen relative flex items-center justify-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-cosmic-900/80 via-indigo-deep/70 to-black/90">
-          {/* Cosmic aurora background */}
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 -left-4 w-[600px] h-[600px] bg-mystic-purple rounded-full mix-blend-screen filter blur-3xl animate-breathe" style={{animationDuration: '8s'}}></div>
-            <div className="absolute top-1/4 -right-4 w-[500px] h-[500px] bg-sacred-green rounded-full mix-blend-screen filter blur-3xl animate-breathe" style={{animationDuration: '10s', animationDelay: '2s'}}></div>
-          </div>
+
+      {/* Hero Section */}
+      <div className="min-h-screen relative flex items-center justify-center">
+        <div className="absolute inset-0">
+          <ImagePlaceholder
+            aspectRatio="21/9"
+            altText="Retreat space in Mazunte with ocean view"
+            className="w-full h-full"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 via-earth-900/50 to-earth-900"></div>
         </div>
 
-        <div className="relative z-10 text-center px-4">
-          <h1 className="text-5xl md:text-7xl font-serif text-sacred-moon mb-8 font-light">
-            Sacred Immersions
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+          <div className="text-5xl text-sacred-gold/60 mb-8">⊹</div>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-light text-sacred-white mb-8 leading-tight">
+            Retreats & Sacred Containers
           </h1>
-          <p className="text-xl md:text-2xl text-sacred-moon/80 font-light max-w-2xl mx-auto">
-            Sometimes the deepest work happens when you step away from everything you know.
+          <p className="text-2xl md:text-3xl text-desert-sand/90 font-serif italic leading-relaxed max-w-3xl mx-auto">
+            Multi-day immersions and collaborative offerings
           </p>
+        </div>
+
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-sacred-gold/40 rounded-full flex items-start justify-center p-2">
+            <div className="w-1.5 h-1.5 bg-sacred-gold/60 rounded-full"></div>
+          </div>
         </div>
       </div>
 
-      {/* What Makes A Retreat Sacred */}
-      <div className="bg-sacred-cream py-32">
+      {/* Bufo Retreat Containers - Section 1 */}
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-20 items-center">
-              <div className="space-y-8">
-                <h2 className="text-4xl md:text-5xl font-serif text-indigo-deep">
-                  What makes a retreat sacred?
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            {/* Image Left */}
+            <div>
+              <ImagePlaceholder
+                aspectRatio="4/5"
+                altText="Retreat ceremony space in nature"
+                className="shadow-2xl"
+                caption="Intimate ceremony space in Mazunte"
+              />
+            </div>
+
+            {/* Text Right */}
+            <div className="space-y-8">
+              <div>
+                <div className="text-4xl text-sacred-gold/40 mb-4">🌿</div>
+                <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
+                  Bufo Retreat Containers
                 </h2>
-                <p className="text-xl text-indigo-deep/80 leading-relaxed italic">
-                  It's not the location. It's the container.
-                </p>
-                <p className="text-lg text-indigo-deep/70 leading-relaxed">
-                  These aren't vacations. They're pilgrimages. Descents. Returns.
-                </p>
-                <p className="text-lg text-indigo-deep/70 leading-relaxed">
-                  We gather in places where the veil is thin—by the ocean, in the mountains,
-                  under expansive skies—to do the work that can't be rushed.
+                <p className="text-xl text-earth-700/80 leading-relaxed italic mb-8">
+                  3-7 day immersive journeys
                 </p>
               </div>
 
-              <div className="aspect-[4/5] relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-mystic-purple/20 to-sacred-green/30 rounded-2xl"></div>
+              <div className="space-y-6 text-lg text-earth-700/80 leading-relaxed">
+                <p>
+                  Our multi-day retreats offer a complete container for transformation—
+                  preparation, ceremony, and integration held within one sacred journey.
+                </p>
+
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <span className="text-sacred-gold mt-1">✓</span>
+                    <span><strong className="text-earth-800">Small groups:</strong> 2-6 people maximum for intimate holding</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-sacred-gold mt-1">✓</span>
+                    <span><strong className="text-earth-800">Complete journey:</strong> Preparation sessions, Bufo ceremony, integration support</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-sacred-gold mt-1">✓</span>
+                    <span><strong className="text-earth-800">Sacred location:</strong> Mazunte, Oaxaca, Mexico—ocean, jungle, tranquility</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-sacred-gold mt-1">✓</span>
+                    <span><strong className="text-earth-800">Includes:</strong> Accommodation, meals, ceremony, integration circles, nature immersion</span>
+                  </div>
+                </div>
+
+                <div className="bg-medicine-venom rounded-xl p-6 mt-8">
+                  <p className="text-earth-800"><strong>Investment:</strong> €1,500-3,000 per person</p>
+                  <p className="text-sm text-earth-700/70 mt-2">Sliding scale available · Payment plans offered</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Full Width Quote */}
-      <div className="relative h-[60vh] flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/40 via-cosmic-900/60 to-black/70"></div>
-
-        <div className="relative z-10 container mx-auto px-4">
-          <p className="text-3xl md:text-5xl font-serif text-sacred-moon text-center leading-tight max-w-4xl mx-auto italic">
-            "Transformation doesn't happen on a schedule.<br/>
-            It happens when you finally have the space to let go."
-          </p>
-        </div>
-      </div>
-
-      {/* Places We Gather */}
-      <div className="bg-sacred-cream py-32">
+      {/* Integration Intensives - Section 2 */}
+      <div className="bg-white py-48">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-serif text-indigo-deep text-center mb-20">
-              Places We Gather
-            </h2>
-
-            <div className="space-y-32">
-              {/* Mazunte */}
-              <div className="grid lg:grid-cols-5 gap-16 items-center">
-                <div className="lg:col-span-3 aspect-[16/10] relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-sacred-green/30 to-mystic-purple/20 rounded-2xl"></div>
-                </div>
-
-                <div className="lg:col-span-2 space-y-6">
-                  <h3 className="text-3xl font-serif text-indigo-deep">Mazunte, Mexico</h3>
-                  <p className="text-indigo-deep/70 leading-relaxed">
-                    Pacific coast of Oaxaca. Jungle meets ocean. Sacred beach village where
-                    the earth still holds ancient memory.
-                  </p>
-                  <p className="text-sm text-indigo-deep/60">
-                    Ocean ceremonies • Jungle integration • Traditional temazcal
-                  </p>
-                </div>
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            {/* Text Left */}
+            <div className="space-y-8 lg:order-1">
+              <div>
+                <div className="text-4xl text-sacred-gold/40 mb-4">🔥</div>
+                <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
+                  Integration Intensives
+                </h2>
+                <p className="text-xl text-earth-700/80 leading-relaxed italic mb-8">
+                  Weekend containers for post-ceremony integration
+                </p>
               </div>
 
-              {/* Barcelona */}
-              <div className="grid lg:grid-cols-5 gap-16 items-center">
-                <div className="lg:col-span-2 space-y-6 order-2 lg:order-1">
-                  <h3 className="text-3xl font-serif text-indigo-deep">Barcelona & Catalunya</h3>
-                  <p className="text-indigo-deep/70 leading-relaxed">
-                    Mountains, Mediterranean coast, mystical countryside. Ancient wisdom
-                    meets modern sanctuary.
-                  </p>
-                  <p className="text-sm text-indigo-deep/60">
-                    Mountain retreats • Mediterranean integration • Cultural immersion
-                  </p>
+              <div className="space-y-6 text-lg text-earth-700/80 leading-relaxed">
+                <p>
+                  For those who've already sat with medicine and need support anchoring
+                  the insights into embodied reality.
+                </p>
+
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <span className="text-sacred-gold mt-1">✓</span>
+                    <span><strong className="text-earth-800">Group circles:</strong> Sharing, witnessing, meaning-making</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-sacred-gold mt-1">✓</span>
+                    <span><strong className="text-earth-800">Somatic practices:</strong> Breathwork, movement, trauma release</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-sacred-gold mt-1">✓</span>
+                    <span><strong className="text-earth-800">Nature immersion:</strong> Beach, jungle, silent walks</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-sacred-gold mt-1">✓</span>
+                    <span><strong className="text-earth-800">Energy work:</strong> Individual sessions available</span>
+                  </div>
                 </div>
 
-                <div className="lg:col-span-3 aspect-[16/10] relative order-1 lg:order-2">
-                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/30 to-mystic-violet/20 rounded-2xl"></div>
+                <div className="bg-medicine-venom rounded-xl p-6 mt-8">
+                  <p className="text-earth-800"><strong>Investment:</strong> €500-1,200 per person</p>
+                  <p className="text-sm text-earth-700/70 mt-2">2-4 day formats · Sliding scale available</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Image Right */}
+            <div className="lg:order-2">
+              <ImagePlaceholder
+                aspectRatio="4/5"
+                altText="Integration circle with participants"
+                className="shadow-2xl"
+                caption="Integration circles in nature"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Full-Width Image Break */}
+      <div className="h-[70vh] relative overflow-hidden">
+        <ImagePlaceholder
+          aspectRatio="21/9"
+          altText="Mazunte beach at sunset"
+          className="w-full h-full"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-earth-900/40 to-earth-900/60"></div>
+      </div>
+
+      {/* Collaborations Section */}
+      <div className="bg-earth-800 py-48">
+        <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            {/* Image Left */}
+            <div>
+              <ImagePlaceholder
+                aspectRatio="4/5"
+                altText="Collaborative retreat facilitation"
+                className="shadow-2xl"
+                caption="Co-facilitating transformational experiences"
+              />
+            </div>
+
+            {/* Text Right */}
+            <div className="space-y-8">
+              <div>
+                <div className="text-4xl text-sacred-gold/60 mb-4">⊛</div>
+                <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
+                  Collaborations & Guest Facilitation
+                </h2>
+                <p className="text-xl text-desert-sand/80 leading-relaxed italic mb-8">
+                  We collaborate with retreat centers, facilitators, and conscious communities
+                </p>
+              </div>
+
+              <div className="space-y-6 text-lg text-desert-sand/80 leading-relaxed">
+                <p>
+                  The most powerful transformational work happens when medicine holders unite
+                  their gifts. We're open to co-creating sacred containers with aligned partners.
+                </p>
+
+                <h3 className="text-2xl font-serif text-sacred-gold pt-4">What We Offer:</h3>
+
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <span className="text-sacred-gold mt-1">✓</span>
+                    <span><strong className="text-sacred-white">Bufo ceremony facilitation:</strong> Guest ceremonies at your retreat center or event</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-sacred-gold mt-1">✓</span>
+                    <span><strong className="text-sacred-white">Integration workshops:</strong> Post-ceremony integration for your community</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-sacred-gold mt-1">✓</span>
+                    <span><strong className="text-sacred-white">Co-created retreats:</strong> Design and facilitate multi-day transformational containers</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-sacred-gold mt-1">✓</span>
+                    <span><strong className="text-sacred-white">Training support:</strong> Guest speakers for facilitator training programs</span>
+                  </div>
+                </div>
+
+                <div className="pt-8">
+                  <Link
+                    to="/contact"
+                    className="inline-block px-10 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
+                  >
+                    Explore Collaboration
+                  </Link>
                 </div>
               </div>
             </div>
@@ -119,149 +235,132 @@ export default function RetreatsPage() {
         </div>
       </div>
 
-      {/* Retreat Experiences */}
-      <div className="relative min-h-screen flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-cosmic-900/80 via-indigo-deep/70 to-black/80"></div>
-
-        <div className="relative z-10 container mx-auto px-4 py-32">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-serif text-sacred-moon text-center mb-20">
-              Retreat Experiences
-            </h2>
-
-            <div className="space-y-16">
-              {/* Group Transformations */}
-              <div className="space-y-6">
-                <h3 className="text-3xl font-serif text-sacred-moon">Group Transformations</h3>
-                <p className="text-xl text-sacred-moon/80 leading-relaxed italic">
-                  5-7 days of deep work with 8-12 souls
-                </p>
-                <p className="text-sacred-moon/70 leading-relaxed">
-                  Medicine ceremonies, energy healing, somatic release, family constellations,
-                  integration circles. All meals and accommodation included. Nature immersion
-                  and sacred site visits.
-                </p>
-                <p className="text-sm text-sacred-moon/60">
-                  Next retreats: Spring & Fall 2025
-                </p>
-              </div>
-
-              {/* Private Journeys */}
-              <div className="space-y-6 pt-8">
-                <h3 className="text-3xl font-serif text-sacred-moon">Private Custom Journeys</h3>
-                <p className="text-xl text-sacred-moon/80 leading-relaxed italic">
-                  3-14 days, fully tailored to your path
-                </p>
-                <p className="text-sacred-moon/70 leading-relaxed">
-                  Individual or small group (2-4 people). Choose your modalities, design your
-                  schedule, set your intentions. Private accommodation and ceremony space.
-                  Pre and post-retreat integration.
-                </p>
-              </div>
-
-              {/* Men's Work */}
-              <div className="space-y-6 pt-8">
-                <h3 className="text-3xl font-serif text-sacred-moon">Men's Awakening</h3>
-                <p className="text-xl text-sacred-moon/80 leading-relaxed italic">
-                  The King, The Warrior, The Magician, The Lover
-                </p>
-                <p className="text-sacred-moon/70 leading-relaxed">
-                  5 days of sacred men's work. Brotherhood, emotional release, masculine
-                  embodiment. Optional Bufo ceremonies. A journey into authentic power.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* What's Included - Visual Grid */}
-      <div className="bg-sacred-cream py-32">
+      {/* Who We Collaborate With */}
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-serif text-indigo-deep text-center mb-20">
-              What Unfolds
+            <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
+              Who We Collaborate With
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-2 gap-12 mb-16">
               <div className="space-y-4">
-                <div className="text-sacred-gold text-3xl">✦</div>
-                <h3 className="text-xl font-serif text-indigo-deep">Ceremony</h3>
-                <p className="text-indigo-deep/70">
-                  Sacred medicine journeys held with reverence, preparation, and integration.
+                <h3 className="text-2xl font-serif text-earth-800 flex items-center gap-3">
+                  <span className="text-3xl">🏡</span>
+                  Retreat Centers
+                </h3>
+                <p className="text-earth-700/80 leading-relaxed">
+                  Centers offering transformational retreats who want to include Bufo ceremonies
+                  or integration support within their programming.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <div className="text-sacred-gold text-3xl">✦</div>
-                <h3 className="text-xl font-serif text-indigo-deep">Healing</h3>
-                <p className="text-indigo-deep/70">
-                  Energy work, somatic release, breathwork, and bodywork to move what's stuck.
+                <h3 className="text-2xl font-serif text-earth-800 flex items-center gap-3">
+                  <span className="text-3xl">🌐</span>
+                  Conscious Communities
+                </h3>
+                <p className="text-earth-700/80 leading-relaxed">
+                  Intentional communities, eco-villages, and healing centers seeking guest
+                  facilitators for medicine work.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <div className="text-sacred-gold text-3xl">✦</div>
-                <h3 className="text-xl font-serif text-indigo-deep">Integration</h3>
-                <p className="text-indigo-deep/70">
-                  Daily circles, sharing, journaling, and practices to ground the transformation.
+                <h3 className="text-2xl font-serif text-earth-800 flex items-center gap-3">
+                  <span className="text-3xl">🤝</span>
+                  Fellow Facilitators
+                </h3>
+                <p className="text-earth-700/80 leading-relaxed">
+                  Other medicine facilitators, therapists, and integration specialists
+                  interested in co-creating multi-modality containers.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <div className="text-sacred-gold text-3xl">✦</div>
-                <h3 className="text-xl font-serif text-indigo-deep">Nature</h3>
-                <p className="text-indigo-deep/70">
-                  Beach walks, jungle hikes, mountain silence. Let the land do its part.
+                <h3 className="text-2xl font-serif text-earth-800 flex items-center gap-3">
+                  <span className="text-3xl">🎓</span>
+                  Training Programs
+                </h3>
+                <p className="text-earth-700/80 leading-relaxed">
+                  Facilitator training programs seeking guest speakers on trauma-informed
+                  Bufo facilitation and integration.
                 </p>
               </div>
+            </div>
 
-              <div className="space-y-4">
-                <div className="text-sacred-gold text-3xl">✦</div>
-                <h3 className="text-xl font-serif text-indigo-deep">Nourishment</h3>
-                <p className="text-indigo-deep/70">
-                  Healthy, intentional meals prepared with care. Food as medicine.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <div className="text-sacred-gold text-3xl">✦</div>
-                <h3 className="text-xl font-serif text-indigo-deep">Community</h3>
-                <p className="text-indigo-deep/70">
-                  The container of souls who see you, hold you, and walk beside you.
-                </p>
-              </div>
+            <div className="bg-medicine-venom rounded-2xl p-8 text-center">
+              <p className="text-earth-700/80 leading-relaxed italic">
+                "We believe the most powerful work happens when we unite our medicine.
+                If you're creating transformational containers and feel called to collaborate,
+                let's have a conversation."
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Simple Invitation */}
-      <div className="relative min-h-[70vh] flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/50 via-mystic-purple/40 to-cosmic-900/70"></div>
-
-        <div className="relative z-10 container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl md:text-5xl font-serif text-sacred-moon">
-              Is it time?
+      {/* Upcoming Retreats */}
+      <div className="bg-white py-48">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
+              Upcoming Retreats
             </h2>
-            <p className="text-xl text-sacred-moon/80">
-              If you feel the call to go deeper, let's talk about which retreat
-              serves your journey—or design something uniquely yours.
-            </p>
-            <div className="pt-4">
+
+            <div className="text-center space-y-8">
+              <div className="bg-sacred-cream rounded-2xl p-12">
+                <div className="text-5xl mb-6">🌅</div>
+                <p className="text-2xl font-serif text-earth-800 mb-4">
+                  2025 Retreat Dates Coming Soon
+                </p>
+                <p className="text-lg text-earth-700/80 leading-relaxed max-w-2xl mx-auto">
+                  We're currently planning our 2025 retreat calendar. Join the waitlist to be
+                  notified when dates are announced.
+                </p>
+              </div>
+
               <Link
                 to="/contact"
-                onClick={scrollToTop}
-                className="inline-block px-12 py-4 bg-sacred-cream text-indigo-deep rounded-full hover:bg-sacred-moon transition-colors font-medium"
+                className="inline-block px-10 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
               >
-                Explore retreat options
+                Join Retreat Waitlist
               </Link>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
+      {/* Final CTA */}
+      <div className="bg-earth-900 py-48">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center space-y-8">
+            <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
+              Interested in Attending or Collaborating?
+            </h2>
+
+            <p className="text-xl text-desert-sand/80 leading-relaxed">
+              Whether you're called to join a retreat or interested in co-creating
+              transformational containers, we'd love to hear from you.
+            </p>
+
+            <div className="space-y-4 pt-8">
+              <Link
+                to="/contact"
+                className="inline-block px-12 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
+              >
+                Get In Touch
+              </Link>
+
+              <p className="text-sm text-desert-sand/60 italic">
+                Retreat inquiries · Collaboration proposals · Waitlist
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Footer />
+    </div>
   );
 }

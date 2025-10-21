@@ -1,261 +1,371 @@
-import { useState } from 'react';
-import emailjs from '@emailjs/browser';
+import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
+import Footer from '../Footer';
+import ImagePlaceholder from '../ImagePlaceholder';
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus('sending');
-
-    try {
-      await emailjs.send(
-        'service_larviog',
-        'template_7iyu04b',
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        },
-        'v57Ta98pwBDWpoe8o'
-      );
-      setStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setStatus('idle'), 5000);
-    } catch (error) {
-      setStatus('error');
-      setTimeout(() => setStatus('idle'), 5000);
-    }
-  };
-
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-earth-900">
       <Navigation />
-      {/* Full-Screen Opening */}
-      <div className="min-h-screen relative flex items-center justify-center bg-gradient-to-br from-cosmic-900/90 via-indigo-deep/80 to-black/90">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 -left-4 w-[600px] h-[600px] bg-mystic-purple rounded-full mix-blend-screen filter blur-3xl animate-breathe" style={{animationDuration: '8s'}}></div>
-          <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-sacred-green rounded-full mix-blend-screen filter blur-3xl animate-breathe" style={{animationDuration: '10s', animationDelay: '2s'}}></div>
+
+      {/* Hero Section */}
+      <div className="min-h-screen relative flex items-center justify-center">
+        <div className="absolute inset-0">
+          <ImagePlaceholder
+            aspectRatio="21/9"
+            altText="Sacred entrance to ceremony space in Mazunte"
+            className="w-full h-full"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 via-earth-900/40 to-earth-900"></div>
+
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+          <div className="text-5xl text-sacred-gold/60 mb-8">⊹</div>
+          <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-white mb-8 leading-tight">
+            Begin Your Application
+          </h1>
+          <p className="text-2xl md:text-3xl text-sacred-gold/90 font-serif italic mb-8">
+            "This work is never sold. Only offered."
+          </p>
+          <p className="text-lg md:text-xl text-desert-sand/80 leading-relaxed max-w-3xl mx-auto">
+            If you feel the call, begin with discernment.<br/>
+            This is sacred territory—not a service.
+          </p>
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 py-32">
-          <div className="max-w-3xl mx-auto">
-            {/* Header */}
-            <div className="text-center mb-16">
-              <div className="text-5xl mb-8 text-sacred-gold animate-breathe opacity-60">⊹</div>
-              <h1 className="text-5xl md:text-7xl font-serif text-sacred-moon mb-8 font-light">
-                Let's Connect
-              </h1>
-              <p className="text-xl text-sacred-moon/80 font-light">
-                Tell me where you are. Tell me what you're looking for.
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-sacred-gold/40 rounded-full flex items-start justify-center p-2">
+            <div className="w-1.5 h-1.5 bg-sacred-gold/60 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+
+      {/* Application Process */}
+      <div className="bg-sacred-cream py-48">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12 text-center">
+              The Application Process
+            </h2>
+
+            <div className="space-y-6 text-earth-700/80 leading-relaxed text-lg mb-16">
+              <p className="text-center text-2xl font-serif text-sacred-gold italic mb-8">
+                An invitation to mutual discernment
+              </p>
+
+              <p>
+                This is not an offering we promote publicly. If you're here, you've been guided,
+                invited, or felt the call. The application process exists to protect all of us—
+                and to honor the sacred nature of this work.
+              </p>
+
+              <p>
+                <strong className="text-earth-800">Not everyone is a fit.</strong> And that's sacred.
               </p>
             </div>
 
-            {/* Booking Options */}
-            <div className="grid md:grid-cols-2 gap-6 mb-16">
-              {/* Sacred Discovery Call */}
-              <div className="bg-cosmic-900/20 backdrop-blur-xl border border-sacred-moon/20 rounded-2xl p-6">
-                <div className="space-y-3">
-                  <div className="text-2xl text-sacred-gold">✦</div>
-                  <h3 className="text-xl font-serif text-sacred-moon">Sacred Discovery Call</h3>
-                  <p className="text-sm text-sacred-moon/70 leading-relaxed">
-                    A 30-minute soul connection to explore if we're meant to journey together
-                  </p>
-                  <div className="pt-2">
-                    <span className="text-sacred-gold font-medium">Complimentary</span>
-                  </div>
-                </div>
-              </div>
+            <div className="bg-white rounded-2xl p-8 mb-12">
+              <h3 className="text-2xl font-serif text-earth-800 mb-8 text-center">The Steps:</h3>
 
-              {/* Quantum Leap Intensive */}
-              <div className="bg-cosmic-900/20 backdrop-blur-xl border border-sacred-gold/30 rounded-2xl p-6">
-                <div className="space-y-3">
-                  <div className="text-2xl text-sacred-gold">✧</div>
-                  <h3 className="text-xl font-serif text-sacred-moon">Quantum Leap Intensive</h3>
-                  <p className="text-sm text-sacred-moon/70 leading-relaxed">
-                    3-month deep dive transformation container for serious initiates
-                  </p>
-                  <div className="pt-2">
-                    <span className="text-sacred-gold font-medium">Premium</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Urgency Message */}
-            <div className="text-center mb-12">
-              <p className="text-sm text-sacred-moon/60 italic">
-                Only 4 soul work spots available this month
-              </p>
-            </div>
-
-            {/* Contact Form */}
-            <div className="bg-cosmic-900/30 backdrop-blur-xl border border-sacred-moon/10 rounded-2xl p-8 md:p-12">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-sacred-moon/80 mb-2">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                    className="w-full px-4 py-3 bg-cosmic-900/50 border border-sacred-moon/20 rounded-lg text-sacred-moon placeholder-sacred-moon/40 focus:outline-none focus:border-sacred-gold/50 transition-colors"
-                    placeholder="Your name"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-sacred-moon/80 mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    required
-                    className="w-full px-4 py-3 bg-cosmic-900/50 border border-sacred-moon/20 rounded-lg text-sacred-moon placeholder-sacred-moon/40 focus:outline-none focus:border-sacred-gold/50 transition-colors"
-                    placeholder="your@email.com"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-sacred-moon/80 mb-2">
-                    What are you interested in?
-                  </label>
-                  <select
-                    id="subject"
-                    value={formData.subject}
-                    onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    required
-                    className="w-full px-4 py-3 bg-cosmic-900/50 border border-sacred-moon/20 rounded-lg text-sacred-moon focus:outline-none focus:border-sacred-gold/50 transition-colors"
-                  >
-                    <option value="">Select...</option>
-                    <option value="1:1 Work">1:1 Deep Work</option>
-                    <option value="Sacred Circles">Sacred Circles</option>
-                    <option value="Medicine Work">Medicine Journeys</option>
-                    <option value="Retreats">Retreats</option>
-                    <option value="Inner Ascend">Inner Ascend Community</option>
-                    <option value="Trainings">Facilitator Training</option>
-                    <option value="General">Just saying hello</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-sacred-moon/80 mb-2">
-                    Your Message
-                  </label>
-                  <textarea
-                    id="message"
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    required
-                    rows={6}
-                    className="w-full px-4 py-3 bg-cosmic-900/50 border border-sacred-moon/20 rounded-lg text-sacred-moon placeholder-sacred-moon/40 focus:outline-none focus:border-sacred-gold/50 transition-colors resize-none"
-                    placeholder="Where are you on your journey? What are you seeking?"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={status === 'sending'}
-                  className="w-full px-8 py-4 bg-sacred-gold text-cosmic-900 rounded-full font-medium hover:bg-sacred-glow transition-all disabled:opacity-50"
-                >
-                  {status === 'sending' ? (
-                    <span>Sending...</span>
-                  ) : status === 'success' ? (
-                    <span>Message sent ✓</span>
-                  ) : status === 'error' ? (
-                    <span>Error - Please try again</span>
-                  ) : (
-                    <span>Send message</span>
-                  )}
-                </button>
-              </form>
-
-              {/* Contact Details */}
-              <div className="mt-12 pt-12 border-t border-sacred-moon/10 space-y-6 text-center">
-                <div>
-                  <p className="text-sm text-sacred-moon/60 mb-1">Email</p>
-                  <a
-                    href="mailto:hello@spiritawakeningmedicine.com"
-                    className="text-sacred-gold hover:text-sacred-glow transition-colors"
-                  >
-                    hello@spiritawakeningmedicine.com
-                  </a>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6 text-sm">
-                  <div>
-                    <p className="text-sacred-gold mb-1">Mazunte, Mexico</p>
-                    <p className="text-sacred-moon/60">Retreats & ceremonies</p>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
+                    <span className="text-sacred-gold font-bold">1</span>
                   </div>
                   <div>
-                    <p className="text-sacred-gold mb-1">Barcelona, Spain</p>
-                    <p className="text-sacred-moon/60">1:1 sessions & European retreats</p>
+                    <h4 className="font-semibold text-earth-800 mb-2">Submit Private Application</h4>
+                    <p className="text-earth-700/70 text-sm leading-relaxed">
+                      Fill out the form below honestly and completely. Your application will be
+                      reviewed in deep presence—not scanned quickly. We read every word.
+                    </p>
                   </div>
                 </div>
 
-                <div className="pt-4">
-                  <a
-                    href="https://instagram.com/astralintegration"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sacred-moon/70 hover:text-sacred-gold transition-colors text-sm"
-                  >
-                    @astralintegration
-                  </a>
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
+                    <span className="text-sacred-gold font-bold">2</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-earth-800 mb-2">Discernment & Response</h4>
+                    <p className="text-earth-700/70 text-sm leading-relaxed">
+                      If there's alignment, we'll reach out within 3-7 days to schedule a brief
+                      conversation or proceed directly to preparation sessions.
+                    </p>
+                  </div>
                 </div>
 
-                <p className="text-xs text-sacred-moon/50 italic pt-4">
-                  I respond to every message personally. Typically within 24-48 hours.
-                </p>
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
+                    <span className="text-sacred-gold font-bold">3</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-earth-800 mb-2">Preparation Sessions</h4>
+                    <p className="text-earth-700/70 text-sm leading-relaxed">
+                      1-2 preparation sessions are required before ceremony. These build the container,
+                      assess readiness, and ensure you're prepared for ego dissolution.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
+                    <span className="text-sacred-gold font-bold">4</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-earth-800 mb-2">Medical Screening</h4>
+                    <p className="text-earth-700/70 text-sm leading-relaxed">
+                      Complete health questionnaire to rule out contraindications. Safety is paramount.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
+                    <span className="text-sacred-gold font-bold">5</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-earth-800 mb-2">Ceremony in Mazunte</h4>
+                    <p className="text-earth-700/70 text-sm leading-relaxed">
+                      Only after preparation and screening, we discuss ceremony dates. Held in
+                      Mazunte, Oaxaca, Mexico in a sacred, private container.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
+                    <span className="text-sacred-gold font-bold">6</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-earth-800 mb-2">Integration Support</h4>
+                    <p className="text-earth-700/70 text-sm leading-relaxed">
+                      Integration within 48 hours included. Ongoing support available through
+                      individual sessions or extended containers.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Newsletter Signup */}
-            <div className="mt-20 bg-cosmic-900/20 backdrop-blur-xl border border-sacred-moon/10 rounded-2xl p-8 md:p-10 text-center">
-              <div className="text-3xl mb-6 text-sacred-gold animate-breathe opacity-60">⊹</div>
-              <h3 className="text-2xl md:text-3xl font-serif text-sacred-moon mb-4">
-                Join the Inner Circle
-              </h3>
-              <p className="text-sacred-moon/80 mb-3">
-                Receive transmissions, integration practices, and soul medicine
+            <div className="bg-medicine-venom rounded-2xl p-6 text-center">
+              <p className="text-earth-700/80 leading-relaxed italic">
+                "This isn't a transaction. It's a relationship. With the medicine. With yourself.
+                With what wants to be remembered."
               </p>
-              <p className="text-sm text-sacred-moon/60 mb-8 italic">
-                Sacred transmissions 2x monthly
-              </p>
-
-              {/* Newsletter Form */}
-              <form className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-                <input
-                  type="email"
-                  placeholder="Your email portal"
-                  className="flex-1 px-6 py-3 bg-cosmic-900/50 border border-sacred-moon/20 rounded-full text-sacred-moon placeholder-sacred-moon/40 focus:outline-none focus:border-sacred-gold/50 transition-colors"
-                />
-                <button
-                  type="submit"
-                  className="px-8 py-3 bg-sacred-gold text-cosmic-900 rounded-full font-medium hover:bg-sacred-glow transition-all"
-                >
-                  Enter the Mystery
-                </button>
-              </form>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
+      {/* Nina & Astral Portrait */}
+      <div className="h-[60vh] relative overflow-hidden">
+        <ImagePlaceholder
+          aspectRatio="21/9"
+          altText="Nina and Astral - Ceremony facilitators"
+          className="w-full h-full"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-earth-900/20 to-earth-900/50"></div>
+      </div>
+
+      {/* Tally Form Embed */}
+      <div className="bg-white py-48">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-8 text-center">
+              Private Application Form
+            </h2>
+
+            <p className="text-lg text-earth-700/70 text-center mb-12 leading-relaxed">
+              Take your time. Answer honestly. There's no rush—this is sacred work.
+            </p>
+
+            {/* Tally Form Iframe */}
+            <div className="bg-sacred-cream rounded-2xl p-8">
+              <iframe
+                src="https://tally.so/r/mYXQVN"
+                width="100%"
+                height="800"
+                frameBorder="0"
+                marginHeight={0}
+                marginWidth={0}
+                title="Spirit Awakening Medicine - Bufo Ceremony Application"
+                className="rounded-lg"
+              />
+            </div>
+
+            <p className="text-sm text-earth-700/60 text-center mt-8">
+              Having issues with the form?{' '}
+              <a
+                href="https://tally.so/r/mYXQVN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sacred-gold hover:text-sacred-amber transition-colors"
+              >
+                Open in new window →
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Alternative Contact Methods */}
+      <div className="bg-sacred-cream py-48">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12 text-center">
+              Other Ways to Connect
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              {/* Email */}
+              <div className="bg-white rounded-2xl p-8 text-center">
+                <div className="text-4xl mb-4">✉️</div>
+                <h3 className="text-2xl font-serif text-earth-800 mb-4">Email</h3>
+                <p className="text-earth-700/70 mb-4 leading-relaxed text-sm">
+                  For questions, ceremony inquiries, or integration support
+                </p>
+                <a
+                  href="mailto:astralamat@gmail.com"
+                  className="text-sacred-gold hover:text-sacred-amber transition-colors font-medium"
+                >
+                  astralamat@gmail.com
+                </a>
+                <p className="text-xs text-earth-700/60 mt-4">
+                  (General inquiries: hello@spiritawakeningmedicine.com)
+                </p>
+              </div>
+
+              {/* WhatsApp/Telegram */}
+              <div className="bg-white rounded-2xl p-8 text-center">
+                <div className="text-4xl mb-4">💬</div>
+                <h3 className="text-2xl font-serif text-earth-800 mb-4">WhatsApp / Telegram</h3>
+                <p className="text-earth-700/70 mb-4 leading-relaxed text-sm">
+                  For voice messages or text communication
+                </p>
+                <p className="text-sacred-gold font-medium mb-2">+34 611 14 41 70</p>
+                <p className="text-xs text-earth-700/60">
+                  Telegram: @astralintegration
+                </p>
+              </div>
+
+              {/* Instagram */}
+              <div className="bg-white rounded-2xl p-8 text-center">
+                <div className="text-4xl mb-4">📸</div>
+                <h3 className="text-2xl font-serif text-earth-800 mb-4">Instagram</h3>
+                <p className="text-earth-700/70 mb-4 leading-relaxed text-sm">
+                  Updates, ceremony offerings, and integration practices
+                </p>
+                <a
+                  href="https://instagram.com/spiritawakeningmedicine"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sacred-gold hover:text-sacred-amber transition-colors font-medium"
+                >
+                  @spiritawakeningmedicine
+                </a>
+              </div>
+
+              {/* Location */}
+              <div className="bg-white rounded-2xl p-8 text-center">
+                <div className="text-4xl mb-4">📍</div>
+                <h3 className="text-2xl font-serif text-earth-800 mb-4">Location</h3>
+                <p className="text-earth-700/70 mb-4 leading-relaxed text-sm">
+                  Ceremonies held in nature-based sacred container
+                </p>
+                <p className="text-sacred-gold font-medium">
+                  Mazunte, Oaxaca, Mexico
+                </p>
+                <p className="text-xs text-earth-700/60 mt-2">
+                  (Preparation & Integration available online)
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-medicine-venom rounded-2xl p-8 max-w-2xl mx-auto">
+              <h4 className="text-xl font-serif text-earth-800 mb-4 text-center">Response Time</h4>
+              <p className="text-earth-700/80 leading-relaxed text-center text-sm">
+                We aim to respond to all applications and inquiries within 3-7 days. If you don't
+                hear back, check your spam folder or send a follow-up email. Sometimes messages
+                get lost—it doesn't mean you're not meant to be here.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Important Note */}
+      <div className="relative py-48">
+        <div className="absolute inset-0 bg-gradient-to-br from-earth-800/70 to-earth-900/90"></div>
+        <div className="relative z-10 container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="text-5xl text-sacred-gold/60 mb-8">⊛</div>
+              <h2 className="text-3xl md:text-4xl font-serif text-sacred-white mb-8">
+                Important to Know
+              </h2>
+            </div>
+
+            <div className="space-y-6 text-desert-sand/80 leading-relaxed">
+              <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-6">
+                <p className="flex items-start gap-3">
+                  <span className="text-sacred-gold text-xl">•</span>
+                  <span><strong className="text-sacred-white">Ceremony is never booked directly.</strong> Only after preparation sessions and mutual discernment.</span>
+                </p>
+              </div>
+
+              <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-6">
+                <p className="flex items-start gap-3">
+                  <span className="text-sacred-gold text-xl">•</span>
+                  <span><strong className="text-sacred-white">Medical screening is mandatory.</strong> If you have contraindications, we will not proceed—for your safety.</span>
+                </p>
+              </div>
+
+              <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-6">
+                <p className="flex items-start gap-3">
+                  <span className="text-sacred-gold text-xl">•</span>
+                  <span><strong className="text-sacred-white">Integration is non-negotiable.</strong> The medicine is a doorway—integration is the path.</span>
+                </p>
+              </div>
+
+              <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-6">
+                <p className="flex items-start gap-3">
+                  <span className="text-sacred-gold text-xl">•</span>
+                  <span><strong className="text-sacred-white">This work is not for everyone.</strong> If your application doesn't feel aligned, we'll tell you honestly. That's not rejection—it's discernment.</span>
+                </p>
+              </div>
+
+              <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-6">
+                <p className="flex items-start gap-3">
+                  <span className="text-sacred-gold text-xl">•</span>
+                  <span><strong className="text-sacred-white">No one is turned away for lack of funds.</strong> Sliding scale available. If the call is genuine, we'll find a way.</span>
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center mt-16">
+              <p className="text-2xl font-serif text-sacred-gold/90 italic leading-relaxed">
+                "Trust yourself. If you feel called, let's walk slowly.<br/>
+                This is sacred territory—not a service."
+              </p>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-desert-sand/70">
+                <Link to="/ceremonies" className="text-sacred-gold hover:text-sacred-amber transition-colors">
+                  ← Learn about Ceremonies
+                </Link>
+                <span className="mx-4 text-desert-sand/40">|</span>
+                <Link to="/faq" className="text-sacred-gold hover:text-sacred-amber transition-colors">
+                  Read FAQ & Safety →
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Footer />
+    </div>
   );
 }

@@ -3,7 +3,7 @@ import { Heart } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-cosmic-900 border-t border-mystic-purple/20 text-sacred-moon">
+    <footer className="bg-earth-900 border-t border-desert-sage/20 text-desert-sand">
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-6xl mx-auto">
           {/* Main Footer Grid */}
@@ -11,47 +11,47 @@ export default function Footer() {
             {/* Brand Column */}
             <div className="space-y-4">
               <h3 className="text-xl font-serif text-sacred-gold">Spirit Awakening Medicine</h3>
-              <p className="text-sacred-moon/60 text-sm leading-relaxed">
-                Guiding souls home to themselves through sacred medicine, energy healing, and transformational mentorship.
+              <p className="text-desert-sand/60 text-sm leading-relaxed">
+                Sacred Bufo Alvarius ceremonies held with reverence for indigenous lineage and trauma-informed practice.
               </p>
             </div>
 
             {/* Explore Column */}
             <div className="space-y-4">
-              <h4 className="text-sm font-semibold text-sacred-moon/80 uppercase tracking-wider">Explore</h4>
+              <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">Explore</h4>
               <nav className="flex flex-col space-y-2">
-                <Link to="/about" className="text-sacred-moon/60 hover:text-sacred-gold transition-colors text-sm">
+                <Link to="/about" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
                   About
                 </Link>
-                <Link to="/services" className="text-sacred-moon/60 hover:text-sacred-gold transition-colors text-sm">
-                  Services
+                <Link to="/ceremonies" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
+                  Ceremonies
                 </Link>
-                <Link to="/retreats" className="text-sacred-moon/60 hover:text-sacred-gold transition-colors text-sm">
-                  Retreats
+                <Link to="/preparation" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
+                  Preparation
                 </Link>
-                <Link to="/collaborations" className="text-sacred-moon/60 hover:text-sacred-gold transition-colors text-sm">
-                  Collaborations
+                <Link to="/integration" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
+                  Integration
                 </Link>
-                <Link to="/inner-ascend" className="text-sacred-moon/60 hover:text-sacred-gold transition-colors text-sm">
-                  Community
+                <Link to="/faq" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
+                  FAQ
                 </Link>
               </nav>
             </div>
 
             {/* Resources Column */}
             <div className="space-y-4">
-              <h4 className="text-sm font-semibold text-sacred-moon/80 uppercase tracking-wider">Resources</h4>
+              <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">Resources</h4>
               <nav className="flex flex-col space-y-2">
-                <Link to="/resources" className="text-sacred-moon/60 hover:text-sacred-gold transition-colors text-sm">
-                  Free Downloads
+                <Link to="/testimonials" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
+                  Testimonials
                 </Link>
-                <Link to="/contact" className="text-sacred-moon/60 hover:text-sacred-gold transition-colors text-sm">
-                  Contact
+                <Link to="/contact" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
+                  Apply
                 </Link>
-                <Link to="/support" className="text-sacred-moon/60 hover:text-sacred-gold transition-colors text-sm">
+                <Link to="/support" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
                   Support
                 </Link>
-                <Link to="/privacy" className="text-sacred-moon/60 hover:text-sacred-gold transition-colors text-sm">
+                <Link to="/privacy" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
                   Privacy
                 </Link>
               </nav>
@@ -59,36 +59,36 @@ export default function Footer() {
 
             {/* Connect Column */}
             <div className="space-y-4">
-              <h4 className="text-sm font-semibold text-sacred-moon/80 uppercase tracking-wider">Connect</h4>
+              <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">Connect</h4>
               <div className="space-y-3">
                 <a
-                  href="mailto:hello@spiritawakeningmedicine.com"
-                  className="block text-sacred-moon/60 hover:text-sacred-gold transition-colors text-sm"
+                  href="mailto:astralamat@gmail.com"
+                  className="block text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm"
                 >
-                  hello@spiritawakeningmedicine.com
+                  astralamat@gmail.com
                 </a>
                 <a
                   href="https://instagram.com/spiritawakeningmedicine"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-sacred-moon/60 hover:text-sacred-gold transition-colors text-sm"
+                  className="block text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm"
                 >
                   @spiritawakeningmedicine
                 </a>
-                <div className="text-sacred-moon/60 text-sm">
-                  <p>Barcelona, Spain</p>
-                  <p>Mazunte, Mexico</p>
+                <div className="text-desert-sand/60 text-sm">
+                  <p>Mazunte, Oaxaca</p>
+                  <p>Mexico</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Divider */}
-          <div className="border-t border-sacred-moon/10 mb-8"></div>
+          <div className="border-t border-desert-sand/10 mb-8"></div>
 
           {/* Bottom Row */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-sacred-moon/50 text-sm text-center md:text-left">
+            <div className="text-desert-sand/50 text-sm text-center md:text-left">
               <p className="flex items-center gap-2 justify-center md:justify-start">
                 © {new Date().getFullYear()} Spirit Awakening Medicine
                 <span className="text-sacred-gold/40">⊹</span>
@@ -96,7 +96,7 @@ export default function Footer() {
               </p>
             </div>
 
-            <div className="text-sacred-moon/40 text-xs italic text-center md:text-right">
+            <div className="text-desert-sand/40 text-xs italic text-center md:text-right">
               <p className="flex items-center gap-2 justify-center md:justify-end">
                 Made with <Heart className="w-3 h-3 text-sacred-gold/60 fill-sacred-gold/60" /> for seekers & initiates
               </p>

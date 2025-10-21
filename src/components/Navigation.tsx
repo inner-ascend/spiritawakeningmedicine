@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Sparkles, Globe, Menu, X } from 'lucide-react';
+import { Globe, Menu, X } from 'lucide-react';
 
 export default function Navigation() {
   const [language, setLanguage] = useState<'en' | 'es' | 'ca'>('en');
@@ -12,7 +12,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <Sparkles className="w-8 h-8 text-sacred-gold" />
+            <span className="text-3xl">🔥</span>
             <span className="text-xl font-serif text-sacred-gold">
               Spirit Awakening Medicine
             </span>

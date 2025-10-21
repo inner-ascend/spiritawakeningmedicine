@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useParams, Link } from 'react-router-dom';
-import { Sparkles, Globe, Menu, X } from 'lucide-react';
+import { Globe, Menu, X } from 'lucide-react';
 import './i18n';
 import enTranslations from './translations/en.json';
 import esTranslations from './translations/es.json';
@@ -9,6 +9,7 @@ import EventPreview from './components/EventPreview';
 import PlacePreview from './components/PlacePreview';
 import SupportPage from './components/SupportPage';
 import PrivacyPage from './components/PrivacyPage';
+import Footer from './components/Footer';
 import AboutPageNew from './components/pages/AboutPageNew';
 import BufoCeremoniesPage from './components/pages/BufoCeremoniesPage';
 import PreparationPage from './components/pages/PreparationPage';
@@ -42,7 +43,7 @@ function LandingPage() {
             <div className="flex items-center justify-between h-20">
               {/* Logo */}
               <Link to="/" className="flex items-center gap-3">
-                <Sparkles className="w-8 h-8 text-sacred-gold" />
+                <span className="text-3xl">🔥</span>
                 <span className="text-xl font-serif text-sacred-gold">
                   Spirit Awakening Medicine
                 </span>
@@ -613,96 +614,7 @@ function LandingPage() {
           </div>
         </div>
 
-        {/* Footer */}
-        <footer className="container mx-auto px-4 py-20 border-t border-desert-sage/20 bg-earth-900">
-          <div className="max-w-6xl mx-auto">
-            {/* Sacred Symbol */}
-            <div className="text-center mb-12">
-              <div className="text-4xl text-sacred-gold/40 mb-8">⊹</div>
-            </div>
-
-            <div className="text-center space-y-6 mb-12">
-              {/* Logo */}
-              <div className="flex items-center justify-center gap-3 mb-6">
-                <Sparkles className="w-8 h-8 text-sacred-gold" />
-                <span className="text-xl font-serif text-sacred-gold">
-                  Spirit Awakening Medicine
-                </span>
-              </div>
-
-              {/* Sacred Blessing */}
-              <div className="space-y-3 mb-8">
-                <p className="text-lg text-desert-sand/80 font-serif italic">
-                  Sacred Bufo Alvarius Ceremonies
-                </p>
-                <p className="text-base text-desert-sand/60 font-serif">
-                  Mazunte, Oaxaca, Mexico
-                </p>
-              </div>
-
-              {/* Sacred Divider */}
-              <div className="flex justify-center items-center gap-4 my-8">
-                <div className="h-px w-20 bg-gradient-to-r from-transparent via-desert-sage/50 to-transparent"></div>
-                <div className="text-xl text-sacred-gold/40">✧</div>
-                <div className="h-px w-20 bg-gradient-to-r from-transparent via-desert-sage/50 to-transparent"></div>
-              </div>
-
-              {/* Email */}
-              <p className="text-sm">
-                <a href={`mailto:${t.footer.email}`} className="text-desert-sand/70 hover:text-sacred-gold transition-colors font-serif">
-                  {t.footer.email}
-                </a>
-              </p>
-
-              {/* Social */}
-              <div className="flex items-center justify-center gap-6 text-sm">
-                <a href={`https://instagram.com/${t.footer.social.instagram.replace('@', '')}`} target="_blank" rel="noopener noreferrer" className="text-desert-sand/60 hover:text-sacred-gold transition-colors font-serif">
-                  Instagram
-                </a>
-                <span className="text-desert-sage/40">•</span>
-                <a href={`https://${t.footer.social.bio}`} target="_blank" rel="noopener noreferrer" className="text-desert-sand/60 hover:text-sacred-gold transition-colors font-serif">
-                  Bio Link
-                </a>
-              </div>
-            </div>
-
-            {/* Links */}
-            <div className="flex items-center justify-center gap-6 text-sm mb-8">
-              <Link to="/support" className="text-desert-sand/50 hover:text-sacred-gold transition-colors font-serif">
-                Support
-              </Link>
-              <span className="text-desert-sage/40">•</span>
-              <Link to="/privacy" className="text-desert-sand/50 hover:text-sacred-gold transition-colors font-serif">
-                Privacy
-              </Link>
-            </div>
-
-            {/* Sacred Closing Blessing */}
-            <div className="text-center space-y-4 mb-8">
-              <p className="text-base text-desert-sand/70 font-serif italic">
-                May your journey be held with reverence.
-              </p>
-              <p className="text-sm text-desert-sand/50 font-serif">
-                May you remember what you've always known.
-              </p>
-            </div>
-
-            {/* Final Blessing */}
-            <div className="text-center space-y-2">
-              <p className="text-sm text-desert-sand/60 font-serif">
-                Die before you die. Surrender. Return. You are already whole.
-              </p>
-              <p className="text-xs text-desert-sand/40 mt-4">
-                © 2025 Spirit Awakening Medicine. All rights reserved.
-              </p>
-            </div>
-
-            {/* Bottom Symbol */}
-            <div className="text-center mt-12">
-              <div className="text-2xl text-sacred-gold/30">⊛</div>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </div>
   );

@@ -62,18 +62,18 @@ export default function Footer() {
               <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">Connect</h4>
               <div className="space-y-3">
                 <a
-                  href="mailto:astralamat@gmail.com"
+                  href="mailto:spiritawakeningmedicine@gmail.com"
                   className="block text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm"
                 >
-                  astralamat@gmail.com
+                  spiritawakeningmedicine@gmail.com
                 </a>
                 <a
-                  href="https://instagram.com/spiritawakeningmedicine"
+                  href="https://instagram.com/inner__ascend"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm"
                 >
-                  @spiritawakeningmedicine
+                  @inner__ascend
                 </a>
                 <div className="text-desert-sand/60 text-sm">
                   <p>Mazunte, Oaxaca</p>

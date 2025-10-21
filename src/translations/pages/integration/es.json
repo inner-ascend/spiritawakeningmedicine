@@ -1,0 +1,136 @@
+{
+  "hero": {
+    "title": "Apoyo de Integración",
+    "quote1": "La percepción sin integración es solo",
+    "quote2": "entretenimiento espiritual.",
+    "description1": "La ceremonia es una puerta. La integración es el camino.",
+    "description2": "Aquí es donde ocurre el verdadero trabajo."
+  },
+  "whyNonNegotiable": {
+    "title": "Por Qué la Integración No Es Negociable",
+    "subtitle1": "La medicina le muestra todo.",
+    "subtitle2": "La integración le enseña cómo vivirlo.",
+    "p1": "Durante una ceremonia de Bufo Alvarius, usted experimenta la disolución completa del ego. Toca la conciencia no-dual. Recuerda lo que es más allá del nombre, la forma, la historia, la identidad. Muere antes de morir.",
+    "p2": "Y luego... regresa.",
+    "p3": "De vuelta a un cuerpo. De vuelta a una vida. De vuelta a las relaciones, responsabilidades, patrones, detonantes, heridas. De vuelta al mismo mundo—pero usted ya no es el mismo.",
+    "p4": "Esta es la crisis.",
+    "p4Detail": " Ha visto la verdad. Ha tocado el infinito. Se ha disuelto en todo—y ahora se espera que vaya a trabajar, pague cuentas, tenga conversaciones, navegue relaciones como si nada hubiera pasado.",
+    "p5": "La integración es el puente",
+    "p5Detail": " entre lo místico y lo mundano. Entre el recuerdo y la vida diaria. Entre la disolución y la encarnación.",
+    "p6": "Sin integración, la experiencia se convierte en un recuerdo. Una historia. Entretenimiento espiritual.",
+    "p7": "Con integración,",
+    "p7Detail": " la experiencia se convierte en verdad vivida.",
+    "includedTitle": "La Integración Está Incluida",
+    "includedDescription": "Cada ceremonia de Bufo Alvarius incluye una sesión de integración dentro de las 48 horas y apoyo de seguimiento de 2 semanas. Esto está incorporado en la inversión de la ceremonia. Sin embargo, la mayoría de las personas se benefician del trabajo de integración continuo más allá de las sesiones iniciales."
+  },
+  "whatIncludes": {
+    "title": "Qué Incluye la Integración",
+    "emotional": {
+      "title": "Apoyo Emocional Post-Viaje",
+      "description": "Procesar lo que sucedió, lo que vio, lo que se disolvió, lo que quiere emerger. Sostener el espacio para la confusión, el duelo, el éxtasis, el terror, la maravilla—todo ello."
+    },
+    "storyUnwinding": {
+      "title": "Desenredando Historias y Creando Significado",
+      "description": "La mente quiere darle sentido a la experiencia. Trabajamos con símbolos, visiones, mensajes—no para crear nuevas historias, sino para desenredar las antiguas."
+    },
+    "identity": {
+      "title": "Realineación de Identidad",
+      "description": "¿Quién es usted ahora? ¿Qué cayó? ¿Qué está tratando de nacer? ¿Cómo vive desde el recuerdo en lugar del olvido?"
+    },
+    "trauma": {
+      "title": "Atención al Trauma",
+      "description": "A veces la medicina saca el trauma que estaba enterrado. No lo evitamos—lo atendemos con prácticas somáticas, trabajo energético y presencia profunda."
+    },
+    "rituals": {
+      "title": "Rituales para Encarnar el Recuerdo",
+      "description": "Prácticas diarias, ceremonias, anclajes para mantenerlo conectado con lo que tocó en el viaje. Haciendo lo místico práctico."
+    },
+    "life": {
+      "title": "Prácticas de Integración en la Vida",
+      "description": "¿Cómo se manifiesta esta sabiduría en las relaciones? ¿El trabajo? ¿La vida diaria? Pasando de la percepción espiritual a la acción encarnada."
+    },
+    "quote": "La integración no se trata de 'volver a la normalidad.' Se trata de vivir desde una nueva normalidad—una donde recuerda quién es realmente, incluso cuando el mundo olvida."
+  },
+  "packages": {
+    "title": "Paquetes de Integración",
+    "single": {
+      "title": "Sesión Individual",
+      "price": "€88-111",
+      "details": "75 minutos | Escala móvil",
+      "description": "Para quienes necesitan una sesión de integración enfocada o apoyo continuo entre experiencias ceremoniales."
+    },
+    "fourSession": {
+      "badge": "Más Popular",
+      "title": "Paquete de 4 Sesiones",
+      "price": "€300-400",
+      "details": "Durante 4-8 semanas | Escala móvil",
+      "description": "Contenedor integral de integración. Ideal para apoyo post-ceremonia o transiciones profundas de vida.",
+      "item1": "Sesiones semanales o quincenales",
+      "item2": "Apoyo por WhatsApp entre sesiones",
+      "item3": "Prácticas y rituales personalizados"
+    },
+    "extended": {
+      "title": "Contenedores Extendidos",
+      "price1": "€333-777",
+      "details1": "Presencia Profunda de 6 Semanas",
+      "price2": "€888-1,111",
+      "details2": "Viaje de 3 Meses",
+      "description": "Para transiciones importantes de vida, trabajo de transformación profunda, o quienes construyen nuevas bases después de experiencias con medicina."
+    },
+    "slidingTitle": "Filosofía de Escala Móvil",
+    "sliding1": "Todo el trabajo de integración se ofrece en escala móvil",
+    "sliding2": "Descuentos disponibles para personas BIPOC y padres/madres solteros",
+    "sliding3": "Planes de pago ofrecidos para contenedores más largos",
+    "quote": "Nadie es rechazado por falta de fondos cuando el llamado es genuino."
+  },
+  "modalities": {
+    "title": "Modalidades de Integración",
+    "intro": "Las sesiones de integración se basan en múltiples modalidades dependiendo de lo que necesite. Esto no es formulaico—es profundamente intuitivo y receptivo.",
+    "energyHealing": {
+      "title": "Sanación Energética",
+      "description": "Limpiar bloqueos, liberar emociones atascadas, restaurar la coherencia energética"
+    },
+    "familyConstellations": {
+      "title": "Constelaciones Familiares",
+      "description": "Descubrir patrones ancestrales y enredos sistémicos revelados en ceremonia"
+    },
+    "somatic": {
+      "title": "Trabajo Corporal Somático",
+      "description": "Trabajar con la sabiduría del cuerpo, liberando el trauma contenido en los tejidos"
+    },
+    "meditation": {
+      "title": "Meditación y Trabajo de Respiración",
+      "description": "Prácticas de anclaje para permanecer presente con lo que está emergiendo"
+    },
+    "innerChild": {
+      "title": "Trabajo con el Niño Interior",
+      "description": "Crianza reparadora de las partes heridas que emergen durante la disolución"
+    },
+    "channeled": {
+      "title": "Guía Canalizada",
+      "description": "Transmisiones intuitivas y acceso a los registros akáshicos cuando sea relevante"
+    }
+  },
+  "whenToSeek": {
+    "title": "Cuándo Buscar Apoyo de Integración",
+    "item1": "Después de una ceremonia de Bufo Alvarius",
+    "item1Detail": " — La integración dentro de las 48 horas está incluida, pero el apoyo continuo ayuda a anclar la experiencia",
+    "item2": "Después de otras experiencias con medicina de plantas",
+    "item2Detail": " — Ayahuasca, psilocibina, San Pedro, etc.",
+    "item3": "Cuando la vida se está desmoronando",
+    "item3Detail": " — A veces la disolución ocurre sin medicina. Transiciones, crisis, noches oscuras del alma",
+    "item4": "Cuando está atascado en la evasión espiritual",
+    "item4Detail": " — Ha tenido percepciones pero no están aterrizando en su vida",
+    "item5": "Cuando está listo para encarnar la verdad",
+    "item5Detail": " — Pasando de la comprensión a vivirla"
+  },
+  "cta": {
+    "title": "¿Listo para el Apoyo de Integración?",
+    "p1": "Las sesiones de integración están disponibles como trabajo independiente o como parte del viaje completo de Bufo Alvarius (Preparación → Ceremonia → Integración).",
+    "p2": "Ya sea que haya trabajado con medicina recientemente o esté navegando una transición importante de vida, estamos aquí para caminar con usted.",
+    "button": "Reservar Sesión de Integración",
+    "details": "En línea (videollamada) o en persona (Mazunte, Mexico)",
+    "linkCeremonies": "← Conozca las Ceremonias de Bufo Alvarius",
+    "linkPreparation": "Conozca la Preparación →"
+  }
+}

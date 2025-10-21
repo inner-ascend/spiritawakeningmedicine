@@ -2,8 +2,17 @@ import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
 import ImagePlaceholder from '../ImagePlaceholder';
+import { useLanguage } from '../../contexts/LanguageContext';
+import aboutEN from '../../translations/pages/about/en.json';
+import aboutES from '../../translations/pages/about/es.json';
+import aboutFR from '../../translations/pages/about/fr.json';
+
+const translations = { en: aboutEN, es: aboutES, fr: aboutFR };
 
 export default function AboutPage() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <div className="min-h-screen bg-earth-900">
       <Navigation />
@@ -22,10 +31,10 @@ export default function AboutPage() {
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
           <div className="text-5xl text-sacred-gold/60 mb-8">⊛</div>
           <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-white mb-8 leading-tight">
-            Nina & Astral
+            {t.hero.title}
           </h1>
           <p className="text-2xl md:text-3xl text-desert-sand/80 font-serif italic leading-relaxed">
-            Initiated by the Sonoran Desert · Servants of the Medicine
+            {t.hero.subtitle}
           </p>
         </div>
 
@@ -42,44 +51,40 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12 text-center">
-              The Call
+              {t.call.title}
             </h2>
 
             <div className="space-y-8 text-earth-700/80 leading-relaxed text-lg">
               <p>
-                We didn't find the medicine. It found us.
+                {t.call.p1}
               </p>
 
               <p>
-                For years, we walked the seeker's path. Meditation retreats. Therapy. Energy work.
-                Self-development courses. We thought we were healing. We thought we were growing.
+                {t.call.p2}
               </p>
 
               <p>
-                And then the medicine showed us we were still performing.
+                {t.call.p3}
               </p>
 
               <p className="text-2xl font-serif text-sacred-gold italic text-center my-12">
-                The first time we sat with Bufo, we died.
+                {t.call.quote1}
               </p>
 
               <p>
-                Not metaphorically. Not symbolically. We died.
+                {t.call.p4}
               </p>
 
               <p>
-                Everything we thought we were—our names, our stories, our achievements, our wounds,
-                our identities—dissolved. Gone. Within seconds.
+                {t.call.p5}
               </p>
 
               <p>
-                What remained was pure awareness. No separation. No "me" and "other."
-                Just... everything. And nothing.
+                {t.call.p6}
               </p>
 
               <p className="border-l-4 border-sacred-gold/40 pl-6 italic text-earth-700/70">
-                We returned to our bodies different people. Or more accurately: we returned
-                knowing there is no person. Only presence wearing temporary names.
+                {t.call.p7}
               </p>
             </div>
           </div>
@@ -112,43 +117,32 @@ export default function AboutPage() {
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-12 text-center">
-              Seri Tribe Lineage
+              {t.lineage.title}
             </h2>
 
             <div className="space-y-8 text-desert-sand/80 leading-relaxed text-lg">
               <p className="text-2xl font-serif text-sacred-gold text-center mb-8">
-                Nina and Astral have been initiated as daughter and son of the Seri Tribe<br/>
-                by elders in the Sonoran Desert, Mexico
+                {t.lineage.subtitle}
               </p>
 
               <p>
-                This medicine doesn't belong to us. It belongs to the indigenous people
-                who have held it sacred for generations. The Seri Tribe of the Sonoran Desert—
-                the original guardians of Bufo Alvarius.
+                {t.lineage.p1}
               </p>
 
               <p>
-                Our initiation wasn't a weekend workshop. It wasn't a certification.
-                It was years of apprenticeship, ceremony, humility, and dying again and again
-                until we learned how to truly hold space for death.
+                {t.lineage.p2}
               </p>
 
               <p>
-                We were taught by elders who understand that this medicine is not a tool—
-                it's a teacher. And the facilitator is not a guide—they're a servant.
+                {t.lineage.p3}
               </p>
 
               <p className="border-l-4 border-sacred-gold/40 pl-6 italic">
-                We hold this work with reverence because we know its power. We've sat with
-                the medicine hundreds of times. We've died, dissolved, returned, and broken
-                again. We've witnessed others cross the threshold and come back transformed—
-                or traumatized when the container wasn't held properly.
+                {t.lineage.p4}
               </p>
 
               <p>
-                This is why we demand preparation. Why we screen for contraindications. Why
-                we refuse to work with people who aren't ready. <strong className="text-sacred-white">This isn't
-                about money or ego—it's about protecting the sacred nature of the work.</strong>
+                {t.lineage.p5} <strong className="text-sacred-white">{t.lineage.p5Strong}</strong>
               </p>
             </div>
           </div>
@@ -160,7 +154,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
-              Training & Approach
+              {t.training.title}
             </h2>
 
             <div className="grid md:grid-cols-2 gap-12 mb-16">
@@ -168,36 +162,30 @@ export default function AboutPage() {
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
                     <span className="text-2xl">🌿</span>
-                    Years of Inner Work
+                    {t.training.innerWork.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
-                    Over a decade of deep self-development work. Hundreds/thousands of hours
-                    in meditation, therapy, shadow work, and personal ceremony. We don't guide
-                    people where we haven't gone ourselves.
+                    {t.training.innerWork.description}
                   </p>
                 </div>
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
                     <span className="text-2xl">🧠</span>
-                    Trauma-Informed Training
+                    {t.training.traumaInformed.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
-                    Specialized training in trauma-informed facilitation, nervous system work,
-                    and somatic practices. Ego dissolution can be traumatizing if not held properly—
-                    we work <em>with</em> your nervous system, not against it.
+                    {t.training.traumaInformed.description}
                   </p>
                 </div>
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
                     <span className="text-2xl">⚡</span>
-                    Energy Healing & Shamanic Practices
+                    {t.training.energyHealing.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
-                    Trained in energy healing, family constellations, shamanic journeying,
-                    and somatic bodywork. The medicine opens doors—these modalities help
-                    integrate what emerges.
+                    {t.training.energyHealing.description}
                   </p>
                 </div>
               </div>
@@ -206,34 +194,30 @@ export default function AboutPage() {
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
                     <span className="text-2xl">🎓</span>
-                    Guest Speaker & Mentor
+                    {t.training.guestSpeaker.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
-                    Guest speaker in facilitator training programs. Mentoring other practitioners
-                    in trauma-informed medicine work, integration practices, and ethical facilitation.
+                    {t.training.guestSpeaker.description}
                   </p>
                 </div>
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
                     <span className="text-2xl">🔄</span>
-                    Continuous Learning
+                    {t.training.continuousLearning.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
-                    Deepening studies with teachers in the USA and Mexico. This work is never
-                    "finished"—we're perpetual students of consciousness, death, and the sacred.
+                    {t.training.continuousLearning.description}
                   </p>
                 </div>
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
                     <span className="text-2xl">💝</span>
-                    Hundreds of Ceremonies
+                    {t.training.ceremonies.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
-                    Facilitated hundreds of Bufo ceremonies over the years. Every journey is
-                    unique. Every dissolution is sacred. We hold each one with full presence
-                    and reverence.
+                    {t.training.ceremonies.description}
                   </p>
                 </div>
               </div>
@@ -241,9 +225,7 @@ export default function AboutPage() {
 
             <div className="bg-medicine-venom rounded-2xl p-8 max-w-3xl mx-auto">
               <p className="text-earth-700/80 leading-relaxed text-center italic">
-                "We don't fix you. We don't save you. We hold space for you to remember your own
-                wholeness. The transformation happens in the field between us—and in your
-                willingness to surrender."
+                "{t.training.quote}"
               </p>
             </div>
           </div>
@@ -255,40 +237,32 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12 text-center">
-              Our Journey with the Medicine
+              {t.journey.title}
             </h2>
 
             <div className="space-y-8 text-earth-700/80 leading-relaxed text-lg">
               <p>
-                <strong className="text-earth-800">We are not above the medicine.</strong> We are students of it.
+                <strong className="text-earth-800">{t.journey.p1}</strong>{t.journey.p1Strong}
               </p>
 
               <p>
-                We've sat with Bufo more times than we can count. Some journeys were transcendent—
-                pure bliss, cosmic love, remembrance. Others were terrifying—confronting the void,
-                facing the illusion of separation, experiencing total annihilation.
+                {t.journey.p2}
               </p>
 
               <p>
-                We've also worked with Ayahuasca, psilocybin, San Pedro, and other plant teachers.
-                Each has shown us different facets of truth. But Bufo is unique—it doesn't show you
-                anything. It dissolves you completely. There's nowhere to hide.
+                {t.journey.p3}
               </p>
 
               <p className="text-2xl font-serif text-sacred-gold italic text-center my-12">
-                "We have sat with the medicine. We have died, dissolved,<br/>
-                returned, and broken again."
+                "{t.journey.quote}"
               </p>
 
               <p>
-                This isn't romantic. It's not spiritual bypassing. It's the hard-earned wisdom
-                of people who've walked through the fire and come back—again and again—
-                until we learned how to hold others through their own passage.
+                {t.journey.p4}
               </p>
 
               <p className="border-l-4 border-sacred-gold/40 pl-6 italic text-earth-700/70">
-                We don't facilitate because we've "mastered" anything. We facilitate because we've
-                been humbled enough by the medicine to know our place: servants, not saviors.
+                {t.journey.p5}
               </p>
             </div>
           </div>
@@ -300,36 +274,28 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12 text-center">
-              Why We Hold This Work
+              {t.why.title}
             </h2>
 
             <div className="space-y-8 text-earth-700/80 leading-relaxed text-lg">
               <p>
-                Because the medicine saved our lives.
+                {t.why.p1}
               </p>
 
               <p>
-                Not by fixing us. Not by making our problems disappear. But by showing us
-                that the "I" was the problem. The story, the identity, the constant seeking—
-                all of it was a defense against the simplicity of just... being.
+                {t.why.p2}
               </p>
 
               <p>
-                We facilitate Bufo ceremonies because we know what it's like to be lost in
-                spiritual concepts and hungry for truth. We know what it's like to seek and
-                seek and never arrive. And we know what it's like to finally stop—to dissolve
-                into the void and discover that the void is fullness.
+                {t.why.p3}
               </p>
 
               <p className="text-2xl font-serif text-sacred-gold text-center my-12">
-                This work is our prayer. Our service. Our way of honoring<br/>
-                the gift we were given when we died before we died.
+                {t.why.quote}
               </p>
 
               <p>
-                <strong className="text-earth-800">This is not promoted publicly.</strong> If you're here,
-                you've been guided, invited, or felt the call. Trust that. And trust yourself
-                enough to walk slowly, discerningly, into this sacred territory.
+                <strong className="text-earth-800">{t.why.p4}</strong>{t.why.p4Strong}
               </p>
             </div>
           </div>
@@ -345,13 +311,13 @@ export default function AboutPage() {
 
             <blockquote className="space-y-8 text-desert-sand/90 leading-relaxed text-xl md:text-2xl font-serif italic mb-16">
               <p>
-                "If you feel called, let's walk slowly.
+                "{t.cta.quote1}
               </p>
               <p>
-                This is sacred territory—not a service.
+                {t.cta.quote2}
               </p>
               <p className="text-sacred-gold/90">
-                Trust yourself."
+                {t.cta.quote3}"
               </p>
             </blockquote>
 
@@ -360,20 +326,20 @@ export default function AboutPage() {
                 to="/ceremonies"
                 className="inline-block px-12 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
               >
-                Learn About Bufo Ceremonies
+                {t.cta.button}
               </Link>
               <p className="text-desert-sand/60 text-sm">
-                Or explore:
+                {t.cta.explore}
                 <Link to="/preparation" className="text-sacred-gold hover:text-sacred-amber transition-colors ml-2">
-                  Preparation
+                  {t.cta.preparation}
                 </Link>
                 <span className="mx-2">·</span>
                 <Link to="/integration" className="text-sacred-gold hover:text-sacred-amber transition-colors">
-                  Integration
+                  {t.cta.integration}
                 </Link>
                 <span className="mx-2">·</span>
                 <Link to="/faq" className="text-sacred-gold hover:text-sacred-amber transition-colors">
-                  FAQ
+                  {t.cta.faq}
                 </Link>
               </p>
             </div>

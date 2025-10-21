@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "Retraites et Conteneurs Sacrés",
+    "subtitle": "Immersions de plusieurs jours et offres collaboratives"
+  },
+  "bufoRetreats": {
+    "title": "Conteneurs de Retraite Bufo",
+    "subtitle": "Voyages immersifs de 3 à 7 jours",
+    "description": "Nos retraites de plusieurs jours offrent un conteneur complet pour la transformation—préparation, cérémonie et intégration maintenues au sein d'un voyage sacré.",
+    "feature1Title": "Petits groupes :",
+    "feature1": "2 à 6 personnes maximum pour un accompagnement intime",
+    "feature2Title": "Voyage complet :",
+    "feature2": "Sessions de préparation, cérémonie Bufo, soutien à l'intégration",
+    "feature3Title": "Lieu sacré :",
+    "feature3": "Mazunte, Oaxaca, Mexique—océan, jungle, tranquillité",
+    "feature4Title": "Comprend :",
+    "feature4": "Hébergement, repas, cérémonie, cercles d'intégration, immersion dans la nature",
+    "investment": "Investissement :",
+    "investmentPrice": "€1,500-3,000 par personne",
+    "investmentDetails": "Échelle mobile disponible · Plans de paiement proposés"
+  },
+  "integrationIntensives": {
+    "title": "Intensifs d'Intégration",
+    "subtitle": "Conteneurs de week-end pour l'intégration post-cérémonie",
+    "description": "Pour ceux qui se sont déjà assis avec la médecine et ont besoin de soutien pour ancrer les insights dans la réalité incarnée.",
+    "feature1Title": "Cercles de groupe :",
+    "feature1": "Partage, témoignage, création de sens",
+    "feature2Title": "Pratiques somatiques :",
+    "feature2": "Travail respiratoire, mouvement, libération du trauma",
+    "feature3Title": "Immersion dans la nature :",
+    "feature3": "Plage, jungle, marches silencieuses",
+    "feature4Title": "Travail énergétique :",
+    "feature4": "Sessions individuelles disponibles",
+    "investment": "Investissement :",
+    "investmentPrice": "€500-1,200 par personne",
+    "investmentDetails": "Formats de 2 à 4 jours · Échelle mobile disponible"
+  },
+  "collaborations": {
+    "title": "Collaborations et Facilitation Invitée",
+    "subtitle": "Nous collaborons avec des centres de retraite, des facilitateurs et des communautés conscientes",
+    "description": "Le travail transformationnel le plus puissant se produit lorsque les porteurs de médecine unissent leurs dons. Nous sommes ouverts à co-créer des conteneurs sacrés avec des partenaires alignés.",
+    "whatWeOffer": "Ce Que Nous Offrons :",
+    "offer1Title": "Facilitation de cérémonie Bufo :",
+    "offer1": "Cérémonies invitées dans votre centre de retraite ou événement",
+    "offer2Title": "Ateliers d'intégration :",
+    "offer2": "Intégration post-cérémonie pour votre communauté",
+    "offer3Title": "Retraites co-créées :",
+    "offer3": "Concevoir et faciliter des conteneurs transformationnels de plusieurs jours",
+    "offer4Title": "Soutien à la formation :",
+    "offer4": "Conférenciers invités pour les programmes de formation de facilitateurs",
+    "button": "Explorer la Collaboration"
+  },
+  "whoWeCollaborateWith": {
+    "title": "Avec Qui Nous Collaborons",
+    "retreatCenters": {
+      "title": "Centres de Retraite",
+      "description": "Centres offrant des retraites transformationnelles qui souhaitent inclure des cérémonies Bufo ou un soutien à l'intégration dans leur programmation."
+    },
+    "communities": {
+      "title": "Communautés Conscientes",
+      "description": "Communautés intentionnelles, éco-villages et centres de guérison recherchant des facilitateurs invités pour le travail avec la médecine."
+    },
+    "facilitators": {
+      "title": "Facilitateurs Compagnons",
+      "description": "Autres facilitateurs de médecine, thérapeutes et spécialistes de l'intégration intéressés par la co-création de conteneurs multi-modalités."
+    },
+    "training": {
+      "title": "Programmes de Formation",
+      "description": "Programmes de formation de facilitateurs recherchant des conférenciers invités sur la facilitation Bufo informée par le trauma et l'intégration."
+    },
+    "quote": "Nous croyons que le travail le plus puissant se produit lorsque nous unissons notre médecine. Si vous créez des conteneurs transformationnels et vous sentez appelé à collaborer, ayons une conversation."
+  },
+  "upcomingRetreats": {
+    "title": "Retraites à Venir",
+    "comingSoonTitle": "Dates des Retraites 2025 Bientôt Disponibles",
+    "comingSoonDescription": "Nous planifions actuellement notre calendrier de retraites 2025. Rejoignez la liste d'attente pour être notifié lorsque les dates seront annoncées.",
+    "button": "Rejoindre la Liste d'Attente des Retraites"
+  },
+  "finalCta": {
+    "title": "Intéressé à Participer ou à Collaborer ?",
+    "description": "Que vous vous sentiez appelé à rejoindre une retraite ou intéressé par la co-création de conteneurs transformationnels, nous aimerions avoir de vos nouvelles.",
+    "button": "Prendre Contact",
+    "details": "Demandes de renseignements sur les retraites · Propositions de collaboration · Liste d'attente"
+  }
+}

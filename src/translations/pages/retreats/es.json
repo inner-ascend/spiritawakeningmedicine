@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "Retiros y Contenedores Sagrados",
+    "subtitle": "Inmersiones de varios días y ofertas colaborativas"
+  },
+  "bufoRetreats": {
+    "title": "Contenedores de Retiro Bufo",
+    "subtitle": "Viajes inmersivos de 3-7 días",
+    "description": "Nuestros retiros de varios días ofrecen un contenedor completo para la transformación—preparación, ceremonia e integración sostenidas dentro de un viaje sagrado.",
+    "feature1Title": "Grupos pequeños:",
+    "feature1": "Máximo 2-6 personas para un sostén íntimo",
+    "feature2Title": "Viaje completo:",
+    "feature2": "Sesiones de preparación, ceremonia Bufo, apoyo de integración",
+    "feature3Title": "Ubicación sagrada:",
+    "feature3": "Mazunte, Oaxaca, México—océano, selva, tranquilidad",
+    "feature4Title": "Incluye:",
+    "feature4": "Alojamiento, comidas, ceremonia, círculos de integración, inmersión en la naturaleza",
+    "investment": "Inversión:",
+    "investmentPrice": "€1,500-3,000 por persona",
+    "investmentDetails": "Escala móvil disponible · Planes de pago ofrecidos"
+  },
+  "integrationIntensives": {
+    "title": "Intensivos de Integración",
+    "subtitle": "Contenedores de fin de semana para integración post-ceremonia",
+    "description": "Para aquellos que ya se han sentado con la medicina y necesitan apoyo para anclar las percepciones en la realidad encarnada.",
+    "feature1Title": "Círculos grupales:",
+    "feature1": "Compartir, atestiguar, crear significado",
+    "feature2Title": "Prácticas somáticas:",
+    "feature2": "Trabajo de respiración, movimiento, liberación de trauma",
+    "feature3Title": "Inmersión en la naturaleza:",
+    "feature3": "Playa, selva, caminatas silenciosas",
+    "feature4Title": "Trabajo energético:",
+    "feature4": "Sesiones individuales disponibles",
+    "investment": "Inversión:",
+    "investmentPrice": "€500-1,200 por persona",
+    "investmentDetails": "Formatos de 2-4 días · Escala móvil disponible"
+  },
+  "collaborations": {
+    "title": "Colaboraciones y Facilitación Invitada",
+    "subtitle": "Colaboramos con centros de retiro, facilitadores y comunidades conscientes",
+    "description": "El trabajo transformacional más poderoso sucede cuando los portadores de medicina unen sus dones. Estamos abiertos a co-crear contenedores sagrados con socios alineados.",
+    "whatWeOffer": "Lo Que Ofrecemos:",
+    "offer1Title": "Facilitación de ceremonia Bufo:",
+    "offer1": "Ceremonias invitadas en su centro de retiro o evento",
+    "offer2Title": "Talleres de integración:",
+    "offer2": "Integración post-ceremonia para su comunidad",
+    "offer3Title": "Retiros co-creados:",
+    "offer3": "Diseñar y facilitar contenedores transformacionales de varios días",
+    "offer4Title": "Apoyo de formación:",
+    "offer4": "Oradores invitados para programas de formación de facilitadores",
+    "button": "Explorar Colaboración"
+  },
+  "whoWeCollaborateWith": {
+    "title": "Con Quién Colaboramos",
+    "retreatCenters": {
+      "title": "Centros de Retiro",
+      "description": "Centros que ofrecen retiros transformacionales que desean incluir ceremonias Bufo o apoyo de integración dentro de su programación."
+    },
+    "communities": {
+      "title": "Comunidades Conscientes",
+      "description": "Comunidades intencionales, eco-aldeas y centros de sanación que buscan facilitadores invitados para el trabajo con medicina."
+    },
+    "facilitators": {
+      "title": "Facilitadores Compañeros",
+      "description": "Otros facilitadores de medicina, terapeutas y especialistas en integración interesados en co-crear contenedores multi-modalidad."
+    },
+    "training": {
+      "title": "Programas de Formación",
+      "description": "Programas de formación de facilitadores que buscan oradores invitados sobre facilitación Bufo informada por trauma e integración."
+    },
+    "quote": "Creemos que el trabajo más poderoso sucede cuando unimos nuestra medicina. Si está creando contenedores transformacionales y se siente llamado a colaborar, tengamos una conversación."
+  },
+  "upcomingRetreats": {
+    "title": "Próximos Retiros",
+    "comingSoonTitle": "Fechas de Retiros 2025 Próximamente",
+    "comingSoonDescription": "Actualmente estamos planificando nuestro calendario de retiros 2025. Únase a la lista de espera para ser notificado cuando se anuncien las fechas.",
+    "button": "Unirse a la Lista de Espera de Retiros"
+  },
+  "finalCta": {
+    "title": "¿Interesado en Asistir o Colaborar?",
+    "description": "Ya sea que se sienta llamado a unirse a un retiro o interesado en co-crear contenedores transformacionales, nos encantaría saber de usted.",
+    "button": "Ponerse en Contacto",
+    "details": "Consultas de retiros · Propuestas de colaboración · Lista de espera"
+  }
+}

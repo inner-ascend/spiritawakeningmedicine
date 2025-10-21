@@ -1,0 +1,114 @@
+{
+  "hero": {
+    "title": "Begin Your Application",
+    "quote": "This work is never sold. Only offered.",
+    "description1": "If you feel the call, begin with discernment.",
+    "description2": "This is sacred territory—not a service."
+  },
+  "applicationProcess": {
+    "title": "The Application Process",
+    "subtitle": "An invitation to mutual discernment",
+    "intro1": "This is not an offering we promote publicly. If you're here, you've been guided, invited, or felt the call. The application process exists to protect all of us—and to honor the sacred nature of this work.",
+    "intro2": "Not everyone is a fit.",
+    "intro2Strong": " And that's sacred.",
+    "stepsTitle": "The Steps:",
+    "step1": {
+      "title": "Submit Private Application",
+      "description": "Fill out the form below honestly and completely. Your application will be reviewed in deep presence—not scanned quickly. We read every word."
+    },
+    "step2": {
+      "title": "Discernment & Response",
+      "description": "If there's alignment, we'll reach out within 3-7 days to schedule a brief conversation or proceed directly to preparation sessions."
+    },
+    "step3": {
+      "title": "Preparation Sessions",
+      "description": "1-2 preparation sessions are required before ceremony. These build the container, assess readiness, and ensure you're prepared for ego dissolution."
+    },
+    "step4": {
+      "title": "Medical Screening",
+      "description": "Complete health questionnaire to rule out contraindications. Safety is paramount."
+    },
+    "step5": {
+      "title": "Ceremony in Mazunte",
+      "description": "Only after preparation and screening, we discuss ceremony dates. Held in Mazunte, Oaxaca, Mexico in a sacred, private container."
+    },
+    "step6": {
+      "title": "Integration Support",
+      "description": "Integration within 48 hours included. Ongoing support available through individual sessions or extended containers."
+    },
+    "quote": "This isn't a transaction. It's a relationship. With the medicine. With yourself. With what wants to be remembered."
+  },
+  "tallyForm": {
+    "title": "Private Application Form",
+    "description": "Take your time. Answer honestly. There's no rush—this is sacred work.",
+    "iframeTitle": "Spirit Awakening Medicine - Bufo Ceremony Application",
+    "troubleText": "Having issues with the form?",
+    "openInNew": "Open in new window →"
+  },
+  "contactForm": {
+    "title": "Or Send Us a Quick Message",
+    "description": "Prefer a simpler form? Send us a message and we'll get back to you within 3-7 days.",
+    "successTitle": "Message Sent",
+    "successMessage": "Thank you for reaching out. We'll respond within 3-7 days.",
+    "sendAnother": "Send another message",
+    "fields": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What brings you here?",
+      "message": "Message",
+      "messagePlaceholder": "Tell us what you're called to explore..."
+    },
+    "sending": "Sending...",
+    "send": "Send Message",
+    "error": "Failed to send message. Please try emailing us directly."
+  },
+  "otherWays": {
+    "title": "Other Ways to Connect",
+    "email": {
+      "title": "Email",
+      "description": "For questions, ceremony inquiries, or integration support",
+      "address": "spiritawakeningmedicine@gmail.com"
+    },
+    "messaging": {
+      "title": "WhatsApp / Telegram",
+      "description": "For voice messages or text communication",
+      "phone": "+34 611 14 41 70",
+      "telegram": "Telegram: @astralintegration"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "Updates, ceremony offerings, and integration practices",
+      "handle": "@inner__ascend"
+    },
+    "location": {
+      "title": "Location",
+      "description": "Ceremonies held in nature-based sacred container",
+      "place": "Mazunte, Oaxaca, Mexico",
+      "note": "(Preparation & Integration available online)"
+    },
+    "responseTime": {
+      "title": "Response Time",
+      "description": "We aim to respond to all applications and inquiries within 3-7 days. If you don't hear back, check your spam folder or send a follow-up email. Sometimes messages get lost—it doesn't mean you're not meant to be here."
+    }
+  },
+  "important": {
+    "title": "Important to Know",
+    "item1": "Ceremony is never booked directly.",
+    "item1Detail": " Only after preparation sessions and mutual discernment.",
+    "item2": "Medical screening is mandatory.",
+    "item2Detail": " If you have contraindications, we will not proceed—for your safety.",
+    "item3": "Integration is non-negotiable.",
+    "item3Detail": " The medicine is a doorway—integration is the path.",
+    "item4": "This work is not for everyone.",
+    "item4Detail": " If your application doesn't feel aligned, we'll tell you honestly. That's not rejection—it's discernment.",
+    "item5": "No one is turned away for lack of funds.",
+    "item5Detail": " Sliding scale available. If the call is genuine, we'll find a way.",
+    "quote1": "Trust yourself. If you feel called, let's walk slowly.",
+    "quote2": "This is sacred territory—not a service.",
+    "linkCeremonies": "← Learn about Ceremonies",
+    "linkFaq": "Read FAQ & Safety →"
+  }
+}

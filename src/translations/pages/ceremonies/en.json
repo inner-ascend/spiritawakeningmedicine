@@ -1,0 +1,158 @@
+{
+  "hero": {
+    "title": "Bufo Alvarius Ceremonies",
+    "subtitle": "Die Before You Die",
+    "description1": "The most potent and profound entheogenic compound on Earth.",
+    "description2": "Sacred passage to ego dissolution and divine remembrance."
+  },
+  "what": {
+    "title": "What is Bufo Alvarius?",
+    "subtitle": "5-MeO-DMT from the Sonoran Desert Toad",
+    "p1": "Bufo Alvarius—5-MeO-DMT—is the only substance that can reliably introduce individuals to a state of full non-dual awareness, override the energetic structure of the ego, and reveal the unitary nature of reality.",
+    "p2": "This is not a psychedelic. It is a sacred teacher of death and pure remembrance. It is not for everyone, and it is not a shortcut.",
+    "experience": {
+      "title": "The Experience",
+      "speed": "Speed:",
+      "speedValue": "Effects begin within seconds of inhalation",
+      "duration": "Duration:",
+      "durationValue": "15-30 minutes of peak experience",
+      "intensity": "Intensity:",
+      "intensityValue": "Complete ego dissolution and non-dual consciousness",
+      "outcome": "Outcome:",
+      "outcomeValue": "The remembrance of what you've always been"
+    },
+    "quote": "This is not an offering we promote publicly. If you are here, you've been guided, invited, or felt the call. This path requires humility, surrender, and integration."
+  },
+  "ceremonyDetails": {
+    "title": "Ceremony Details",
+    "facilitators": {
+      "title": "Facilitators",
+      "name": "Nina & Astral",
+      "credentials": "Seri Tribe-initiated facilitators",
+      "experience": "Trauma-informed, hundreds of ceremonies held"
+    },
+    "location": {
+      "title": "Location",
+      "place": "Mazunte, Oaxaca, Mexico",
+      "description": "A sacred container in nature, held with deep reverence"
+    },
+    "groupSize": {
+      "title": "Group Size",
+      "size": "Small, intimate settings",
+      "max": "2-4 people maximum",
+      "options": "Individual or couple sessions available"
+    },
+    "timeline": {
+      "title": "Timeline",
+      "duration": "Full day experience",
+      "includes": "Includes opening prayer, ceremony, and post-ceremony rest",
+      "integration": "Integration session within 48 hours",
+      "followUp": "2-week follow-up support"
+    },
+    "whatsIncluded": {
+      "title": "What's Included",
+      "item1": "Pre-ceremony consultation",
+      "item2": "Sacred container creation & opening prayer",
+      "item3": "Bufo ceremony with full energetic holding",
+      "item4": "Touch, breath, and sound-based guidance",
+      "item5": "Full day of care and post-ceremony rest",
+      "item6": "Integration session within 48 hours",
+      "item7": "2-week follow-up support"
+    },
+    "approach": {
+      "title": "Facilitator Approach",
+      "line1": "Initiated by Seri Tribe elders",
+      "line2": "Trauma-informed protocols",
+      "line3": "Years of facilitator training",
+      "line4": "Full presence and energetic holding"
+    },
+    "requirements": {
+      "title": "Sacred Requirements",
+      "description": "This ceremony is only offered after completion of 1-2 preparation sessions and mutual discernment between facilitator and participant. Medical screening is mandatory."
+    }
+  },
+  "ceremonySpace": {
+    "quote": "Sacred container held with reverence and deep presence"
+  },
+  "isThisForYou": {
+    "title": "Is This Medicine For You?",
+    "for": {
+      "title": "This work is FOR:",
+      "item1": "Those ready to die before they die",
+      "item2": "Those who've done deep inner work and feel called to complete something",
+      "item3": "Those seeking death of illusion, not an experience",
+      "item4": "Those ready to meet resistance, ego, attachments and let them go",
+      "item5": "Those ready to surrender and integrate",
+      "item6": "Seekers tired of seeking",
+      "item7": "Those who can no longer pretend"
+    },
+    "notFor": {
+      "title": "This work is NOT for:",
+      "item1": "Those with untreated trauma or psychosis",
+      "item2": "People chasing \"highs\" or peak states",
+      "item3": "Anyone expecting \"healing from someone else\"",
+      "item4": "Anyone who refuses to integrate or slow down",
+      "item5": "Spiritual tourists",
+      "item6": "Those seeking recreation",
+      "item7": "Those expecting quick fixes"
+    },
+    "quote": "You're not broken. You're not lost. You're initiating."
+  },
+  "medical": {
+    "title": "Medical Screening Required",
+    "description": "Safety is paramount. All participants must complete a thorough health questionnaire and medical screening before ceremony. This work is not suitable for everyone.",
+    "contraindications": {
+      "title": "Contraindications",
+      "item1": "Heart conditions or cardiovascular issues",
+      "item2": "Psychosis or severe mental illness",
+      "item3": "Certain medications (SSRIs, MAOIs, etc.)",
+      "item4": "Pregnancy or breastfeeding",
+      "item5": "Severe unresolved trauma without therapeutic support",
+      "item6": "Recent surgical procedures",
+      "item7": "High blood pressure",
+      "item8": "Epilepsy or seizure disorders"
+    },
+    "disclaimer": {
+      "title": "Medical Disclaimer:",
+      "text": "All services are complementary and do not replace medical, psychological, or psychiatric care. This is sacred medicine work, not medical treatment. If you have any medical conditions, please consult with your healthcare provider before applying."
+    }
+  },
+  "investment": {
+    "title": "Investment",
+    "ceremony": {
+      "title": "Bufo Alvarius Ceremony",
+      "price": "€300-500",
+      "perPerson": "per person",
+      "item1": "Pre-ceremony consultation",
+      "item2": "Full ceremony with energetic holding (2-4 people max)",
+      "item3": "Integration session within 48 hours",
+      "item4": "2-week follow-up support"
+    },
+    "complete": {
+      "title": "Complete Journey Investment",
+      "description": "The full sacred journey includes Preparation + Ceremony + Integration:",
+      "preparation": "Preparation: €111-222 (1-2 sessions required)",
+      "ceremony": "Ceremony: €300-500",
+      "integration": "Integration: €88-111+ (1-4 sessions recommended)",
+      "total": "Total investment typically ranges €500-800+ depending on preparation and integration needs"
+    },
+    "accessibility": "Sliding scale available | BIPOC and single parent discounts | Payment plans offered",
+    "quote": "No one is ever turned away for lack of funds when the call is genuine."
+  },
+  "application": {
+    "title": "The Application Process",
+    "quote": "This work is never sold. Only offered.",
+    "description": "This is an invitation to discernment—for both of us. Not everyone is a fit. And that's sacred.",
+    "steps": {
+      "title": "Steps:",
+      "step1": "Fill out private application (reviewed in deep presence)",
+      "step2": "If aligned: Book 1-2 preparation sessions",
+      "step3": "Complete medical screening questionnaire",
+      "step4": "Only after preparation: Agree on ceremony dates",
+      "step5": "Ceremony experience in Mazunte, Mexico",
+      "step6": "Integration support unfolds as needed"
+    },
+    "cta": "Begin Your Application",
+    "link": "Learn about Preparation →"
+  }
+}

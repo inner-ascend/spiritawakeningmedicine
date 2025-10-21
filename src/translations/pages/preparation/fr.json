@@ -1,0 +1,114 @@
+{
+  "hero": {
+    "title": "Préparation Sacrée",
+    "subtitle": "Le Fondement d'un Passage en Sécurité",
+    "description1": "La préparation n'est pas optionnelle. C'est le contenant qui vous protège",
+    "description2": "alors que vous voyagez vers l'inconnu."
+  },
+  "whyMandatory": {
+    "title": "Pourquoi la Préparation est Obligatoire",
+    "subtitle1": "La médecine ne se soucie pas de savoir si vous êtes prêt.",
+    "subtitle2": "Mais votre système nerveux, si.",
+    "p1": "Bufo Alvarius est le composé enthéogène le plus puissant sur Terre. L'expérience est une dissolution complète de l'ego en quelques secondes. Votre sens du moi, votre corps, votre identité—tout se dissout.",
+    "p2": "Sans préparation adéquate, le système nerveux peut entrer en état de choc. L'esprit peut résister. Le corps peut se battre. Ce n'est pas seulement inconfortable—cela peut être traumatisant.",
+    "p3": "La préparation crée les fondations. Elle ancre votre système nerveux. Elle construit la confiance. Elle vous aide à comprendre ce que l'abandon signifie réellement—et pourquoi la résistance est futile.",
+    "p4": "C'est pourquoi 1 à 2 sessions de préparation sont requises avant toute cérémonie.",
+    "p4Detail": " Aucune exception.",
+    "noteTitle": "Note Importante",
+    "noteDescription": "La cérémonie n'est jamais réservée directement. Ce n'est qu'après avoir complété les sessions de préparation et un discernement mutuel que les dates de cérémonie seront discutées. Cela protège à la fois vous et la nature sacrée de ce travail."
+  },
+  "whatIncludes": {
+    "title": "Ce que la Préparation Comprend",
+    "session1": {
+      "title": "Première Session",
+      "duration": "60-75 minutes",
+      "item1Title": "Évaluation de la Préparation Émotionnelle:",
+      "item1": " Où êtes-vous? Qu'est-ce qui vous appelle? De quoi fuyez-vous?",
+      "item2Title": "Ancrage du Système Nerveux:",
+      "item2": " Techniques pour réguler avant, pendant et après le voyage",
+      "item3Title": "Affronter les Peurs:",
+      "item3": " Qu'est-ce qui vous effraie dans la dissolution? À quoi vous accrochez-vous?",
+      "item4Title": "Définition de l'Intention:",
+      "item4": " Non pas des objectifs—mais une écoute profonde de ce dont votre âme a besoin"
+    },
+    "session2": {
+      "title": "Deuxième Session",
+      "duration": "60-75 minutes (si nécessaire)",
+      "item1Title": "Orientation de la Cérémonie:",
+      "item1": " À quoi s'attendre, chronologie, ce qui se passe pendant la dissolution",
+      "item2Title": "Pratique de l'Abandon:",
+      "item2": " Travail de respiration et techniques somatiques pour lâcher prise",
+      "item3Title": "Rituels pour Ouvrir le Chemin:",
+      "item3": " Pratiques personnelles pour préparer le corps, l'esprit, l'âme",
+      "item4Title": "Discernement Final:",
+      "item4": " Est-ce le bon moment? Êtes-vous prêt? Sommes-nous les bons guides?"
+    },
+    "betweenTitle": "Entre les Sessions",
+    "betweenDescription": "Vous recevrez des pratiques, des réflexions et des exercices somatiques pour continuer la préparation entre les sessions. Ce travail ne commence et ne s'arrête pas dans nos rencontres—c'est un déploiement continu."
+  },
+  "medical": {
+    "title": "Processus de Dépistage Médical",
+    "description": "Pendant la préparation, vous compléterez un questionnaire de santé complet. Ce n'est pas de la bureaucratie—c'est la sécurité. Bufo est contre-indiqué pour certaines conditions médicales, et nous ne procéderons pas sans transparence totale sur votre santé.",
+    "contraindicationsTitle": "Contre-indications",
+    "contraindicationsIntro": "Si vous avez l'un des éléments suivants, Bufo pourrait ne pas être sûr pour vous:",
+    "item1": "Problèmes cardiaques ou cardiovasculaires",
+    "item2": "Hypertension artérielle (non contrôlée)",
+    "item3": "Psychose, schizophrénie ou maladie mentale grave",
+    "item4": "Utilisation active d'ISRS, IMAO ou certains antidépresseurs",
+    "item5": "Grossesse ou allaitement",
+    "item6": "Épilepsie ou troubles convulsifs",
+    "item7": "Chirurgie récente (dans les 6 mois)",
+    "item8": "Traumatisme grave non traité sans soutien thérapeutique",
+    "item9": "Abus de substances actif ou dépendance",
+    "item10": "Troubles thyroïdiens (non gérés)",
+    "disclaimer1": "Si vous avez des conditions médicales",
+    "disclaimer2": ", veuillez consulter votre professionnel de santé avant de postuler. Nous nous réservons le droit de refuser de travailler avec quiconque si le dépistage médical révèle des contre-indications.",
+    "disclaimer3": "Ce travail n'est pas un substitut au traitement médical ou psychologique."
+  },
+  "preCeremony": {
+    "title": "Pratiques Pré-Cérémonie",
+    "intro": "Entre la préparation et la cérémonie, vous recevrez des pratiques spécifiques pour approfondir votre préparation. Celles-ci peuvent inclure:",
+    "somatic": {
+      "title": "Pratiques Somatiques",
+      "description": "Travail de respiration, scan corporel, régulation du système nerveux"
+    },
+    "rituals": {
+      "title": "Rituels",
+      "description": "Cérémonies personnelles pour créer un espace sacré et une intention"
+    },
+    "dietary": {
+      "title": "Directives Alimentaires",
+      "description": "Alimentation simple et propre dans les jours précédant la cérémonie"
+    },
+    "daysBeforeTitle": "Les Jours Avant la Cérémonie",
+    "daysBefore1": "Réduire les stimulants (caféine, alcool, cannabis)",
+    "daysBefore2": "Augmenter le repos et la solitude",
+    "daysBefore3": "Tenir un journal sur les peurs, les résistances et les prières",
+    "daysBefore4": "Passer du temps dans la nature si possible",
+    "daysBefore5": "Jeûner 4 à 6 heures avant la cérémonie (l'eau est permise)"
+  },
+  "investment": {
+    "title": "Investissement",
+    "sessionTitle": "Sessions de Préparation",
+    "price": "€111",
+    "perSession": "par session (60-75 minutes)",
+    "typical": "Parcours typique:",
+    "typicalDetail": " 1 à 2 sessions requises",
+    "delivery": "Les sessions peuvent être menées en ligne (appel vidéo) ou en personne si vous voyagez au Mexique ou si nous sommes dans votre région",
+    "slidingTitle": "Tarif Dégressif Disponible",
+    "slidingDescription": "Nous offrons des tarifs dégressifs basés sur la situation financière. Réductions disponibles pour les BIPOC et les parents célibataires. Plans de paiement offerts.",
+    "quote": "Personne n'est jamais refusé par manque de fonds lorsque l'appel est authentique.",
+    "readyQuestion": "Prêt à commencer la préparation?",
+    "cta": "Commencez Votre Candidature",
+    "process": "Candidature → Préparation → Discernement → Cérémonie"
+  },
+  "nextSteps": {
+    "title": "La Séquence Sacrée",
+    "preparation": "Préparation",
+    "ceremony": "Cérémonie",
+    "integration": "Intégration",
+    "description": "Chaque phase est sacrée. Chaque phase est nécessaire. Ce n'est pas une transaction—c'est une relation. Avec la médecine. Avec vous-même. Avec ce qui veut être rappelé.",
+    "learnCeremony": "En savoir plus sur la Cérémonie →",
+    "learnIntegration": "Comprendre l'Intégration →"
+  }
+}

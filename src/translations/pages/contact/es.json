@@ -1,0 +1,114 @@
+{
+  "hero": {
+    "title": "Comience Su Aplicación",
+    "quote": "Este trabajo nunca se vende. Solo se ofrece.",
+    "description1": "Si siente el llamado, comience con discernimiento.",
+    "description2": "Este es territorio sagrado—no un servicio."
+  },
+  "applicationProcess": {
+    "title": "El Proceso de Aplicación",
+    "subtitle": "Una invitación al discernimiento mutuo",
+    "intro1": "Esta no es una oferta que promocionamos públicamente. Si está aquí, ha sido guiado, invitado, o ha sentido el llamado. El proceso de aplicación existe para protegernos a todos—y para honrar la naturaleza sagrada de este trabajo.",
+    "intro2": "No todos son un match.",
+    "intro2Strong": " Y eso es sagrado.",
+    "stepsTitle": "Los Pasos:",
+    "step1": {
+      "title": "Enviar Aplicación Privada",
+      "description": "Complete el formulario a continuación de manera honesta y completa. Su aplicación será revisada en profunda presencia—no escaneada rápidamente. Leemos cada palabra."
+    },
+    "step2": {
+      "title": "Discernimiento y Respuesta",
+      "description": "Si hay alineación, nos pondremos en contacto dentro de 3-7 días para programar una breve conversación o proceder directamente a las sesiones de preparación."
+    },
+    "step3": {
+      "title": "Sesiones de Preparación",
+      "description": "Se requieren 1-2 sesiones de preparación antes de la ceremonia. Estas construyen el contenedor, evalúan la preparación y aseguran que esté preparado para la disolución del ego."
+    },
+    "step4": {
+      "title": "Evaluación Médica",
+      "description": "Complete el cuestionario de salud para descartar contraindicaciones. La seguridad es primordial."
+    },
+    "step5": {
+      "title": "Ceremonia en Mazunte",
+      "description": "Solo después de la preparación y evaluación, discutimos las fechas de ceremonia. Se lleva a cabo en Mazunte, Oaxaca, Mexico en un contenedor sagrado y privado."
+    },
+    "step6": {
+      "title": "Apoyo de Integración",
+      "description": "Integración dentro de las 48 horas incluida. Apoyo continuo disponible a través de sesiones individuales o contenedores extendidos."
+    },
+    "quote": "Esto no es una transacción. Es una relación. Con la medicina. Con usted mismo. Con lo que quiere ser recordado."
+  },
+  "tallyForm": {
+    "title": "Formulario de Aplicación Privada",
+    "description": "Tómese su tiempo. Responda honestamente. No hay prisa—este es trabajo sagrado.",
+    "iframeTitle": "Spirit Awakening Medicine - Aplicación de Ceremonia Bufo",
+    "troubleText": "¿Tiene problemas con el formulario?",
+    "openInNew": "Abrir en nueva ventana →"
+  },
+  "contactForm": {
+    "title": "O Envíenos un Mensaje Rápido",
+    "description": "¿Prefiere un formulario más simple? Envíenos un mensaje y le responderemos dentro de 3-7 días.",
+    "successTitle": "Mensaje Enviado",
+    "successMessage": "Gracias por contactarnos. Responderemos dentro de 3-7 días.",
+    "sendAnother": "Enviar otro mensaje",
+    "fields": {
+      "name": "Nombre",
+      "namePlaceholder": "Su nombre",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "su.correo@ejemplo.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿Qué le trae aquí?",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntenos qué está llamado a explorar..."
+    },
+    "sending": "Enviando...",
+    "send": "Enviar Mensaje",
+    "error": "Error al enviar mensaje. Por favor envíenos un correo directamente."
+  },
+  "otherWays": {
+    "title": "Otras Formas de Conectar",
+    "email": {
+      "title": "Correo Electrónico",
+      "description": "Para preguntas, consultas de ceremonia, o apoyo de integración",
+      "address": "spiritawakeningmedicine@gmail.com"
+    },
+    "messaging": {
+      "title": "WhatsApp / Telegram",
+      "description": "Para mensajes de voz o comunicación por texto",
+      "phone": "+34 611 14 41 70",
+      "telegram": "Telegram: @astralintegration"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "description": "Actualizaciones, ofertas de ceremonia, y prácticas de integración",
+      "handle": "@inner__ascend"
+    },
+    "location": {
+      "title": "Ubicación",
+      "description": "Ceremonias realizadas en contenedor sagrado basado en la naturaleza",
+      "place": "Mazunte, Oaxaca, Mexico",
+      "note": "(Preparación e Integración disponibles en línea)"
+    },
+    "responseTime": {
+      "title": "Tiempo de Respuesta",
+      "description": "Nuestro objetivo es responder a todas las aplicaciones y consultas dentro de 3-7 días. Si no recibe respuesta, revise su carpeta de spam o envíe un correo de seguimiento. A veces los mensajes se pierden—no significa que no esté destinado a estar aquí."
+    }
+  },
+  "important": {
+    "title": "Importante Saber",
+    "item1": "La ceremonia nunca se reserva directamente.",
+    "item1Detail": " Solo después de las sesiones de preparación y el discernimiento mutuo.",
+    "item2": "La evaluación médica es obligatoria.",
+    "item2Detail": " Si tiene contraindicaciones, no procederemos—por su seguridad.",
+    "item3": "La integración no es negociable.",
+    "item3Detail": " La medicina es una puerta—la integración es el camino.",
+    "item4": "Este trabajo no es para todos.",
+    "item4Detail": " Si su aplicación no se siente alineada, se lo diremos honestamente. Eso no es rechazo—es discernimiento.",
+    "item5": "Nadie es rechazado por falta de fondos.",
+    "item5Detail": " Escala móvil disponible. Si el llamado es genuino, encontraremos una manera.",
+    "quote1": "Confíe en usted mismo. Si se siente llamado, caminemos lentamente.",
+    "quote2": "Este es territorio sagrado—no un servicio.",
+    "linkCeremonies": "← Conozca las Ceremonias",
+    "linkFaq": "Leer Preguntas Frecuentes y Seguridad →"
+  }
+}

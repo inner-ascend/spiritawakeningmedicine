@@ -1,0 +1,136 @@
+{
+  "hero": {
+    "title": "Soutien à l'Intégration",
+    "quote1": "La prise de conscience sans intégration n'est que",
+    "quote2": "du divertissement spirituel.",
+    "description1": "La cérémonie est une porte. L'intégration est le chemin.",
+    "description2": "C'est ici que se fait le véritable travail."
+  },
+  "whyNonNegotiable": {
+    "title": "Pourquoi l'Intégration Est Non Négociable",
+    "subtitle1": "La médecine vous montre tout.",
+    "subtitle2": "L'intégration vous apprend comment le vivre.",
+    "p1": "Pendant une cérémonie de Bufo Alvarius, vous expérimentez la dissolution complète de l'ego. Vous touchez la conscience non-duelle. Vous vous souvenez de ce que vous êtes au-delà du nom, de la forme, de l'histoire, de l'identité. Vous mourez avant de mourir.",
+    "p2": "Et puis... vous revenez.",
+    "p3": "De retour dans un corps. De retour à une vie. De retour aux relations, aux responsabilités, aux schémas, aux déclencheurs, aux blessures. De retour au même monde—mais vous n'êtes plus le même.",
+    "p4": "C'est la crise.",
+    "p4Detail": " Vous avez vu la vérité. Vous avez touché l'infini. Vous vous êtes dissous dans tout—et maintenant on s'attend à ce que vous alliez travailler, payiez des factures, ayez des conversations, naviguiez les relations comme si rien ne s'était passé.",
+    "p5": "L'intégration est le pont",
+    "p5Detail": " entre le mystique et le mondain. Entre le souvenir et la vie quotidienne. Entre la dissolution et l'incarnation.",
+    "p6": "Sans intégration, l'expérience devient un souvenir. Une histoire. Du divertissement spirituel.",
+    "p7": "Avec l'intégration,",
+    "p7Detail": " l'expérience devient vérité vécue.",
+    "includedTitle": "L'Intégration Est Incluse",
+    "includedDescription": "Chaque cérémonie de Bufo Alvarius comprend une session d'intégration dans les 48 heures et un soutien de suivi de 2 semaines. Ceci est intégré dans l'investissement de la cérémonie. Cependant, la plupart des gens bénéficient d'un travail d'intégration continu au-delà des sessions initiales."
+  },
+  "whatIncludes": {
+    "title": "Ce Que Comprend l'Intégration",
+    "emotional": {
+      "title": "Soutien Émotionnel Post-Voyage",
+      "description": "Traiter ce qui s'est passé, ce que vous avez vu, ce qui s'est dissous, ce qui veut émerger. Tenir l'espace pour la confusion, le deuil, l'extase, la terreur, l'émerveillement—tout cela."
+    },
+    "storyUnwinding": {
+      "title": "Dénouer les Histoires et Créer du Sens",
+      "description": "L'esprit veut donner un sens à l'expérience. Nous travaillons avec les symboles, les visions, les messages—non pas pour créer de nouvelles histoires, mais pour dénouer les anciennes."
+    },
+    "identity": {
+      "title": "Réalignement de l'Identité",
+      "description": "Qui êtes-vous maintenant ? Qu'est-ce qui est tombé ? Qu'est-ce qui cherche à naître ? Comment vivez-vous depuis le souvenir plutôt que l'oubli ?"
+    },
+    "trauma": {
+      "title": "Soin du Traumatisme",
+      "description": "Parfois la médecine fait remonter un traumatisme qui était enfoui. Nous ne l'évitons pas—nous en prenons soin avec des pratiques somatiques, du travail énergétique et une présence profonde."
+    },
+    "rituals": {
+      "title": "Rituels pour Incarner le Souvenir",
+      "description": "Pratiques quotidiennes, cérémonies, ancrages pour vous garder connecté à ce que vous avez touché dans le voyage. Rendre le mystique pratique."
+    },
+    "life": {
+      "title": "Pratiques d'Intégration dans la Vie",
+      "description": "Comment cette sagesse se manifeste-t-elle dans les relations ? Le travail ? La vie quotidienne ? Passer de la prise de conscience spirituelle à l'action incarnée."
+    },
+    "quote": "L'intégration ne consiste pas à 'revenir à la normale.' Il s'agit de vivre à partir d'une nouvelle normale—une où vous vous souvenez de qui vous êtes vraiment, même quand le monde oublie."
+  },
+  "packages": {
+    "title": "Forfaits d'Intégration",
+    "single": {
+      "title": "Session Individuelle",
+      "price": "€88-111",
+      "details": "75 minutes | Tarif modulable",
+      "description": "Pour ceux qui ont besoin d'une session d'intégration ciblée ou d'un soutien continu entre les expériences cérémonielles."
+    },
+    "fourSession": {
+      "badge": "Le Plus Populaire",
+      "title": "Forfait 4 Sessions",
+      "price": "€300-400",
+      "details": "Sur 4-8 semaines | Tarif modulable",
+      "description": "Conteneur d'intégration complet. Idéal pour le soutien post-cérémonie ou les transitions de vie profondes.",
+      "item1": "Sessions hebdomadaires ou bimensuelles",
+      "item2": "Soutien WhatsApp entre les sessions",
+      "item3": "Pratiques et rituels personnalisés"
+    },
+    "extended": {
+      "title": "Conteneurs Étendus",
+      "price1": "€333-777",
+      "details1": "Présence Profonde de 6 Semaines",
+      "price2": "€888-1,111",
+      "details2": "Voyage de 3 Mois",
+      "description": "Pour les transitions de vie majeures, le travail de transformation profonde, ou ceux qui construisent de nouvelles fondations après des expériences avec la médecine."
+    },
+    "slidingTitle": "Philosophie du Tarif Modulable",
+    "sliding1": "Tout le travail d'intégration est offert sur un tarif modulable",
+    "sliding2": "Réductions disponibles pour les personnes BIPOC et les parents célibataires",
+    "sliding3": "Plans de paiement offerts pour les conteneurs plus longs",
+    "quote": "Personne n'est jamais refusé par manque de fonds lorsque l'appel est authentique."
+  },
+  "modalities": {
+    "title": "Modalités d'Intégration",
+    "intro": "Les sessions d'intégration puisent dans plusieurs modalités selon ce dont vous avez besoin. Ce n'est pas formulaire—c'est profondément intuitif et réactif.",
+    "energyHealing": {
+      "title": "Guérison Énergétique",
+      "description": "Nettoyer les blocages, libérer les émotions bloquées, restaurer la cohérence énergétique"
+    },
+    "familyConstellations": {
+      "title": "Constellation Familiale",
+      "description": "Découvrir les schémas ancestraux et les enchevêtrements systémiques révélés en cérémonie"
+    },
+    "somatic": {
+      "title": "Travail Corporel Somatique",
+      "description": "Travailler avec la sagesse du corps, libérer le traumatisme retenu dans les tissus"
+    },
+    "meditation": {
+      "title": "Méditation et Travail de Respiration",
+      "description": "Pratiques d'ancrage pour rester présent avec ce qui émerge"
+    },
+    "innerChild": {
+      "title": "Travail sur l'Enfant Intérieur",
+      "description": "Reparentage des parties blessées qui émergent pendant la dissolution"
+    },
+    "channeled": {
+      "title": "Guidance Canalisée",
+      "description": "Transmissions intuitives et accès aux archives akashiques lorsque pertinent"
+    }
+  },
+  "whenToSeek": {
+    "title": "Quand Chercher un Soutien à l'Intégration",
+    "item1": "Après une cérémonie de Bufo Alvarius",
+    "item1Detail": " — L'intégration dans les 48 heures est incluse, mais un soutien continu aide à ancrer l'expérience",
+    "item2": "Après d'autres expériences de médecine des plantes",
+    "item2Detail": " — Ayahuasca, psilocybine, San Pedro, etc.",
+    "item3": "Quand la vie s'effondre",
+    "item3Detail": " — Parfois la dissolution se produit sans médecine. Transitions, effondrements, nuits obscures de l'âme",
+    "item4": "Quand vous êtes coincé dans le contournement spirituel",
+    "item4Detail": " — Vous avez eu des prises de conscience mais elles ne s'ancrent pas dans votre vie",
+    "item5": "Quand vous êtes prêt à incarner la vérité",
+    "item5Detail": " — Passer de la compréhension à la vivre"
+  },
+  "cta": {
+    "title": "Prêt pour un Soutien à l'Intégration ?",
+    "p1": "Les sessions d'intégration sont disponibles en tant que travail autonome ou dans le cadre du voyage complet de Bufo Alvarius (Préparation → Cérémonie → Intégration).",
+    "p2": "Que vous ayez récemment travaillé avec la médecine ou que vous naviguiez une transition de vie majeure, nous sommes là pour marcher avec vous.",
+    "button": "Réserver une Session d'Intégration",
+    "details": "En ligne (appel vidéo) ou en personne (Mazunte, Mexico)",
+    "linkCeremonies": "← Découvrez les Cérémonies de Bufo Alvarius",
+    "linkPreparation": "Découvrez la Préparation →"
+  }
+}

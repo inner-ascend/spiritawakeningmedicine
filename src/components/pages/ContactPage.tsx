@@ -4,8 +4,17 @@ import Navigation from '../Navigation';
 import Footer from '../Footer';
 import ImagePlaceholder from '../ImagePlaceholder';
 import emailjs from '@emailjs/browser';
+import { useLanguage } from '../../contexts/LanguageContext';
+import contactEN from '../../translations/pages/contact/en.json';
+import contactES from '../../translations/pages/contact/es.json';
+import contactFR from '../../translations/pages/contact/fr.json';
+
+const translations = { en: contactEN, es: contactES, fr: contactFR };
 
 export default function ContactPage() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -38,7 +47,7 @@ export default function ContactPage() {
       setSent(true);
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (err) {
-      setError('Failed to send message. Please try emailing us directly.');
+      setError(t.contactForm.error);
       console.error('EmailJS error:', err);
     } finally {
       setSending(false);
@@ -63,14 +72,14 @@ export default function ContactPage() {
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
           <div className="text-5xl text-sacred-gold/60 mb-8">⊹</div>
           <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-white mb-8 leading-tight">
-            Begin Your Application
+            {t.hero.title}
           </h1>
           <p className="text-2xl md:text-3xl text-sacred-gold/90 font-serif italic mb-8">
-            "This work is never sold. Only offered."
+            "{t.hero.quote}"
           </p>
           <p className="text-lg md:text-xl text-desert-sand/80 leading-relaxed max-w-3xl mx-auto">
-            If you feel the call, begin with discernment.<br/>
-            This is sacred territory—not a service.
+            {t.hero.description1}<br/>
+            {t.hero.description2}
           </p>
         </div>
 
@@ -87,27 +96,25 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12 text-center">
-              The Application Process
+              {t.applicationProcess.title}
             </h2>
 
             <div className="space-y-6 text-earth-700/80 leading-relaxed text-lg mb-16">
               <p className="text-center text-2xl font-serif text-sacred-gold italic mb-8">
-                An invitation to mutual discernment
+                {t.applicationProcess.subtitle}
               </p>
 
               <p>
-                This is not an offering we promote publicly. If you're here, you've been guided,
-                invited, or felt the call. The application process exists to protect all of us—
-                and to honor the sacred nature of this work.
+                {t.applicationProcess.intro1}
               </p>
 
               <p>
-                <strong className="text-earth-800">Not everyone is a fit.</strong> And that's sacred.
+                <strong className="text-earth-800">{t.applicationProcess.intro2}</strong>{t.applicationProcess.intro2Strong}
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-8 mb-12">
-              <h3 className="text-2xl font-serif text-earth-800 mb-8 text-center">The Steps:</h3>
+              <h3 className="text-2xl font-serif text-earth-800 mb-8 text-center">{t.applicationProcess.stepsTitle}</h3>
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -115,10 +122,9 @@ export default function ContactPage() {
                     <span className="text-sacred-gold font-bold">1</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-earth-800 mb-2">Submit Private Application</h4>
+                    <h4 className="font-semibold text-earth-800 mb-2">{t.applicationProcess.step1.title}</h4>
                     <p className="text-earth-700/70 text-sm leading-relaxed">
-                      Fill out the form below honestly and completely. Your application will be
-                      reviewed in deep presence—not scanned quickly. We read every word.
+                      {t.applicationProcess.step1.description}
                     </p>
                   </div>
                 </div>
@@ -128,10 +134,9 @@ export default function ContactPage() {
                     <span className="text-sacred-gold font-bold">2</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-earth-800 mb-2">Discernment & Response</h4>
+                    <h4 className="font-semibold text-earth-800 mb-2">{t.applicationProcess.step2.title}</h4>
                     <p className="text-earth-700/70 text-sm leading-relaxed">
-                      If there's alignment, we'll reach out within 3-7 days to schedule a brief
-                      conversation or proceed directly to preparation sessions.
+                      {t.applicationProcess.step2.description}
                     </p>
                   </div>
                 </div>
@@ -141,10 +146,9 @@ export default function ContactPage() {
                     <span className="text-sacred-gold font-bold">3</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-earth-800 mb-2">Preparation Sessions</h4>
+                    <h4 className="font-semibold text-earth-800 mb-2">{t.applicationProcess.step3.title}</h4>
                     <p className="text-earth-700/70 text-sm leading-relaxed">
-                      1-2 preparation sessions are required before ceremony. These build the container,
-                      assess readiness, and ensure you're prepared for ego dissolution.
+                      {t.applicationProcess.step3.description}
                     </p>
                   </div>
                 </div>
@@ -154,9 +158,9 @@ export default function ContactPage() {
                     <span className="text-sacred-gold font-bold">4</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-earth-800 mb-2">Medical Screening</h4>
+                    <h4 className="font-semibold text-earth-800 mb-2">{t.applicationProcess.step4.title}</h4>
                     <p className="text-earth-700/70 text-sm leading-relaxed">
-                      Complete health questionnaire to rule out contraindications. Safety is paramount.
+                      {t.applicationProcess.step4.description}
                     </p>
                   </div>
                 </div>
@@ -166,10 +170,9 @@ export default function ContactPage() {
                     <span className="text-sacred-gold font-bold">5</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-earth-800 mb-2">Ceremony in Mazunte</h4>
+                    <h4 className="font-semibold text-earth-800 mb-2">{t.applicationProcess.step5.title}</h4>
                     <p className="text-earth-700/70 text-sm leading-relaxed">
-                      Only after preparation and screening, we discuss ceremony dates. Held in
-                      Mazunte, Oaxaca, Mexico in a sacred, private container.
+                      {t.applicationProcess.step5.description}
                     </p>
                   </div>
                 </div>
@@ -179,10 +182,9 @@ export default function ContactPage() {
                     <span className="text-sacred-gold font-bold">6</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-earth-800 mb-2">Integration Support</h4>
+                    <h4 className="font-semibold text-earth-800 mb-2">{t.applicationProcess.step6.title}</h4>
                     <p className="text-earth-700/70 text-sm leading-relaxed">
-                      Integration within 48 hours included. Ongoing support available through
-                      individual sessions or extended containers.
+                      {t.applicationProcess.step6.description}
                     </p>
                   </div>
                 </div>
@@ -191,8 +193,7 @@ export default function ContactPage() {
 
             <div className="bg-medicine-venom rounded-2xl p-6 text-center">
               <p className="text-earth-700/80 leading-relaxed italic">
-                "This isn't a transaction. It's a relationship. With the medicine. With yourself.
-                With what wants to be remembered."
+                "{t.applicationProcess.quote}"
               </p>
             </div>
           </div>
@@ -214,11 +215,11 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-8 text-center">
-              Private Application Form
+              {t.tallyForm.title}
             </h2>
 
             <p className="text-lg text-earth-700/70 text-center mb-12 leading-relaxed">
-              Take your time. Answer honestly. There's no rush—this is sacred work.
+              {t.tallyForm.description}
             </p>
 
             {/* Tally Form Iframe */}
@@ -230,20 +231,20 @@ export default function ContactPage() {
                 frameBorder="0"
                 marginHeight={0}
                 marginWidth={0}
-                title="Spirit Awakening Medicine - Bufo Ceremony Application"
+                title={t.tallyForm.iframeTitle}
                 className="rounded-lg"
               />
             </div>
 
             <p className="text-sm text-earth-700/60 text-center mt-8">
-              Having issues with the form?{' '}
+              {t.tallyForm.troubleText}{' '}
               <a
                 href="https://tally.so/r/mYXQVN"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sacred-gold hover:text-sacred-amber transition-colors"
               >
-                Open in new window →
+                {t.tallyForm.openInNew}
               </a>
             </p>
           </div>
@@ -255,32 +256,32 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-8 text-center">
-              Or Send Us a Quick Message
+              {t.contactForm.title}
             </h2>
 
             <p className="text-lg text-earth-700/70 text-center mb-12 leading-relaxed">
-              Prefer a simpler form? Send us a message and we'll get back to you within 3-7 days.
+              {t.contactForm.description}
             </p>
 
             {sent ? (
               <div className="bg-white rounded-2xl p-12 text-center border-2 border-sacred-gold/40">
                 <div className="text-5xl mb-6">🙏</div>
-                <h3 className="text-2xl font-serif text-earth-800 mb-4">Message Sent</h3>
+                <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.contactForm.successTitle}</h3>
                 <p className="text-earth-700/70 leading-relaxed mb-6">
-                  Thank you for reaching out. We'll respond within 3-7 days.
+                  {t.contactForm.successMessage}
                 </p>
                 <button
                   onClick={() => setSent(false)}
                   className="text-sacred-gold hover:text-sacred-amber transition-colors font-medium"
                 >
-                  Send another message
+                  {t.contactForm.sendAnother}
                 </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-8 space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-earth-800 font-serif mb-2">
-                    Name
+                    {t.contactForm.fields.name}
                   </label>
                   <input
                     type="text"
@@ -289,13 +290,13 @@ export default function ContactPage() {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full px-4 py-3 rounded-lg border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 transition-all"
-                    placeholder="Your name"
+                    placeholder={t.contactForm.fields.namePlaceholder}
                   />
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-earth-800 font-serif mb-2">
-                    Email
+                    {t.contactForm.fields.email}
                   </label>
                   <input
                     type="email"
@@ -304,13 +305,13 @@ export default function ContactPage() {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full px-4 py-3 rounded-lg border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 transition-all"
-                    placeholder="your.email@example.com"
+                    placeholder={t.contactForm.fields.emailPlaceholder}
                   />
                 </div>
 
                 <div>
                   <label htmlFor="subject" className="block text-earth-800 font-serif mb-2">
-                    Subject
+                    {t.contactForm.fields.subject}
                   </label>
                   <input
                     type="text"
@@ -319,13 +320,13 @@ export default function ContactPage() {
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                     className="w-full px-4 py-3 rounded-lg border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 transition-all"
-                    placeholder="What brings you here?"
+                    placeholder={t.contactForm.fields.subjectPlaceholder}
                   />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-earth-800 font-serif mb-2">
-                    Message
+                    {t.contactForm.fields.message}
                   </label>
                   <textarea
                     id="message"
@@ -334,7 +335,7 @@ export default function ContactPage() {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full px-4 py-3 rounded-lg border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 transition-all resize-none"
-                    placeholder="Tell us what you're called to explore..."
+                    placeholder={t.contactForm.fields.messagePlaceholder}
                   />
                 </div>
 
@@ -349,7 +350,7 @@ export default function ContactPage() {
                   disabled={sending}
                   className="w-full px-8 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {sending ? 'Sending...' : 'Send Message'}
+                  {sending ? t.contactForm.sending : t.contactForm.send}
                 </button>
               </form>
             )}
@@ -362,44 +363,44 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12 text-center">
-              Other Ways to Connect
+              {t.otherWays.title}
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               {/* Email */}
               <div className="bg-white rounded-2xl p-8 text-center">
                 <div className="text-4xl mb-4">✉️</div>
-                <h3 className="text-2xl font-serif text-earth-800 mb-4">Email</h3>
+                <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.otherWays.email.title}</h3>
                 <p className="text-earth-700/70 mb-4 leading-relaxed text-sm">
-                  For questions, ceremony inquiries, or integration support
+                  {t.otherWays.email.description}
                 </p>
                 <a
                   href="mailto:spiritawakeningmedicine@gmail.com"
                   className="text-sacred-gold hover:text-sacred-amber transition-colors font-medium"
                 >
-                  spiritawakeningmedicine@gmail.com
+                  {t.otherWays.email.address}
                 </a>
               </div>
 
               {/* WhatsApp/Telegram */}
               <div className="bg-white rounded-2xl p-8 text-center">
                 <div className="text-4xl mb-4">💬</div>
-                <h3 className="text-2xl font-serif text-earth-800 mb-4">WhatsApp / Telegram</h3>
+                <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.otherWays.messaging.title}</h3>
                 <p className="text-earth-700/70 mb-4 leading-relaxed text-sm">
-                  For voice messages or text communication
+                  {t.otherWays.messaging.description}
                 </p>
-                <p className="text-sacred-gold font-medium mb-2">+34 611 14 41 70</p>
+                <p className="text-sacred-gold font-medium mb-2">{t.otherWays.messaging.phone}</p>
                 <p className="text-xs text-earth-700/60">
-                  Telegram: @astralintegration
+                  {t.otherWays.messaging.telegram}
                 </p>
               </div>
 
               {/* Instagram */}
               <div className="bg-white rounded-2xl p-8 text-center">
                 <div className="text-4xl mb-4">📸</div>
-                <h3 className="text-2xl font-serif text-earth-800 mb-4">Instagram</h3>
+                <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.otherWays.instagram.title}</h3>
                 <p className="text-earth-700/70 mb-4 leading-relaxed text-sm">
-                  Updates, ceremony offerings, and integration practices
+                  {t.otherWays.instagram.description}
                 </p>
                 <a
                   href="https://instagram.com/inner__ascend"
@@ -407,32 +408,30 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="text-sacred-gold hover:text-sacred-amber transition-colors font-medium"
                 >
-                  @inner__ascend
+                  {t.otherWays.instagram.handle}
                 </a>
               </div>
 
               {/* Location */}
               <div className="bg-white rounded-2xl p-8 text-center">
                 <div className="text-4xl mb-4">📍</div>
-                <h3 className="text-2xl font-serif text-earth-800 mb-4">Location</h3>
+                <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.otherWays.location.title}</h3>
                 <p className="text-earth-700/70 mb-4 leading-relaxed text-sm">
-                  Ceremonies held in nature-based sacred container
+                  {t.otherWays.location.description}
                 </p>
                 <p className="text-sacred-gold font-medium">
-                  Mazunte, Oaxaca, Mexico
+                  {t.otherWays.location.place}
                 </p>
                 <p className="text-xs text-earth-700/60 mt-2">
-                  (Preparation & Integration available online)
+                  {t.otherWays.location.note}
                 </p>
               </div>
             </div>
 
             <div className="bg-medicine-venom rounded-2xl p-8 max-w-2xl mx-auto">
-              <h4 className="text-xl font-serif text-earth-800 mb-4 text-center">Response Time</h4>
+              <h4 className="text-xl font-serif text-earth-800 mb-4 text-center">{t.otherWays.responseTime.title}</h4>
               <p className="text-earth-700/80 leading-relaxed text-center text-sm">
-                We aim to respond to all applications and inquiries within 3-7 days. If you don't
-                hear back, check your spam folder or send a follow-up email. Sometimes messages
-                get lost—it doesn't mean you're not meant to be here.
+                {t.otherWays.responseTime.description}
               </p>
             </div>
           </div>
@@ -447,7 +446,7 @@ export default function ContactPage() {
             <div className="text-center mb-12">
               <div className="text-5xl text-sacred-gold/60 mb-8">⊛</div>
               <h2 className="text-3xl md:text-4xl font-serif text-sacred-white mb-8">
-                Important to Know
+                {t.important.title}
               </h2>
             </div>
 
@@ -455,54 +454,54 @@ export default function ContactPage() {
               <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-6">
                 <p className="flex items-start gap-3">
                   <span className="text-sacred-gold text-xl">•</span>
-                  <span><strong className="text-sacred-white">Ceremony is never booked directly.</strong> Only after preparation sessions and mutual discernment.</span>
+                  <span><strong className="text-sacred-white">{t.important.item1}</strong>{t.important.item1Detail}</span>
                 </p>
               </div>
 
               <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-6">
                 <p className="flex items-start gap-3">
                   <span className="text-sacred-gold text-xl">•</span>
-                  <span><strong className="text-sacred-white">Medical screening is mandatory.</strong> If you have contraindications, we will not proceed—for your safety.</span>
+                  <span><strong className="text-sacred-white">{t.important.item2}</strong>{t.important.item2Detail}</span>
                 </p>
               </div>
 
               <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-6">
                 <p className="flex items-start gap-3">
                   <span className="text-sacred-gold text-xl">•</span>
-                  <span><strong className="text-sacred-white">Integration is non-negotiable.</strong> The medicine is a doorway—integration is the path.</span>
+                  <span><strong className="text-sacred-white">{t.important.item3}</strong>{t.important.item3Detail}</span>
                 </p>
               </div>
 
               <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-6">
                 <p className="flex items-start gap-3">
                   <span className="text-sacred-gold text-xl">•</span>
-                  <span><strong className="text-sacred-white">This work is not for everyone.</strong> If your application doesn't feel aligned, we'll tell you honestly. That's not rejection—it's discernment.</span>
+                  <span><strong className="text-sacred-white">{t.important.item4}</strong>{t.important.item4Detail}</span>
                 </p>
               </div>
 
               <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-6">
                 <p className="flex items-start gap-3">
                   <span className="text-sacred-gold text-xl">•</span>
-                  <span><strong className="text-sacred-white">No one is turned away for lack of funds.</strong> Sliding scale available. If the call is genuine, we'll find a way.</span>
+                  <span><strong className="text-sacred-white">{t.important.item5}</strong>{t.important.item5Detail}</span>
                 </p>
               </div>
             </div>
 
             <div className="text-center mt-16">
               <p className="text-2xl font-serif text-sacred-gold/90 italic leading-relaxed">
-                "Trust yourself. If you feel called, let's walk slowly.<br/>
-                This is sacred territory—not a service."
+                "{t.important.quote1}<br/>
+                {t.important.quote2}"
               </p>
             </div>
 
             <div className="text-center mt-12">
               <p className="text-desert-sand/70">
                 <Link to="/ceremonies" className="text-sacred-gold hover:text-sacred-amber transition-colors">
-                  ← Learn about Ceremonies
+                  {t.important.linkCeremonies}
                 </Link>
                 <span className="mx-4 text-desert-sand/40">|</span>
                 <Link to="/faq" className="text-sacred-gold hover:text-sacred-amber transition-colors">
-                  Read FAQ & Safety →
+                  {t.important.linkFaq}
                 </Link>
               </p>
             </div>

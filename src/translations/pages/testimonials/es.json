@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "title": "Voces del Camino",
+    "subtitle": "Experiencias reales de quienes han caminado este sendero"
+  },
+  "moreVoices": {
+    "title": "Más Voces"
+  },
+  "divider": {
+    "quote": "A la medicina no le importa si crees en ella.\nPero tu voluntad de rendirte—eso lo es todo."
+  },
+  "cta": {
+    "title": "¿Listo para Comenzar tu Viaje?",
+    "description": "Si estas historias resuenan contigo, si sientes el llamado, el proceso de aplicación es tu próximo paso.",
+    "button": "Comenzar tu Aplicación",
+    "disclaimer": "Aplicación privada · Discernimiento mutuo · Evaluación médica requerida",
+    "links": {
+      "ceremonies": "Conoce las Ceremonias de Bufo →",
+      "faq": "Lee Preguntas Frecuentes e Información de Seguridad →"
+    }
+  },
+  "testimonials": {
+    "types": {
+      "energyHealingIntegration": "Sanación Energética e Integración",
+      "bufoCeremonyIntegration": "Ceremonia de Bufo e Integración",
+      "bufoCeremony": "Ceremonia de Bufo",
+      "energyHealing": "Sanación Energética",
+      "integrationSupport": "Apoyo de Integración"
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "hero": {
+    "title": "Integration Support",
+    "quote1": "Insight without integration is just",
+    "quote2": "spiritual entertainment.",
+    "description1": "The ceremony is a doorway. Integration is the path.",
+    "description2": "This is where the real work happens."
+  },
+  "whyNonNegotiable": {
+    "title": "Why Integration Is Non-Negotiable",
+    "subtitle1": "The medicine shows you everything.",
+    "subtitle2": "Integration teaches you how to live it.",
+    "p1": "During a Bufo ceremony, you experience complete ego dissolution. You touch non-dual awareness. You remember what you are beyond name, form, story, identity. You die before you die.",
+    "p2": "And then... you come back.",
+    "p3": "Back to a body. Back to a life. Back to relationships, responsibilities, patterns, triggers, wounds. Back to the same world—but you are no longer the same.",
+    "p4": "This is the crisis.",
+    "p4Detail": " You've seen truth. You've touched infinity. You've dissolved into everything—and now you're expected to go to work, pay bills, have conversations, navigate relationships as if nothing happened.",
+    "p5": "Integration is the bridge",
+    "p5Detail": " between the mystical and the mundane. Between remembrance and daily life. Between dissolution and embodiment.",
+    "p6": "Without integration, the experience becomes a memory. A story. Spiritual entertainment.",
+    "p7": "With integration,",
+    "p7Detail": " the experience becomes lived truth.",
+    "includedTitle": "Integration Is Included",
+    "includedDescription": "Every Bufo ceremony includes an integration session within 48 hours and 2-week follow-up support. This is built into the ceremony investment. However, most people benefit from continued integration work beyond the initial sessions."
+  },
+  "whatIncludes": {
+    "title": "What Integration Includes",
+    "emotional": {
+      "title": "Post-Journey Emotional Support",
+      "description": "Processing what happened, what you saw, what dissolved, what wants to emerge. Holding space for confusion, grief, ecstasy, terror, wonder—all of it."
+    },
+    "storyUnwinding": {
+      "title": "Story Unwinding & Meaning-Making",
+      "description": "The mind wants to make sense of the experience. We work with symbols, visions, messages—not to create new stories, but to unwind old ones."
+    },
+    "identity": {
+      "title": "Identity Realignment",
+      "description": "Who are you now? What fell away? What's trying to be born? How do you live from remembrance instead of forgetting?"
+    },
+    "trauma": {
+      "title": "Trauma Tending",
+      "description": "Sometimes the medicine brings up trauma that was buried. We don't bypass it—we tend to it with somatic practices, energy work, and deep presence."
+    },
+    "rituals": {
+      "title": "Rituals to Embody Remembrance",
+      "description": "Daily practices, ceremonies, anchors to keep you connected to what you touched in the journey. Making the mystical practical."
+    },
+    "life": {
+      "title": "Life Integration Practices",
+      "description": "How does this wisdom show up in relationships? Work? Daily life? Moving from spiritual insight to embodied action."
+    },
+    "quote": "Integration isn't about 'getting back to normal.' It's about living from a new normal—one where you remember who you actually are, even when the world forgets."
+  },
+  "packages": {
+    "title": "Integration Packages",
+    "single": {
+      "title": "Single Session",
+      "price": "€88-111",
+      "details": "75 minutes | Sliding scale",
+      "description": "For those who need one focused integration session or ongoing support between ceremony experiences."
+    },
+    "fourSession": {
+      "badge": "Most Popular",
+      "title": "4-Session Package",
+      "price": "€300-400",
+      "details": "Over 4-8 weeks | Sliding scale",
+      "description": "Comprehensive integration container. Ideal for post-ceremony support or deep life transitions.",
+      "item1": "Weekly or bi-weekly sessions",
+      "item2": "WhatsApp support between sessions",
+      "item3": "Custom practices and rituals"
+    },
+    "extended": {
+      "title": "Extended Containers",
+      "price1": "€333-777",
+      "details1": "6-Week Deep Presence",
+      "price2": "€888-1,111",
+      "details2": "3-Month Journey",
+      "description": "For major life transitions, deep transformation work, or those building new foundations after medicine experiences."
+    },
+    "slidingTitle": "Sliding Scale Philosophy",
+    "sliding1": "All integration work is offered on a sliding scale",
+    "sliding2": "BIPOC and single parent discounts available",
+    "sliding3": "Payment plans offered for longer containers",
+    "quote": "No one is ever turned away for lack of funds when the call is genuine."
+  },
+  "modalities": {
+    "title": "Integration Modalities",
+    "intro": "Integration sessions draw from multiple modalities depending on what you need. This is not formulaic—it's deeply intuitive and responsive.",
+    "energyHealing": {
+      "title": "Energy Healing",
+      "description": "Clearing blocks, releasing stuck emotions, restoring energetic coherence"
+    },
+    "familyConstellations": {
+      "title": "Family Constellations",
+      "description": "Uncovering ancestral patterns and systemic entanglements revealed in ceremony"
+    },
+    "somatic": {
+      "title": "Somatic Bodywork",
+      "description": "Working with the body's wisdom, releasing trauma held in tissues"
+    },
+    "meditation": {
+      "title": "Meditation & Breathwork",
+      "description": "Anchoring practices to stay present with what's emerging"
+    },
+    "innerChild": {
+      "title": "Inner Child Work",
+      "description": "Reparenting wounded parts that surface during dissolution"
+    },
+    "channeled": {
+      "title": "Channeled Guidance",
+      "description": "Intuitive transmissions and Akashic records access when relevant"
+    }
+  },
+  "whenToSeek": {
+    "title": "When to Seek Integration Support",
+    "item1": "After a Bufo ceremony",
+    "item1Detail": " — Integration within 48 hours is included, but ongoing support helps anchor the experience",
+    "item2": "After other plant medicine experiences",
+    "item2Detail": " — Ayahuasca, psilocybin, San Pedro, etc.",
+    "item3": "When life is falling apart",
+    "item3Detail": " — Sometimes dissolution happens without medicine. Transitions, breakdowns, dark nights of the soul",
+    "item4": "When you're stuck in spiritual bypassing",
+    "item4Detail": " — You've had insights but they're not landing in your life",
+    "item5": "When you're ready to embody truth",
+    "item5Detail": " — Moving from understanding to living it"
+  },
+  "cta": {
+    "title": "Ready for Integration Support?",
+    "p1": "Integration sessions are available as standalone work or as part of the full Bufo journey (Preparation → Ceremony → Integration).",
+    "p2": "Whether you've sat with medicine recently or are navigating a major life transition, we're here to walk with you.",
+    "button": "Book Integration Session",
+    "details": "Online (video call) or in-person (Mazunte, Mexico)",
+    "linkCeremonies": "← Learn about Bufo Ceremonies",
+    "linkPreparation": "Learn about Preparation →"
+  }
+}

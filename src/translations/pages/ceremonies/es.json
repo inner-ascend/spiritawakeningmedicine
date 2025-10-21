@@ -1,0 +1,158 @@
+{
+  "hero": {
+    "title": "Ceremonias de Bufo Alvarius",
+    "subtitle": "Morir Antes de Morir",
+    "description1": "El compuesto enteogénico más potente y profundo de la Tierra.",
+    "description2": "Pasaje sagrado hacia la disolución del ego y el recuerdo divino."
+  },
+  "what": {
+    "title": "¿Qué es Bufo Alvarius?",
+    "subtitle": "5-MeO-DMT del Sapo del Desierto de Sonora",
+    "p1": "Bufo Alvarius—5-MeO-DMT—es la única sustancia que puede introducir de manera confiable a los individuos a un estado de plena conciencia no-dual, anular la estructura energética del ego y revelar la naturaleza unitaria de la realidad.",
+    "p2": "Esto no es un psicodélico. Es un maestro sagrado de la muerte y el recuerdo puro. No es para todos, y no es un atajo.",
+    "experience": {
+      "title": "La Experiencia",
+      "speed": "Velocidad:",
+      "speedValue": "Los efectos comienzan segundos después de la inhalación",
+      "duration": "Duración:",
+      "durationValue": "15-30 minutos de experiencia máxima",
+      "intensity": "Intensidad:",
+      "intensityValue": "Disolución completa del ego y conciencia no-dual",
+      "outcome": "Resultado:",
+      "outcomeValue": "El recuerdo de lo que siempre ha sido"
+    },
+    "quote": "Esta no es una ofrenda que promovemos públicamente. Si está aquí, ha sido guiado, invitado o ha sentido el llamado. Este camino requiere humildad, entrega e integración."
+  },
+  "ceremonyDetails": {
+    "title": "Detalles de la Ceremonia",
+    "facilitators": {
+      "title": "Facilitadores",
+      "name": "Nina & Astral",
+      "credentials": "Facilitadores iniciados por la Seri Tribe",
+      "experience": "Informados en trauma, cientos de ceremonias realizadas"
+    },
+    "location": {
+      "title": "Ubicación",
+      "place": "Mazunte, Oaxaca, Mexico",
+      "description": "Un contenedor sagrado en la naturaleza, sostenido con profunda reverencia"
+    },
+    "groupSize": {
+      "title": "Tamaño del Grupo",
+      "size": "Ambientes pequeños e íntimos",
+      "max": "Máximo 2-4 personas",
+      "options": "Sesiones individuales o en pareja disponibles"
+    },
+    "timeline": {
+      "title": "Cronología",
+      "duration": "Experiencia de día completo",
+      "includes": "Incluye oración de apertura, ceremonia y descanso post-ceremonia",
+      "integration": "Sesión de integración dentro de las 48 horas",
+      "followUp": "Apoyo de seguimiento de 2 semanas"
+    },
+    "whatsIncluded": {
+      "title": "Qué se Incluye",
+      "item1": "Consulta pre-ceremonia",
+      "item2": "Creación de contenedor sagrado y oración de apertura",
+      "item3": "Ceremonia de Bufo con sostén energético completo",
+      "item4": "Guía basada en tacto, respiración y sonido",
+      "item5": "Día completo de cuidado y descanso post-ceremonia",
+      "item6": "Sesión de integración dentro de las 48 horas",
+      "item7": "Apoyo de seguimiento de 2 semanas"
+    },
+    "approach": {
+      "title": "Enfoque del Facilitador",
+      "line1": "Iniciados por ancianos de la Seri Tribe",
+      "line2": "Protocolos informados en trauma",
+      "line3": "Años de entrenamiento como facilitador",
+      "line4": "Presencia completa y sostén energético"
+    },
+    "requirements": {
+      "title": "Requisitos Sagrados",
+      "description": "Esta ceremonia solo se ofrece después de completar 1-2 sesiones de preparación y discernimiento mutuo entre facilitador y participante. El examen médico es obligatorio."
+    }
+  },
+  "ceremonySpace": {
+    "quote": "Contenedor sagrado sostenido con reverencia y presencia profunda"
+  },
+  "isThisForYou": {
+    "title": "¿Es Esta Medicina Para Usted?",
+    "for": {
+      "title": "Este trabajo ES PARA:",
+      "item1": "Aquellos listos para morir antes de morir",
+      "item2": "Aquellos que han hecho trabajo interno profundo y sienten el llamado de completar algo",
+      "item3": "Aquellos que buscan la muerte de la ilusión, no una experiencia",
+      "item4": "Aquellos listos para encontrar resistencia, ego, apegos y dejarlos ir",
+      "item5": "Aquellos listos para entregarse e integrar",
+      "item6": "Buscadores cansados de buscar",
+      "item7": "Aquellos que ya no pueden seguir fingiendo"
+    },
+    "notFor": {
+      "title": "Este trabajo NO es para:",
+      "item1": "Aquellos con trauma no tratado o psicosis",
+      "item2": "Personas que persiguen \"estados elevados\" o picos de experiencia",
+      "item3": "Cualquiera que espere \"sanación de alguien más\"",
+      "item4": "Cualquiera que se niegue a integrar o desacelerar",
+      "item5": "Turistas espirituales",
+      "item6": "Aquellos que buscan recreación",
+      "item7": "Aquellos que esperan soluciones rápidas"
+    },
+    "quote": "Usted no está roto. No está perdido. Está iniciándose."
+  },
+  "medical": {
+    "title": "Examen Médico Requerido",
+    "description": "La seguridad es primordial. Todos los participantes deben completar un cuestionario de salud exhaustivo y examen médico antes de la ceremonia. Este trabajo no es adecuado para todos.",
+    "contraindications": {
+      "title": "Contraindicaciones",
+      "item1": "Condiciones cardíacas o problemas cardiovasculares",
+      "item2": "Psicosis o enfermedad mental severa",
+      "item3": "Ciertos medicamentos (ISRS, IMAO, etc.)",
+      "item4": "Embarazo o lactancia",
+      "item5": "Trauma severo no resuelto sin apoyo terapéutico",
+      "item6": "Procedimientos quirúrgicos recientes",
+      "item7": "Presión arterial alta",
+      "item8": "Epilepsia o trastornos convulsivos"
+    },
+    "disclaimer": {
+      "title": "Descargo Médico:",
+      "text": "Todos los servicios son complementarios y no reemplazan atención médica, psicológica o psiquiátrica. Este es trabajo de medicina sagrada, no tratamiento médico. Si tiene alguna condición médica, por favor consulte con su proveedor de salud antes de aplicar."
+    }
+  },
+  "investment": {
+    "title": "Inversión",
+    "ceremony": {
+      "title": "Ceremonia de Bufo Alvarius",
+      "price": "€300-500",
+      "perPerson": "por persona",
+      "item1": "Consulta pre-ceremonia",
+      "item2": "Ceremonia completa con sostén energético (máx. 2-4 personas)",
+      "item3": "Sesión de integración dentro de las 48 horas",
+      "item4": "Apoyo de seguimiento de 2 semanas"
+    },
+    "complete": {
+      "title": "Inversión del Viaje Completo",
+      "description": "El viaje sagrado completo incluye Preparación + Ceremonia + Integración:",
+      "preparation": "Preparación: €111-222 (1-2 sesiones requeridas)",
+      "ceremony": "Ceremonia: €300-500",
+      "integration": "Integración: €88-111+ (1-4 sesiones recomendadas)",
+      "total": "La inversión total típicamente varía entre €500-800+ dependiendo de las necesidades de preparación e integración"
+    },
+    "accessibility": "Escala móvil disponible | Descuentos para BIPOC y padres solteros | Planes de pago ofrecidos",
+    "quote": "Nadie es rechazado por falta de fondos cuando el llamado es genuino."
+  },
+  "application": {
+    "title": "El Proceso de Aplicación",
+    "quote": "Este trabajo nunca se vende. Solo se ofrece.",
+    "description": "Esta es una invitación al discernimiento—para ambos. No todos son compatibles. Y eso es sagrado.",
+    "steps": {
+      "title": "Pasos:",
+      "step1": "Completar aplicación privada (revisada en presencia profunda)",
+      "step2": "Si hay alineación: Reservar 1-2 sesiones de preparación",
+      "step3": "Completar cuestionario de examen médico",
+      "step4": "Solo después de la preparación: Acordar fechas de ceremonia",
+      "step5": "Experiencia ceremonial en Mazunte, Mexico",
+      "step6": "El apoyo de integración se despliega según sea necesario"
+    },
+    "cta": "Comenzar Su Aplicación",
+    "link": "Conozca sobre la Preparación →"
+  }
+}

@@ -2,8 +2,17 @@ import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
 import ImagePlaceholder from '../ImagePlaceholder';
+import { useLanguage } from '../../contexts/LanguageContext';
+import preparationEN from '../../translations/pages/preparation/en.json';
+import preparationES from '../../translations/pages/preparation/es.json';
+import preparationFR from '../../translations/pages/preparation/fr.json';
+
+const translations = { en: preparationEN, es: preparationES, fr: preparationFR };
 
 export default function PreparationPage() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <div className="min-h-screen bg-earth-900">
       <Navigation />
@@ -22,14 +31,14 @@ export default function PreparationPage() {
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
           <div className="text-6xl mb-8">🐚</div>
           <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-white mb-8 leading-tight">
-            Sacred Preparation
+            {t.hero.title}
           </h1>
           <p className="text-2xl md:text-3xl text-sacred-gold/90 font-serif font-light mb-6">
-            The Foundation of Safe Passage
+            {t.hero.subtitle}
           </p>
           <p className="text-lg md:text-xl text-desert-sand/80 leading-relaxed max-w-3xl mx-auto">
-            Preparation is not optional. It is the container that holds you safe<br/>
-            as you journey into the unknown.
+            {t.hero.description1}<br/>
+            {t.hero.description2}
           </p>
         </div>
 
@@ -46,43 +55,36 @@ export default function PreparationPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12 text-center">
-              Why Preparation Is Mandatory
+              {t.whyMandatory.title}
             </h2>
 
             <div className="space-y-8 text-earth-700/80 leading-relaxed text-lg mb-16">
               <p className="text-2xl font-serif text-sacred-gold text-center mb-8">
-                The medicine doesn't care if you're ready.<br/>
-                But your nervous system does.
+                {t.whyMandatory.subtitle1}<br/>
+                {t.whyMandatory.subtitle2}
               </p>
 
               <p>
-                Bufo Alvarius is the most powerful entheogenic compound on Earth. The experience
-                is complete ego dissolution within seconds. Your sense of self, your body, your identity—
-                everything dissolves.
+                {t.whyMandatory.p1}
               </p>
 
               <p>
-                Without proper preparation, the nervous system can go into shock. The mind can resist.
-                The body can fight. This isn't just uncomfortable—it can be traumatizing.
+                {t.whyMandatory.p2}
               </p>
 
               <p className="border-l-4 border-sacred-gold/40 pl-6 italic text-earth-700/70">
-                Preparation creates the foundation. It anchors your nervous system. It builds trust.
-                It helps you understand what surrender actually means—and why resistance is futile.
+                {t.whyMandatory.p3}
               </p>
 
               <p>
-                <strong className="text-earth-800">This is why 1-2 preparation sessions are required before any ceremony.</strong><br/>
-                No exceptions.
+                <strong className="text-earth-800">{t.whyMandatory.p4}</strong>{t.whyMandatory.p4Detail}
               </p>
             </div>
 
             <div className="bg-medicine-venom rounded-2xl p-8">
-              <h3 className="text-2xl font-serif text-earth-800 mb-4">Important Note</h3>
+              <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.whyMandatory.noteTitle}</h3>
               <p className="text-earth-700/80 leading-relaxed">
-                The ceremony is <strong>never booked directly</strong>. Only after completing preparation
-                sessions and mutual discernment will ceremony dates be discussed. This protects both
-                you and the sacred nature of the work.
+                {t.whyMandatory.noteDescription}
               </p>
             </div>
           </div>
@@ -104,7 +106,7 @@ export default function PreparationPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
-              What Preparation Includes
+              {t.whatIncludes.title}
             </h2>
 
             <div className="grid md:grid-cols-2 gap-12 mb-16">
@@ -112,25 +114,25 @@ export default function PreparationPage() {
               <div className="bg-sacred-cream rounded-2xl p-8">
                 <div className="flex items-center gap-3 mb-6">
                   <span className="text-4xl">1️⃣</span>
-                  <h3 className="text-2xl font-serif text-earth-800">First Session</h3>
+                  <h3 className="text-2xl font-serif text-earth-800">{t.whatIncludes.session1.title}</h3>
                 </div>
-                <p className="text-sm text-sacred-gold mb-6">60-75 minutes</p>
+                <p className="text-sm text-sacred-gold mb-6">{t.whatIncludes.session1.duration}</p>
                 <div className="space-y-4 text-earth-700/80 leading-relaxed">
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span><strong>Emotional Readiness Assessment:</strong> Where are you? What's calling you? What are you running from?</span>
+                    <span><strong>{t.whatIncludes.session1.item1Title}</strong>{t.whatIncludes.session1.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span><strong>Nervous System Anchoring:</strong> Techniques to regulate before, during, and after the journey</span>
+                    <span><strong>{t.whatIncludes.session1.item2Title}</strong>{t.whatIncludes.session1.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span><strong>Facing Fears:</strong> What scares you about dissolution? What are you holding onto?</span>
+                    <span><strong>{t.whatIncludes.session1.item3Title}</strong>{t.whatIncludes.session1.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span><strong>Intention Setting:</strong> Not goals—but deep listening to what your soul needs</span>
+                    <span><strong>{t.whatIncludes.session1.item4Title}</strong>{t.whatIncludes.session1.item4}</span>
                   </p>
                 </div>
               </div>
@@ -139,36 +141,34 @@ export default function PreparationPage() {
               <div className="bg-sacred-cream rounded-2xl p-8">
                 <div className="flex items-center gap-3 mb-6">
                   <span className="text-4xl">2️⃣</span>
-                  <h3 className="text-2xl font-serif text-earth-800">Second Session</h3>
+                  <h3 className="text-2xl font-serif text-earth-800">{t.whatIncludes.session2.title}</h3>
                 </div>
-                <p className="text-sm text-sacred-gold mb-6">60-75 minutes (if needed)</p>
+                <p className="text-sm text-sacred-gold mb-6">{t.whatIncludes.session2.duration}</p>
                 <div className="space-y-4 text-earth-700/80 leading-relaxed">
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span><strong>Ceremony Orientation:</strong> What to expect, timeline, what happens during dissolution</span>
+                    <span><strong>{t.whatIncludes.session2.item1Title}</strong>{t.whatIncludes.session2.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span><strong>Surrender Practice:</strong> Breath work and somatic techniques for letting go</span>
+                    <span><strong>{t.whatIncludes.session2.item2Title}</strong>{t.whatIncludes.session2.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span><strong>Rituals to Open the Path:</strong> Personal practices to prepare body, mind, spirit</span>
+                    <span><strong>{t.whatIncludes.session2.item3Title}</strong>{t.whatIncludes.session2.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span><strong>Final Discernment:</strong> Is this the right time? Are you ready? Are we the right guides?</span>
+                    <span><strong>{t.whatIncludes.session2.item4Title}</strong>{t.whatIncludes.session2.item4}</span>
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="bg-medicine-venom rounded-2xl p-8 max-w-3xl mx-auto">
-              <h4 className="text-xl font-serif text-earth-800 mb-4 text-center">Between Sessions</h4>
+              <h4 className="text-xl font-serif text-earth-800 mb-4 text-center">{t.whatIncludes.betweenTitle}</h4>
               <p className="text-earth-700/80 leading-relaxed text-center">
-                You'll receive practices, reflections, and somatic exercises to continue preparation
-                between sessions. This work doesn't start and stop in our meetings—it's a continuous
-                unfolding.
+                {t.whatIncludes.betweenDescription}
               </p>
             </div>
           </div>
@@ -182,75 +182,71 @@ export default function PreparationPage() {
             <div className="bg-desert-clay/10 border-l-4 border-desert-clay rounded-r-2xl p-8 mb-12">
               <h2 className="text-3xl font-serif text-earth-800 mb-6 flex items-center gap-3">
                 <span className="text-4xl">⚕️</span>
-                Medical Screening Process
+                {t.medical.title}
               </h2>
               <p className="text-earth-700/80 leading-relaxed mb-6">
-                During preparation, you'll complete a comprehensive health questionnaire. This isn't bureaucracy—
-                it's safety. Bufo is contraindicated for certain medical conditions, and we won't proceed
-                without full transparency about your health.
+                {t.medical.description}
               </p>
             </div>
 
-            <h3 className="text-2xl font-serif text-earth-800 mb-6">Contraindications</h3>
+            <h3 className="text-2xl font-serif text-earth-800 mb-6">{t.medical.contraindicationsTitle}</h3>
             <p className="text-earth-700/80 mb-6">
-              If you have any of the following, Bufo may not be safe for you:
+              {t.medical.contraindicationsIntro}
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               <div className="space-y-3 text-earth-700/80">
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>Heart conditions or cardiovascular issues</span>
+                  <span>{t.medical.item1}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>High blood pressure (uncontrolled)</span>
+                  <span>{t.medical.item2}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>Psychosis, schizophrenia, or severe mental illness</span>
+                  <span>{t.medical.item3}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>Active use of SSRIs, MAOIs, or certain antidepressants</span>
+                  <span>{t.medical.item4}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>Pregnancy or breastfeeding</span>
+                  <span>{t.medical.item5}</span>
                 </p>
               </div>
               <div className="space-y-3 text-earth-700/80">
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>Epilepsy or seizure disorders</span>
+                  <span>{t.medical.item6}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>Recent surgery (within 6 months)</span>
+                  <span>{t.medical.item7}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>Severe unprocessed trauma without therapeutic support</span>
+                  <span>{t.medical.item8}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>Active substance abuse or addiction</span>
+                  <span>{t.medical.item9}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>Thyroid disorders (unmanaged)</span>
+                  <span>{t.medical.item10}</span>
                 </p>
               </div>
             </div>
 
             <div className="bg-white rounded-2xl p-8 border border-sacred-gold/30">
               <p className="text-earth-700/80 leading-relaxed mb-4">
-                <strong className="text-earth-800">If you have any medical conditions</strong>, please consult
-                with your healthcare provider before applying. We reserve the right to decline working with
-                anyone if medical screening reveals contraindications.
+                <strong className="text-earth-800">{t.medical.disclaimer1}</strong>{t.medical.disclaimer2}
               </p>
               <p className="text-sm text-earth-700/70 italic">
-                This work is not a substitute for medical or psychological treatment.
+                {t.medical.disclaimer3}
               </p>
             </div>
           </div>
@@ -262,62 +258,61 @@ export default function PreparationPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12 text-center">
-              Pre-Ceremony Practices
+              {t.preCeremony.title}
             </h2>
 
             <p className="text-lg text-earth-700/80 leading-relaxed text-center mb-12 max-w-2xl mx-auto">
-              Between preparation and ceremony, you'll be given specific practices to deepen readiness.
-              These may include:
+              {t.preCeremony.intro}
             </p>
 
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="text-center space-y-4">
                 <div className="text-4xl">🧘</div>
-                <h3 className="text-xl font-serif text-earth-800">Somatic Practices</h3>
+                <h3 className="text-xl font-serif text-earth-800">{t.preCeremony.somatic.title}</h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
-                  Breath work, body scanning, nervous system regulation
+                  {t.preCeremony.somatic.description}
                 </p>
               </div>
 
               <div className="text-center space-y-4">
                 <div className="text-4xl">📿</div>
-                <h3 className="text-xl font-serif text-earth-800">Rituals</h3>
+                <h3 className="text-xl font-serif text-earth-800">{t.preCeremony.rituals.title}</h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
-                  Personal ceremonies to create sacred space and intention
+                  {t.preCeremony.rituals.description}
                 </p>
               </div>
 
               <div className="text-center space-y-4">
                 <div className="text-4xl">🌿</div>
-                <h3 className="text-xl font-serif text-earth-800">Dietary Guidelines</h3>
+                <h3 className="text-xl font-serif text-earth-800">{t.preCeremony.dietary.title}</h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
-                  Simple, clean eating in the days before ceremony
+                  {t.preCeremony.dietary.description}
                 </p>
               </div>
             </div>
 
             <div className="bg-medicine-venom rounded-2xl p-8">
-              <h4 className="text-xl font-serif text-earth-800 mb-4">The Days Before Ceremony</h4>
+              <h4 className="text-xl font-serif text-earth-800 mb-4">{t.preCeremony.daysBeforeTitle}</h4>
               <div className="space-y-3 text-earth-700/80 leading-relaxed">
                 <p className="flex items-start gap-3">
                   <span className="text-sacred-gold">•</span>
-                  <span>Reduce stimulants (caffeine, alcohol, cannabis)</span>
+                  <span>{t.preCeremony.daysBefore1}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-sacred-gold">•</span>
-                  <span>Increase rest and solitude</span>
+                  <span>{t.preCeremony.daysBefore2}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-sacred-gold">•</span>
-                  <span>Journal on fears, resistances, and prayers</span>
+                  <span>{t.preCeremony.daysBefore3}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-sacred-gold">•</span>
-                  <span>Spend time in nature if possible</span>
+                  <span>{t.preCeremony.daysBefore4}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-sacred-gold">•</span>
-                  <span>Fast for 4-6 hours before ceremony (water okay)</span>
+                  <span>{t.preCeremony.daysBefore5}</span>
                 </p>
               </div>
             </div>
@@ -330,49 +325,47 @@ export default function PreparationPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12">
-              Investment
+              {t.investment.title}
             </h2>
 
             <div className="bg-white rounded-2xl p-12 border border-earth-700/20 mb-12">
               <div className="text-5xl mb-6">🐚</div>
-              <h3 className="text-3xl font-serif text-earth-800 mb-4">Preparation Sessions</h3>
-              <div className="text-5xl font-serif text-sacred-gold mb-6">€111</div>
-              <p className="text-lg text-earth-700/70 mb-8">per session (60-75 minutes)</p>
+              <h3 className="text-3xl font-serif text-earth-800 mb-4">{t.investment.sessionTitle}</h3>
+              <div className="text-5xl font-serif text-sacred-gold mb-6">{t.investment.price}</div>
+              <p className="text-lg text-earth-700/70 mb-8">{t.investment.perSession}</p>
 
               <div className="text-earth-700/80 leading-relaxed max-w-md mx-auto">
                 <p className="mb-4">
-                  <strong className="text-earth-800">Typical journey:</strong> 1-2 sessions required
+                  <strong className="text-earth-800">{t.investment.typical}</strong>{t.investment.typicalDetail}
                 </p>
                 <p className="text-sm text-earth-700/60">
-                  Sessions can be conducted online (video call) or in-person if you're traveling to Mexico
-                  or if we're in your area
+                  {t.investment.delivery}
                 </p>
               </div>
             </div>
 
             <div className="bg-medicine-venom rounded-2xl p-8 mb-12">
-              <h4 className="text-xl font-serif text-earth-800 mb-4">Sliding Scale Available</h4>
+              <h4 className="text-xl font-serif text-earth-800 mb-4">{t.investment.slidingTitle}</h4>
               <p className="text-earth-700/80 leading-relaxed">
-                We offer sliding scale pricing based on financial situation. BIPOC and single parent
-                discounts available. Payment plans offered.
+                {t.investment.slidingDescription}
               </p>
               <p className="text-earth-700/70 italic mt-4">
-                "No one is ever turned away for lack of funds when the call is genuine."
+                "{t.investment.quote}"
               </p>
             </div>
 
             <div className="text-center space-y-4">
               <p className="text-lg text-earth-700/80">
-                Ready to begin preparation?
+                {t.investment.readyQuestion}
               </p>
               <Link
                 to="/contact"
                 className="inline-block px-12 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
               >
-                Start Your Application
+                {t.investment.cta}
               </Link>
               <p className="text-sm text-earth-700/60">
-                Application → Preparation → Discernment → Ceremony
+                {t.investment.process}
               </p>
             </div>
           </div>
@@ -385,36 +378,35 @@ export default function PreparationPage() {
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-serif text-sacred-white mb-8">
-              The Sacred Sequence
+              {t.nextSteps.title}
             </h2>
 
             <div className="space-y-6 text-desert-sand/80 text-lg">
               <div className="flex items-center justify-center gap-4">
                 <span className="text-3xl">🐚</span>
-                <span className="text-2xl font-serif text-sacred-gold">Preparation</span>
+                <span className="text-2xl font-serif text-sacred-gold">{t.nextSteps.preparation}</span>
                 <span className="text-desert-sand/50">→</span>
                 <span className="text-3xl">🔥</span>
-                <span className="text-2xl font-serif text-sacred-gold">Ceremony</span>
+                <span className="text-2xl font-serif text-sacred-gold">{t.nextSteps.ceremony}</span>
                 <span className="text-desert-sand/50">→</span>
                 <span className="text-3xl">🌿</span>
-                <span className="text-2xl font-serif text-sacred-gold">Integration</span>
+                <span className="text-2xl font-serif text-sacred-gold">{t.nextSteps.integration}</span>
               </div>
 
               <p className="text-desert-sand/70 italic max-w-2xl mx-auto pt-8">
-                Each phase is sacred. Each phase is necessary. This is not a transaction—
-                it's a relationship. With the medicine. With yourself. With what wants to be remembered.
+                {t.nextSteps.description}
               </p>
             </div>
 
             <div className="mt-12 space-y-4 text-desert-sand/70">
               <p>
                 <Link to="/ceremonies" className="text-sacred-gold hover:text-sacred-amber transition-colors">
-                  Learn about the Ceremony →
+                  {t.nextSteps.learnCeremony}
                 </Link>
               </p>
               <p>
                 <Link to="/integration" className="text-sacred-gold hover:text-sacred-amber transition-colors">
-                  Understand Integration →
+                  {t.nextSteps.learnIntegration}
                 </Link>
               </p>
             </div>

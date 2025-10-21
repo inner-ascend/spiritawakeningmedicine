@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "title": "Retreats & Sacred Containers",
+    "subtitle": "Multi-day immersions and collaborative offerings"
+  },
+  "bufoRetreats": {
+    "title": "Bufo Retreat Containers",
+    "subtitle": "3-7 day immersive journeys",
+    "description": "Our multi-day retreats offer a complete container for transformation—preparation, ceremony, and integration held within one sacred journey.",
+    "feature1Title": "Small groups:",
+    "feature1": "2-6 people maximum for intimate holding",
+    "feature2Title": "Complete journey:",
+    "feature2": "Preparation sessions, Bufo ceremony, integration support",
+    "feature3Title": "Sacred location:",
+    "feature3": "Mazunte, Oaxaca, Mexico—ocean, jungle, tranquility",
+    "feature4Title": "Includes:",
+    "feature4": "Accommodation, meals, ceremony, integration circles, nature immersion",
+    "investment": "Investment:",
+    "investmentPrice": "€1,500-3,000 per person",
+    "investmentDetails": "Sliding scale available · Payment plans offered"
+  },
+  "integrationIntensives": {
+    "title": "Integration Intensives",
+    "subtitle": "Weekend containers for post-ceremony integration",
+    "description": "For those who've already sat with medicine and need support anchoring the insights into embodied reality.",
+    "feature1Title": "Group circles:",
+    "feature1": "Sharing, witnessing, meaning-making",
+    "feature2Title": "Somatic practices:",
+    "feature2": "Breathwork, movement, trauma release",
+    "feature3Title": "Nature immersion:",
+    "feature3": "Beach, jungle, silent walks",
+    "feature4Title": "Energy work:",
+    "feature4": "Individual sessions available",
+    "investment": "Investment:",
+    "investmentPrice": "€500-1,200 per person",
+    "investmentDetails": "2-4 day formats · Sliding scale available"
+  },
+  "collaborations": {
+    "title": "Collaborations & Guest Facilitation",
+    "subtitle": "We collaborate with retreat centers, facilitators, and conscious communities",
+    "description": "The most powerful transformational work happens when medicine holders unite their gifts. We're open to co-creating sacred containers with aligned partners.",
+    "whatWeOffer": "What We Offer:",
+    "offer1Title": "Bufo ceremony facilitation:",
+    "offer1": "Guest ceremonies at your retreat center or event",
+    "offer2Title": "Integration workshops:",
+    "offer2": "Post-ceremony integration for your community",
+    "offer3Title": "Co-created retreats:",
+    "offer3": "Design and facilitate multi-day transformational containers",
+    "offer4Title": "Training support:",
+    "offer4": "Guest speakers for facilitator training programs",
+    "button": "Explore Collaboration"
+  },
+  "whoWeCollaborateWith": {
+    "title": "Who We Collaborate With",
+    "retreatCenters": {
+      "title": "Retreat Centers",
+      "description": "Centers offering transformational retreats who want to include Bufo ceremonies or integration support within their programming."
+    },
+    "communities": {
+      "title": "Conscious Communities",
+      "description": "Intentional communities, eco-villages, and healing centers seeking guest facilitators for medicine work."
+    },
+    "facilitators": {
+      "title": "Fellow Facilitators",
+      "description": "Other medicine facilitators, therapists, and integration specialists interested in co-creating multi-modality containers."
+    },
+    "training": {
+      "title": "Training Programs",
+      "description": "Facilitator training programs seeking guest speakers on trauma-informed Bufo facilitation and integration."
+    },
+    "quote": "We believe the most powerful work happens when we unite our medicine. If you're creating transformational containers and feel called to collaborate, let's have a conversation."
+  },
+  "upcomingRetreats": {
+    "title": "Upcoming Retreats",
+    "comingSoonTitle": "2025 Retreat Dates Coming Soon",
+    "comingSoonDescription": "We're currently planning our 2025 retreat calendar. Join the waitlist to be notified when dates are announced.",
+    "button": "Join Retreat Waitlist"
+  },
+  "finalCta": {
+    "title": "Interested in Attending or Collaborating?",
+    "description": "Whether you're called to join a retreat or interested in co-creating transformational containers, we'd love to hear from you.",
+    "button": "Get In Touch",
+    "details": "Retreat inquiries · Collaboration proposals · Waitlist"
+  }
+}

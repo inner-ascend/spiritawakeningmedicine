@@ -1,0 +1,114 @@
+{
+  "hero": {
+    "title": "Sacred Preparation",
+    "subtitle": "The Foundation of Safe Passage",
+    "description1": "Preparation is not optional. It is the container that holds you safe",
+    "description2": "as you journey into the unknown."
+  },
+  "whyMandatory": {
+    "title": "Why Preparation Is Mandatory",
+    "subtitle1": "The medicine doesn't care if you're ready.",
+    "subtitle2": "But your nervous system does.",
+    "p1": "Bufo Alvarius is the most powerful entheogenic compound on Earth. The experience is complete ego dissolution within seconds. Your sense of self, your body, your identity—everything dissolves.",
+    "p2": "Without proper preparation, the nervous system can go into shock. The mind can resist. The body can fight. This isn't just uncomfortable—it can be traumatizing.",
+    "p3": "Preparation creates the foundation. It anchors your nervous system. It builds trust. It helps you understand what surrender actually means—and why resistance is futile.",
+    "p4": "This is why 1-2 preparation sessions are required before any ceremony.",
+    "p4Detail": " No exceptions.",
+    "noteTitle": "Important Note",
+    "noteDescription": "The ceremony is never booked directly. Only after completing preparation sessions and mutual discernment will ceremony dates be discussed. This protects both you and the sacred nature of the work."
+  },
+  "whatIncludes": {
+    "title": "What Preparation Includes",
+    "session1": {
+      "title": "First Session",
+      "duration": "60-75 minutes",
+      "item1Title": "Emotional Readiness Assessment:",
+      "item1": " Where are you? What's calling you? What are you running from?",
+      "item2Title": "Nervous System Anchoring:",
+      "item2": " Techniques to regulate before, during, and after the journey",
+      "item3Title": "Facing Fears:",
+      "item3": " What scares you about dissolution? What are you holding onto?",
+      "item4Title": "Intention Setting:",
+      "item4": " Not goals—but deep listening to what your soul needs"
+    },
+    "session2": {
+      "title": "Second Session",
+      "duration": "60-75 minutes (if needed)",
+      "item1Title": "Ceremony Orientation:",
+      "item1": " What to expect, timeline, what happens during dissolution",
+      "item2Title": "Surrender Practice:",
+      "item2": " Breath work and somatic techniques for letting go",
+      "item3Title": "Rituals to Open the Path:",
+      "item3": " Personal practices to prepare body, mind, spirit",
+      "item4Title": "Final Discernment:",
+      "item4": " Is this the right time? Are you ready? Are we the right guides?"
+    },
+    "betweenTitle": "Between Sessions",
+    "betweenDescription": "You'll receive practices, reflections, and somatic exercises to continue preparation between sessions. This work doesn't start and stop in our meetings—it's a continuous unfolding."
+  },
+  "medical": {
+    "title": "Medical Screening Process",
+    "description": "During preparation, you'll complete a comprehensive health questionnaire. This isn't bureaucracy—it's safety. Bufo is contraindicated for certain medical conditions, and we won't proceed without full transparency about your health.",
+    "contraindicationsTitle": "Contraindications",
+    "contraindicationsIntro": "If you have any of the following, Bufo may not be safe for you:",
+    "item1": "Heart conditions or cardiovascular issues",
+    "item2": "High blood pressure (uncontrolled)",
+    "item3": "Psychosis, schizophrenia, or severe mental illness",
+    "item4": "Active use of SSRIs, MAOIs, or certain antidepressants",
+    "item5": "Pregnancy or breastfeeding",
+    "item6": "Epilepsy or seizure disorders",
+    "item7": "Recent surgery (within 6 months)",
+    "item8": "Severe unprocessed trauma without therapeutic support",
+    "item9": "Active substance abuse or addiction",
+    "item10": "Thyroid disorders (unmanaged)",
+    "disclaimer1": "If you have any medical conditions",
+    "disclaimer2": ", please consult with your healthcare provider before applying. We reserve the right to decline working with anyone if medical screening reveals contraindications.",
+    "disclaimer3": "This work is not a substitute for medical or psychological treatment."
+  },
+  "preCeremony": {
+    "title": "Pre-Ceremony Practices",
+    "intro": "Between preparation and ceremony, you'll be given specific practices to deepen readiness. These may include:",
+    "somatic": {
+      "title": "Somatic Practices",
+      "description": "Breath work, body scanning, nervous system regulation"
+    },
+    "rituals": {
+      "title": "Rituals",
+      "description": "Personal ceremonies to create sacred space and intention"
+    },
+    "dietary": {
+      "title": "Dietary Guidelines",
+      "description": "Simple, clean eating in the days before ceremony"
+    },
+    "daysBeforeTitle": "The Days Before Ceremony",
+    "daysBefore1": "Reduce stimulants (caffeine, alcohol, cannabis)",
+    "daysBefore2": "Increase rest and solitude",
+    "daysBefore3": "Journal on fears, resistances, and prayers",
+    "daysBefore4": "Spend time in nature if possible",
+    "daysBefore5": "Fast for 4-6 hours before ceremony (water okay)"
+  },
+  "investment": {
+    "title": "Investment",
+    "sessionTitle": "Preparation Sessions",
+    "price": "€111",
+    "perSession": "per session (60-75 minutes)",
+    "typical": "Typical journey:",
+    "typicalDetail": " 1-2 sessions required",
+    "delivery": "Sessions can be conducted online (video call) or in-person if you're traveling to Mexico or if we're in your area",
+    "slidingTitle": "Sliding Scale Available",
+    "slidingDescription": "We offer sliding scale pricing based on financial situation. BIPOC and single parent discounts available. Payment plans offered.",
+    "quote": "No one is ever turned away for lack of funds when the call is genuine.",
+    "readyQuestion": "Ready to begin preparation?",
+    "cta": "Start Your Application",
+    "process": "Application → Preparation → Discernment → Ceremony"
+  },
+  "nextSteps": {
+    "title": "The Sacred Sequence",
+    "preparation": "Preparation",
+    "ceremony": "Ceremony",
+    "integration": "Integration",
+    "description": "Each phase is sacred. Each phase is necessary. This is not a transaction—it's a relationship. With the medicine. With yourself. With what wants to be remembered.",
+    "learnCeremony": "Learn about the Ceremony →",
+    "learnIntegration": "Understand Integration →"
+  }
+}

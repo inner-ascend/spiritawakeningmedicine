@@ -1,0 +1,114 @@
+{
+  "hero": {
+    "title": "Preparación Sagrada",
+    "subtitle": "El Fundamento del Paso Seguro",
+    "description1": "La preparación no es opcional. Es el recipiente que le mantiene seguro",
+    "description2": "mientras viaja hacia lo desconocido."
+  },
+  "whyMandatory": {
+    "title": "Por Qué la Preparación Es Obligatoria",
+    "subtitle1": "A la medicina no le importa si usted está listo.",
+    "subtitle2": "Pero a su sistema nervioso sí.",
+    "p1": "Bufo Alvarius es el compuesto enteogénico más poderoso de la Tierra. La experiencia es la disolución completa del ego en cuestión de segundos. Su sentido del yo, su cuerpo, su identidad—todo se disuelve.",
+    "p2": "Sin la preparación adecuada, el sistema nervioso puede entrar en shock. La mente puede resistirse. El cuerpo puede luchar. Esto no es solo incómodo—puede ser traumatizante.",
+    "p3": "La preparación crea el fundamento. Ancla su sistema nervioso. Construye confianza. Le ayuda a comprender lo que realmente significa rendirse—y por qué la resistencia es inútil.",
+    "p4": "Por esto se requieren 1-2 sesiones de preparación antes de cualquier ceremonia.",
+    "p4Detail": " Sin excepciones.",
+    "noteTitle": "Nota Importante",
+    "noteDescription": "La ceremonia nunca se reserva directamente. Solo después de completar las sesiones de preparación y el discernimiento mutuo se discutirán las fechas de la ceremonia. Esto protege tanto a usted como la naturaleza sagrada del trabajo."
+  },
+  "whatIncludes": {
+    "title": "Qué Incluye la Preparación",
+    "session1": {
+      "title": "Primera Sesión",
+      "duration": "60-75 minutos",
+      "item1Title": "Evaluación de Preparación Emocional:",
+      "item1": " ¿Dónde se encuentra usted? ¿Qué le está llamando? ¿De qué está huiendo?",
+      "item2Title": "Anclaje del Sistema Nervioso:",
+      "item2": " Técnicas para regular antes, durante y después del viaje",
+      "item3Title": "Enfrentar los Miedos:",
+      "item3": " ¿Qué le asusta sobre la disolución? ¿A qué se está aferrando?",
+      "item4Title": "Establecimiento de Intención:",
+      "item4": " No metas—sino escuchar profundamente lo que su alma necesita"
+    },
+    "session2": {
+      "title": "Segunda Sesión",
+      "duration": "60-75 minutos (si es necesario)",
+      "item1Title": "Orientación de Ceremonia:",
+      "item1": " Qué esperar, cronología, qué sucede durante la disolución",
+      "item2Title": "Práctica de Rendición:",
+      "item2": " Trabajo de respiración y técnicas somáticas para soltar",
+      "item3Title": "Rituales para Abrir el Camino:",
+      "item3": " Prácticas personales para preparar el cuerpo, la mente, el espíritu",
+      "item4Title": "Discernimiento Final:",
+      "item4": " ¿Es este el momento adecuado? ¿Está usted listo? ¿Somos los guías correctos?"
+    },
+    "betweenTitle": "Entre Sesiones",
+    "betweenDescription": "Recibirá prácticas, reflexiones y ejercicios somáticos para continuar la preparación entre sesiones. Este trabajo no empieza y termina en nuestras reuniones—es un despliegue continuo."
+  },
+  "medical": {
+    "title": "Proceso de Evaluación Médica",
+    "description": "Durante la preparación, usted completará un cuestionario de salud integral. Esto no es burocracia—es seguridad. Bufo está contraindicado para ciertas condiciones médicas, y no procederemos sin transparencia completa sobre su salud.",
+    "contraindicationsTitle": "Contraindicaciones",
+    "contraindicationsIntro": "Si usted tiene alguna de las siguientes, Bufo puede no ser seguro para usted:",
+    "item1": "Afecciones cardíacas o problemas cardiovasculares",
+    "item2": "Presión arterial alta (no controlada)",
+    "item3": "Psicosis, esquizofrenia o enfermedades mentales graves",
+    "item4": "Uso activo de ISRS, IMAO o ciertos antidepresivos",
+    "item5": "Embarazo o lactancia",
+    "item6": "Epilepsia o trastornos convulsivos",
+    "item7": "Cirugía reciente (dentro de 6 meses)",
+    "item8": "Trauma grave no procesado sin apoyo terapéutico",
+    "item9": "Abuso activo de sustancias o adicción",
+    "item10": "Trastornos de la tiroides (no gestionados)",
+    "disclaimer1": "Si usted tiene alguna condición médica",
+    "disclaimer2": ", por favor consulte con su proveedor de atención médica antes de aplicar. Nos reservamos el derecho de rechazar trabajar con cualquier persona si la evaluación médica revela contraindicaciones.",
+    "disclaimer3": "Este trabajo no es un sustituto del tratamiento médico o psicológico."
+  },
+  "preCeremony": {
+    "title": "Prácticas Pre-Ceremonia",
+    "intro": "Entre la preparación y la ceremonia, se le darán prácticas específicas para profundizar la preparación. Estas pueden incluir:",
+    "somatic": {
+      "title": "Prácticas Somáticas",
+      "description": "Trabajo de respiración, escaneo corporal, regulación del sistema nervioso"
+    },
+    "rituals": {
+      "title": "Rituales",
+      "description": "Ceremonias personales para crear espacio sagrado e intención"
+    },
+    "dietary": {
+      "title": "Pautas Dietéticas",
+      "description": "Alimentación simple y limpia en los días antes de la ceremonia"
+    },
+    "daysBeforeTitle": "Los Días Antes de la Ceremonia",
+    "daysBefore1": "Reducir estimulantes (cafeína, alcohol, cannabis)",
+    "daysBefore2": "Aumentar el descanso y la soledad",
+    "daysBefore3": "Escribir en diario sobre miedos, resistencias y oraciones",
+    "daysBefore4": "Pasar tiempo en la naturaleza si es posible",
+    "daysBefore5": "Ayunar durante 4-6 horas antes de la ceremonia (agua está bien)"
+  },
+  "investment": {
+    "title": "Inversión",
+    "sessionTitle": "Sesiones de Preparación",
+    "price": "€111",
+    "perSession": "por sesión (60-75 minutos)",
+    "typical": "Jornada típica:",
+    "typicalDetail": " 1-2 sesiones requeridas",
+    "delivery": "Las sesiones se pueden realizar en línea (videollamada) o en persona si usted está viajando a México o si estamos en su área",
+    "slidingTitle": "Escala Móvil Disponible",
+    "slidingDescription": "Ofrecemos precios de escala móvil según la situación financiera. Descuentos disponibles para BIPOC y padres solteros. Se ofrecen planes de pago.",
+    "quote": "Nadie es rechazado por falta de fondos cuando el llamado es genuino.",
+    "readyQuestion": "¿Listo para comenzar la preparación?",
+    "cta": "Comience Su Solicitud",
+    "process": "Solicitud → Preparación → Discernimiento → Ceremonia"
+  },
+  "nextSteps": {
+    "title": "La Secuencia Sagrada",
+    "preparation": "Preparación",
+    "ceremony": "Ceremonia",
+    "integration": "Integración",
+    "description": "Cada fase es sagrada. Cada fase es necesaria. Esto no es una transacción—es una relación. Con la medicina. Con usted mismo. Con lo que quiere ser recordado.",
+    "learnCeremony": "Conozca sobre la Ceremonia →",
+    "learnIntegration": "Comprenda la Integración →"
+  }
+}

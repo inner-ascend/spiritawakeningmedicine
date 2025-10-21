@@ -1,0 +1,158 @@
+{
+  "hero": {
+    "title": "Cérémonies Bufo Alvarius",
+    "subtitle": "Mourir Avant de Mourir",
+    "description1": "Le composé enthéogène le plus puissant et profond sur Terre.",
+    "description2": "Passage sacré vers la dissolution de l'ego et le souvenir divin."
+  },
+  "what": {
+    "title": "Qu'est-ce que le Bufo Alvarius ?",
+    "subtitle": "5-MeO-DMT du Crapaud du Désert de Sonora",
+    "p1": "Le Bufo Alvarius—5-MeO-DMT—est la seule substance capable d'introduire de manière fiable les individus à un état de pleine conscience non-duelle, de supplanter la structure énergétique de l'ego et de révéler la nature unitaire de la réalité.",
+    "p2": "Ce n'est pas un psychédélique. C'est un enseignant sacré de la mort et du souvenir pur. Ce n'est pas pour tout le monde, et ce n'est pas un raccourci.",
+    "experience": {
+      "title": "L'Expérience",
+      "speed": "Rapidité :",
+      "speedValue": "Les effets commencent quelques secondes après l'inhalation",
+      "duration": "Durée :",
+      "durationValue": "15-30 minutes d'expérience au sommet",
+      "intensity": "Intensité :",
+      "intensityValue": "Dissolution complète de l'ego et conscience non-duelle",
+      "outcome": "Résultat :",
+      "outcomeValue": "Le souvenir de ce que vous avez toujours été"
+    },
+    "quote": "Ce n'est pas une offre que nous promouvons publiquement. Si vous êtes ici, vous avez été guidé, invité, ou vous avez ressenti l'appel. Ce chemin exige humilité, abandon et intégration."
+  },
+  "ceremonyDetails": {
+    "title": "Détails de la Cérémonie",
+    "facilitators": {
+      "title": "Facilitateurs",
+      "name": "Nina & Astral",
+      "credentials": "Facilitateurs initiés par la tribu Seri",
+      "experience": "Approche informée par le trauma, des centaines de cérémonies tenues"
+    },
+    "location": {
+      "title": "Lieu",
+      "place": "Mazunte, Oaxaca, Mexico",
+      "description": "Un contenant sacré dans la nature, tenu avec profonde révérence"
+    },
+    "groupSize": {
+      "title": "Taille du Groupe",
+      "size": "Cadres petits et intimes",
+      "max": "2-4 personnes maximum",
+      "options": "Sessions individuelles ou en couple disponibles"
+    },
+    "timeline": {
+      "title": "Déroulement",
+      "duration": "Expérience d'une journée complète",
+      "includes": "Comprend prière d'ouverture, cérémonie et repos post-cérémonie",
+      "integration": "Session d'intégration dans les 48 heures",
+      "followUp": "Soutien de suivi pendant 2 semaines"
+    },
+    "whatsIncluded": {
+      "title": "Ce qui est Inclus",
+      "item1": "Consultation pré-cérémonie",
+      "item2": "Création d'un contenant sacré et prière d'ouverture",
+      "item3": "Cérémonie Bufo avec maintien énergétique complet",
+      "item4": "Guidance par le toucher, la respiration et le son",
+      "item5": "Journée complète de soins et repos post-cérémonie",
+      "item6": "Session d'intégration dans les 48 heures",
+      "item7": "Soutien de suivi pendant 2 semaines"
+    },
+    "approach": {
+      "title": "Approche des Facilitateurs",
+      "line1": "Initiés par les anciens de la tribu Seri",
+      "line2": "Protocoles informés par le trauma",
+      "line3": "Années de formation en facilitation",
+      "line4": "Présence totale et maintien énergétique"
+    },
+    "requirements": {
+      "title": "Exigences Sacrées",
+      "description": "Cette cérémonie n'est offerte qu'après la complétion de 1-2 sessions de préparation et un discernement mutuel entre facilitateur et participant. Le dépistage médical est obligatoire."
+    }
+  },
+  "ceremonySpace": {
+    "quote": "Contenant sacré tenu avec révérence et présence profonde"
+  },
+  "isThisForYou": {
+    "title": "Cette Médecine est-elle Pour Vous ?",
+    "for": {
+      "title": "Ce travail est POUR :",
+      "item1": "Ceux qui sont prêts à mourir avant de mourir",
+      "item2": "Ceux qui ont fait un travail intérieur profond et ressentent l'appel de compléter quelque chose",
+      "item3": "Ceux qui cherchent la mort de l'illusion, pas une expérience",
+      "item4": "Ceux qui sont prêts à rencontrer résistance, ego, attachements et à les laisser partir",
+      "item5": "Ceux qui sont prêts à s'abandonner et à intégrer",
+      "item6": "Les chercheurs fatigués de chercher",
+      "item7": "Ceux qui ne peuvent plus faire semblant"
+    },
+    "notFor": {
+      "title": "Ce travail n'est PAS pour :",
+      "item1": "Ceux avec un trauma non traité ou une psychose",
+      "item2": "Les personnes qui chassent les « hauts » ou états de pointe",
+      "item3": "Quiconque s'attend à une « guérison venant de quelqu'un d'autre »",
+      "item4": "Quiconque refuse d'intégrer ou de ralentir",
+      "item5": "Les touristes spirituels",
+      "item6": "Ceux qui cherchent la récréation",
+      "item7": "Ceux qui s'attendent à des solutions rapides"
+    },
+    "quote": "Vous n'êtes pas brisé. Vous n'êtes pas perdu. Vous vous initiez."
+  },
+  "medical": {
+    "title": "Dépistage Médical Obligatoire",
+    "description": "La sécurité est primordiale. Tous les participants doivent compléter un questionnaire de santé approfondi et un dépistage médical avant la cérémonie. Ce travail n'est pas adapté à tout le monde.",
+    "contraindications": {
+      "title": "Contre-indications",
+      "item1": "Problèmes cardiaques ou cardiovasculaires",
+      "item2": "Psychose ou maladie mentale grave",
+      "item3": "Certains médicaments (ISRS, IMAO, etc.)",
+      "item4": "Grossesse ou allaitement",
+      "item5": "Trauma grave non résolu sans soutien thérapeutique",
+      "item6": "Procédures chirurgicales récentes",
+      "item7": "Hypertension artérielle",
+      "item8": "Épilepsie ou troubles convulsifs"
+    },
+    "disclaimer": {
+      "title": "Avertissement Médical :",
+      "text": "Tous les services sont complémentaires et ne remplacent pas les soins médicaux, psychologiques ou psychiatriques. Il s'agit d'un travail avec la médecine sacrée, pas d'un traitement médical. Si vous avez des conditions médicales, veuillez consulter votre professionnel de santé avant de postuler."
+    }
+  },
+  "investment": {
+    "title": "Investissement",
+    "ceremony": {
+      "title": "Cérémonie Bufo Alvarius",
+      "price": "€300-500",
+      "perPerson": "par personne",
+      "item1": "Consultation pré-cérémonie",
+      "item2": "Cérémonie complète avec maintien énergétique (2-4 personnes max)",
+      "item3": "Session d'intégration dans les 48 heures",
+      "item4": "Soutien de suivi pendant 2 semaines"
+    },
+    "complete": {
+      "title": "Investissement du Parcours Complet",
+      "description": "Le parcours sacré complet comprend Préparation + Cérémonie + Intégration :",
+      "preparation": "Préparation : €111-222 (1-2 sessions requises)",
+      "ceremony": "Cérémonie : €300-500",
+      "integration": "Intégration : €88-111+ (1-4 sessions recommandées)",
+      "total": "L'investissement total varie généralement entre €500-800+ selon les besoins de préparation et d'intégration"
+    },
+    "accessibility": "Tarif dégressif disponible | Réductions pour personnes BIPOC et parents isolés | Plans de paiement offerts",
+    "quote": "Personne n'est jamais refusé par manque de fonds lorsque l'appel est authentique."
+  },
+  "application": {
+    "title": "Le Processus de Candidature",
+    "quote": "Ce travail n'est jamais vendu. Seulement offert.",
+    "description": "C'est une invitation au discernement—pour nous deux. Tout le monde n'est pas compatible. Et c'est sacré.",
+    "steps": {
+      "title": "Étapes :",
+      "step1": "Remplir la candidature privée (examinée en présence profonde)",
+      "step2": "Si aligné : Réserver 1-2 sessions de préparation",
+      "step3": "Compléter le questionnaire de dépistage médical",
+      "step4": "Seulement après la préparation : Convenir des dates de cérémonie",
+      "step5": "Expérience de cérémonie à Mazunte, Mexico",
+      "step6": "Le soutien d'intégration se déploie selon les besoins"
+    },
+    "cta": "Commencer Votre Candidature",
+    "link": "En savoir plus sur la Préparation →"
+  }
+}

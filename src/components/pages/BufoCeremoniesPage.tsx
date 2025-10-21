@@ -2,8 +2,17 @@ import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
 import ImagePlaceholder from '../ImagePlaceholder';
+import { useLanguage } from '../../contexts/LanguageContext';
+import ceremoniesEN from '../../translations/pages/ceremonies/en.json';
+import ceremoniesES from '../../translations/pages/ceremonies/es.json';
+import ceremoniesFR from '../../translations/pages/ceremonies/fr.json';
+
+const translations = { en: ceremoniesEN, es: ceremoniesES, fr: ceremoniesFR };
 
 export default function BufoCeremoniesPage() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <div className="min-h-screen bg-earth-900">
       <Navigation />
@@ -22,14 +31,14 @@ export default function BufoCeremoniesPage() {
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
           <div className="text-5xl text-sacred-gold/60 mb-8">⊹</div>
           <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-white mb-8 leading-tight">
-            Bufo Alvarius Ceremonies
+            {t.hero.title}
           </h1>
           <p className="text-2xl md:text-3xl text-sacred-gold/90 font-serif font-light mb-6">
-            Die Before You Die
+            {t.hero.subtitle}
           </p>
           <p className="text-lg md:text-xl text-desert-sand/80 leading-relaxed max-w-3xl mx-auto">
-            The most potent and profound entheogenic compound on Earth.<br/>
-            Sacred passage to ego dissolution and divine remembrance.
+            {t.hero.description1}<br/>
+            {t.hero.description2}
           </p>
         </div>
 
@@ -46,50 +55,46 @@ export default function BufoCeremoniesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12 text-center">
-              What is Bufo Alvarius?
+              {t.what.title}
             </h2>
 
             <div className="space-y-8 text-earth-700/80 leading-relaxed text-lg">
               <p className="text-2xl text-sacred-gold font-serif text-center mb-8">
-                5-MeO-DMT from the Sonoran Desert Toad
+                {t.what.subtitle}
               </p>
 
               <p>
-                Bufo Alvarius—5-MeO-DMT—is the only substance that can reliably introduce individuals
-                to a state of full non-dual awareness, override the energetic structure of the ego,
-                and reveal the unitary nature of reality.
+                {t.what.p1}
               </p>
 
               <p>
-                This is not a psychedelic. It is a sacred teacher of death and pure remembrance.
-                It is not for everyone, and it is not a shortcut.
+                {t.what.p2}
               </p>
 
               <div className="bg-medicine-venom rounded-2xl p-8 my-12">
-                <h3 className="text-2xl font-serif text-earth-800 mb-6">The Experience</h3>
+                <h3 className="text-2xl font-serif text-earth-800 mb-6">{t.what.experience.title}</h3>
                 <div className="space-y-4">
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span><strong className="text-earth-800">Speed:</strong> Effects begin within <strong>seconds</strong> of inhalation</span>
+                    <span><strong className="text-earth-800">{t.what.experience.speed}</strong> {t.what.experience.speedValue}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span><strong className="text-earth-800">Duration:</strong> 15-30 minutes of peak experience</span>
+                    <span><strong className="text-earth-800">{t.what.experience.duration}</strong> {t.what.experience.durationValue}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span><strong className="text-earth-800">Intensity:</strong> Complete ego dissolution and non-dual consciousness</span>
+                    <span><strong className="text-earth-800">{t.what.experience.intensity}</strong> {t.what.experience.intensityValue}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span><strong className="text-earth-800">Outcome:</strong> The remembrance of what you've always been</span>
+                    <span><strong className="text-earth-800">{t.what.experience.outcome}</strong> {t.what.experience.outcomeValue}</span>
                   </p>
                 </div>
               </div>
 
               <p className="border-l-4 border-sacred-gold/40 pl-6 italic text-earth-700/70 text-xl">
-                "This is not an offering we promote publicly. If you are here, you've been guided,
-                invited, or felt the call. This path requires humility, surrender, and integration."
+                "{t.what.quote}"
               </p>
             </div>
           </div>
@@ -111,7 +116,7 @@ export default function BufoCeremoniesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
-              Ceremony Details
+              {t.ceremonyDetails.title}
             </h2>
 
             <div className="grid md:grid-cols-2 gap-12 mb-16">
@@ -120,48 +125,48 @@ export default function BufoCeremoniesPage() {
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4 flex items-center gap-3">
                     <span className="text-3xl">🌿</span>
-                    Facilitators
+                    {t.ceremonyDetails.facilitators.title}
                   </h3>
                   <p className="text-earth-700/80 leading-relaxed">
-                    <strong className="text-earth-800">Nina & Astral</strong><br/>
-                    Seri Tribe-initiated facilitators<br/>
-                    Trauma-informed, hundreds of ceremonies held
+                    <strong className="text-earth-800">{t.ceremonyDetails.facilitators.name}</strong><br/>
+                    {t.ceremonyDetails.facilitators.credentials}<br/>
+                    {t.ceremonyDetails.facilitators.experience}
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4 flex items-center gap-3">
                     <span className="text-3xl">📍</span>
-                    Location
+                    {t.ceremonyDetails.location.title}
                   </h3>
                   <p className="text-earth-700/80 leading-relaxed">
-                    Mazunte, Oaxaca, Mexico<br/>
-                    A sacred container in nature, held with deep reverence
+                    {t.ceremonyDetails.location.place}<br/>
+                    {t.ceremonyDetails.location.description}
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4 flex items-center gap-3">
                     <span className="text-3xl">👥</span>
-                    Group Size
+                    {t.ceremonyDetails.groupSize.title}
                   </h3>
                   <p className="text-earth-700/80 leading-relaxed">
-                    Small, intimate settings<br/>
-                    2-4 people maximum<br/>
-                    Individual or couple sessions available
+                    {t.ceremonyDetails.groupSize.size}<br/>
+                    {t.ceremonyDetails.groupSize.max}<br/>
+                    {t.ceremonyDetails.groupSize.options}
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4 flex items-center gap-3">
                     <span className="text-3xl">⏰</span>
-                    Timeline
+                    {t.ceremonyDetails.timeline.title}
                   </h3>
                   <p className="text-earth-700/80 leading-relaxed">
-                    Full day experience<br/>
-                    Includes opening prayer, ceremony, and post-ceremony rest<br/>
-                    Integration session within 48 hours<br/>
-                    2-week follow-up support
+                    {t.ceremonyDetails.timeline.duration}<br/>
+                    {t.ceremonyDetails.timeline.includes}<br/>
+                    {t.ceremonyDetails.timeline.integration}<br/>
+                    {t.ceremonyDetails.timeline.followUp}
                   </p>
                 </div>
               </div>
@@ -171,36 +176,36 @@ export default function BufoCeremoniesPage() {
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4 flex items-center gap-3">
                     <span className="text-3xl">🙏</span>
-                    What's Included
+                    {t.ceremonyDetails.whatsIncluded.title}
                   </h3>
                   <div className="space-y-3 text-earth-700/80 leading-relaxed">
                     <p className="flex items-start gap-3">
                       <span className="text-sacred-gold mt-1">✓</span>
-                      <span>Pre-ceremony consultation</span>
+                      <span>{t.ceremonyDetails.whatsIncluded.item1}</span>
                     </p>
                     <p className="flex items-start gap-3">
                       <span className="text-sacred-gold mt-1">✓</span>
-                      <span>Sacred container creation & opening prayer</span>
+                      <span>{t.ceremonyDetails.whatsIncluded.item2}</span>
                     </p>
                     <p className="flex items-start gap-3">
                       <span className="text-sacred-gold mt-1">✓</span>
-                      <span>Bufo ceremony with full energetic holding</span>
+                      <span>{t.ceremonyDetails.whatsIncluded.item3}</span>
                     </p>
                     <p className="flex items-start gap-3">
                       <span className="text-sacred-gold mt-1">✓</span>
-                      <span>Touch, breath, and sound-based guidance</span>
+                      <span>{t.ceremonyDetails.whatsIncluded.item4}</span>
                     </p>
                     <p className="flex items-start gap-3">
                       <span className="text-sacred-gold mt-1">✓</span>
-                      <span>Full day of care and post-ceremony rest</span>
+                      <span>{t.ceremonyDetails.whatsIncluded.item5}</span>
                     </p>
                     <p className="flex items-start gap-3">
                       <span className="text-sacred-gold mt-1">✓</span>
-                      <span>Integration session within 48 hours</span>
+                      <span>{t.ceremonyDetails.whatsIncluded.item6}</span>
                     </p>
                     <p className="flex items-start gap-3">
                       <span className="text-sacred-gold mt-1">✓</span>
-                      <span>2-week follow-up support</span>
+                      <span>{t.ceremonyDetails.whatsIncluded.item7}</span>
                     </p>
                   </div>
                 </div>
@@ -208,23 +213,22 @@ export default function BufoCeremoniesPage() {
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4 flex items-center gap-3">
                     <span className="text-3xl">🌿</span>
-                    Facilitator Approach
+                    {t.ceremonyDetails.approach.title}
                   </h3>
                   <p className="text-earth-700/80 leading-relaxed">
-                    Initiated by Seri Tribe elders<br/>
-                    Trauma-informed protocols<br/>
-                    Years of facilitator training<br/>
-                    Full presence and energetic holding
+                    {t.ceremonyDetails.approach.line1}<br/>
+                    {t.ceremonyDetails.approach.line2}<br/>
+                    {t.ceremonyDetails.approach.line3}<br/>
+                    {t.ceremonyDetails.approach.line4}
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="bg-medicine-venom rounded-2xl p-8 text-center">
-              <h3 className="text-2xl font-serif text-earth-800 mb-4">Sacred Requirements</h3>
+              <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.ceremonyDetails.requirements.title}</h3>
               <p className="text-earth-700/80 leading-relaxed max-w-2xl mx-auto">
-                This ceremony is <strong>only offered after</strong> completion of 1-2 preparation sessions
-                and mutual discernment between facilitator and participant. Medical screening is mandatory.
+                {t.ceremonyDetails.requirements.description}
               </p>
             </div>
           </div>
@@ -240,7 +244,7 @@ export default function BufoCeremoniesPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/30 to-earth-900/60 flex items-center justify-center">
           <p className="text-3xl md:text-5xl font-serif text-sacred-white italic text-center px-4 max-w-4xl leading-tight">
-            "Sacred container held with reverence<br/>and deep presence"
+            "{t.ceremonySpace.quote}"
           </p>
         </div>
       </div>
@@ -250,7 +254,7 @@ export default function BufoCeremoniesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
-              Is This Medicine For You?
+              {t.isThisForYou.title}
             </h2>
 
             <div className="grid md:grid-cols-2 gap-12 mb-12">
@@ -258,36 +262,36 @@ export default function BufoCeremoniesPage() {
               <div className="bg-white rounded-2xl p-8">
                 <div className="flex items-center gap-3 mb-8">
                   <div className="text-4xl text-sacred-gold">✓</div>
-                  <h3 className="text-2xl font-serif text-earth-800">This work is FOR:</h3>
+                  <h3 className="text-2xl font-serif text-earth-800">{t.isThisForYou.for.title}</h3>
                 </div>
                 <div className="space-y-4 text-earth-700/80 leading-relaxed">
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span>Those ready to die before they die</span>
+                    <span>{t.isThisForYou.for.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span>Those who've done deep inner work and feel called to complete something</span>
+                    <span>{t.isThisForYou.for.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span>Those seeking death of illusion, not an experience</span>
+                    <span>{t.isThisForYou.for.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span>Those ready to meet resistance, ego, attachments and let them go</span>
+                    <span>{t.isThisForYou.for.item4}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span>Those ready to surrender and integrate</span>
+                    <span>{t.isThisForYou.for.item5}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span>Seekers tired of seeking</span>
+                    <span>{t.isThisForYou.for.item6}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-gold mt-1">•</span>
-                    <span>Those who can no longer pretend</span>
+                    <span>{t.isThisForYou.for.item7}</span>
                   </p>
                 </div>
               </div>
@@ -296,36 +300,36 @@ export default function BufoCeremoniesPage() {
               <div className="bg-white rounded-2xl p-8">
                 <div className="flex items-center gap-3 mb-8">
                   <div className="text-4xl text-desert-clay">✗</div>
-                  <h3 className="text-2xl font-serif text-earth-800">This work is NOT for:</h3>
+                  <h3 className="text-2xl font-serif text-earth-800">{t.isThisForYou.notFor.title}</h3>
                 </div>
                 <div className="space-y-4 text-earth-700/80 leading-relaxed">
                   <p className="flex items-start gap-3">
                     <span className="text-desert-clay mt-1">•</span>
-                    <span>Those with untreated trauma or psychosis</span>
+                    <span>{t.isThisForYou.notFor.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-desert-clay mt-1">•</span>
-                    <span>People chasing "highs" or peak states</span>
+                    <span>{t.isThisForYou.notFor.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-desert-clay mt-1">•</span>
-                    <span>Anyone expecting "healing from someone else"</span>
+                    <span>{t.isThisForYou.notFor.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-desert-clay mt-1">•</span>
-                    <span>Anyone who refuses to integrate or slow down</span>
+                    <span>{t.isThisForYou.notFor.item4}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-desert-clay mt-1">•</span>
-                    <span>Spiritual tourists</span>
+                    <span>{t.isThisForYou.notFor.item5}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-desert-clay mt-1">•</span>
-                    <span>Those seeking recreation</span>
+                    <span>{t.isThisForYou.notFor.item6}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-desert-clay mt-1">•</span>
-                    <span>Those expecting quick fixes</span>
+                    <span>{t.isThisForYou.notFor.item7}</span>
                   </p>
                 </div>
               </div>
@@ -333,7 +337,7 @@ export default function BufoCeremoniesPage() {
 
             <div className="text-center">
               <p className="text-lg text-earth-700/70 italic">
-                "You're not broken. You're not lost. You're initiating."
+                "{t.isThisForYou.quote}"
               </p>
             </div>
           </div>
@@ -347,60 +351,57 @@ export default function BufoCeremoniesPage() {
             <div className="bg-desert-clay/10 border-l-4 border-desert-clay rounded-r-2xl p-8 mb-12">
               <h2 className="text-3xl font-serif text-earth-800 mb-6 flex items-center gap-3">
                 <span className="text-4xl">⚕️</span>
-                Medical Screening Required
+                {t.medical.title}
               </h2>
               <p className="text-earth-700/80 leading-relaxed mb-6">
-                Safety is paramount. All participants must complete a thorough health questionnaire
-                and medical screening before ceremony. This work is not suitable for everyone.
+                {t.medical.description}
               </p>
             </div>
 
-            <h3 className="text-2xl font-serif text-earth-800 mb-6">Contraindications</h3>
+            <h3 className="text-2xl font-serif text-earth-800 mb-6">{t.medical.contraindications.title}</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               <div className="space-y-3 text-earth-700/80">
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>Heart conditions or cardiovascular issues</span>
+                  <span>{t.medical.contraindications.item1}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>Psychosis or severe mental illness</span>
+                  <span>{t.medical.contraindications.item2}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>Certain medications (SSRIs, MAOIs, etc.)</span>
+                  <span>{t.medical.contraindications.item3}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>Pregnancy or breastfeeding</span>
+                  <span>{t.medical.contraindications.item4}</span>
                 </p>
               </div>
               <div className="space-y-3 text-earth-700/80">
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>Severe unresolved trauma without therapeutic support</span>
+                  <span>{t.medical.contraindications.item5}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>Recent surgical procedures</span>
+                  <span>{t.medical.contraindications.item6}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>High blood pressure</span>
+                  <span>{t.medical.contraindications.item7}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>Epilepsy or seizure disorders</span>
+                  <span>{t.medical.contraindications.item8}</span>
                 </p>
               </div>
             </div>
 
             <div className="bg-medicine-venom rounded-2xl p-6 text-sm text-earth-700/70 leading-relaxed">
-              <p className="font-semibold text-earth-800 mb-2">Medical Disclaimer:</p>
+              <p className="font-semibold text-earth-800 mb-2">{t.medical.disclaimer.title}</p>
               <p>
-                All services are complementary and do not replace medical, psychological, or psychiatric care.
-                This is sacred medicine work, not medical treatment. If you have any medical conditions,
-                please consult with your healthcare provider before applying.
+                {t.medical.disclaimer.text}
               </p>
             </div>
           </div>
@@ -412,56 +413,56 @@ export default function BufoCeremoniesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12">
-              Investment
+              {t.investment.title}
             </h2>
 
             <div className="bg-white rounded-2xl p-12 border-2 border-sacred-gold/30 mb-12">
               <div className="text-5xl mb-6">🔥</div>
-              <h3 className="text-3xl font-serif text-earth-800 mb-4">Bufo Alvarius Ceremony</h3>
-              <div className="text-5xl font-serif text-sacred-gold mb-6">€300-500</div>
-              <p className="text-lg text-earth-700/70 mb-8">per person</p>
+              <h3 className="text-3xl font-serif text-earth-800 mb-4">{t.investment.ceremony.title}</h3>
+              <div className="text-5xl font-serif text-sacred-gold mb-6">{t.investment.ceremony.price}</div>
+              <p className="text-lg text-earth-700/70 mb-8">{t.investment.ceremony.perPerson}</p>
 
               <div className="text-left max-w-2xl mx-auto space-y-3 text-earth-700/80 leading-relaxed">
                 <p className="flex items-start gap-3">
                   <span className="text-sacred-gold">✓</span>
-                  <span>Pre-ceremony consultation</span>
+                  <span>{t.investment.ceremony.item1}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-sacred-gold">✓</span>
-                  <span>Full ceremony with energetic holding (2-4 people max)</span>
+                  <span>{t.investment.ceremony.item2}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-sacred-gold">✓</span>
-                  <span>Integration session within 48 hours</span>
+                  <span>{t.investment.ceremony.item3}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-sacred-gold">✓</span>
-                  <span>2-week follow-up support</span>
+                  <span>{t.investment.ceremony.item4}</span>
                 </p>
               </div>
             </div>
 
             <div className="bg-medicine-venom rounded-2xl p-8 mb-12">
-              <h4 className="text-xl font-serif text-earth-800 mb-4">Complete Journey Investment</h4>
+              <h4 className="text-xl font-serif text-earth-800 mb-4">{t.investment.complete.title}</h4>
               <p className="text-earth-700/80 leading-relaxed mb-6">
-                The full sacred journey includes Preparation + Ceremony + Integration:
+                {t.investment.complete.description}
               </p>
               <div className="space-y-2 text-earth-700/80">
-                <p>Preparation: €111-222 (1-2 sessions required)</p>
-                <p>Ceremony: €300-500</p>
-                <p>Integration: €88-111+ (1-4 sessions recommended)</p>
+                <p>{t.investment.complete.preparation}</p>
+                <p>{t.investment.complete.ceremony}</p>
+                <p>{t.investment.complete.integration}</p>
               </div>
               <p className="text-sm text-earth-700/60 mt-6 italic">
-                Total investment typically ranges €500-800+ depending on preparation and integration needs
+                {t.investment.complete.total}
               </p>
             </div>
 
             <div className="text-center">
               <p className="text-lg text-earth-700/80 mb-4">
-                Sliding scale available | BIPOC and single parent discounts | Payment plans offered
+                {t.investment.accessibility}
               </p>
               <p className="text-earth-700/70 italic">
-                "No one is ever turned away for lack of funds when the call is genuine."
+                "{t.investment.quote}"
               </p>
             </div>
           </div>
@@ -475,46 +476,45 @@ export default function BufoCeremoniesPage() {
           <div className="max-w-3xl mx-auto text-center">
             <div className="text-5xl text-sacred-gold/60 mb-8">⊹</div>
             <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-8">
-              The Application Process
+              {t.application.title}
             </h2>
 
             <div className="space-y-6 text-desert-sand/80 leading-relaxed text-lg mb-12">
               <p className="text-2xl font-serif italic text-sacred-gold/90">
-                "This work is never sold. Only offered."
+                "{t.application.quote}"
               </p>
 
               <p>
-                This is an invitation to discernment—for both of us. Not everyone is a fit.
-                And that's sacred.
+                {t.application.description}
               </p>
             </div>
 
             <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-8 mb-12 text-left">
-              <h3 className="text-2xl font-serif text-sacred-white mb-6">Steps:</h3>
+              <h3 className="text-2xl font-serif text-sacred-white mb-6">{t.application.steps.title}</h3>
               <div className="space-y-4 text-desert-sand/80">
                 <p className="flex items-start gap-4">
                   <span className="text-sacred-gold font-bold">1.</span>
-                  <span>Fill out private application (reviewed in deep presence)</span>
+                  <span>{t.application.steps.step1}</span>
                 </p>
                 <p className="flex items-start gap-4">
                   <span className="text-sacred-gold font-bold">2.</span>
-                  <span>If aligned: Book 1-2 preparation sessions</span>
+                  <span>{t.application.steps.step2}</span>
                 </p>
                 <p className="flex items-start gap-4">
                   <span className="text-sacred-gold font-bold">3.</span>
-                  <span>Complete medical screening questionnaire</span>
+                  <span>{t.application.steps.step3}</span>
                 </p>
                 <p className="flex items-start gap-4">
                   <span className="text-sacred-gold font-bold">4.</span>
-                  <span>Only after preparation: Agree on ceremony dates</span>
+                  <span>{t.application.steps.step4}</span>
                 </p>
                 <p className="flex items-start gap-4">
                   <span className="text-sacred-gold font-bold">5.</span>
-                  <span>Ceremony experience in Mazunte, Mexico</span>
+                  <span>{t.application.steps.step5}</span>
                 </p>
                 <p className="flex items-start gap-4">
                   <span className="text-sacred-gold font-bold">6.</span>
-                  <span>Integration support unfolds as needed</span>
+                  <span>{t.application.steps.step6}</span>
                 </p>
               </div>
             </div>
@@ -524,11 +524,11 @@ export default function BufoCeremoniesPage() {
                 to="/contact"
                 className="inline-block px-12 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
               >
-                Begin Your Application
+                {t.application.cta}
               </Link>
               <p className="text-sm text-desert-sand/60">
                 <Link to="/preparation" className="hover:text-sacred-gold transition-colors">
-                  Learn about Preparation →
+                  {t.application.link}
                 </Link>
               </p>
             </div>

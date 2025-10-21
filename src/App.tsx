@@ -2,9 +2,15 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useParams, Link } from 'react-router-dom';
 import { Globe, Menu, X } from 'lucide-react';
 import './i18n';
+import { useLanguage } from './contexts/LanguageContext';
+import navEN from './translations/navigation/en.json';
+import navES from './translations/navigation/es.json';
+import navFR from './translations/navigation/fr.json';
 import enTranslations from './translations/en.json';
 import esTranslations from './translations/es.json';
 import caTranslations from './translations/ca.json';
+
+const navTranslations = { en: navEN, es: navES, fr: navFR };
 import EventPreview from './components/EventPreview';
 import PlacePreview from './components/PlacePreview';
 import SupportPage from './components/SupportPage';
@@ -29,9 +35,10 @@ import CollaborationsPage from './components/pages/CollaborationsPage';
 
 // Main Landing Page Component
 function LandingPage() {
-  const [language, setLanguage] = useState<'en' | 'es' | 'ca'>('en');
+  const { language, setLanguage } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const nav = navTranslations[language];
   const t = language === 'es' ? esTranslations : language === 'ca' ? caTranslations : enTranslations;
 
   return (
@@ -52,28 +59,28 @@ function LandingPage() {
               {/* Nav Links - Hidden on mobile */}
               <div className="hidden lg:flex items-center gap-5">
                 <Link to="/about" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
-                  About
+                  {nav.about}
                 </Link>
                 <Link to="/ceremonies" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
-                  Ceremonies
+                  {nav.ceremonies}
                 </Link>
                 <Link to="/preparation" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
-                  Preparation
+                  {nav.preparation}
                 </Link>
                 <Link to="/integration" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
-                  Integration
+                  {nav.integration}
                 </Link>
                 <Link to="/retreats" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
-                  Retreats
+                  {nav.retreats}
                 </Link>
                 <Link to="/testimonials" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
-                  Testimonials
+                  {nav.testimonials}
                 </Link>
                 <Link to="/faq" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
-                  FAQ
+                  {nav.faq}
                 </Link>
                 <Link to="/contact" className="px-6 py-2 bg-sacred-gold text-earth-900 rounded-full font-semibold hover:bg-sacred-amber transition-all text-sm">
-                  Apply
+                  {nav.apply}
                 </Link>
               </div>
 
@@ -81,11 +88,11 @@ function LandingPage() {
               <div className="flex items-center gap-4">
                 {/* Language Toggle */}
                 <button
-                  onClick={() => setLanguage(language === 'en' ? 'es' : language === 'es' ? 'ca' : 'en')}
+                  onClick={() => setLanguage(language === 'en' ? 'es' : language === 'es' ? 'fr' : 'en')}
                   className="flex items-center gap-2 px-4 py-2 rounded-full bg-earth-700/30 backdrop-blur-xl border border-desert-sage/30 hover:bg-earth-700/40 transition-all"
                 >
                   <Globe className="w-4 h-4 text-sacred-gold" />
-                  <span className="text-sm font-medium text-desert-sand">{language === 'en' ? 'EN' : language === 'es' ? 'ES' : 'CA'}</span>
+                  <span className="text-sm font-medium text-desert-sand">{language === 'en' ? 'EN' : language === 'es' ? 'ES' : 'FR'}</span>
                 </button>
 
                 {/* Mobile Menu Button */}
@@ -102,28 +109,28 @@ function LandingPage() {
             {mobileMenuOpen && (
               <div className="lg:hidden py-4 space-y-3 border-t border-desert-sage/20">
                 <Link to="/about" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
-                  About
+                  {nav.about}
                 </Link>
                 <Link to="/ceremonies" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
-                  Ceremonies
+                  {nav.ceremonies}
                 </Link>
                 <Link to="/preparation" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
-                  Preparation
+                  {nav.preparation}
                 </Link>
                 <Link to="/integration" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
-                  Integration
+                  {nav.integration}
                 </Link>
                 <Link to="/retreats" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
-                  Retreats
+                  {nav.retreats}
                 </Link>
                 <Link to="/testimonials" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
-                  Testimonials
+                  {nav.testimonials}
                 </Link>
                 <Link to="/faq" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
-                  FAQ
+                  {nav.faq}
                 </Link>
                 <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-sacred-gold font-semibold">
-                  Apply
+                  {nav.apply}
                 </Link>
               </div>
             )}

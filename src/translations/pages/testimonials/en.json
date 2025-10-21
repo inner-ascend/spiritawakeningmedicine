@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "title": "Voices From The Journey",
+    "subtitle": "Real experiences from those who've walked this path"
+  },
+  "moreVoices": {
+    "title": "More Voices"
+  },
+  "divider": {
+    "quote": "The medicine doesn't care if you believe in it.\nBut your willingness to surrender—that's everything."
+  },
+  "cta": {
+    "title": "Ready to Begin Your Journey?",
+    "description": "If these stories resonate with you, if you feel the call, the application process is your next step.",
+    "button": "Begin Your Application",
+    "disclaimer": "Private application · Mutual discernment · Medical screening required",
+    "links": {
+      "ceremonies": "Learn About Bufo Ceremonies →",
+      "faq": "Read FAQ & Safety Information →"
+    }
+  },
+  "testimonials": {
+    "types": {
+      "energyHealingIntegration": "Energy Healing & Integration",
+      "bufoCeremonyIntegration": "Bufo Ceremony & Integration",
+      "bufoCeremony": "Bufo Ceremony",
+      "energyHealing": "Energy Healing",
+      "integrationSupport": "Integration Support"
+    }
+  }
+}

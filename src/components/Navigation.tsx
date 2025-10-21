@@ -1,10 +1,17 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Globe, Menu, X } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
+import navEN from '../translations/navigation/en.json';
+import navES from '../translations/navigation/es.json';
+import navFR from '../translations/navigation/fr.json';
+
+const navTranslations = { en: navEN, es: navES, fr: navFR };
 
 export default function Navigation() {
-  const [language, setLanguage] = useState<'en' | 'es' | 'ca'>('en');
+  const { language, setLanguage } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const t = navTranslations[language];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-earth-900/80 border-b border-desert-sage/20">
@@ -21,28 +28,28 @@ export default function Navigation() {
           {/* Nav Links - Hidden on mobile */}
           <div className="hidden lg:flex items-center gap-5">
             <Link to="/about" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
-              About
+              {t.about}
             </Link>
             <Link to="/ceremonies" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
-              Ceremonies
+              {t.ceremonies}
             </Link>
             <Link to="/preparation" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
-              Preparation
+              {t.preparation}
             </Link>
             <Link to="/integration" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
-              Integration
+              {t.integration}
             </Link>
             <Link to="/retreats" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
-              Retreats
+              {t.retreats}
             </Link>
             <Link to="/testimonials" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
-              Testimonials
+              {t.testimonials}
             </Link>
             <Link to="/faq" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
-              FAQ
+              {t.faq}
             </Link>
             <Link to="/contact" className="px-6 py-2 bg-sacred-gold text-earth-900 rounded-full font-semibold hover:bg-sacred-amber transition-all text-sm">
-              Apply
+              {t.apply}
             </Link>
           </div>
 
@@ -50,11 +57,11 @@ export default function Navigation() {
           <div className="flex items-center gap-4">
             {/* Language Toggle */}
             <button
-              onClick={() => setLanguage(language === 'en' ? 'es' : language === 'es' ? 'ca' : 'en')}
+              onClick={() => setLanguage(language === 'en' ? 'es' : language === 'es' ? 'fr' : 'en')}
               className="flex items-center gap-2 px-4 py-2 rounded-full bg-earth-700/30 backdrop-blur-xl border border-desert-sage/30 hover:bg-earth-700/40 transition-all"
             >
               <Globe className="w-4 h-4 text-sacred-gold" />
-              <span className="text-sm font-medium text-desert-sand">{language === 'en' ? 'EN' : language === 'es' ? 'ES' : 'CA'}</span>
+              <span className="text-sm font-medium text-desert-sand">{language === 'en' ? 'EN' : language === 'es' ? 'ES' : 'FR'}</span>
             </button>
 
             {/* Mobile Menu Button */}
@@ -71,28 +78,28 @@ export default function Navigation() {
         {mobileMenuOpen && (
           <div className="lg:hidden py-4 space-y-3 border-t border-desert-sage/20">
             <Link to="/about" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
-              About
+              {t.about}
             </Link>
             <Link to="/ceremonies" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
-              Ceremonies
+              {t.ceremonies}
             </Link>
             <Link to="/preparation" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
-              Preparation
+              {t.preparation}
             </Link>
             <Link to="/integration" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
-              Integration
+              {t.integration}
             </Link>
             <Link to="/retreats" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
-              Retreats
+              {t.retreats}
             </Link>
             <Link to="/testimonials" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
-              Testimonials
+              {t.testimonials}
             </Link>
             <Link to="/faq" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
-              FAQ
+              {t.faq}
             </Link>
             <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-sacred-gold font-semibold">
-              Apply
+              {t.apply}
             </Link>
           </div>
         )}

@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "title": "Voix du Voyage",
+    "subtitle": "Expériences réelles de ceux qui ont parcouru ce chemin"
+  },
+  "moreVoices": {
+    "title": "Plus de Voix"
+  },
+  "divider": {
+    "quote": "La médecine se moque de savoir si vous y croyez.\nMais votre volonté de vous abandonner—c'est tout ce qui compte."
+  },
+  "cta": {
+    "title": "Prêt à Commencer Votre Voyage?",
+    "description": "Si ces histoires résonnent en vous, si vous ressentez l'appel, le processus de candidature est votre prochaine étape.",
+    "button": "Commencer Votre Candidature",
+    "disclaimer": "Candidature privée · Discernement mutuel · Examen médical requis",
+    "links": {
+      "ceremonies": "En Savoir Plus sur les Cérémonies Bufo →",
+      "faq": "Lire FAQ et Informations de Sécurité →"
+    }
+  },
+  "testimonials": {
+    "types": {
+      "energyHealingIntegration": "Guérison Énergétique et Intégration",
+      "bufoCeremonyIntegration": "Cérémonie Bufo et Intégration",
+      "bufoCeremony": "Cérémonie Bufo",
+      "energyHealing": "Guérison Énergétique",
+      "integrationSupport": "Soutien d'Intégration"
+    }
+  }
+}

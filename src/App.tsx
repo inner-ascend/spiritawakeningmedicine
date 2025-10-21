@@ -6,9 +6,6 @@ import { useLanguage } from './contexts/LanguageContext';
 import navEN from './translations/navigation/en.json';
 import navES from './translations/navigation/es.json';
 import navFR from './translations/navigation/fr.json';
-import enTranslations from './translations/en.json';
-import esTranslations from './translations/es.json';
-import caTranslations from './translations/ca.json';
 
 const navTranslations = { en: navEN, es: navES, fr: navFR };
 import EventPreview from './components/EventPreview';
@@ -30,7 +27,6 @@ import ImagePlaceholder from './components/ImagePlaceholder';
 import ServicesPage from './components/pages/ServicesPage';
 import InnerAscendPage from './components/pages/InnerAscendPage';
 import ResourcesPage from './components/pages/ResourcesPage';
-import CollaborationsPage from './components/pages/CollaborationsPage';
 // Removed old section components - now using visual storytelling approach
 
 // Main Landing Page Component
@@ -39,7 +35,6 @@ function LandingPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const nav = navTranslations[language];
-  const t = language === 'es' ? esTranslations : language === 'ca' ? caTranslations : enTranslations;
 
   return (
     <div className="min-h-screen bg-earth-900 text-sacred-white overflow-hidden relative">

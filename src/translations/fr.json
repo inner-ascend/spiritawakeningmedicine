@@ -1,0 +1,143 @@
+{
+  "hero": {
+    "title": "Ouvrir les Portes du Souvenir",
+    "subtitle": "Médecine sacrée de Bufo Alvarius pour la dissolution de l'ego et la conscience non-duelle",
+    "tagline": "Préparation • Cérémonie • Intégration",
+    "cta": "Commencer avec Discernement",
+    "secondaryCta": "En Savoir Plus",
+    "stats": {
+      "transformations": "1,500+ âmes éveillées",
+      "sessions": "10,000+ heures de guérison",
+      "lineages": "Traditions de sagesse ancienne"
+    }
+  },
+  "navigation": {
+    "offerings": "Cérémonies Bufo",
+    "about": "À Propos",
+    "testimonials": "Témoignages",
+    "resources": "Intégration",
+    "booking": "Contact"
+  },
+  "offerings": {
+    "title": "Chemins Sacrés vers la Libération",
+    "subtitle": "Le travail de médecine sacrée",
+    "soulWork": {
+      "title": "Cérémonies Bufo Alvarius",
+      "tagline": "Mourir Avant de Mourir",
+      "description": "La médecine sacrée la plus puissante qui existe. Dissolution complète de l'ego, conscience non-duelle, et remembrance divine.",
+      "includes": [
+        "Sessions de préparation (1-2)",
+        "Cérémonie dans un cadre sacré",
+        "Soutien à l'intégration",
+        "Suivi pendant 2 semaines"
+      ],
+      "cta": "Postuler Maintenant",
+      "price": "€300-500"
+    },
+    "integration": {
+      "title": "Intégration de Médecine",
+      "tagline": "Incarner le Souvenir",
+      "description": "Transformez vos insights de cérémonie en sagesse incarnée. Soutien post-voyage pour Bufo et autres médecines sacrées.",
+      "includes": [
+        "Soutien émotionnel post-voyage",
+        "Démêlage de l'histoire",
+        "Réalignement de l'identité",
+        "Pratiques d'ancrage"
+      ],
+      "cta": "Soutien à l'Intégration",
+      "price": "€88-111/session"
+    },
+    "entrepreneur": {
+      "title": "Préparation Sacrée",
+      "tagline": "Préparez Votre Système Nerveux",
+      "description": "La préparation est essentielle. Ancrage du système nerveux, préparation émotionnelle, et orientation pour la cérémonie.",
+      "includes": [
+        "Évaluation de préparation émotionnelle",
+        "Ancrage du système nerveux",
+        "Faire face aux peurs et illusions",
+        "Rituels pour ouvrir le chemin"
+      ],
+      "cta": "Commencer la Préparation",
+      "price": "€111/session"
+    }
+  },
+  "transformation": {
+    "title": "Le Processus d'Initiation",
+    "stages": [
+      {
+        "phase": "Préparation",
+        "description": "Ancrer le système nerveux. Se préparer émotionnellement. Faire face aux peurs et aux désirs."
+      },
+      {
+        "phase": "Cérémonie",
+        "description": "Mort de l'ego. Conscience non-duelle. Souvenir de qui vous êtes vraiment."
+      },
+      {
+        "phase": "Intégration",
+        "description": "Incarner la sagesse. Ancrer les insights. Vivre la transformation dans la vie quotidienne."
+      },
+      {
+        "phase": "Maîtrise",
+        "description": "Devenir la médecine. Servir les autres. Créer des ondulations de transformation."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Voix du Voyage",
+    "subtitle": "Transformations réelles d'âmes courageuses",
+    "cta": "Lire les Témoignages"
+  },
+  "about": {
+    "title": "Au-delà des Concepts et des Limitations",
+    "intro": "Initié par la Tribu Seri dans le désert de Sonora, Mexique. Formé dans l'approche informée par les traumatismes.",
+    "journey": "À travers ma propre mort et renaissance via un travail profond de médecine et une initiation chamanique, j'ai appris à tenir l'espace pour les transformations les plus profondes.",
+    "gift": "Mon plus grand cadeau est de devenir l'espace de transformation lui-même - une présence aimante qui permet à votre ancien moi de se dissoudre et à votre vraie essence d'émerger.",
+    "cta": "Découvrir Mon Voyage"
+  },
+  "booking": {
+    "title": "Prêt à Commencer?",
+    "subtitle": "Votre âme vous a amené ici. Faites confiance à l'appel.",
+    "discovery": {
+      "title": "Appel de Clarté Sacré",
+      "description": "Une connexion de 30 minutes pour explorer si nous devons voyager ensemble",
+      "free": "Gratuit",
+      "cta": "Réserver un Appel"
+    },
+    "intensive": {
+      "title": "Programme d'Intégration Profonde",
+      "description": "Conteneur de transformation de 3 mois pour les initiés sérieux",
+      "cta": "Postuler"
+    },
+    "urgency": {
+      "limited": "Places limitées disponibles"
+    }
+  },
+  "resources": {
+    "title": "Outils d'Intégration",
+    "subtitle": "Ressources gratuites pour votre voyage",
+    "items": [
+      "Méditation de Changement de Chronologie",
+      "Guide de Guérison Ancestrale",
+      "Cahier d'Intégration Post-Cérémonie",
+      "Plan d'Affaires Sacrées"
+    ],
+    "cta": "Accéder au Coffre"
+  },
+  "newsletter": {
+    "title": "Rejoindre le Cercle Intérieur",
+    "subtitle": "Recevez des transmissions, des pratiques d'intégration et de la médecine de l'âme",
+    "placeholder": "Votre portail email",
+    "cta": "Entrer dans le Mystère",
+    "frequency": "Transmissions sacrées 2x par mois"
+  },
+  "footer": {
+    "tagline": "Réalignement pour les initiés et les agents de changement",
+    "made": "© Spirit Awakening Medicine - Travail Sacré",
+    "email": "hello@spiritawakeningmedicine.com",
+    "disclaimer": "Ce travail ne remplace pas un traitement médical ou psychologique",
+    "social": {
+      "instagram": "@spiritawakeningmedicine",
+      "bio": "bio.site/spiritawakeningmedicine"
+    }
+  }
+}

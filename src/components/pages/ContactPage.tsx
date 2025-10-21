@@ -189,10 +189,10 @@ export default function ContactPage() {
                 <div>
                   <p className="text-sm text-sacred-moon/60 mb-1">Email</p>
                   <a
-                    href="mailto:hello@astral-integration.com"
+                    href="mailto:hello@spiritawakeningmedicine.com"
                     className="text-sacred-gold hover:text-sacred-glow transition-colors"
                   >
-                    hello@astral-integration.com
+                    hello@spiritawakeningmedicine.com
                   </a>
                 </div>
 

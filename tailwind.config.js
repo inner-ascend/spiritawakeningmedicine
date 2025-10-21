@@ -7,34 +7,66 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Dark cosmic backgrounds - refined for depth
-        cosmic: {
-          900: '#0B0A1F',      // Deep midnight blue-black
-          800: '#15132E',      // Subtle lift from base
-          700: '#1F1D3D',      // Mid-dark for variety
-          600: '#2A274C',      // Lighter cosmic overlay
+        // Deep earth tones - grounded in nature
+        earth: {
+          900: '#1A120B',      // Deep earth black
+          800: '#2C2419',      // Dark soil
+          700: '#3E3527',      // Rich earth
+          600: '#4F4535',      // Warm earth
+          500: '#6B5D4F',      // Mid earth
         },
-        // Mystical accent colors - refined for harmony
-        mystic: {
-          purple: '#8B7FD9',   // Softer lavender-purple
-          indigo: '#6B68B3',   // Dusty indigo
-          violet: '#AFA3E6',   // Light mystical violet
-          lavender: '#C8BFF0', // Pale lavender for text
+        // Desert & Sonoran palette (honoring Seri Tribe lineage)
+        desert: {
+          sand: '#D4B896',     // Warm desert sand
+          clay: '#A67B5B',     // Adobe clay
+          sage: '#8B9D83',     // Desert sage
+          dusk: '#7C6A5C',     // Desert dusk
+          stone: '#9B8B7E',    // Desert stone
         },
-        // Sacred earth tones - warm, grounded, elegant
+        // Toad medicine colors - natural, organic
+        medicine: {
+          toad: '#5C4D3C',     // Toad skin brown
+          venom: '#E8DCC4',    // Venom crystal cream
+          smoke: '#9B8B7E',    // Sacred smoke gray
+          earth: '#6B5D4F',    // Medicine earth
+        },
+        // Sacred accent colors
         sacred: {
-          gold: '#C9A55C',     // Warmer, softer gold
-          moon: '#F7F5F0',     // Warm off-white
-          glow: '#F4E9D4',     // Soft golden glow
-          green: '#9CAF88',    // Sage green (nature, grounding)
-          cream: '#FAF7F2',    // Warm cream for light sections
-          sand: '#E8E3DA',     // Warm sand beige
+          gold: '#C9A05C',     // Sacred gold
+          amber: '#D4A574',    // Amber glow
+          white: '#F7F5F0',    // Sacred white
+          smoke: '#E8E3DA',    // Smoke white
+          cream: '#FAF7F2',    // Warm cream
+          glow: '#F4E9D4',     // Soft glow
+          green: '#8B9D83',    // Sage green (keep for compatibility)
+          moon: '#F7F5F0',     // Moon white (compatibility)
+          sand: '#E8E3DA',     // Sand (compatibility)
         },
-        // Primary indigo - the core brand color
+        // Deep spirituality (for dark backgrounds)
+        spirit: {
+          deep: '#2A1810',     // Deep meditation
+          void: '#0D0A08',     // The void
+          light: '#F4E9D4',    // Awakening light
+          shadow: '#1A120B',   // Shadow work
+        },
+        // Keep indigo for backwards compatibility - but map to earth tones
         indigo: {
-          deep: '#2C1654',     // Rich deep indigo (primary brand)
-          DEFAULT: '#3D2565',  // Mid indigo
-          light: '#4E3677',    // Lighter indigo
+          deep: '#3E3527',     // Map to earth-700
+          DEFAULT: '#4F4535',  // Map to earth-600
+          light: '#6B5D4F',    // Map to earth-500
+        },
+        // Keep cosmic/mystic for gradual migration - map to earth tones
+        cosmic: {
+          900: '#1A120B',      // Map to earth-900
+          800: '#2C2419',      // Map to earth-800
+          700: '#3E3527',      // Map to earth-700
+          600: '#4F4535',      // Map to earth-600
+        },
+        mystic: {
+          purple: '#9B8B7E',   // Map to desert-stone
+          indigo: '#7C6A5C',   // Map to desert-dusk
+          violet: '#A67B5B',   // Map to desert-clay
+          lavender: '#D4B896', // Map to desert-sand
         }
       },
       fontSize: {

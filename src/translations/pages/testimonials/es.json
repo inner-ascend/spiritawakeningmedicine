@@ -26,6 +26,44 @@
       "bufoCeremony": "Ceremonia de Bufo",
       "energyHealing": "Sanación Energética",
       "integrationSupport": "Apoyo de Integración"
-    }
+    },
+    "items": [
+      {
+        "name": "Holly",
+        "quote": "Las sanaciones por las que pasé con Nina y Astral fueron profundas y transformadoras. A través de su práctica, pueden extraer problemas de la mente y liberarlos a través del corazón. Su compasión y creencia permiten la vulnerabilidad en lo desconocido, la aceptación de realidades difíciles y le permiten a uno elevarse por encima de los bloqueos que acumulamos a lo largo de nuestras vidas. Me mostraron cómo amarme a mí misma, que la experiencia es fortaleza, y que nuestro poder va más allá de este cuerpo.",
+        "typeKey": "energyHealingIntegration",
+        "featured": true
+      },
+      {
+        "name": "Jon",
+        "quote": "Nina y Astral me dieron un regalo, sanando heridas que habían estado presentes en mí desde que era niño. Limpiamos problemas que me causaban dinámicas extrañas con las mujeres. Me liberaron y nunca volveré a ser el mismo. Me ayudaron a convertirme en un hombre. Me siento seguro de mí mismo y de mis capacidades ahora.",
+        "typeKey": "bufoCeremonyIntegration",
+        "featured": true
+      },
+      {
+        "name": "Anonymous",
+        "quote": "Pude sentir su presencia en los reinos superiores—ayudándome a profundizar más en la búsqueda. Me sentí seguro, sostenido, visto y completamente aceptado para poder confiar y rendirme. ¡Me siento tan joven! Claro y alegre, como un niño. Acepto donde estoy y me conozco mejor.",
+        "typeKey": "bufoCeremony",
+        "featured": false
+      },
+      {
+        "name": "Hazel",
+        "quote": "El trabajo con Nina y Astral fue una de las transformaciones más profundas que he tenido. Lo llevan a uno directamente a la mente subconsciente para que juntos encuentren la causa de sus creencias limitantes y las eliminen. Esta es la sanación del futuro, en la quinta dimensión, trabajando en el campo cuántico que permite que la sanación sea instantánea.",
+        "typeKey": "energyHealing",
+        "featured": true
+      },
+      {
+        "name": "Anonymous",
+        "quote": "Llegué a la ceremonia roto, buscando respuestas. Me fui sin preguntas. La medicina no me arregló—me mostró que nunca estuve roto. Nina y Astral sostuvieron el espacio con tanta reverencia y seguridad que finalmente pude soltar completamente.",
+        "typeKey": "bufoCeremony",
+        "featured": false
+      },
+      {
+        "name": "Marcus",
+        "quote": "Las sesiones de integración después de mi ceremonia fueron tan importantes como el viaje mismo. Me ayudaron a darle sentido a la disolución, anclar las percepciones y realmente encarnar el recuerdo en mi vida diaria.",
+        "typeKey": "integrationSupport",
+        "featured": false
+      }
+    ]
   }
 }

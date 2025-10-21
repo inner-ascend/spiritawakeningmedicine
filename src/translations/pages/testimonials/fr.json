@@ -26,6 +26,44 @@
       "bufoCeremony": "Cérémonie Bufo",
       "energyHealing": "Guérison Énergétique",
       "integrationSupport": "Soutien d'Intégration"
-    }
+    },
+    "items": [
+      {
+        "name": "Holly",
+        "quote": "Les guérisons que j'ai vécues avec Nina et Astral ont été profondes et transformatrices. Grâce à leur pratique, ils peuvent extraire les problèmes de l'esprit et les libérer à travers le cœur. Leur compassion et leur conviction permettent la vulnérabilité dans l'inconnu, l'acceptation de réalités difficiles et vous permettent de vous élever au-dessus des blocages que nous accumulons tout au long de nos vies. Ils m'ont montré comment m'aimer moi-même, que l'expérience est force, et que notre pouvoir va au-delà de ce corps.",
+        "typeKey": "energyHealingIntegration",
+        "featured": true
+      },
+      {
+        "name": "Jon",
+        "quote": "Nina et Astral m'ont offert un cadeau, en guérissant des blessures qui étaient présentes en moi depuis mon enfance. Nous avons éliminé des problèmes qui me causaient des dynamiques étranges avec les femmes. Ils m'ont libéré et je ne serai plus jamais le même. Ils m'ont aidé à devenir un homme. Je me sens confiant en moi-même et en mes capacités maintenant.",
+        "typeKey": "bufoCeremonyIntegration",
+        "featured": true
+      },
+      {
+        "name": "Anonymous",
+        "quote": "Je pouvais sentir leur présence dans les royaumes supérieurs—m'aidant à aller plus profondément dans la quête. Je me sentais en sécurité, soutenu, vu et pleinement accepté pour pouvoir faire confiance et m'abandonner. Je me sens si jeune ! Clair et joyeux, comme un enfant. J'accepte où je suis et je me connais mieux.",
+        "typeKey": "bufoCeremony",
+        "featured": false
+      },
+      {
+        "name": "Hazel",
+        "quote": "Le travail avec Nina et Astral a été l'une des transformations les plus profondes que j'aie jamais vécues. Ils vous emmènent directement dans l'esprit subconscient pour qu'ensemble vous trouviez la cause de vos croyances limitantes et les éliminiez. C'est la guérison du futur, dans la cinquième dimension, travaillant dans le champ quantique qui permet à la guérison d'être instantanée.",
+        "typeKey": "energyHealing",
+        "featured": true
+      },
+      {
+        "name": "Anonymous",
+        "quote": "Je suis arrivé à la cérémonie brisé, cherchant des réponses. Je suis parti sans questions. La médecine ne m'a pas réparé—elle m'a montré que je n'avais jamais été brisé. Nina et Astral ont tenu l'espace avec tant de révérence et de sécurité que j'ai enfin pu lâcher prise complètement.",
+        "typeKey": "bufoCeremony",
+        "featured": false
+      },
+      {
+        "name": "Marcus",
+        "quote": "Les sessions d'intégration après ma cérémonie étaient tout aussi importantes que le voyage lui-même. Ils m'ont aidé à donner un sens à la dissolution, ancrer les insights et incarner réellement le souvenir dans ma vie quotidienne.",
+        "typeKey": "integrationSupport",
+        "featured": false
+      }
+    ]
   }
 }

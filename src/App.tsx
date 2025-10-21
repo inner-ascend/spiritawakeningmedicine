@@ -6,8 +6,12 @@ import { useLanguage } from './contexts/LanguageContext';
 import navEN from './translations/navigation/en.json';
 import navES from './translations/navigation/es.json';
 import navFR from './translations/navigation/fr.json';
+import homeEN from './translations/pages/home/en.json';
+import homeES from './translations/pages/home/es.json';
+import homeFR from './translations/pages/home/fr.json';
 
 const navTranslations = { en: navEN, es: navES, fr: navFR };
+const homeTranslations = { en: homeEN, es: homeES, fr: homeFR };
 import EventPreview from './components/EventPreview';
 import PlacePreview from './components/PlacePreview';
 import SupportPage from './components/SupportPage';
@@ -35,6 +39,7 @@ function LandingPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const nav = navTranslations[language];
+  const home = homeTranslations[language];
 
   return (
     <div className="min-h-screen bg-earth-900 text-sacred-white overflow-hidden relative">
@@ -140,25 +145,25 @@ function LandingPage() {
           {/* Hero Content */}
           <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-light text-sacred-white mb-6 animate-fadeIn leading-tight">
-              Spirit Awakening Medicine
+              {home.hero.title}
             </h1>
             <p className="text-2xl md:text-4xl text-sacred-gold/90 font-serif font-light tracking-wide mb-6">
-              Open the Gates of Remembrance
+              {home.hero.subtitle}
             </p>
             <p className="text-lg md:text-xl text-desert-sand/90 font-light mb-4">
-              The Sacred Medicine of Bufo Alvarius
+              {home.hero.tagline}
             </p>
             <p className="text-base md:text-lg text-desert-sand/70 font-light mb-8 max-w-3xl mx-auto">
-              Ego Dissolution | Non-Dual Consciousness | Divine Remembrance
+              {home.hero.features}
             </p>
             <p className="text-sm md:text-base text-desert-sand/60 font-light italic max-w-2xl mx-auto mb-12">
-              [Not for everyone. Only for those who feel the call.]
+              {home.hero.disclaimer}
             </p>
             <Link
               to="/contact"
               className="inline-block px-10 py-4 bg-sacred-gold/90 text-earth-900 rounded-full font-medium text-lg hover:bg-sacred-gold transition-all shadow-lg hover:shadow-xl"
             >
-              Begin with Discernment
+              {home.hero.ctaButton}
             </Link>
           </div>
 
@@ -187,31 +192,25 @@ function LandingPage() {
               <div className="text-center mb-16">
                 <div className="text-4xl text-sacred-gold/40 mb-8">⊹</div>
                 <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-8 leading-tight">
-                  The Sacred Medicine of Bufo Alvarius
+                  {home.whatIsBufo.title}
                 </h2>
                 <p className="text-xl md:text-2xl text-desert-sand/80 leading-relaxed italic max-w-3xl mx-auto">
-                  Die before you die
+                  {home.whatIsBufo.subtitle}
                 </p>
               </div>
 
               <div className="space-y-8 text-desert-sand/80 leading-relaxed text-lg max-w-3xl mx-auto">
                 <p className="text-xl text-sacred-gold/90 font-serif text-center">
-                  The most potent and profound entheogenic compound on Earth
+                  {home.whatIsBufo.intro}
                 </p>
                 <p>
-                  Bufo Alvarius—5-MeO-DMT—is the only substance that can reliably introduce individuals
-                  to a state of full non-dual awareness, override the energetic structure of the ego,
-                  and reveal the unitary nature of reality.
+                  {home.whatIsBufo.paragraph1}
                 </p>
                 <p>
-                  This is not a psychedelic. It is a sacred teacher of death and pure remembrance.
-                  The effects begin within <span className="text-sacred-gold font-medium">seconds</span> of inhalation.
-                  Complete ego dissolution. Non-dual consciousness. The remembrance of what you've always been.
+                  {home.whatIsBufo.paragraph2} <span className="text-sacred-gold font-medium">{home.whatIsBufo.paragraph2Highlight}</span> {home.whatIsBufo.paragraph2Cont}
                 </p>
                 <p className="border-l-2 border-sacred-gold/40 pl-6 italic text-desert-sand/70">
-                  "This is not an offering we promote publicly. If you are here, you've been guided,
-                  invited, or felt the call. The toad is not for everyone, and it is not a shortcut.
-                  This path requires humility, surrender, and integration."
+                  "{home.whatIsBufo.quote}"
                 </p>
               </div>
             </div>
@@ -224,10 +223,10 @@ function LandingPage() {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-20">
                 <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
-                  This Medicine Is For...
+                  {home.whoThisIsFor.title}
                 </h2>
                 <p className="text-lg text-earth-700/70 italic">
-                  (And who it's not for)
+                  {home.whoThisIsFor.subtitle}
                 </p>
               </div>
 
@@ -236,33 +235,15 @@ function LandingPage() {
                 <div className="space-y-6">
                   <div className="flex items-center gap-3 mb-8">
                     <div className="text-3xl text-sacred-gold">✓</div>
-                    <h3 className="text-2xl font-serif text-earth-800">This work is FOR:</h3>
+                    <h3 className="text-2xl font-serif text-earth-800">{home.whoThisIsFor.forTitle}</h3>
                   </div>
                   <div className="space-y-4 text-earth-700/80 leading-relaxed">
-                    <p className="flex items-start gap-3">
-                      <span className="text-sacred-gold mt-1">•</span>
-                      <span>Those ready to die before they die</span>
-                    </p>
-                    <p className="flex items-start gap-3">
-                      <span className="text-sacred-gold mt-1">•</span>
-                      <span>Those who've done deep inner work and feel called to complete something</span>
-                    </p>
-                    <p className="flex items-start gap-3">
-                      <span className="text-sacred-gold mt-1">•</span>
-                      <span>Those seeking death of illusion, not an experience</span>
-                    </p>
-                    <p className="flex items-start gap-3">
-                      <span className="text-sacred-gold mt-1">•</span>
-                      <span>Those ready to surrender and integrate</span>
-                    </p>
-                    <p className="flex items-start gap-3">
-                      <span className="text-sacred-gold mt-1">•</span>
-                      <span>Seekers tired of seeking</span>
-                    </p>
-                    <p className="flex items-start gap-3">
-                      <span className="text-sacred-gold mt-1">•</span>
-                      <span>Those who can no longer pretend</span>
-                    </p>
+                    {home.whoThisIsFor.forList.map((item, index) => (
+                      <p key={index} className="flex items-start gap-3">
+                        <span className="text-sacred-gold mt-1">•</span>
+                        <span>{item}</span>
+                      </p>
+                    ))}
                   </div>
                 </div>
 
@@ -270,40 +251,22 @@ function LandingPage() {
                 <div className="space-y-6">
                   <div className="flex items-center gap-3 mb-8">
                     <div className="text-3xl text-desert-clay">✗</div>
-                    <h3 className="text-2xl font-serif text-earth-800">This work is NOT for:</h3>
+                    <h3 className="text-2xl font-serif text-earth-800">{home.whoThisIsFor.notForTitle}</h3>
                   </div>
                   <div className="space-y-4 text-earth-700/80 leading-relaxed">
-                    <p className="flex items-start gap-3">
-                      <span className="text-desert-clay mt-1">•</span>
-                      <span>Those with untreated trauma or psychosis</span>
-                    </p>
-                    <p className="flex items-start gap-3">
-                      <span className="text-desert-clay mt-1">•</span>
-                      <span>Spiritual tourists or peak-seekers</span>
-                    </p>
-                    <p className="flex items-start gap-3">
-                      <span className="text-desert-clay mt-1">•</span>
-                      <span>Those expecting to be "fixed"</span>
-                    </p>
-                    <p className="flex items-start gap-3">
-                      <span className="text-desert-clay mt-1">•</span>
-                      <span>Those refusing integration</span>
-                    </p>
-                    <p className="flex items-start gap-3">
-                      <span className="text-desert-clay mt-1">•</span>
-                      <span>Those wanting quick fixes</span>
-                    </p>
-                    <p className="flex items-start gap-3">
-                      <span className="text-desert-clay mt-1">•</span>
-                      <span>Recreational seekers</span>
-                    </p>
+                    {home.whoThisIsFor.notForList.map((item, index) => (
+                      <p key={index} className="flex items-start gap-3">
+                        <span className="text-desert-clay mt-1">•</span>
+                        <span>{item}</span>
+                      </p>
+                    ))}
                   </div>
                 </div>
               </div>
 
               <div className="text-center mt-16 max-w-2xl mx-auto">
                 <p className="text-lg text-earth-700/70 italic leading-relaxed">
-                  "You're not broken. You're not lost. You're initiating."
+                  "{home.whoThisIsFor.quote}"
                 </p>
               </div>
             </div>
@@ -327,11 +290,10 @@ function LandingPage() {
               <div className="text-center mb-20">
                 <div className="text-4xl text-sacred-gold/40 mb-6">⊹</div>
                 <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
-                  The Three-Phase Journey
+                  {home.threePhaseJourney.title}
                 </h2>
                 <p className="text-lg text-earth-700/70 max-w-2xl mx-auto">
-                  Sacred medicine work requires preparation, presence, and integration.
-                  This is not a shortcut. This is the work of a lifetime.
+                  {home.threePhaseJourney.description}
                 </p>
               </div>
 
@@ -339,42 +301,37 @@ function LandingPage() {
                 {/* Phase 1: Preparation */}
                 <div className="text-center space-y-6">
                   <div className="text-5xl mb-4">🐚</div>
-                  <h3 className="text-2xl font-serif text-earth-800">Preparation</h3>
+                  <h3 className="text-2xl font-serif text-earth-800">{home.threePhaseJourney.preparation.title}</h3>
                   <p className="text-earth-700/70 leading-relaxed">
-                    1-2 sessions to assess emotional readiness, anchor your nervous system,
-                    and create a sacred container for what's to come.
+                    {home.threePhaseJourney.preparation.description}
                   </p>
-                  <p className="text-sm text-sacred-gold font-medium">€111 per session</p>
+                  <p className="text-sm text-sacred-gold font-medium">{home.threePhaseJourney.preparation.price}</p>
                 </div>
 
                 {/* Phase 2: Ceremony */}
                 <div className="text-center space-y-6">
                   <div className="text-5xl mb-4">🔥</div>
-                  <h3 className="text-2xl font-serif text-earth-800">Ceremony</h3>
+                  <h3 className="text-2xl font-serif text-earth-800">{home.threePhaseJourney.ceremony.title}</h3>
                   <p className="text-earth-700/70 leading-relaxed">
-                    The sacred passage. Held in small, intimate settings (2-4 people max)
-                    in Mazunte, Oaxaca, Mexico. Full energetic holding and support.
+                    {home.threePhaseJourney.ceremony.description}
                   </p>
-                  <p className="text-sm text-sacred-gold font-medium">€300-500 per person</p>
+                  <p className="text-sm text-sacred-gold font-medium">{home.threePhaseJourney.ceremony.price}</p>
                 </div>
 
                 {/* Phase 3: Integration */}
                 <div className="text-center space-y-6">
                   <div className="text-5xl mb-4">🌿</div>
-                  <h3 className="text-2xl font-serif text-earth-800">Integration</h3>
+                  <h3 className="text-2xl font-serif text-earth-800">{home.threePhaseJourney.integration.title}</h3>
                   <p className="text-earth-700/70 leading-relaxed">
-                    Where the real work happens. Post-journey support, meaning-making,
-                    and embodying the remembrance into your daily life.
+                    {home.threePhaseJourney.integration.description}
                   </p>
-                  <p className="text-sm text-sacred-gold font-medium">€88-111 per session</p>
+                  <p className="text-sm text-sacred-gold font-medium">{home.threePhaseJourney.integration.price}</p>
                 </div>
               </div>
 
               <div className="text-center max-w-3xl mx-auto border-t border-earth-700/10 pt-12">
-                <p className="text-lg text-earth-700/70 italic leading-relaxed">
-                  "Insight without integration is just spiritual entertainment.<br/>
-                  This isn't a quick fix. This isn't a weekend workshop.<br/>
-                  This is the work of a lifetime—compressed into the time your soul needs."
+                <p className="text-lg text-earth-700/70 italic leading-relaxed" style={{whiteSpace: 'pre-line'}}>
+                  "{home.threePhaseJourney.quote}"
                 </p>
               </div>
             </div>
@@ -388,23 +345,18 @@ function LandingPage() {
             <div className="max-w-4xl mx-auto text-center">
               <div className="text-4xl text-sacred-gold/60 mb-8">⊛</div>
               <h2 className="text-3xl md:text-5xl font-serif text-sacred-white leading-relaxed mb-12">
-                Nina & Astral<br/>
-                Initiated by Seri Tribe Elders in the Sonoran Desert, Mexico
+                {home.seriLineage.title}<br/>
+                {home.seriLineage.subtitle}
               </h2>
               <div className="space-y-6 text-desert-sand/80 leading-relaxed text-lg max-w-3xl mx-auto">
                 <p>
-                  This work is held with deep reverence for the indigenous lineage from which it comes.
-                  Nina and Astral have been initiated as daughter and son of the Seri Tribe by elders in the desert of Sonora, Mexico.
+                  {home.seriLineage.paragraph1}
                 </p>
                 <p className="text-desert-sand/70">
-                  Years of training in trauma-informed approaches, energy healing, and the sacred art
-                  of holding space for ego dissolution. Guest speakers in facilitator training programs.
-                  Hundreds of ceremonies guided with safety, presence, and deep respect.
+                  {home.seriLineage.paragraph2}
                 </p>
                 <p className="text-sacred-gold/90 italic font-serif text-xl mt-8">
-                  "We have sat with the medicine. We have died, dissolved, returned, and broken again.
-                  We hold this work with reverence. If you feel called, let's walk slowly.
-                  This is sacred territory—not a service."
+                  "{home.seriLineage.quote}"
                 </p>
               </div>
               <div className="mt-12">
@@ -412,7 +364,7 @@ function LandingPage() {
                   to="/about"
                   className="inline-block text-sacred-gold hover:text-sacred-amber transition-colors text-lg font-medium"
                 >
-                  Read our story →
+                  {home.seriLineage.link}
                 </Link>
               </div>
             </div>
@@ -427,8 +379,8 @@ function LandingPage() {
             className="w-full h-full"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-earth-900/40 to-earth-900/70 flex items-center justify-center">
-            <p className="text-3xl md:text-5xl font-serif text-sacred-white italic text-center px-4 max-w-4xl leading-tight">
-              "Die before you die, and discover<br/>there is no death."
+            <p className="text-3xl md:text-5xl font-serif text-sacred-white italic text-center px-4 max-w-4xl leading-tight" style={{whiteSpace: 'pre-line'}}>
+              "{home.imageQuote.quote}"
             </p>
           </div>
         </div>
@@ -439,52 +391,18 @@ function LandingPage() {
           <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-4xl md:text-5xl font-serif text-sacred-white text-center mb-20">
-                Voices From The Journey
+                {home.testimonials.title}
               </h2>
 
               <div className="space-y-20">
-                {/* Testimonial 1 - Holly */}
-                <div className="max-w-4xl mx-auto">
-                  <p className="text-2xl md:text-3xl font-serif text-desert-sand leading-relaxed mb-8 italic">
-                    "The healings I went through with Nina & Astral were deep and transformative. Through their practice,
-                    they are able to prise issues from the mind and release them through the heart. Their compassion
-                    and belief allows vulnerability in the unknown, acceptance of ugly realities and enables you
-                    to rise above blocks we accumulate along with our lives. They showed me how to love myself,
-                    that experience is strength, and our power runs further than this body."
-                  </p>
-                  <p className="text-sacred-gold text-lg">— Holly</p>
-                </div>
-
-                {/* Testimonial 2 - Jon */}
-                <div className="max-w-4xl mx-auto">
-                  <p className="text-2xl md:text-3xl font-serif text-desert-sand leading-relaxed mb-8 italic">
-                    "Nina & Astral gave me a gift, by healing wounds that had been present in me since I was a child.
-                    We cleared issues that were causing me to have weird dynamics with women. They set me free
-                    and I'll never be the same. They helped me become a man. I feel confident in myself and my abilities now."
-                  </p>
-                  <p className="text-sacred-gold text-lg">— Jon</p>
-                </div>
-
-                {/* Testimonial 3 - Anonymous */}
-                <div className="max-w-4xl mx-auto">
-                  <p className="text-2xl md:text-3xl font-serif text-desert-sand leading-relaxed mb-8 italic">
-                    "I could feel their presence in the higher realms—helping me to go deeper into the quest.
-                    I felt secure, held, seen, and fully accepted so I could trust and surrender. I feel so young!
-                    Clear and joyful, like a child. I accept where I'm at and know myself better."
-                  </p>
-                  <p className="text-sacred-gold text-lg">— Anonymous</p>
-                </div>
-
-                {/* Testimonial 4 - Hazel */}
-                <div className="max-w-4xl mx-auto">
-                  <p className="text-2xl md:text-3xl font-serif text-desert-sand leading-relaxed mb-8 italic">
-                    "The work with Nina & Astral was one of the most profound transformations I have ever had.
-                    They take you straight into the subconscious mind so together you find the cause of your
-                    limiting beliefs and clear them. This is the healing of the future, in the 5th dimension,
-                    working in the quantum field that enables healing to be instantaneous."
-                  </p>
-                  <p className="text-sacred-gold text-lg">— Hazel</p>
-                </div>
+                {home.testimonials.items.map((testimonial, index) => (
+                  <div key={index} className="max-w-4xl mx-auto">
+                    <p className="text-2xl md:text-3xl font-serif text-desert-sand leading-relaxed mb-8 italic">
+                      "{testimonial.quote}"
+                    </p>
+                    <p className="text-sacred-gold text-lg">— {testimonial.name}</p>
+                  </div>
+                ))}
               </div>
 
               <div className="text-center mt-16">
@@ -492,7 +410,7 @@ function LandingPage() {
                   to="/testimonials"
                   className="inline-block text-sacred-gold hover:text-sacred-amber transition-colors text-lg font-medium"
                 >
-                  Read more testimonials →
+                  {home.testimonials.link}
                 </Link>
               </div>
             </div>
@@ -505,10 +423,10 @@ function LandingPage() {
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-20">
                 <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
-                  Investment & Accessibility
+                  {home.pricingTransparency.title}
                 </h2>
                 <p className="text-lg text-earth-700/70 italic">
-                  Transparent pricing. Sliding scale available.
+                  {home.pricingTransparency.subtitle}
                 </p>
               </div>
 
@@ -516,60 +434,60 @@ function LandingPage() {
                 {/* Preparation */}
                 <div className="bg-white rounded-2xl p-8 border border-earth-700/10">
                   <div className="text-3xl mb-4 text-center">🐚</div>
-                  <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">Preparation</h3>
+                  <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{home.pricingTransparency.preparation.title}</h3>
                   <p className="text-earth-700/70 text-center mb-6 leading-relaxed">
-                    1-2 sessions required before ceremony
+                    {home.pricingTransparency.preparation.description}
                   </p>
                   <div className="text-center">
-                    <div className="text-3xl font-serif text-sacred-gold mb-2">€111</div>
-                    <div className="text-sm text-earth-700/60">per session</div>
+                    <div className="text-3xl font-serif text-sacred-gold mb-2">{home.pricingTransparency.preparation.price}</div>
+                    <div className="text-sm text-earth-700/60">{home.pricingTransparency.preparation.unit}</div>
                   </div>
                 </div>
 
                 {/* Ceremony */}
                 <div className="bg-white rounded-2xl p-8 border-2 border-sacred-gold/30 relative">
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-sacred-gold text-earth-900 px-4 py-1 rounded-full text-sm font-medium">
-                    Sacred Passage
+                    {home.pricingTransparency.ceremony.badge}
                   </div>
                   <div className="text-3xl mb-4 text-center">🔥</div>
-                  <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">Ceremony</h3>
+                  <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{home.pricingTransparency.ceremony.title}</h3>
                   <p className="text-earth-700/70 text-center mb-6 leading-relaxed">
-                    2-4 people max, Mazunte, Mexico
+                    {home.pricingTransparency.ceremony.description}
                   </p>
                   <div className="text-center">
-                    <div className="text-3xl font-serif text-sacred-gold mb-2">€300-500</div>
-                    <div className="text-sm text-earth-700/60">per person</div>
+                    <div className="text-3xl font-serif text-sacred-gold mb-2">{home.pricingTransparency.ceremony.price}</div>
+                    <div className="text-sm text-earth-700/60">{home.pricingTransparency.ceremony.unit}</div>
                   </div>
                   <div className="mt-6 text-center text-sm text-earth-700/60 leading-relaxed">
-                    Includes pre-ceremony consultation, ceremony, integration within 48hrs, 2-week follow-up
+                    {home.pricingTransparency.ceremony.includes}
                   </div>
                 </div>
 
                 {/* Integration */}
                 <div className="bg-white rounded-2xl p-8 border border-earth-700/10">
                   <div className="text-3xl mb-4 text-center">🌿</div>
-                  <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">Integration</h3>
+                  <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{home.pricingTransparency.integration.title}</h3>
                   <p className="text-earth-700/70 text-center mb-6 leading-relaxed">
-                    Post-journey support
+                    {home.pricingTransparency.integration.description}
                   </p>
                   <div className="text-center">
-                    <div className="text-3xl font-serif text-sacred-gold mb-2">€88-111</div>
-                    <div className="text-sm text-earth-700/60 mb-4">per session</div>
-                    <div className="text-lg font-serif text-earth-800 mb-2">or</div>
-                    <div className="text-2xl font-serif text-sacred-gold mb-2">€300-400</div>
-                    <div className="text-sm text-earth-700/60">4-session package</div>
+                    <div className="text-3xl font-serif text-sacred-gold mb-2">{home.pricingTransparency.integration.price}</div>
+                    <div className="text-sm text-earth-700/60 mb-4">{home.pricingTransparency.integration.unit}</div>
+                    <div className="text-lg font-serif text-earth-800 mb-2">{home.pricingTransparency.integration.or}</div>
+                    <div className="text-2xl font-serif text-sacred-gold mb-2">{home.pricingTransparency.integration.packagePrice}</div>
+                    <div className="text-sm text-earth-700/60">{home.pricingTransparency.integration.packageUnit}</div>
                   </div>
                 </div>
               </div>
 
               <div className="bg-medicine-venom rounded-2xl p-8 max-w-3xl mx-auto">
-                <h4 className="text-xl font-serif text-earth-800 mb-4 text-center">Accessibility</h4>
+                <h4 className="text-xl font-serif text-earth-800 mb-4 text-center">{home.pricingTransparency.accessibility.title}</h4>
                 <div className="space-y-3 text-earth-700/80 text-center leading-relaxed">
-                  <p>Sliding scale available based on financial situation</p>
-                  <p>BIPOC and single parent discounts</p>
-                  <p>Payment plans offered</p>
+                  {home.pricingTransparency.accessibility.items.map((item, index) => (
+                    <p key={index}>{item}</p>
+                  ))}
                   <p className="italic text-earth-700/70 pt-4">
-                    "No one is ever turned away for lack of funds when the call is genuine."
+                    "{home.pricingTransparency.accessibility.quote}"
                   </p>
                 </div>
               </div>
@@ -577,7 +495,7 @@ function LandingPage() {
               <div className="text-center mt-12">
                 <p className="text-lg text-earth-700/70 leading-relaxed">
                   <Link to="/faq" className="text-sacred-gold hover:text-sacred-amber transition-colors">
-                    Read FAQ & Safety Information →
+                    {home.pricingTransparency.link}
                   </Link>
                 </p>
               </div>
@@ -592,24 +510,23 @@ function LandingPage() {
             <div className="max-w-3xl mx-auto text-center space-y-8">
               <div className="text-4xl mb-8 text-sacred-gold/60">⊹</div>
               <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
-                Ready to Begin?
+                {home.readyToBegin.title}
               </h2>
               <p className="text-2xl md:text-3xl text-desert-sand/80 font-serif italic mb-8 leading-relaxed">
-                "This work is never sold. Only offered."
+                "{home.readyToBegin.quote}"
               </p>
               <p className="text-lg text-desert-sand/70 mb-8 leading-relaxed max-w-2xl mx-auto">
-                If you feel the call, begin with the application process. This is an invitation to discernment—
-                for both of us. Not everyone is a fit. And that's sacred.
+                {home.readyToBegin.description}
               </p>
               <div className="space-y-4">
                 <Link
                   to="/contact"
                   className="inline-block px-12 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
                 >
-                  Begin Your Application
+                  {home.readyToBegin.button}
                 </Link>
                 <p className="text-sm text-desert-sand/60 italic">
-                  Private application · Discernment process · Medical screening required
+                  {home.readyToBegin.disclaimer}
                 </p>
               </div>
             </div>

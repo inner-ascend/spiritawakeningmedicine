@@ -446,10 +446,10 @@ function LandingPage() {
                 {/* Testimonial 1 - Holly */}
                 <div className="max-w-4xl mx-auto">
                   <p className="text-2xl md:text-3xl font-serif text-desert-sand leading-relaxed mb-8 italic">
-                    "The healings I went through with Astral were deep and transformative. Through his practice,
-                    he is able to prise issues from the mind and release them through the heart. His compassion
+                    "The healings I went through with Nina & Astral were deep and transformative. Through their practice,
+                    they are able to prise issues from the mind and release them through the heart. Their compassion
                     and belief allows vulnerability in the unknown, acceptance of ugly realities and enables you
-                    to rise above blocks we accumulate along with our lives. He showed me how to love myself,
+                    to rise above blocks we accumulate along with our lives. They showed me how to love myself,
                     that experience is strength, and our power runs further than this body."
                   </p>
                   <p className="text-sacred-gold text-lg">— Holly</p>
@@ -458,28 +458,28 @@ function LandingPage() {
                 {/* Testimonial 2 - Jon */}
                 <div className="max-w-4xl mx-auto">
                   <p className="text-2xl md:text-3xl font-serif text-desert-sand leading-relaxed mb-8 italic">
-                    "Astral gave me a gift, by healing wounds that had been present in me since I was a child.
-                    We cleared issues that were causing me to have weird dynamics with women. He set me free
-                    and I'll never be the same. He made me a man. I feel confident in myself and my abilities now."
+                    "Nina & Astral gave me a gift, by healing wounds that had been present in me since I was a child.
+                    We cleared issues that were causing me to have weird dynamics with women. They set me free
+                    and I'll never be the same. They helped me become a man. I feel confident in myself and my abilities now."
                   </p>
                   <p className="text-sacred-gold text-lg">— Jon</p>
                 </div>
 
-                {/* Testimonial 3 - Nina */}
+                {/* Testimonial 3 - Anonymous */}
                 <div className="max-w-4xl mx-auto">
                   <p className="text-2xl md:text-3xl font-serif text-desert-sand leading-relaxed mb-8 italic">
-                    "I could feel his presence in the higher realms—helping me to go deeper into the quest.
+                    "I could feel their presence in the higher realms—helping me to go deeper into the quest.
                     I felt secure, held, seen, and fully accepted so I could trust and surrender. I feel so young!
                     Clear and joyful, like a child. I accept where I'm at and know myself better."
                   </p>
-                  <p className="text-sacred-gold text-lg">— Nina</p>
+                  <p className="text-sacred-gold text-lg">— Anonymous</p>
                 </div>
 
                 {/* Testimonial 4 - Hazel */}
                 <div className="max-w-4xl mx-auto">
                   <p className="text-2xl md:text-3xl font-serif text-desert-sand leading-relaxed mb-8 italic">
-                    "The work with Astral was one of the most profound transformations I have ever had.
-                    He takes you straight into the subconscious mind so together you find the cause of your
+                    "The work with Nina & Astral was one of the most profound transformations I have ever had.
+                    They take you straight into the subconscious mind so together you find the cause of your
                     limiting beliefs and clear them. This is the healing of the future, in the 5th dimension,
                     working in the quantum field that enables healing to be instantaneous."
                   </p>

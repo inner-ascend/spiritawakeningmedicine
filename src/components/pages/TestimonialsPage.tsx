@@ -15,25 +15,25 @@ export default function TestimonialsPage() {
   const testimonials = [
     {
       name: "Holly",
-      quote: "The healings I went through with Astral were deep and transformative. Through his practice, he is able to prise issues from the mind and release them through the heart. His compassion and belief allows vulnerability in the unknown, acceptance of ugly realities and enables you to rise above blocks we accumulate along with our lives. He showed me how to love myself, that experience is strength, and our power runs further than this body.",
+      quote: "The healings I went through with Nina & Astral were deep and transformative. Through their practice, they are able to prise issues from the mind and release them through the heart. Their compassion and belief allows vulnerability in the unknown, acceptance of ugly realities and enables you to rise above blocks we accumulate along with our lives. They showed me how to love myself, that experience is strength, and our power runs further than this body.",
       typeKey: "energyHealingIntegration",
       featured: true
     },
     {
       name: "Jon",
-      quote: "Astral gave me a gift, by healing wounds that had been present in me since I was a child. We cleared issues that were causing me to have weird dynamics with women. He set me free and I'll never be the same. He made me a man. I feel confident in myself and my abilities now.",
+      quote: "Nina & Astral gave me a gift, by healing wounds that had been present in me since I was a child. We cleared issues that were causing me to have weird dynamics with women. They set me free and I'll never be the same. They helped me become a man. I feel confident in myself and my abilities now.",
       typeKey: "bufoCeremonyIntegration",
       featured: true
     },
     {
-      name: "Nina",
-      quote: "I could feel his presence in the higher realms—helping me to go deeper into the quest. I felt secure, held, seen, and fully accepted so I could trust and surrender. I feel so young! Clear and joyful, like a child. I accept where I'm at and know myself better.",
+      name: "Anonymous",
+      quote: "I could feel their presence in the higher realms—helping me to go deeper into the quest. I felt secure, held, seen, and fully accepted so I could trust and surrender. I feel so young! Clear and joyful, like a child. I accept where I'm at and know myself better.",
       typeKey: "bufoCeremony",
       featured: false
     },
     {
       name: "Hazel",
-      quote: "The work with Astral was one of the most profound transformations I have ever had. He takes you straight into the subconscious mind so together you find the cause of your limiting beliefs and clear them. This is the healing of the future, in the 5th dimension, working in the quantum field that enables healing to be instantaneous.",
+      quote: "The work with Nina & Astral was one of the most profound transformations I have ever had. They take you straight into the subconscious mind so together you find the cause of your limiting beliefs and clear them. This is the healing of the future, in the 5th dimension, working in the quantum field that enables healing to be instantaneous.",
       typeKey: "energyHealing",
       featured: true
     },

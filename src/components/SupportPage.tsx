@@ -6,10 +6,10 @@ export default function SupportPage() {
     <div className="min-h-screen">
       <Navigation />
 
-      <div className="min-h-screen relative flex items-center justify-center bg-gradient-to-br from-cosmic-900/90 via-indigo-deep/80 to-black/90">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 -left-4 w-[600px] h-[600px] bg-mystic-purple rounded-full mix-blend-screen filter blur-3xl animate-breathe" style={{animationDuration: '8s'}}></div>
-          <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-sacred-green rounded-full mix-blend-screen filter blur-3xl animate-breathe" style={{animationDuration: '10s', animationDelay: '2s'}}></div>
+      <div className="min-h-screen relative flex items-center justify-center bg-gradient-to-br from-earth-900 via-spirit-deep to-earth-800">
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 -left-4 w-[600px] h-[600px] bg-desert-clay rounded-full mix-blend-screen filter blur-3xl" style={{animationDuration: '8s'}}></div>
+          <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-desert-sage rounded-full mix-blend-screen filter blur-3xl" style={{animationDuration: '10s', animationDelay: '2s'}}></div>
         </div>
 
         <div className="relative z-10 container mx-auto px-4 py-32">
@@ -23,7 +23,7 @@ export default function SupportPage() {
               </p>
             </div>
 
-            <div className="bg-cosmic-900/30 backdrop-blur-xl border border-sacred-moon/10 rounded-2xl p-8 md:p-12 space-y-12">
+            <div className="bg-earth-800/30 backdrop-blur-xl border border-sacred-smoke/20 rounded-2xl p-8 md:p-12 space-y-12">
               {/* Email Support */}
               <div className="text-center space-y-4">
                 <h2 className="text-2xl font-serif text-sacred-moon">Get in Touch</h2>
@@ -32,14 +32,14 @@ export default function SupportPage() {
                 </p>
                 <a
                   href="mailto:hello@spiritawakeningmedicine.com"
-                  className="inline-block px-8 py-3 bg-sacred-gold text-cosmic-900 rounded-full font-medium hover:bg-sacred-glow transition-all"
+                  className="inline-block px-8 py-3 bg-sacred-gold text-earth-900 rounded-full font-medium hover:bg-sacred-amber transition-all"
                 >
                   Email: hello@spiritawakeningmedicine.com
                 </a>
               </div>
 
               {/* Common Questions */}
-              <div className="border-t border-sacred-moon/10 pt-12">
+              <div className="border-t border-sacred-smoke/20 pt-12">
                 <h2 className="text-2xl font-serif text-sacred-moon mb-8 text-center">
                   Common Questions
                 </h2>
@@ -101,7 +101,7 @@ export default function SupportPage() {
               </div>
 
               {/* Connect */}
-              <div className="border-t border-sacred-moon/10 pt-12 text-center space-y-4">
+              <div className="border-t border-sacred-smoke/20 pt-12 text-center space-y-4">
                 <h2 className="text-2xl font-serif text-sacred-moon mb-4">Stay Connected</h2>
                 <p className="text-sacred-moon/70 mb-6">
                   Follow our journey and daily teachings on Instagram
@@ -110,7 +110,7 @@ export default function SupportPage() {
                   href="https://instagram.com/spiritawakeningmedicine"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block text-sacred-gold hover:text-sacred-glow transition-colors"
+                  className="inline-block text-sacred-gold hover:text-sacred-amber transition-colors"
                 >
                   @spiritawakeningmedicine
                 </a>

@@ -23,8 +23,8 @@ export default function ContactPage() {
 
     try {
       await emailjs.send(
-        'service_YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'template_YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_pwk84sr',
+        'template_7iyu04b',
         {
           from_name: formData.name,
           from_email: formData.email,
@@ -32,7 +32,7 @@ export default function ContactPage() {
           message: formData.message,
           to_email: 'spiritawakeningmedicine@gmail.com'
         },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        'v57Ta98pwBDWpoe8o'
       );
 
       setSent(true);

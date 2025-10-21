@@ -27,54 +27,54 @@ function LandingPage() {
   const t = language === 'es' ? esTranslations : language === 'ca' ? caTranslations : enTranslations;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-cosmic-900 via-cosmic-800 to-black text-sacred-moon overflow-hidden relative">
-      {/* Cosmic aurora background - dialed down from opacity-20 to opacity-10 */}
-      <div className="fixed inset-0 opacity-10">
-        <div className="absolute top-0 -left-4 w-[600px] h-[600px] bg-mystic-purple rounded-full mix-blend-screen filter blur-3xl animate-breathe" style={{animationDuration: '8s'}}></div>
-        <div className="absolute top-1/4 -right-4 w-[500px] h-[500px] bg-sacred-green rounded-full mix-blend-screen filter blur-3xl animate-breathe" style={{animationDuration: '10s', animationDelay: '2s'}}></div>
+    <div className="min-h-screen bg-gradient-to-b from-earth-900 via-spirit-deep to-earth-900 text-sacred-white overflow-hidden relative">
+      {/* Subtle earth-tone gradient overlays - natural, not cosmic */}
+      <div className="fixed inset-0 opacity-5">
+        <div className="absolute top-0 -left-4 w-[600px] h-[600px] bg-desert-clay rounded-full mix-blend-screen filter blur-3xl" style={{animationDuration: '12s'}}></div>
+        <div className="absolute top-1/4 -right-4 w-[500px] h-[500px] bg-medicine-toad rounded-full mix-blend-screen filter blur-3xl" style={{animationDuration: '15s', animationDelay: '3s'}}></div>
       </div>
 
-      {/* Sacred geometry overlay - reduced opacity */}
-      <div className="fixed inset-0 opacity-[0.02]" style={{
-        backgroundImage: 'linear-gradient(rgba(139, 92, 246, 0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(139, 92, 246, 0.3) 1px, transparent 1px)',
-        backgroundSize: '60px 60px'
+      {/* Organic texture overlay - minimal */}
+      <div className="fixed inset-0 opacity-[0.015]" style={{
+        backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(200, 160, 92, 0.1) 1px, transparent 0)',
+        backgroundSize: '80px 80px'
       }}></div>
 
       <div className="relative z-10">
         {/* Navigation */}
-        <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-cosmic-900/50 border-b border-mystic-purple/20">
+        <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-earth-900/80 border-b border-desert-sage/20">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between h-20">
               {/* Logo */}
               <Link to="/" className="flex items-center gap-3">
-                <Sparkles className="w-8 h-8 text-mystic-violet animate-glow" />
-                <span className="text-xl font-serif bg-gradient-to-r from-mystic-lavender via-sacred-gold to-mystic-violet bg-clip-text text-transparent">
-                  Astral Integration
+                <Sparkles className="w-8 h-8 text-sacred-gold" />
+                <span className="text-xl font-serif text-sacred-gold">
+                  Spirit Awakening Medicine
                 </span>
               </Link>
 
               {/* Nav Links - Hidden on mobile */}
               <div className="hidden lg:flex items-center gap-6">
-                <Link to="/about" className="text-mystic-lavender/70 hover:text-sacred-gold transition-colors">
+                <Link to="/about" className="text-desert-sand/80 hover:text-sacred-gold transition-colors">
                   About
                 </Link>
-                <Link to="/services" className="text-mystic-lavender/70 hover:text-sacred-gold transition-colors">
-                  Services
+                <Link to="/ceremonies" className="text-desert-sand/80 hover:text-sacred-gold transition-colors">
+                  Ceremonies
                 </Link>
-                <Link to="/inner-ascend" className="text-mystic-lavender/70 hover:text-sacred-gold transition-colors">
-                  Community
+                <Link to="/preparation" className="text-desert-sand/80 hover:text-sacred-gold transition-colors">
+                  Preparation
                 </Link>
-                <Link to="/retreats" className="text-mystic-lavender/70 hover:text-sacred-gold transition-colors">
-                  Retreats
+                <Link to="/integration" className="text-desert-sand/80 hover:text-sacred-gold transition-colors">
+                  Integration
                 </Link>
-                <Link to="/collaborations" className="text-mystic-lavender/70 hover:text-sacred-gold transition-colors">
-                  Collaborations
+                <Link to="/testimonials" className="text-desert-sand/80 hover:text-sacred-gold transition-colors">
+                  Testimonials
                 </Link>
-                <Link to="/resources" className="text-mystic-lavender/70 hover:text-sacred-gold transition-colors">
-                  Resources
+                <Link to="/faq" className="text-desert-sand/80 hover:text-sacred-gold transition-colors">
+                  FAQ
                 </Link>
-                <Link to="/contact" className="px-6 py-2 bg-gradient-to-r from-mystic-purple to-mystic-indigo rounded-full font-semibold hover:shadow-lg hover:shadow-mystic-purple/50 transition-all">
-                  Contact
+                <Link to="/contact" className="px-6 py-2 bg-sacred-gold text-earth-900 rounded-full font-semibold hover:bg-sacred-amber transition-all">
+                  Apply
                 </Link>
               </div>
 

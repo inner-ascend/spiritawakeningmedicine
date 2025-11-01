@@ -1,493 +1,490 @@
-# Image Requirements for Astral Integration Website
+# Image Requirements for Spirit Awakening Medicine Website
 
-This document lists all the image placeholders currently in your website that need to be replaced with actual photos. Images are organized by page and section.
-
----
-
-## 📄 **Homepage** (`src/App.tsx`)
-
-### 1. **Hero Section - Full Screen Background**
-- **Location:** Lines 125-151 (Full-screen hero)
-- **Current State:** Gradient placeholder
-- **Recommended Image:**
-  - Wide landscape shot (nature, ocean, mountains, or mystical setting)
-  - Should evoke: Sacred, expansive, transformative
-  - Suggested dimensions: 1920x1080px minimum (landscape)
-  - **Text overlay:** "Astral Integration" + "Guiding souls home to themselves"
-  - **Note:** Image should work with text overlay - darker areas or can add gradient overlay
+This document outlines all the images needed for the Spirit Awakening Medicine website, organized by page and section.
 
 ---
 
-### 2. **Visual Story Section 1 - Journey Begins**
-- **Location:** Lines 154-177 (First cream section)
-- **Current State:** Gradient placeholder (`aspect-[4/5]`)
-- **Recommended Image:**
-  - Portrait-oriented photo (4:5 ratio)
-  - Suggested: You in ceremony space, nature setting, or meditative pose
-  - Should evoke: Presence, grounding, the beginning of a journey
-  - Suggested dimensions: 1000x1250px
-  - **Adjacent text:** "The journey begins with surrender"
+## 🏠 HOMEPAGE (App.tsx)
+
+### 1. **Full-Width Image Section 1 - Desert/Medicine Setting**
+- **Location:** After hero section (Line 179)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Sonoran Desert landscape at golden hour
+- **Height:** 70vh
+- **Purpose:** Establish the sacred desert setting and natural environment
+
+### 2. **Full-Width Image Section 2 - Bufo Alvarius Toad**
+- **Location:** After "Who This Is For" section (Line 277)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Bufo Alvarius toad - Sacred medicine (close-up or in natural habitat)
+- **Height:** 60vh
+- **Purpose:** Visual introduction to the sacred medicine
+
+### 3. **Full-Width Image Section 3 - Mazunte Beach**
+- **Location:** After Seri Lineage section (Line 375)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Mazunte beach at sunset - Oaxaca, Mexico
+- **Height:** 70vh
+- **Purpose:** Show the beautiful location where ceremonies are held
 
 ---
 
-### 3. **Visual Quote Section Background**
-- **Location:** Lines 201-213 (Full-width quote section)
-- **Current State:** Gradient overlay
-- **Recommended Image:**
-  - Wide atmospheric background
-  - Suggested: Sunset, ocean, stars, mystical landscape
-  - Should evoke: Mystery, transformation, vastness
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** "This work is not about becoming someone new. It's about remembering who you've always been."
+## 👤 ABOUT PAGE (AboutPageNew.tsx)
+
+### 1. **Hero Background Image**
+- **Location:** Top of page (Line 22)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Sonoran Desert at sunset
+- **Height:** 100vh (full screen)
+- **Purpose:** Welcoming hero image establishing the setting
+
+### 2. **Nina Portrait**
+- **Location:** Portrait section mid-page (Line 98)
+- **Aspect Ratio:** 3:4 (portrait orientation)
+- **Suggested Content:** Professional portrait of Nina - Co-facilitator
+- **Purpose:** Personal connection, show the facilitator
+- **Note:** This is a key image for building trust
+- **Caption:** "Nina"
+
+### 3. **Astral Portrait**
+- **Location:** Portrait section mid-page (Line 104)
+- **Aspect Ratio:** 3:4 (portrait orientation)
+- **Suggested Content:** Professional portrait of Astral - Co-facilitator
+- **Purpose:** Personal connection, show the facilitator
+- **Note:** This is a key image for building trust
+- **Caption:** "Astral"
 
 ---
 
-### 4. **Sacred Circles - Ways to Work Together**
-- **Location:** Lines 203-206 (First service visual)
-- **Current State:** Gradient placeholder (`aspect-[16/10]`)
-- **Recommended Image:**
-  - Landscape-oriented photo (16:10 ratio)
-  - Suggested: Circle gathering, people in ceremony, community in sacred space
-  - Should evoke: Connection, community, holding space
-  - Suggested dimensions: 1600x1000px
-  - **Adjacent text:** "Sacred Circles - Join a container of souls committed to growth"
+## 🐸 CEREMONIES PAGE (BufoCeremoniesPage.tsx)
+
+### 1. **Hero Background Image**
+- **Location:** Top of page (Line 23)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Sonoran Desert toad - Bufo Alvarius (close-up or habitat shot)
+- **Height:** 100vh (full screen)
+- **Purpose:** Introduce the medicine visually
+
+### 2. **Toad Close-up Image**
+- **Location:** After "What is Bufo Alvarius" section (Line 106)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Bufo Alvarius toad close-up in natural habitat
+- **Height:** 60vh
+- **Purpose:** Show the actual toad in more detail
+
+### 3. **Ceremony Space Image**
+- **Location:** After ceremony details (Line 240)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Sacred ceremony space in nature - Mazunte, Mexico
+- **Height:** 70vh
+- **Purpose:** Show the actual ceremony environment, build trust and transparency
+- **Note:** Should convey safety, sacredness, and beauty
 
 ---
 
-### 5. **Medicine Work - Bufo Journeys**
-- **Location:** Lines 220-234 (Second service visual)
-- **Current State:** Gradient placeholder (`aspect-[16/10]`)
-- **Recommended Image:**
-  - Landscape-oriented photo (16:10 ratio)
-  - Suggested: Desert toad, ceremony space, candles, altar, or mystical nature setting
-  - Should evoke: Sacred medicine, reverence, transformation
-  - Suggested dimensions: 1600x1000px
-  - **Adjacent text:** "Medicine Journeys - Bufo Alvarius ceremonies held with reverence"
+## 🐚 PREPARATION PAGE (PreparationPage.tsx)
+
+### 1. **Hero Background Image**
+- **Location:** Top of page (Line 23)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Meditation altar with sacred objects for preparation
+- **Height:** 100vh (full screen)
+- **Purpose:** Set the tone for preparation work
+
+### 2. **Breathwork Image**
+- **Location:** After "Why Preparation Matters" section (Line 96)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Person in meditative breathwork posture
+- **Height:** 60vh
+- **Purpose:** Show preparation practices visually
 
 ---
 
-### 6. **One-to-One Work**
-- **Location:** Lines 237-251 (Third service visual)
-- **Current State:** Gradient placeholder (`aspect-[16/10]`)
-- **Recommended Image:**
-  - Landscape-oriented photo (16:10 ratio)
-  - Suggested: 1:1 session space, healing room, intimate ceremony setting
-  - Should evoke: Intimacy, deep work, personal transformation
-  - Suggested dimensions: 1600x1000px
-  - **Adjacent text:** "One-to-One Journeys - Deep transformational work tailored to your path"
+## 🌿 INTEGRATION PAGE (IntegrationPage.tsx)
+
+### 1. **Hero Background Image**
+- **Location:** Top of page (Line 22)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Integration circle in nature with people reflecting
+- **Height:** 100vh (full screen)
+- **Purpose:** Show integration work and community
+
+### 2. **Nature Reflection Image**
+- **Location:** After "Why Integration Is Sacred" section (Line 108)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Person journaling in nature for integration
+- **Height:** 60vh
+- **Purpose:** Show individual integration practices
 
 ---
 
-### 7. **Testimonial Background**
-- **Location:** Lines 257-269 (Magazine-style testimonial)
-- **Current State:** Gradient overlay
-- **Recommended Image:**
-  - Wide atmospheric background
-  - Suggested: Moody nature scene, ocean at dusk, Barcelona cityscape
-  - Should evoke: Depth, transformation, authenticity
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** Testimonial from Maria, Barcelona
+## 🏖️ RETREATS PAGE (RetreatsPage.tsx)
+
+### 1. **Hero Background Image**
+- **Location:** Top of page (Line 23)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Retreat space in Mazunte with ocean view
+- **Height:** 100vh (full screen)
+- **Purpose:** Showcase the retreat location
+
+### 2. **Bufo Retreat Container Image**
+- **Location:** First section - Bufo Retreats (Line 54)
+- **Aspect Ratio:** 4:5 (portrait orientation)
+- **Suggested Content:** Retreat ceremony space in nature
+- **Caption:** "Intimate ceremony space in Mazunte"
+- **Purpose:** Show the retreat ceremony environment
+
+### 3. **Integration Intensive Image**
+- **Location:** Second section - Integration Intensives (Line 157)
+- **Aspect Ratio:** 4:5 (portrait orientation)
+- **Suggested Content:** Integration circle with participants
+- **Caption:** "Integration circles in nature"
+- **Purpose:** Show group integration work
+
+### 4. **Full-Width Beach Image**
+- **Location:** Mid-page break (Line 170)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Mazunte beach at sunset
+- **Height:** 70vh
+- **Purpose:** Visual break, reinforce location beauty
+
+### 5. **Collaborations Image**
+- **Location:** Collaborations section (Line 184)
+- **Aspect Ratio:** 4:5 (portrait orientation)
+- **Suggested Content:** Collaborative retreat facilitation
+- **Caption:** "Co-facilitating transformational experiences"
+- **Purpose:** Show collaborative work
 
 ---
 
-## 📄 **About Page** (`src/components/pages/AboutPageNew.tsx`)
+## 💬 TESTIMONIALS PAGE (TestimonialsPage.tsx)
 
-### 8. **About Page Hero - Full Screen**
-- **Location:** Lines 13-25 (Opening screen)
-- **Current State:** Gradient overlay
-- **Recommended Image:**
-  - Full-screen background
-  - Suggested: Your portrait, you in nature, or transformative moment
-  - Should evoke: Vulnerability, authenticity, the breakdown/breakthrough
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** "Every healer has their story" + "Mine began with a breakdown that became a breakthrough"
+### 1. **Hero Background Image**
+- **Location:** Top of page (Line 26)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Ceremony space at sunset - Mazunte, Mexico
+- **Height:** 100vh (full screen)
+- **Purpose:** Beautiful, sacred setting
 
----
+### 2-4. **Featured Testimonial Portraits**
+- **Location:** Featured testimonials section (Lines 53-86)
+- **Aspect Ratio:** 4:5 (portrait orientation)
+- **Suggested Content:** Client portrait photos
+- **Purpose:** Put faces to the testimonials
+- **Note:** You'll need one for each "featured" testimonial (currently 3)
 
-### 9. **The Breakdown - Portrait**
-- **Location:** Lines 50-52 (Breakdown section)
-- **Current State:** Gradient placeholder (`aspect-square`)
-- **Recommended Image:**
-  - Square photo (1:1 ratio)
-  - Suggested: Darker, introspective photo - maybe black & white or moody
-  - Should evoke: Struggle, darkness before light, raw humanity
-  - Suggested dimensions: 1000x1000px
-  - **Adjacent text:** "The Breakdown - I wore masks. Until my soul said NO MORE."
+### 5-12. **Small Portrait Images (Grid Section)**
+- **Location:** "More Voices" grid section (Lines 96-122)
+- **Aspect Ratio:** 1:1 (square, shown as small circles)
+- **Suggested Content:** Client portrait photos
+- **Size:** Small (w-24 h-24 = 96x96 display size)
+- **Purpose:** Visual identifier for testimonials
+- **Note:** You'll need one for each non-featured testimonial in the grid
 
----
-
-### 10. **The Awakening - Portrait**
-- **Location:** Lines 61-63 (Awakening section)
-- **Current State:** Gradient placeholder (`aspect-[4/5]`)
-- **Recommended Image:**
-  - Portrait-oriented photo (4:5 ratio)
-  - Suggested: You in light, ceremony, medicine space, or moment of clarity
-  - Should evoke: Awakening, light, emergence, rebirth
-  - Suggested dimensions: 1000x1250px
-  - **Adjacent text:** "The Awakening - Plant medicine showed me who I was beyond the story"
+### 13. **Divider Image**
+- **Location:** After testimonials grid, before CTA (Line 129)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Sonoran Desert landscape at golden hour
+- **Height:** 60vh
+- **Purpose:** Visual break with inspirational quote overlay
 
 ---
 
-### 11. **Full Width Awakening Quote**
-- **Location:** Lines 87-97 (Full-width quote)
-- **Current State:** Gradient overlay
-- **Recommended Image:**
-  - Wide atmospheric background
-  - Suggested: Dawn, meditation space, expansive landscape
-  - Should evoke: Integration, groundedness, wisdom
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** "Awakening isn't enough. Integration is where the real work happens."
+## ❓ FAQ PAGE (FAQPage.tsx)
+
+**No image placeholders** - This page uses only background gradients and does not use the ImagePlaceholder component.
 
 ---
 
-### 12. **Becoming a Guide - Portrait**
-- **Location:** Lines 120-122 (Guide section)
-- **Current State:** Gradient placeholder (`aspect-square`)
-- **Recommended Image:**
-  - Square photo (1:1 ratio)
-  - Suggested: You facilitating, teaching, holding ceremony, or with elders/teachers
-  - Should evoke: Service, mastery, holding space
-  - Suggested dimensions: 1000x1000px
-  - **Adjacent text:** "Becoming a Guide - Training with elders, shamans, healers"
+## 📧 CONTACT PAGE (ContactPage.tsx)
+
+### 1. **Hero Background Image**
+- **Location:** Top of page (Line 64)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Sacred entrance to ceremony space in Mazunte
+- **Height:** 100vh (full screen)
+- **Purpose:** Welcoming, inviting entry point
+
+### 2. **Nina & Astral Portrait**
+- **Location:** Mid-page divider (Line 205)
+- **Aspect Ratio:** 21:9 (ultrawide)
+- **Suggested Content:** Nina and Astral together - Ceremony facilitators
+- **Height:** 60vh
+- **Purpose:** Personal connection before application form
+- **Note:** This could be a horizontal shot of both facilitators together
 
 ---
 
-### 13-16. **Photo Gallery - 4 Images**
-- **Location:** Lines 147-152 (Four-image grid)
-- **Current State:** 4 gradient placeholders (`aspect-square`)
-- **Recommended Images:**
-  - Four square photos (1:1 ratio each)
-  - Suggested: Mix of ceremony moments, nature, teaching, community
-  - Should evoke: Journey, diversity of work, authentic moments
-  - Suggested dimensions: 800x800px each
-  - **Purpose:** Visual storytelling gallery showing different aspects of your work
+## 📊 IMAGE SUMMARY BY TYPE
+
+### Portrait Images (3:4 or 4:5 ratio) - PRIORITY HIGH
+1. **Nina portrait** (professional, solo) - 3:4 ratio
+2. **Astral portrait** (professional, solo) - 3:4 ratio
+3. **Nina & Astral together portrait** (horizontal, for contact page) - 21:9 ratio
+4. **Featured testimonial portraits** (3 needed) - 4:5 ratio
+5. **Grid testimonial portraits** (small, square, variable number) - 1:1 ratio
+6. **Retreat ceremony space** - 4:5 ratio
+7. **Integration circle with participants** - 4:5 ratio
+8. **Collaborative retreat facilitation** - 4:5 ratio
+
+### Landscape/Ultrawide Images (21:9 ratio) - PRIORITY HIGH
+1. **Sonoran Desert landscape at golden hour** (multiple uses possible)
+2. **Bufo Alvarius toad close-up in natural habitat**
+3. **Sacred ceremony space in nature - Mazunte**
+4. **Mazunte beach at sunset** (2 needed - can be same or different)
+5. **Sacred entrance to ceremony space**
+6. **Meditation altar with sacred objects**
+7. **Person in meditative breathwork posture**
+8. **Integration circle in nature with people**
+9. **Person journaling in nature**
+10. **Retreat space in Mazunte with ocean view**
+11. **Ceremony space at sunset for testimonials**
 
 ---
 
-### 17. **Personal Quote Section Background**
-- **Location:** Lines 157-177 (Sacred quote section)
-- **Current State:** Gradient overlay
-- **Recommended Image:**
-  - Wide atmospheric background
-  - Suggested: Mystical landscape, ceremony space, sacred geometry in nature
-  - Should evoke: Deep wisdom, soul truth, mysticism
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** "I am not here to teach you who you are..."
+## 💡 SOURCING RECOMMENDATIONS
+
+### DIY/Professional Photoshoot (BEST)
+- **Nina & Astral portraits** - Professional headshots (CRITICAL)
+- **Ceremony space photos** - Document your actual space in Mazunte
+- **Integration/retreat photos** - Real photos from your sessions (with permission)
+- **Location photos** - Mazunte beach, desert landscapes around your area
+
+### Stock Photography Sources (ACCEPTABLE for atmospheric images)
+For placeholder/atmospheric images only:
+- **Unsplash.com** (free, high quality)
+- **Pexels.com** (free, high quality)
+- **Pixabay.com** (free)
+
+**Suggested Search Terms:**
+- "Sonoran desert sunset"
+- "meditation altar"
+- "breathwork meditation"
+- "nature journaling"
+- "beach sunset Mexico"
+- "sacred ceremony space"
+- "integration circle"
+- "Bufo alvarius toad" or "Colorado river toad"
+- "Mazunte beach"
+- "Oaxaca Mexico coast"
+
+### Client Testimonial Images
+- Request photos from willing clients (with signed photo release)
+- Can use placeholder silhouettes or illustrated avatars if real photos not available
+- Consider using abstract nature imagery if client photos unavailable
+- Respect privacy - only use with explicit permission
 
 ---
 
-## 📄 **Services Page** (`src/components/pages/ServicesPage.tsx`)
+## 🎯 PRIORITY ORDER
 
-### 18. **Services Hero - Full Screen**
-- **Location:** Lines 14-25 (Opening screen)
-- **Current State:** `ImagePlaceholder` component with dark overlay
-- **Recommended Image:**
-  - Full-screen background
-  - Suggested: Hands in healing position, ceremony preparation, altar setup
-  - Should evoke: Sacred service, multiple pathways, invitation
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** "Ways We Walk Together"
+### MUST HAVE (Critical for credibility and trust)
+1. **Nina portrait** - People need to see who they're working with ⭐⭐⭐
+2. **Astral portrait** - People need to see who they're working with ⭐⭐⭐
+3. **Ceremony space photo** - Shows professionalism and safety ⭐⭐⭐
+4. **Mazunte beach/location** - Shows the beautiful setting ⭐⭐
+5. **Bufo Alvarius toad** - Shows the medicine respectfully ⭐⭐
 
----
+### SHOULD HAVE (Enhances experience and professionalism)
+6. **Desert landscapes** (1-2 versions for variety)
+7. **Integration/preparation atmosphere shots**
+8. **Retreat space images**
+9. **Nina & Astral together photo**
 
-### 19. **Sacred Circles - Portrait**
-- **Location:** Lines 32-34 (Circles section)
-- **Current State:** Gradient placeholder (`aspect-[4/5]`)
-- **Recommended Image:**
-  - Portrait-oriented photo (4:5 ratio)
-  - Suggested: Circle gathering, men's/women's work, community ceremony
-  - Should evoke: Brotherhood/sisterhood, vulnerability, witnessing
-  - Suggested dimensions: 1000x1250px
-  - **Adjacent text:** "Sacred Circles - You don't have to walk alone"
+### NICE TO HAVE (Adds polish and authenticity)
+10. **Client testimonial portraits** (if available with permission)
+11. **Additional atmospheric images**
+12. **Meditation/altar images**
+13. **Breathwork/ceremony preparation images**
 
 ---
 
-### 20. **Medicine Work Quote Background**
-- **Location:** Lines 92-102 (Full-width quote)
-- **Current State:** Gradient overlay
-- **Recommended Image:**
-  - Wide atmospheric background
-  - Suggested: Desert sunset, medicine space, Sonoran desert vibes
-  - Should evoke: Surrender, healing, the medicine path
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** "The medicine doesn't heal you. You heal yourself..."
+## 📏 TECHNICAL SPECIFICATIONS
+
+### Aspect Ratios:
+- **21:9** - Ultrawide landscape (2560x1097px recommended minimum)
+- **4:5** - Portrait (1200x1500px recommended minimum)
+- **3:4** - Portrait (1200x1600px recommended minimum)
+- **1:1** - Square (800x800px recommended minimum)
+
+### File Format:
+- **JPG** for photographs (optimized, 80-90% quality)
+- **PNG** for images requiring transparency (not typically needed)
+- **WebP** for best performance (optional, can convert from JPG)
+
+### File Size:
+- Target: **Under 500KB per image** when possible
+- Large hero images: Can be up to 1MB if necessary
+- Small portraits: Should be under 200KB
+- Use image compression tools (TinyPNG, ImageOptim, Squoosh)
+
+### Naming Convention:
+```
+nina-portrait.jpg
+astral-portrait.jpg
+nina-astral-together.jpg
+ceremony-space-mazunte.jpg
+sonoran-desert-sunset-01.jpg
+bufo-alvarius-toad-closeup.jpg
+mazunte-beach-sunset.jpg
+meditation-altar.jpg
+breathwork-meditation.jpg
+integration-circle.jpg
+retreat-space-ocean-view.jpg
+testimonial-sarah-portrait.jpg
+```
 
 ---
 
-### 21. **Medicine Journeys - Square Photo**
-- **Location:** Lines 126-128 (Medicine section)
-- **Current State:** Gradient placeholder (`aspect-square`)
-- **Recommended Image:**
-  - Square photo (1:1 ratio)
-  - Suggested: Bufo ceremony setup, sacred medicine tools, desert toad
-  - Should evoke: Reverence, medicine, sacred space
-  - Suggested dimensions: 1000x1000px
-  - **Adjacent text:** "Medicine Journeys - Bufo Alvarius ceremonies"
+## 🖼️ CURRENT IMAGE PLACEHOLDER COMPONENT
+
+The site currently uses the `<ImagePlaceholder>` component with:
+- Gray background (#9CA3AF)
+- Centered icon (🖼️)
+- "Image Placeholder" text
+- Optional caption below
+- Specified aspect ratio maintained
+
+**Replace these systematically with real images for production launch.**
+
+Example of current code:
+```tsx
+<ImagePlaceholder
+  aspectRatio="21/9"
+  altText="Sonoran Desert landscape at golden hour"
+  className="w-full h-full"
+/>
+```
+
+Will be replaced with:
+```tsx
+<img
+  src="/images/sonoran-desert-sunset-01.jpg"
+  alt="Sonoran Desert landscape at golden hour"
+  className="w-full h-full object-cover"
+/>
+```
 
 ---
 
-### 22. **Deep Work / 1:1 Sessions**
-- **Location:** Lines 169-171 (One-to-one section)
-- **Current State:** Gradient placeholder (`aspect-[16/10]`)
-- **Recommended Image:**
-  - Landscape-oriented photo (16:10 ratio)
-  - Suggested: Healing session, energy work, family constellation setup
-  - Should evoke: Depth, intimacy, transformation
-  - Suggested dimensions: 1600x1000px
-  - **Adjacent text:** "Deep Work - 3-month and 6-month journeys"
+## 📝 CONTENT GUIDELINES
+
+### Photography Style
+1. **Natural & Authentic** - Prefer natural lighting over studio
+2. **Grounded & Sacred** - Not overly psychedelic or mystical
+3. **Professional & Safe** - Convey professionalism and safety
+4. **Respectful** - Honor the sacred nature of the medicine work
+5. **Warm Tones** - Earth tones, golden hour, sunset lighting preferred
+
+### What to AVOID
+- ❌ Overly saturated or heavily filtered images
+- ❌ Generic stock photos that look "corporate"
+- ❌ Dark, scary, or overly intense imagery
+- ❌ Appropriative cultural imagery
+- ❌ Anything that doesn't represent your actual work/space
+
+### What to INCLUDE
+- ✅ Real spaces where you facilitate (if possible)
+- ✅ Natural landscapes that represent your location
+- ✅ Authentic portraits that build trust
+- ✅ Images that convey safety, beauty, and sacredness
+- ✅ Warm, inviting, professional imagery
 
 ---
 
-## 📄 **Retreats Page** (`src/components/pages/RetreatsPage.tsx`)
+## 🔄 HOW TO IMPLEMENT
 
-### 23. **Retreats Hero - Full Screen**
-- **Location:** Lines 14-25 (Opening screen)
-- **Current State:** `ImagePlaceholder` component with dark overlay
-- **Recommended Image:**
-  - Full-screen background
-  - Suggested: Ocean view Mazunte, mountains Catalunya, retreat venue
-  - Should evoke: Sacred immersion, stepping away, pilgrimage
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** "Sacred Immersions"
-
----
-
-### 24. **What Makes a Retreat Sacred**
-- **Location:** Lines 48-50 (Retreat intro)
-- **Current State:** Gradient placeholder (`aspect-[4/5]`)
-- **Recommended Image:**
-  - Portrait-oriented photo (4:5 ratio)
-  - Suggested: Retreat space, ceremony circle, ocean/mountain view
-  - Should evoke: Container, sacred space, retreat setting
-  - Suggested dimensions: 1000x1250px
-  - **Adjacent text:** "What makes a retreat sacred? It's not the location. It's the container."
-
----
-
-### 25. **Full Width Retreat Quote**
-- **Location:** Lines 57-66 (Full-width quote)
-- **Current State:** Gradient overlay
-- **Recommended Image:**
-  - Wide atmospheric background
-  - Suggested: Ocean at sunset, mountain vista, expansive sky
-  - Should evoke: Space, letting go, transformation
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** "Transformation doesn't happen on a schedule..."
-
----
-
-### 26. **Mazunte, Mexico**
-- **Location:** Lines 79-81 (Mazunte section)
-- **Current State:** Gradient placeholder (`aspect-[16/10]`)
-- **Recommended Image:**
-  - Landscape-oriented photo (16:10 ratio)
-  - Suggested: Mazunte beach, Pacific coast, jungle meeting ocean
-  - Should evoke: Wild nature, sacred beach, jungle medicine
-  - Suggested dimensions: 1600x1000px
-  - **Adjacent text:** "Mazunte, Mexico - Pacific coast of Oaxaca. Jungle meets ocean."
-
----
-
-### 27. **Barcelona & Catalunya**
-- **Location:** Lines 108-110 (Barcelona section)
-- **Current State:** Gradient placeholder (`aspect-[16/10]`)
-- **Recommended Image:**
-  - Landscape-oriented photo (16:10 ratio)
-  - Suggested: Catalunya mountains, Mediterranean coast, Barcelona mystical sites
-  - Should evoke: Ancient wisdom, modern sanctuary, European energy
-  - Suggested dimensions: 1600x1000px
-  - **Adjacent text:** "Barcelona & Catalunya - Mountains, Mediterranean coast, mystical countryside"
-
----
-
-### 28. **Retreat Experiences Background**
-- **Location:** Lines 118-171 (Dark retreat section)
-- **Current State:** Gradient overlay
-- **Recommended Image:**
-  - Wide atmospheric background
-  - Suggested: Group ceremony, retreat participants, healing circle
-  - Should evoke: Community, transformation, deep work
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** Retreat experience descriptions
-
----
-
-### 29. **Simple Invitation Background**
-- **Location:** Lines 239-258 (Final CTA)
-- **Current State:** Gradient overlay
-- **Recommended Image:**
-  - Wide atmospheric background
-  - Suggested: Invitation energy - open path, threshold, doorway
-  - Should evoke: Readiness, the call, next steps
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** "Is it time?"
-
----
-
-## 📄 **Inner Ascend Page** (`src/components/pages/InnerAscendPage.tsx`)
-
-### 30. **Inner Ascend Hero - Full Screen**
-- **Location:** Lines 13-31 (Opening screen)
-- **Current State:** Gradient overlay with cosmic aurora
-- **Recommended Image:**
-  - Full-screen background
-  - Suggested: Community gathering, co-creation, visionary collective
-  - Should evoke: Movement, community, awakening
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** "Inner Ascend - A community for visionaries, healers, and awakened souls"
-
----
-
-### 31. **What Is Inner Ascend**
-- **Location:** Lines 56-58 (Community intro)
-- **Current State:** Gradient placeholder (`aspect-square`)
-- **Recommended Image:**
-  - Square photo (1:1 ratio)
-  - Suggested: Community circle, co-working, collaboration
-  - Should evoke: Soul family, collective, belonging
-  - Suggested dimensions: 1000x1000px
-  - **Adjacent text:** "What is Inner Ascend? It's more than a community. It's a movement."
-
----
-
-### 32. **Community Quote Background**
-- **Location:** Lines 72-83 (Full-width quote)
-- **Current State:** Gradient overlay
-- **Recommended Image:**
-  - Wide atmospheric background
-  - Suggested: Hands together, community ritual, collective energy
-  - Should evoke: Together, co-creation, new paradigm
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** "You can't build the new world alone. But together, we can."
-
----
-
-### 33. **Is This For You - Background**
-- **Location:** Lines 135-191 (Qualifying section)
-- **Current State:** Gradient overlay
-- **Recommended Image:**
-  - Wide atmospheric background
-  - Suggested: Discernment energy, threshold, self-reflection
-  - Should evoke: Clarity, alignment, readiness
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** "Is This For You?" + qualifying criteria
-
----
-
-### 34. **Join Soul Family - Background**
-- **Location:** Lines 239-269 (Final CTA)
-- **Current State:** Gradient overlay
-- **Recommended Image:**
-  - Wide atmospheric background
-  - Suggested: Welcoming energy, open arms, home
-  - Should evoke: Belonging, soul family, arrival
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** "Ready to join your soul family?"
-
----
-
-## 📄 **Contact Page** (`src/components/pages/ContactPage.tsx`)
-
-### 35. **Contact Hero - Full Screen**
-- **Location:** Lines 43-98 (Full contact page)
-- **Current State:** Gradient overlay with cosmic aurora
-- **Recommended Image:**
-  - Full-screen background (optional - currently works with gradient)
-  - Suggested: Connection energy, bridge, meeting point
-  - Should evoke: Openness, availability, connection
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** "Let's Connect" + contact form
-
----
-
-## 📄 **Resources Page** (`src/components/pages/ResourcesPage.tsx`)
-
-### 36. **Resources Hero - Full Screen**
-- **Location:** Lines 13-23 (Opening screen)
-- **Current State:** Gradient overlay
-- **Recommended Image:**
-  - Full-screen background
-  - Suggested: Books, journal, meditation space, teaching materials
-  - Should evoke: Wisdom, tools, resources, teachings
-  - Suggested dimensions: 1920x1080px minimum
-  - **Text overlay:** "Resources - Teachings, reflections, and tools for your journey"
-
----
-
-## 🎨 **Image Guidelines**
-
-### **General Technical Requirements:**
-- **Format:** JPG (for photos), PNG (if transparency needed)
-- **Quality:** High resolution but optimized for web (under 500KB per image ideally)
-- **Color Grading:** Consistent color palette - warm, earthy, mystical tones
-- **Mood:** Sacred, authentic, grounded, transformative
-
-### **Style Preferences:**
-- Natural lighting preferred over studio lighting
-- Authentic moments over posed shots
-- Earth tones, warm colors, sacred geometry
-- Avoid overly saturated or heavily filtered images
-- Balance darkness and light - honor both
-
-### **Text Overlay Considerations:**
-For images with text overlays:
-- Leave space in composition for text (usually center or lower third)
-- Images can be darker or have gradient overlays added in code
-- Test text readability before finalizing
-
----
-
-## 📝 **Priority Order**
-
-### **High Priority (Core Pages):**
-1. Homepage Hero (#1)
-2. About Page Hero (#8)
-3. Services Page Hero (#18)
-4. Homepage Visual Story (#2)
-5. About Page - Breakdown & Awakening (#9, #10)
-
-### **Medium Priority (Service Sections):**
-6. Homepage - Ways to Work Together (#4, #5, #6)
-7. Services - Sacred Circles & Medicine (#19, #21)
-8. Retreats - Mazunte & Barcelona (#26, #27)
-
-### **Lower Priority (Atmospheric Backgrounds):**
-9. Quote section backgrounds (can use gradients temporarily)
-10. Photo gallery (#13-16)
-11. Additional page backgrounds
-
----
-
-## 🔄 **How to Replace Images**
-
-Once you have images, place them in:
+### Step 1: Organize Your Images
+Create this folder structure:
 ```
 /public/images/
+  /portraits/
+    nina-portrait.jpg
+    astral-portrait.jpg
+    nina-astral-together.jpg
+  /locations/
+    mazunte-beach-01.jpg
+    sonoran-desert-01.jpg
+    ceremony-space-01.jpg
+  /atmosphere/
+    meditation-altar.jpg
+    breathwork.jpg
+    integration-circle.jpg
+  /testimonials/
+    sarah-portrait.jpg
+    michael-portrait.jpg
 ```
 
-Then update the code to replace gradient placeholders:
+### Step 2: Replace ImagePlaceholder Components
+Find each `<ImagePlaceholder>` in the code and replace with actual image:
 
-**Example for Homepage Hero:**
+**Before:**
 ```tsx
-// Current:
-<div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/40..."></div>
+<ImagePlaceholder
+  aspectRatio="3/4"
+  altText="Nina - Co-facilitator portrait"
+  className="shadow-lg"
+  caption="Nina"
+/>
+```
 
-// Replace with:
-<div className="absolute inset-0">
+**After:**
+```tsx
+<div className="relative shadow-lg">
   <img
-    src="/images/hero-home.jpg"
-    alt="Sacred transformation"
-    className="w-full h-full object-cover"
+    src="/images/portraits/nina-portrait.jpg"
+    alt="Nina - Co-facilitator portrait"
+    className="w-full aspect-[3/4] object-cover"
   />
-  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+  <p className="text-center text-sm text-earth-700/70 mt-2">Nina</p>
 </div>
 ```
 
+### Step 3: Optimize Images
+- Compress all images before uploading
+- Use tools: TinyPNG, ImageOptim, or Squoosh
+- Test page load speed after adding images
+- Consider lazy loading for images below the fold
+
 ---
 
-## 📧 **Questions?**
+## 📧 SUPPORT
 
-If you need help replacing any specific image or want guidance on composition/content, let me know which section number and I can provide more specific direction.
+### Questions?
+If you need help with:
+- Image sizing or cropping
+- Replacing specific placeholders
+- Technical implementation
+- Sourcing images
 
-**Total Images Needed:** 36 placeholders across all pages
-**Estimated Photo Shoot Needs:** 15-20 unique photos (many can be reused with different crops)
+**Let me know the specific section/page and I can provide detailed guidance.**
+
+---
+
+## 📈 PROGRESS TRACKING
+
+Total image placeholders identified: **~25-30** (depending on number of testimonials)
+
+### By Page:
+- **Homepage:** 3 images
+- **About:** 3 images
+- **Ceremonies:** 3 images
+- **Preparation:** 2 images
+- **Integration:** 2 images
+- **Retreats:** 5 images
+- **Testimonials:** 5+ images (varies with number of testimonials)
+- **FAQ:** 0 images
+- **Contact:** 2 images
+
+### Critical Path (Do these first):
+1. ✅ Nina portrait
+2. ✅ Astral portrait
+3. ✅ Ceremony space (Mazunte)
+4. ✅ Mazunte beach
+5. ✅ Desert landscape
+
+---
+
+**Last Updated:** October 2025
+**Website:** Spirit Awakening Medicine
+**Built with:** React + TypeScript + Tailwind CSS

@@ -89,10 +89,6 @@ export default function PreparationPage() {
 
             {/* Preparation practices gallery */}
             <div className="mt-20">
-              {/* Transition */}
-              <p className="text-center text-lg text-earth-700/70 mb-8 italic">
-                {t.preCeremony.transition}
-              </p>
               <h3 className="text-2xl md:text-3xl font-serif text-earth-800 mb-8 text-center">
                 Preparation Practices
               </h3>

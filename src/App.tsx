@@ -379,8 +379,8 @@ function LandingPage() {
                 </div>
                 <div className="aspect-square relative overflow-hidden rounded-lg group">
                   <img
-                    src="/images/atmosphere/ceremony-16.jpeg"
-                    alt="Ceremony environment"
+                    src="/images/atmosphere/ceremony-14.jpg"
+                    alt="Sacred ceremony practice"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />

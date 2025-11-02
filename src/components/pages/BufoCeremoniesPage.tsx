@@ -247,9 +247,6 @@ export default function BufoCeremoniesPage() {
                   className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-earth-900/90 to-transparent p-6">
-                  <p className="text-sacred-white font-serif text-lg">Preparation & Sacred Setting</p>
-                </div>
               </div>
               <div className="relative overflow-hidden rounded-lg shadow-lg group">
                 <img
@@ -258,9 +255,6 @@ export default function BufoCeremoniesPage() {
                   className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-earth-900/90 to-transparent p-6">
-                  <p className="text-sacred-white font-serif text-lg">Integration & Closing Circle</p>
-                </div>
               </div>
             </div>
           </div>

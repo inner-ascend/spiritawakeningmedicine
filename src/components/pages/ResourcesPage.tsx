@@ -12,7 +12,6 @@ export default function ResourcesPage() {
       {/* Full-Screen Opening */}
       <div className="h-screen relative flex items-center justify-center bg-gradient-to-br from-cosmic-900/90 via-indigo-deep/80 to-black/90">
         <div className="relative z-10 text-center px-4">
-          <div className="text-5xl mb-8 text-sacred-gold animate-breathe opacity-60">⊹</div>
           <h1 className="text-5xl md:text-7xl font-serif text-sacred-moon mb-8 font-light">
             Resources
           </h1>

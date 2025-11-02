@@ -18,7 +18,6 @@ const AboutSection = ({}: AboutSectionProps) => {
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="text-4xl mb-6 text-sacred-gold/50 animate-breathe">⊛</div>
           <h2 className="text-5xl md:text-6xl font-bold mb-4 text-sacred-moon">
             Beyond Concepts & Limitations
           </h2>
@@ -89,7 +88,6 @@ const AboutSection = ({}: AboutSectionProps) => {
 
         {/* Floating Sacred Symbols */}
         <div className="absolute inset-0 pointer-events-none opacity-10">
-          <div className="absolute top-1/4 right-1/4 text-4xl text-mystic-violet animate-float">⊹</div>
           <div className="absolute bottom-1/3 left-1/4 text-3xl text-sacred-gold animate-float" style={{animationDelay: '2s'}}>✧</div>
         </div>
       </div>

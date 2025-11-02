@@ -1,13 +1,31 @@
 import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
-import ImagePlaceholder from '../ImagePlaceholder';
 import { useLanguage } from '../../contexts/LanguageContext';
 import testimonialsEN from '../../translations/pages/testimonials/en.json';
 import testimonialsES from '../../translations/pages/testimonials/es.json';
 import testimonialsFR from '../../translations/pages/testimonials/fr.json';
 
 const translations = { en: testimonialsEN, es: testimonialsES, fr: testimonialsFR };
+
+// Random portrait images for testimonials
+const portraitImages = [
+  'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&h=1000&fit=crop',
+  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop',
+  'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&h=1000&fit=crop',
+  'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&h=1000&fit=crop',
+  'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&h=1000&fit=crop',
+  'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&h=1000&fit=crop',
+];
+
+const smallPortraitImages = [
+  'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop',
+  'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=200&h=200&fit=crop',
+  'https://images.unsplash.com/photo-1557862921-37829c790f19?w=200&h=200&fit=crop',
+  'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop',
+  'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop',
+  'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=200&h=200&fit=crop',
+];
 
 export default function TestimonialsPage() {
   const { language } = useLanguage();
@@ -32,7 +50,6 @@ export default function TestimonialsPage() {
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          <div className="text-5xl text-sacred-gold/60 mb-8">⊛</div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-light text-sacred-white mb-8 leading-tight">
             {t.hero.title}
           </h1>
@@ -56,10 +73,10 @@ export default function TestimonialsPage() {
             <div className={`max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
               {/* Image */}
               <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                <ImagePlaceholder
-                  aspectRatio="4/5"
-                  altText={`${testimonial.name} - Client portrait`}
-                  className="shadow-2xl"
+                <img
+                  src={portraitImages[index % portraitImages.length]}
+                  alt={`${testimonial.name} - Client portrait`}
+                  className="w-full h-full object-cover shadow-2xl aspect-[4/5]"
                 />
               </div>
 
@@ -98,10 +115,10 @@ export default function TestimonialsPage() {
                 <div key={index} className="space-y-6">
                   {/* Small portrait */}
                   <div className="w-24 h-24 mx-auto">
-                    <ImagePlaceholder
-                      aspectRatio="1/1"
-                      altText={`${testimonial.name} portrait`}
-                      className="rounded-full overflow-hidden"
+                    <img
+                      src={smallPortraitImages[index % smallPortraitImages.length]}
+                      alt={`${testimonial.name} portrait`}
+                      className="w-full h-full object-cover rounded-full"
                     />
                   </div>
 

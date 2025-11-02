@@ -308,7 +308,6 @@ export default function PreparationPage() {
 
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="text-center space-y-4">
-                <div className="text-4xl">🧘</div>
                 <h3 className="text-xl font-serif text-earth-800">{t.preCeremony.somatic.title}</h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
                   {t.preCeremony.somatic.description}
@@ -316,7 +315,6 @@ export default function PreparationPage() {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="text-4xl">📿</div>
                 <h3 className="text-xl font-serif text-earth-800">{t.preCeremony.rituals.title}</h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
                   {t.preCeremony.rituals.description}

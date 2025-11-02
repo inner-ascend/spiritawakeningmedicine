@@ -90,7 +90,6 @@ function LandingPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-16">
-                <div className="text-4xl text-sacred-gold/40 mb-8">⊹</div>
                 <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-8 leading-tight">
                   {home.whatIsBufo.title}
                 </h2>
@@ -188,7 +187,6 @@ function LandingPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-20">
-                <div className="text-4xl text-sacred-gold/40 mb-6">⊹</div>
                 <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
                   {home.threePhaseJourney.title}
                 </h2>
@@ -279,7 +277,6 @@ function LandingPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-earth-700 to-earth-900"></div>
           <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <div className="text-4xl text-sacred-gold/60 mb-8">⊛</div>
               <h2 className="text-3xl md:text-5xl font-serif text-sacred-white leading-relaxed mb-12">
                 {home.seriLineage.title}<br/>
                 {home.seriLineage.subtitle}
@@ -326,7 +323,6 @@ function LandingPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <div className="text-4xl text-sacred-gold/40 mb-6">⊛</div>
                 <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
                   The Sacred Space
                 </h2>
@@ -520,7 +516,6 @@ function LandingPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-earth-700 to-earth-900"></div>
           <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center space-y-8">
-              <div className="text-4xl mb-8 text-sacred-gold/60">⊹</div>
               <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
                 {home.readyToBegin.title}
               </h2>

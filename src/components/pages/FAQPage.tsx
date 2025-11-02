@@ -112,7 +112,6 @@ export default function FAQPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">👥</span>
                     Small Group Size
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -147,7 +146,6 @@ export default function FAQPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">🙏</span>
                     Lineage Respect
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">

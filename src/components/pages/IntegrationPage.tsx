@@ -166,7 +166,6 @@ export default function IntegrationPage() {
               <div className="space-y-6">
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">💬</span>
                     {t.whatIncludes.emotional.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -176,7 +175,6 @@ export default function IntegrationPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">📖</span>
                     {t.whatIncludes.storyUnwinding.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -186,7 +184,6 @@ export default function IntegrationPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">🪞</span>
                     {t.whatIncludes.identity.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -199,7 +196,6 @@ export default function IntegrationPage() {
               <div className="space-y-6">
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">❤️‍🩹</span>
                     {t.whatIncludes.trauma.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -209,7 +205,6 @@ export default function IntegrationPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">🕊️</span>
                     {t.whatIncludes.rituals.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -219,7 +214,6 @@ export default function IntegrationPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">🌍</span>
                     {t.whatIncludes.life.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -249,7 +243,6 @@ export default function IntegrationPage() {
             <div className="grid md:grid-cols-3 gap-8 mb-16">
               {/* Single Session */}
               <div className="bg-white rounded-2xl p-8 border border-earth-700/20">
-                <div className="text-4xl mb-4 text-center">🌱</div>
                 <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{t.packages.single.title}</h3>
                 <div className="text-center mb-6">
                   <div className="text-4xl font-serif text-sacred-gold mb-2">{t.packages.single.price}</div>
@@ -291,7 +284,6 @@ export default function IntegrationPage() {
 
               {/* Extended Containers */}
               <div className="bg-white rounded-2xl p-8 border border-earth-700/20">
-                <div className="text-4xl mb-4 text-center">🌳</div>
                 <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{t.packages.extended.title}</h3>
                 <div className="text-center mb-6">
                   <div className="text-3xl font-serif text-sacred-gold mb-2">{t.packages.extended.price1}</div>
@@ -343,7 +335,6 @@ export default function IntegrationPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center space-y-4">
-                <div className="text-4xl">⚡</div>
                 <h3 className="text-xl font-serif text-earth-800">{t.modalities.energyHealing.title}</h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
                   {t.modalities.energyHealing.description}
@@ -351,7 +342,6 @@ export default function IntegrationPage() {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="text-4xl">🧬</div>
                 <h3 className="text-xl font-serif text-earth-800">{t.modalities.familyConstellations.title}</h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
                   {t.modalities.familyConstellations.description}
@@ -359,7 +349,6 @@ export default function IntegrationPage() {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="text-4xl">🫀</div>
                 <h3 className="text-xl font-serif text-earth-800">{t.modalities.somatic.title}</h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
                   {t.modalities.somatic.description}
@@ -367,7 +356,6 @@ export default function IntegrationPage() {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="text-4xl">🧘</div>
                 <h3 className="text-xl font-serif text-earth-800">{t.modalities.meditation.title}</h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
                   {t.modalities.meditation.description}
@@ -375,7 +363,6 @@ export default function IntegrationPage() {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="text-4xl">👶</div>
                 <h3 className="text-xl font-serif text-earth-800">{t.modalities.innerChild.title}</h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
                   {t.modalities.innerChild.description}
@@ -383,7 +370,6 @@ export default function IntegrationPage() {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="text-4xl">📡</div>
                 <h3 className="text-xl font-serif text-earth-800">{t.modalities.channeled.title}</h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
                   {t.modalities.channeled.description}

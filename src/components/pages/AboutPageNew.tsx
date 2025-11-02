@@ -29,7 +29,6 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 via-earth-900/40 to-earth-900"></div>
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          <div className="text-5xl text-sacred-gold/60 mb-8">⊛</div>
           <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-white mb-8 leading-tight">
             {t.hero.title}
           </h1>
@@ -192,7 +191,6 @@ export default function AboutPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">🧠</span>
                     {t.training.traumaInformed.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -202,7 +200,6 @@ export default function AboutPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">⚡</span>
                     {t.training.energyHealing.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -214,7 +211,6 @@ export default function AboutPage() {
               <div className="space-y-6">
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">🎓</span>
                     {t.training.guestSpeaker.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -224,7 +220,6 @@ export default function AboutPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">🔄</span>
                     {t.training.continuousLearning.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -234,7 +229,6 @@ export default function AboutPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">💝</span>
                     {t.training.ceremonies.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -369,7 +363,6 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-earth-800/70 to-earth-900/90"></div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="text-5xl text-sacred-gold/60 mb-12">⊛</div>
 
             <blockquote className="space-y-8 text-desert-sand/90 leading-relaxed text-xl md:text-2xl font-serif italic mb-16">
               <p>

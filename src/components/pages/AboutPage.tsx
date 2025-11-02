@@ -24,7 +24,6 @@ export default function AboutPage() {
         {/* Hero Section */}
         <div className="container mx-auto px-4 pt-32 pb-20">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="text-4xl mb-6 text-sacred-gold animate-breathe opacity-60">⊹</div>
             <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6 bg-gradient-to-r from-mystic-lavender via-sacred-gold to-mystic-violet bg-clip-text text-transparent">
               The Journey to Here
             </h1>
@@ -68,7 +67,6 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
               <div>
                 <div className="aspect-square bg-gradient-to-br from-sacred-gold/20 to-mystic-violet/20 rounded-3xl backdrop-blur-xl border border-mystic-lavender/20 flex items-center justify-center">
-                  <div className="text-6xl opacity-40">🌅</div>
                 </div>
               </div>
               <div>

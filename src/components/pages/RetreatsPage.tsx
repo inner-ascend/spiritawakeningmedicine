@@ -29,7 +29,6 @@ export default function RetreatsPage() {
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          <div className="text-5xl text-sacred-gold/60 mb-8">⊹</div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-light text-sacred-white mb-8 leading-tight">
             {t.hero.title}
           </h1>
@@ -211,7 +210,6 @@ export default function RetreatsPage() {
             {/* Text Right */}
             <div className="space-y-8">
               <div>
-                <div className="text-4xl text-sacred-gold/60 mb-4">⊛</div>
                 <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
                   {t.collaborations.title}
                 </h2>
@@ -329,7 +327,6 @@ export default function RetreatsPage() {
 
             <div className="text-center space-y-8">
               <div className="bg-sacred-cream rounded-2xl p-12">
-                <div className="text-5xl mb-6">🌅</div>
                 <p className="text-2xl font-serif text-earth-800 mb-4">
                   {t.upcomingRetreats.comingSoonTitle}
                 </p>

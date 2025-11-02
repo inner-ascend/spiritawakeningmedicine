@@ -91,7 +91,6 @@ export default function Footer() {
             <div className="text-desert-sand/50 text-sm text-center md:text-left">
               <p className="flex items-center gap-2 justify-center md:justify-start">
                 © {new Date().getFullYear()} Spirit Awakening Medicine
-                <span className="text-sacred-gold/40">⊹</span>
                 All rights reserved
               </p>
             </div>

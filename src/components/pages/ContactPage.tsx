@@ -70,7 +70,6 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 via-earth-900/40 to-earth-900"></div>
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          <div className="text-5xl text-sacred-gold/60 mb-8">⊹</div>
           <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-white mb-8 leading-tight">
             {t.hero.title}
           </h1>
@@ -265,7 +264,6 @@ export default function ContactPage() {
 
             {sent ? (
               <div className="bg-white rounded-2xl p-12 text-center border-2 border-sacred-gold/40">
-                <div className="text-5xl mb-6">🙏</div>
                 <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.contactForm.successTitle}</h3>
                 <p className="text-earth-700/70 leading-relaxed mb-6">
                   {t.contactForm.successMessage}
@@ -384,7 +382,6 @@ export default function ContactPage() {
 
               {/* WhatsApp/Telegram */}
               <div className="bg-white rounded-2xl p-8 text-center">
-                <div className="text-4xl mb-4">💬</div>
                 <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.otherWays.messaging.title}</h3>
                 <p className="text-earth-700/70 mb-4 leading-relaxed text-sm">
                   {t.otherWays.messaging.description}
@@ -414,7 +411,6 @@ export default function ContactPage() {
 
               {/* Location */}
               <div className="bg-white rounded-2xl p-8 text-center">
-                <div className="text-4xl mb-4">📍</div>
                 <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.otherWays.location.title}</h3>
                 <p className="text-earth-700/70 mb-4 leading-relaxed text-sm">
                   {t.otherWays.location.description}
@@ -444,7 +440,6 @@ export default function ContactPage() {
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <div className="text-5xl text-sacred-gold/60 mb-8">⊛</div>
               <h2 className="text-3xl md:text-4xl font-serif text-sacred-white mb-8">
                 {t.important.title}
               </h2>

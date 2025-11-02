@@ -29,7 +29,6 @@ export default function BufoCeremoniesPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 via-earth-900/40 to-earth-900"></div>
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          <div className="text-5xl text-sacred-gold/60 mb-8">⊹</div>
           <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-white mb-8 leading-tight">
             {t.hero.title}
           </h1>
@@ -148,7 +147,6 @@ export default function BufoCeremoniesPage() {
 
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4 flex items-center gap-3">
-                    <span className="text-3xl">📍</span>
                     {t.ceremonyDetails.location.title}
                   </h3>
                   <p className="text-earth-700/80 leading-relaxed">
@@ -159,7 +157,6 @@ export default function BufoCeremoniesPage() {
 
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4 flex items-center gap-3">
-                    <span className="text-3xl">👥</span>
                     {t.ceremonyDetails.groupSize.title}
                   </h3>
                   <p className="text-earth-700/80 leading-relaxed">
@@ -171,7 +168,6 @@ export default function BufoCeremoniesPage() {
 
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4 flex items-center gap-3">
-                    <span className="text-3xl">⏰</span>
                     {t.ceremonyDetails.timeline.title}
                   </h3>
                   <p className="text-earth-700/80 leading-relaxed">
@@ -187,7 +183,6 @@ export default function BufoCeremoniesPage() {
               <div className="space-y-8">
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4 flex items-center gap-3">
-                    <span className="text-3xl">🙏</span>
                     {t.ceremonyDetails.whatsIncluded.title}
                   </h3>
                   <div className="space-y-3 text-earth-700/80 leading-relaxed">
@@ -516,7 +511,6 @@ export default function BufoCeremoniesPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-earth-800/70 to-earth-900/90"></div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="text-5xl text-sacred-gold/60 mb-8">⊹</div>
             <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-8">
               {t.application.title}
             </h2>

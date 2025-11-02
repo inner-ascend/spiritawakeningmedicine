@@ -20,7 +20,6 @@ export default function InnerAscendPage() {
         </div>
 
         <div className="relative z-10 text-center px-4">
-          <div className="text-5xl mb-8 text-sacred-gold animate-breathe opacity-60">⊹</div>
           <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-moon mb-8">
             Inner Ascend
           </h1>

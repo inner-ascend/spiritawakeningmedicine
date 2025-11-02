@@ -15,7 +15,6 @@ export default function CollaborationsPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-cosmic-900/80 via-indigo-deep/70 to-mystic-purple/60"></div>
 
         <div className="relative z-10 text-center px-4">
-          <div className="text-5xl mb-8 text-sacred-gold animate-breathe opacity-60">⊹</div>
           <h1 className="text-5xl md:text-7xl font-serif text-sacred-moon mb-8 font-light">
             Collaborations
           </h1>
@@ -312,8 +311,7 @@ export default function CollaborationsPage() {
       <div className="bg-sacred-cream py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-8">
-            <div className="text-4xl text-sacred-gold/40">⊹</div>
-            <h2 className="text-4xl md:text-5xl font-serif text-indigo-deep">
+,            <h2 className="text-4xl md:text-5xl font-serif text-indigo-deep">
               Ready to Explore a Collaboration?
             </h2>
             <p className="text-xl text-indigo-deep/70 leading-relaxed">

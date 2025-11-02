@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
-import ImagePlaceholder from '../ImagePlaceholder';
 import emailjs from '@emailjs/browser';
 import { useLanguage } from '../../contexts/LanguageContext';
 import contactEN from '../../translations/pages/contact/en.json';

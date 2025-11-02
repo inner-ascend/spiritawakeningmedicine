@@ -24,7 +24,6 @@ import RetreatsPage from './components/pages/RetreatsPage';
 import PricingPage from './components/pages/PricingPage';
 import CollaborationsPage from './components/pages/CollaborationsPage';
 import ScrollToTop from './components/ScrollToTop';
-import ImagePlaceholder from './components/ImagePlaceholder';
 // Old pages - archived (keeping for backwards compatibility)
 import ServicesPage from './components/pages/ServicesPage';
 import InnerAscendPage from './components/pages/InnerAscendPage';

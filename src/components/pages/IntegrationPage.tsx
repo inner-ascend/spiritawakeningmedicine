@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
-import ImagePlaceholder from '../ImagePlaceholder';
+
 import { useLanguage } from '../../contexts/LanguageContext';
 import integrationEN from '../../translations/pages/integration/en.json';
 import integrationES from '../../translations/pages/integration/es.json';

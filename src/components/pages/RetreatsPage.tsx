@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
-import ImagePlaceholder from '../ImagePlaceholder';
 import { useLanguage } from '../../contexts/LanguageContext';
 import retreatsEN from '../../translations/pages/retreats/en.json';
 import retreatsES from '../../translations/pages/retreats/es.json';

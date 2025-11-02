@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "title": "Investissement dans la Transformation Sacrée",
+    "subtitle": "Tarifs Transparents pour un Travail Sacré",
+    "description": "Ce travail n'est jamais vendu. Seulement offert. Tarif dégressif disponible. Personne n'est jamais refusé par manque de fonds lorsque l'appel est authentique.",
+    "quote": "La valeur de se souvenir de qui vous êtes ne peut être mesurée. Mais l'échange sacré honore le travail."
+  },
+  "journeyPackages": {
+    "title": "Formules de Voyage",
+    "description": "Parcours complets de la préparation à l'intégration. Ces formules représentent l'arc complet de transformation.",
+    "essential": {
+      "title": "Voyage Essentiel",
+      "price": "€500-800+",
+      "description": "Le chemin fondamental pour ceux qui sont prêts à commencer",
+      "item1": "1-2 sessions de préparation (€111 chacune)",
+      "item2": "Cérémonie de Bufo (€300-500)",
+      "item3": "Intégration de 48h + suivi de 2 semaines (inclus)"
+    },
+    "complete": {
+      "title": "Voyage Complet",
+      "badge": "Recommandé",
+      "price": "€800-1,200",
+      "description": "Le chemin le plus complet pour une transformation profonde",
+      "item1": "1-2 sessions de préparation",
+      "item2": "Cérémonie de Bufo avec soutien complet",
+      "item3": "Intégration de 48h (incluse)",
+      "item4": "Forfait de 4 sessions d'intégration (€300-400)"
+    },
+    "deepWork": {
+      "title": "Conteneur de Travail Profond",
+      "price": "€1,200-2,000+",
+      "description": "Intégration prolongée pour une transformation durable",
+      "item1": "Préparation + Cérémonie complète",
+      "item2": "Intégration de 48h (incluse)",
+      "item3": "Présence Profonde de 6 semaines (€333-777) OU",
+      "item4": "Voyage de 3 mois (€888-1,111)"
+    },
+    "note": "La perception sans intégration n'est que du divertissement spirituel. C'est le travail d'une vie."
+  },
+  "individualServices": {
+    "title": "Services Individuels",
+    "description": "Chaque phase du voyage peut également être engagée séparément",
+    "preparation": {
+      "title": "Préparation",
+      "price": "€111",
+      "unit": "par session",
+      "description": "1-2 sessions requises avant la cérémonie (60-75 minutes chacune)",
+      "item1": "Évaluation de la préparation émotionnelle",
+      "item2": "Ancrage du système nerveux",
+      "item3": "Affronter les peurs et définir les intentions",
+      "item4": "Processus de dépistage médical"
+    },
+    "ceremony": {
+      "title": "Cérémonie",
+      "badge": "Passage Sacré",
+      "price": "€300-500",
+      "unit": "par personne",
+      "description": "Petits groupes (max. 2-4) à Mazunte, Oaxaca, Mexique",
+      "item1": "Consultation pré-cérémonie",
+      "item2": "Cérémonie complète de Bufo avec maintien énergétique",
+      "item3": "Journée complète de soins et de soutien",
+      "item4": "Session d'intégration dans les 48 heures (INCLUSE)",
+      "item5": "Suivi de 2 semaines (INCLUS)"
+    },
+    "integration": {
+      "title": "Intégration",
+      "price": "€88-111",
+      "unit": "par session",
+      "or": "ou",
+      "packagePrice": "€300-400",
+      "packageUnit": "forfait de 4 sessions",
+      "description": "Où le vrai travail se produit (75 minutes chacune)",
+      "item1": "Soutien émotionnel post-voyage",
+      "item2": "Dénouement de l'histoire et création de sens",
+      "item3": "Réalignement de l'identité",
+      "item4": "Pratiques d'intégration dans la vie"
+    }
+  },
+  "retreats": {
+    "title": "Immersions en Retraite",
+    "description": "Conteneurs de plusieurs jours pour une transformation complète dans un espace sacré",
+    "bufoRetreats": {
+      "title": "Conteneurs de Retraite Bufo",
+      "price": "€1,500-3,000",
+      "description": "Immersions de 3-7 jours (max. 2-6 personnes)",
+      "item1": "Voyage complet : préparation, cérémonie, intégration",
+      "item2": "Hébergement dans un espace sacré",
+      "item3": "Repas et immersion dans la nature",
+      "item4": "Cercles d'intégration",
+      "item5": "Organisé à Mazunte, Oaxaca, Mexique"
+    },
+    "integrationIntensives": {
+      "title": "Intensifs d'Intégration",
+      "price": "€500-1,200",
+      "description": "Conteneurs de week-end (2-4 jours)",
+      "item1": "Cercles de groupe (partage, témoignage)",
+      "item2": "Pratiques somatiques (respiration, mouvement)",
+      "item3": "Immersion dans la nature (plage, jungle, marches silencieuses)",
+      "item4": "Travail énergétique (sessions individuelles disponibles)"
+    },
+    "link": "En savoir plus sur les retraites →"
+  },
+  "accessibility": {
+    "title": "Accessibilité et Paiement",
+    "subtitle": "Cette médecine est pour tous ceux qui sont appelés",
+    "slidingScale": {
+      "title": "Tarif Dégressif et Réductions",
+      "item1": "Tarif dégressif disponible selon la situation financière",
+      "item2": "Réductions BIPOC offertes",
+      "item3": "Réductions pour parents isolés disponibles",
+      "item4": "Plans de paiement peuvent être organisés"
+    },
+    "paymentMethods": {
+      "title": "Méthodes de Paiement",
+      "item1": "Virement bancaire (EUR, USD)",
+      "item2": "PayPal / Stripe",
+      "item3": "Principales cryptomonnaies acceptées (BTC, ETH, USDT, etc.)",
+      "item4": "Espèces (en personne uniquement)"
+    },
+    "quote": "Personne n'est jamais refusé par manque de fonds lorsque l'appel est authentique."
+  },
+  "cta": {
+    "title": "Prêt à Commencer ?",
+    "description": "Si vous ressentez l'appel, commencez par le processus de candidature. C'est une invitation au discernement—pour nous deux. Tout le monde ne convient pas. Et c'est sacré.",
+    "button": "Commencez Votre Candidature",
+    "faqLink": "Lire FAQ et Infos de Sécurité",
+    "preparationLink": "En Savoir Plus sur la Préparation",
+    "integrationLink": "En Savoir Plus sur l'Intégration",
+    "disclaimer": "Candidature privée · Processus de discernement · Dépistage médical requis"
+  }
+}

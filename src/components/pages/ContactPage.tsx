@@ -62,7 +62,7 @@ export default function ContactPage() {
       <div className="min-h-screen relative flex items-center justify-center">
         <div className="absolute inset-0">
           <img
-            src="/images/locations/ceremony-space-mazunte.jpg"
+            src="/images/atmosphere/ceremony-02.jpg"
             alt="Sacred entrance to ceremony space in Mazunte"
             className="w-full h-full object-cover"
           />

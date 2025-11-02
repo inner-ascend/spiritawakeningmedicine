@@ -21,7 +21,7 @@ export default function PreparationPage() {
       <div className="min-h-screen relative flex items-center justify-center">
         <div className="absolute inset-0">
           <img
-            src="/images/locations/ceremony-space-mazunte.jpg"
+            src="/images/atmosphere/ceremony-06.jpg"
             alt="Meditation altar with sacred objects for preparation"
             className="w-full h-full object-cover"
           />
@@ -94,7 +94,7 @@ export default function PreparationPage() {
       {/* Breathwork Image */}
       <div className="h-[60vh] relative overflow-hidden">
         <img
-          src="/images/locations/mazunte-beach-sunset.jpg"
+          src="/images/atmosphere/ceremony-09.jpg"
           alt="Person in meditative breathwork posture"
           className="w-full h-full object-cover"
         />

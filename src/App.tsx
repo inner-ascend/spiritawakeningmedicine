@@ -25,6 +25,7 @@ import FAQPage from './components/pages/FAQPage';
 import ContactPage from './components/pages/ContactPage';
 import TestimonialsPage from './components/pages/TestimonialsPage';
 import RetreatsPage from './components/pages/RetreatsPage';
+import PricingPage from './components/pages/PricingPage';
 import ScrollToTop from './components/ScrollToTop';
 import ImagePlaceholder from './components/ImagePlaceholder';
 // Old pages - archived (keeping for backwards compatibility)
@@ -71,6 +72,9 @@ function LandingPage() {
                 </Link>
                 <Link to="/retreats" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
                   {nav.retreats}
+                </Link>
+                <Link to="/pricing" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
+                  {nav.pricing}
                 </Link>
                 <Link to="/testimonials" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
                   {nav.testimonials}
@@ -122,6 +126,9 @@ function LandingPage() {
                 <Link to="/retreats" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
                   {nav.retreats}
                 </Link>
+                <Link to="/pricing" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
+                  {nav.pricing}
+                </Link>
                 <Link to="/testimonials" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
                   {nav.testimonials}
                 </Link>
@@ -138,8 +145,15 @@ function LandingPage() {
 
         {/* Full-Screen Hero */}
         <div className="h-screen relative flex items-center justify-center">
-          {/* Simple Desert Background */}
-          <div className="absolute inset-0 bg-gradient-to-b from-desert-dusk via-earth-700 to-earth-900"></div>
+          {/* Hero Background Image */}
+          <div className="absolute inset-0">
+            <img
+              src="/images/locations/sonoran-desert-sunset.jpg"
+              alt="Sonoran Desert landscape at golden hour"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 via-earth-900/50 to-earth-900"></div>
 
           {/* Hero Content */}
           <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
@@ -172,16 +186,6 @@ function LandingPage() {
               <div className="w-1.5 h-1.5 bg-sacred-gold/60 rounded-full"></div>
             </div>
           </div>
-        </div>
-
-        {/* Full-Width Image Section 1 - Desert/Medicine Setting */}
-        <div className="h-[70vh] relative overflow-hidden">
-          <img
-            src="/images/locations/sonoran-desert-sunset.jpg"
-            alt="Sonoran Desert landscape at golden hour"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 to-earth-900/40"></div>
         </div>
 
         {/* What is Bufo Alvarius Section */}
@@ -567,6 +571,7 @@ function App() {
         <Route path="/integration" element={<IntegrationPage />} />
         <Route path="/testimonials" element={<TestimonialsPage />} />
         <Route path="/retreats" element={<RetreatsPage />} />
+        <Route path="/pricing" element={<PricingPage />} />
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/contact" element={<ContactPage />} />
         {/* Old routes - keeping for backwards compatibility */}

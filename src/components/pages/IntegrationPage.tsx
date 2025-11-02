@@ -20,7 +20,7 @@ export default function IntegrationPage() {
       <div className="min-h-screen relative flex items-center justify-center">
         <div className="absolute inset-0">
           <img
-            src="/images/locations/ceremony-space-mazunte.jpg"
+            src="/images/atmosphere/ceremony-03.jpg"
             alt="Integration circle in nature with people reflecting"
             className="w-full h-full object-cover"
           />
@@ -106,7 +106,7 @@ export default function IntegrationPage() {
       {/* Nature Reflection Image */}
       <div className="h-[60vh] relative overflow-hidden">
         <img
-          src="/images/locations/mazunte-beach-sunset.jpg"
+          src="/images/atmosphere/ceremony-14.jpg"
           alt="Person journaling in nature for integration"
           className="w-full h-full object-cover"
         />

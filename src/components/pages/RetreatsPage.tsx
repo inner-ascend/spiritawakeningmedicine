@@ -157,10 +157,11 @@ export default function RetreatsPage() {
             <div className="lg:order-2">
               <div className="relative shadow-2xl">
                 <img
-                  src="/images/locations/mazunte-beach-sunset.jpg"
+                  src="/images/atmosphere/ceremony-10.jpg"
                   alt="Integration circle with participants"
                   className="w-full aspect-[4/5] object-cover"
                 />
+                <p className="text-center text-sm text-earth-700/70 mt-2">Integration circles in nature</p>
               </div>
             </div>
           </div>

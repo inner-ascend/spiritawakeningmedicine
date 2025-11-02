@@ -24,7 +24,7 @@ export default function TestimonialsPage() {
       <div className="min-h-screen relative flex items-center justify-center">
         <div className="absolute inset-0">
           <img
-            src="/images/locations/ceremony-space-mazunte.jpg"
+            src="/images/atmosphere/ceremony-01.jpg"
             alt="Ceremony space at sunset - Mazunte, Mexico"
             className="w-full h-full object-cover"
           />

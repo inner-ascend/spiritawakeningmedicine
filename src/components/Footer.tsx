@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-6xl mx-auto">
           {/* Main Footer Grid */}
-          <div className="grid md:grid-cols-4 gap-12 mb-16">
+          <div className="grid md:grid-cols-5 gap-12 mb-16">
             {/* Brand Column */}
             <div className="space-y-4">
               <h3 className="text-xl font-serif text-sacred-gold">Spirit Awakening Medicine</h3>
@@ -46,7 +46,7 @@ export default function Footer() {
                   Testimonials
                 </Link>
                 <Link to="/contact" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
-                  Apply
+                  Contact
                 </Link>
                 <Link to="/support" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
                   Support
@@ -54,6 +54,29 @@ export default function Footer() {
                 <Link to="/privacy" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
                   Privacy
                 </Link>
+              </nav>
+            </div>
+
+            {/* Facilitators Column */}
+            <div className="space-y-4">
+              <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">Facilitators</h4>
+              <nav className="flex flex-col space-y-2">
+                <a
+                  href="https://nina-moore.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm"
+                >
+                  Nina Moore →
+                </a>
+                <a
+                  href="https://astral-integration.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm"
+                >
+                  Astral Amat →
+                </a>
               </nav>
             </div>
 

@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
 import ImagePlaceholder from '../ImagePlaceholder';
@@ -14,6 +14,7 @@ const translations = { en: contactEN, es: contactES, fr: contactFR };
 export default function ContactPage() {
   const { language } = useLanguage();
   const t = translations[language];
+  const location = useLocation();
 
   const [formData, setFormData] = useState({
     name: '',
@@ -24,6 +25,19 @@ export default function ContactPage() {
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState('');
+
+  // Handle scrolling to hash on load
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+    }
+  }, [location]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -210,7 +224,7 @@ export default function ContactPage() {
       </div>
 
       {/* Tally Form Embed */}
-      <div className="bg-white py-48">
+      <div id="apply" className="bg-white py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-8 text-center">
@@ -251,7 +265,7 @@ export default function ContactPage() {
       </div>
 
       {/* Simple Contact Form */}
-      <div className="bg-sacred-cream py-48">
+      <div id="contact" className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-8 text-center">

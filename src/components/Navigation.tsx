@@ -82,7 +82,7 @@ export default function Navigation() {
               {t.testimonials}
             </Link>
             <Link to="/contact" className="px-6 py-2 bg-sacred-gold text-earth-900 rounded-full font-semibold hover:bg-sacred-amber transition-all text-sm">
-              {t.apply}
+              {t.contact}
             </Link>
           </div>
 
@@ -151,7 +151,7 @@ export default function Navigation() {
               {t.testimonials}
             </Link>
             <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-sacred-gold font-semibold">
-              {t.apply}
+              {t.contact}
             </Link>
           </div>
         )}

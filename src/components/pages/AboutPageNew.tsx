@@ -94,20 +94,42 @@ export default function AboutPage() {
       <div className="bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-            <div className="relative shadow-lg">
+            <a
+              href="https://nina-moore.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative shadow-lg group overflow-hidden"
+            >
               <img
                 src="/images/portraits/nina-portrait.jpg"
                 alt="Nina - Co-facilitator portrait"
-                className="w-full aspect-[3/4] object-cover"
+                className="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-500"
               />
-            </div>
-            <div className="relative shadow-lg">
+              <div className="absolute inset-0 bg-gradient-to-t from-earth-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="p-6 w-full">
+                  <p className="text-sacred-white font-serif text-2xl mb-2">Nina Moore</p>
+                  <p className="text-desert-sand/90 text-sm">Visit Nina's website →</p>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://astral-integration.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative shadow-lg group overflow-hidden"
+            >
               <img
                 src="/images/portraits/astral-portrait.jpg"
                 alt="Astral - Co-facilitator portrait"
-                className="w-full aspect-[3/4] object-cover"
+                className="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-500"
               />
-            </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-earth-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="p-6 w-full">
+                  <p className="text-sacred-white font-serif text-2xl mb-2">Astral Amat</p>
+                  <p className="text-desert-sand/90 text-sm">Visit Astral's website →</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>

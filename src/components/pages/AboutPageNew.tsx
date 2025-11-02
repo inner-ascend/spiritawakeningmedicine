@@ -90,7 +90,7 @@ export default function AboutPage() {
       </div>
 
       {/* Portrait Images - Nina & Astral */}
-      <div className="bg-white py-20">
+      <div className="bg-earth-800 py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
             <a

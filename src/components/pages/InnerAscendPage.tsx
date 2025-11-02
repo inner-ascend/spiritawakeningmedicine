@@ -205,7 +205,7 @@ export default function InnerAscendPage() {
       </div>
 
       {/* How to Join - Light Section */}
-      <div className="bg-sacred-cream py-48">
+      <div className="bg-white py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">

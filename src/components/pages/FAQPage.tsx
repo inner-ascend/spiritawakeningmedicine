@@ -181,6 +181,16 @@ export default function FAQPage() {
         </div>
       </div>
 
+      {/* Image Break */}
+      <div className="h-[60vh] relative overflow-hidden">
+        <img
+          src="/images/locations/ceremony-space-mazunte.jpg"
+          alt="Sacred ceremony space"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-earth-900/30 to-earth-900/60"></div>
+      </div>
+
       {/* Contraindications Detail */}
       <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">

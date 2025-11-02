@@ -381,6 +381,16 @@ export default function PricingPage() {
         </div>
       </div>
 
+      {/* Image Break */}
+      <div className="h-[60vh] relative overflow-hidden">
+        <img
+          src="/images/locations/mazunte-beach-sunset.jpg"
+          alt="Mazunte beach at sunset"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-earth-900/20 to-earth-900/50"></div>
+      </div>
+
       {/* Accessibility & Payment Methods */}
       <div className="bg-white py-48">
         <div className="container mx-auto px-4">

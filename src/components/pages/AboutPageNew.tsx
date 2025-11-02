@@ -117,6 +117,10 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-earth-700 to-earth-900"></div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
+            {/* Transition */}
+            <p className="text-center text-lg md:text-xl text-desert-sand/70 mb-12 italic">
+              {t.lineage.transition}
+            </p>
             <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-12 text-center">
               {t.lineage.title}
             </h2>
@@ -154,6 +158,10 @@ export default function AboutPage() {
       <div className="bg-white py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
+            {/* Transition */}
+            <p className="text-center text-lg md:text-xl text-earth-700/70 mb-12 italic">
+              {t.training.transition}
+            </p>
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
               {t.training.title}
             </h2>
@@ -316,6 +324,10 @@ export default function AboutPage() {
 
             {/* Ceremony/Integration Gallery */}
             <div className="mt-20">
+              {/* Transition */}
+              <p className="text-center text-lg text-earth-700/70 mb-8 italic">
+                {t.why.transition}
+              </p>
               <h3 className="text-2xl md:text-3xl font-serif text-earth-800 mb-8 text-center">
                 The Work in Practice
               </h3>

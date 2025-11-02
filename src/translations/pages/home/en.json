@@ -8,6 +8,7 @@
     "ctaButton": "Begin with Discernment"
   },
   "whatIsBufo": {
+    "transition": "First, let's talk about the medicine itself.",
     "title": "The Sacred Medicine of Bufo Alvarius",
     "subtitle": "Die before you die",
     "intro": "The most potent and profound entheogenic compound on Earth",
@@ -41,6 +42,7 @@
     "quote": "You're not broken. You're not lost. You're initiating."
   },
   "threePhaseJourney": {
+    "transition": "This work unfolds in three essential movements:",
     "title": "The Three-Phase Journey",
     "description": "Sacred medicine work requires preparation, presence, and integration. This is not a shortcut. This is the work of a lifetime.",
     "preparation": {
@@ -71,7 +73,11 @@
   "imageQuote": {
     "quote": "Die before you die, and discover\nthere is no death."
   },
+  "ceremonyGallery": {
+    "transition": "This is where it happens - the spaces we create for this sacred work:"
+  },
   "testimonials": {
+    "transition": "But don't just take our word for it. Here's what others have experienced:",
     "title": "Voices From The Journey",
     "items": [
       {
@@ -94,6 +100,7 @@
     "link": "Read more testimonials →"
   },
   "pricingTransparency": {
+    "transition": "This work requires investment - of yourself, your time, and your resources. Here's what that looks like:",
     "title": "Investment & Accessibility",
     "subtitle": "Transparent pricing. Sliding scale available.",
     "preparation": {

@@ -269,7 +269,6 @@ export default function RetreatsPage() {
             <div className="grid md:grid-cols-2 gap-12 mb-16">
               <div className="space-y-4">
                 <h3 className="text-2xl font-serif text-earth-800 flex items-center gap-3">
-                  <span className="text-3xl">🏡</span>
                   {t.whoWeCollaborateWith.retreatCenters.title}
                 </h3>
                 <p className="text-earth-700/80 leading-relaxed">
@@ -279,7 +278,6 @@ export default function RetreatsPage() {
 
               <div className="space-y-4">
                 <h3 className="text-2xl font-serif text-earth-800 flex items-center gap-3">
-                  <span className="text-3xl">🌐</span>
                   {t.whoWeCollaborateWith.communities.title}
                 </h3>
                 <p className="text-earth-700/80 leading-relaxed">
@@ -289,7 +287,6 @@ export default function RetreatsPage() {
 
               <div className="space-y-4">
                 <h3 className="text-2xl font-serif text-earth-800 flex items-center gap-3">
-                  <span className="text-3xl">🤝</span>
                   {t.whoWeCollaborateWith.facilitators.title}
                 </h3>
                 <p className="text-earth-700/80 leading-relaxed">
@@ -299,7 +296,6 @@ export default function RetreatsPage() {
 
               <div className="space-y-4">
                 <h3 className="text-2xl font-serif text-earth-800 flex items-center gap-3">
-                  <span className="text-3xl">🎓</span>
                   {t.whoWeCollaborateWith.training.title}
                 </h3>
                 <p className="text-earth-700/80 leading-relaxed">

@@ -89,6 +89,10 @@ function LandingPage() {
         <div className="bg-earth-800 py-48">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
+              {/* Transition */}
+              <p className="text-center text-lg md:text-xl text-desert-sand/70 mb-12 italic">
+                {home.whatIsBufo.transition}
+              </p>
               <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-8 leading-tight">
                   {home.whatIsBufo.title}
@@ -186,6 +190,10 @@ function LandingPage() {
         <div className="bg-white py-48">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
+              {/* Transition */}
+              <p className="text-center text-lg md:text-xl text-earth-700/70 mb-12 italic">
+                {home.threePhaseJourney.transition}
+              </p>
               <div className="text-center mb-20">
                 <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
                   {home.threePhaseJourney.title}
@@ -322,6 +330,10 @@ function LandingPage() {
         <div className="bg-earth-900 py-48">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
+              {/* Transition */}
+              <p className="text-center text-lg md:text-xl text-desert-sand/70 mb-12 italic">
+                {home.ceremonyGallery.transition}
+              </p>
               <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
                   The Sacred Space
@@ -396,6 +408,10 @@ function LandingPage() {
           <div className="absolute inset-0 bg-earth-800"></div>
           <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
+              {/* Transition */}
+              <p className="text-center text-lg md:text-xl text-desert-sand/70 mb-12 italic">
+                {home.testimonials.transition}
+              </p>
               <h2 className="text-4xl md:text-5xl font-serif text-sacred-white text-center mb-20">
                 {home.testimonials.title}
               </h2>
@@ -427,6 +443,10 @@ function LandingPage() {
         <div className="bg-sacred-cream py-48">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
+              {/* Transition */}
+              <p className="text-center text-lg md:text-xl text-earth-700/70 mb-12 italic">
+                {home.pricingTransparency.transition}
+              </p>
               <div className="text-center mb-20">
                 <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
                   {home.pricingTransparency.title}

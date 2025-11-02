@@ -127,6 +127,10 @@ export default function BufoCeremoniesPage() {
       <div className="bg-white py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
+            {/* Transition */}
+            <p className="text-center text-lg md:text-xl text-earth-700/70 mb-12 italic">
+              {t.ceremonyDetails.transition}
+            </p>
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
               {t.ceremonyDetails.title}
             </h2>
@@ -285,6 +289,10 @@ export default function BufoCeremoniesPage() {
       <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
+            {/* Transition */}
+            <p className="text-center text-lg md:text-xl text-earth-700/70 mb-12 italic">
+              {t.isThisForYou.transition}
+            </p>
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
               {t.isThisForYou.title}
             </h2>

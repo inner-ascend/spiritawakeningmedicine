@@ -367,7 +367,6 @@ export default function ContactPage() {
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               {/* Email */}
               <div className="bg-white rounded-2xl p-8 text-center">
-                <div className="text-4xl mb-4">✉️</div>
                 <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.otherWays.email.title}</h3>
                 <p className="text-earth-700/70 mb-4 leading-relaxed text-sm">
                   {t.otherWays.email.description}
@@ -394,7 +393,6 @@ export default function ContactPage() {
 
               {/* Instagram */}
               <div className="bg-white rounded-2xl p-8 text-center">
-                <div className="text-4xl mb-4">📸</div>
                 <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.otherWays.instagram.title}</h3>
                 <p className="text-earth-700/70 mb-4 leading-relaxed text-sm">
                   {t.otherWays.instagram.description}

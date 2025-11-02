@@ -23,10 +23,10 @@ export default function TestimonialsPage() {
       {/* Hero Section */}
       <div className="min-h-screen relative flex items-center justify-center">
         <div className="absolute inset-0">
-          <ImagePlaceholder
-            aspectRatio="21/9"
-            altText="Ceremony space at sunset - Mazunte, Mexico"
-            className="w-full h-full"
+          <img
+            src="/images/locations/ceremony-space-mazunte.jpg"
+            alt="Ceremony space at sunset - Mazunte, Mexico"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 via-earth-900/40 to-earth-900"></div>
         </div>
@@ -126,10 +126,10 @@ export default function TestimonialsPage() {
 
       {/* Divider Image Section */}
       <div className="h-[60vh] relative overflow-hidden">
-        <ImagePlaceholder
-          aspectRatio="21/9"
-          altText="Sonoran Desert landscape at golden hour"
-          className="w-full h-full"
+        <img
+          src="/images/locations/sonoran-desert-sunset.jpg"
+          alt="Sonoran Desert landscape at golden hour"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/40 via-transparent to-earth-900/40 flex items-center justify-center">
           <p className="text-3xl md:text-4xl font-serif text-sacred-white italic text-center px-4 max-w-4xl">

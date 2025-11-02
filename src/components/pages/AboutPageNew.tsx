@@ -20,10 +20,10 @@ export default function AboutPage() {
       {/* Hero Section */}
       <div className="min-h-screen relative flex items-center justify-center">
         <div className="absolute inset-0">
-          <ImagePlaceholder
-            aspectRatio="21/9"
-            altText="Sonoran Desert at sunset"
-            className="w-full h-full"
+          <img
+            src="/images/locations/sonoran-desert-sunset.jpg"
+            alt="Sonoran Desert at sunset"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 via-earth-900/40 to-earth-900"></div>
@@ -95,18 +95,22 @@ export default function AboutPage() {
       <div className="bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-            <ImagePlaceholder
-              aspectRatio="3/4"
-              altText="Nina - Co-facilitator portrait"
-              className="shadow-lg"
-              caption="Nina"
-            />
-            <ImagePlaceholder
-              aspectRatio="3/4"
-              altText="Astral - Co-facilitator portrait"
-              className="shadow-lg"
-              caption="Astral"
-            />
+            <div className="relative shadow-lg">
+              <img
+                src="/images/portraits/nina-portrait.jpg"
+                alt="Nina - Co-facilitator portrait"
+                className="w-full aspect-[3/4] object-cover"
+              />
+              <p className="text-center text-sm text-earth-700/70 mt-2">Nina</p>
+            </div>
+            <div className="relative shadow-lg">
+              <img
+                src="/images/portraits/astral-portrait.jpg"
+                alt="Astral - Co-facilitator portrait"
+                className="w-full aspect-[3/4] object-cover"
+              />
+              <p className="text-center text-sm text-earth-700/70 mt-2">Astral</p>
+            </div>
           </div>
         </div>
       </div>

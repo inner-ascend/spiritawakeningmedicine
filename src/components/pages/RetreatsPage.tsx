@@ -20,10 +20,10 @@ export default function RetreatsPage() {
       {/* Hero Section */}
       <div className="min-h-screen relative flex items-center justify-center">
         <div className="absolute inset-0">
-          <ImagePlaceholder
-            aspectRatio="21/9"
-            altText="Retreat space in Mazunte with ocean view"
-            className="w-full h-full"
+          <img
+            src="/images/locations/mazunte-beach-sunset.jpg"
+            alt="Retreat space in Mazunte with ocean view"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 via-earth-900/50 to-earth-900"></div>
         </div>
@@ -51,12 +51,13 @@ export default function RetreatsPage() {
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             {/* Image Left */}
             <div>
-              <ImagePlaceholder
-                aspectRatio="4/5"
-                altText="Retreat ceremony space in nature"
-                className="shadow-2xl"
-                caption="Intimate ceremony space in Mazunte"
-              />
+              <div className="relative shadow-2xl">
+                <img
+                  src="/images/locations/ceremony-space-mazunte.jpg"
+                  alt="Retreat ceremony space in nature"
+                  className="w-full aspect-[4/5] object-cover"
+                />
+              </div>
             </div>
 
             {/* Text Right */}
@@ -154,12 +155,13 @@ export default function RetreatsPage() {
 
             {/* Image Right */}
             <div className="lg:order-2">
-              <ImagePlaceholder
-                aspectRatio="4/5"
-                altText="Integration circle with participants"
-                className="shadow-2xl"
-                caption="Integration circles in nature"
-              />
+              <div className="relative shadow-2xl">
+                <img
+                  src="/images/locations/mazunte-beach-sunset.jpg"
+                  alt="Integration circle with participants"
+                  className="w-full aspect-[4/5] object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -167,10 +169,10 @@ export default function RetreatsPage() {
 
       {/* Full-Width Image Break */}
       <div className="h-[70vh] relative overflow-hidden">
-        <ImagePlaceholder
-          aspectRatio="21/9"
-          altText="Mazunte beach at sunset"
-          className="w-full h-full"
+        <img
+          src="/images/locations/mazunte-beach-sunset.jpg"
+          alt="Mazunte beach at sunset"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/40 to-earth-900/60"></div>
       </div>
@@ -181,12 +183,13 @@ export default function RetreatsPage() {
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             {/* Image Left */}
             <div>
-              <ImagePlaceholder
-                aspectRatio="4/5"
-                altText="Collaborative retreat facilitation"
-                className="shadow-2xl"
-                caption="Co-facilitating transformational experiences"
-              />
+              <div className="relative shadow-2xl">
+                <img
+                  src="/images/portraits/nina-astral-together.jpg"
+                  alt="Collaborative retreat facilitation"
+                  className="w-full aspect-[4/5] object-cover"
+                />
+              </div>
             </div>
 
             {/* Text Right */}

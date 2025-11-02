@@ -50,7 +50,6 @@ function LandingPage() {
             <div className="flex items-center justify-between h-20">
               {/* Logo */}
               <Link to="/" className="flex items-center gap-3">
-                <span className="text-3xl">🔥</span>
                 <span className="text-xl font-serif text-sacred-gold">
                   Spirit Awakening Medicine
                 </span>
@@ -177,10 +176,10 @@ function LandingPage() {
 
         {/* Full-Width Image Section 1 - Desert/Medicine Setting */}
         <div className="h-[70vh] relative overflow-hidden">
-          <ImagePlaceholder
-            aspectRatio="21/9"
-            altText="Sonoran Desert landscape at golden hour"
-            className="w-full h-full"
+          <img
+            src="/images/locations/sonoran-desert-sunset.jpg"
+            alt="Sonoran Desert landscape at golden hour"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 to-earth-900/40"></div>
         </div>
@@ -275,10 +274,10 @@ function LandingPage() {
 
         {/* Image Section 2 - Ceremony Space / Toad Close-up */}
         <div className="h-[60vh] relative overflow-hidden">
-          <ImagePlaceholder
-            aspectRatio="21/9"
-            altText="Bufo Alvarius toad - Sacred medicine"
-            className="w-full h-full"
+          <img
+            src="/images/locations/bufo-toad.jpg"
+            alt="Bufo Alvarius toad - Sacred medicine"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-earth-900/30 to-earth-900/60"></div>
         </div>
@@ -373,10 +372,10 @@ function LandingPage() {
 
         {/* Image Section 3 - Mazunte Beach / Nature */}
         <div className="h-[70vh] relative overflow-hidden">
-          <ImagePlaceholder
-            aspectRatio="21/9"
-            altText="Mazunte beach at sunset - Oaxaca, Mexico"
-            className="w-full h-full"
+          <img
+            src="/images/locations/mazunte-beach-sunset.jpg"
+            alt="Mazunte beach at sunset - Oaxaca, Mexico"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-earth-900/40 to-earth-900/70 flex items-center justify-center">
             <p className="text-3xl md:text-5xl font-serif text-sacred-white italic text-center px-4 max-w-4xl leading-tight" style={{whiteSpace: 'pre-line'}}>

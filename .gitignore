@@ -9,6 +9,8 @@ lerna-debug.log*
 
 Astral_Website_Project/
 ALL CONTENT ASTRAL/
+chosen/
+spirit/
 
 # Dependencies
 node_modules

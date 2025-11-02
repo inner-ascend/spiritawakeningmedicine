@@ -20,10 +20,10 @@ export default function BufoCeremoniesPage() {
       {/* Hero Section */}
       <div className="min-h-screen relative flex items-center justify-center">
         <div className="absolute inset-0">
-          <ImagePlaceholder
-            aspectRatio="21/9"
-            altText="Sonoran Desert toad - Bufo Alvarius"
-            className="w-full h-full"
+          <img
+            src="/images/locations/bufo-toad.jpg"
+            alt="Sonoran Desert toad - Bufo Alvarius"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 via-earth-900/40 to-earth-900"></div>
@@ -103,10 +103,10 @@ export default function BufoCeremoniesPage() {
 
       {/* Toad Close-up Image */}
       <div className="h-[60vh] relative overflow-hidden">
-        <ImagePlaceholder
-          aspectRatio="21/9"
-          altText="Bufo Alvarius toad close-up in natural habitat"
-          className="w-full h-full"
+        <img
+          src="/images/locations/bufo-toad.jpg"
+          alt="Bufo Alvarius toad close-up in natural habitat"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/20 to-earth-900/50"></div>
       </div>
@@ -237,10 +237,10 @@ export default function BufoCeremoniesPage() {
 
       {/* Ceremony Space Image */}
       <div className="h-[70vh] relative overflow-hidden">
-        <ImagePlaceholder
-          aspectRatio="21/9"
-          altText="Sacred ceremony space in nature - Mazunte, Mexico"
-          className="w-full h-full"
+        <img
+          src="/images/locations/ceremony-space-mazunte.jpg"
+          alt="Sacred ceremony space in nature - Mazunte, Mexico"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/30 to-earth-900/60 flex items-center justify-center">
           <p className="text-3xl md:text-5xl font-serif text-sacred-white italic text-center px-4 max-w-4xl leading-tight">

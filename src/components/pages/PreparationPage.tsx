@@ -20,10 +20,10 @@ export default function PreparationPage() {
       {/* Hero Section */}
       <div className="min-h-screen relative flex items-center justify-center">
         <div className="absolute inset-0">
-          <ImagePlaceholder
-            aspectRatio="21/9"
-            altText="Meditation altar with sacred objects for preparation"
-            className="w-full h-full"
+          <img
+            src="/images/locations/ceremony-space-mazunte.jpg"
+            alt="Meditation altar with sacred objects for preparation"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 via-earth-900/40 to-earth-900"></div>
@@ -93,10 +93,10 @@ export default function PreparationPage() {
 
       {/* Breathwork Image */}
       <div className="h-[60vh] relative overflow-hidden">
-        <ImagePlaceholder
-          aspectRatio="21/9"
-          altText="Person in meditative breathwork posture"
-          className="w-full h-full"
+        <img
+          src="/images/locations/mazunte-beach-sunset.jpg"
+          alt="Person in meditative breathwork posture"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/20 to-earth-900/50"></div>
       </div>

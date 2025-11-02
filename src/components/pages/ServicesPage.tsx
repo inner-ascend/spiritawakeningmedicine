@@ -42,8 +42,13 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-              <div className="aspect-[4/5] relative order-2 lg:order-1">
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/30 to-mystic-purple/20 rounded-2xl"></div>
+              <div className="aspect-[4/5] relative order-2 lg:order-1 rounded-2xl overflow-hidden">
+                <img
+                  src="/images/atmosphere/ceremony-09.jpg"
+                  alt="Sacred Circle Gathering"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/30 to-transparent"></div>
               </div>
 
               <div className="space-y-8 order-1 lg:order-2">
@@ -143,8 +148,13 @@ export default function ServicesPage() {
                 </p>
               </div>
 
-              <div className="aspect-square relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-mystic-purple/20 to-sacred-green/30 rounded-2xl"></div>
+              <div className="aspect-square relative rounded-2xl overflow-hidden">
+                <img
+                  src="/images/locations/bufo-toad.jpg"
+                  alt="Medicine Journey"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-mystic-purple/20 to-transparent"></div>
               </div>
             </div>
 
@@ -186,8 +196,13 @@ export default function ServicesPage() {
         <div className="relative z-10 container mx-auto px-4 py-32">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-5 gap-16 items-center">
-              <div className="lg:col-span-3 aspect-[16/10] relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-sacred-green/20 to-mystic-purple/30 rounded-2xl"></div>
+              <div className="lg:col-span-3 aspect-[16/10] relative rounded-2xl overflow-hidden">
+                <img
+                  src="/images/atmosphere/ceremony-04.jpg"
+                  alt="Deep Transformational Work"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-sacred-green/20 to-transparent"></div>
               </div>
 
               <div className="lg:col-span-2 space-y-8">

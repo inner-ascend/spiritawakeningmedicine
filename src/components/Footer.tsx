@@ -42,17 +42,20 @@ export default function Footer() {
             <div className="space-y-4">
               <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">Resources</h4>
               <nav className="flex flex-col space-y-2">
+                <Link to="/preparation" className="text-desert-sand/60 hover:text-desert-sage transition-colors text-sm">
+                  Preparation
+                </Link>
+                <Link to="/integration" className="text-desert-sand/60 hover:text-ocean-turquoise transition-colors text-sm">
+                  Integration
+                </Link>
+                <Link to="/faq" className="text-desert-sand/60 hover:text-jungle-sage transition-colors text-sm">
+                  FAQ
+                </Link>
                 <Link to="/testimonials" className="text-desert-sand/60 hover:text-ocean-turquoise transition-colors text-sm">
                   Testimonials
                 </Link>
                 <Link to="/contact" className="text-desert-sand/60 hover:text-sunset-rose transition-colors text-sm">
                   Contact
-                </Link>
-                <Link to="/support" className="text-desert-sand/60 hover:text-jungle-moss transition-colors text-sm">
-                  Support
-                </Link>
-                <Link to="/privacy" className="text-desert-sand/60 hover:text-mineral-bronze transition-colors text-sm">
-                  Privacy
                 </Link>
               </nav>
             </div>

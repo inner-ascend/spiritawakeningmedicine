@@ -8,14 +8,14 @@ import testimonialsFR from '../../translations/pages/testimonials/fr.json';
 
 const translations = { en: testimonialsEN, es: testimonialsES, fr: testimonialsFR };
 
-// Abstract nature images for testimonials (more authentic than stock portraits)
+// Real ceremony and location images for testimonials
 const testimonialImages = [
-  'https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=800&h=1000&fit=crop', // Desert landscape
-  'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=1000&fit=crop', // Mountain vista
-  'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=1000&fit=crop', // Night sky
-  'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=1000&fit=crop', // Ocean waves
-  'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=1000&fit=crop', // Forest path
-  'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=1000&fit=crop', // Sunset over water
+  '/images/locations/sonoran-desert-sunset.jpg', // Desert landscape
+  '/images/locations/mazunte-beach-sunset.jpg', // Beach sunset
+  '/images/atmosphere/ceremony-01.jpg', // Ceremony space
+  '/images/atmosphere/ceremony-10.jpg', // Sacred gathering
+  '/images/atmosphere/ceremony-14.jpg', // Ceremony atmosphere
+  '/images/locations/ceremony-space-mazunte.jpg', // Sacred space
 ];
 
 export default function TestimonialsPage() {

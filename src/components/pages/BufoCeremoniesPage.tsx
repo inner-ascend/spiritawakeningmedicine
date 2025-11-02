@@ -124,7 +124,7 @@ export default function BufoCeremoniesPage() {
       </div>
 
       {/* Ceremony Details */}
-      <div className="bg-white pt-36 pb-48">
+      <div className="bg-white py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
@@ -261,22 +261,8 @@ export default function BufoCeremoniesPage() {
         </div>
       </div>
 
-      {/* Ceremony Space Image */}
-      <div className="h-[70vh] relative overflow-hidden">
-        <img
-          src="/images/locations/ceremony-space-mazunte.jpg"
-          alt="Sacred ceremony space in nature - Mazunte, Mexico"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-earth-900/30 to-earth-900/60 flex items-center justify-center">
-          <p className="text-3xl md:text-5xl font-serif text-sacred-white italic text-center px-4 max-w-4xl leading-tight">
-            "{t.ceremonySpace.quote}"
-          </p>
-        </div>
-      </div>
-
       {/* Who This Is For / Not For */}
-      <div className="bg-sacred-cream pt-36 pb-48">
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
@@ -370,13 +356,27 @@ export default function BufoCeremoniesPage() {
         </div>
       </div>
 
+      {/* Ceremony Space Image with Quote */}
+      <div className="h-[70vh] relative overflow-hidden">
+        <img
+          src="/images/locations/ceremony-space-mazunte.jpg"
+          alt="Sacred ceremony space in nature - Mazunte, Mexico"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-earth-900/30 to-earth-900/60 flex items-center justify-center">
+          <p className="text-3xl md:text-5xl font-serif text-sacred-white italic text-center px-4 max-w-4xl leading-tight">
+            "{t.ceremonySpace.quote}"
+          </p>
+        </div>
+      </div>
+
       {/* Contraindications & Medical Screening */}
       <div className="bg-white py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="bg-desert-clay/10 border-l-4 border-desert-clay rounded-r-2xl p-8 mb-12">
               <h2 className="text-3xl font-serif text-earth-800 mb-6 flex items-center gap-3">
-                <span className="text-4xl">⚕️</span>
+                <span className="text-4xl text-desert-clay">⊕</span>
                 {t.medical.title}
               </h2>
               <p className="text-earth-700/80 leading-relaxed mb-6">
@@ -432,6 +432,16 @@ export default function BufoCeremoniesPage() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Desert Sunset Image Break */}
+      <div className="h-[60vh] relative overflow-hidden">
+        <img
+          src="/images/locations/sonoran-desert-sunset.jpg"
+          alt="Sonoran Desert landscape at sunset"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-earth-900/20 to-earth-900/50"></div>
       </div>
 
       {/* Investment */}

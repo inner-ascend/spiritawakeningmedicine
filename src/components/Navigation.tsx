@@ -56,6 +56,12 @@ export default function Navigation() {
                 <div className="absolute top-full left-0 pt-2">
                   <div className="w-48 py-2 bg-earth-800/95 backdrop-blur-xl border border-desert-sage/20 rounded-lg shadow-xl">
                     <Link
+                      to="/resources"
+                      className="block px-4 py-2 text-desert-sand/80 hover:text-ocean-turquoise hover:bg-earth-700/50 transition-colors text-sm"
+                    >
+                      {t.resources}
+                    </Link>
+                    <Link
                       to="/preparation"
                       className="block px-4 py-2 text-desert-sand/80 hover:text-desert-sage hover:bg-earth-700/50 transition-colors text-sm"
                     >
@@ -135,6 +141,9 @@ export default function Navigation() {
               </button>
               {mobileResourcesOpen && (
                 <div className="pl-4 mt-2 space-y-2">
+                  <Link to="/resources" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/70 hover:text-sacred-gold transition-colors text-sm">
+                    {t.resources}
+                  </Link>
                   <Link to="/preparation" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/70 hover:text-sacred-gold transition-colors text-sm">
                     {t.preparation}
                   </Link>

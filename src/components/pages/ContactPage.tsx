@@ -87,7 +87,7 @@ export default function ContactPage() {
           <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-white mb-8 leading-tight">
             {t.hero.title}
           </h1>
-          <p className="text-2xl md:text-3xl text-sacred-gold/90 font-serif italic mb-8">
+          <p className="text-2xl md:text-3xl text-sunset-peach/90 font-serif italic mb-8">
             "{t.hero.quote}"
           </p>
           <p className="text-lg md:text-xl text-desert-sand/80 leading-relaxed max-w-3xl mx-auto">
@@ -98,8 +98,8 @@ export default function ContactPage() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-sacred-gold/40 rounded-full flex items-start justify-center p-2">
-            <div className="w-1.5 h-1.5 bg-sacred-gold/60 rounded-full"></div>
+          <div className="w-6 h-10 border-2 border-sunset-rose/40 rounded-full flex items-start justify-center p-2">
+            <div className="w-1.5 h-1.5 bg-sunset-rose/60 rounded-full"></div>
           </div>
         </div>
       </div>
@@ -113,7 +113,7 @@ export default function ContactPage() {
             </h2>
 
             <div className="space-y-6 text-earth-700/80 leading-relaxed text-lg mb-16">
-              <p className="text-center text-2xl font-serif text-sacred-gold italic mb-8">
+              <p className="text-center text-2xl font-serif text-mineral-copper italic mb-8">
                 {t.applicationProcess.subtitle}
               </p>
 
@@ -131,8 +131,8 @@ export default function ContactPage() {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
-                    <span className="text-sacred-gold font-bold">1</span>
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sunset-rose/20 flex items-center justify-center">
+                    <span className="text-sunset-rose font-bold">1</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-earth-800 mb-2">{t.applicationProcess.step1.title}</h4>
@@ -143,8 +143,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
-                    <span className="text-sacred-gold font-bold">2</span>
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-mineral-copper/20 flex items-center justify-center">
+                    <span className="text-mineral-copper font-bold">2</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-earth-800 mb-2">{t.applicationProcess.step2.title}</h4>
@@ -155,8 +155,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
-                    <span className="text-sacred-gold font-bold">3</span>
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sunset-blush/20 flex items-center justify-center">
+                    <span className="text-sunset-blush font-bold">3</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-earth-800 mb-2">{t.applicationProcess.step3.title}</h4>
@@ -167,8 +167,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
-                    <span className="text-sacred-gold font-bold">4</span>
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-jungle-moss/20 flex items-center justify-center">
+                    <span className="text-jungle-moss font-bold">4</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-earth-800 mb-2">{t.applicationProcess.step4.title}</h4>
@@ -179,8 +179,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
-                    <span className="text-sacred-gold font-bold">5</span>
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-ocean-turquoise/20 flex items-center justify-center">
+                    <span className="text-ocean-turquoise font-bold">5</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-earth-800 mb-2">{t.applicationProcess.step5.title}</h4>
@@ -191,8 +191,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sacred-gold/20 flex items-center justify-center">
-                    <span className="text-sacred-gold font-bold">6</span>
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sacred-purple/20 flex items-center justify-center">
+                    <span className="text-sacred-purple font-bold">6</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-earth-800 mb-2">{t.applicationProcess.step6.title}</h4>
@@ -255,7 +255,7 @@ export default function ContactPage() {
                 href="https://tally.so/r/mYXQVN"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sacred-gold hover:text-sacred-amber transition-colors"
+                className="text-sunset-rose hover:text-sacred-amber transition-colors"
               >
                 {t.tallyForm.openInNew}
               </a>
@@ -277,14 +277,14 @@ export default function ContactPage() {
             </p>
 
             {sent ? (
-              <div className="bg-white rounded-2xl p-12 text-center border-2 border-sacred-gold/40">
+              <div className="bg-white rounded-2xl p-12 text-center border-2 border-sunset-rose/40">
                 <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.contactForm.successTitle}</h3>
                 <p className="text-earth-700/70 leading-relaxed mb-6">
                   {t.contactForm.successMessage}
                 </p>
                 <button
                   onClick={() => setSent(false)}
-                  className="text-sacred-gold hover:text-sacred-amber transition-colors font-medium"
+                  className="text-sunset-rose hover:text-sacred-amber transition-colors font-medium"
                 >
                   {t.contactForm.sendAnother}
                 </button>
@@ -301,7 +301,7 @@ export default function ContactPage() {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3 rounded-lg border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-earth-700/20 focus:border-sunset-rose focus:outline-none focus:ring-2 focus:ring-sunset-rose/20 transition-all"
                     placeholder={t.contactForm.fields.namePlaceholder}
                   />
                 </div>
@@ -316,7 +316,7 @@ export default function ContactPage() {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3 rounded-lg border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-earth-700/20 focus:border-sunset-rose focus:outline-none focus:ring-2 focus:ring-sunset-rose/20 transition-all"
                     placeholder={t.contactForm.fields.emailPlaceholder}
                   />
                 </div>
@@ -331,7 +331,7 @@ export default function ContactPage() {
                     required
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    className="w-full px-4 py-3 rounded-lg border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-earth-700/20 focus:border-sunset-rose focus:outline-none focus:ring-2 focus:ring-sunset-rose/20 transition-all"
                     placeholder={t.contactForm.fields.subjectPlaceholder}
                   />
                 </div>
@@ -346,7 +346,7 @@ export default function ContactPage() {
                     rows={6}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-3 rounded-lg border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 transition-all resize-none"
+                    className="w-full px-4 py-3 rounded-lg border border-earth-700/20 focus:border-sunset-rose focus:outline-none focus:ring-2 focus:ring-sunset-rose/20 transition-all resize-none"
                     placeholder={t.contactForm.fields.messagePlaceholder}
                   />
                 </div>
@@ -360,7 +360,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={sending}
-                  className="w-full px-8 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full px-8 py-4 bg-sunset-rose text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {sending ? t.contactForm.sending : t.contactForm.send}
                 </button>
@@ -387,7 +387,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href="mailto:spiritawakeningmedicine@gmail.com"
-                  className="text-sacred-gold hover:text-sacred-amber transition-colors font-medium"
+                  className="text-sunset-rose hover:text-sacred-amber transition-colors font-medium"
                 >
                   {t.otherWays.email.address}
                 </a>
@@ -399,7 +399,7 @@ export default function ContactPage() {
                 <p className="text-earth-700/70 mb-4 leading-relaxed text-sm">
                   {t.otherWays.messaging.description}
                 </p>
-                <p className="text-sacred-gold font-medium mb-2">{t.otherWays.messaging.phone}</p>
+                <p className="text-sunset-rose font-medium mb-2">{t.otherWays.messaging.phone}</p>
                 <p className="text-xs text-earth-700/60">
                   {t.otherWays.messaging.telegram}
                 </p>
@@ -415,7 +415,7 @@ export default function ContactPage() {
                   href="https://instagram.com/inner__ascend"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sacred-gold hover:text-sacred-amber transition-colors font-medium"
+                  className="text-sunset-rose hover:text-sacred-amber transition-colors font-medium"
                 >
                   {t.otherWays.instagram.handle}
                 </a>
@@ -427,7 +427,7 @@ export default function ContactPage() {
                 <p className="text-earth-700/70 mb-4 leading-relaxed text-sm">
                   {t.otherWays.location.description}
                 </p>
-                <p className="text-sacred-gold font-medium">
+                <p className="text-sunset-rose font-medium">
                   {t.otherWays.location.place}
                 </p>
                 <p className="text-xs text-earth-700/60 mt-2">
@@ -460,42 +460,42 @@ export default function ContactPage() {
             <div className="space-y-6 text-desert-sand/80 leading-relaxed">
               <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-6">
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold text-xl">•</span>
+                  <span className="text-sunset-rose text-xl">•</span>
                   <span><strong className="text-sacred-white">{t.important.item1}</strong>{t.important.item1Detail}</span>
                 </p>
               </div>
 
               <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-6">
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold text-xl">•</span>
+                  <span className="text-sunset-rose text-xl">•</span>
                   <span><strong className="text-sacred-white">{t.important.item2}</strong>{t.important.item2Detail}</span>
                 </p>
               </div>
 
               <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-6">
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold text-xl">•</span>
+                  <span className="text-sunset-rose text-xl">•</span>
                   <span><strong className="text-sacred-white">{t.important.item3}</strong>{t.important.item3Detail}</span>
                 </p>
               </div>
 
               <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-6">
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold text-xl">•</span>
+                  <span className="text-sunset-rose text-xl">•</span>
                   <span><strong className="text-sacred-white">{t.important.item4}</strong>{t.important.item4Detail}</span>
                 </p>
               </div>
 
               <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-6">
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold text-xl">•</span>
+                  <span className="text-sunset-rose text-xl">•</span>
                   <span><strong className="text-sacred-white">{t.important.item5}</strong>{t.important.item5Detail}</span>
                 </p>
               </div>
             </div>
 
             <div className="text-center mt-16">
-              <p className="text-2xl font-serif text-sacred-gold/90 italic leading-relaxed">
+              <p className="text-2xl font-serif text-sunset-rose/90 italic leading-relaxed">
                 "{t.important.quote1}<br/>
                 {t.important.quote2}"
               </p>
@@ -503,11 +503,11 @@ export default function ContactPage() {
 
             <div className="text-center mt-12">
               <p className="text-desert-sand/70">
-                <Link to="/ceremonies" className="text-sacred-gold hover:text-sacred-amber transition-colors">
+                <Link to="/ceremonies" className="text-sunset-rose hover:text-sacred-amber transition-colors">
                   {t.important.linkCeremonies}
                 </Link>
                 <span className="mx-4 text-desert-sand/40">|</span>
-                <Link to="/faq" className="text-sacred-gold hover:text-sacred-amber transition-colors">
+                <Link to="/faq" className="text-sunset-rose hover:text-sacred-amber transition-colors">
                   {t.important.linkFaq}
                 </Link>
               </p>

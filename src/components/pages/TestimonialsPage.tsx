@@ -60,8 +60,8 @@ export default function TestimonialsPage() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-sacred-gold/40 rounded-full flex items-start justify-center p-2">
-            <div className="w-1.5 h-1.5 bg-sacred-gold/60 rounded-full"></div>
+          <div className="w-6 h-10 border-2 border-ocean-turquoise/40 rounded-full flex items-start justify-center p-2">
+            <div className="w-1.5 h-1.5 bg-ocean-turquoise/60 rounded-full"></div>
           </div>
         </div>
       </div>
@@ -82,14 +82,14 @@ export default function TestimonialsPage() {
 
               {/* Testimonial Content */}
               <div className={`space-y-8 ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                <div className="text-4xl text-sacred-gold/40">❝</div>
+                <div className="text-4xl text-ocean-turquoise/40">❝</div>
 
                 <blockquote className="text-2xl md:text-3xl lg:text-4xl font-serif text-earth-800 leading-relaxed italic">
                   {testimonial.quote}
                 </blockquote>
 
                 <div className="space-y-2">
-                  <p className="text-xl font-serif text-sacred-gold">
+                  <p className="text-xl font-serif text-ocean-turquoise">
                     — {testimonial.name}
                   </p>
                   <p className="text-sm text-earth-700/60 uppercase tracking-wider">

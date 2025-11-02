@@ -20,20 +20,20 @@ export default function Footer() {
             <div className="space-y-4">
               <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">Explore</h4>
               <nav className="flex flex-col space-y-2">
-                <Link to="/about" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
+                <Link to="/about" className="text-desert-sand/60 hover:text-desert-clay transition-colors text-sm">
                   About
                 </Link>
-                <Link to="/ceremonies" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
+                <Link to="/ceremonies" className="text-desert-sand/60 hover:text-sacred-purple transition-colors text-sm">
                   Ceremonies
                 </Link>
-                <Link to="/preparation" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
-                  Preparation
+                <Link to="/retreats" className="text-desert-sand/60 hover:text-ocean-coral transition-colors text-sm">
+                  Retreats
                 </Link>
-                <Link to="/integration" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
-                  Integration
+                <Link to="/collaborations" className="text-desert-sand/60 hover:text-jungle-emerald transition-colors text-sm">
+                  Collaborations
                 </Link>
-                <Link to="/faq" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
-                  FAQ
+                <Link to="/pricing" className="text-desert-sand/60 hover:text-mineral-copper transition-colors text-sm">
+                  Pricing
                 </Link>
               </nav>
             </div>
@@ -42,16 +42,16 @@ export default function Footer() {
             <div className="space-y-4">
               <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">Resources</h4>
               <nav className="flex flex-col space-y-2">
-                <Link to="/testimonials" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
+                <Link to="/testimonials" className="text-desert-sand/60 hover:text-ocean-turquoise transition-colors text-sm">
                   Testimonials
                 </Link>
-                <Link to="/contact" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
+                <Link to="/contact" className="text-desert-sand/60 hover:text-sunset-rose transition-colors text-sm">
                   Contact
                 </Link>
-                <Link to="/support" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
+                <Link to="/support" className="text-desert-sand/60 hover:text-jungle-moss transition-colors text-sm">
                   Support
                 </Link>
-                <Link to="/privacy" className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm">
+                <Link to="/privacy" className="text-desert-sand/60 hover:text-mineral-bronze transition-colors text-sm">
                   Privacy
                 </Link>
               </nav>
@@ -65,7 +65,7 @@ export default function Footer() {
                   href="https://nina-moore.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm"
+                  className="text-desert-sand/60 hover:text-sunset-peach transition-colors text-sm"
                 >
                   Nina Moore →
                 </a>
@@ -73,7 +73,7 @@ export default function Footer() {
                   href="https://astral-integration.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm"
+                  className="text-desert-sand/60 hover:text-mineral-terracotta transition-colors text-sm"
                 >
                   Astral Amat →
                 </a>

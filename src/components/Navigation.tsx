@@ -28,17 +28,17 @@ export default function Navigation() {
 
           {/* Nav Links - Hidden on mobile */}
           <div className="hidden lg:flex items-center gap-5">
-            <Link to="/about" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
+            <Link to="/about" className="text-desert-sand/80 hover:text-desert-clay transition-colors text-sm">
               {t.about}
             </Link>
-            <Link to="/ceremonies" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
+            <Link to="/ceremonies" className="text-desert-sand/80 hover:text-sacred-purple transition-colors text-sm">
               {t.ceremonies}
             </Link>
-            <Link to="/retreats" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
+            <Link to="/retreats" className="text-desert-sand/80 hover:text-ocean-coral transition-colors text-sm">
               {t.retreats}
             </Link>
-            <Link to="/pricing" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
-              {t.pricing}
+            <Link to="/collaborations" className="text-desert-sand/80 hover:text-jungle-sage transition-colors text-sm">
+              {t.collaborations}
             </Link>
 
             {/* Resources Dropdown */}
@@ -47,7 +47,7 @@ export default function Navigation() {
               onMouseEnter={() => setResourcesOpen(true)}
               onMouseLeave={() => setResourcesOpen(false)}
             >
-              <button className="flex items-center gap-1 text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm py-2">
+              <button className="flex items-center gap-1 text-desert-sand/80 hover:text-ocean-turquoise transition-colors text-sm py-2">
                 {t.resources}
                 <ChevronDown className={`w-4 h-4 transition-transform ${resourcesOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -57,13 +57,13 @@ export default function Navigation() {
                   <div className="w-48 py-2 bg-earth-800/95 backdrop-blur-xl border border-desert-sage/20 rounded-lg shadow-xl">
                     <Link
                       to="/preparation"
-                      className="block px-4 py-2 text-desert-sand/80 hover:text-sacred-gold hover:bg-earth-700/50 transition-colors text-sm"
+                      className="block px-4 py-2 text-desert-sand/80 hover:text-desert-sage hover:bg-earth-700/50 transition-colors text-sm"
                     >
                       {t.preparation}
                     </Link>
                     <Link
                       to="/integration"
-                      className="block px-4 py-2 text-desert-sand/80 hover:text-sacred-gold hover:bg-earth-700/50 transition-colors text-sm"
+                      className="block px-4 py-2 text-desert-sand/80 hover:text-ocean-turquoise hover:bg-earth-700/50 transition-colors text-sm"
                     >
                       {t.integration}
                     </Link>
@@ -78,9 +78,10 @@ export default function Navigation() {
               )}
             </div>
 
-            <Link to="/testimonials" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
-              {t.testimonials}
+            <Link to="/pricing" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
+              {t.pricing}
             </Link>
+
             <Link to="/contact" className="px-6 py-2 bg-sacred-gold text-earth-900 rounded-full font-semibold hover:bg-sacred-amber transition-all text-sm">
               {t.contact}
             </Link>
@@ -93,7 +94,7 @@ export default function Navigation() {
               onClick={() => setLanguage(language === 'en' ? 'es' : language === 'es' ? 'fr' : 'en')}
               className="flex items-center gap-2 px-4 py-2 rounded-full bg-earth-700/30 backdrop-blur-xl border border-desert-sage/30 hover:bg-earth-700/40 transition-all"
             >
-              <Globe className="w-4 h-4 text-sacred-gold" />
+              <Globe className="w-4 h-4 text-ocean-turquoise" />
               <span className="text-sm font-medium text-desert-sand">{language === 'en' ? 'EN' : language === 'es' ? 'ES' : 'FR'}</span>
             </button>
 
@@ -119,8 +120,8 @@ export default function Navigation() {
             <Link to="/retreats" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
               {t.retreats}
             </Link>
-            <Link to="/pricing" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
-              {t.pricing}
+            <Link to="/collaborations" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
+              {t.collaborations}
             </Link>
 
             {/* Resources Expandable Section */}
@@ -147,9 +148,10 @@ export default function Navigation() {
               )}
             </div>
 
-            <Link to="/testimonials" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
-              {t.testimonials}
+            <Link to="/pricing" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
+              {t.pricing}
             </Link>
+
             <Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-sacred-gold font-semibold">
               {t.contact}
             </Link>

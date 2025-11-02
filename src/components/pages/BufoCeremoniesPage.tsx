@@ -32,7 +32,7 @@ export default function BufoCeremoniesPage() {
           <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-white mb-8 leading-tight">
             {t.hero.title}
           </h1>
-          <p className="text-2xl md:text-3xl text-sacred-gold/90 font-serif font-light mb-6">
+          <p className="text-2xl md:text-3xl text-sacred-purple/90 font-serif font-light mb-6">
             {t.hero.subtitle}
           </p>
           <p className="text-lg md:text-xl text-desert-sand/80 leading-relaxed max-w-3xl mx-auto">
@@ -43,8 +43,8 @@ export default function BufoCeremoniesPage() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-sacred-gold/40 rounded-full flex items-start justify-center p-2">
-            <div className="w-1.5 h-1.5 bg-sacred-gold/60 rounded-full"></div>
+          <div className="w-6 h-10 border-2 border-sacred-purple/40 rounded-full flex items-start justify-center p-2">
+            <div className="w-1.5 h-1.5 bg-sacred-purple/60 rounded-full"></div>
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@ export default function BufoCeremoniesPage() {
             </h2>
 
             <div className="space-y-8 text-earth-700/80 leading-relaxed text-lg">
-              <p className="text-2xl text-sacred-gold font-serif text-center mb-8">
+              <p className="text-2xl text-sacred-purple font-serif text-center mb-8">
                 {t.what.subtitle}
               </p>
 
@@ -87,25 +87,25 @@ export default function BufoCeremoniesPage() {
                 <h3 className="text-2xl font-serif text-earth-800 mb-6">{t.what.experience.title}</h3>
                 <div className="space-y-4">
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-sacred-purple mt-1">•</span>
                     <span><strong className="text-earth-800">{t.what.experience.speed}</strong> {t.what.experience.speedValue}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-sacred-purple mt-1">•</span>
                     <span><strong className="text-earth-800">{t.what.experience.duration}</strong> {t.what.experience.durationValue}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-sacred-purple mt-1">•</span>
                     <span><strong className="text-earth-800">{t.what.experience.intensity}</strong> {t.what.experience.intensityValue}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-sacred-purple mt-1">•</span>
                     <span><strong className="text-earth-800">{t.what.experience.outcome}</strong> {t.what.experience.outcomeValue}</span>
                   </p>
                 </div>
               </div>
 
-              <p className="border-l-4 border-sacred-gold/40 pl-6 italic text-earth-700/70 text-xl">
+              <p className="border-l-4 border-sacred-purple/40 pl-6 italic text-earth-700/70 text-xl">
                 "{t.what.quote}"
               </p>
             </div>
@@ -187,31 +187,31 @@ export default function BufoCeremoniesPage() {
                   </h3>
                   <div className="space-y-3 text-earth-700/80 leading-relaxed">
                     <p className="flex items-start gap-3">
-                      <span className="text-sacred-gold mt-1">✓</span>
+                      <span className="text-sacred-purple mt-1">✓</span>
                       <span>{t.ceremonyDetails.whatsIncluded.item1}</span>
                     </p>
                     <p className="flex items-start gap-3">
-                      <span className="text-sacred-gold mt-1">✓</span>
+                      <span className="text-sacred-purple mt-1">✓</span>
                       <span>{t.ceremonyDetails.whatsIncluded.item2}</span>
                     </p>
                     <p className="flex items-start gap-3">
-                      <span className="text-sacred-gold mt-1">✓</span>
+                      <span className="text-sacred-purple mt-1">✓</span>
                       <span>{t.ceremonyDetails.whatsIncluded.item3}</span>
                     </p>
                     <p className="flex items-start gap-3">
-                      <span className="text-sacred-gold mt-1">✓</span>
+                      <span className="text-sacred-purple mt-1">✓</span>
                       <span>{t.ceremonyDetails.whatsIncluded.item4}</span>
                     </p>
                     <p className="flex items-start gap-3">
-                      <span className="text-sacred-gold mt-1">✓</span>
+                      <span className="text-sacred-purple mt-1">✓</span>
                       <span>{t.ceremonyDetails.whatsIncluded.item5}</span>
                     </p>
                     <p className="flex items-start gap-3">
-                      <span className="text-sacred-gold mt-1">✓</span>
+                      <span className="text-sacred-purple mt-1">✓</span>
                       <span>{t.ceremonyDetails.whatsIncluded.item6}</span>
                     </p>
                     <p className="flex items-start gap-3">
-                      <span className="text-sacred-gold mt-1">✓</span>
+                      <span className="text-sacred-purple mt-1">✓</span>
                       <span>{t.ceremonyDetails.whatsIncluded.item7}</span>
                     </p>
                   </div>
@@ -287,36 +287,36 @@ export default function BufoCeremoniesPage() {
               {/* FOR */}
               <div className="bg-white rounded-2xl p-8">
                 <div className="flex items-center gap-3 mb-8">
-                  <div className="text-4xl text-sacred-gold">✓</div>
+                  <div className="text-4xl text-sacred-purple">✓</div>
                   <h3 className="text-2xl font-serif text-earth-800">{t.isThisForYou.for.title}</h3>
                 </div>
                 <div className="space-y-4 text-earth-700/80 leading-relaxed">
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-sacred-purple mt-1">•</span>
                     <span>{t.isThisForYou.for.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-sacred-purple mt-1">•</span>
                     <span>{t.isThisForYou.for.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-sacred-purple mt-1">•</span>
                     <span>{t.isThisForYou.for.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-sacred-purple mt-1">•</span>
                     <span>{t.isThisForYou.for.item4}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-sacred-purple mt-1">•</span>
                     <span>{t.isThisForYou.for.item5}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-sacred-purple mt-1">•</span>
                     <span>{t.isThisForYou.for.item6}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-sacred-purple mt-1">•</span>
                     <span>{t.isThisForYou.for.item7}</span>
                   </p>
                 </div>
@@ -442,26 +442,26 @@ export default function BufoCeremoniesPage() {
               {t.investment.title}
             </h2>
 
-            <div className="bg-white rounded-2xl p-12 border-2 border-sacred-gold/30 mb-12">
+            <div className="bg-white rounded-2xl p-12 border-2 border-sacred-purple/30 mb-12">
               <h3 className="text-3xl font-serif text-earth-800 mb-4">{t.investment.ceremony.title}</h3>
-              <div className="text-5xl font-serif text-sacred-gold mb-6">{t.investment.ceremony.price}</div>
+              <div className="text-5xl font-serif text-sacred-purple mb-6">{t.investment.ceremony.price}</div>
               <p className="text-lg text-earth-700/70 mb-8">{t.investment.ceremony.perPerson}</p>
 
               <div className="text-left max-w-2xl mx-auto space-y-3 text-earth-700/80 leading-relaxed">
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold">✓</span>
+                  <span className="text-sacred-purple">✓</span>
                   <span>{t.investment.ceremony.item1}</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold">✓</span>
+                  <span className="text-sacred-purple">✓</span>
                   <span>{t.investment.ceremony.item2}</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold">✓</span>
+                  <span className="text-sacred-purple">✓</span>
                   <span>{t.investment.ceremony.item3}</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold">✓</span>
+                  <span className="text-sacred-purple">✓</span>
                   <span>{t.investment.ceremony.item4}</span>
                 </p>
               </div>
@@ -491,7 +491,7 @@ export default function BufoCeremoniesPage() {
               </p>
               <Link
                 to="/pricing"
-                className="inline-block text-sacred-gold hover:text-sacred-amber transition-colors text-lg font-medium"
+                className="inline-block text-sacred-purple hover:text-sacred-amber transition-colors text-lg font-medium"
               >
                 Explore all pricing options →
               </Link>
@@ -510,7 +510,7 @@ export default function BufoCeremoniesPage() {
             </h2>
 
             <div className="space-y-6 text-desert-sand/80 leading-relaxed text-lg mb-12">
-              <p className="text-2xl font-serif italic text-sacred-gold/90">
+              <p className="text-2xl font-serif italic text-sacred-purple/90">
                 "{t.application.quote}"
               </p>
 
@@ -523,27 +523,27 @@ export default function BufoCeremoniesPage() {
               <h3 className="text-2xl font-serif text-sacred-white mb-6">{t.application.steps.title}</h3>
               <div className="space-y-4 text-desert-sand/80">
                 <p className="flex items-start gap-4">
-                  <span className="text-sacred-gold font-bold">1.</span>
+                  <span className="text-sacred-purple font-bold">1.</span>
                   <span>{t.application.steps.step1}</span>
                 </p>
                 <p className="flex items-start gap-4">
-                  <span className="text-sacred-gold font-bold">2.</span>
+                  <span className="text-sacred-purple font-bold">2.</span>
                   <span>{t.application.steps.step2}</span>
                 </p>
                 <p className="flex items-start gap-4">
-                  <span className="text-sacred-gold font-bold">3.</span>
+                  <span className="text-sacred-purple font-bold">3.</span>
                   <span>{t.application.steps.step3}</span>
                 </p>
                 <p className="flex items-start gap-4">
-                  <span className="text-sacred-gold font-bold">4.</span>
+                  <span className="text-sacred-purple font-bold">4.</span>
                   <span>{t.application.steps.step4}</span>
                 </p>
                 <p className="flex items-start gap-4">
-                  <span className="text-sacred-gold font-bold">5.</span>
+                  <span className="text-sacred-purple font-bold">5.</span>
                   <span>{t.application.steps.step5}</span>
                 </p>
                 <p className="flex items-start gap-4">
-                  <span className="text-sacred-gold font-bold">6.</span>
+                  <span className="text-sacred-purple font-bold">6.</span>
                   <span>{t.application.steps.step6}</span>
                 </p>
               </div>
@@ -552,12 +552,12 @@ export default function BufoCeremoniesPage() {
             <div className="space-y-4">
               <Link
                 to="/contact"
-                className="inline-block px-12 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
+                className="inline-block px-12 py-4 bg-sacred-purple text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
               >
                 {t.application.cta}
               </Link>
               <p className="text-sm text-desert-sand/60">
-                <Link to="/preparation" className="hover:text-sacred-gold transition-colors">
+                <Link to="/preparation" className="hover:text-sacred-purple transition-colors">
                   {t.application.link}
                 </Link>
               </p>

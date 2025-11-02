@@ -31,7 +31,7 @@ export default function IntegrationPage() {
           <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-white mb-8 leading-tight">
             {t.hero.title}
           </h1>
-          <p className="text-2xl md:text-4xl text-sacred-gold/90 font-serif font-light mb-8 italic leading-relaxed">
+          <p className="text-2xl md:text-4xl text-ocean-turquoise/90 font-serif font-light mb-8 italic leading-relaxed">
             "{t.hero.quote1}<br/>{t.hero.quote2}"
           </p>
           <p className="text-lg md:text-xl text-desert-sand/80 leading-relaxed max-w-3xl mx-auto">
@@ -42,8 +42,8 @@ export default function IntegrationPage() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-sacred-gold/40 rounded-full flex items-start justify-center p-2">
-            <div className="w-1.5 h-1.5 bg-sacred-gold/60 rounded-full"></div>
+          <div className="w-6 h-10 border-2 border-ocean-turquoise/40 rounded-full flex items-start justify-center p-2">
+            <div className="w-1.5 h-1.5 bg-ocean-turquoise/60 rounded-full"></div>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ export default function IntegrationPage() {
             </h2>
 
             <div className="space-y-8 text-earth-700/80 leading-relaxed text-lg mb-16">
-              <p className="text-2xl font-serif text-sacred-gold text-center mb-8">
+              <p className="text-2xl font-serif text-ocean-turquoise text-center mb-8">
                 {t.whyNonNegotiable.subtitle1}<br/>
                 {t.whyNonNegotiable.subtitle2}
               </p>
@@ -74,7 +74,7 @@ export default function IntegrationPage() {
                 {t.whyNonNegotiable.p3}
               </p>
 
-              <p className="border-l-4 border-sacred-gold/40 pl-6 italic text-earth-700/70">
+              <p className="border-l-4 border-ocean-turquoise/40 pl-6 italic text-earth-700/70">
                 <strong className="text-earth-800 not-italic">{t.whyNonNegotiable.p4}</strong><br/>
                 {t.whyNonNegotiable.p4Detail}
               </p>
@@ -245,7 +245,7 @@ export default function IntegrationPage() {
               <div className="bg-white rounded-2xl p-8 border border-earth-700/20">
                 <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{t.packages.single.title}</h3>
                 <div className="text-center mb-6">
-                  <div className="text-4xl font-serif text-sacred-gold mb-2">{t.packages.single.price}</div>
+                  <div className="text-4xl font-serif text-ocean-turquoise mb-2">{t.packages.single.price}</div>
                   <p className="text-sm text-earth-700/60">{t.packages.single.details}</p>
                 </div>
                 <p className="text-earth-700/70 leading-relaxed text-sm text-center">
@@ -254,13 +254,13 @@ export default function IntegrationPage() {
               </div>
 
               {/* 4-Session Package */}
-              <div className="bg-white rounded-2xl p-8 border-2 border-sacred-gold/40 relative">
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-sacred-gold text-earth-900 px-4 py-1 rounded-full text-sm font-medium">
+              <div className="bg-white rounded-2xl p-8 border-2 border-ocean-turquoise/40 relative">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-ocean-turquoise text-earth-900 px-4 py-1 rounded-full text-sm font-medium">
                   {t.packages.fourSession.badge}
                 </div>
                 <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{t.packages.fourSession.title}</h3>
                 <div className="text-center mb-6">
-                  <div className="text-4xl font-serif text-sacred-gold mb-2">{t.packages.fourSession.price}</div>
+                  <div className="text-4xl font-serif text-ocean-turquoise mb-2">{t.packages.fourSession.price}</div>
                   <p className="text-sm text-earth-700/60">{t.packages.fourSession.details}</p>
                 </div>
                 <p className="text-earth-700/70 leading-relaxed text-sm text-center mb-6">
@@ -268,15 +268,15 @@ export default function IntegrationPage() {
                 </p>
                 <div className="space-y-2 text-xs text-earth-700/70">
                   <p className="flex items-start gap-2">
-                    <span className="text-sacred-gold">✓</span>
+                    <span className="text-ocean-turquoise">✓</span>
                     <span>{t.packages.fourSession.item1}</span>
                   </p>
                   <p className="flex items-start gap-2">
-                    <span className="text-sacred-gold">✓</span>
+                    <span className="text-ocean-turquoise">✓</span>
                     <span>{t.packages.fourSession.item2}</span>
                   </p>
                   <p className="flex items-start gap-2">
-                    <span className="text-sacred-gold">✓</span>
+                    <span className="text-ocean-turquoise">✓</span>
                     <span>{t.packages.fourSession.item3}</span>
                   </p>
                 </div>
@@ -286,9 +286,9 @@ export default function IntegrationPage() {
               <div className="bg-white rounded-2xl p-8 border border-earth-700/20">
                 <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{t.packages.extended.title}</h3>
                 <div className="text-center mb-6">
-                  <div className="text-3xl font-serif text-sacred-gold mb-2">{t.packages.extended.price1}</div>
+                  <div className="text-3xl font-serif text-ocean-turquoise mb-2">{t.packages.extended.price1}</div>
                   <p className="text-sm text-earth-700/60 mb-3">{t.packages.extended.details1}</p>
-                  <div className="text-3xl font-serif text-sacred-gold mb-2">{t.packages.extended.price2}</div>
+                  <div className="text-3xl font-serif text-ocean-turquoise mb-2">{t.packages.extended.price2}</div>
                   <p className="text-sm text-earth-700/60">{t.packages.extended.details2}</p>
                 </div>
                 <p className="text-earth-700/70 leading-relaxed text-sm text-center">
@@ -312,7 +312,7 @@ export default function IntegrationPage() {
             <div className="text-center mt-12">
               <Link
                 to="/pricing"
-                className="inline-block text-sacred-gold hover:text-sacred-amber transition-colors text-lg font-medium"
+                className="inline-block text-ocean-turquoise hover:text-sacred-amber transition-colors text-lg font-medium"
               >
                 Compare all service pricing →
               </Link>
@@ -391,35 +391,35 @@ export default function IntegrationPage() {
             <div className="space-y-6 text-earth-700/80 leading-relaxed">
               <div className="bg-white rounded-2xl p-6">
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold text-2xl">✓</span>
+                  <span className="text-ocean-turquoise text-2xl">✓</span>
                   <span><strong className="text-earth-800">{t.whenToSeek.item1}</strong>{t.whenToSeek.item1Detail}</span>
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-6">
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold text-2xl">✓</span>
+                  <span className="text-ocean-turquoise text-2xl">✓</span>
                   <span><strong className="text-earth-800">{t.whenToSeek.item2}</strong>{t.whenToSeek.item2Detail}</span>
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-6">
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold text-2xl">✓</span>
+                  <span className="text-ocean-turquoise text-2xl">✓</span>
                   <span><strong className="text-earth-800">{t.whenToSeek.item3}</strong>{t.whenToSeek.item3Detail}</span>
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-6">
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold text-2xl">✓</span>
+                  <span className="text-ocean-turquoise text-2xl">✓</span>
                   <span><strong className="text-earth-800">{t.whenToSeek.item4}</strong>{t.whenToSeek.item4Detail}</span>
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-6">
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold text-2xl">✓</span>
+                  <span className="text-ocean-turquoise text-2xl">✓</span>
                   <span><strong className="text-earth-800">{t.whenToSeek.item5}</strong>{t.whenToSeek.item5Detail}</span>
                 </p>
               </div>
@@ -449,7 +449,7 @@ export default function IntegrationPage() {
             <div className="space-y-4">
               <Link
                 to="/contact"
-                className="inline-block px-12 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
+                className="inline-block px-12 py-4 bg-ocean-turquoise text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
               >
                 {t.cta.button}
               </Link>
@@ -460,11 +460,11 @@ export default function IntegrationPage() {
 
             <div className="mt-16 pt-12 border-t border-desert-sand/20">
               <p className="text-desert-sand/70">
-                <Link to="/ceremonies" className="text-sacred-gold hover:text-sacred-amber transition-colors">
+                <Link to="/ceremonies" className="text-ocean-turquoise hover:text-sacred-amber transition-colors">
                   {t.cta.linkCeremonies}
                 </Link>
                 <span className="mx-4 text-desert-sand/40">|</span>
-                <Link to="/preparation" className="text-sacred-gold hover:text-sacred-amber transition-colors">
+                <Link to="/preparation" className="text-ocean-turquoise hover:text-sacred-amber transition-colors">
                   {t.cta.linkPreparation}
                 </Link>
               </p>

@@ -22,6 +22,8 @@ export default {
           sage: '#8B9D83',     // Desert sage
           dusk: '#7C6A5C',     // Desert dusk
           stone: '#9B8B7E',    // Desert stone
+          ember: '#8C402E',    // Terracotta ember
+          canyon: '#A65437',   // Canyon walls
         },
         // Toad medicine colors - natural, organic
         medicine: {
@@ -34,6 +36,8 @@ export default {
         sacred: {
           gold: '#C9A05C',     // Sacred gold
           amber: '#D4A574',    // Amber glow
+          purple: '#7B5E7B',   // Sacred purple - transformation
+          indigo: '#4A4E69',   // Ceremonial indigo - deep work
           white: '#F7F5F0',    // Sacred white
           smoke: '#E8E3DA',    // Smoke white
           cream: '#FAF7F2',    // Warm cream
@@ -49,24 +53,34 @@ export default {
           light: '#F4E9D4',    // Awakening light
           shadow: '#1A120B',   // Shadow work
         },
-        // Keep indigo for backwards compatibility - but map to earth tones
-        indigo: {
-          deep: '#3E3527',     // Map to earth-700
-          DEFAULT: '#4F4535',  // Map to earth-600
-          light: '#6B5D4F',    // Map to earth-500
+        // Ocean colors (Mazunte coastal connection)
+        ocean: {
+          turquoise: '#5A9A9E', // Healing waters
+          deep: '#2D5F63',      // Pacific depths
+          foam: '#A8BFBF',      // Gentle waves
+          coral: '#E07A5F',     // Sunset reflection
         },
-        // Keep cosmic/mystic for gradual migration - map to earth tones
-        cosmic: {
-          900: '#1A120B',      // Map to earth-900
-          800: '#2C2419',      // Map to earth-800
-          700: '#3E3527',      // Map to earth-700
-          600: '#4F4535',      // Map to earth-600
+        // Jungle colors (plant medicine connection)
+        jungle: {
+          deep: '#3D5941',      // Dense forest
+          sage: '#5F7F6F',      // Misty green
+          canopy: '#4A5D4F',    // Tree cover
+          moss: '#7A9B76',      // Vibrant moss
+          emerald: '#4A7C59',   // Rich emerald
         },
-        mystic: {
-          purple: '#9B8B7E',   // Map to desert-stone
-          indigo: '#7C6A5C',   // Map to desert-dusk
-          violet: '#A67B5B',   // Map to desert-clay
-          lavender: '#D4B896', // Map to desert-sand
+        // Sunset colors (ceremonial transitions)
+        sunset: {
+          rose: '#D4806A',      // Desert rose
+          peach: '#E8B4A0',     // Warm peach
+          mauve: '#B08B8B',     // Soft mauve
+          blush: '#C9A5A0',     // Gentle blush
+        },
+        // Earth minerals (grounding energies)
+        mineral: {
+          copper: '#B87333',    // Warm copper
+          bronze: '#8C6D4F',    // Ancient bronze
+          rust: '#A0583C',      // Iron rust
+          terracotta: '#C65D3B', // Bright terracotta
         }
       },
       fontSize: {

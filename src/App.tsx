@@ -22,6 +22,7 @@ import ContactPage from './components/pages/ContactPage';
 import TestimonialsPage from './components/pages/TestimonialsPage';
 import RetreatsPage from './components/pages/RetreatsPage';
 import PricingPage from './components/pages/PricingPage';
+import CollaborationsPage from './components/pages/CollaborationsPage';
 import ScrollToTop from './components/ScrollToTop';
 import ImagePlaceholder from './components/ImagePlaceholder';
 // Old pages - archived (keeping for backwards compatibility)
@@ -79,8 +80,8 @@ function LandingPage() {
 
           {/* Scroll Indicator */}
           <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
-            <div className="w-6 h-10 border-2 border-sacred-gold/40 rounded-full flex items-start justify-center p-2">
-              <div className="w-1.5 h-1.5 bg-sacred-gold/60 rounded-full"></div>
+            <div className="w-6 h-10 border-2 border-ocean-turquoise/40 rounded-full flex items-start justify-center p-2">
+              <div className="w-1.5 h-1.5 bg-ocean-turquoise/60 rounded-full"></div>
             </div>
           </div>
         </div>
@@ -108,7 +109,7 @@ function LandingPage() {
                 <p>
                   {home.whatIsBufo.paragraph2} <span className="text-sacred-gold font-medium">{home.whatIsBufo.paragraph2Highlight}</span> {home.whatIsBufo.paragraph2Cont}
                 </p>
-                <p className="border-l-2 border-sacred-gold/40 pl-6 italic text-desert-sand/70">
+                <p className="border-l-2 border-sacred-purple/40 pl-6 italic text-desert-sand/70">
                   "{home.whatIsBufo.quote}"
                 </p>
               </div>
@@ -133,13 +134,13 @@ function LandingPage() {
                 {/* FOR */}
                 <div className="space-y-6">
                   <div className="flex items-center gap-3 mb-8">
-                    <div className="text-3xl text-sacred-gold">✓</div>
+                    <div className="text-3xl text-ocean-turquoise">✓</div>
                     <h3 className="text-2xl font-serif text-earth-800">{home.whoThisIsFor.forTitle}</h3>
                   </div>
                   <div className="space-y-4 text-earth-700/80 leading-relaxed">
                     {home.whoThisIsFor.forList.map((item, index) => (
                       <p key={index} className="flex items-start gap-3">
-                        <span className="text-sacred-gold mt-1">•</span>
+                        <span className="text-ocean-turquoise mt-1">•</span>
                         <span>{item}</span>
                       </p>
                     ))}
@@ -211,7 +212,7 @@ function LandingPage() {
                       <p className="text-desert-sand/90 leading-relaxed text-sm">
                         {home.threePhaseJourney.preparation.description}
                       </p>
-                      <p className="text-xs text-sacred-gold font-medium">{home.threePhaseJourney.preparation.price}</p>
+                      <p className="text-xs text-desert-sage font-medium">{home.threePhaseJourney.preparation.price}</p>
                     </div>
                   </div>
                 </div>
@@ -231,7 +232,7 @@ function LandingPage() {
                       <p className="text-desert-sand/90 leading-relaxed text-sm">
                         {home.threePhaseJourney.ceremony.description}
                       </p>
-                      <p className="text-xs text-sacred-gold font-medium">{home.threePhaseJourney.ceremony.price}</p>
+                      <p className="text-xs text-sacred-purple font-medium">{home.threePhaseJourney.ceremony.price}</p>
                     </div>
                   </div>
                 </div>
@@ -251,7 +252,7 @@ function LandingPage() {
                       <p className="text-desert-sand/90 leading-relaxed text-sm">
                         {home.threePhaseJourney.integration.description}
                       </p>
-                      <p className="text-xs text-sacred-gold font-medium">{home.threePhaseJourney.integration.price}</p>
+                      <p className="text-xs text-ocean-turquoise font-medium">{home.threePhaseJourney.integration.price}</p>
                     </div>
                   </div>
                 </div>
@@ -288,7 +289,7 @@ function LandingPage() {
                 <p className="text-desert-sand/70">
                   {home.seriLineage.paragraph2}
                 </p>
-                <p className="text-sacred-gold/90 italic font-serif text-xl mt-8">
+                <p className="text-desert-clay/90 italic font-serif text-xl mt-8">
                   "{home.seriLineage.quote}"
                 </p>
               </div>
@@ -578,10 +579,10 @@ function App() {
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/collaborations" element={<CollaborationsPage />} />
         {/* Old routes - keeping for backwards compatibility */}
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/inner-ascend" element={<InnerAscendPage />} />
-        <Route path="/collaborations" element={<RetreatsPage />} />
         <Route path="/resources" element={<ResourcesPage />} />
         {/* Utility routes */}
         <Route path="/event/:id" element={<EventRoute />} />

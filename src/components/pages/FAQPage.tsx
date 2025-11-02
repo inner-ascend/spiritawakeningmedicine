@@ -29,7 +29,7 @@ export default function FAQPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-earth-800/60 to-earth-900/80"></div>
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          <div className="text-5xl text-sacred-gold/60 mb-8">?</div>
+          <div className="text-5xl text-jungle-sage/60 mb-8">?</div>
           <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-white mb-8 leading-tight">
             {t.hero.title}
           </h1>
@@ -40,8 +40,8 @@ export default function FAQPage() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-sacred-gold/40 rounded-full flex items-start justify-center p-2">
-            <div className="w-1.5 h-1.5 bg-sacred-gold/60 rounded-full"></div>
+          <div className="w-6 h-10 border-2 border-jungle-sage/40 rounded-full flex items-start justify-center p-2">
+            <div className="w-1.5 h-1.5 bg-jungle-sage/60 rounded-full"></div>
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@ export default function FAQPage() {
                     className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-medicine-venom/30 transition-colors"
                   >
                     <span className="text-xl font-serif text-earth-800 pr-4">{faq.question}</span>
-                    <span className="text-sacred-gold text-2xl flex-shrink-0">
+                    <span className="text-jungle-sage text-2xl flex-shrink-0">
                       {openIndex === index ? '−' : '+'}
                     </span>
                   </button>

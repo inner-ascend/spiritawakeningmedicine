@@ -32,7 +32,7 @@ export default function PreparationPage() {
           <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-white mb-8 leading-tight">
             {t.hero.title}
           </h1>
-          <p className="text-2xl md:text-3xl text-sacred-gold/90 font-serif font-light mb-6">
+          <p className="text-2xl md:text-3xl text-desert-sage/90 font-serif font-light mb-6">
             {t.hero.subtitle}
           </p>
           <p className="text-lg md:text-xl text-desert-sand/80 leading-relaxed max-w-3xl mx-auto">
@@ -43,8 +43,8 @@ export default function PreparationPage() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-sacred-gold/40 rounded-full flex items-start justify-center p-2">
-            <div className="w-1.5 h-1.5 bg-sacred-gold/60 rounded-full"></div>
+          <div className="w-6 h-10 border-2 border-desert-sage/40 rounded-full flex items-start justify-center p-2">
+            <div className="w-1.5 h-1.5 bg-desert-sage/60 rounded-full"></div>
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@ export default function PreparationPage() {
             </h2>
 
             <div className="space-y-8 text-earth-700/80 leading-relaxed text-lg mb-16">
-              <p className="text-2xl font-serif text-sacred-gold text-center mb-8">
+              <p className="text-2xl font-serif text-desert-sage text-center mb-8">
                 {t.whyMandatory.subtitle1}<br/>
                 {t.whyMandatory.subtitle2}
               </p>
@@ -71,7 +71,7 @@ export default function PreparationPage() {
                 {t.whyMandatory.p2}
               </p>
 
-              <p className="border-l-4 border-sacred-gold/40 pl-6 italic text-earth-700/70">
+              <p className="border-l-4 border-desert-sage/40 pl-6 italic text-earth-700/70">
                 {t.whyMandatory.p3}
               </p>
 
@@ -157,22 +157,22 @@ export default function PreparationPage() {
                   <span className="text-4xl">1️⃣</span>
                   <h3 className="text-2xl font-serif text-earth-800">{t.whatIncludes.session1.title}</h3>
                 </div>
-                <p className="text-sm text-sacred-gold mb-6">{t.whatIncludes.session1.duration}</p>
+                <p className="text-sm text-desert-sage mb-6">{t.whatIncludes.session1.duration}</p>
                 <div className="space-y-4 text-earth-700/80 leading-relaxed">
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-desert-sage mt-1">•</span>
                     <span><strong>{t.whatIncludes.session1.item1Title}</strong>{t.whatIncludes.session1.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-desert-sage mt-1">•</span>
                     <span><strong>{t.whatIncludes.session1.item2Title}</strong>{t.whatIncludes.session1.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-desert-sage mt-1">•</span>
                     <span><strong>{t.whatIncludes.session1.item3Title}</strong>{t.whatIncludes.session1.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-desert-sage mt-1">•</span>
                     <span><strong>{t.whatIncludes.session1.item4Title}</strong>{t.whatIncludes.session1.item4}</span>
                   </p>
                 </div>
@@ -184,22 +184,22 @@ export default function PreparationPage() {
                   <span className="text-4xl">2️⃣</span>
                   <h3 className="text-2xl font-serif text-earth-800">{t.whatIncludes.session2.title}</h3>
                 </div>
-                <p className="text-sm text-sacred-gold mb-6">{t.whatIncludes.session2.duration}</p>
+                <p className="text-sm text-desert-sage mb-6">{t.whatIncludes.session2.duration}</p>
                 <div className="space-y-4 text-earth-700/80 leading-relaxed">
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-desert-sage mt-1">•</span>
                     <span><strong>{t.whatIncludes.session2.item1Title}</strong>{t.whatIncludes.session2.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-desert-sage mt-1">•</span>
                     <span><strong>{t.whatIncludes.session2.item2Title}</strong>{t.whatIncludes.session2.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-desert-sage mt-1">•</span>
                     <span><strong>{t.whatIncludes.session2.item3Title}</strong>{t.whatIncludes.session2.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-gold mt-1">•</span>
+                    <span className="text-desert-sage mt-1">•</span>
                     <span><strong>{t.whatIncludes.session2.item4Title}</strong>{t.whatIncludes.session2.item4}</span>
                   </p>
                 </div>
@@ -282,7 +282,7 @@ export default function PreparationPage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 border border-sacred-gold/30">
+            <div className="bg-white rounded-2xl p-8 border border-desert-sage/30">
               <p className="text-earth-700/80 leading-relaxed mb-4">
                 <strong className="text-earth-800">{t.medical.disclaimer1}</strong>{t.medical.disclaimer2}
               </p>
@@ -333,23 +333,23 @@ export default function PreparationPage() {
               <h4 className="text-xl font-serif text-earth-800 mb-4">{t.preCeremony.daysBeforeTitle}</h4>
               <div className="space-y-3 text-earth-700/80 leading-relaxed">
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold">•</span>
+                  <span className="text-desert-sage">•</span>
                   <span>{t.preCeremony.daysBefore1}</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold">•</span>
+                  <span className="text-desert-sage">•</span>
                   <span>{t.preCeremony.daysBefore2}</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold">•</span>
+                  <span className="text-desert-sage">•</span>
                   <span>{t.preCeremony.daysBefore3}</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold">•</span>
+                  <span className="text-desert-sage">•</span>
                   <span>{t.preCeremony.daysBefore4}</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-sacred-gold">•</span>
+                  <span className="text-desert-sage">•</span>
                   <span>{t.preCeremony.daysBefore5}</span>
                 </p>
               </div>
@@ -368,7 +368,7 @@ export default function PreparationPage() {
 
             <div className="bg-white rounded-2xl p-12 border border-earth-700/20 mb-12">
               <h3 className="text-3xl font-serif text-earth-800 mb-4">{t.investment.sessionTitle}</h3>
-              <div className="text-5xl font-serif text-sacred-gold mb-6">{t.investment.price}</div>
+              <div className="text-5xl font-serif text-desert-sage mb-6">{t.investment.price}</div>
               <p className="text-lg text-earth-700/70 mb-8">{t.investment.perSession}</p>
 
               <div className="text-earth-700/80 leading-relaxed max-w-md mx-auto">
@@ -397,7 +397,7 @@ export default function PreparationPage() {
               </p>
               <Link
                 to="/contact"
-                className="inline-block px-12 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
+                className="inline-block px-12 py-4 bg-desert-sage text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
               >
                 {t.investment.cta}
               </Link>
@@ -405,7 +405,7 @@ export default function PreparationPage() {
                 {t.investment.process}
               </p>
               <p className="text-base text-earth-700/70 mt-6">
-                <Link to="/pricing" className="text-sacred-gold hover:text-sacred-amber transition-colors">
+                <Link to="/pricing" className="text-desert-sage hover:text-sacred-amber transition-colors">
                   View complete journey pricing →
                 </Link>
               </p>
@@ -425,11 +425,11 @@ export default function PreparationPage() {
 
             <div className="space-y-6 text-desert-sand/80 text-lg">
               <div className="flex items-center justify-center gap-4">
-                <span className="text-2xl font-serif text-sacred-gold">{t.nextSteps.preparation}</span>
+                <span className="text-2xl font-serif text-desert-sage">{t.nextSteps.preparation}</span>
                 <span className="text-desert-sand/50">→</span>
-                <span className="text-2xl font-serif text-sacred-gold">{t.nextSteps.ceremony}</span>
+                <span className="text-2xl font-serif text-desert-sage">{t.nextSteps.ceremony}</span>
                 <span className="text-desert-sand/50">→</span>
-                <span className="text-2xl font-serif text-sacred-gold">{t.nextSteps.integration}</span>
+                <span className="text-2xl font-serif text-desert-sage">{t.nextSteps.integration}</span>
               </div>
 
               <p className="text-desert-sand/70 italic max-w-2xl mx-auto pt-8">
@@ -439,12 +439,12 @@ export default function PreparationPage() {
 
             <div className="mt-12 space-y-4 text-desert-sand/70">
               <p>
-                <Link to="/ceremonies" className="text-sacred-gold hover:text-sacred-amber transition-colors">
+                <Link to="/ceremonies" className="text-desert-sage hover:text-sacred-amber transition-colors">
                   {t.nextSteps.learnCeremony}
                 </Link>
               </p>
               <p>
-                <Link to="/integration" className="text-sacred-gold hover:text-sacred-amber transition-colors">
+                <Link to="/integration" className="text-desert-sage hover:text-sacred-amber transition-colors">
                   {t.nextSteps.learnIntegration}
                 </Link>
               </p>

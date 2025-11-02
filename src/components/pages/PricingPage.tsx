@@ -66,22 +66,25 @@ export default function PricingPage() {
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               {/* Essential Journey */}
               <div className="bg-white rounded-2xl p-8 border border-desert-sage/30">
-                <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.journeyPackages.essential.title}</h3>
+                <h3 className="text-2xl font-serif text-earth-800 mb-4">
+                  <span className="text-desert-sage mr-2">○</span>
+                  {t.journeyPackages.essential.title}
+                </h3>
                 <div className="text-4xl font-serif text-desert-sage mb-4">{t.journeyPackages.essential.price}</div>
                 <p className="text-earth-700/70 leading-relaxed mb-6">
                   {t.journeyPackages.essential.description}
                 </p>
                 <div className="space-y-3 text-earth-700/80 text-sm">
                   <p className="flex items-start gap-3">
-                    <span className="text-desert-sage">✓</span>
+                    <span className="text-desert-sage">○</span>
                     <span>{t.journeyPackages.essential.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-desert-sage">✓</span>
+                    <span className="text-desert-sage">○</span>
                     <span>{t.journeyPackages.essential.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-desert-sage">✓</span>
+                    <span className="text-desert-sage">○</span>
                     <span>{t.journeyPackages.essential.item3}</span>
                   </p>
                 </div>
@@ -92,26 +95,29 @@ export default function PricingPage() {
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-sacred-gold text-earth-900 px-4 py-1 rounded-full text-sm font-medium">
                   {t.journeyPackages.complete.badge}
                 </div>
-                <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.journeyPackages.complete.title}</h3>
+                <h3 className="text-2xl font-serif text-earth-800 mb-4">
+                  <span className="text-mineral-copper mr-2">◉</span>
+                  {t.journeyPackages.complete.title}
+                </h3>
                 <div className="text-4xl font-serif text-mineral-copper mb-4">{t.journeyPackages.complete.price}</div>
                 <p className="text-earth-700/70 leading-relaxed mb-6">
                   {t.journeyPackages.complete.description}
                 </p>
                 <div className="space-y-3 text-earth-700/80 text-sm">
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">✓</span>
+                    <span className="text-mineral-copper">◉</span>
                     <span>{t.journeyPackages.complete.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">✓</span>
+                    <span className="text-mineral-copper">◉</span>
                     <span>{t.journeyPackages.complete.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">✓</span>
+                    <span className="text-mineral-copper">◉</span>
                     <span>{t.journeyPackages.complete.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">✓</span>
+                    <span className="text-mineral-copper">◉</span>
                     <span>{t.journeyPackages.complete.item4}</span>
                   </p>
                 </div>
@@ -119,26 +125,29 @@ export default function PricingPage() {
 
               {/* Deep Work Container */}
               <div className="bg-white rounded-2xl p-8 border border-sacred-purple/30">
-                <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.journeyPackages.deepWork.title}</h3>
+                <h3 className="text-2xl font-serif text-earth-800 mb-4">
+                  <span className="text-sacred-purple mr-2">⬢</span>
+                  {t.journeyPackages.deepWork.title}
+                </h3>
                 <div className="text-4xl font-serif text-sacred-purple mb-4">{t.journeyPackages.deepWork.price}</div>
                 <p className="text-earth-700/70 leading-relaxed mb-6">
                   {t.journeyPackages.deepWork.description}
                 </p>
                 <div className="space-y-3 text-earth-700/80 text-sm">
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-purple">✓</span>
+                    <span className="text-sacred-purple">⬢</span>
                     <span>{t.journeyPackages.deepWork.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-purple">✓</span>
+                    <span className="text-sacred-purple">⬢</span>
                     <span>{t.journeyPackages.deepWork.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-purple">✓</span>
+                    <span className="text-sacred-purple">⬢</span>
                     <span>{t.journeyPackages.deepWork.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">✓</span>
+                    <span className="text-sacred-purple">⬢</span>
                     <span>{t.journeyPackages.deepWork.item4}</span>
                   </p>
                 </div>
@@ -170,7 +179,10 @@ export default function PricingPage() {
             <div className="grid md:grid-cols-3 gap-8">
               {/* Preparation */}
               <div className="bg-medicine-venom rounded-2xl p-8">
-                <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{t.individualServices.preparation.title}</h3>
+                <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">
+                  <span className="text-mineral-copper mr-2">◇</span>
+                  {t.individualServices.preparation.title}
+                </h3>
                 <div className="text-center mb-6">
                   <div className="text-3xl font-serif text-mineral-copper mb-2">{t.individualServices.preparation.price}</div>
                   <div className="text-sm text-earth-700/60">{t.individualServices.preparation.unit}</div>
@@ -180,19 +192,19 @@ export default function PricingPage() {
                 </p>
                 <div className="space-y-2 text-earth-700/80 text-sm">
                   <p className="flex items-start gap-2">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">◇</span>
                     <span>{t.individualServices.preparation.item1}</span>
                   </p>
                   <p className="flex items-start gap-2">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">◇</span>
                     <span>{t.individualServices.preparation.item2}</span>
                   </p>
                   <p className="flex items-start gap-2">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">◇</span>
                     <span>{t.individualServices.preparation.item3}</span>
                   </p>
                   <p className="flex items-start gap-2">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">◇</span>
                     <span>{t.individualServices.preparation.item4}</span>
                   </p>
                 </div>
@@ -203,7 +215,10 @@ export default function PricingPage() {
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-sacred-gold text-earth-900 px-4 py-1 rounded-full text-sm font-medium">
                   {t.individualServices.ceremony.badge}
                 </div>
-                <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{t.individualServices.ceremony.title}</h3>
+                <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">
+                  <span className="text-mineral-copper mr-2">✦</span>
+                  {t.individualServices.ceremony.title}
+                </h3>
                 <div className="text-center mb-6">
                   <div className="text-3xl font-serif text-mineral-copper mb-2">{t.individualServices.ceremony.price}</div>
                   <div className="text-sm text-earth-700/60">{t.individualServices.ceremony.unit}</div>
@@ -213,23 +228,23 @@ export default function PricingPage() {
                 </p>
                 <div className="space-y-2 text-earth-700/80 text-sm">
                   <p className="flex items-start gap-2">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">✦</span>
                     <span>{t.individualServices.ceremony.item1}</span>
                   </p>
                   <p className="flex items-start gap-2">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">✦</span>
                     <span>{t.individualServices.ceremony.item2}</span>
                   </p>
                   <p className="flex items-start gap-2">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">✦</span>
                     <span>{t.individualServices.ceremony.item3}</span>
                   </p>
                   <p className="flex items-start gap-2">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">✦</span>
                     <span>{t.individualServices.ceremony.item4}</span>
                   </p>
                   <p className="flex items-start gap-2">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">✦</span>
                     <span>{t.individualServices.ceremony.item5}</span>
                   </p>
                 </div>
@@ -237,7 +252,10 @@ export default function PricingPage() {
 
               {/* Integration */}
               <div className="bg-medicine-venom rounded-2xl p-8">
-                <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{t.individualServices.integration.title}</h3>
+                <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">
+                  <span className="text-mineral-copper mr-2">⊙</span>
+                  {t.individualServices.integration.title}
+                </h3>
                 <div className="text-center mb-6">
                   <div className="text-3xl font-serif text-mineral-copper mb-2">{t.individualServices.integration.price}</div>
                   <div className="text-sm text-earth-700/60 mb-3">{t.individualServices.integration.unit}</div>
@@ -250,19 +268,19 @@ export default function PricingPage() {
                 </p>
                 <div className="space-y-2 text-earth-700/80 text-sm">
                   <p className="flex items-start gap-2">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">⊙</span>
                     <span>{t.individualServices.integration.item1}</span>
                   </p>
                   <p className="flex items-start gap-2">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">⊙</span>
                     <span>{t.individualServices.integration.item2}</span>
                   </p>
                   <p className="flex items-start gap-2">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">⊙</span>
                     <span>{t.individualServices.integration.item3}</span>
                   </p>
                   <p className="flex items-start gap-2">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">⊙</span>
                     <span>{t.individualServices.integration.item4}</span>
                   </p>
                 </div>
@@ -288,30 +306,33 @@ export default function PricingPage() {
             <div className="grid md:grid-cols-2 gap-12">
               {/* Bufo Retreat Containers */}
               <div className="bg-white rounded-2xl p-10">
-                <h3 className="text-3xl font-serif text-earth-800 mb-4">{t.retreats.bufoRetreats.title}</h3>
+                <h3 className="text-3xl font-serif text-earth-800 mb-4">
+                  <span className="text-mineral-copper mr-2">✧</span>
+                  {t.retreats.bufoRetreats.title}
+                </h3>
                 <div className="text-4xl font-serif text-mineral-copper mb-4">{t.retreats.bufoRetreats.price}</div>
                 <p className="text-earth-700/70 leading-relaxed mb-6">
                   {t.retreats.bufoRetreats.description}
                 </p>
                 <div className="space-y-3 text-earth-700/80">
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">✓</span>
+                    <span className="text-mineral-copper">✦</span>
                     <span>{t.retreats.bufoRetreats.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">✓</span>
+                    <span className="text-mineral-copper">✦</span>
                     <span>{t.retreats.bufoRetreats.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">✓</span>
+                    <span className="text-mineral-copper">✦</span>
                     <span>{t.retreats.bufoRetreats.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">✓</span>
+                    <span className="text-mineral-copper">✦</span>
                     <span>{t.retreats.bufoRetreats.item4}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">✓</span>
+                    <span className="text-mineral-copper">✦</span>
                     <span>{t.retreats.bufoRetreats.item5}</span>
                   </p>
                 </div>
@@ -319,26 +340,29 @@ export default function PricingPage() {
 
               {/* Integration Intensives */}
               <div className="bg-white rounded-2xl p-10">
-                <h3 className="text-3xl font-serif text-earth-800 mb-4">{t.retreats.integrationIntensives.title}</h3>
+                <h3 className="text-3xl font-serif text-earth-800 mb-4">
+                  <span className="text-mineral-copper mr-2">✧</span>
+                  {t.retreats.integrationIntensives.title}
+                </h3>
                 <div className="text-4xl font-serif text-mineral-copper mb-4">{t.retreats.integrationIntensives.price}</div>
                 <p className="text-earth-700/70 leading-relaxed mb-6">
                   {t.retreats.integrationIntensives.description}
                 </p>
                 <div className="space-y-3 text-earth-700/80">
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">✓</span>
+                    <span className="text-mineral-copper">◆</span>
                     <span>{t.retreats.integrationIntensives.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">✓</span>
+                    <span className="text-mineral-copper">◆</span>
                     <span>{t.retreats.integrationIntensives.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">✓</span>
+                    <span className="text-mineral-copper">◆</span>
                     <span>{t.retreats.integrationIntensives.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">✓</span>
+                    <span className="text-mineral-copper">◆</span>
                     <span>{t.retreats.integrationIntensives.item4}</span>
                   </p>
                 </div>
@@ -376,19 +400,19 @@ export default function PricingPage() {
                 <h3 className="text-2xl font-serif text-earth-800 mb-6">{t.accessibility.slidingScale.title}</h3>
                 <div className="space-y-4 text-earth-700/80 leading-relaxed">
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">⊕</span>
                     <span>{t.accessibility.slidingScale.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">⊕</span>
                     <span>{t.accessibility.slidingScale.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">⊕</span>
                     <span>{t.accessibility.slidingScale.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">⊕</span>
                     <span>{t.accessibility.slidingScale.item4}</span>
                   </p>
                 </div>
@@ -399,19 +423,19 @@ export default function PricingPage() {
                 <h3 className="text-2xl font-serif text-earth-800 mb-6">{t.accessibility.paymentMethods.title}</h3>
                 <div className="space-y-4 text-earth-700/80 leading-relaxed">
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">◈</span>
                     <span>{t.accessibility.paymentMethods.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">◈</span>
                     <span>{t.accessibility.paymentMethods.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">◈</span>
                     <span>{t.accessibility.paymentMethods.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-mineral-copper">•</span>
+                    <span className="text-mineral-copper">◈</span>
                     <span>{t.accessibility.paymentMethods.item4}</span>
                   </p>
                 </div>

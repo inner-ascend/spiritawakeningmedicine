@@ -87,19 +87,19 @@ export default function BufoCeremoniesPage() {
                 <h3 className="text-2xl font-serif text-earth-800 mb-6">{t.what.experience.title}</h3>
                 <div className="space-y-4">
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-purple mt-1">•</span>
+                    <span className="text-sacred-purple mt-1 text-xl">◆</span>
                     <span><strong className="text-earth-800">{t.what.experience.speed}</strong> {t.what.experience.speedValue}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-purple mt-1">•</span>
+                    <span className="text-sacred-purple mt-1 text-xl">◆</span>
                     <span><strong className="text-earth-800">{t.what.experience.duration}</strong> {t.what.experience.durationValue}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-purple mt-1">•</span>
+                    <span className="text-sacred-purple mt-1 text-xl">◆</span>
                     <span><strong className="text-earth-800">{t.what.experience.intensity}</strong> {t.what.experience.intensityValue}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-sacred-purple mt-1">•</span>
+                    <span className="text-sacred-purple mt-1 text-xl">◆</span>
                     <span><strong className="text-earth-800">{t.what.experience.outcome}</strong> {t.what.experience.outcomeValue}</span>
                   </p>
                 </div>

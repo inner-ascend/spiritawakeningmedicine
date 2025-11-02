@@ -26,10 +26,17 @@ export default function FAQPage() {
 
       {/* Hero Section */}
       <div className="min-h-screen relative flex items-center justify-center">
+        <div className="absolute inset-0">
+          <img
+            src="/images/atmosphere/ceremony-02.jpg"
+            alt="Frequently asked questions"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-earth-800/60 to-earth-900/80"></div>
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          <div className="text-5xl text-jungle-sage/60 mb-8">?</div>
+          <div className="text-6xl text-jungle-sage/60 mb-8">◈</div>
           <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-white mb-8 leading-tight">
             {t.hero.title}
           </h1>
@@ -47,7 +54,7 @@ export default function FAQPage() {
       </div>
 
       {/* FAQ Accordion */}
-      <div className="bg-sacred-cream py-32">
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12 text-center">
@@ -79,7 +86,7 @@ export default function FAQPage() {
       </div>
 
       {/* Safety Protocols */}
-      <div className="bg-white py-32">
+      <div className="bg-white py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
@@ -90,7 +97,7 @@ export default function FAQPage() {
               <div className="space-y-6">
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">⚕️</span>
+                    <span className="text-2xl text-sacred-gold">⊕</span>
                     Medical Screening
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -101,7 +108,7 @@ export default function FAQPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">🧠</span>
+                    <span className="text-2xl text-sacred-gold">◈</span>
                     Trauma-Informed Approach
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -112,6 +119,7 @@ export default function FAQPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
+                    <span className="text-2xl text-sacred-gold">○</span>
                     Small Group Size
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -124,7 +132,7 @@ export default function FAQPage() {
               <div className="space-y-6">
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">🏔️</span>
+                    <span className="text-2xl text-sacred-gold">△</span>
                     Sacred Container
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -135,7 +143,7 @@ export default function FAQPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">🔄</span>
+                    <span className="text-2xl text-sacred-gold">⊙</span>
                     Integration Support
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -146,6 +154,7 @@ export default function FAQPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
+                    <span className="text-2xl text-sacred-gold">✦</span>
                     Lineage Respect
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -173,7 +182,7 @@ export default function FAQPage() {
       </div>
 
       {/* Contraindications Detail */}
-      <div className="bg-sacred-cream py-32">
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12 text-center">
@@ -282,7 +291,14 @@ export default function FAQPage() {
       </div>
 
       {/* Still Have Questions */}
-      <div className="relative py-32">
+      <div className="relative py-48">
+        <div className="absolute inset-0">
+          <img
+            src="/images/atmosphere/ceremony-04.jpg"
+            alt="Get in touch"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-earth-800/70 to-earth-900/90"></div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">

@@ -154,25 +154,25 @@ export default function PreparationPage() {
               {/* Session 1 */}
               <div className="bg-sacred-cream rounded-2xl p-8">
                 <div className="flex items-center gap-3 mb-6">
-                  <span className="text-4xl">1️⃣</span>
+                  <span className="text-4xl text-desert-sage">○</span>
                   <h3 className="text-2xl font-serif text-earth-800">{t.whatIncludes.session1.title}</h3>
                 </div>
                 <p className="text-sm text-desert-sage mb-6">{t.whatIncludes.session1.duration}</p>
                 <div className="space-y-4 text-earth-700/80 leading-relaxed">
                   <p className="flex items-start gap-3">
-                    <span className="text-desert-sage mt-1">•</span>
+                    <span className="text-desert-sage mt-1">◇</span>
                     <span><strong>{t.whatIncludes.session1.item1Title}</strong>{t.whatIncludes.session1.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-desert-sage mt-1">•</span>
+                    <span className="text-desert-sage mt-1">◇</span>
                     <span><strong>{t.whatIncludes.session1.item2Title}</strong>{t.whatIncludes.session1.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-desert-sage mt-1">•</span>
+                    <span className="text-desert-sage mt-1">◇</span>
                     <span><strong>{t.whatIncludes.session1.item3Title}</strong>{t.whatIncludes.session1.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-desert-sage mt-1">•</span>
+                    <span className="text-desert-sage mt-1">◇</span>
                     <span><strong>{t.whatIncludes.session1.item4Title}</strong>{t.whatIncludes.session1.item4}</span>
                   </p>
                 </div>
@@ -181,25 +181,25 @@ export default function PreparationPage() {
               {/* Session 2 (Optional but Recommended) */}
               <div className="bg-sacred-cream rounded-2xl p-8">
                 <div className="flex items-center gap-3 mb-6">
-                  <span className="text-4xl">2️⃣</span>
+                  <span className="text-4xl text-desert-sage">◉</span>
                   <h3 className="text-2xl font-serif text-earth-800">{t.whatIncludes.session2.title}</h3>
                 </div>
                 <p className="text-sm text-desert-sage mb-6">{t.whatIncludes.session2.duration}</p>
                 <div className="space-y-4 text-earth-700/80 leading-relaxed">
                   <p className="flex items-start gap-3">
-                    <span className="text-desert-sage mt-1">•</span>
+                    <span className="text-desert-sage mt-1">◇</span>
                     <span><strong>{t.whatIncludes.session2.item1Title}</strong>{t.whatIncludes.session2.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-desert-sage mt-1">•</span>
+                    <span className="text-desert-sage mt-1">◇</span>
                     <span><strong>{t.whatIncludes.session2.item2Title}</strong>{t.whatIncludes.session2.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-desert-sage mt-1">•</span>
+                    <span className="text-desert-sage mt-1">◇</span>
                     <span><strong>{t.whatIncludes.session2.item3Title}</strong>{t.whatIncludes.session2.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
-                    <span className="text-desert-sage mt-1">•</span>
+                    <span className="text-desert-sage mt-1">◇</span>
                     <span><strong>{t.whatIncludes.session2.item4Title}</strong>{t.whatIncludes.session2.item4}</span>
                   </p>
                 </div>
@@ -222,7 +222,7 @@ export default function PreparationPage() {
           <div className="max-w-4xl mx-auto">
             <div className="bg-desert-clay/10 border-l-4 border-desert-clay rounded-r-2xl p-8 mb-12">
               <h2 className="text-3xl font-serif text-earth-800 mb-6 flex items-center gap-3">
-                <span className="text-4xl">⚕️</span>
+                <span className="text-4xl text-desert-clay">⊕</span>
                 {t.medical.title}
               </h2>
               <p className="text-earth-700/80 leading-relaxed mb-6">
@@ -333,23 +333,23 @@ export default function PreparationPage() {
               <h4 className="text-xl font-serif text-earth-800 mb-4">{t.preCeremony.daysBeforeTitle}</h4>
               <div className="space-y-3 text-earth-700/80 leading-relaxed">
                 <p className="flex items-start gap-3">
-                  <span className="text-desert-sage">•</span>
+                  <span className="text-desert-sage">⊹</span>
                   <span>{t.preCeremony.daysBefore1}</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-desert-sage">•</span>
+                  <span className="text-desert-sage">⊹</span>
                   <span>{t.preCeremony.daysBefore2}</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-desert-sage">•</span>
+                  <span className="text-desert-sage">⊹</span>
                   <span>{t.preCeremony.daysBefore3}</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-desert-sage">•</span>
+                  <span className="text-desert-sage">⊹</span>
                   <span>{t.preCeremony.daysBefore4}</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-desert-sage">•</span>
+                  <span className="text-desert-sage">⊹</span>
                   <span>{t.preCeremony.daysBefore5}</span>
                 </p>
               </div>

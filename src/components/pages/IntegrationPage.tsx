@@ -166,6 +166,7 @@ export default function IntegrationPage() {
               <div className="space-y-6">
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
+                    <span className="text-ocean-turquoise">◈</span>
                     {t.whatIncludes.emotional.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -175,6 +176,7 @@ export default function IntegrationPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
+                    <span className="text-ocean-turquoise">◈</span>
                     {t.whatIncludes.storyUnwinding.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -184,6 +186,7 @@ export default function IntegrationPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
+                    <span className="text-ocean-turquoise">◈</span>
                     {t.whatIncludes.identity.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -196,6 +199,7 @@ export default function IntegrationPage() {
               <div className="space-y-6">
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
+                    <span className="text-ocean-turquoise">◈</span>
                     {t.whatIncludes.trauma.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -205,6 +209,7 @@ export default function IntegrationPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
+                    <span className="text-ocean-turquoise">◈</span>
                     {t.whatIncludes.rituals.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -214,6 +219,7 @@ export default function IntegrationPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
+                    <span className="text-ocean-turquoise">◈</span>
                     {t.whatIncludes.life.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -335,42 +341,60 @@ export default function IntegrationPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center space-y-4">
-                <h3 className="text-xl font-serif text-earth-800">{t.modalities.energyHealing.title}</h3>
+                <h3 className="text-xl font-serif text-earth-800">
+                  <span className="text-ocean-turquoise mr-2">⚛</span>
+                  {t.modalities.energyHealing.title}
+                </h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
                   {t.modalities.energyHealing.description}
                 </p>
               </div>
 
               <div className="text-center space-y-4">
-                <h3 className="text-xl font-serif text-earth-800">{t.modalities.familyConstellations.title}</h3>
+                <h3 className="text-xl font-serif text-earth-800">
+                  <span className="text-ocean-turquoise mr-2">⚛</span>
+                  {t.modalities.familyConstellations.title}
+                </h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
                   {t.modalities.familyConstellations.description}
                 </p>
               </div>
 
               <div className="text-center space-y-4">
-                <h3 className="text-xl font-serif text-earth-800">{t.modalities.somatic.title}</h3>
+                <h3 className="text-xl font-serif text-earth-800">
+                  <span className="text-ocean-turquoise mr-2">⚛</span>
+                  {t.modalities.somatic.title}
+                </h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
                   {t.modalities.somatic.description}
                 </p>
               </div>
 
               <div className="text-center space-y-4">
-                <h3 className="text-xl font-serif text-earth-800">{t.modalities.meditation.title}</h3>
+                <h3 className="text-xl font-serif text-earth-800">
+                  <span className="text-ocean-turquoise mr-2">⚛</span>
+                  {t.modalities.meditation.title}
+                </h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
                   {t.modalities.meditation.description}
                 </p>
               </div>
 
               <div className="text-center space-y-4">
-                <h3 className="text-xl font-serif text-earth-800">{t.modalities.innerChild.title}</h3>
+                <h3 className="text-xl font-serif text-earth-800">
+                  <span className="text-ocean-turquoise mr-2">⚛</span>
+                  {t.modalities.innerChild.title}
+                </h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
                   {t.modalities.innerChild.description}
                 </p>
               </div>
 
               <div className="text-center space-y-4">
-                <h3 className="text-xl font-serif text-earth-800">{t.modalities.channeled.title}</h3>
+                <h3 className="text-xl font-serif text-earth-800">
+                  <span className="text-ocean-turquoise mr-2">⚛</span>
+                  {t.modalities.channeled.title}
+                </h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
                   {t.modalities.channeled.description}
                 </p>
@@ -391,35 +415,35 @@ export default function IntegrationPage() {
             <div className="space-y-6 text-earth-700/80 leading-relaxed">
               <div className="bg-white rounded-2xl p-6">
                 <p className="flex items-start gap-3">
-                  <span className="text-ocean-turquoise text-2xl">✓</span>
+                  <span className="text-ocean-turquoise text-2xl">⊕</span>
                   <span><strong className="text-earth-800">{t.whenToSeek.item1}</strong>{t.whenToSeek.item1Detail}</span>
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-6">
                 <p className="flex items-start gap-3">
-                  <span className="text-ocean-turquoise text-2xl">✓</span>
+                  <span className="text-ocean-turquoise text-2xl">⊕</span>
                   <span><strong className="text-earth-800">{t.whenToSeek.item2}</strong>{t.whenToSeek.item2Detail}</span>
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-6">
                 <p className="flex items-start gap-3">
-                  <span className="text-ocean-turquoise text-2xl">✓</span>
+                  <span className="text-ocean-turquoise text-2xl">⊕</span>
                   <span><strong className="text-earth-800">{t.whenToSeek.item3}</strong>{t.whenToSeek.item3Detail}</span>
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-6">
                 <p className="flex items-start gap-3">
-                  <span className="text-ocean-turquoise text-2xl">✓</span>
+                  <span className="text-ocean-turquoise text-2xl">⊕</span>
                   <span><strong className="text-earth-800">{t.whenToSeek.item4}</strong>{t.whenToSeek.item4Detail}</span>
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-6">
                 <p className="flex items-start gap-3">
-                  <span className="text-ocean-turquoise text-2xl">✓</span>
+                  <span className="text-ocean-turquoise text-2xl">⊕</span>
                   <span><strong className="text-earth-800">{t.whenToSeek.item5}</strong>{t.whenToSeek.item5Detail}</span>
                 </p>
               </div>

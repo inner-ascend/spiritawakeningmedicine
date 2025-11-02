@@ -12,6 +12,13 @@ export default function ServicesPage() {
       <Navigation />
       {/* Full-Screen Opening */}
       <div className="h-screen relative flex items-center justify-center">
+        <div className="absolute inset-0">
+          <img
+            src="/images/atmosphere/ceremony-08.jpeg"
+            alt="Sacred ceremony space"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-cosmic-900/80 via-indigo-deep/70 to-black/90">
           {/* Cosmic aurora background */}
           <div className="absolute inset-0 opacity-10">
@@ -31,7 +38,7 @@ export default function ServicesPage() {
       </div>
 
       {/* Sacred Circles - Visual Section */}
-      <div className="bg-sacred-cream py-32">
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
@@ -96,6 +103,13 @@ export default function ServicesPage() {
 
       {/* Full Width Quote */}
       <div className="relative h-[60vh] flex items-center">
+        <div className="absolute inset-0">
+          <img
+            src="/images/atmosphere/ceremony-13.jpeg"
+            alt="Sacred medicine space"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/40 via-cosmic-900/60 to-black/70"></div>
 
         <div className="relative z-10 container mx-auto px-4">
@@ -108,7 +122,7 @@ export default function ServicesPage() {
       </div>
 
       {/* Medicine Work - Visual Section */}
-      <div className="bg-sacred-cream py-32">
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center mb-12">
@@ -202,7 +216,7 @@ export default function ServicesPage() {
       </div>
 
       {/* Healing Sessions - Light Section */}
-      <div className="bg-sacred-cream py-32">
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
@@ -248,8 +262,24 @@ export default function ServicesPage() {
         </div>
       </div>
 
+      {/* Image Break */}
+      <div className="relative h-[60vh]">
+        <img
+          src="/images/atmosphere/ceremony-05.jpg"
+          alt="Sacred healing space"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
       {/* Trainings Section */}
       <div className="relative min-h-[80vh] flex items-center">
+        <div className="absolute inset-0">
+          <img
+            src="/images/atmosphere/ceremony-15.jpeg"
+            alt="Training and facilitation"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/50 via-mystic-purple/40 to-cosmic-900/70"></div>
 
         <div className="relative z-10 container mx-auto px-4 py-32">
@@ -295,7 +325,7 @@ export default function ServicesPage() {
       </div>
 
       {/* Simple Invitation */}
-      <div className="bg-sacred-cream py-32">
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-8">
             <h2 className="text-4xl md:text-5xl font-serif text-indigo-deep">

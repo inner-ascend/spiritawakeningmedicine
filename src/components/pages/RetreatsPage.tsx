@@ -77,19 +77,19 @@ export default function RetreatsPage() {
 
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <span className="text-ocean-coral mt-1">✓</span>
+                    <span className="text-ocean-coral mt-1">✦</span>
                     <span><strong className="text-earth-800">{t.bufoRetreats.feature1Title}</strong> {t.bufoRetreats.feature1}</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-ocean-coral mt-1">✓</span>
+                    <span className="text-ocean-coral mt-1">✦</span>
                     <span><strong className="text-earth-800">{t.bufoRetreats.feature2Title}</strong> {t.bufoRetreats.feature2}</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-ocean-coral mt-1">✓</span>
+                    <span className="text-ocean-coral mt-1">✦</span>
                     <span><strong className="text-earth-800">{t.bufoRetreats.feature3Title}</strong> {t.bufoRetreats.feature3}</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-ocean-coral mt-1">✓</span>
+                    <span className="text-ocean-coral mt-1">✦</span>
                     <span><strong className="text-earth-800">{t.bufoRetreats.feature4Title}</strong> {t.bufoRetreats.feature4}</span>
                   </div>
                 </div>
@@ -135,19 +135,19 @@ export default function RetreatsPage() {
 
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <span className="text-ocean-coral mt-1">✓</span>
+                    <span className="text-ocean-coral mt-1">◆</span>
                     <span><strong className="text-earth-800">{t.integrationIntensives.feature1Title}</strong> {t.integrationIntensives.feature1}</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-ocean-coral mt-1">✓</span>
+                    <span className="text-ocean-coral mt-1">◆</span>
                     <span><strong className="text-earth-800">{t.integrationIntensives.feature2Title}</strong> {t.integrationIntensives.feature2}</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-ocean-coral mt-1">✓</span>
+                    <span className="text-ocean-coral mt-1">◆</span>
                     <span><strong className="text-earth-800">{t.integrationIntensives.feature3Title}</strong> {t.integrationIntensives.feature3}</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-ocean-coral mt-1">✓</span>
+                    <span className="text-ocean-coral mt-1">◆</span>
                     <span><strong className="text-earth-800">{t.integrationIntensives.feature4Title}</strong> {t.integrationIntensives.feature4}</span>
                   </div>
                 </div>
@@ -227,19 +227,19 @@ export default function RetreatsPage() {
 
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <span className="text-ocean-coral mt-1">✓</span>
+                    <span className="text-ocean-coral mt-1">⊕</span>
                     <span><strong className="text-sacred-white">{t.collaborations.offer1Title}</strong> {t.collaborations.offer1}</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-ocean-coral mt-1">✓</span>
+                    <span className="text-ocean-coral mt-1">⊕</span>
                     <span><strong className="text-sacred-white">{t.collaborations.offer2Title}</strong> {t.collaborations.offer2}</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-ocean-coral mt-1">✓</span>
+                    <span className="text-ocean-coral mt-1">⊕</span>
                     <span><strong className="text-sacred-white">{t.collaborations.offer3Title}</strong> {t.collaborations.offer3}</span>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-ocean-coral mt-1">✓</span>
+                    <span className="text-ocean-coral mt-1">⊕</span>
                     <span><strong className="text-sacred-white">{t.collaborations.offer4Title}</strong> {t.collaborations.offer4}</span>
                   </div>
                 </div>
@@ -269,6 +269,7 @@ export default function RetreatsPage() {
             <div className="grid md:grid-cols-2 gap-12 mb-16">
               <div className="space-y-4">
                 <h3 className="text-2xl font-serif text-earth-800 flex items-center gap-3">
+                  <span className="text-ocean-coral">✧</span>
                   {t.whoWeCollaborateWith.retreatCenters.title}
                 </h3>
                 <p className="text-earth-700/80 leading-relaxed">
@@ -278,6 +279,7 @@ export default function RetreatsPage() {
 
               <div className="space-y-4">
                 <h3 className="text-2xl font-serif text-earth-800 flex items-center gap-3">
+                  <span className="text-ocean-coral">✧</span>
                   {t.whoWeCollaborateWith.communities.title}
                 </h3>
                 <p className="text-earth-700/80 leading-relaxed">
@@ -287,6 +289,7 @@ export default function RetreatsPage() {
 
               <div className="space-y-4">
                 <h3 className="text-2xl font-serif text-earth-800 flex items-center gap-3">
+                  <span className="text-ocean-coral">✧</span>
                   {t.whoWeCollaborateWith.facilitators.title}
                 </h3>
                 <p className="text-earth-700/80 leading-relaxed">
@@ -296,6 +299,7 @@ export default function RetreatsPage() {
 
               <div className="space-y-4">
                 <h3 className="text-2xl font-serif text-earth-800 flex items-center gap-3">
+                  <span className="text-ocean-coral">✧</span>
                   {t.whoWeCollaborateWith.training.title}
                 </h3>
                 <p className="text-earth-700/80 leading-relaxed">

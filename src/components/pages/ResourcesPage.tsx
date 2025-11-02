@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
+import Footer from '../Footer';
 
 export default function ResourcesPage() {
   const scrollToTop = () => {
@@ -10,7 +11,15 @@ export default function ResourcesPage() {
     <div className="min-h-screen">
       <Navigation />
       {/* Full-Screen Opening */}
-      <div className="h-screen relative flex items-center justify-center bg-gradient-to-br from-cosmic-900/90 via-indigo-deep/80 to-black/90">
+      <div className="h-screen relative flex items-center justify-center">
+        <div className="absolute inset-0">
+          <img
+            src="/images/atmosphere/ceremony-14.jpg"
+            alt="Sacred resources and teachings"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-cosmic-900/90 via-indigo-deep/80 to-black/90"></div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-5xl md:text-7xl font-serif text-sacred-moon mb-8 font-light">
             Resources
@@ -22,7 +31,7 @@ export default function ResourcesPage() {
       </div>
 
       {/* Free Resources Vault */}
-      <div className="bg-sacred-cream py-32">
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
@@ -124,8 +133,24 @@ export default function ResourcesPage() {
         </div>
       </div>
 
+      {/* Image Break */}
+      <div className="relative h-[60vh]">
+        <img
+          src="/images/atmosphere/ceremony-17.jpeg"
+          alt="Sacred teachings"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
       {/* Teachings Section */}
-      <div className="relative py-32">
+      <div className="relative py-48">
+        <div className="absolute inset-0">
+          <img
+            src="/images/atmosphere/ceremony-18.jpeg"
+            alt="Writings and reflections"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/30 via-cosmic-900/50 to-black/60"></div>
 
         <div className="relative z-10 container mx-auto px-4">
@@ -171,7 +196,7 @@ export default function ResourcesPage() {
       </div>
 
       {/* Testimonials - Visual Section */}
-      <div className="bg-sacred-cream py-32">
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-indigo-deep text-center mb-20">
@@ -210,6 +235,13 @@ export default function ResourcesPage() {
 
       {/* Simple Invitation */}
       <div className="relative min-h-[60vh] flex items-center">
+        <div className="absolute inset-0">
+          <img
+            src="/images/atmosphere/ceremony-19.jpeg"
+            alt="Begin your journey"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/50 via-mystic-purple/40 to-cosmic-900/70"></div>
 
         <div className="relative z-10 container mx-auto px-4">
@@ -236,7 +268,8 @@ export default function ResourcesPage() {
           </div>
         </div>
       </div>
-    </div>
 
+      <Footer />
+    </div>
   );
 }

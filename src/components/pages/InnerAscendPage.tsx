@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
+import Footer from '../Footer';
 
 export default function InnerAscendPage() {
   const scrollToTop = () => {
@@ -11,6 +12,13 @@ export default function InnerAscendPage() {
       <Navigation />
       {/* Full-Screen Opening */}
       <div className="h-screen relative flex items-center justify-center">
+        <div className="absolute inset-0">
+          <img
+            src="/images/atmosphere/ceremony-11.jpeg"
+            alt="Inner Ascend community"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-cosmic-900/80 via-indigo-deep/70 to-black/90">
           {/* Cosmic aurora background */}
           <div className="absolute inset-0 opacity-10">
@@ -30,7 +38,7 @@ export default function InnerAscendPage() {
       </div>
 
       {/* What Is This - Visual Section */}
-      <div className="bg-sacred-cream py-32">
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-20 items-center mb-20">
@@ -69,6 +77,13 @@ export default function InnerAscendPage() {
 
       {/* Full Width Visual Break */}
       <div className="relative h-[70vh] flex items-center">
+        <div className="absolute inset-0">
+          <img
+            src="/images/atmosphere/ceremony-07.jpeg"
+            alt="Community gathering"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/40 via-mystic-purple/50 to-cosmic-900/70"></div>
 
         <div className="relative z-10 container mx-auto px-4">
@@ -82,7 +97,7 @@ export default function InnerAscendPage() {
       </div>
 
       {/* How It Works */}
-      <div className="bg-sacred-cream py-32">
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-indigo-deep text-center mb-20">
@@ -190,7 +205,7 @@ export default function InnerAscendPage() {
       </div>
 
       {/* How to Join - Light Section */}
-      <div className="bg-sacred-cream py-32">
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
@@ -234,8 +249,24 @@ export default function InnerAscendPage() {
         </div>
       </div>
 
+      {/* Image Break */}
+      <div className="relative h-[60vh]">
+        <img
+          src="/images/atmosphere/ceremony-12.jpeg"
+          alt="Soul family gathering"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
       {/* Simple Invitation */}
       <div className="relative min-h-[70vh] flex items-center">
+        <div className="absolute inset-0">
+          <img
+            src="/images/atmosphere/ceremony-16.jpeg"
+            alt="Join the community"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/50 via-mystic-purple/40 to-cosmic-900/70"></div>
 
         <div className="relative z-10 container mx-auto px-4">
@@ -266,7 +297,8 @@ export default function InnerAscendPage() {
           </div>
         </div>
       </div>
-    </div>
 
+      <Footer />
+    </div>
   );
 }

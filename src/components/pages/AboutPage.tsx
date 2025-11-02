@@ -12,7 +12,7 @@ export default function AboutPage() {
       <div className="relative h-screen flex items-center justify-center">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80"
+            src="/images/locations/sonoran-desert-sunset.jpg"
             alt="Mountain landscape at dawn"
             className="w-full h-full object-cover"
             loading="eager"
@@ -31,7 +31,7 @@ export default function AboutPage() {
       </div>
 
       {/* Vision - Why This Work */}
-      <div className="bg-sacred-cream pt-36 pb-32">
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-8">
@@ -55,7 +55,7 @@ export default function AboutPage() {
       </div>
 
       {/* Quote Section - Early Impact */}
-      <div className="bg-earth-800 py-32">
+      <div className="bg-earth-800 py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <blockquote className="text-2xl md:text-3xl font-serif text-desert-sand/90 italic leading-relaxed mb-8">
@@ -71,7 +71,7 @@ export default function AboutPage() {
       </div>
 
       {/* Image Gallery - The Journey */}
-      <div className="bg-sacred-cream py-32">
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 text-center mb-16">
@@ -81,7 +81,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-8 mb-16">
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1532798442725-41036acc7489?w=800&q=80"
+                  src="/images/atmosphere/ceremony-01.jpg"
                   alt="Ceremony preparation"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -95,7 +95,7 @@ export default function AboutPage() {
 
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=800&q=80"
+                  src="/images/atmosphere/ceremony-03.jpg"
                   alt="Integration circles"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -111,7 +111,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1528209478691-4083da9a2986?w=800&q=80"
+                  src="/images/atmosphere/ceremony-09.jpg"
                   alt="Energy healing"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -125,7 +125,7 @@ export default function AboutPage() {
 
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1514984879728-be0aff75a6e8?w=800&q=80"
+                  src="/images/atmosphere/ceremony-10.jpg"
                   alt="Community gathering"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -142,7 +142,7 @@ export default function AboutPage() {
       </div>
 
       {/* The Training & Experience */}
-      <div className="bg-earth-800 py-32">
+      <div className="bg-earth-800 py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-sacred-white text-center mb-16">
@@ -221,7 +221,7 @@ export default function AboutPage() {
       {/* Desert Image Break */}
       <div className="relative h-[70vh]">
         <img
-          src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=1920&q=80"
+          src="/images/locations/mazunte-beach-sunset.jpg"
           alt="Sonoran desert landscape"
           className="w-full h-full object-cover"
           loading="lazy"
@@ -234,7 +234,7 @@ export default function AboutPage() {
       </div>
 
       {/* Our Approach */}
-      <div className="bg-sacred-cream py-32">
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 text-center mb-16">
@@ -255,19 +255,19 @@ export default function AboutPage() {
                   <h3 className="text-xl font-serif text-earth-800 mb-4">We believe in:</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
-                      <span className="text-desert-clay mt-1">•</span>
+                      <span className="text-ocean-turquoise mt-1">◆</span>
                       <span>The wisdom of the body and the intelligence of emotion</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-desert-clay mt-1">•</span>
+                      <span className="text-ocean-turquoise mt-1">◆</span>
                       <span>Integration as the bridge between experience and embodiment</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-desert-clay mt-1">•</span>
+                      <span className="text-ocean-turquoise mt-1">◆</span>
                       <span>Honoring both shadow and light in the healing journey</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-desert-clay mt-1">•</span>
+                      <span className="text-ocean-turquoise mt-1">◆</span>
                       <span>Sacred medicine as a catalyst, not a cure</span>
                     </li>
                   </ul>
@@ -277,19 +277,19 @@ export default function AboutPage() {
                   <h3 className="text-xl font-serif text-earth-800 mb-4">We offer:</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
-                      <span className="text-desert-clay mt-1">•</span>
+                      <span className="text-sacred-amber mt-1">◆</span>
                       <span>Presence and witnessing without judgment</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-desert-clay mt-1">•</span>
+                      <span className="text-sacred-amber mt-1">◆</span>
                       <span>Trauma-informed facilitation and safe containers</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-desert-clay mt-1">•</span>
+                      <span className="text-sacred-amber mt-1">◆</span>
                       <span>Somatic tools and energetic support</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-desert-clay mt-1">•</span>
+                      <span className="text-sacred-amber mt-1">◆</span>
                       <span>Guidance rooted in lived experience and deep training</span>
                     </li>
                   </ul>
@@ -307,7 +307,7 @@ export default function AboutPage() {
       </div>
 
       {/* Testimonial Section */}
-      <div className="bg-earth-800 py-32">
+      <div className="bg-earth-800 py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-serif text-sacred-white text-center mb-16">
@@ -354,7 +354,7 @@ export default function AboutPage() {
       </div>
 
       {/* What We're NOT About */}
-      <div className="bg-white py-32">
+      <div className="bg-white py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 text-center mb-16">
@@ -399,7 +399,7 @@ export default function AboutPage() {
       </div>
 
       {/* Final CTA */}
-      <div className="bg-earth-800 py-32">
+      <div className="bg-earth-800 py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-8">

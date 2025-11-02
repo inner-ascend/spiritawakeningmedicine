@@ -135,7 +135,7 @@ export default function AboutPage() {
       </div>
 
       {/* The Initiation */}
-      <div className="relative pt-36 pb-48">
+      <div className="relative py-48">
         <div className="absolute inset-0 bg-gradient-to-b from-earth-700 to-earth-900"></div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -173,7 +173,7 @@ export default function AboutPage() {
       </div>
 
       {/* Training & Approach */}
-      <div className="bg-white pt-36 pb-32">
+      <div className="bg-white py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
@@ -204,6 +204,7 @@ export default function AboutPage() {
               <div className="space-y-6">
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
+                    <span className="text-sacred-gold">✦</span>
                     {t.training.innerWork.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -213,6 +214,7 @@ export default function AboutPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
+                    <span className="text-sacred-gold">✦</span>
                     {t.training.traumaInformed.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -222,6 +224,7 @@ export default function AboutPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
+                    <span className="text-sacred-gold">✦</span>
                     {t.training.energyHealing.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -233,6 +236,7 @@ export default function AboutPage() {
               <div className="space-y-6">
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
+                    <span className="text-sacred-gold">✦</span>
                     {t.training.guestSpeaker.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -242,6 +246,7 @@ export default function AboutPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
+                    <span className="text-sacred-gold">✦</span>
                     {t.training.continuousLearning.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -251,6 +256,7 @@ export default function AboutPage() {
 
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
+                    <span className="text-sacred-gold">✦</span>
                     {t.training.ceremonies.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -269,8 +275,17 @@ export default function AboutPage() {
         </div>
       </div>
 
+      {/* Image Break */}
+      <div className="relative h-[60vh]">
+        <img
+          src="/images/locations/mazunte-beach-sunset.jpg"
+          alt="Personal journey"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
       {/* My Personal Journey with Medicine */}
-      <div className="bg-sacred-cream py-32">
+      <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12 text-center">
@@ -307,7 +322,7 @@ export default function AboutPage() {
       </div>
 
       {/* Why I Do This Work */}
-      <div className="bg-white py-32">
+      <div className="bg-white py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12 text-center">
@@ -381,7 +396,14 @@ export default function AboutPage() {
       </div>
 
       {/* Final Quote & CTA */}
-      <div className="relative py-32">
+      <div className="relative py-48">
+        <div className="absolute inset-0">
+          <img
+            src="/images/locations/sonoran-desert-sunset.jpg"
+            alt="Begin your journey"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-br from-earth-800/70 to-earth-900/90"></div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">

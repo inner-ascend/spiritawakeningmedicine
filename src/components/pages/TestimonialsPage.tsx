@@ -174,10 +174,10 @@ export default function TestimonialsPage() {
 
             <div className="pt-12 space-y-4">
               <Link to="/ceremonies" className="block text-sacred-gold hover:text-sacred-amber transition-colors">
-                {t.cta.links.ceremonies}
+                <span className="mr-2">◆</span>{t.cta.links.ceremonies}
               </Link>
               <Link to="/faq" className="block text-sacred-gold hover:text-sacred-amber transition-colors">
-                {t.cta.links.faq}
+                <span className="mr-2">◆</span>{t.cta.links.faq}
               </Link>
             </div>
           </div>

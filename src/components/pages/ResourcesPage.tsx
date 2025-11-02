@@ -291,17 +291,18 @@ export default function ResourcesPage() {
         </div>
       </div>
 
-      {/* Quote Section */}
-      <div className="relative min-h-[60vh] flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-earth-700 via-earth-800 to-earth-900"></div>
-
-        <div className="relative z-10 container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <blockquote className="text-2xl md:text-4xl font-serif text-sacred-white leading-relaxed italic">
-              "True transformation happens not in a single moment, but in the daily practice of
-              integration, reflection, and embodiment."
-            </blockquote>
-          </div>
+      {/* Visual Divider - Image Section */}
+      <div className="h-[60vh] relative overflow-hidden">
+        <img
+          src="/images/atmosphere/ceremony-17.jpeg"
+          alt="Sacred journey"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-earth-900/40 via-transparent to-earth-900/40 flex items-center justify-center">
+          <blockquote className="text-2xl md:text-4xl font-serif text-sacred-white leading-relaxed italic text-center px-4 max-w-3xl">
+            "True transformation happens not in a single moment, but in the daily practice of
+            integration, reflection, and embodiment."
+          </blockquote>
         </div>
       </div>
 

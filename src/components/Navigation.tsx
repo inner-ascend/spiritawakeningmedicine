@@ -19,7 +19,6 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <span className="text-3xl">🔥</span>
             <span className="text-xl font-serif text-sacred-gold">
               Spirit Awakening Medicine
             </span>
@@ -41,6 +40,9 @@ export default function Navigation() {
             </Link>
             <Link to="/retreats" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
               {t.retreats}
+            </Link>
+            <Link to="/pricing" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
+              {t.pricing}
             </Link>
             <Link to="/testimonials" className="text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm">
               {t.testimonials}
@@ -91,6 +93,9 @@ export default function Navigation() {
             </Link>
             <Link to="/retreats" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
               {t.retreats}
+            </Link>
+            <Link to="/pricing" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
+              {t.pricing}
             </Link>
             <Link to="/testimonials" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors">
               {t.testimonials}

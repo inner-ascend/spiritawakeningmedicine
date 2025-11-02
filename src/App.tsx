@@ -86,7 +86,7 @@ function LandingPage() {
         </div>
 
         {/* What is Bufo Alvarius Section */}
-        <div className="bg-earth-800 pt-32 pb-48">
+        <div className="bg-earth-800 pt-36 pb-48">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-16">
@@ -183,7 +183,7 @@ function LandingPage() {
         </div>
 
         {/* Three-Phase Process: Preparation → Ceremony → Integration */}
-        <div className="bg-white pt-32 pb-48">
+        <div className="bg-white pt-36 pb-48">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-20">
@@ -319,7 +319,7 @@ function LandingPage() {
         </div>
 
         {/* Ceremony Atmosphere Gallery */}
-        <div className="bg-earth-900 pt-32 pb-48">
+        <div className="bg-earth-900 pt-36 pb-48">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
@@ -392,7 +392,7 @@ function LandingPage() {
         </div>
 
         {/* Testimonials - Multiple Voices */}
-        <div className="relative pt-32 pb-48">
+        <div className="relative pt-36 pb-48">
           <div className="absolute inset-0 bg-earth-800"></div>
           <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
@@ -424,7 +424,7 @@ function LandingPage() {
         </div>
 
         {/* Pricing Transparency Section */}
-        <div className="bg-sacred-cream pt-32 pb-48">
+        <div className="bg-sacred-cream pt-36 pb-48">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-20">

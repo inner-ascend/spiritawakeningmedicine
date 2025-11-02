@@ -124,7 +124,7 @@ export default function BufoCeremoniesPage() {
       </div>
 
       {/* Ceremony Details */}
-      <div className="bg-white pt-32 pb-48">
+      <div className="bg-white pt-36 pb-48">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
@@ -282,7 +282,7 @@ export default function BufoCeremoniesPage() {
       </div>
 
       {/* Who This Is For / Not For */}
-      <div className="bg-sacred-cream pt-32 pb-48">
+      <div className="bg-sacred-cream pt-36 pb-48">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">

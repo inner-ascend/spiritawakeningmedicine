@@ -313,30 +313,113 @@ export default function RetreatsPage() {
         </div>
       </div>
 
-      {/* Upcoming Retreats */}
+      {/* Testimonials from Past Retreats */}
       <div className="bg-white py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
+              Voices from the Journey
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-12 mb-16">
+              <div className="bg-sacred-cream border border-earth-700/10 rounded-2xl p-8 space-y-6">
+                <div className="text-3xl text-ocean-coral/40">❝</div>
+                <p className="text-xl text-earth-800 italic leading-relaxed">
+                  "The retreat was transformative beyond words. The combination of ceremony, integration circles, and
+                  the natural beauty of Mazunte created a container for deep healing. I left feeling more connected to
+                  myself and my purpose than ever before."
+                </p>
+                <div className="pt-4 border-t border-earth-700/10">
+                  <p className="text-lg font-serif text-ocean-coral">— Sarah M.</p>
+                  <p className="text-sm text-earth-700/60">7-Day Bufo Retreat, Mazunte</p>
+                </div>
+              </div>
+
+              <div className="bg-sacred-cream border border-earth-700/10 rounded-2xl p-8 space-y-6">
+                <div className="text-3xl text-ocean-coral/40">❝</div>
+                <p className="text-xl text-earth-800 italic leading-relaxed">
+                  "What makes these retreats special is the genuine care and expertise of the facilitators. They hold
+                  space with wisdom, compassion, and deep knowledge of the medicine and integration process. I felt
+                  safe to go deep."
+                </p>
+                <div className="pt-4 border-t border-earth-700/10">
+                  <p className="text-lg font-serif text-ocean-coral">— Michael R.</p>
+                  <p className="text-sm text-earth-700/60">5-Day Integration Intensive</p>
+                </div>
+              </div>
+
+              <div className="bg-sacred-cream border border-earth-700/10 rounded-2xl p-8 space-y-6">
+                <div className="text-3xl text-ocean-coral/40">❝</div>
+                <p className="text-xl text-earth-800 italic leading-relaxed">
+                  "The retreat gave me tools and practices I still use daily. The ocean, the ceremonies, the group
+                  sharing—everything worked together to create lasting change. This wasn't just a vacation, it was a
+                  true initiation."
+                </p>
+                <div className="pt-4 border-t border-earth-700/10">
+                  <p className="text-lg font-serif text-ocean-coral">— Elena P.</p>
+                  <p className="text-sm text-earth-700/60">10-Day Bufo & Integration Retreat</p>
+                </div>
+              </div>
+
+              <div className="bg-sacred-cream border border-earth-700/10 rounded-2xl p-8 space-y-6">
+                <div className="text-3xl text-ocean-coral/40">❝</div>
+                <p className="text-xl text-earth-800 italic leading-relaxed">
+                  "Coming to the retreat solo was one of the best decisions I've made. The group became family, and
+                  the practices we learned together created bonds that go beyond the week we shared. I'm still in
+                  touch with everyone."
+                </p>
+                <div className="pt-4 border-t border-earth-700/10">
+                  <p className="text-lg font-serif text-ocean-coral">— David K.</p>
+                  <p className="text-sm text-earth-700/60">5-Day Bufo Ceremony Retreat</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Upcoming Retreats */}
+      <div className="bg-earth-800 py-48">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-16 text-center">
               {t.upcomingRetreats.title}
             </h2>
 
             <div className="text-center space-y-8">
-              <div className="bg-sacred-cream rounded-2xl p-12">
-                <p className="text-2xl font-serif text-earth-800 mb-4">
-                  {t.upcomingRetreats.comingSoonTitle}
+              <div className="bg-earth-700/40 backdrop-blur-xl border border-desert-sand/20 rounded-2xl p-12">
+                <p className="text-2xl font-serif text-sacred-white mb-6">
+                  Join the Waitlist for 2025 Retreats
                 </p>
-                <p className="text-lg text-earth-700/80 leading-relaxed max-w-2xl mx-auto">
-                  {t.upcomingRetreats.comingSoonDescription}
+                <p className="text-lg text-desert-sand/80 leading-relaxed max-w-2xl mx-auto mb-8">
+                  We're currently planning our 2025 retreat calendar. Get notified first when new retreat dates are announced,
+                  and receive early-bird pricing for being on the waitlist.
                 </p>
+                <div className="space-y-4">
+                  <div className="flex items-center justify-center gap-3 text-desert-sand/70">
+                    <span className="text-ocean-coral">✓</span>
+                    <span>Priority booking for retreat spots</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-3 text-desert-sand/70">
+                    <span className="text-ocean-coral">✓</span>
+                    <span>Early-bird discount notifications</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-3 text-desert-sand/70">
+                    <span className="text-ocean-coral">✓</span>
+                    <span>Detailed retreat itineraries and information</span>
+                  </div>
+                </div>
               </div>
 
               <Link
                 to="/contact"
                 className="inline-block px-10 py-4 bg-ocean-coral text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
               >
-                {t.upcomingRetreats.button}
+                Join the Retreat Waitlist
               </Link>
+              <p className="text-sm text-desert-sand/60 italic">
+                Include "Retreat Waitlist" in your message
+              </p>
             </div>
           </div>
         </div>

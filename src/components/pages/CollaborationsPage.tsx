@@ -411,6 +411,54 @@ export default function CollaborationsPage() {
         </div>
       </div>
 
+      {/* Collaboration Interest List */}
+      <div className="bg-earth-800 py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-16 text-center">
+              Join the Collaboration Interest List
+            </h2>
+
+            <div className="text-center space-y-8">
+              <div className="bg-earth-700/40 backdrop-blur-xl border border-desert-sand/20 rounded-2xl p-12">
+                <p className="text-2xl font-serif text-sacred-white mb-6">
+                  Stay Informed About Collaboration Opportunities
+                </p>
+                <p className="text-lg text-desert-sand/80 leading-relaxed max-w-2xl mx-auto mb-8">
+                  Be the first to know about upcoming retreat collaborations, facilitator training opportunities,
+                  and partnership possibilities. Get priority access to collaborative projects that align with your vision.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-center justify-center gap-3 text-desert-sand/70">
+                    <span className="text-jungle-emerald">✓</span>
+                    <span>Priority notifications for collaboration opportunities</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-3 text-desert-sand/70">
+                    <span className="text-jungle-emerald">✓</span>
+                    <span>Early access to partnership discussions</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-3 text-desert-sand/70">
+                    <span className="text-jungle-emerald">✓</span>
+                    <span>Detailed information about upcoming projects</span>
+                  </div>
+                </div>
+              </div>
+
+              <Link
+                to="/contact"
+                onClick={scrollToTop}
+                className="inline-block px-10 py-4 bg-jungle-emerald text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
+              >
+                Join the Collaboration List
+              </Link>
+              <p className="text-sm text-desert-sand/60 italic">
+                Include "Collaboration Interest" in your message
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Final CTA - Start the Conversation */}
       <div className="bg-sacred-cream py-32">
         <div className="container mx-auto px-4">

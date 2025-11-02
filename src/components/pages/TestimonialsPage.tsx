@@ -8,23 +8,14 @@ import testimonialsFR from '../../translations/pages/testimonials/fr.json';
 
 const translations = { en: testimonialsEN, es: testimonialsES, fr: testimonialsFR };
 
-// Random portrait images for testimonials
-const portraitImages = [
-  'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&h=1000&fit=crop',
-  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop',
-  'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&h=1000&fit=crop',
-  'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&h=1000&fit=crop',
-  'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&h=1000&fit=crop',
-  'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&h=1000&fit=crop',
-];
-
-const smallPortraitImages = [
-  'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop',
-  'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=200&h=200&fit=crop',
-  'https://images.unsplash.com/photo-1557862921-37829c790f19?w=200&h=200&fit=crop',
-  'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop',
-  'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop',
-  'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=200&h=200&fit=crop',
+// Abstract nature images for testimonials (more authentic than stock portraits)
+const testimonialImages = [
+  'https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=800&h=1000&fit=crop', // Desert landscape
+  'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=1000&fit=crop', // Mountain vista
+  'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=1000&fit=crop', // Night sky
+  'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=1000&fit=crop', // Ocean waves
+  'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=1000&fit=crop', // Forest path
+  'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=1000&fit=crop', // Sunset over water
 ];
 
 export default function TestimonialsPage() {
@@ -73,11 +64,14 @@ export default function TestimonialsPage() {
             <div className={`max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center ${index % 2 === 1 ? 'lg:grid-flow-dense' : ''}`}>
               {/* Image */}
               <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                <img
-                  src={portraitImages[index % portraitImages.length]}
-                  alt={`${testimonial.name} - Client portrait`}
-                  className="w-full h-full object-cover shadow-2xl aspect-[4/5]"
-                />
+                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+                  <img
+                    src={testimonialImages[index % testimonialImages.length]}
+                    alt="Sacred landscape"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-earth-900/40"></div>
+                </div>
               </div>
 
               {/* Testimonial Content */}
@@ -112,21 +106,14 @@ export default function TestimonialsPage() {
 
             <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
               {grid.map((testimonial, index) => (
-                <div key={index} className="space-y-6">
-                  {/* Small portrait */}
-                  <div className="w-24 h-24 mx-auto">
-                    <img
-                      src={smallPortraitImages[index % smallPortraitImages.length]}
-                      alt={`${testimonial.name} portrait`}
-                      className="w-full h-full object-cover rounded-full"
-                    />
-                  </div>
+                <div key={index} className="bg-earth-700/30 backdrop-blur-xl border border-desert-sand/20 rounded-2xl p-8 space-y-6">
+                  <div className="text-3xl text-sacred-gold/40">❝</div>
 
-                  <blockquote className="text-xl md:text-2xl font-serif text-desert-sand leading-relaxed italic text-center">
-                    "{testimonial.quote}"
+                  <blockquote className="text-xl md:text-2xl font-serif text-desert-sand leading-relaxed italic">
+                    {testimonial.quote}
                   </blockquote>
 
-                  <div className="text-center space-y-1">
+                  <div className="space-y-1 pt-4 border-t border-desert-sand/10">
                     <p className="text-lg font-serif text-sacred-gold">
                       — {testimonial.name}
                     </p>

@@ -306,55 +306,6 @@ export default function ResourcesPage() {
         </div>
       </div>
 
-      {/* Recent Writings */}
-      <div className="relative py-48">
-        <div className="absolute inset-0">
-          <img
-            src="/images/atmosphere/ceremony-18.jpeg"
-            alt="Writings and reflections"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-deep/30 via-cosmic-900/50 to-black/60"></div>
-
-        <div className="relative z-10 container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-serif text-sacred-moon text-center mb-20">
-              Recent Writings
-            </h2>
-
-            <div className="space-y-12">
-              <div className="border-l-4 border-ocean-turquoise/40 pl-8 py-4">
-                <h3 className="text-2xl font-serif text-sacred-moon mb-3">
-                  The Fall of Society: 2025-2100
-                </h3>
-                <p className="text-sacred-moon/70">
-                  What's coming, and how to prepare your soul for the great transition.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-ocean-turquoise/40 pl-8 py-4">
-                <h3 className="text-2xl font-serif text-sacred-moon mb-3">
-                  Becoming Love: Ego Dissolution
-                </h3>
-                <p className="text-sacred-moon/70">
-                  What Bufo taught me about surrendering identity and remembering wholeness.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-ocean-turquoise/40 pl-8 py-4">
-                <h3 className="text-2xl font-serif text-sacred-moon mb-3">
-                  The Masculine Awakening
-                </h3>
-                <p className="text-sacred-moon/70">
-                  Why men's work is the most important work right now, and what it means to embody sacred masculinity.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Testimonials */}
       <div className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">

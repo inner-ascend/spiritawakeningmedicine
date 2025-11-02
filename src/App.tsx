@@ -199,33 +199,63 @@ function LandingPage() {
 
               <div className="grid md:grid-cols-3 gap-12 mb-16">
                 {/* Phase 1: Preparation */}
-                <div className="text-center space-y-6">
-                  <div className="text-5xl mb-4">🐚</div>
-                  <h3 className="text-2xl font-serif text-earth-800">{home.threePhaseJourney.preparation.title}</h3>
-                  <p className="text-earth-700/70 leading-relaxed">
-                    {home.threePhaseJourney.preparation.description}
-                  </p>
-                  <p className="text-sm text-sacred-gold font-medium">{home.threePhaseJourney.preparation.price}</p>
+                <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+                  <div className="aspect-[4/5] relative">
+                    <img
+                      src="/images/atmosphere/ceremony-04.jpg"
+                      alt="Preparation practices"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-earth-900/40 via-earth-900/60 to-earth-900/90"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-center space-y-4">
+                      <h3 className="text-2xl font-serif text-sacred-white">{home.threePhaseJourney.preparation.title}</h3>
+                      <p className="text-desert-sand/90 leading-relaxed text-sm">
+                        {home.threePhaseJourney.preparation.description}
+                      </p>
+                      <p className="text-xs text-sacred-gold font-medium">{home.threePhaseJourney.preparation.price}</p>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Phase 2: Ceremony */}
-                <div className="text-center space-y-6">
-                  <div className="text-5xl mb-4">🔥</div>
-                  <h3 className="text-2xl font-serif text-earth-800">{home.threePhaseJourney.ceremony.title}</h3>
-                  <p className="text-earth-700/70 leading-relaxed">
-                    {home.threePhaseJourney.ceremony.description}
-                  </p>
-                  <p className="text-sm text-sacred-gold font-medium">{home.threePhaseJourney.ceremony.price}</p>
+                <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+                  <div className="aspect-[4/5] relative">
+                    <img
+                      src="/images/atmosphere/ceremony-05.jpg"
+                      alt="Sacred ceremony space"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-earth-900/40 via-earth-900/60 to-earth-900/90"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-center space-y-4">
+                      <h3 className="text-2xl font-serif text-sacred-white">{home.threePhaseJourney.ceremony.title}</h3>
+                      <p className="text-desert-sand/90 leading-relaxed text-sm">
+                        {home.threePhaseJourney.ceremony.description}
+                      </p>
+                      <p className="text-xs text-sacred-gold font-medium">{home.threePhaseJourney.ceremony.price}</p>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Phase 3: Integration */}
-                <div className="text-center space-y-6">
-                  <div className="text-5xl mb-4">🌿</div>
-                  <h3 className="text-2xl font-serif text-earth-800">{home.threePhaseJourney.integration.title}</h3>
-                  <p className="text-earth-700/70 leading-relaxed">
-                    {home.threePhaseJourney.integration.description}
-                  </p>
-                  <p className="text-sm text-sacred-gold font-medium">{home.threePhaseJourney.integration.price}</p>
+                <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+                  <div className="aspect-[4/5] relative">
+                    <img
+                      src="/images/atmosphere/ceremony-07.jpeg"
+                      alt="Integration and embodiment"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-earth-900/40 via-earth-900/60 to-earth-900/90"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-8 text-center space-y-4">
+                      <h3 className="text-2xl font-serif text-sacred-white">{home.threePhaseJourney.integration.title}</h3>
+                      <p className="text-desert-sand/90 leading-relaxed text-sm">
+                        {home.threePhaseJourney.integration.description}
+                      </p>
+                      <p className="text-xs text-sacred-gold font-medium">{home.threePhaseJourney.integration.price}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -285,6 +315,80 @@ function LandingPage() {
           </div>
         </div>
 
+        {/* Ceremony Atmosphere Gallery */}
+        <div className="bg-earth-900 py-48">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <div className="text-4xl text-sacred-gold/40 mb-6">⊛</div>
+                <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
+                  The Sacred Space
+                </h2>
+                <p className="text-lg text-desert-sand/70 max-w-2xl mx-auto">
+                  A glimpse into the ceremony environment we create together
+                </p>
+              </div>
+
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                <div className="aspect-square relative overflow-hidden rounded-lg group">
+                  <img
+                    src="/images/atmosphere/ceremony-08.jpeg"
+                    alt="Ceremony atmosphere"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-earth-900/20 group-hover:bg-earth-900/0 transition-colors"></div>
+                </div>
+                <div className="aspect-square relative overflow-hidden rounded-lg group">
+                  <img
+                    src="/images/atmosphere/ceremony-11.jpeg"
+                    alt="Sacred ceremony space"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-earth-900/20 group-hover:bg-earth-900/0 transition-colors"></div>
+                </div>
+                <div className="aspect-square relative overflow-hidden rounded-lg group">
+                  <img
+                    src="/images/atmosphere/ceremony-12.jpeg"
+                    alt="Preparation setting"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-earth-900/20 group-hover:bg-earth-900/0 transition-colors"></div>
+                </div>
+                <div className="aspect-square relative overflow-hidden rounded-lg group">
+                  <img
+                    src="/images/atmosphere/ceremony-13.jpeg"
+                    alt="Integration circle"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-earth-900/20 group-hover:bg-earth-900/0 transition-colors"></div>
+                </div>
+                <div className="aspect-square relative overflow-hidden rounded-lg group">
+                  <img
+                    src="/images/atmosphere/ceremony-15.jpeg"
+                    alt="Sacred altar and objects"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-earth-900/20 group-hover:bg-earth-900/0 transition-colors"></div>
+                </div>
+                <div className="aspect-square relative overflow-hidden rounded-lg group">
+                  <img
+                    src="/images/atmosphere/ceremony-16.jpeg"
+                    alt="Ceremony environment"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-earth-900/20 group-hover:bg-earth-900/0 transition-colors"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Testimonials - Multiple Voices */}
         <div className="relative py-48">
           <div className="absolute inset-0 bg-earth-800"></div>
@@ -333,7 +437,6 @@ function LandingPage() {
               <div className="grid md:grid-cols-3 gap-8 mb-16">
                 {/* Preparation */}
                 <div className="bg-white rounded-2xl p-8 border border-earth-700/10">
-                  <div className="text-3xl mb-4 text-center">🐚</div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{home.pricingTransparency.preparation.title}</h3>
                   <p className="text-earth-700/70 text-center mb-6 leading-relaxed">
                     {home.pricingTransparency.preparation.description}
@@ -349,7 +452,6 @@ function LandingPage() {
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-sacred-gold text-earth-900 px-4 py-1 rounded-full text-sm font-medium">
                     {home.pricingTransparency.ceremony.badge}
                   </div>
-                  <div className="text-3xl mb-4 text-center">🔥</div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{home.pricingTransparency.ceremony.title}</h3>
                   <p className="text-earth-700/70 text-center mb-6 leading-relaxed">
                     {home.pricingTransparency.ceremony.description}
@@ -365,7 +467,6 @@ function LandingPage() {
 
                 {/* Integration */}
                 <div className="bg-white rounded-2xl p-8 border border-earth-700/10">
-                  <div className="text-3xl mb-4 text-center">🌿</div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{home.pricingTransparency.integration.title}</h3>
                   <p className="text-earth-700/70 text-center mb-6 leading-relaxed">
                     {home.pricingTransparency.integration.description}

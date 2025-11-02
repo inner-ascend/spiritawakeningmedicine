@@ -29,7 +29,6 @@ export default function PreparationPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 via-earth-900/40 to-earth-900"></div>
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          <div className="text-6xl mb-8">🐚</div>
           <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-white mb-8 leading-tight">
             {t.hero.title}
           </h1>
@@ -86,6 +85,48 @@ export default function PreparationPage() {
               <p className="text-earth-700/80 leading-relaxed">
                 {t.whyMandatory.noteDescription}
               </p>
+            </div>
+
+            {/* Preparation practices gallery */}
+            <div className="mt-20">
+              <h3 className="text-2xl md:text-3xl font-serif text-earth-800 mb-8 text-center">
+                Preparation Practices
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="relative overflow-hidden rounded-lg shadow-md">
+                  <img
+                    src="/images/atmosphere/ceremony-18.jpeg"
+                    alt="Meditation and breathwork practice"
+                    className="w-full aspect-[4/3] object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-earth-900/90 to-transparent p-4">
+                    <p className="text-sacred-white text-sm font-serif">Meditation & Breathwork</p>
+                  </div>
+                </div>
+                <div className="relative overflow-hidden rounded-lg shadow-md">
+                  <img
+                    src="/images/atmosphere/ceremony-05.jpg"
+                    alt="Journaling and reflection"
+                    className="w-full aspect-[4/3] object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-earth-900/90 to-transparent p-4">
+                    <p className="text-sacred-white text-sm font-serif">Journaling & Reflection</p>
+                  </div>
+                </div>
+                <div className="relative overflow-hidden rounded-lg shadow-md">
+                  <img
+                    src="/images/atmosphere/ceremony-13.jpeg"
+                    alt="Sacred space creation"
+                    className="w-full aspect-[4/3] object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-earth-900/90 to-transparent p-4">
+                    <p className="text-sacred-white text-sm font-serif">Sacred Space Creation</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -283,7 +324,6 @@ export default function PreparationPage() {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="text-4xl">🌿</div>
                 <h3 className="text-xl font-serif text-earth-800">{t.preCeremony.dietary.title}</h3>
                 <p className="text-earth-700/70 leading-relaxed text-sm">
                   {t.preCeremony.dietary.description}
@@ -329,7 +369,6 @@ export default function PreparationPage() {
             </h2>
 
             <div className="bg-white rounded-2xl p-12 border border-earth-700/20 mb-12">
-              <div className="text-5xl mb-6">🐚</div>
               <h3 className="text-3xl font-serif text-earth-800 mb-4">{t.investment.sessionTitle}</h3>
               <div className="text-5xl font-serif text-sacred-gold mb-6">{t.investment.price}</div>
               <p className="text-lg text-earth-700/70 mb-8">{t.investment.perSession}</p>
@@ -383,13 +422,10 @@ export default function PreparationPage() {
 
             <div className="space-y-6 text-desert-sand/80 text-lg">
               <div className="flex items-center justify-center gap-4">
-                <span className="text-3xl">🐚</span>
                 <span className="text-2xl font-serif text-sacred-gold">{t.nextSteps.preparation}</span>
                 <span className="text-desert-sand/50">→</span>
-                <span className="text-3xl">🔥</span>
                 <span className="text-2xl font-serif text-sacred-gold">{t.nextSteps.ceremony}</span>
                 <span className="text-desert-sand/50">→</span>
-                <span className="text-3xl">🌿</span>
                 <span className="text-2xl font-serif text-sacred-gold">{t.nextSteps.integration}</span>
               </div>
 

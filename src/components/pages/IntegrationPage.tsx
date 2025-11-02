@@ -28,7 +28,6 @@ export default function IntegrationPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 via-earth-900/40 to-earth-900"></div>
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          <div className="text-6xl mb-8">🌿</div>
           <h1 className="text-5xl md:text-7xl font-serif font-light text-sacred-white mb-8 leading-tight">
             {t.hero.title}
           </h1>
@@ -98,6 +97,47 @@ export default function IntegrationPage() {
               <p className="text-earth-700/80 leading-relaxed">
                 {t.whyNonNegotiable.includedDescription}
               </p>
+            </div>
+
+            {/* Integration circle images */}
+            <div className="mt-20">
+              <h3 className="text-2xl md:text-3xl font-serif text-earth-800 mb-8 text-center">
+                Integration in Practice
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="aspect-square relative overflow-hidden rounded-lg shadow-md">
+                  <img
+                    src="/images/atmosphere/ceremony-07.jpeg"
+                    alt="Integration circles"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="aspect-square relative overflow-hidden rounded-lg shadow-md">
+                  <img
+                    src="/images/atmosphere/ceremony-08.jpeg"
+                    alt="Reflection practices"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="aspect-square relative overflow-hidden rounded-lg shadow-md">
+                  <img
+                    src="/images/atmosphere/ceremony-11.jpeg"
+                    alt="Nature connection"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="aspect-square relative overflow-hidden rounded-lg shadow-md">
+                  <img
+                    src="/images/atmosphere/ceremony-12.jpeg"
+                    alt="Community support"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -225,7 +265,6 @@ export default function IntegrationPage() {
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-sacred-gold text-earth-900 px-4 py-1 rounded-full text-sm font-medium">
                   {t.packages.fourSession.badge}
                 </div>
-                <div className="text-4xl mb-4 text-center">🌿</div>
                 <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{t.packages.fourSession.title}</h3>
                 <div className="text-center mb-6">
                   <div className="text-4xl font-serif text-sacred-gold mb-2">{t.packages.fourSession.price}</div>
@@ -399,7 +438,6 @@ export default function IntegrationPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-earth-800/70 to-earth-900/90"></div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="text-5xl text-sacred-gold/60 mb-8">🌿</div>
             <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-8">
               {t.cta.title}
             </h2>

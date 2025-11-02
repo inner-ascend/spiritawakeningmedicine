@@ -172,7 +172,6 @@ export default function PricingPage() {
             <div className="grid md:grid-cols-3 gap-8">
               {/* Preparation */}
               <div className="bg-medicine-venom rounded-2xl p-8">
-                <div className="text-4xl mb-4 text-center">🐚</div>
                 <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{t.individualServices.preparation.title}</h3>
                 <div className="text-center mb-6">
                   <div className="text-3xl font-serif text-sacred-gold mb-2">{t.individualServices.preparation.price}</div>
@@ -206,7 +205,6 @@ export default function PricingPage() {
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-sacred-gold text-earth-900 px-4 py-1 rounded-full text-sm font-medium">
                   {t.individualServices.ceremony.badge}
                 </div>
-                <div className="text-4xl mb-4 text-center">🔥</div>
                 <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{t.individualServices.ceremony.title}</h3>
                 <div className="text-center mb-6">
                   <div className="text-3xl font-serif text-sacred-gold mb-2">{t.individualServices.ceremony.price}</div>
@@ -241,7 +239,6 @@ export default function PricingPage() {
 
               {/* Integration */}
               <div className="bg-medicine-venom rounded-2xl p-8">
-                <div className="text-4xl mb-4 text-center">🌿</div>
                 <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{t.individualServices.integration.title}</h3>
                 <div className="text-center mb-6">
                   <div className="text-3xl font-serif text-sacred-gold mb-2">{t.individualServices.integration.price}</div>

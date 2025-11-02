@@ -67,9 +67,22 @@ export default function BufoCeremoniesPage() {
                 {t.what.p1}
               </p>
 
-              <p>
-                {t.what.p2}
-              </p>
+              {/* Inline altar image */}
+              <div className="grid md:grid-cols-2 gap-8 items-center my-12">
+                <div>
+                  <p>
+                    {t.what.p2}
+                  </p>
+                </div>
+                <div className="relative overflow-hidden rounded-lg shadow-lg">
+                  <img
+                    src="/images/atmosphere/ceremony-15.jpeg"
+                    alt="Sacred altar and ceremony objects"
+                    className="w-full aspect-[4/3] object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
 
               <div className="bg-medicine-venom rounded-2xl p-8 my-12">
                 <h3 className="text-2xl font-serif text-earth-800 mb-6">{t.what.experience.title}</h3>
@@ -124,7 +137,6 @@ export default function BufoCeremoniesPage() {
               <div className="space-y-8">
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4 flex items-center gap-3">
-                    <span className="text-3xl">🌿</span>
                     {t.ceremonyDetails.facilitators.title}
                   </h3>
                   <p className="text-earth-700/80 leading-relaxed">
@@ -212,7 +224,6 @@ export default function BufoCeremoniesPage() {
 
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4 flex items-center gap-3">
-                    <span className="text-3xl">🌿</span>
                     {t.ceremonyDetails.approach.title}
                   </h3>
                   <p className="text-earth-700/80 leading-relaxed">
@@ -230,6 +241,32 @@ export default function BufoCeremoniesPage() {
               <p className="text-earth-700/80 leading-relaxed max-w-2xl mx-auto">
                 {t.ceremonyDetails.requirements.description}
               </p>
+            </div>
+
+            {/* Visual comparison: Ceremony phases */}
+            <div className="grid md:grid-cols-2 gap-8 mt-20">
+              <div className="relative overflow-hidden rounded-lg shadow-lg group">
+                <img
+                  src="/images/atmosphere/ceremony-16.jpeg"
+                  alt="Ceremony preparation and setting"
+                  className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-earth-900/90 to-transparent p-6">
+                  <p className="text-sacred-white font-serif text-lg">Preparation & Sacred Setting</p>
+                </div>
+              </div>
+              <div className="relative overflow-hidden rounded-lg shadow-lg group">
+                <img
+                  src="/images/atmosphere/ceremony-17.jpeg"
+                  alt="Integration and closing circle"
+                  className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-earth-900/90 to-transparent p-6">
+                  <p className="text-sacred-white font-serif text-lg">Integration & Closing Circle</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -417,7 +454,6 @@ export default function BufoCeremoniesPage() {
             </h2>
 
             <div className="bg-white rounded-2xl p-12 border-2 border-sacred-gold/30 mb-12">
-              <div className="text-5xl mb-6">🔥</div>
               <h3 className="text-3xl font-serif text-earth-800 mb-4">{t.investment.ceremony.title}</h3>
               <div className="text-5xl font-serif text-sacred-gold mb-6">{t.investment.ceremony.price}</div>
               <p className="text-lg text-earth-700/70 mb-8">{t.investment.ceremony.perPerson}</p>

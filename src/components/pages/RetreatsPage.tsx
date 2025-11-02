@@ -63,7 +63,6 @@ export default function RetreatsPage() {
             {/* Text Right */}
             <div className="space-y-8">
               <div>
-                <div className="text-4xl text-sacred-gold/40 mb-4">🌿</div>
                 <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
                   {t.bufoRetreats.title}
                 </h2>
@@ -113,7 +112,6 @@ export default function RetreatsPage() {
             {/* Text Left */}
             <div className="space-y-8 lg:order-1">
               <div>
-                <div className="text-4xl text-sacred-gold/40 mb-4">🔥</div>
                 <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
                   {t.integrationIntensives.title}
                 </h2>
@@ -161,7 +159,6 @@ export default function RetreatsPage() {
                   alt="Integration circle with participants"
                   className="w-full aspect-[4/5] object-cover"
                 />
-                <p className="text-center text-sm text-earth-700/70 mt-2">Integration circles in nature</p>
               </div>
             </div>
           </div>

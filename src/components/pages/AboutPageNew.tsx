@@ -101,7 +101,6 @@ export default function AboutPage() {
                 alt="Nina - Co-facilitator portrait"
                 className="w-full aspect-[3/4] object-cover"
               />
-              <p className="text-center text-sm text-earth-700/70 mt-2">Nina</p>
             </div>
             <div className="relative shadow-lg">
               <img
@@ -109,7 +108,6 @@ export default function AboutPage() {
                 alt="Astral - Co-facilitator portrait"
                 className="w-full aspect-[3/4] object-cover"
               />
-              <p className="text-center text-sm text-earth-700/70 mt-2">Astral</p>
             </div>
           </div>
         </div>
@@ -161,11 +159,30 @@ export default function AboutPage() {
               {t.training.title}
             </h2>
 
+            {/* Small ceremony images inline */}
+            <div className="grid grid-cols-2 gap-4 mb-12 max-w-3xl mx-auto">
+              <div className="relative overflow-hidden rounded-lg shadow-md">
+                <img
+                  src="/images/atmosphere/ceremony-17.jpeg"
+                  alt="Ceremony preparation"
+                  className="w-full aspect-[4/3] object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="relative overflow-hidden rounded-lg shadow-md">
+                <img
+                  src="/images/atmosphere/ceremony-18.jpeg"
+                  alt="Sacred ceremony setting"
+                  className="w-full aspect-[4/3] object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
             <div className="grid md:grid-cols-2 gap-12 mb-16">
               <div className="space-y-6">
                 <div className="bg-sacred-cream rounded-2xl p-6">
                   <h3 className="text-xl font-serif text-earth-800 mb-3 flex items-center gap-3">
-                    <span className="text-2xl">🌿</span>
                     {t.training.innerWork.title}
                   </h3>
                   <p className="text-earth-700/70 leading-relaxed text-sm">
@@ -301,6 +318,47 @@ export default function AboutPage() {
               <p>
                 <strong className="text-earth-800">{t.why.p4}</strong>{t.why.p4Strong}
               </p>
+            </div>
+
+            {/* Ceremony/Integration Gallery */}
+            <div className="mt-20">
+              <h3 className="text-2xl md:text-3xl font-serif text-earth-800 mb-8 text-center">
+                The Work in Practice
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="aspect-square relative overflow-hidden rounded-lg shadow-md">
+                  <img
+                    src="/images/atmosphere/ceremony-08.jpeg"
+                    alt="Ceremony space"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="aspect-square relative overflow-hidden rounded-lg shadow-md">
+                  <img
+                    src="/images/atmosphere/ceremony-11.jpeg"
+                    alt="Integration work"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="aspect-square relative overflow-hidden rounded-lg shadow-md">
+                  <img
+                    src="/images/atmosphere/ceremony-12.jpeg"
+                    alt="Sacred practices"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="aspect-square relative overflow-hidden rounded-lg shadow-md">
+                  <img
+                    src="/images/atmosphere/ceremony-19.jpeg"
+                    alt="Holding space"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

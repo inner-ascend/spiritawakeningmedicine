@@ -99,6 +99,15 @@ export default function RetreatsPage() {
                   <p className="text-earth-800"><strong>{t.bufoRetreats.investment}</strong> {t.bufoRetreats.investmentPrice}</p>
                   <p className="text-sm text-earth-700/70 mt-2">{t.bufoRetreats.investmentDetails}</p>
                 </div>
+
+                <div className="mt-8 text-center">
+                  <Link
+                    to="/pricing"
+                    className="inline-block text-sacred-gold hover:text-sacred-amber transition-colors font-medium"
+                  >
+                    See all retreat & ceremony pricing →
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -147,6 +156,15 @@ export default function RetreatsPage() {
                 <div className="bg-medicine-venom rounded-xl p-6 mt-8">
                   <p className="text-earth-800"><strong>{t.integrationIntensives.investment}</strong> {t.integrationIntensives.investmentPrice}</p>
                   <p className="text-sm text-earth-700/70 mt-2">{t.integrationIntensives.investmentDetails}</p>
+                </div>
+
+                <div className="mt-8 text-center">
+                  <Link
+                    to="/pricing"
+                    className="inline-block text-sacred-gold hover:text-sacred-amber transition-colors font-medium"
+                  >
+                    See all retreat & ceremony pricing →
+                  </Link>
                 </div>
               </div>
             </div>

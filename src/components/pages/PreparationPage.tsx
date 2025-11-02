@@ -406,6 +406,11 @@ export default function PreparationPage() {
               <p className="text-sm text-earth-700/60">
                 {t.investment.process}
               </p>
+              <p className="text-base text-earth-700/70 mt-6">
+                <Link to="/pricing" className="text-sacred-gold hover:text-sacred-amber transition-colors">
+                  View complete journey pricing →
+                </Link>
+              </p>
             </div>
           </div>
         </div>

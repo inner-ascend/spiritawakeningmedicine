@@ -260,9 +260,15 @@ function LandingPage() {
               </div>
 
               <div className="text-center max-w-3xl mx-auto border-t border-earth-700/10 pt-12">
-                <p className="text-lg text-earth-700/70 italic leading-relaxed" style={{whiteSpace: 'pre-line'}}>
+                <p className="text-lg text-earth-700/70 italic leading-relaxed mb-8" style={{whiteSpace: 'pre-line'}}>
                   "{home.threePhaseJourney.quote}"
                 </p>
+                <Link
+                  to="/pricing"
+                  className="inline-block text-sacred-gold hover:text-sacred-amber transition-colors text-lg font-medium"
+                >
+                  View complete pricing breakdown →
+                </Link>
               </div>
             </div>
           </div>
@@ -493,9 +499,14 @@ function LandingPage() {
                 </div>
               </div>
 
-              <div className="text-center mt-12">
-                <p className="text-lg text-earth-700/70 leading-relaxed">
-                  <Link to="/faq" className="text-sacred-gold hover:text-sacred-amber transition-colors">
+              <div className="text-center mt-12 space-y-4">
+                <p className="text-lg text-earth-700/80">
+                  <Link to="/pricing" className="text-sacred-gold hover:text-sacred-amber transition-colors font-medium">
+                    View detailed pricing & packages →
+                  </Link>
+                </p>
+                <p className="text-base text-earth-700/70">
+                  <Link to="/faq" className="text-earth-700/70 hover:text-sacred-gold transition-colors">
                     {home.pricingTransparency.link}
                   </Link>
                 </p>

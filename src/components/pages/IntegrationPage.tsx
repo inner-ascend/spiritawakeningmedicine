@@ -316,6 +316,15 @@ export default function IntegrationPage() {
                 </p>
               </div>
             </div>
+
+            <div className="text-center mt-12">
+              <Link
+                to="/pricing"
+                className="inline-block text-sacred-gold hover:text-sacred-amber transition-colors text-lg font-medium"
+              >
+                Compare all service pricing →
+              </Link>
+            </div>
           </div>
         </div>
       </div>

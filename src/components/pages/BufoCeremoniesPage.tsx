@@ -497,9 +497,15 @@ export default function BufoCeremoniesPage() {
               <p className="text-lg text-earth-700/80 mb-4">
                 {t.investment.accessibility}
               </p>
-              <p className="text-earth-700/70 italic">
+              <p className="text-earth-700/70 italic mb-8">
                 "{t.investment.quote}"
               </p>
+              <Link
+                to="/pricing"
+                className="inline-block text-sacred-gold hover:text-sacred-amber transition-colors text-lg font-medium"
+              >
+                Explore all pricing options →
+              </Link>
             </div>
           </div>
         </div>

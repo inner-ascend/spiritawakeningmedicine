@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
+import ResponsiveImage from '../shared/ResponsiveImage';
 
 export default function ServicesPage() {
   const scrollToTop = () => {
@@ -13,10 +14,12 @@ export default function ServicesPage() {
       {/* Full-Screen Opening */}
       <div className="h-screen relative flex items-center justify-center">
         <div className="absolute inset-0">
-          <img
+          <ResponsiveImage
             src="/images/atmosphere/ceremony-08.jpeg"
             alt="Sacred ceremony space"
             className="w-full h-full object-cover"
+            priority={true}
+            loading="eager"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-cosmic-900/80 via-indigo-deep/70 to-black/90">

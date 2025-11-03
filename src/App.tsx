@@ -13,6 +13,7 @@ import SupportPage from './components/SupportPage';
 import PrivacyPage from './components/PrivacyPage';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
+import ResponsiveImage from './components/shared/ResponsiveImage';
 import AboutPageNew from './components/pages/AboutPageNew';
 import BufoCeremoniesPage from './components/pages/BufoCeremoniesPage';
 import PreparationPage from './components/pages/PreparationPage';
@@ -44,10 +45,12 @@ function LandingPage() {
         <div className="h-screen relative flex items-center justify-center">
           {/* Hero Background Image */}
           <div className="absolute inset-0">
-            <img
+            <ResponsiveImage
               src="/images/locations/sonoran-desert-sunset.jpg"
               alt="Sonoran Desert landscape at golden hour"
               className="w-full h-full object-cover"
+              priority={true}
+              loading="eager"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-earth-900/60 via-earth-900/50 to-earth-900"></div>
@@ -199,7 +202,7 @@ function LandingPage() {
                 {/* Phase 1: Preparation */}
                 <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
                   <div className="aspect-[4/5] relative">
-                    <img
+                    <ResponsiveImage
                       src="/images/atmosphere/ceremony-04.jpg"
                       alt="Preparation practices"
                       className="w-full h-full object-cover"
@@ -219,7 +222,7 @@ function LandingPage() {
                 {/* Phase 2: Ceremony */}
                 <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
                   <div className="aspect-[4/5] relative">
-                    <img
+                    <ResponsiveImage
                       src="/images/atmosphere/ceremony-05.jpg"
                       alt="Sacred ceremony space"
                       className="w-full h-full object-cover"
@@ -239,7 +242,7 @@ function LandingPage() {
                 {/* Phase 3: Integration */}
                 <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
                   <div className="aspect-[4/5] relative">
-                    <img
+                    <ResponsiveImage
                       src="/images/atmosphere/ceremony-07.jpeg"
                       alt="Integration and embodiment"
                       className="w-full h-full object-cover"
@@ -333,7 +336,7 @@ function LandingPage() {
 
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
                 <div className="aspect-square relative overflow-hidden rounded-lg group">
-                  <img
+                  <ResponsiveImage
                     src="/images/atmosphere/ceremony-08.jpeg"
                     alt="Ceremony atmosphere"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -342,7 +345,7 @@ function LandingPage() {
                   <div className="absolute inset-0 bg-earth-900/20 group-hover:bg-earth-900/0 transition-colors"></div>
                 </div>
                 <div className="aspect-square relative overflow-hidden rounded-lg group">
-                  <img
+                  <ResponsiveImage
                     src="/images/atmosphere/ceremony-11.jpeg"
                     alt="Sacred ceremony space"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -351,7 +354,7 @@ function LandingPage() {
                   <div className="absolute inset-0 bg-earth-900/20 group-hover:bg-earth-900/0 transition-colors"></div>
                 </div>
                 <div className="aspect-square relative overflow-hidden rounded-lg group">
-                  <img
+                  <ResponsiveImage
                     src="/images/atmosphere/ceremony-12.jpeg"
                     alt="Preparation setting"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -360,7 +363,7 @@ function LandingPage() {
                   <div className="absolute inset-0 bg-earth-900/20 group-hover:bg-earth-900/0 transition-colors"></div>
                 </div>
                 <div className="aspect-square relative overflow-hidden rounded-lg group">
-                  <img
+                  <ResponsiveImage
                     src="/images/atmosphere/ceremony-13.jpeg"
                     alt="Integration circle"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -369,7 +372,7 @@ function LandingPage() {
                   <div className="absolute inset-0 bg-earth-900/20 group-hover:bg-earth-900/0 transition-colors"></div>
                 </div>
                 <div className="aspect-square relative overflow-hidden rounded-lg group">
-                  <img
+                  <ResponsiveImage
                     src="/images/atmosphere/ceremony-15.jpeg"
                     alt="Sacred altar and objects"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -378,7 +381,7 @@ function LandingPage() {
                   <div className="absolute inset-0 bg-earth-900/20 group-hover:bg-earth-900/0 transition-colors"></div>
                 </div>
                 <div className="aspect-square relative overflow-hidden rounded-lg group">
-                  <img
+                  <ResponsiveImage
                     src="/images/atmosphere/ceremony-14.jpg"
                     alt="Sacred ceremony practice"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

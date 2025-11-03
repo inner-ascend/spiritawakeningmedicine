@@ -31,9 +31,15 @@ export default function RetreatsPage() {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-light text-sacred-white mb-8 leading-tight">
             {t.hero.title}
           </h1>
-          <p className="text-2xl md:text-3xl text-desert-sand/90 font-serif italic leading-relaxed max-w-3xl mx-auto">
+          <p className="text-2xl md:text-3xl text-desert-sand/90 font-serif italic leading-relaxed max-w-3xl mx-auto mb-10">
             {t.hero.subtitle}
           </p>
+          <Link
+            to="/contact"
+            className="inline-block bg-ocean-coral hover:bg-sacred-amber text-earth-900 px-10 py-4 rounded-full font-medium text-lg transition-all duration-300 hover:scale-105 shadow-lg"
+          >
+            Check Availability →
+          </Link>
         </div>
 
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
@@ -191,127 +197,22 @@ export default function RetreatsPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/40 to-earth-900/60"></div>
       </div>
 
-      {/* Collaborations Section */}
-      <div className="bg-earth-800 py-48">
+      {/* Collaborations CTA */}
+      <div className="bg-earth-800 py-32">
         <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            {/* Image Left */}
-            <div>
-              <div className="relative shadow-2xl">
-                <img
-                  src="/images/portraits/nina-astral-together.jpg"
-                  alt="Collaborative retreat facilitation"
-                  className="w-full aspect-[4/5] object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Text Right */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
-                  {t.collaborations.title}
-                </h2>
-                <p className="text-xl text-desert-sand/80 leading-relaxed italic mb-8">
-                  {t.collaborations.subtitle}
-                </p>
-              </div>
-
-              <div className="space-y-6 text-lg text-desert-sand/80 leading-relaxed">
-                <p>
-                  {t.collaborations.description}
-                </p>
-
-                <h3 className="text-2xl font-serif text-ocean-coral pt-4">{t.collaborations.whatWeOffer}</h3>
-
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <span className="text-ocean-coral mt-1">⊕</span>
-                    <span><strong className="text-sacred-white">{t.collaborations.offer1Title}</strong> {t.collaborations.offer1}</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-ocean-coral mt-1">⊕</span>
-                    <span><strong className="text-sacred-white">{t.collaborations.offer2Title}</strong> {t.collaborations.offer2}</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-ocean-coral mt-1">⊕</span>
-                    <span><strong className="text-sacred-white">{t.collaborations.offer3Title}</strong> {t.collaborations.offer3}</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="text-ocean-coral mt-1">⊕</span>
-                    <span><strong className="text-sacred-white">{t.collaborations.offer4Title}</strong> {t.collaborations.offer4}</span>
-                  </div>
-                </div>
-
-                <div className="pt-8">
-                  <Link
-                    to="/contact"
-                    className="inline-block px-10 py-4 bg-ocean-coral text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
-                  >
-                    {t.collaborations.button}
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Who We Collaborate With */}
-      <div className="bg-sacred-cream py-48">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
-              {t.whoWeCollaborateWith.title}
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
+              Interested in Collaborating?
             </h2>
-
-            <div className="grid md:grid-cols-2 gap-12 mb-16">
-              <div className="space-y-4">
-                <h3 className="text-2xl font-serif text-earth-800 flex items-center gap-3">
-                  <span className="text-ocean-coral">✧</span>
-                  {t.whoWeCollaborateWith.retreatCenters.title}
-                </h3>
-                <p className="text-earth-700/80 leading-relaxed">
-                  {t.whoWeCollaborateWith.retreatCenters.description}
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="text-2xl font-serif text-earth-800 flex items-center gap-3">
-                  <span className="text-ocean-coral">✧</span>
-                  {t.whoWeCollaborateWith.communities.title}
-                </h3>
-                <p className="text-earth-700/80 leading-relaxed">
-                  {t.whoWeCollaborateWith.communities.description}
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="text-2xl font-serif text-earth-800 flex items-center gap-3">
-                  <span className="text-ocean-coral">✧</span>
-                  {t.whoWeCollaborateWith.facilitators.title}
-                </h3>
-                <p className="text-earth-700/80 leading-relaxed">
-                  {t.whoWeCollaborateWith.facilitators.description}
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="text-2xl font-serif text-earth-800 flex items-center gap-3">
-                  <span className="text-ocean-coral">✧</span>
-                  {t.whoWeCollaborateWith.training.title}
-                </h3>
-                <p className="text-earth-700/80 leading-relaxed">
-                  {t.whoWeCollaborateWith.training.description}
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-medicine-venom rounded-2xl p-8 text-center">
-              <p className="text-earth-700/80 leading-relaxed italic">
-                "{t.whoWeCollaborateWith.quote}"
-              </p>
-            </div>
+            <p className="text-lg text-desert-sand/80 mb-8 leading-relaxed">
+              We partner with retreat centers, communities, facilitators, and healers to create transformational containers.
+            </p>
+            <Link
+              to="/collaborations"
+              className="inline-block bg-ocean-coral hover:bg-sacred-amber text-earth-900 px-10 py-4 rounded-full font-medium text-lg transition-all duration-300 hover:scale-105 shadow-lg"
+            >
+              Learn About Partnerships →
+            </Link>
           </div>
         </div>
       </div>

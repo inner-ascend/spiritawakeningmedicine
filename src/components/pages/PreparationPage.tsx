@@ -357,58 +357,22 @@ export default function PreparationPage() {
         </div>
       </div>
 
-      {/* Investment */}
-      <div className="bg-sacred-cream py-48">
+      {/* Investment CTA */}
+      <div className="bg-sacred-cream py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12">
-              {t.investment.title}
+            <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
+              Investment & Pricing
             </h2>
-
-            <div className="bg-white rounded-2xl p-12 border border-earth-700/20 mb-12">
-              <h3 className="text-3xl font-serif text-earth-800 mb-4">{t.investment.sessionTitle}</h3>
-              <div className="text-5xl font-serif text-desert-sage mb-6">{t.investment.price}</div>
-              <p className="text-lg text-earth-700/70 mb-8">{t.investment.perSession}</p>
-
-              <div className="text-earth-700/80 leading-relaxed max-w-md mx-auto">
-                <p className="mb-4">
-                  <strong className="text-earth-800">{t.investment.typical}</strong>{t.investment.typicalDetail}
-                </p>
-                <p className="text-sm text-earth-700/60">
-                  {t.investment.delivery}
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-medicine-venom rounded-2xl p-8 mb-12">
-              <h4 className="text-xl font-serif text-earth-800 mb-4">{t.investment.slidingTitle}</h4>
-              <p className="text-earth-700/80 leading-relaxed">
-                {t.investment.slidingDescription}
-              </p>
-              <p className="text-earth-700/70 italic mt-4">
-                "{t.investment.quote}"
-              </p>
-            </div>
-
-            <div className="text-center space-y-4">
-              <p className="text-lg text-earth-700/80">
-                {t.investment.readyQuestion}
-              </p>
-              <Link
-                to="/contact"
-                className="inline-block px-12 py-4 bg-desert-sage text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
-              >
-                {t.investment.cta}
-              </Link>
-              <p className="text-sm text-earth-700/60">
-                {t.investment.process}
-              </p>
-              <p className="text-base text-earth-700/70 mt-6">
-                <Link to="/pricing" className="text-desert-sage hover:text-sacred-amber transition-colors">
-                  View complete journey pricing →
-                </Link>
-              </p>
-            </div>
+            <p className="text-lg text-earth-700/70 mb-8 leading-relaxed">
+              View preparation session pricing, complete journey packages, and our sliding scale accessibility program.
+            </p>
+            <Link
+              to="/pricing"
+              className="inline-block bg-desert-sage hover:bg-sacred-amber text-earth-900 px-10 py-4 rounded-full font-medium text-lg transition-all duration-300 hover:scale-105 shadow-lg"
+            >
+              View Pricing & Packages →
+            </Link>
           </div>
         </div>
       </div>

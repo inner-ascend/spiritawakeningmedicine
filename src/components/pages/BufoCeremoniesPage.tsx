@@ -34,10 +34,16 @@ export default function BufoCeremoniesPage() {
           <p className="text-2xl md:text-3xl text-sacred-purple/90 font-serif font-light mb-6">
             {t.hero.subtitle}
           </p>
-          <p className="text-lg md:text-xl text-desert-sand/80 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-desert-sand/80 leading-relaxed max-w-3xl mx-auto mb-10">
             {t.hero.description1}<br/>
             {t.hero.description2}
           </p>
+          <Link
+            to="/contact"
+            className="inline-block bg-sacred-purple hover:bg-sacred-gold text-white px-10 py-4 rounded-full font-medium text-lg transition-all duration-300 hover:scale-105 shadow-lg"
+          >
+            Check Availability →
+          </Link>
         </div>
 
         {/* Scroll Indicator */}
@@ -443,68 +449,22 @@ export default function BufoCeremoniesPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/20 to-earth-900/50"></div>
       </div>
 
-      {/* Investment */}
-      <div className="bg-sacred-cream py-48">
+      {/* Investment CTA */}
+      <div className="bg-sacred-cream py-32">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12">
-              {t.investment.title}
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
+              Investment & Pricing
             </h2>
-
-            <div className="bg-white rounded-2xl p-12 border-2 border-sacred-purple/30 mb-12">
-              <h3 className="text-3xl font-serif text-earth-800 mb-4">{t.investment.ceremony.title}</h3>
-              <div className="text-5xl font-serif text-sacred-purple mb-6">{t.investment.ceremony.price}</div>
-              <p className="text-lg text-earth-700/70 mb-8">{t.investment.ceremony.perPerson}</p>
-
-              <div className="text-left max-w-2xl mx-auto space-y-3 text-earth-700/80 leading-relaxed">
-                <p className="flex items-start gap-3">
-                  <span className="text-sacred-purple">✓</span>
-                  <span>{t.investment.ceremony.item1}</span>
-                </p>
-                <p className="flex items-start gap-3">
-                  <span className="text-sacred-purple">✓</span>
-                  <span>{t.investment.ceremony.item2}</span>
-                </p>
-                <p className="flex items-start gap-3">
-                  <span className="text-sacred-purple">✓</span>
-                  <span>{t.investment.ceremony.item3}</span>
-                </p>
-                <p className="flex items-start gap-3">
-                  <span className="text-sacred-purple">✓</span>
-                  <span>{t.investment.ceremony.item4}</span>
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-medicine-venom rounded-2xl p-8 mb-12">
-              <h4 className="text-xl font-serif text-earth-800 mb-4">{t.investment.complete.title}</h4>
-              <p className="text-earth-700/80 leading-relaxed mb-6">
-                {t.investment.complete.description}
-              </p>
-              <div className="space-y-2 text-earth-700/80">
-                <p>{t.investment.complete.preparation}</p>
-                <p>{t.investment.complete.ceremony}</p>
-                <p>{t.investment.complete.integration}</p>
-              </div>
-              <p className="text-sm text-earth-700/60 mt-6 italic">
-                {t.investment.complete.total}
-              </p>
-            </div>
-
-            <div className="text-center">
-              <p className="text-lg text-earth-700/80 mb-4">
-                {t.investment.accessibility}
-              </p>
-              <p className="text-earth-700/70 italic mb-8">
-                "{t.investment.quote}"
-              </p>
-              <Link
-                to="/pricing"
-                className="inline-block text-sacred-purple hover:text-sacred-amber transition-colors text-lg font-medium"
-              >
-                Explore all pricing options →
-              </Link>
-            </div>
+            <p className="text-lg text-earth-700/70 mb-8 leading-relaxed">
+              View complete ceremony pricing, package options, and our sliding scale accessibility program.
+            </p>
+            <Link
+              to="/pricing"
+              className="inline-block bg-sacred-purple hover:bg-sacred-gold text-white px-10 py-4 rounded-full font-medium text-lg transition-all duration-300 hover:scale-105 shadow-lg"
+            >
+              View Pricing & Packages →
+            </Link>
           </div>
         </div>
       </div>

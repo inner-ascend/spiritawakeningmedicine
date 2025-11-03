@@ -6,8 +6,7 @@
   "homepage": "https://spiritawakeningmedicine.com",
   "scripts": {
     "dev": "vite",
-    "optimize:images": "node scripts/optimize-images.js",
-    "build": "node scripts/optimize-images.js && tsc && vite build && node scripts/preserve-cname.js",
+    "build": "tsc && vite build && node scripts/preserve-cname.js",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"

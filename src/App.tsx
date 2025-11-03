@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, useParams, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useParams, Link } from 'react-router-dom';
 import './i18n';
 import { useLanguage } from './contexts/LanguageContext';
 import homeEN from './translations/pages/home/en.json';
@@ -14,7 +14,7 @@ import PrivacyPage from './components/PrivacyPage';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import ResponsiveImage from './components/shared/ResponsiveImage';
-import AboutPageNew from './components/pages/AboutPageNew';
+import AboutPage from './components/pages/AboutPage';
 import BufoCeremoniesPage from './components/pages/BufoCeremoniesPage';
 import PreparationPage from './components/pages/PreparationPage';
 import IntegrationPage from './components/pages/IntegrationPage';
@@ -24,12 +24,8 @@ import TestimonialsPage from './components/pages/TestimonialsPage';
 import RetreatsPage from './components/pages/RetreatsPage';
 import PricingPage from './components/pages/PricingPage';
 import CollaborationsPage from './components/pages/CollaborationsPage';
-import ScrollToTop from './components/ScrollToTop';
-// Old pages - archived (keeping for backwards compatibility)
-import ServicesPage from './components/pages/ServicesPage';
-import InnerAscendPage from './components/pages/InnerAscendPage';
 import ResourcesPage from './components/pages/ResourcesPage';
-// Removed old section components - now using visual storytelling approach
+import ScrollToTop from './components/ScrollToTop';
 
 // Main Landing Page Component
 function LandingPage() {
@@ -426,90 +422,22 @@ function LandingPage() {
           </div>
         </div>
 
-        {/* Pricing Transparency Section */}
-        <div className="bg-sacred-cream pt-36 pb-48">
+        {/* Investment & Pricing CTA */}
+        <div className="bg-sacred-cream py-32">
           <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-20">
-                <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
-                  {home.pricingTransparency.title}
-                </h2>
-                <p className="text-lg text-earth-700/70 italic">
-                  {home.pricingTransparency.subtitle}
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-3 gap-8 mb-16">
-                {/* Preparation */}
-                <div className="bg-white rounded-2xl p-8 border border-earth-700/10">
-                  <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{home.pricingTransparency.preparation.title}</h3>
-                  <p className="text-earth-700/70 text-center mb-6 leading-relaxed">
-                    {home.pricingTransparency.preparation.description}
-                  </p>
-                  <div className="text-center">
-                    <div className="text-3xl font-serif text-sacred-gold mb-2">{home.pricingTransparency.preparation.price}</div>
-                    <div className="text-sm text-earth-700/60">{home.pricingTransparency.preparation.unit}</div>
-                  </div>
-                </div>
-
-                {/* Ceremony */}
-                <div className="bg-white rounded-2xl p-8 border-2 border-sacred-gold/30 relative">
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-sacred-gold text-earth-900 px-4 py-1 rounded-full text-sm font-medium">
-                    {home.pricingTransparency.ceremony.badge}
-                  </div>
-                  <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{home.pricingTransparency.ceremony.title}</h3>
-                  <p className="text-earth-700/70 text-center mb-6 leading-relaxed">
-                    {home.pricingTransparency.ceremony.description}
-                  </p>
-                  <div className="text-center">
-                    <div className="text-3xl font-serif text-sacred-gold mb-2">{home.pricingTransparency.ceremony.price}</div>
-                    <div className="text-sm text-earth-700/60">{home.pricingTransparency.ceremony.unit}</div>
-                  </div>
-                  <div className="mt-6 text-center text-sm text-earth-700/60 leading-relaxed">
-                    {home.pricingTransparency.ceremony.includes}
-                  </div>
-                </div>
-
-                {/* Integration */}
-                <div className="bg-white rounded-2xl p-8 border border-earth-700/10">
-                  <h3 className="text-2xl font-serif text-earth-800 mb-4 text-center">{home.pricingTransparency.integration.title}</h3>
-                  <p className="text-earth-700/70 text-center mb-6 leading-relaxed">
-                    {home.pricingTransparency.integration.description}
-                  </p>
-                  <div className="text-center">
-                    <div className="text-3xl font-serif text-sacred-gold mb-2">{home.pricingTransparency.integration.price}</div>
-                    <div className="text-sm text-earth-700/60 mb-4">{home.pricingTransparency.integration.unit}</div>
-                    <div className="text-lg font-serif text-earth-800 mb-2">{home.pricingTransparency.integration.or}</div>
-                    <div className="text-2xl font-serif text-sacred-gold mb-2">{home.pricingTransparency.integration.packagePrice}</div>
-                    <div className="text-sm text-earth-700/60">{home.pricingTransparency.integration.packageUnit}</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-medicine-venom rounded-2xl p-8 max-w-3xl mx-auto">
-                <h4 className="text-xl font-serif text-earth-800 mb-4 text-center">{home.pricingTransparency.accessibility.title}</h4>
-                <div className="space-y-3 text-earth-700/80 text-center leading-relaxed">
-                  {home.pricingTransparency.accessibility.items.map((item, index) => (
-                    <p key={index}>{item}</p>
-                  ))}
-                  <p className="italic text-earth-700/70 pt-4">
-                    "{home.pricingTransparency.accessibility.quote}"
-                  </p>
-                </div>
-              </div>
-
-              <div className="text-center mt-12 space-y-4">
-                <p className="text-lg text-earth-700/80">
-                  <Link to="/pricing" className="text-sacred-gold hover:text-sacred-amber transition-colors font-medium">
-                    View detailed pricing & packages →
-                  </Link>
-                </p>
-                <p className="text-base text-earth-700/70">
-                  <Link to="/faq" className="text-earth-700/70 hover:text-sacred-gold transition-colors">
-                    {home.pricingTransparency.link}
-                  </Link>
-                </p>
-              </div>
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
+                Transparent Pricing & Accessibility
+              </h2>
+              <p className="text-lg text-earth-700/70 mb-8 leading-relaxed">
+                We believe sacred work should be accessible. View our complete pricing, including sliding scale options and payment plans.
+              </p>
+              <Link
+                to="/pricing"
+                className="inline-block bg-sacred-gold hover:bg-sacred-amber text-earth-900 px-10 py-4 rounded-full font-medium text-lg transition-all duration-300 hover:scale-105 shadow-lg"
+              >
+                View Pricing & Packages →
+              </Link>
             </div>
           </div>
         </div>
@@ -572,7 +500,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/about" element={<AboutPageNew />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/ceremonies" element={<BufoCeremoniesPage />} />
         <Route path="/preparation" element={<PreparationPage />} />
         <Route path="/integration" element={<IntegrationPage />} />
@@ -582,10 +510,10 @@ function App() {
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/collaborations" element={<CollaborationsPage />} />
-        {/* Old routes - keeping for backwards compatibility */}
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/inner-ascend" element={<InnerAscendPage />} />
         <Route path="/resources" element={<ResourcesPage />} />
+        {/* Redirects for old deprecated pages */}
+        <Route path="/services" element={<Navigate to="/ceremonies" replace />} />
+        <Route path="/inner-ascend" element={<Navigate to="/about" replace />} />
         {/* Utility routes */}
         <Route path="/event/:id" element={<EventRoute />} />
         <Route path="/place/:id" element={<PlaceRoute />} />

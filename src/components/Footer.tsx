@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="grid md:grid-cols-5 gap-12 mb-16">
             {/* Brand Column */}
             <div className="space-y-4">
-              <h3 className="text-xl font-serif text-sacred-gold">Spirit Awakening Medicine</h3>
+              <h3 className="text-xl font-serif text-sacred-gold">Inner Ascend</h3>
               <p className="text-desert-sand/60 text-sm leading-relaxed">
                 Sacred Bufo Alvarius ceremonies held with reverence for indigenous lineage and trauma-informed practice.
               </p>
@@ -88,10 +88,10 @@ export default function Footer() {
               <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">Connect</h4>
               <div className="space-y-3">
                 <a
-                  href="mailto:spiritawakeningmedicine@gmail.com"
+                  href="mailto:hello@inner-ascend.com"
                   className="block text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm"
                 >
-                  spiritawakeningmedicine@gmail.com
+                  hello@inner-ascend.com
                 </a>
                 <a
                   href="https://instagram.com/inner__ascend"
@@ -116,7 +116,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-desert-sand/50 text-sm text-center md:text-left">
               <p className="flex items-center gap-2 justify-center md:justify-start">
-                © {new Date().getFullYear()} Spirit Awakening Medicine
+                © {new Date().getFullYear()} Inner Ascend
                 All rights reserved
               </p>
             </div>

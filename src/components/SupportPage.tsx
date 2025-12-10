@@ -31,10 +31,10 @@ export default function SupportPage() {
                   For questions about services, bookings, or your journey with us:
                 </p>
                 <a
-                  href="mailto:hello@spiritawakeningmedicine.com"
+                  href="mailto:hello@inner-ascend.com"
                   className="inline-block px-8 py-3 bg-sacred-gold text-earth-900 rounded-full font-medium hover:bg-sacred-amber transition-all"
                 >
-                  Email: hello@spiritawakeningmedicine.com
+                  Email: hello@inner-ascend.com
                 </a>
               </div>
 
@@ -107,12 +107,12 @@ export default function SupportPage() {
                   Follow our journey and daily teachings on Instagram
                 </p>
                 <a
-                  href="https://instagram.com/spiritawakeningmedicine"
+                  href="https://instagram.com/inner__ascend"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block text-sacred-gold hover:text-sacred-amber transition-colors"
                 >
-                  @spiritawakeningmedicine
+                  @inner__ascend
                 </a>
               </div>
 

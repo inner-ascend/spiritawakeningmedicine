@@ -15,7 +15,7 @@ if (!fs.existsSync(distPath)) {
 }
 
 // Write CNAME file
-fs.writeFileSync(cnamePath, 'spiritawakeningmedicine.com\n');
+fs.writeFileSync(cnamePath, 'inner-ascend.com\n');
 
 // Copy index.html as 404.html for GitHub Pages SPA routing
 const indexPath = path.join(distPath, 'index.html');

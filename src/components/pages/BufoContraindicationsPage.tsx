@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
 import { AlertTriangle, Heart, Brain, Pill, ShieldAlert, HelpCircle } from 'lucide-react';
+import Navigation from '../Navigation';
+import Footer from '../Footer';
 
 const BufoContraindicationsPage = () => {
   return (
     <div className="min-h-screen bg-sacred-cream">
+      <Navigation />
       {/* Header */}
       <div className="pt-32 pb-16 bg-earth-800">
         <div className="container mx-auto px-4">
@@ -402,6 +405,7 @@ const BufoContraindicationsPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

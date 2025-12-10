@@ -1008,12 +1008,33 @@ export default function OnePagerPage() {
               </div>
             </div>
 
-            <a
-              href="#contact"
-              className="inline-block px-12 py-4 bg-sacred-purple text-white rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
-            >
-              {ceremonies.application.cta}
-            </a>
+            {/* Direct Application Links */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                href="/bufo-screening"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-4 bg-sacred-purple text-white rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
+              >
+                Start Medical Screening →
+              </a>
+              <a
+                href="/bufo-consent"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-4 bg-earth-800 text-white rounded-full hover:bg-earth-700 transition-all font-medium text-lg shadow-lg"
+              >
+                Ceremony Consent Form →
+              </a>
+              <a
+                href="/bufo-contraindications"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-4 border-2 border-sacred-purple text-sacred-purple rounded-full hover:bg-sacred-purple hover:text-white transition-all font-medium text-lg"
+              >
+                Safety & Contraindications
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -1201,6 +1222,40 @@ export default function OnePagerPage() {
                   <h3 className="text-xl font-serif text-sacred-white mb-3">{contact.otherWays.location.title}</h3>
                   <p className="text-sacred-gold">{contact.otherWays.location.place}</p>
                   <p className="text-xs text-desert-sand/60 mt-1">{contact.otherWays.location.note}</p>
+                </div>
+
+                {/* Application Process Links */}
+                <div className="bg-sacred-purple/20 backdrop-blur-xl rounded-2xl p-6 border border-sacred-purple/30">
+                  <h3 className="text-xl font-serif text-sacred-white mb-4">Application Process</h3>
+                  <div className="space-y-3">
+                    <a
+                      href="/bufo-screening"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 text-desert-sand hover:text-sacred-gold transition-colors"
+                    >
+                      <span className="text-sacred-purple">→</span>
+                      <span>Medical Screening Questionnaire</span>
+                    </a>
+                    <a
+                      href="/bufo-consent"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 text-desert-sand hover:text-sacred-gold transition-colors"
+                    >
+                      <span className="text-sacred-purple">→</span>
+                      <span>Ceremony Consent Form</span>
+                    </a>
+                    <a
+                      href="/bufo-contraindications"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 text-desert-sand hover:text-sacred-gold transition-colors"
+                    >
+                      <span className="text-sacred-purple">→</span>
+                      <span>Contraindications & Safety Info</span>
+                    </a>
+                  </div>
                 </div>
               </div>
 

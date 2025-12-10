@@ -47,18 +47,18 @@
     "description": "Sacred medicine work requires preparation, presence, and integration. This is not a shortcut. This is the work of a lifetime.",
     "preparation": {
       "title": "Preparation",
-      "description": "1-2 sessions to assess emotional readiness, anchor your nervous system, and create a sacred container for what's to come.",
-      "price": "€111 per session"
+      "description": "Open the field. Anchor the nervous system. Begin with clarity.",
+      "price": "$100 USD / €90 per session"
     },
     "ceremony": {
       "title": "Ceremony",
-      "description": "The sacred passage. Held in small, intimate settings (2-4 people max) in Mazunte, Oaxaca, Mexico. Full energetic holding and support.",
-      "price": "€300-500 per person"
+      "description": "A sacred passage into remembrance. Held with lineage, trauma-informed care, and full presence.",
+      "price": "$180-350 USD (€160-320)"
     },
     "integration": {
       "title": "Integration",
-      "description": "Where the real work happens. Post-journey support, meaning-making, and embodying the remembrance into your daily life.",
-      "price": "€88-111 per session"
+      "description": "Insight becomes embodiment. Anchoring remembrance into daily life.",
+      "price": "$80-100 USD (€70-90) per session"
     },
     "quote": "Insight without integration is just spiritual entertainment.\nThis isn't a quick fix. This isn't a weekend workshop.\nThis is the work of a lifetime—compressed into the time your soul needs."
   },
@@ -100,41 +100,47 @@
     "link": "Read more testimonials →"
   },
   "pricingTransparency": {
-    "transition": "What this costs.",
-    "title": "Investment & Accessibility",
-    "subtitle": "Transparent pricing. Sliding scale available.",
+    "transition": "A sacred path, never transactional.",
+    "title": "Pricing",
+    "subtitle": "This work is offered with reverence, discernment, and deep presence. Pricing reflects the time, preparation, energetic holding, and integration required—while remaining aligned with local realities in Mexico.",
     "preparation": {
       "title": "Preparation",
-      "description": "1-2 sessions required before ceremony",
-      "price": "€111",
-      "unit": "per session"
+      "description": "Optional but highly recommended for first-time participants",
+      "price": "$100 USD",
+      "priceEur": "€90",
+      "unit": "per session",
+      "includes": "Emotional readiness assessment, nervous system anchoring, intention refinement, safety & medical review"
     },
     "ceremony": {
       "title": "Ceremony",
       "badge": "Sacred Passage",
-      "description": "2-4 people max, Mazunte, Mexico",
-      "price": "€300-500",
+      "description": "Group Ceremony (2-4 people)",
+      "price": "$180-250 USD",
+      "priceEur": "€160-230",
       "unit": "per person",
-      "includes": "Includes pre-ceremony consultation, ceremony, integration within 48hrs, 2-week follow-up"
+      "privateLabel": "Private Ceremony (Individual or Couple)",
+      "privatePrice": "$250-350 USD (€230-320)",
+      "includes": "Pre-ceremony consultation, opening prayer, ceremony, breath/touch/sound support, full day of care, 48hr integration, 2-week follow-up",
+      "note": "Ceremony dates are only offered after preparation and mutual discernment."
     },
     "integration": {
       "title": "Integration",
-      "description": "Post-journey support",
-      "price": "€88-111",
+      "description": "Insight becomes embodiment",
+      "price": "$80-100 USD",
+      "priceEur": "€70-90",
       "unit": "per session",
-      "or": "or",
-      "packagePrice": "€300-400",
-      "packageUnit": "4-session package"
+      "includes": "Meaning-making, somatic grounding, repatterning, lifestyle integration, continued support"
     },
     "accessibility": {
       "title": "Accessibility",
       "items": [
-        "Sliding scale available based on financial situation",
-        "BIPOC and single parent discounts",
-        "Payment plans offered"
+        "When the call is genuine, we walk together",
+        "If finances are a barrier, speak openly",
+        "We honor sincerity over money"
       ],
-      "quote": "No one is ever turned away for lack of funds when the call is genuine."
+      "quote": "No one is ever turned away for genuine calling and readiness."
     },
+    "medicalNote": "Safety is sacred. All participants must complete a medical questionnaire and review before any ceremony.",
     "link": "Read FAQ & Safety Information →"
   },
   "readyToBegin": {

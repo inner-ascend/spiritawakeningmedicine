@@ -688,7 +688,8 @@ export default function OnePagerPage() {
         </div>
       </section>
 
-      {/* ========== SECTION 12: TESTIMONIALS ========== */}
+      {/* ========== SECTION 12: TESTIMONIALS (HIDDEN) ========== */}
+      {/* Testimonials section hidden per request
       <section id="testimonials" className="bg-earth-800 pt-36 pb-48">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -709,6 +710,7 @@ export default function OnePagerPage() {
           </div>
         </div>
       </section>
+      */}
 
       {/* ========== SECTION 13: INVESTMENT & PRICING ========== */}
       <section id="pricing" className="bg-sacred-cream py-48">

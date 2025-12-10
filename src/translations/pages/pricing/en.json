@@ -1,39 +1,42 @@
 {
   "hero": {
-    "title": "Investment in Sacred Transformation",
-    "subtitle": "Transparent Pricing for Sacred Work",
-    "description": "This work is never sold. Only offered. Sliding scale available. No one is ever turned away for lack of funds when the call is genuine.",
-    "quote": "The value of remembering who you are cannot be measured. But sacred exchange honors the work."
+    "title": "Pricing",
+    "subtitle": "A sacred path, never transactional.",
+    "description": "This work is offered with reverence, discernment, and deep presence. Pricing reflects the time, preparation, energetic holding, and integration required for a safe and meaningful initiation—while remaining aligned with local realities in Mexico.",
+    "quote": "No one is ever turned away for genuine calling and readiness."
   },
   "journeyPackages": {
     "title": "Journey Packages",
-    "description": "Complete pathways from preparation through integration. These packages represent the full arc of transformation.",
+    "description": "Complete pathways for those who feel called to walk deeper.",
     "essential": {
       "title": "Essential Journey",
-      "price": "€500-800+",
-      "description": "The foundational path for those ready to begin",
-      "item1": "1-2 Preparation sessions (€111 each)",
-      "item2": "Bufo Ceremony (€300-500)",
-      "item3": "48hr Integration + 2-week follow-up (included)"
+      "price": "$300-500 USD",
+      "priceEur": "€270-450",
+      "description": "For those beginning the path",
+      "item1": "1 Preparation Session",
+      "item2": "Ceremony",
+      "item3": "48hr Integration (included)"
     },
     "complete": {
       "title": "Complete Journey",
-      "badge": "Recommended",
-      "price": "€800-1,200",
-      "description": "The most complete path for deep transformation",
-      "item1": "1-2 Preparation sessions",
-      "item2": "Bufo Ceremony with full support",
-      "item3": "48hr Integration (included)",
-      "item4": "4-Session Integration Package (€300-400)"
+      "badge": "Most Balanced",
+      "price": "$500-800 USD",
+      "priceEur": "€450-720",
+      "description": "The most balanced and supportive arc",
+      "item1": "1-2 Preparation Sessions",
+      "item2": "Ceremony with full support",
+      "item3": "48hr Integration",
+      "item4": "2-3 Ongoing Integration Sessions"
     },
     "deepWork": {
       "title": "Deep Work Container",
-      "price": "€1,200-2,000+",
-      "description": "Extended integration for lasting transformation",
-      "item1": "Full Preparation + Ceremony",
-      "item2": "48hr Integration (included)",
-      "item3": "6-Week Deep Presence (€333-777) OR",
-      "item4": "3-Month Journey (€888-1,111)"
+      "price": "$900-1,500 USD",
+      "priceEur": "€820-1,380",
+      "description": "For those ready for profound, sustained transformation",
+      "item1": "Full Preparation",
+      "item2": "Private Ceremony",
+      "item3": "48hr Integration",
+      "item4": "4-6 Week Integration Package"
     },
     "note": "Insight without integration is just spiritual entertainment. This is the work of a lifetime."
   },
@@ -42,38 +45,49 @@
     "description": "Each phase of the journey can also be engaged separately",
     "preparation": {
       "title": "Preparation",
-      "price": "€111",
+      "price": "$100 USD",
+      "priceEur": "€90",
       "unit": "per session",
-      "description": "1-2 sessions required before ceremony (60-75 minutes each)",
+      "description": "Optional but highly recommended for first-time participants",
       "item1": "Emotional readiness assessment",
       "item2": "Nervous system anchoring",
-      "item3": "Facing fears & setting intentions",
-      "item4": "Medical screening process"
+      "item3": "Intention refinement",
+      "item4": "Safety & medical review",
+      "item5": "Opening the ceremonial container"
     },
     "ceremony": {
       "title": "Ceremony",
       "badge": "Sacred Passage",
-      "price": "€300-500",
+      "groupLabel": "Group Ceremony (2-4 people)",
+      "price": "$180-250 USD",
+      "priceEur": "€160-230",
       "unit": "per person",
-      "description": "Small groups (2-4 max) in Mazunte, Oaxaca, Mexico",
+      "privateLabel": "Private Ceremony (Individual or Couple)",
+      "privatePrice": "$250-350 USD",
+      "privatePriceEur": "€230-320",
+      "description": "A sacred passage into remembrance. Held with lineage, trauma-informed care, and full presence.",
       "item1": "Pre-ceremony consultation",
-      "item2": "Full Bufo ceremony with energetic holding",
-      "item3": "Full day of care and support",
-      "item4": "Integration session within 48 hours (INCLUDED)",
-      "item5": "2-week follow-up support (INCLUDED)"
+      "item2": "Opening prayer & container creation",
+      "item3": "Bufo ceremony (lineage-guided, ethical, trauma-informed)",
+      "item4": "Breath, touch, and sound-based support",
+      "item5": "Full day of care and post-ceremony rest",
+      "item6": "Integration session within 48 hours",
+      "item7": "2-week follow-up support",
+      "note": "Ceremony dates are only offered after preparation and mutual discernment."
     },
     "integration": {
       "title": "Integration",
-      "price": "€88-111",
+      "price": "$80-100 USD (€70-90)",
+      "priceEur": "€70-90",
       "unit": "per session",
       "or": "or",
-      "packagePrice": "€300-400",
+      "packagePrice": "$300 USD (€270)",
       "packageUnit": "4-session package",
-      "description": "Where the real work happens (75 minutes each)",
-      "item1": "Post-journey emotional support",
-      "item2": "Story unwinding & meaning-making",
-      "item3": "Identity realignment",
-      "item4": "Life integration practices"
+      "description": "Insight becomes embodiment. Anchoring remembrance into daily life.",
+      "item1": "Meaning-making and emotional processing",
+      "item2": "Somatic grounding practices",
+      "item3": "Repatterning and energetic alignment",
+      "item4": "Guidance for lifestyle integration"
     }
   },
   "retreats": {
@@ -81,7 +95,8 @@
     "description": "Multi-day containers for complete transformation in sacred space",
     "bufoRetreats": {
       "title": "Bufo Retreat Containers",
-      "price": "€1,500-3,000",
+      "price": "$800-1,800 USD",
+      "priceEur": "€750-1,650",
       "description": "3-7 day immersions (2-6 people max)",
       "item1": "Complete journey: preparation, ceremony, integration",
       "item2": "Accommodation in sacred space",
@@ -91,33 +106,39 @@
     },
     "integrationIntensives": {
       "title": "Integration Intensives",
-      "price": "€500-1,200",
+      "price": "$400-900 USD",
+      "priceEur": "€360-820",
       "description": "Weekend containers (2-4 days)",
       "item1": "Group circles (sharing, witnessing)",
       "item2": "Somatic practices (breathwork, movement)",
       "item3": "Nature immersion (beach, jungle, silent walks)",
       "item4": "Energy work (individual sessions available)"
     },
-    "link": "Learn more about retreats →"
+    "link": "Learn more about retreats"
   },
   "accessibility": {
-    "title": "Accessibility & Payment",
-    "subtitle": "This medicine is for all who are called",
+    "title": "Accessibility",
+    "subtitle": "When the call is genuine, we walk together.",
+    "description": "If you feel the medicine is part of your path but finances are a barrier, speak openly. We honor sincerity, readiness, and mutual discernment over money.",
     "slidingScale": {
-      "title": "Sliding Scale & Discounts",
+      "title": "Accessibility Options",
       "item1": "Sliding scale available based on financial situation",
-      "item2": "BIPOC discounts offered",
-      "item3": "Single parent discounts available",
+      "item2": "If finances are a barrier, speak openly",
+      "item3": "We honor sincerity over money",
       "item4": "Payment plans can be arranged"
     },
     "paymentMethods": {
       "title": "Payment Methods",
-      "item1": "Bank transfer (EUR, USD)",
+      "item1": "Bank transfer (USD, EUR)",
       "item2": "PayPal / Stripe",
-      "item3": "Major cryptocurrencies accepted (BTC, ETH, USDT, etc.)",
+      "item3": "Major cryptocurrencies accepted (BTC, ETH, USDT)",
       "item4": "Cash (in-person only)"
     },
-    "quote": "No one is ever turned away for lack of funds when the call is genuine."
+    "quote": "No one is ever turned away for genuine calling and readiness."
+  },
+  "medicalNote": {
+    "title": "Medical Screening Required",
+    "description": "Safety is sacred. All participants must complete a medical questionnaire and review before any ceremony."
   },
   "cta": {
     "title": "Ready to Begin?",

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
 import ResponsiveImage from '../shared/ResponsiveImage';
@@ -50,46 +49,6 @@ export default function OnePagerPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
-  };
-
-  // Contact form state
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-  const [sending, setSending] = useState(false);
-  const [sent, setSent] = useState(false);
-  const [error, setError] = useState('');
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setSending(true);
-    setError('');
-
-    try {
-      await emailjs.send(
-        'service_ld9gstj',
-        'template_7iyu04b',
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-          to_email: 'hello@inner-ascend.com'
-        },
-        'v57Ta98pwBDWpoe8o'
-      );
-
-      setSent(true);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (err) {
-      setError(contact.contactForm.error);
-      console.error('EmailJS error:', err);
-    } finally {
-      setSending(false);
-    }
   };
 
   // Select 6 FAQs for the one-pager
@@ -202,8 +161,8 @@ export default function OnePagerPage() {
       {/* ========== SECTION 3: IMAGE BREAK - Sonoran Medicine ========== */}
       <div className="h-[60vh] md:h-[60vh] relative overflow-hidden">
         <img
-          src="/images/locations/bufo-toad.jpg"
-          alt="Sonoran Lineage Medicine"
+          src="/images/locations/nina-astral-ceremony.jpg"
+          alt="Nina & Astral - Sacred ceremony space"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/30 to-earth-900/60"></div>
@@ -664,14 +623,18 @@ export default function OnePagerPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
               {[
-                { src: '/images/atmosphere/ceremony-08.jpeg', alt: 'Ceremony atmosphere' },
-                { src: '/images/atmosphere/ceremony-11.jpeg', alt: 'Sacred ceremony space' },
-                { src: '/images/atmosphere/ceremony-12.jpeg', alt: 'Preparation setting' },
-                { src: '/images/atmosphere/ceremony-13.jpeg', alt: 'Integration circle' },
-                { src: '/images/atmosphere/ceremony-15.jpeg', alt: 'Sacred altar and objects' },
-                { src: '/images/atmosphere/ceremony-14.jpg', alt: 'Sacred ceremony practice' },
+                { src: '/images/atmosphere/ceremony-20.jpeg', alt: 'Ceremony atmosphere' },
+                { src: '/images/atmosphere/ceremony-21.jpeg', alt: 'Sacred ceremony space' },
+                { src: '/images/atmosphere/ceremony-22.jpeg', alt: 'Preparation setting' },
+                { src: '/images/atmosphere/ceremony-23.jpeg', alt: 'Integration circle' },
+                { src: '/images/atmosphere/ceremony-24.jpg', alt: 'Sacred ceremony moment' },
+                { src: '/images/atmosphere/ceremony-25.jpg', alt: 'Ceremony practice' },
+                { src: '/images/atmosphere/ceremony-26.jpg', alt: 'Ritual space' },
+                { src: '/images/atmosphere/ceremony-27.jpg', alt: 'Sacred container' },
+                { src: '/images/atmosphere/ceremony-28.jpg', alt: 'Ceremony environment' },
+                { src: '/images/atmosphere/ceremony-29.jpg', alt: 'Sacred atmosphere' },
               ].map((image, index) => (
                 <div key={index} className="aspect-square relative overflow-hidden rounded-lg group">
                   <ResponsiveImage
@@ -831,7 +794,7 @@ export default function OnePagerPage() {
       </section>
 
       {/* ========== SECTION 14: MEDICAL SCREENING & CONTRAINDICATIONS ========== */}
-      <section className="bg-white py-48">
+      <section id="safety" className="bg-white py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="bg-desert-clay/10 border-l-4 border-desert-clay rounded-r-2xl p-8 mb-12">
@@ -1009,31 +972,40 @@ export default function OnePagerPage() {
             </div>
 
             {/* Direct Application Links */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a
-                href="/bufo-screening"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-8 py-4 bg-sacred-purple text-white rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
-              >
-                Start Medical Screening →
-              </a>
-              <a
-                href="/bufo-consent"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-8 py-4 bg-earth-800 text-white rounded-full hover:bg-earth-700 transition-all font-medium text-lg shadow-lg"
-              >
-                Ceremony Consent Form →
-              </a>
-              <a
-                href="/bufo-contraindications"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-8 py-4 border-2 border-sacred-purple text-sacred-purple rounded-full hover:bg-sacred-purple hover:text-white transition-all font-medium text-lg"
-              >
-                Safety & Contraindications
-              </a>
+            <div className="space-y-8">
+              {/* Safety & Screening Links */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a
+                  href="#safety"
+                  className="inline-block px-8 py-4 border-2 border-desert-clay text-desert-clay rounded-full hover:bg-desert-clay hover:text-white transition-all font-medium text-lg"
+                >
+                  Review Safety & Contraindications
+                </a>
+                <a
+                  href="/bufo-screening"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-8 py-4 bg-sacred-purple text-white rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
+                >
+                  Start Medical Screening →
+                </a>
+              </div>
+
+              {/* Consent Form with Intro */}
+              <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-8 border border-desert-sand/10">
+                <h4 className="text-xl font-serif text-sacred-white mb-4">Before the Ceremony</h4>
+                <p className="text-desert-sand/80 leading-relaxed mb-6">
+                  The consent form is a sacred agreement between you and us. It ensures you understand the nature of this work, the risks involved, and your own responsibility in this process. Please read it with full presence before signing.
+                </p>
+                <a
+                  href="/bufo-consent"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-8 py-4 bg-earth-800 text-white rounded-full hover:bg-earth-700 transition-all font-medium text-lg shadow-lg"
+                >
+                  Read & Sign Ceremony Consent Form →
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -1093,178 +1065,71 @@ export default function OnePagerPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12">
-              {/* Contact Form */}
-              <div>
-                {sent ? (
-                  <div className="bg-earth-900/50 backdrop-blur-xl rounded-2xl p-8 text-center border border-sacred-gold/30">
-                    <h3 className="text-2xl font-serif text-sacred-white mb-4">{contact.contactForm.successTitle}</h3>
-                    <p className="text-desert-sand/80 leading-relaxed mb-6">
-                      {contact.contactForm.successMessage}
-                    </p>
-                    <button
-                      onClick={() => setSent(false)}
-                      className="text-sacred-gold hover:text-sacred-amber transition-colors font-medium"
-                    >
-                      {contact.contactForm.sendAnother}
-                    </button>
-                  </div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="bg-earth-900/50 backdrop-blur-xl rounded-2xl p-8 space-y-6 border border-desert-sand/10">
-                    <div>
-                      <label htmlFor="name" className="block text-sacred-white font-serif mb-2">
-                        {contact.contactForm.fields.name}
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        required
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg bg-earth-800/50 border border-desert-sand/20 text-sacred-white focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 transition-all placeholder-desert-sand/40"
-                        placeholder={contact.contactForm.fields.namePlaceholder}
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="email" className="block text-sacred-white font-serif mb-2">
-                        {contact.contactForm.fields.email}
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        required
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg bg-earth-800/50 border border-desert-sand/20 text-sacred-white focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 transition-all placeholder-desert-sand/40"
-                        placeholder={contact.contactForm.fields.emailPlaceholder}
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="subject" className="block text-sacred-white font-serif mb-2">
-                        {contact.contactForm.fields.subject}
-                      </label>
-                      <input
-                        type="text"
-                        id="subject"
-                        required
-                        value={formData.subject}
-                        onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg bg-earth-800/50 border border-desert-sand/20 text-sacred-white focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 transition-all placeholder-desert-sand/40"
-                        placeholder={contact.contactForm.fields.subjectPlaceholder}
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="message" className="block text-sacred-white font-serif mb-2">
-                        {contact.contactForm.fields.message}
-                      </label>
-                      <textarea
-                        id="message"
-                        required
-                        rows={5}
-                        value={formData.message}
-                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg bg-earth-800/50 border border-desert-sand/20 text-sacred-white focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 transition-all resize-none placeholder-desert-sand/40"
-                        placeholder={contact.contactForm.fields.messagePlaceholder}
-                      />
-                    </div>
-
-                    {error && (
-                      <div className="bg-desert-clay/20 border-l-4 border-desert-clay rounded-r-lg p-4">
-                        <p className="text-desert-sand text-sm">{error}</p>
-                      </div>
-                    )}
-
-                    <button
-                      type="submit"
-                      disabled={sending}
-                      className="w-full px-8 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
-                    >
-                      {sending ? contact.contactForm.sending : contact.contactForm.send}
-                    </button>
-                  </form>
-                )}
+            <div className="max-w-2xl mx-auto">
+              {/* Primary CTA: Medical Screening */}
+              <div className="bg-earth-900/50 backdrop-blur-xl rounded-2xl p-10 border border-sacred-gold/30 text-center mb-8">
+                <h3 className="text-2xl font-serif text-sacred-white mb-4">Ready to Begin?</h3>
+                <p className="text-desert-sand/80 leading-relaxed mb-8">
+                  Start by completing the medical screening. This helps us understand if this work is right for you.
+                </p>
+                <a
+                  href="/bufo-screening"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-10 py-5 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-xl shadow-lg"
+                >
+                  Start Medical Screening
+                </a>
               </div>
 
-              {/* Contact Details */}
-              <div className="space-y-8">
-                <div className="bg-earth-900/50 backdrop-blur-xl rounded-2xl p-6 border border-desert-sand/10">
-                  <h3 className="text-xl font-serif text-sacred-white mb-3">{contact.otherWays.email.title}</h3>
-                  <a
-                    href="mailto:hello@inner-ascend.com"
-                    className="text-sacred-gold hover:text-sacred-amber transition-colors"
-                  >
-                    {contact.otherWays.email.address}
-                  </a>
-                </div>
+              {/* Secondary: Questions via WhatsApp */}
+              <div className="bg-earth-900/50 backdrop-blur-xl rounded-2xl p-6 border border-desert-sand/10 text-center mb-8">
+                <p className="text-desert-sand/70 mb-4">Have questions first?</p>
+                <a
+                  href="https://wa.me/33646396325?text=Hello%2C%20I%20have%20a%20question%20about%20your%20ceremonies."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-full hover:bg-[#128C7E] transition-all font-medium shadow-lg"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  Ask a Question on WhatsApp
+                </a>
+              </div>
 
-                <div className="bg-earth-900/50 backdrop-blur-xl rounded-2xl p-6 border border-desert-sand/10">
-                  <h3 className="text-xl font-serif text-sacred-white mb-3">{contact.otherWays.messaging.title}</h3>
-                  <p className="text-sacred-gold mb-1">{contact.otherWays.messaging.phone}</p>
-                  <p className="text-xs text-desert-sand/60">{contact.otherWays.messaging.telegram}</p>
-                </div>
+              {/* Other Contact Options */}
+              <div className="grid md:grid-cols-3 gap-4">
+                <a
+                  href="mailto:hello@inner-ascend.com"
+                  className="bg-earth-900/50 backdrop-blur-xl rounded-2xl p-6 border border-desert-sand/10 text-center hover:border-sacred-gold/30 transition-colors"
+                >
+                  <h4 className="text-lg font-serif text-sacred-white mb-2">Email</h4>
+                  <p className="text-sacred-gold text-sm">hello@inner-ascend.com</p>
+                </a>
 
-                <div className="bg-earth-900/50 backdrop-blur-xl rounded-2xl p-6 border border-desert-sand/10">
-                  <h3 className="text-xl font-serif text-sacred-white mb-3">{contact.otherWays.instagram.title}</h3>
-                  <a
-                    href="https://instagram.com/inner__ascend"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sacred-gold hover:text-sacred-amber transition-colors"
-                  >
-                    {contact.otherWays.instagram.handle}
-                  </a>
-                </div>
+                <a
+                  href="https://instagram.com/inner__ascend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-earth-900/50 backdrop-blur-xl rounded-2xl p-6 border border-desert-sand/10 text-center hover:border-sacred-gold/30 transition-colors"
+                >
+                  <h4 className="text-lg font-serif text-sacred-white mb-2">Instagram</h4>
+                  <p className="text-sacred-gold text-sm">@inner__ascend</p>
+                </a>
 
-                <div className="bg-earth-900/50 backdrop-blur-xl rounded-2xl p-6 border border-desert-sand/10">
-                  <h3 className="text-xl font-serif text-sacred-white mb-3">{contact.otherWays.location.title}</h3>
-                  <p className="text-sacred-gold">{contact.otherWays.location.place}</p>
-                  <p className="text-xs text-desert-sand/60 mt-1">{contact.otherWays.location.note}</p>
-                </div>
-
-                {/* Application Process Links */}
-                <div className="bg-sacred-purple/20 backdrop-blur-xl rounded-2xl p-6 border border-sacred-purple/30">
-                  <h3 className="text-xl font-serif text-sacred-white mb-4">Application Process</h3>
-                  <div className="space-y-3">
-                    <a
-                      href="/bufo-screening"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 text-desert-sand hover:text-sacred-gold transition-colors"
-                    >
-                      <span className="text-sacred-purple">→</span>
-                      <span>Medical Screening Questionnaire</span>
-                    </a>
-                    <a
-                      href="/bufo-consent"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 text-desert-sand hover:text-sacred-gold transition-colors"
-                    >
-                      <span className="text-sacred-purple">→</span>
-                      <span>Ceremony Consent Form</span>
-                    </a>
-                    <a
-                      href="/bufo-contraindications"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 text-desert-sand hover:text-sacred-gold transition-colors"
-                    >
-                      <span className="text-sacred-purple">→</span>
-                      <span>Contraindications & Safety Info</span>
-                    </a>
-                  </div>
+                <div className="bg-earth-900/50 backdrop-blur-xl rounded-2xl p-6 border border-desert-sand/10 text-center">
+                  <h4 className="text-lg font-serif text-sacred-white mb-2">Location</h4>
+                  <p className="text-sacred-gold text-sm">Mazunte, Oaxaca, Mexico</p>
                 </div>
               </div>
+            </div>
 
             {/* Softer Closing */}
             <div className="mt-16 text-center">
               <p className="text-2xl font-serif text-desert-sand/70 italic">
                 Walk slowly. If this is your path, you'll know.
               </p>
-            </div>
             </div>
           </div>
         </div>

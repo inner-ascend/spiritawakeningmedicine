@@ -10,10 +10,10 @@
   "whatIsBufo": {
     "transition": "What is this medicine?",
     "title": "The Sacred Medicine",
-    "subtitle": "Die before you die",
+    "subtitle": "Return to what you've always been",
     "intro": "The most potent and profound entheogenic compound on Earth",
     "paragraph1": "5-MeO-DMT is the only substance that can reliably introduce individuals to a state of full non-dual awareness, override the energetic structure of the ego, and reveal the unitary nature of reality. The medicine we work with is natural Bufo secretion, obtained through non-harmful, ethical, and lineage-guided methods by trained specialists in the Sonoran Desert. The toads are not harmed.",
-    "paragraph2": "This is not a psychedelic. It is a sacred teacher of death and pure remembrance. The effects begin within",
+    "paragraph2": "This is not a psychedelic. It is a sacred teacher of dissolution and pure remembrance. The effects begin within",
     "paragraph2Highlight": "seconds",
     "paragraph2Cont": "of inhalation. Despite its intensity, the passage is held in complete safety, grounding, and expert guidance. Complete ego dissolution. Non-dual consciousness. The remembrance of what you've always been.",
     "quote": "This work is by application only. If you are here, you were directed intentionally—guided, invited, or called. This medicine is not for everyone, and it is not a shortcut. This path requires humility, surrender, and integration."
@@ -23,9 +23,9 @@
     "subtitle": "(And who it's not for)",
     "forTitle": "This work is FOR:",
     "forList": [
-      "Those ready to die before they die",
+      "Those ready to surrender completely",
       "Those who've done deep inner work and feel called to complete something",
-      "Those seeking death of illusion, not an experience",
+      "Those seeking dissolution of illusion, not an experience",
       "Those ready to surrender and integrate",
       "Seekers tired of seeking",
       "Those who can no longer pretend"
@@ -48,7 +48,7 @@
     "preparation": {
       "title": "Preparation",
       "description": "Open the field. Anchor the nervous system. Begin with clarity.",
-      "price": "$100-120 USD (€90-110) per session"
+      "price": "$80-120 USD (€70-110) per session"
     },
     "ceremony": {
       "title": "Ceremony",
@@ -67,7 +67,7 @@
     "subtitle": "Initiated by Seri Tribe Elders in the Sonoran Desert, Mexico",
     "paragraph1": "This path shaped us before we ever held space for others. We know the terrain from the inside. This work is held with deep reverence for the indigenous lineage from which it comes. Nina and Astral have been initiated as daughter and son of the Seri Tribe by elders in the desert of Sonora, Mexico.",
     "paragraph2": "The medicine is received in a respectful, traditional way by specialists, in alignment with the Seri lineage we have been initiated into. The toad is never harmed. Years of training in trauma-informed approaches, energy healing, and the sacred art of holding space for ego dissolution. Guest speakers in facilitator training programs. Hundreds of ceremonies guided with safety, presence, and deep respect.",
-    "quote": "We have sat with the medicine. We have died, dissolved, returned, and broken again. We hold this work with reverence. If you feel called, let's walk slowly. This is sacred territory—not a service.",
+    "quote": "We have sat with the medicine. We have dissolved, returned, and broken open again. We hold this work with reverence. If you feel called, let's walk slowly. This is sacred territory—not a service.",
     "link": "Read our story →"
   },
   "imageQuote": {
@@ -106,8 +106,8 @@
     "preparation": {
       "title": "Preparation",
       "description": "Optional but highly recommended for first-time participants",
-      "price": "$100-120 USD",
-      "priceEur": "€90-110",
+      "price": "$80-120 USD",
+      "priceEur": "€70-110",
       "unit": "per session",
       "includes": "Emotional readiness assessment, nervous system anchoring, intention refinement, safety & medical review"
     },

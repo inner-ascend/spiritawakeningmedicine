@@ -48,17 +48,17 @@
     "preparation": {
       "title": "Preparation",
       "description": "Open the field. Anchor the nervous system. Begin with clarity.",
-      "price": "$100 USD / €90 per session"
+      "price": "$100-120 USD (€90-110) per session"
     },
     "ceremony": {
       "title": "Ceremony",
       "description": "A sacred passage into remembrance. Held with lineage, trauma-informed care, and full presence.",
-      "price": "$200-300 USD (€180-270)"
+      "price": "$300-500 USD (€270-450)"
     },
     "integration": {
       "title": "Integration",
       "description": "Insight becomes embodiment. Anchoring remembrance into daily life.",
-      "price": "$80-100 USD (€70-90) per session"
+      "price": "$80-120 USD (€70-110) per session"
     },
     "quote": "Insight without integration is just spiritual entertainment.\nThis isn't a quick fix. This isn't a weekend workshop.\nThis is the work of a lifetime—compressed into the time your soul needs."
   },
@@ -106,8 +106,8 @@
     "preparation": {
       "title": "Preparation",
       "description": "Optional but highly recommended for first-time participants",
-      "price": "$100 USD",
-      "priceEur": "€90",
+      "price": "$100-120 USD",
+      "priceEur": "€90-110",
       "unit": "per session",
       "includes": "Emotional readiness assessment, nervous system anchoring, intention refinement, safety & medical review"
     },
@@ -115,19 +115,19 @@
       "title": "Ceremony",
       "badge": "Sacred Passage",
       "description": "Group Ceremony (2-4 people)",
-      "price": "$200-300 USD",
-      "priceEur": "€180-270",
+      "price": "$300-500 USD",
+      "priceEur": "€270-450",
       "unit": "per person",
       "privateLabel": "Private Ceremony (Individual or Couple)",
-      "privatePrice": "$300-400 USD (€270-360)",
+      "privatePrice": "$500-700 USD (€450-630)",
       "includes": "Pre-ceremony consultation, opening prayer, ceremony, breath/touch/sound support, full day of care, 48hr integration, 2-week follow-up",
       "note": "Ceremony dates are only offered after preparation and mutual discernment."
     },
     "integration": {
       "title": "Integration",
       "description": "Insight becomes embodiment",
-      "price": "$80-100 USD",
-      "priceEur": "€70-90",
+      "price": "$80-120 USD",
+      "priceEur": "€70-110",
       "unit": "per session",
       "includes": "Meaning-making, somatic grounding, repatterning, lifestyle integration, continued support"
     },

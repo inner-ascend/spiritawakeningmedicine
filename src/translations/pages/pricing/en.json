@@ -119,13 +119,15 @@
   "accessibility": {
     "title": "Accessibility",
     "subtitle": "When the call is genuine, we walk together.",
+    "scholarships": "Scholarships available for BIPOC and those with limited resources.",
     "description": "If you feel the medicine is part of your path but finances are a barrier, speak openly. We honor sincerity, readiness, and mutual discernment over money.",
     "slidingScale": {
       "title": "Accessibility Options",
       "item1": "Sliding scale available based on financial situation",
-      "item2": "If finances are a barrier, speak openly",
-      "item3": "We honor sincerity over money",
-      "item4": "Payment plans can be arranged"
+      "item2": "Scholarships for BIPOC and those with limited resources",
+      "item3": "If finances are a barrier, speak openly",
+      "item4": "We honor sincerity over money",
+      "item5": "Payment plans can be arranged"
     },
     "paymentMethods": {
       "title": "Payment Methods",

@@ -48,17 +48,17 @@
     "preparation": {
       "title": "Preparation",
       "description": "Open the field. Anchor the nervous system. Begin with clarity.",
-      "price": "$80-120 USD (€70-110) per session"
+      "price": "Optional · $80-120 USD (€70-110) per session"
     },
     "ceremony": {
       "title": "Ceremony",
-      "description": "A sacred passage into remembrance. Held with lineage, trauma-informed care, and full presence.",
+      "description": "A sacred passage into remembrance. Held with lineage, trauma-informed care, and full presence. Includes one integration session.",
       "price": "$300-500 USD (€270-450)"
     },
     "integration": {
       "title": "Integration",
-      "description": "Insight becomes embodiment. Anchoring remembrance into daily life.",
-      "price": "$80-120 USD (€70-110) per session"
+      "description": "Insight becomes embodiment. Anchoring remembrance into daily life. One session included with ceremony.",
+      "price": "Additional sessions: $80-120 USD (€70-110)"
     },
     "quote": "Insight without integration is just spiritual entertainment.\nThis isn't a quick fix. This isn't a weekend workshop.\nThis is the work of a lifetime—compressed into the time your soul needs."
   },

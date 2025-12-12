@@ -779,14 +779,10 @@ export default function OnePagerPage() {
               </div>
             </div>
 
-            {/* Accessibility */}
-            <div className="bg-earth-800 rounded-2xl p-8 text-center max-w-3xl mx-auto">
-              <h3 className="text-2xl font-serif text-sacred-white mb-4">{pricing.accessibility.title}</h3>
-              <p className="text-desert-sand/80 leading-relaxed mb-4">
-                {pricing.accessibility.subtitle}
-              </p>
-              <p className="text-lg text-desert-sand/90 italic">
-                "{pricing.accessibility.quote}"
+            {/* Scholarships Note */}
+            <div className="text-center max-w-2xl mx-auto mt-12">
+              <p className="text-earth-700/70 italic">
+                Scholarships available for BIPOC and those with limited resources. If finances are a barrier, speak openly.
               </p>
             </div>
           </div>
@@ -924,94 +920,7 @@ export default function OnePagerPage() {
         </div>
       </section>
 
-      {/* ========== SECTION 15: APPLICATION PROCESS ========== */}
-      <section id="apply" className="relative py-48">
-        <div className="absolute inset-0 bg-gradient-to-br from-earth-700 to-earth-900"></div>
-        <div className="relative z-10 container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-8">
-              {ceremonies.application.title}
-            </h2>
-
-            <p className="text-2xl font-serif italic text-sacred-purple/90 mb-8">
-              "{ceremonies.application.quote}"
-            </p>
-
-            <p className="text-lg text-desert-sand/80 mb-12">
-              {ceremonies.application.description}
-            </p>
-
-            <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-8 mb-12 text-left">
-              <h3 className="text-2xl font-serif text-sacred-white mb-6 text-center">{ceremonies.application.steps.title}</h3>
-              <div className="space-y-4 text-desert-sand/80">
-                <p className="flex items-start gap-4">
-                  <span className="text-sacred-purple font-bold">1.</span>
-                  <span>{ceremonies.application.steps.step1}</span>
-                </p>
-                <p className="flex items-start gap-4">
-                  <span className="text-sacred-purple font-bold">2.</span>
-                  <span>{ceremonies.application.steps.step2}</span>
-                </p>
-                <p className="flex items-start gap-4">
-                  <span className="text-sacred-purple font-bold">3.</span>
-                  <span>{ceremonies.application.steps.step3}</span>
-                </p>
-                <p className="flex items-start gap-4">
-                  <span className="text-sacred-purple font-bold">4.</span>
-                  <span>{ceremonies.application.steps.step4}</span>
-                </p>
-                <p className="flex items-start gap-4">
-                  <span className="text-sacred-purple font-bold">5.</span>
-                  <span>{ceremonies.application.steps.step5}</span>
-                </p>
-                <p className="flex items-start gap-4">
-                  <span className="text-sacred-purple font-bold">6.</span>
-                  <span>{ceremonies.application.steps.step6}</span>
-                </p>
-              </div>
-            </div>
-
-            {/* Direct Application Links */}
-            <div className="space-y-8">
-              {/* Safety & Screening Links */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a
-                  href="#safety"
-                  className="inline-block px-8 py-4 border-2 border-desert-clay text-desert-clay rounded-full hover:bg-desert-clay hover:text-white transition-all font-medium text-lg"
-                >
-                  Review Safety & Contraindications
-                </a>
-                <a
-                  href="/bufo-screening"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-8 py-4 bg-sacred-purple text-white rounded-full hover:bg-sacred-amber transition-all font-medium text-lg shadow-lg"
-                >
-                  Start Medical Screening →
-                </a>
-              </div>
-
-              {/* Consent Form with Intro */}
-              <div className="bg-earth-900/40 backdrop-blur-xl rounded-2xl p-8 border border-desert-sand/10">
-                <h4 className="text-xl font-serif text-sacred-white mb-4">Before the Ceremony</h4>
-                <p className="text-desert-sand/80 leading-relaxed mb-6">
-                  The consent form is a sacred agreement between you and us. It ensures you understand the nature of this work, the risks involved, and your own responsibility in this process. Please read it with full presence before signing.
-                </p>
-                <a
-                  href="/bufo-consent"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-8 py-4 bg-earth-800 text-white rounded-full hover:bg-earth-700 transition-all font-medium text-lg shadow-lg"
-                >
-                  Read & Sign Ceremony Consent Form →
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ========== SECTION 16: FAQ ACCORDION ========== */}
+      {/* ========== SECTION 15: FAQ ACCORDION ========== */}
       <section id="faq" className="bg-sacred-cream py-48">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">

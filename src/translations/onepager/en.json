@@ -1,0 +1,317 @@
+{
+  "hero": {
+    "title": "Inner Ascend",
+    "subtitle": "Open the Gates of Remembrance",
+    "tagline": "The Sacred Medicine of 5-MeO-DMT",
+    "features": "A ceremonial passage into truth, held with lineage, trauma-informed care, and deep presence.",
+    "disclaimer": "By application only—for those who feel the call.",
+    "ctaButton": "Begin with Discernment"
+  },
+  "whatIsBufo": {
+    "transition": "What is this medicine?",
+    "title": "The Sacred Medicine",
+    "subtitle": "Return to what you've always been",
+    "intro": "The most potent and profound entheogenic compound on Earth",
+    "paragraph1": "5-MeO-DMT is the only substance that can reliably introduce individuals to a state of full non-dual awareness, override the energetic structure of the ego, and reveal the unitary nature of reality. The medicine we work with is natural Bufo secretion, obtained through non-harmful, ethical, and lineage-guided methods by trained specialists in the Sonoran Desert. The toads are not harmed.",
+    "paragraph2": "This is not a psychedelic. It is a sacred teacher of dissolution and pure remembrance. The effects begin within",
+    "paragraph2Highlight": "seconds",
+    "paragraph2Cont": "of inhalation. Despite its intensity, the passage is held in complete safety, grounding, and expert guidance. Complete ego dissolution. Non-dual consciousness. The remembrance of what you've always been.",
+    "quote": "This work is by application only. If you are here, you were directed intentionally—guided, invited, or called. This medicine is not for everyone, and it is not a shortcut. This path requires humility, surrender, and integration.",
+    "experience": {
+      "title": "The Experience",
+      "speed": "Speed:",
+      "speedValue": "Effects begin within seconds of inhalation",
+      "duration": "Duration:",
+      "durationValue": "15-30 minutes of peak experience",
+      "intensity": "Intensity:",
+      "intensityValue": "Complete ego dissolution and non-dual consciousness",
+      "outcome": "Outcome:",
+      "outcomeValue": "The remembrance of what you've always been"
+    }
+  },
+  "whoThisIsFor": {
+    "title": "This Medicine Is For...",
+    "subtitle": "(And who it's not for)",
+    "forTitle": "This work is FOR:",
+    "forList": [
+      "Those ready to surrender completely",
+      "Those who've done deep inner work and feel called to complete something",
+      "Those seeking dissolution of illusion, not an experience",
+      "Those ready to surrender and integrate",
+      "Seekers tired of seeking",
+      "Those who can no longer pretend"
+    ],
+    "notForTitle": "This work is NOT for:",
+    "notForList": [
+      "Those with untreated trauma or psychosis",
+      "Spiritual tourists or peak-seekers",
+      "Those expecting to be \"fixed\"",
+      "Those refusing integration",
+      "Those wanting quick fixes",
+      "Recreational seekers"
+    ],
+    "quote": "You're not broken. You're not lost. You're initiating."
+  },
+  "threePhaseJourney": {
+    "transition": "Three movements. Not steps.",
+    "title": "The Three-Phase Journey",
+    "description": "Sacred medicine work requires preparation, presence, and integration. This is not a shortcut. This is the work of a lifetime.",
+    "preparation": {
+      "title": "Preparation",
+      "description": "Open the field. Anchor the nervous system. Begin with clarity.",
+      "price": "Optional · $80-120 USD (€70-110) per session"
+    },
+    "ceremony": {
+      "title": "Ceremony",
+      "description": "A sacred passage into remembrance. Held with lineage, trauma-informed care, and full presence. Includes one integration session.",
+      "price": "$300-500 USD (€270-450)"
+    },
+    "integration": {
+      "title": "Integration",
+      "description": "Insight becomes embodiment. Anchoring remembrance into daily life. One session included with ceremony.",
+      "price": "Additional sessions: $80-120 USD (€70-110)"
+    },
+    "quote": "Insight without integration is just spiritual entertainment.\nThis isn't a quick fix. This isn't a weekend workshop.\nThis is the work of a lifetime—compressed into the time your soul needs."
+  },
+  "facilitators": {
+    "title": "Nina & Astral",
+    "subtitle": "Initiated by Seri Tribe Elders in the Sonoran Desert, Mexico",
+    "paragraph1": "This path shaped us before we ever held space for others. We know the terrain from the inside. This work is held with deep reverence for the indigenous lineage from which it comes. Nina and Astral have been initiated as daughter and son of the Seri Tribe by elders in the desert of Sonora, Mexico.",
+    "paragraph2": "The medicine is received in a respectful, traditional way by specialists, in alignment with the Seri lineage we have been initiated into. The toad is never harmed. Years of training in trauma-informed approaches, energy healing, and the sacred art of holding space for ego dissolution. Guest speakers in facilitator training programs. Hundreds of ceremonies guided with safety, presence, and deep respect.",
+    "quote": "We have sat with the medicine. We have dissolved, returned, and broken open again. We hold this work with reverence. If you feel called, let's walk slowly. This is sacred territory—not a service."
+  },
+  "ceremonyDetails": {
+    "title": "Ceremony Details",
+    "facilitators": {
+      "title": "Facilitators",
+      "name": "Nina & Astral",
+      "credentials": "Seri Tribe-initiated facilitators",
+      "experience": "Trauma-informed, hundreds of ceremonies held"
+    },
+    "location": {
+      "title": "Location",
+      "place": "Mazunte, Oaxaca, Mexico",
+      "description": "A sacred container in nature, held with deep reverence"
+    },
+    "groupSize": {
+      "title": "Group Size",
+      "size": "Small, intimate settings",
+      "max": "2-4 people maximum",
+      "options": "Individual or couple sessions available"
+    },
+    "timeline": {
+      "title": "Timeline",
+      "duration": "Full day experience",
+      "includes": "Includes opening prayer, ceremony, and post-ceremony rest",
+      "integration": "Integration session within 48 hours (included)",
+      "followUp": "2-week follow-up support"
+    },
+    "whatsIncluded": {
+      "title": "What's Included",
+      "item1": "Pre-ceremony consultation",
+      "item2": "Sacred container creation & opening prayer",
+      "item3": "Bufo ceremony with full energetic holding",
+      "item4": "Touch, breath, and sound-based guidance",
+      "item5": "Full day of care and post-ceremony rest",
+      "item6": "Integration session within 48 hours (included)",
+      "item7": "2-week follow-up support"
+    },
+    "approach": {
+      "title": "Facilitator Approach",
+      "line1": "Initiated by Seri Tribe elders",
+      "line2": "Trauma-informed protocols",
+      "line3": "Years of facilitator training",
+      "line4": "Full presence and energetic holding"
+    },
+    "requirements": {
+      "title": "Sacred Requirements",
+      "description": "Medical screening and mutual discernment are required before ceremony. Preparation sessions are optional but recommended for first-time participants."
+    }
+  },
+  "ceremonySpace": {
+    "quote": "Sacred container held with reverence and deep presence"
+  },
+  "imageQuote": {
+    "quote": "Die before you die, and discover\nthere is no death."
+  },
+  "retreats": {
+    "title": "Retreats & Sacred Containers",
+    "subtitle": "Multi-day immersions and collaborative offerings",
+    "bufoRetreats": {
+      "title": "Bufo Retreat Containers",
+      "subtitle": "3-7 day immersive journeys",
+      "description": "Our multi-day retreats offer a complete container for transformation—preparation, ceremony, and integration held within one sacred journey.",
+      "feature1Title": "Small groups:",
+      "feature1": "2-6 people maximum for intimate holding",
+      "feature2Title": "Complete journey:",
+      "feature2": "Ceremony with integration support (preparation optional)",
+      "feature3Title": "Sacred location:",
+      "feature3": "Mazunte, Oaxaca, Mexico—ocean, jungle, tranquility",
+      "feature4Title": "Includes:",
+      "feature4": "Accommodation, meals, ceremony, integration circles, nature immersion",
+      "investment": "Investment:",
+      "investmentPrice": "$1,500-3,500 USD (€1,350-3,150)"
+    },
+    "integrationIntensives": {
+      "title": "Integration Intensives",
+      "subtitle": "Weekend containers for post-ceremony integration",
+      "description": "For those who've already sat with medicine and need support anchoring the insights into embodied reality.",
+      "feature1Title": "Group circles:",
+      "feature1": "Sharing, witnessing, meaning-making",
+      "feature2Title": "Somatic practices:",
+      "feature2": "Breathwork, movement, trauma release",
+      "feature3Title": "Nature immersion:",
+      "feature3": "Beach, jungle, silent walks",
+      "feature4Title": "Energy work:",
+      "feature4": "Individual sessions available",
+      "investment": "Investment:",
+      "investmentPrice": "$600-1,200 USD (€540-1,080)"
+    }
+  },
+  "gallery": {
+    "title": "The Sacred Space",
+    "description": "A glimpse into the ceremony environment we create together"
+  },
+  "pricing": {
+    "title": "Journey Packages",
+    "description": "Complete pathways for those who feel called to walk deeper.",
+    "essential": {
+      "title": "Essential Journey",
+      "price": "$300-500 USD",
+      "priceEur": "€270-450",
+      "description": "For those beginning the path",
+      "item1": "Ceremony with full support",
+      "item2": "Integration session (included)",
+      "item3": "2-week follow-up support"
+    },
+    "complete": {
+      "title": "Complete Journey",
+      "badge": "Most Balanced",
+      "price": "$500-800 USD",
+      "priceEur": "€450-720",
+      "description": "The most balanced and supportive arc",
+      "item1": "1-2 Preparation Sessions (optional)",
+      "item2": "Ceremony with full support",
+      "item3": "Integration session (included)",
+      "item4": "1-2 Additional Integration Sessions"
+    },
+    "deepWork": {
+      "title": "Deep Work Container",
+      "price": "$1,000-1,500 USD",
+      "priceEur": "€900-1,350",
+      "description": "For those ready for profound, sustained transformation",
+      "item1": "Full Preparation (optional)",
+      "item2": "Private Ceremony",
+      "item3": "Integration session (included)",
+      "item4": "4-6 Week Integration Package"
+    },
+    "scholarships": "Scholarships available for BIPOC and those with limited resources. If finances are a barrier, speak openly."
+  },
+  "medical": {
+    "title": "Medical Screening Required",
+    "description": "Safety is paramount. All participants must complete a thorough health questionnaire and medical screening before ceremony. Though the experience is profound, you are held in complete safety, grounding, and presence throughout the entire passage.",
+    "contraindications": {
+      "title": "Contraindications",
+      "item1": "Heart conditions or cardiovascular issues",
+      "item2": "Psychosis or severe mental illness",
+      "item3": "Certain medications (SSRIs, MAOIs, etc.)",
+      "item4": "Pregnancy or breastfeeding",
+      "item5": "Severe unresolved trauma without therapeutic support",
+      "item6": "Recent surgical procedures",
+      "item7": "High blood pressure",
+      "item8": "Epilepsy or seizure disorders"
+    },
+    "disclaimer": {
+      "title": "Ceremonial & Legal Notice:",
+      "text": "All work is ceremonial, educational, and rooted in indigenous spiritual traditions. We do not provide medical treatment or clinical psychedelic services. All references to Bufo Alvarius refer to traditional ceremonial practices. We do not claim to diagnose, treat, or cure any condition. If you have any medical conditions, please consult with your healthcare provider before applying."
+    }
+  },
+  "safety": {
+    "protocols": {
+      "title": "Safety Protocols",
+      "item1": "Somatic grounding techniques throughout",
+      "item2": "Breath anchoring and co-regulation",
+      "item3": "Full presence and energetic holding",
+      "item4": "Intentional, conservative dosing",
+      "item5": "Emergency protocols in place",
+      "item6": "Integration check-ins at 48hrs and 2 weeks"
+    },
+    "ethics": {
+      "title": "Our Ethics",
+      "item1": "Natural Bufo secretion obtained ethically—toads never harmed. We honor the desert, the lineage, and the beings who carry this medicine.",
+      "item2": "Lineage-guided practices by trained specialists",
+      "item3": "Deep respect for Seri lineage and traditions",
+      "item4": "No spiritual bypassing—real integration required",
+      "item5": "Full consent and autonomy honored",
+      "item6": "Strict confidentiality maintained"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What is Bufo Alvarius / 5-MeO-DMT?",
+        "answer": "Bufo Alvarius is 5-MeO-DMT extracted from the Sonoran Desert Toad. It is the most potent entheogenic compound on Earth, capable of inducing complete ego dissolution and non-dual consciousness within seconds. This is not a psychedelic in the traditional sense—it's a sacred teacher of death and pure remembrance. The experience is brief (15-30 minutes) but profoundly transformative."
+      },
+      {
+        "question": "Is Bufo safe?",
+        "answer": "When held in proper ceremony by trained facilitators with thorough medical screening, Bufo is physiologically safe for most people. However, it is psychologically and spiritually intense. Safety requires: (1) Medical screening to rule out contraindications, (2) Trauma-informed facilitation, (3) Integration support. This is why ceremony is only offered after discernment—never sold directly."
+      },
+      {
+        "question": "What are the contraindications?",
+        "answer": "Bufo is contraindicated for those with: heart conditions, high blood pressure, psychosis or schizophrenia, epilepsy, pregnancy/breastfeeding, active use of SSRIs or MAOIs, recent surgery, severe unprocessed trauma without therapeutic support, and active substance abuse. This is why medical screening is mandatory."
+      },
+      {
+        "question": "Do I need preparation sessions?",
+        "answer": "Preparation sessions are optional but highly recommended, especially for first-time participants. They help anchor your nervous system, assess emotional readiness, and create a sacred container for the experience. However, medical screening and mutual discernment are required for everyone."
+      },
+      {
+        "question": "Is integration included?",
+        "answer": "Yes! One integration session within 48 hours is included with every ceremony. Additional integration sessions are available for those who want deeper support anchoring the insights into daily life."
+      },
+      {
+        "question": "How do I know if this is right for me?",
+        "answer": "You'll know. If you've read this far and something inside you says 'yes'—that's your signal. If you're curious but terrified, that's normal. If you're seeking a quick fix or peak experience, this isn't for you. If you're ready to surrender everything, to face truth without bypassing—then reach out. The discernment process will clarify readiness for both of us."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Begin Your Application",
+    "quote": "This work is never sold. Only offered.",
+    "readyTitle": "Ready to Begin?",
+    "readyDescription": "Start by completing the medical screening. This helps us understand if this work is right for you.",
+    "screeningButton": "Start Medical Screening",
+    "questionsTitle": "Have questions first?",
+    "whatsappButton": "Ask a Question on WhatsApp",
+    "email": {
+      "title": "Email",
+      "address": "hello@inner-ascend.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "handle": "@inner__ascend"
+    },
+    "location": {
+      "title": "Location",
+      "place": "Mazunte, Oaxaca, Mexico"
+    },
+    "closing": "Walk slowly. If this is your path, you'll know."
+  },
+  "footer": {
+    "brand": "Inner Ascend",
+    "description": "Sacred Bufo Alvarius ceremonies held with lineage, trauma-informed care, and deep presence in Mazunte, Oaxaca, Mexico.",
+    "quickLinks": "Quick Links",
+    "about": "About the Medicine",
+    "ceremonies": "Ceremonies",
+    "retreats": "Retreats",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "facilitators": "Your Facilitators",
+    "ninaTitle": "Trauma-Informed Healer",
+    "astralTitle": "Integration Specialist",
+    "connectTitle": "Connect",
+    "disclaimer": "All work is ceremonial, educational, and rooted in indigenous spiritual traditions. We do not provide medical treatment or clinical psychedelic services.",
+    "copyright": "Inner Ascend. Sacred work, held with reverence."
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "hero": {
+    "title": "Inner Ascend",
+    "subtitle": "Abre las Puertas del Recuerdo",
+    "tagline": "La Medicina Sagrada de 5-MeO-DMT",
+    "features": "Un pasaje ceremonial hacia la verdad, sostenido con linaje, cuidado informado en trauma y presencia profunda.",
+    "disclaimer": "Solo por aplicación—para aquellos que sienten el llamado.",
+    "ctaButton": "Comenzar con Discernimiento"
+  },
+  "whatIsBufo": {
+    "transition": "¿Qué es esta medicina?",
+    "title": "La Medicina Sagrada",
+    "subtitle": "Regresa a lo que siempre has sido",
+    "intro": "El compuesto enteogénico más potente y profundo de la Tierra",
+    "paragraph1": "5-MeO-DMT es la única sustancia que puede introducir de manera confiable a los individuos a un estado de plena conciencia no-dual, anular la estructura energética del ego y revelar la naturaleza unitaria de la realidad. La medicina con la que trabajamos es secreción natural de Bufo, obtenida a través de métodos éticos, no dañinos y guiados por el linaje por especialistas entrenados en el Desierto de Sonora. Los sapos no son dañados.",
+    "paragraph2": "Esto no es un psicodélico. Es un maestro sagrado de la disolución y el recuerdo puro. Los efectos comienzan en",
+    "paragraph2Highlight": "segundos",
+    "paragraph2Cont": "de inhalación. A pesar de su intensidad, el pasaje se sostiene en completa seguridad, anclaje y guía experta. Disolución completa del ego. Conciencia no-dual. El recuerdo de lo que siempre has sido.",
+    "quote": "Este trabajo es solo por aplicación. Si estás aquí, fuiste dirigido intencionalmente—guiado, invitado o llamado. Esta medicina no es para todos, y no es un atajo. Este camino requiere humildad, rendición e integración.",
+    "experience": {
+      "title": "La Experiencia",
+      "speed": "Velocidad:",
+      "speedValue": "Los efectos comienzan segundos después de la inhalación",
+      "duration": "Duración:",
+      "durationValue": "15-30 minutos de experiencia máxima",
+      "intensity": "Intensidad:",
+      "intensityValue": "Disolución completa del ego y conciencia no-dual",
+      "outcome": "Resultado:",
+      "outcomeValue": "El recuerdo de lo que siempre has sido"
+    }
+  },
+  "whoThisIsFor": {
+    "title": "Esta Medicina Es Para...",
+    "subtitle": "(Y para quién no es)",
+    "forTitle": "Este trabajo es PARA:",
+    "forList": [
+      "Aquellos listos para rendirse completamente",
+      "Aquellos que han hecho un trabajo interno profundo y sienten el llamado a completar algo",
+      "Aquellos que buscan la disolución de la ilusión, no una experiencia",
+      "Aquellos listos para rendirse e integrar",
+      "Buscadores cansados de buscar",
+      "Aquellos que ya no pueden fingir"
+    ],
+    "notForTitle": "Este trabajo NO es para:",
+    "notForList": [
+      "Aquellos con trauma no tratado o psicosis",
+      "Turistas espirituales o buscadores de picos",
+      "Aquellos que esperan ser \"arreglados\"",
+      "Aquellos que rechazan la integración",
+      "Aquellos que quieren soluciones rápidas",
+      "Buscadores recreativos"
+    ],
+    "quote": "No estás roto. No estás perdido. Te estás iniciando."
+  },
+  "threePhaseJourney": {
+    "transition": "Tres movimientos. No pasos.",
+    "title": "El Viaje de Tres Fases",
+    "description": "El trabajo con medicina sagrada requiere preparación, presencia e integración. Esto no es un atajo. Este es el trabajo de toda una vida.",
+    "preparation": {
+      "title": "Preparación",
+      "description": "Abre el campo. Ancla el sistema nervioso. Comienza con claridad.",
+      "price": "Opcional · $80-120 USD (€70-110) por sesión"
+    },
+    "ceremony": {
+      "title": "Ceremonia",
+      "description": "Un pasaje sagrado hacia el recuerdo. Sostenido con linaje, cuidado informado en trauma y presencia plena. Incluye una sesión de integración.",
+      "price": "$300-500 USD (€270-450)"
+    },
+    "integration": {
+      "title": "Integración",
+      "description": "La percepción se convierte en encarnación. Anclando el recuerdo en la vida diaria. Una sesión incluida con la ceremonia.",
+      "price": "Sesiones adicionales: $80-120 USD (€70-110)"
+    },
+    "quote": "La percepción sin integración es solo entretenimiento espiritual.\nEsto no es una solución rápida. Esto no es un taller de fin de semana.\nEste es el trabajo de toda una vida—comprimido en el tiempo que tu alma necesita."
+  },
+  "facilitators": {
+    "title": "Nina & Astral",
+    "subtitle": "Iniciados por los Ancianos de la Tribu Seri en el Desierto de Sonora, México",
+    "paragraph1": "Este camino nos formó antes de que sostuviéramos espacio para otros. Conocemos el terreno desde adentro. Este trabajo se sostiene con profunda reverencia por el linaje indígena del cual proviene. Nina y Astral han sido iniciados como hija e hijo de la Tribu Seri por ancianos en el desierto de Sonora, México.",
+    "paragraph2": "La medicina se recibe de manera respetuosa y tradicional por especialistas, en alineación con el linaje Seri en el que hemos sido iniciados. El sapo nunca es dañado. Años de entrenamiento en enfoques informados por trauma, sanación energética y el arte sagrado de sostener espacio para la disolución del ego. Oradores invitados en programas de formación de facilitadores. Cientos de ceremonias guiadas con seguridad, presencia y profundo respeto.",
+    "quote": "Nos hemos sentado con la medicina. Hemos disuelto, regresado y roto de nuevo. Sostenemos este trabajo con reverencia. Si sientes el llamado, caminemos lentamente. Este es territorio sagrado—no un servicio."
+  },
+  "ceremonyDetails": {
+    "title": "Detalles de la Ceremonia",
+    "facilitators": {
+      "title": "Facilitadores",
+      "name": "Nina & Astral",
+      "credentials": "Facilitadores iniciados por la Tribu Seri",
+      "experience": "Informados en trauma, cientos de ceremonias realizadas"
+    },
+    "location": {
+      "title": "Ubicación",
+      "place": "Mazunte, Oaxaca, México",
+      "description": "Un contenedor sagrado en la naturaleza, sostenido con profunda reverencia"
+    },
+    "groupSize": {
+      "title": "Tamaño del Grupo",
+      "size": "Entornos pequeños e íntimos",
+      "max": "Máximo 2-4 personas",
+      "options": "Sesiones individuales o en pareja disponibles"
+    },
+    "timeline": {
+      "title": "Cronología",
+      "duration": "Experiencia de día completo",
+      "includes": "Incluye oración de apertura, ceremonia y descanso post-ceremonia",
+      "integration": "Sesión de integración dentro de 48 horas (incluida)",
+      "followUp": "Apoyo de seguimiento de 2 semanas"
+    },
+    "whatsIncluded": {
+      "title": "Qué se Incluye",
+      "item1": "Consulta pre-ceremonia",
+      "item2": "Creación de contenedor sagrado y oración de apertura",
+      "item3": "Ceremonia de Bufo con sostenimiento energético completo",
+      "item4": "Guía basada en tacto, respiración y sonido",
+      "item5": "Día completo de cuidado y descanso post-ceremonia",
+      "item6": "Sesión de integración dentro de 48 horas (incluida)",
+      "item7": "Apoyo de seguimiento de 2 semanas"
+    },
+    "approach": {
+      "title": "Enfoque del Facilitador",
+      "line1": "Iniciados por ancianos de la Tribu Seri",
+      "line2": "Protocolos informados en trauma",
+      "line3": "Años de entrenamiento como facilitador",
+      "line4": "Presencia completa y sostenimiento energético"
+    },
+    "requirements": {
+      "title": "Requisitos Sagrados",
+      "description": "Se requiere evaluación médica y discernimiento mutuo antes de la ceremonia. Las sesiones de preparación son opcionales pero recomendadas para participantes primerizos."
+    }
+  },
+  "ceremonySpace": {
+    "quote": "Contenedor sagrado sostenido con reverencia y presencia profunda"
+  },
+  "imageQuote": {
+    "quote": "Muere antes de morir, y descubre\nque no hay muerte."
+  },
+  "retreats": {
+    "title": "Retiros y Contenedores Sagrados",
+    "subtitle": "Inmersiones de varios días y ofertas colaborativas",
+    "bufoRetreats": {
+      "title": "Contenedores de Retiro de Bufo",
+      "subtitle": "Viajes inmersivos de 3-7 días",
+      "description": "Nuestros retiros de varios días ofrecen un contenedor completo para la transformación—preparación, ceremonia e integración sostenidos dentro de un viaje sagrado.",
+      "feature1Title": "Grupos pequeños:",
+      "feature1": "Máximo 2-6 personas para sostenimiento íntimo",
+      "feature2Title": "Viaje completo:",
+      "feature2": "Ceremonia con apoyo de integración (preparación opcional)",
+      "feature3Title": "Ubicación sagrada:",
+      "feature3": "Mazunte, Oaxaca, México—océano, selva, tranquilidad",
+      "feature4Title": "Incluye:",
+      "feature4": "Alojamiento, comidas, ceremonia, círculos de integración, inmersión en la naturaleza",
+      "investment": "Inversión:",
+      "investmentPrice": "$1,500-3,500 USD (€1,350-3,150)"
+    },
+    "integrationIntensives": {
+      "title": "Intensivos de Integración",
+      "subtitle": "Contenedores de fin de semana para integración post-ceremonia",
+      "description": "Para aquellos que ya han trabajado con la medicina y necesitan apoyo para anclar las percepciones en la realidad encarnada.",
+      "feature1Title": "Círculos grupales:",
+      "feature1": "Compartir, presenciar, crear significado",
+      "feature2Title": "Prácticas somáticas:",
+      "feature2": "Respiración, movimiento, liberación de trauma",
+      "feature3Title": "Inmersión en la naturaleza:",
+      "feature3": "Playa, selva, caminatas silenciosas",
+      "feature4Title": "Trabajo energético:",
+      "feature4": "Sesiones individuales disponibles",
+      "investment": "Inversión:",
+      "investmentPrice": "$600-1,200 USD (€540-1,080)"
+    }
+  },
+  "gallery": {
+    "title": "El Espacio Sagrado",
+    "description": "Un vistazo al ambiente ceremonial que creamos juntos"
+  },
+  "pricing": {
+    "title": "Paquetes de Viaje",
+    "description": "Caminos completos para aquellos que sienten el llamado a caminar más profundo.",
+    "essential": {
+      "title": "Viaje Esencial",
+      "price": "$300-500 USD",
+      "priceEur": "€270-450",
+      "description": "Para aquellos que comienzan el camino",
+      "item1": "Ceremonia con apoyo completo",
+      "item2": "Sesión de integración (incluida)",
+      "item3": "Apoyo de seguimiento de 2 semanas"
+    },
+    "complete": {
+      "title": "Viaje Completo",
+      "badge": "Más Equilibrado",
+      "price": "$500-800 USD",
+      "priceEur": "€450-720",
+      "description": "El arco más equilibrado y de apoyo",
+      "item1": "1-2 Sesiones de Preparación (opcional)",
+      "item2": "Ceremonia con apoyo completo",
+      "item3": "Sesión de integración (incluida)",
+      "item4": "1-2 Sesiones de Integración Adicionales"
+    },
+    "deepWork": {
+      "title": "Contenedor de Trabajo Profundo",
+      "price": "$1,000-1,500 USD",
+      "priceEur": "€900-1,350",
+      "description": "Para aquellos listos para una transformación profunda y sostenida",
+      "item1": "Preparación Completa (opcional)",
+      "item2": "Ceremonia Privada",
+      "item3": "Sesión de integración (incluida)",
+      "item4": "Paquete de Integración de 4-6 Semanas"
+    },
+    "scholarships": "Becas disponibles para BIPOC y personas con recursos limitados. Si las finanzas son una barrera, habla abiertamente."
+  },
+  "medical": {
+    "title": "Evaluación Médica Requerida",
+    "description": "La seguridad es primordial. Todos los participantes deben completar un cuestionario de salud exhaustivo y evaluación médica antes de la ceremonia. Aunque la experiencia es profunda, eres sostenido en completa seguridad, anclaje y presencia durante todo el pasaje.",
+    "contraindications": {
+      "title": "Contraindicaciones",
+      "item1": "Condiciones cardíacas o problemas cardiovasculares",
+      "item2": "Psicosis o enfermedad mental severa",
+      "item3": "Ciertos medicamentos (ISRS, IMAO, etc.)",
+      "item4": "Embarazo o lactancia",
+      "item5": "Trauma severo no resuelto sin apoyo terapéutico",
+      "item6": "Procedimientos quirúrgicos recientes",
+      "item7": "Presión arterial alta",
+      "item8": "Epilepsia o trastornos convulsivos"
+    },
+    "disclaimer": {
+      "title": "Aviso Ceremonial y Legal:",
+      "text": "Todo el trabajo es ceremonial, educativo y arraigado en tradiciones espirituales indígenas. No proporcionamos tratamiento médico ni servicios psicodélicos clínicos. Todas las referencias a Bufo Alvarius se refieren a prácticas ceremoniales tradicionales. No afirmamos diagnosticar, tratar o curar ninguna condición. Si tiene alguna condición médica, consulte con su proveedor de salud antes de aplicar."
+    }
+  },
+  "safety": {
+    "protocols": {
+      "title": "Protocolos de Seguridad",
+      "item1": "Técnicas de anclaje somático durante todo el proceso",
+      "item2": "Anclaje de respiración y co-regulación",
+      "item3": "Presencia completa y sostenimiento energético",
+      "item4": "Dosificación intencional y conservadora",
+      "item5": "Protocolos de emergencia establecidos",
+      "item6": "Seguimientos de integración a las 48hrs y 2 semanas"
+    },
+    "ethics": {
+      "title": "Nuestra Ética",
+      "item1": "Secreción natural de Bufo obtenida éticamente—los sapos nunca son dañados. Honramos el desierto, el linaje y los seres que portan esta medicina.",
+      "item2": "Prácticas guiadas por el linaje por especialistas entrenados",
+      "item3": "Profundo respeto por el linaje y tradiciones Seri",
+      "item4": "Sin bypass espiritual—se requiere integración real",
+      "item5": "Consentimiento total y autonomía honrados",
+      "item6": "Estricta confidencialidad mantenida"
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "items": [
+      {
+        "question": "¿Qué es Bufo Alvarius / 5-MeO-DMT?",
+        "answer": "Bufo Alvarius es 5-MeO-DMT extraído del Sapo del Desierto de Sonora. Es el compuesto enteogénico más potente de la Tierra, capaz de inducir disolución completa del ego y conciencia no-dual en segundos. No es un psicodélico en el sentido tradicional—es un maestro sagrado de la muerte y el recuerdo puro. La experiencia es breve (15-30 minutos) pero profundamente transformadora."
+      },
+      {
+        "question": "¿Es seguro el Bufo?",
+        "answer": "Cuando se sostiene en ceremonia apropiada por facilitadores entrenados con evaluación médica exhaustiva, el Bufo es fisiológicamente seguro para la mayoría de las personas. Sin embargo, es psicológicamente y espiritualmente intenso. La seguridad requiere: (1) Evaluación médica para descartar contraindicaciones, (2) Facilitación informada en trauma, (3) Apoyo de integración. Por eso la ceremonia solo se ofrece después del discernimiento—nunca se vende directamente."
+      },
+      {
+        "question": "¿Cuáles son las contraindicaciones?",
+        "answer": "El Bufo está contraindicado para aquellos con: condiciones cardíacas, presión arterial alta, psicosis o esquizofrenia, epilepsia, embarazo/lactancia, uso activo de ISRS o IMAO, cirugía reciente, trauma severo no procesado sin apoyo terapéutico, y abuso activo de sustancias. Por eso la evaluación médica es obligatoria."
+      },
+      {
+        "question": "¿Necesito sesiones de preparación?",
+        "answer": "Las sesiones de preparación son opcionales pero altamente recomendadas, especialmente para participantes primerizos. Ayudan a anclar tu sistema nervioso, evaluar la preparación emocional y crear un contenedor sagrado para la experiencia. Sin embargo, la evaluación médica y el discernimiento mutuo son requeridos para todos."
+      },
+      {
+        "question": "¿La integración está incluida?",
+        "answer": "¡Sí! Una sesión de integración dentro de las 48 horas está incluida con cada ceremonia. Sesiones adicionales de integración están disponibles para aquellos que desean un apoyo más profundo para anclar las percepciones en la vida diaria."
+      },
+      {
+        "question": "¿Cómo sé si esto es para mí?",
+        "answer": "Lo sabrás. Si has leído hasta aquí y algo dentro de ti dice 'sí'—esa es tu señal. Si tienes curiosidad pero estás aterrado, eso es normal. Si buscas una solución rápida o experiencia cumbre, esto no es para ti. Si estás listo para rendirte completamente, para enfrentar la verdad sin bypass—entonces contáctanos. El proceso de discernimiento aclarará la preparación para ambos."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Comienza Tu Aplicación",
+    "quote": "Este trabajo nunca se vende. Solo se ofrece.",
+    "readyTitle": "¿Listo para Comenzar?",
+    "readyDescription": "Comienza completando la evaluación médica. Esto nos ayuda a entender si este trabajo es adecuado para ti.",
+    "screeningButton": "Comenzar Evaluación Médica",
+    "questionsTitle": "¿Tienes preguntas primero?",
+    "whatsappButton": "Haz una Pregunta en WhatsApp",
+    "email": {
+      "title": "Email",
+      "address": "hello@inner-ascend.com"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "handle": "@inner__ascend"
+    },
+    "location": {
+      "title": "Ubicación",
+      "place": "Mazunte, Oaxaca, México"
+    },
+    "closing": "Camina lentamente. Si este es tu camino, lo sabrás."
+  },
+  "footer": {
+    "brand": "Inner Ascend",
+    "description": "Ceremonias sagradas de Bufo Alvarius sostenidas con linaje, cuidado informado en trauma y presencia profunda en Mazunte, Oaxaca, México.",
+    "quickLinks": "Enlaces Rápidos",
+    "about": "Sobre la Medicina",
+    "ceremonies": "Ceremonias",
+    "retreats": "Retiros",
+    "pricing": "Precios",
+    "faq": "FAQ",
+    "contact": "Contacto",
+    "facilitators": "Tus Facilitadores",
+    "ninaTitle": "Sanadora Informada en Trauma",
+    "astralTitle": "Especialista en Integración",
+    "connectTitle": "Conectar",
+    "disclaimer": "Todo el trabajo es ceremonial, educativo y arraigado en tradiciones espirituales indígenas. No proporcionamos tratamiento médico ni servicios psicodélicos clínicos.",
+    "copyright": "Inner Ascend. Trabajo sagrado, sostenido con reverencia."
+  }
+}

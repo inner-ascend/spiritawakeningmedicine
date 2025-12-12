@@ -4,46 +4,19 @@ import Footer from '../Footer';
 import ResponsiveImage from '../shared/ResponsiveImage';
 import { useLanguage } from '../../contexts/LanguageContext';
 
-// Import translations from existing pages
-import homeEN from '../../translations/pages/home/en.json';
-import homeES from '../../translations/pages/home/es.json';
-import homeFR from '../../translations/pages/home/fr.json';
-import ceremoniesEN from '../../translations/pages/ceremonies/en.json';
-import ceremoniesES from '../../translations/pages/ceremonies/es.json';
-import ceremoniesFR from '../../translations/pages/ceremonies/fr.json';
-import pricingEN from '../../translations/pages/pricing/en.json';
-import pricingES from '../../translations/pages/pricing/es.json';
-import pricingFR from '../../translations/pages/pricing/fr.json';
-import contactEN from '../../translations/pages/contact/en.json';
-import contactES from '../../translations/pages/contact/es.json';
-import contactFR from '../../translations/pages/contact/fr.json';
-import faqEN from '../../translations/pages/faq/en.json';
-import faqES from '../../translations/pages/faq/es.json';
-import faqFR from '../../translations/pages/faq/fr.json';
-import retreatsEN from '../../translations/pages/retreats/en.json';
-import retreatsES from '../../translations/pages/retreats/es.json';
-import retreatsFR from '../../translations/pages/retreats/fr.json';
-import aboutEN from '../../translations/pages/about/en.json';
-import aboutES from '../../translations/pages/about/es.json';
-import aboutFR from '../../translations/pages/about/fr.json';
+// Import consolidated translations for one-pager
+import translationsEN from '../../translations/onepager/en.json';
+import translationsES from '../../translations/onepager/es.json';
 
-const homeTranslations = { en: homeEN, es: homeES, fr: homeFR };
-const ceremoniesTranslations = { en: ceremoniesEN, es: ceremoniesES, fr: ceremoniesFR };
-const pricingTranslations = { en: pricingEN, es: pricingES, fr: pricingFR };
-const contactTranslations = { en: contactEN, es: contactES, fr: contactFR };
-const faqTranslations = { en: faqEN, es: faqES, fr: faqFR };
-const retreatsTranslations = { en: retreatsEN, es: retreatsES, fr: retreatsFR };
-const aboutTranslations = { en: aboutEN, es: aboutES, fr: aboutFR };
+const translations = {
+  en: translationsEN,
+  es: translationsES,
+  fr: translationsEN // Fallback to English for French
+};
 
 export default function OnePagerPage() {
   const { language } = useLanguage();
-  const home = homeTranslations[language];
-  const ceremonies = ceremoniesTranslations[language];
-  const pricing = pricingTranslations[language];
-  const contact = contactTranslations[language];
-  const faq = faqTranslations[language];
-  const retreats = retreatsTranslations[language];
-  const about = aboutTranslations[language];
+  const t = translations[language] || translations.en;
 
   // FAQ accordion state
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
@@ -52,7 +25,7 @@ export default function OnePagerPage() {
   };
 
   // Select 6 FAQs for the one-pager
-  const selectedFaqs = faq.faqs.slice(0, 6);
+  const selectedFaqs = t.faq.items.slice(0, 6);
 
   return (
     <div className="min-h-screen bg-earth-900 text-sacred-white overflow-hidden">
@@ -73,25 +46,25 @@ export default function OnePagerPage() {
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-light text-sacred-white mb-6 animate-fadeIn leading-tight">
-            {home.hero.title}
+            {t.hero.title}
           </h1>
           <p className="text-2xl md:text-4xl text-sacred-gold/90 font-serif font-light tracking-wide mb-6">
-            {home.hero.subtitle}
+            {t.hero.subtitle}
           </p>
           <p className="text-lg md:text-xl text-desert-sand/90 font-light mb-4">
-            {home.hero.tagline}
+            {t.hero.tagline}
           </p>
           <p className="text-base md:text-lg text-desert-sand/70 font-light mb-8 max-w-3xl mx-auto">
-            {home.hero.features}
+            {t.hero.features}
           </p>
           <p className="text-sm md:text-base text-desert-sand/60 font-light italic max-w-2xl mx-auto mb-12">
-            {home.hero.disclaimer}
+            {t.hero.disclaimer}
           </p>
           <a
             href="#contact"
             className="inline-block px-10 py-4 bg-sacred-gold/90 text-earth-900 rounded-full font-medium text-lg hover:bg-sacred-gold transition-all shadow-lg hover:shadow-xl"
           >
-            {home.hero.ctaButton}
+            {t.hero.ctaButton}
           </a>
         </div>
 
@@ -109,49 +82,49 @@ export default function OnePagerPage() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-8 leading-tight">
-                {home.whatIsBufo.title}
+                {t.whatIsBufo.title}
               </h2>
               <p className="text-xl md:text-2xl text-desert-sand/80 leading-relaxed italic max-w-3xl mx-auto">
-                {home.whatIsBufo.subtitle}
+                {t.whatIsBufo.subtitle}
               </p>
             </div>
 
             <div className="space-y-8 text-desert-sand/80 leading-relaxed text-lg max-w-3xl mx-auto">
               <p className="text-xl text-sacred-gold/90 font-serif text-center">
-                {home.whatIsBufo.intro}
+                {t.whatIsBufo.intro}
               </p>
               <p>
-                {home.whatIsBufo.paragraph1}
+                {t.whatIsBufo.paragraph1}
               </p>
               <p>
-                {home.whatIsBufo.paragraph2} <span className="text-sacred-gold font-medium">{home.whatIsBufo.paragraph2Highlight}</span> {home.whatIsBufo.paragraph2Cont}
+                {t.whatIsBufo.paragraph2} <span className="text-sacred-gold font-medium">{t.whatIsBufo.paragraph2Highlight}</span> {t.whatIsBufo.paragraph2Cont}
               </p>
 
               {/* Experience highlights from Ceremonies page */}
               <div className="bg-earth-900/50 rounded-2xl p-8 my-12">
-                <h3 className="text-2xl font-serif text-sacred-white mb-6 text-center">{ceremonies.what.experience.title}</h3>
+                <h3 className="text-2xl font-serif text-sacred-white mb-6 text-center">{t.whatIsBufo.experience.experience.title}</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple mt-1 text-xl">◆</span>
-                    <span><strong className="text-sacred-white">{ceremonies.what.experience.speed}</strong> {ceremonies.what.experience.speedValue}</span>
+                    <span><strong className="text-sacred-white">{t.whatIsBufo.experience.experience.speed}</strong> {t.whatIsBufo.experience.experience.speedValue}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple mt-1 text-xl">◆</span>
-                    <span><strong className="text-sacred-white">{ceremonies.what.experience.duration}</strong> {ceremonies.what.experience.durationValue}</span>
+                    <span><strong className="text-sacred-white">{t.whatIsBufo.experience.experience.duration}</strong> {t.whatIsBufo.experience.experience.durationValue}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple mt-1 text-xl">◆</span>
-                    <span><strong className="text-sacred-white">{ceremonies.what.experience.intensity}</strong> {ceremonies.what.experience.intensityValue}</span>
+                    <span><strong className="text-sacred-white">{t.whatIsBufo.experience.experience.intensity}</strong> {t.whatIsBufo.experience.experience.intensityValue}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple mt-1 text-xl">◆</span>
-                    <span><strong className="text-sacred-white">{ceremonies.what.experience.outcome}</strong> {ceremonies.what.experience.outcomeValue}</span>
+                    <span><strong className="text-sacred-white">{t.whatIsBufo.experience.experience.outcome}</strong> {t.whatIsBufo.experience.experience.outcomeValue}</span>
                   </p>
                 </div>
               </div>
 
               <p className="border-l-2 border-sacred-purple/40 pl-6 italic text-desert-sand/70">
-                "{home.whatIsBufo.quote}"
+                "{t.whatIsBufo.quote}"
               </p>
             </div>
           </div>
@@ -174,10 +147,10 @@ export default function OnePagerPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
-                {home.whoThisIsFor.title}
+                {t.whoThisIsFor.title}
               </h2>
               <p className="text-lg text-earth-700/70 italic">
-                {home.whoThisIsFor.subtitle}
+                {t.whoThisIsFor.subtitle}
               </p>
             </div>
 
@@ -186,10 +159,10 @@ export default function OnePagerPage() {
               <div className="space-y-6">
                 <div className="flex items-center gap-3 mb-8">
                   <div className="text-3xl text-ocean-turquoise">✓</div>
-                  <h3 className="text-2xl font-serif text-earth-800">{home.whoThisIsFor.forTitle}</h3>
+                  <h3 className="text-2xl font-serif text-earth-800">{t.whoThisIsFor.forTitle}</h3>
                 </div>
                 <div className="space-y-4 text-earth-700/80 leading-relaxed">
-                  {home.whoThisIsFor.forList.map((item: string, index: number) => (
+                  {t.whoThisIsFor.forList.map((item: string, index: number) => (
                     <p key={index} className="flex items-start gap-3">
                       <span className="text-ocean-turquoise mt-1">•</span>
                       <span>{item}</span>
@@ -202,10 +175,10 @@ export default function OnePagerPage() {
               <div className="space-y-6">
                 <div className="flex items-center gap-3 mb-8">
                   <div className="text-3xl text-desert-clay">✗</div>
-                  <h3 className="text-2xl font-serif text-earth-800">{home.whoThisIsFor.notForTitle}</h3>
+                  <h3 className="text-2xl font-serif text-earth-800">{t.whoThisIsFor.notForTitle}</h3>
                 </div>
                 <div className="space-y-4 text-earth-700/80 leading-relaxed">
-                  {home.whoThisIsFor.notForList.map((item: string, index: number) => (
+                  {t.whoThisIsFor.notForList.map((item: string, index: number) => (
                     <p key={index} className="flex items-start gap-3">
                       <span className="text-desert-clay mt-1">•</span>
                       <span>{item}</span>
@@ -217,7 +190,7 @@ export default function OnePagerPage() {
 
             <div className="text-center mt-16 max-w-2xl mx-auto">
               <p className="text-lg text-earth-700/70 italic leading-relaxed">
-                "{home.whoThisIsFor.quote}"
+                "{t.whoThisIsFor.quote}"
               </p>
             </div>
           </div>
@@ -230,10 +203,10 @@ export default function OnePagerPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
-                {home.threePhaseJourney.title}
+                {t.threePhaseJourney.title}
               </h2>
               <p className="text-lg text-earth-700/70 max-w-2xl mx-auto">
-                {home.threePhaseJourney.description}
+                {t.threePhaseJourney.description}
               </p>
             </div>
 
@@ -249,11 +222,11 @@ export default function OnePagerPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-earth-900/40 via-earth-900/60 to-earth-900/90"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-8 text-center space-y-4">
-                    <h3 className="text-2xl font-serif text-sacred-white">{home.threePhaseJourney.preparation.title}</h3>
+                    <h3 className="text-2xl font-serif text-sacred-white">{t.threePhaseJourney.preparation.title}</h3>
                     <p className="text-desert-sand/90 leading-relaxed text-sm">
-                      {home.threePhaseJourney.preparation.description}
+                      {t.threePhaseJourney.preparation.description}
                     </p>
-                    <p className="text-xs text-desert-sage font-medium">{home.threePhaseJourney.preparation.price}</p>
+                    <p className="text-xs text-desert-sage font-medium">{t.threePhaseJourney.preparation.price}</p>
                   </div>
                 </div>
               </div>
@@ -269,11 +242,11 @@ export default function OnePagerPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-earth-900/40 via-earth-900/60 to-earth-900/90"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-8 text-center space-y-4">
-                    <h3 className="text-2xl font-serif text-sacred-white">{home.threePhaseJourney.ceremony.title}</h3>
+                    <h3 className="text-2xl font-serif text-sacred-white">{t.threePhaseJourney.ceremony.title}</h3>
                     <p className="text-desert-sand/90 leading-relaxed text-sm">
-                      {home.threePhaseJourney.ceremony.description}
+                      {t.threePhaseJourney.ceremony.description}
                     </p>
-                    <p className="text-xs text-sacred-purple font-medium">{home.threePhaseJourney.ceremony.price}</p>
+                    <p className="text-xs text-sacred-purple font-medium">{t.threePhaseJourney.ceremony.price}</p>
                   </div>
                 </div>
               </div>
@@ -289,11 +262,11 @@ export default function OnePagerPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-earth-900/40 via-earth-900/60 to-earth-900/90"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-8 text-center space-y-4">
-                    <h3 className="text-2xl font-serif text-sacred-white">{home.threePhaseJourney.integration.title}</h3>
+                    <h3 className="text-2xl font-serif text-sacred-white">{t.threePhaseJourney.integration.title}</h3>
                     <p className="text-desert-sand/90 leading-relaxed text-sm">
-                      {home.threePhaseJourney.integration.description}
+                      {t.threePhaseJourney.integration.description}
                     </p>
-                    <p className="text-xs text-ocean-turquoise font-medium">{home.threePhaseJourney.integration.price}</p>
+                    <p className="text-xs text-ocean-turquoise font-medium">{t.threePhaseJourney.integration.price}</p>
                   </div>
                 </div>
               </div>
@@ -301,7 +274,7 @@ export default function OnePagerPage() {
 
             <div className="text-center max-w-3xl mx-auto border-t border-earth-700/10 pt-12">
               <p className="text-lg text-earth-700/70 italic leading-relaxed mb-8" style={{whiteSpace: 'pre-line'}}>
-                "{home.threePhaseJourney.quote}"
+                "{t.threePhaseJourney.quote}"
               </p>
             </div>
           </div>
@@ -317,7 +290,7 @@ export default function OnePagerPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/30 to-earth-900/60 flex items-center justify-center">
           <p className="text-3xl md:text-5xl font-serif text-sacred-white italic text-center px-4 max-w-4xl leading-tight">
-            "{ceremonies.ceremonySpace.quote}"
+            "{t.ceremonySpace.quote}"
           </p>
         </div>
       </div>
@@ -327,7 +300,7 @@ export default function OnePagerPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-16 text-center">
-              {ceremonies.ceremonyDetails.title}
+              {t.ceremonyDetails.title}
             </h2>
 
             <div className="grid md:grid-cols-2 gap-12 mb-16">
@@ -335,45 +308,45 @@ export default function OnePagerPage() {
               <div className="space-y-8">
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4">
-                    {ceremonies.ceremonyDetails.facilitators.title}
+                    {t.ceremonyDetails.facilitators.title}
                   </h3>
                   <p className="text-earth-700/80 leading-relaxed">
-                    <strong className="text-earth-800">{ceremonies.ceremonyDetails.facilitators.name}</strong><br/>
-                    {ceremonies.ceremonyDetails.facilitators.credentials}<br/>
-                    {ceremonies.ceremonyDetails.facilitators.experience}
+                    <strong className="text-earth-800">{t.ceremonyDetails.facilitators.name}</strong><br/>
+                    {t.ceremonyDetails.facilitators.credentials}<br/>
+                    {t.ceremonyDetails.facilitators.experience}
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4">
-                    {ceremonies.ceremonyDetails.location.title}
+                    {t.ceremonyDetails.location.title}
                   </h3>
                   <p className="text-earth-700/80 leading-relaxed">
-                    {ceremonies.ceremonyDetails.location.place}<br/>
-                    {ceremonies.ceremonyDetails.location.description}
+                    {t.ceremonyDetails.location.place}<br/>
+                    {t.ceremonyDetails.location.description}
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4">
-                    {ceremonies.ceremonyDetails.groupSize.title}
+                    {t.ceremonyDetails.groupSize.title}
                   </h3>
                   <p className="text-earth-700/80 leading-relaxed">
-                    {ceremonies.ceremonyDetails.groupSize.size}<br/>
-                    {ceremonies.ceremonyDetails.groupSize.max}<br/>
-                    {ceremonies.ceremonyDetails.groupSize.options}
+                    {t.ceremonyDetails.groupSize.size}<br/>
+                    {t.ceremonyDetails.groupSize.max}<br/>
+                    {t.ceremonyDetails.groupSize.options}
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4">
-                    {ceremonies.ceremonyDetails.timeline.title}
+                    {t.ceremonyDetails.timeline.title}
                   </h3>
                   <p className="text-earth-700/80 leading-relaxed">
-                    {ceremonies.ceremonyDetails.timeline.duration}<br/>
-                    {ceremonies.ceremonyDetails.timeline.includes}<br/>
-                    {ceremonies.ceremonyDetails.timeline.integration}<br/>
-                    {ceremonies.ceremonyDetails.timeline.followUp}
+                    {t.ceremonyDetails.timeline.duration}<br/>
+                    {t.ceremonyDetails.timeline.includes}<br/>
+                    {t.ceremonyDetails.timeline.integration}<br/>
+                    {t.ceremonyDetails.timeline.followUp}
                   </p>
                 </div>
               </div>
@@ -382,58 +355,58 @@ export default function OnePagerPage() {
               <div className="space-y-8">
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4">
-                    {ceremonies.ceremonyDetails.whatsIncluded.title}
+                    {t.ceremonyDetails.whatsIncluded.title}
                   </h3>
                   <div className="space-y-3 text-earth-700/80 leading-relaxed">
                     <p className="flex items-start gap-3">
                       <span className="text-sacred-purple mt-1">✓</span>
-                      <span>{ceremonies.ceremonyDetails.whatsIncluded.item1}</span>
+                      <span>{t.ceremonyDetails.whatsIncluded.item1}</span>
                     </p>
                     <p className="flex items-start gap-3">
                       <span className="text-sacred-purple mt-1">✓</span>
-                      <span>{ceremonies.ceremonyDetails.whatsIncluded.item2}</span>
+                      <span>{t.ceremonyDetails.whatsIncluded.item2}</span>
                     </p>
                     <p className="flex items-start gap-3">
                       <span className="text-sacred-purple mt-1">✓</span>
-                      <span>{ceremonies.ceremonyDetails.whatsIncluded.item3}</span>
+                      <span>{t.ceremonyDetails.whatsIncluded.item3}</span>
                     </p>
                     <p className="flex items-start gap-3">
                       <span className="text-sacred-purple mt-1">✓</span>
-                      <span>{ceremonies.ceremonyDetails.whatsIncluded.item4}</span>
+                      <span>{t.ceremonyDetails.whatsIncluded.item4}</span>
                     </p>
                     <p className="flex items-start gap-3">
                       <span className="text-sacred-purple mt-1">✓</span>
-                      <span>{ceremonies.ceremonyDetails.whatsIncluded.item5}</span>
+                      <span>{t.ceremonyDetails.whatsIncluded.item5}</span>
                     </p>
                     <p className="flex items-start gap-3">
                       <span className="text-sacred-purple mt-1">✓</span>
-                      <span>{ceremonies.ceremonyDetails.whatsIncluded.item6}</span>
+                      <span>{t.ceremonyDetails.whatsIncluded.item6}</span>
                     </p>
                     <p className="flex items-start gap-3">
                       <span className="text-sacred-purple mt-1">✓</span>
-                      <span>{ceremonies.ceremonyDetails.whatsIncluded.item7}</span>
+                      <span>{t.ceremonyDetails.whatsIncluded.item7}</span>
                     </p>
                   </div>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-serif text-earth-800 mb-4">
-                    {ceremonies.ceremonyDetails.approach.title}
+                    {t.ceremonyDetails.approach.title}
                   </h3>
                   <p className="text-earth-700/80 leading-relaxed">
-                    {ceremonies.ceremonyDetails.approach.line1}<br/>
-                    {ceremonies.ceremonyDetails.approach.line2}<br/>
-                    {ceremonies.ceremonyDetails.approach.line3}<br/>
-                    {ceremonies.ceremonyDetails.approach.line4}
+                    {t.ceremonyDetails.approach.line1}<br/>
+                    {t.ceremonyDetails.approach.line2}<br/>
+                    {t.ceremonyDetails.approach.line3}<br/>
+                    {t.ceremonyDetails.approach.line4}
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="bg-medicine-venom rounded-2xl p-8 text-center">
-              <h3 className="text-2xl font-serif text-earth-800 mb-4">{ceremonies.ceremonyDetails.requirements.title}</h3>
+              <h3 className="text-2xl font-serif text-earth-800 mb-4">{t.ceremonyDetails.requirements.title}</h3>
               <p className="text-earth-700/80 leading-relaxed max-w-2xl mx-auto">
-                {ceremonies.ceremonyDetails.requirements.description}
+                {t.ceremonyDetails.requirements.description}
               </p>
             </div>
           </div>
@@ -446,10 +419,10 @@ export default function OnePagerPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
-                {about.hero.title}
+                {t.facilitators.title}
               </h2>
               <p className="text-xl text-desert-sand/80 italic">
-                {about.hero.subtitle}
+                {t.facilitators.subtitle}
               </p>
             </div>
 
@@ -495,13 +468,13 @@ export default function OnePagerPage() {
             {/* Lineage text */}
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-xl text-desert-sand/80 leading-relaxed mb-6">
-                {home.seriLineage.paragraph1}
+                {t.facilitators.paragraph1}
               </p>
               <p className="text-lg text-desert-sand/70 leading-relaxed mb-8">
-                {home.seriLineage.paragraph2}
+                {t.facilitators.paragraph2}
               </p>
               <p className="text-desert-clay/90 italic font-serif text-xl">
-                "{home.seriLineage.quote}"
+                "{t.facilitators.quote}"
               </p>
             </div>
           </div>
@@ -517,7 +490,7 @@ export default function OnePagerPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/40 to-earth-900/70 flex items-center justify-center">
           <p className="text-3xl md:text-5xl font-serif text-sacred-white italic text-center px-4 max-w-4xl leading-tight" style={{whiteSpace: 'pre-line'}}>
-            "{home.imageQuote.quote}"
+            "{t.imageQuote.quote}"
           </p>
         </div>
       </div>
@@ -528,10 +501,10 @@ export default function OnePagerPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
-                {retreats.hero.title}
+                {t.retreats.title}
               </h2>
               <p className="text-xl text-earth-700/80 italic max-w-3xl mx-auto">
-                {retreats.hero.subtitle}
+                {t.retreats.subtitle}
               </p>
             </div>
 
@@ -540,34 +513,34 @@ export default function OnePagerPage() {
               <div className="bg-sacred-cream rounded-2xl p-10">
                 <h3 className="text-3xl font-serif text-earth-800 mb-4">
                   <span className="text-ocean-coral mr-2">✧</span>
-                  {retreats.bufoRetreats.title}
+                  {t.retreats.bufoRetreats.title}
                 </h3>
                 <p className="text-xl text-earth-700/80 italic mb-6">
-                  {retreats.bufoRetreats.subtitle}
+                  {t.retreats.bufoRetreats.subtitle}
                 </p>
                 <p className="text-earth-700/80 leading-relaxed mb-6">
-                  {retreats.bufoRetreats.description}
+                  {t.retreats.bufoRetreats.description}
                 </p>
                 <div className="space-y-3 text-earth-700/80 mb-6">
                   <p className="flex items-start gap-3">
                     <span className="text-ocean-coral">✦</span>
-                    <span><strong className="text-earth-800">{retreats.bufoRetreats.feature1Title}</strong> {retreats.bufoRetreats.feature1}</span>
+                    <span><strong className="text-earth-800">{t.retreats.bufoRetreats.feature1Title}</strong> {t.retreats.bufoRetreats.feature1}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-ocean-coral">✦</span>
-                    <span><strong className="text-earth-800">{retreats.bufoRetreats.feature2Title}</strong> {retreats.bufoRetreats.feature2}</span>
+                    <span><strong className="text-earth-800">{t.retreats.bufoRetreats.feature2Title}</strong> {t.retreats.bufoRetreats.feature2}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-ocean-coral">✦</span>
-                    <span><strong className="text-earth-800">{retreats.bufoRetreats.feature3Title}</strong> {retreats.bufoRetreats.feature3}</span>
+                    <span><strong className="text-earth-800">{t.retreats.bufoRetreats.feature3Title}</strong> {t.retreats.bufoRetreats.feature3}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-ocean-coral">✦</span>
-                    <span><strong className="text-earth-800">{retreats.bufoRetreats.feature4Title}</strong> {retreats.bufoRetreats.feature4}</span>
+                    <span><strong className="text-earth-800">{t.retreats.bufoRetreats.feature4Title}</strong> {t.retreats.bufoRetreats.feature4}</span>
                   </p>
                 </div>
                 <div className="bg-medicine-venom rounded-xl p-4">
-                  <p className="text-earth-800 font-medium">{retreats.bufoRetreats.investment} {retreats.bufoRetreats.investmentPrice}</p>
+                  <p className="text-earth-800 font-medium">{t.retreats.bufoRetreats.investment} {t.retreats.bufoRetreats.investmentPrice}</p>
                 </div>
               </div>
 
@@ -575,34 +548,34 @@ export default function OnePagerPage() {
               <div className="bg-sacred-cream rounded-2xl p-10">
                 <h3 className="text-3xl font-serif text-earth-800 mb-4">
                   <span className="text-ocean-coral mr-2">✧</span>
-                  {retreats.integrationIntensives.title}
+                  {t.retreats.integrationIntensives.title}
                 </h3>
                 <p className="text-xl text-earth-700/80 italic mb-6">
-                  {retreats.integrationIntensives.subtitle}
+                  {t.retreats.integrationIntensives.subtitle}
                 </p>
                 <p className="text-earth-700/80 leading-relaxed mb-6">
-                  {retreats.integrationIntensives.description}
+                  {t.retreats.integrationIntensives.description}
                 </p>
                 <div className="space-y-3 text-earth-700/80 mb-6">
                   <p className="flex items-start gap-3">
                     <span className="text-ocean-coral">◆</span>
-                    <span><strong className="text-earth-800">{retreats.integrationIntensives.feature1Title}</strong> {retreats.integrationIntensives.feature1}</span>
+                    <span><strong className="text-earth-800">{t.retreats.integrationIntensives.feature1Title}</strong> {t.retreats.integrationIntensives.feature1}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-ocean-coral">◆</span>
-                    <span><strong className="text-earth-800">{retreats.integrationIntensives.feature2Title}</strong> {retreats.integrationIntensives.feature2}</span>
+                    <span><strong className="text-earth-800">{t.retreats.integrationIntensives.feature2Title}</strong> {t.retreats.integrationIntensives.feature2}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-ocean-coral">◆</span>
-                    <span><strong className="text-earth-800">{retreats.integrationIntensives.feature3Title}</strong> {retreats.integrationIntensives.feature3}</span>
+                    <span><strong className="text-earth-800">{t.retreats.integrationIntensives.feature3Title}</strong> {t.retreats.integrationIntensives.feature3}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-ocean-coral">◆</span>
-                    <span><strong className="text-earth-800">{retreats.integrationIntensives.feature4Title}</strong> {retreats.integrationIntensives.feature4}</span>
+                    <span><strong className="text-earth-800">{t.retreats.integrationIntensives.feature4Title}</strong> {t.retreats.integrationIntensives.feature4}</span>
                   </p>
                 </div>
                 <div className="bg-medicine-venom rounded-xl p-4">
-                  <p className="text-earth-800 font-medium">{retreats.integrationIntensives.investment} {retreats.integrationIntensives.investmentPrice}</p>
+                  <p className="text-earth-800 font-medium">{t.retreats.integrationIntensives.investment} {t.retreats.integrationIntensives.investmentPrice}</p>
                 </div>
               </div>
             </div>
@@ -681,10 +654,10 @@ export default function OnePagerPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-6">
-                {pricing.journeyPackages.title}
+                {t.pricing.title}
               </h2>
               <p className="text-lg text-earth-700/70 max-w-3xl mx-auto">
-                {pricing.journeyPackages.description}
+                {t.pricing.description}
               </p>
             </div>
 
@@ -693,24 +666,24 @@ export default function OnePagerPage() {
               <div className="bg-white rounded-2xl p-8 border border-desert-sage/30">
                 <h3 className="text-2xl font-serif text-earth-800 mb-4">
                   <span className="text-desert-sage mr-2">○</span>
-                  {pricing.journeyPackages.essential.title}
+                  {t.pricing.essential.title}
                 </h3>
-                <div className="text-4xl font-serif text-desert-sage mb-4">{pricing.journeyPackages.essential.price}</div>
+                <div className="text-4xl font-serif text-desert-sage mb-4">{t.pricing.essential.price}</div>
                 <p className="text-earth-700/70 leading-relaxed mb-6">
-                  {pricing.journeyPackages.essential.description}
+                  {t.pricing.essential.description}
                 </p>
                 <div className="space-y-3 text-earth-700/80 text-sm">
                   <p className="flex items-start gap-3">
                     <span className="text-desert-sage">○</span>
-                    <span>{pricing.journeyPackages.essential.item1}</span>
+                    <span>{t.pricing.essential.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-desert-sage">○</span>
-                    <span>{pricing.journeyPackages.essential.item2}</span>
+                    <span>{t.pricing.essential.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-desert-sage">○</span>
-                    <span>{pricing.journeyPackages.essential.item3}</span>
+                    <span>{t.pricing.essential.item3}</span>
                   </p>
                 </div>
               </div>
@@ -718,32 +691,32 @@ export default function OnePagerPage() {
               {/* Complete Journey - Recommended */}
               <div className="bg-white rounded-2xl p-8 border-2 border-sacred-gold/30 relative">
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-sacred-gold text-earth-900 px-4 py-1 rounded-full text-sm font-medium">
-                  {pricing.journeyPackages.complete.badge}
+                  {t.pricing.complete.badge}
                 </div>
                 <h3 className="text-2xl font-serif text-earth-800 mb-4">
                   <span className="text-mineral-copper mr-2">◉</span>
-                  {pricing.journeyPackages.complete.title}
+                  {t.pricing.complete.title}
                 </h3>
-                <div className="text-4xl font-serif text-mineral-copper mb-4">{pricing.journeyPackages.complete.price}</div>
+                <div className="text-4xl font-serif text-mineral-copper mb-4">{t.pricing.complete.price}</div>
                 <p className="text-earth-700/70 leading-relaxed mb-6">
-                  {pricing.journeyPackages.complete.description}
+                  {t.pricing.complete.description}
                 </p>
                 <div className="space-y-3 text-earth-700/80 text-sm">
                   <p className="flex items-start gap-3">
                     <span className="text-mineral-copper">◉</span>
-                    <span>{pricing.journeyPackages.complete.item1}</span>
+                    <span>{t.pricing.complete.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-mineral-copper">◉</span>
-                    <span>{pricing.journeyPackages.complete.item2}</span>
+                    <span>{t.pricing.complete.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-mineral-copper">◉</span>
-                    <span>{pricing.journeyPackages.complete.item3}</span>
+                    <span>{t.pricing.complete.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-mineral-copper">◉</span>
-                    <span>{pricing.journeyPackages.complete.item4}</span>
+                    <span>{t.pricing.complete.item4}</span>
                   </p>
                 </div>
               </div>
@@ -752,28 +725,28 @@ export default function OnePagerPage() {
               <div className="bg-white rounded-2xl p-8 border border-sacred-purple/30">
                 <h3 className="text-2xl font-serif text-earth-800 mb-4">
                   <span className="text-sacred-purple mr-2">⬢</span>
-                  {pricing.journeyPackages.deepWork.title}
+                  {t.pricing.deepWork.title}
                 </h3>
-                <div className="text-4xl font-serif text-sacred-purple mb-4">{pricing.journeyPackages.deepWork.price}</div>
+                <div className="text-4xl font-serif text-sacred-purple mb-4">{t.pricing.deepWork.price}</div>
                 <p className="text-earth-700/70 leading-relaxed mb-6">
-                  {pricing.journeyPackages.deepWork.description}
+                  {t.pricing.deepWork.description}
                 </p>
                 <div className="space-y-3 text-earth-700/80 text-sm">
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple">⬢</span>
-                    <span>{pricing.journeyPackages.deepWork.item1}</span>
+                    <span>{t.pricing.deepWork.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple">⬢</span>
-                    <span>{pricing.journeyPackages.deepWork.item2}</span>
+                    <span>{t.pricing.deepWork.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple">⬢</span>
-                    <span>{pricing.journeyPackages.deepWork.item3}</span>
+                    <span>{t.pricing.deepWork.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple">⬢</span>
-                    <span>{pricing.journeyPackages.deepWork.item4}</span>
+                    <span>{t.pricing.deepWork.item4}</span>
                   </p>
                 </div>
               </div>
@@ -796,56 +769,56 @@ export default function OnePagerPage() {
             <div className="bg-desert-clay/10 border-l-4 border-desert-clay rounded-r-2xl p-8 mb-12">
               <h2 className="text-3xl font-serif text-earth-800 mb-6 flex items-center gap-3">
                 <span className="text-4xl text-desert-clay">⊕</span>
-                {ceremonies.medical.title}
+                {t.medical.title}
               </h2>
               <p className="text-earth-700/80 leading-relaxed">
-                {ceremonies.medical.description}
+                {t.medical.description}
               </p>
             </div>
 
-            <h3 className="text-2xl font-serif text-earth-800 mb-6">{ceremonies.medical.contraindications.title}</h3>
+            <h3 className="text-2xl font-serif text-earth-800 mb-6">{t.medical.contraindications.title}</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               <div className="space-y-3 text-earth-700/80">
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>{ceremonies.medical.contraindications.item1}</span>
+                  <span>{t.medical.contraindications.item1}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>{ceremonies.medical.contraindications.item2}</span>
+                  <span>{t.medical.contraindications.item2}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>{ceremonies.medical.contraindications.item3}</span>
+                  <span>{t.medical.contraindications.item3}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>{ceremonies.medical.contraindications.item4}</span>
+                  <span>{t.medical.contraindications.item4}</span>
                 </p>
               </div>
               <div className="space-y-3 text-earth-700/80">
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>{ceremonies.medical.contraindications.item5}</span>
+                  <span>{t.medical.contraindications.item5}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>{ceremonies.medical.contraindications.item6}</span>
+                  <span>{t.medical.contraindications.item6}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>{ceremonies.medical.contraindications.item7}</span>
+                  <span>{t.medical.contraindications.item7}</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <span className="text-desert-clay font-bold">×</span>
-                  <span>{ceremonies.medical.contraindications.item8}</span>
+                  <span>{t.medical.contraindications.item8}</span>
                 </p>
               </div>
             </div>
 
             <div className="bg-medicine-venom rounded-2xl p-6 text-sm text-earth-700/70 leading-relaxed">
-              <p className="font-semibold text-earth-800 mb-2">{ceremonies.medical.disclaimer.title}</p>
-              <p>{ceremonies.medical.disclaimer.text}</p>
+              <p className="font-semibold text-earth-800 mb-2">{t.medical.disclaimer.title}</p>
+              <p>{t.medical.disclaimer.text}</p>
             </div>
 
             {/* Safety Protocols */}
@@ -925,7 +898,7 @@ export default function OnePagerPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-serif text-earth-800 mb-12 text-center">
-              {faq.title}
+              {t.faq.title}
             </h2>
 
             <div className="space-y-4">
@@ -967,10 +940,10 @@ export default function OnePagerPage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
-                {contact.hero.title}
+                {t.contact.title}
               </h2>
               <p className="text-xl text-desert-sand/80 italic">
-                "{contact.hero.quote}"
+                "{t.contact.quote}"
               </p>
             </div>
 

@@ -10,32 +10,32 @@
     "description": "Complete pathways for those who feel called to walk deeper.",
     "essential": {
       "title": "Essential Journey",
-      "price": "$500-700 USD",
-      "priceEur": "€450-630",
+      "price": "$300-500 USD",
+      "priceEur": "€270-450",
       "description": "For those beginning the path",
-      "item1": "1 Preparation Session",
-      "item2": "Ceremony",
-      "item3": "48hr Integration (included)"
+      "item1": "Ceremony with full support",
+      "item2": "Integration session (included)",
+      "item3": "2-week follow-up support"
     },
     "complete": {
       "title": "Complete Journey",
       "badge": "Most Balanced",
-      "price": "$800-1,200 USD",
-      "priceEur": "€720-1,080",
+      "price": "$500-800 USD",
+      "priceEur": "€450-720",
       "description": "The most balanced and supportive arc",
-      "item1": "1-2 Preparation Sessions",
+      "item1": "1-2 Preparation Sessions (optional)",
       "item2": "Ceremony with full support",
-      "item3": "48hr Integration",
-      "item4": "2-3 Ongoing Integration Sessions"
+      "item3": "Integration session (included)",
+      "item4": "1-2 Additional Integration Sessions"
     },
     "deepWork": {
       "title": "Deep Work Container",
-      "price": "$1,500-2,500 USD",
-      "priceEur": "€1,350-2,250",
+      "price": "$1,000-1,500 USD",
+      "priceEur": "€900-1,350",
       "description": "For those ready for profound, sustained transformation",
-      "item1": "Full Preparation",
+      "item1": "Full Preparation (optional)",
       "item2": "Private Ceremony",
-      "item3": "48hr Integration",
+      "item3": "Integration session (included)",
       "item4": "4-6 Week Integration Package"
     },
     "note": "Insight without integration is just spiritual entertainment. This is the work of a lifetime."

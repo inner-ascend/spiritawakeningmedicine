@@ -1,0 +1,108 @@
+{
+  "header": {
+    "title": "Consentimiento y Exoneración de Responsabilidad",
+    "subtitle": "Ceremonia de Bufo Alvarius"
+  },
+  "success": {
+    "title": "Formulario de Consentimiento Recibido",
+    "subtitle": "Gracias por completar el consentimiento y la exoneración.",
+    "description": "Tu consentimiento firmado ha sido registrado. Nos pondremos en contacto con los próximos pasos para la preparación de tu ceremonia, incluyendo la programación de tu sesión de preparación y la confirmación de los detalles de ubicación.",
+    "saveNote": "Por favor guarda una copia de este consentimiento para tus registros.",
+    "returnHome": "Volver al Inicio"
+  },
+  "warning": {
+    "title": "Por Favor Lee Cuidadosamente",
+    "text": "Este documento describe la naturaleza de la ceremonia de Bufo Alvarius, los riesgos asociados, y tus derechos y responsabilidades como participante. Al firmar abajo, reconoces que has leído, entendido y aceptas todos los términos."
+  },
+  "sections": {
+    "nature": {
+      "title": "1. Naturaleza de la Experiencia",
+      "paragraphs": [
+        "Entiendo que la ceremonia de Bufo Alvarius involucra el uso de 5-MeO-DMT, un compuesto psicoactivo de origen natural derivado de las secreciones del sapo Bufo Alvarius. Esta es una sustancia enteogénica poderosa que puede producir alteraciones profundas en la consciencia.",
+        "Entiendo que esta ceremonia se ofrece como una práctica espiritual y experiencia de crecimiento personal. NO es un tratamiento médico, terapia, ni sustituto del cuidado profesional de salud mental.",
+        "Reconozco que los facilitadores no son médicos, psiquiatras, ni terapeutas licenciados, y no diagnostican, tratan, ni pretenden curar ninguna condición médica o psicológica."
+      ],
+      "checkbox": "He leído y entiendo la naturaleza de la experiencia de Bufo Alvarius"
+    },
+    "risks": {
+      "title": "2. Reconocimiento de Riesgos",
+      "intro": "Entiendo que la participación en esta ceremonia conlleva riesgos inherentes, incluyendo pero no limitados a:",
+      "items": [
+        "Experiencias emocionales y psicológicas intensas",
+        "Pérdida temporal del control motor y consciencia corporal",
+        "Cambios temporales en la percepción, pensamiento y sentido del yo",
+        "Reacciones físicas como náuseas, vómitos, cambios en la frecuencia cardíaca o presión arterial",
+        "Resurgimiento de traumas pasados o emociones suprimidas",
+        "Reacciones psicológicas adversas raras pero posibles",
+        "En casos extremadamente raros, emergencias médicas"
+      ],
+      "closing": "Acepto la plena responsabilidad por mi decisión de participar y entiendo que los facilitadores no pueden garantizar ningún resultado específico ni la ausencia de efectos adversos.",
+      "checkbox": "Reconozco y acepto los riesgos asociados con esta experiencia"
+    },
+    "medical": {
+      "title": "3. Divulgación Médica y Contraindicaciones",
+      "intro": "Confirmo que he divulgado toda la información médica y psicológica relevante en mi cuestionario de evaluación, incluyendo:",
+      "items": [
+        "Todos los medicamentos actuales (especialmente ISRS, IMAOs, antidepresivos, antipsicóticos)",
+        "Cualquier historial de condiciones cardíacas, presión arterial alta o problemas cardiovasculares",
+        "Cualquier historial de psicosis, esquizofrenia, trastorno bipolar u hospitalización psiquiátrica",
+        "Embarazo actual o posibilidad de embarazo",
+        "Cualquier otra condición de salud física o mental"
+      ],
+      "closing": "Entiendo que ocultar o falsificar información médica podría resultar en daño grave a mí mismo/a, y libero a los facilitadores de cualquier responsabilidad resultante de condiciones no divulgadas.",
+      "checkbox": "Confirmo que he divulgado verazmente toda la información médica y psicológica"
+    },
+    "confidentiality": {
+      "title": "4. Confidencialidad",
+      "intro": "Entiendo que mi información personal, respuestas de evaluación, y todo lo compartido durante las sesiones será mantenido en estricta confidencialidad por los facilitadores.",
+      "alsoAgree": "También acepto mantener confidencialidad respecto a:",
+      "items": [
+        "La identidad e información personal de cualquier otro participante (si aplica)",
+        "La ubicación específica del espacio ceremonial",
+        "Cualquier detalle personal compartido por los facilitadores"
+      ],
+      "checkbox": "Acepto mantener la confidencialidad como se describe arriba"
+    },
+    "media": {
+      "title": "5. Fotografía, Grabación y Medios",
+      "paragraphs": [
+        "Entiendo que no se permite fotografía, video o grabación de audio durante la ceremonia sin el consentimiento explícito de todas las partes presentes.",
+        "Acepto no grabar, fotografiar o compartir ningún medio de la ceremonia o espacio ceremonial sin permiso previo por escrito."
+      ],
+      "checkbox": "Acepto la política de medios y grabación"
+    },
+    "voluntary": {
+      "title": "6. Participación Voluntaria y Exoneración de Responsabilidad",
+      "paragraphs": [
+        "Confirmo que mi participación en esta ceremonia es completamente voluntaria. No he sido coaccionado/a, presionado/a ni manipulado/a para participar.",
+        "Entiendo que puedo retirar mi participación en cualquier momento antes de que comience la ceremonia. Una vez administrada la medicina, la experiencia debe permitirse completar naturalmente."
+      ],
+      "releaseTitle": "Exoneración de Responsabilidad:",
+      "releaseText": "En la máxima medida permitida por la ley, libero, renuncio y descargo a los facilitadores, y cualquier asistente, de toda responsabilidad, reclamos, demandas o causas de acción que puedan surgir de mi participación en esta ceremonia.",
+      "releaseClosing": "Esta exoneración aplica a cualquier lesión, enfermedad, daño o pérdida—ya sea física, psicológica, emocional o material—que pueda resultar de mi participación, independientemente de la causa.",
+      "checkbox": "Confirmo mi participación voluntaria y exoneración de responsabilidad"
+    }
+  },
+  "emergencyContact": {
+    "title": "Contacto de Emergencia",
+    "description": "Por favor proporciona un contacto de emergencia que pueda ser localizado si es necesario.",
+    "name": "Nombre del Contacto",
+    "phone": "Teléfono del Contacto"
+  },
+  "signature": {
+    "title": "Firma Digital",
+    "fullName": "Nombre Legal Completo",
+    "email": "Correo Electrónico",
+    "date": "Fecha",
+    "signatureLabel": "Escribe tu nombre completo como tu firma digital",
+    "signatureHint": "Al escribir tu nombre abajo, confirmas que has leído, entendido y aceptas todos los términos de este documento.",
+    "signaturePlaceholder": "Escribe tu nombre legal completo"
+  },
+  "submit": {
+    "button": "Firmar y Enviar Consentimiento",
+    "sending": "Enviando...",
+    "incomplete": "Por favor lee y acepta todas las secciones arriba",
+    "error": "Algo salió mal. Por favor intenta de nuevo o escríbenos directamente."
+  },
+  "required": "*"
+}

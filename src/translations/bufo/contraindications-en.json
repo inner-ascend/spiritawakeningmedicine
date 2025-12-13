@@ -1,0 +1,138 @@
+{
+  "header": {
+    "title": "Bufo Alvarius Contraindications",
+    "subtitle": "Safety is sacred. This page outlines who should NOT participate in Bufo Alvarius ceremonies.",
+    "description": "5-MeO-DMT is a powerful medicine. These contraindications exist to protect your life and wellbeing. Please read carefully and honestly assess your situation."
+  },
+  "notice": {
+    "title": "This is not optional guidance",
+    "text": "These contraindications are absolute. If any apply to you, we cannot facilitate a ceremony for you. This is not rejection—it's protection. Some conditions can be life-threatening when combined with 5-MeO-DMT."
+  },
+  "medications": {
+    "title": "Medication Contraindications",
+    "description": "The following medications interact dangerously with 5-MeO-DMT and must be discontinued for a specific period before ceremony.",
+    "warning": "Never stop medications without consulting your prescribing doctor.",
+    "absolute": {
+      "title": "Absolute Contraindications (Cannot participate)",
+      "items": [
+        { "name": "MAOIs", "description": "(Monoamine Oxidase Inhibitors) - Including Nardil, Parnate, Marplan, and Ayahuasca/Harmaline. Minimum 14 days off required." },
+        { "name": "SSRIs", "description": "(Selective Serotonin Reuptake Inhibitors) - Prozac, Zoloft, Lexapro, Celexa, Paxil, etc. Minimum 2-6 weeks off required depending on medication." },
+        { "name": "SNRIs", "description": "(Serotonin-Norepinephrine Reuptake Inhibitors) - Effexor, Cymbalta, Pristiq. Minimum 2-4 weeks off required." },
+        { "name": "Tricyclic Antidepressants", "description": "- Amitriptyline, Nortriptyline, Imipramine. Minimum 2 weeks off required." },
+        { "name": "Lithium", "description": "- Extremely dangerous combination. Cannot participate." },
+        { "name": "Tramadol", "description": "- Risk of serotonin syndrome. Minimum 1 week off required." }
+      ]
+    },
+    "assessment": {
+      "title": "Requires Assessment & Tapering Plan",
+      "items": [
+        { "name": "Benzodiazepines", "description": "- Xanax, Valium, Klonopin, Ativan. May reduce effectiveness and require tapering plan." },
+        { "name": "Antipsychotics", "description": "- Seroquel, Risperdal, Abilify. Contraindicated; requires psychiatric consultation." },
+        { "name": "Blood Pressure Medications", "description": "- Some interactions possible. Requires case-by-case evaluation." },
+        { "name": "St. John's Wort", "description": "- Natural SSRI. Minimum 2 weeks off required." },
+        { "name": "5-HTP", "description": "- Serotonin precursor. Minimum 1 week off required." }
+      ]
+    },
+    "note": {
+      "important": "Important:",
+      "text": "This is not a complete list. Always disclose ALL medications, supplements, and substances during screening. When in doubt, we discuss it together."
+    }
+  },
+  "cardiovascular": {
+    "title": "Cardiovascular Conditions",
+    "description": "5-MeO-DMT causes temporary but significant increases in heart rate and blood pressure. The following conditions are absolute contraindications:",
+    "items": [
+      { "name": "Heart disease", "description": "- Including coronary artery disease, heart failure, cardiomyopathy" },
+      { "name": "Uncontrolled high blood pressure", "description": "- Hypertension that is not well-managed" },
+      { "name": "History of heart attack or stroke", "description": "" },
+      { "name": "Arrhythmias", "description": "- Irregular heartbeat, atrial fibrillation" },
+      { "name": "Aneurysms", "description": "- Brain or aortic aneurysms" },
+      { "name": "Blood clotting disorders", "description": "" },
+      { "name": "Recent surgery", "description": "- Within the last 6 months" }
+    ]
+  },
+  "psychiatric": {
+    "title": "Psychiatric & Neurological Conditions",
+    "description": "5-MeO-DMT is a powerful psychedelic that can destabilize vulnerable mental states. The following conditions are contraindicated:",
+    "absolute": {
+      "title": "Absolute Contraindications",
+      "items": [
+        { "name": "Schizophrenia", "description": "- Personal or strong family history" },
+        { "name": "Psychotic disorders", "description": "- Any history of psychosis, psychotic breaks, or delusional thinking" },
+        { "name": "Bipolar disorder", "description": "- Type I or II, especially with manic episodes" },
+        { "name": "Severe personality disorders", "description": "- Borderline, antisocial, or schizotypal personality disorder" },
+        { "name": "Active suicidal ideation", "description": "- Current suicidal thoughts or recent attempt" },
+        { "name": "Psychiatric hospitalization", "description": "- Within the last year" }
+      ]
+    },
+    "assessment": {
+      "title": "Requires Careful Assessment",
+      "items": [
+        { "name": "Severe depression", "description": "- Currently in a severe depressive episode" },
+        { "name": "Severe anxiety disorders", "description": "- Unmanaged panic disorder or severe PTSD" },
+        { "name": "Dissociative disorders", "description": "- DID or severe dissociation" },
+        { "name": "Recent major trauma", "description": "- Within the last 6 months" }
+      ]
+    },
+    "neurological": {
+      "title": "Neurological Contraindications",
+      "items": [
+        { "name": "Epilepsy or seizure disorders", "description": "- Any history of seizures" },
+        { "name": "Brain tumors or lesions", "description": "" },
+        { "name": "Traumatic brain injury", "description": "- Recent or severe TBI" }
+      ]
+    }
+  },
+  "other": {
+    "title": "Other Contraindications",
+    "pregnancy": {
+      "title": "Pregnancy & Nursing",
+      "text": "5-MeO-DMT should never be taken during pregnancy or while breastfeeding. The effects on fetal development are unknown and potentially harmful.",
+      "label": "Absolute contraindication."
+    },
+    "respiratory": {
+      "title": "Respiratory Conditions",
+      "items": [
+        { "name": "Severe asthma", "description": "- Uncontrolled or requiring daily steroids" },
+        { "name": "COPD", "description": "- Chronic obstructive pulmonary disease" },
+        { "name": "Sleep apnea", "description": "- Severe or untreated" }
+      ]
+    },
+    "medical": {
+      "title": "Other Medical Conditions",
+      "items": [
+        { "name": "Glaucoma", "description": "- 5-MeO-DMT increases intraocular pressure" },
+        { "name": "Liver or kidney disease", "description": "- Severe impairment affecting metabolism" },
+        { "name": "Diabetes", "description": "- Uncontrolled or insulin-dependent (requires assessment)" }
+      ]
+    },
+    "substance": {
+      "title": "Substance Use",
+      "items": [
+        { "name": "Active addiction", "type": "absolute", "description": "- Currently in active substance abuse (alcohol, opioids, stimulants)" },
+        { "name": "Recent psychedelic use", "type": "assessment", "description": "- Wait at least 2 weeks between psychedelic experiences" },
+        { "name": "Cannabis", "type": "assessment", "description": "- Abstain for at least 24-48 hours before ceremony" },
+        { "name": "Alcohol", "type": "assessment", "description": "- Abstain for at least 48 hours before ceremony" }
+      ]
+    },
+    "age": {
+      "title": "Age Requirements",
+      "text": "Participants must be at least 21 years old. The brain continues developing until approximately age 25, and powerful psychedelics are not recommended for developing minds."
+    }
+  },
+  "questions": {
+    "title": "Questions?",
+    "unsure": "If you're unsure whether a condition applies to you",
+    "unsureText": "— ask. It's always better to discuss than to assume. Some conditions require individual assessment rather than automatic exclusion.",
+    "contraindicated": "If you have a contraindication",
+    "contraindicatedText": "— this doesn't mean you can't do deep healing work. We offer integration sessions, energy healing, family constellations, and mentorship that don't involve medicine.",
+    "medications": "If you're on medications",
+    "medicationsText": "— never stop medications without consulting your prescribing doctor first. We can discuss a safe tapering timeline together, but medical supervision is essential."
+  },
+  "cta": {
+    "text": "If you've read through this page and believe you're a safe candidate for Bufo Alvarius ceremony, the next step is the screening questionnaire.",
+    "screening": "Begin Screening",
+    "contact": "Ask a Question",
+    "note": "All screening information is kept strictly confidential."
+  }
+}

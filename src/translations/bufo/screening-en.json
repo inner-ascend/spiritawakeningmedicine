@@ -1,0 +1,83 @@
+{
+  "header": {
+    "title": "Bufo Alvarius Screening",
+    "subtitle": "Thank you for your interest in this sacred work.",
+    "description": "Before we go further, we begin with a screening to understand your medical background, current emotional state, and what's calling you to this journey. This medicine is powerful and not for everyone — safety and alignment come first."
+  },
+  "success": {
+    "title": "Thank You",
+    "subtitle": "Your screening has been received.",
+    "description": "We'll review your answers carefully and get back to you within 48 hours. This is a sacred process, and we take the time to feel into each application with presence and care.",
+    "nextSteps": "If we move forward, we'll send you a consent and liability form to complete before we schedule preparation sessions.",
+    "closing": "In the meantime, trust your journey.",
+    "returnHome": "Return Home"
+  },
+  "basicInfo": {
+    "title": "Basic Information",
+    "name": "Full Name",
+    "email": "Email",
+    "age": "Age",
+    "location": "Location (City, Country)"
+  },
+  "questions": {
+    "title": "Screening Questions",
+    "q1": {
+      "label": "1. What is calling you to this experience right now?",
+      "placeholder": "Share what's drawing you to this work..."
+    },
+    "q2": {
+      "label": "2. Have you worked with any plant medicines or psychedelics before?",
+      "hint": "(Ayahuasca, psilocybin, LSD, MDMA, ketamine, Bufo, etc.)",
+      "placeholder": "If yes, please describe your experiences..."
+    },
+    "q3": {
+      "label": "3. Do you have any medical conditions?",
+      "hint": "(Heart conditions, high blood pressure, asthma, neurological conditions, etc.)",
+      "placeholder": "Please list any medical conditions or write 'None'..."
+    },
+    "q4": {
+      "label": "4. Are you currently taking any medications?",
+      "hint": "Especially: SSRIs, MAOIs, antidepressants, antipsychotics, benzodiazepines",
+      "placeholder": "Please list all current medications or write 'None'..."
+    },
+    "q5": {
+      "label": "5. Any history of bipolar, schizophrenia, psychosis, or psychiatric hospitalization?",
+      "placeholder": "Please share any relevant history or write 'No'..."
+    },
+    "q6": {
+      "label": "6. How has your mental/emotional state been in the last 3 months?",
+      "placeholder": "Describe your recent emotional and mental state..."
+    },
+    "q7": {
+      "label": "7. Are you currently going through major life stress?",
+      "hint": "(Recent breakup, death of loved one, trauma, depression, job loss, etc.)",
+      "placeholder": "Share any significant life events or stressors..."
+    },
+    "q8": {
+      "label": "8. What is your intention for this journey?",
+      "placeholder": "What do you hope to explore, heal, or understand?"
+    },
+    "q9": {
+      "label": "9. Have you ever had panic attacks or strong anxiety?",
+      "placeholder": "Describe any history with anxiety or panic..."
+    },
+    "q10": {
+      "label": "10. Do you feel grounded and supported in your life right now?",
+      "placeholder": "Do you have a support system? Do you feel stable?"
+    },
+    "q11": {
+      "label": "11. Anything else you'd like to share?",
+      "placeholder": "Any additional context, questions, or things you want us to know..."
+    }
+  },
+  "notice": {
+    "important": "Important:",
+    "text": "This screening helps ensure your safety and readiness. Bufo Alvarius is a powerful medicine with real contraindications. Honest answers protect both of us and allow us to guide you properly. All information is kept strictly confidential."
+  },
+  "submit": {
+    "button": "Submit Screening",
+    "sending": "Sending...",
+    "error": "Something went wrong. Please try again or email directly."
+  },
+  "required": "*"
+}

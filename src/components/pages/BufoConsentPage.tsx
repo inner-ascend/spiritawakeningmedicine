@@ -3,6 +3,14 @@ import emailjs from '@emailjs/browser';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
 import { CheckCircle, AlertTriangle } from 'lucide-react';
+import { useLanguage } from '../../contexts/LanguageContext';
+import translationsEN from '../../translations/bufo/consent-en.json';
+import translationsES from '../../translations/bufo/consent-es.json';
+
+const translations = {
+  en: translationsEN,
+  es: translationsES,
+};
 
 interface ConsentFormData {
   name: string;
@@ -19,31 +27,10 @@ interface ConsentFormData {
   signature: string;
 }
 
-const risksList = [
-  'Intense emotional and psychological experiences',
-  'Temporary loss of motor control and bodily awareness',
-  'Temporary changes in perception, thought, and sense of self',
-  'Physical reactions such as nausea, vomiting, changes in heart rate or blood pressure',
-  'Re-emergence of past traumas or suppressed emotions',
-  'Rare but possible adverse psychological reactions',
-  'In extremely rare cases, medical emergencies'
-];
-
-const medicalList = [
-  'All current medications (especially SSRIs, MAOIs, antidepressants, antipsychotics)',
-  'Any history of heart conditions, high blood pressure, or cardiovascular issues',
-  'Any history of psychosis, schizophrenia, bipolar disorder, or psychiatric hospitalization',
-  'Current pregnancy or possibility of pregnancy',
-  'Any other physical or mental health conditions'
-];
-
-const confidentialityList = [
-  'The identity and personal information of any other participants (if applicable)',
-  'The specific location of the ceremony space',
-  'Any personal details shared by the facilitators'
-];
-
 export default function BufoConsentPage() {
+  const { language } = useLanguage();
+  const t = translations[language] || translations.en;
+
   const [formData, setFormData] = useState<ConsentFormData>({
     name: '',
     email: '',
@@ -141,22 +128,22 @@ ${new Date().toISOString()}
                 <CheckCircle className="w-10 h-10 text-ocean-turquoise" />
               </div>
               <h1 className="text-4xl font-serif text-sacred-white mb-6">
-                Consent Form Received
+                {t.success.title}
               </h1>
               <p className="text-xl text-desert-sand/90 mb-4">
-                Thank you for completing the consent and waiver.
+                {t.success.subtitle}
               </p>
               <p className="text-desert-sand/70 leading-relaxed mb-8">
-                Your signed consent has been recorded. We'll be in touch with the next steps for your ceremony preparation, including scheduling your preparation session and confirming location details.
+                {t.success.description}
               </p>
               <p className="text-desert-sand/50 italic mb-8">
-                Please save a copy of this consent for your records.
+                {t.success.saveNote}
               </p>
               <a
                 href="/"
                 className="inline-block px-8 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-colors font-medium"
               >
-                Return Home
+                {t.success.returnHome}
               </a>
             </div>
           </div>
@@ -175,10 +162,10 @@ ${new Date().toISOString()}
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
-              Consent & Liability Waiver
+              {t.header.title}
             </h1>
             <p className="text-xl text-desert-sand/80">
-              Bufo Alvarius Ceremony
+              {t.header.subtitle}
             </p>
           </div>
         </div>
@@ -195,9 +182,9 @@ ${new Date().toISOString()}
                 <div className="flex gap-4">
                   <AlertTriangle className="w-6 h-6 text-desert-clay flex-shrink-0 mt-1" />
                   <div>
-                    <p className="text-earth-800 font-medium mb-2">Please Read Carefully</p>
+                    <p className="text-earth-800 font-medium mb-2">{t.warning.title}</p>
                     <p className="text-sm text-earth-700/80 leading-relaxed">
-                      This document outlines the nature of the Bufo Alvarius ceremony, associated risks, and your rights and responsibilities as a participant. By signing below, you acknowledge that you have read, understood, and agree to all terms.
+                      {t.warning.text}
                     </p>
                   </div>
                 </div>
@@ -205,11 +192,11 @@ ${new Date().toISOString()}
 
               {/* Section 1: Nature of Experience */}
               <div className="bg-white p-8 rounded-2xl space-y-4">
-                <h2 className="text-xl font-serif text-earth-800">1. Nature of the Experience</h2>
+                <h2 className="text-xl font-serif text-earth-800">{t.sections.nature.title}</h2>
                 <div className="text-sm text-earth-700/80 leading-relaxed space-y-3">
-                  <p>I understand that the Bufo Alvarius ceremony involves the use of 5-MeO-DMT, a naturally occurring psychoactive compound derived from the secretions of the Bufo Alvarius toad. This is a powerful entheogenic substance that can produce profound alterations in consciousness.</p>
-                  <p>I understand that this ceremony is offered as a spiritual practice and personal growth experience. It is NOT a medical treatment, therapy, or substitute for professional mental health care.</p>
-                  <p>I acknowledge that the facilitators are not medical doctors, psychiatrists, or licensed therapists, and do not diagnose, treat, or claim to cure any medical or psychological condition.</p>
+                  {t.sections.nature.paragraphs.map((paragraph, idx) => (
+                    <p key={idx}>{paragraph}</p>
+                  ))}
                 </div>
                 <label className="flex items-start gap-3 mt-4 cursor-pointer">
                   <input
@@ -219,21 +206,21 @@ ${new Date().toISOString()}
                     onChange={handleChange}
                     className="mt-1 w-5 h-5 rounded border-earth-700/30 text-sacred-gold focus:ring-sacred-gold"
                   />
-                  <span className="text-earth-800 text-sm">I have read and understand the nature of the Bufo Alvarius experience</span>
+                  <span className="text-earth-800 text-sm">{t.sections.nature.checkbox}</span>
                 </label>
               </div>
 
               {/* Section 2: Risks */}
               <div className="bg-white p-8 rounded-2xl space-y-4">
-                <h2 className="text-xl font-serif text-earth-800">2. Acknowledgment of Risks</h2>
+                <h2 className="text-xl font-serif text-earth-800">{t.sections.risks.title}</h2>
                 <div className="text-sm text-earth-700/80 leading-relaxed space-y-3">
-                  <p>I understand that participation in this ceremony carries inherent risks, including but not limited to:</p>
+                  <p>{t.sections.risks.intro}</p>
                   <ul className="list-disc pl-5 space-y-1">
-                    {risksList.map((item, idx) => (
+                    {t.sections.risks.items.map((item, idx) => (
                       <li key={idx}>{item}</li>
                     ))}
                   </ul>
-                  <p>I accept full responsibility for my decision to participate and understand that the facilitators cannot guarantee any specific outcome or the absence of adverse effects.</p>
+                  <p>{t.sections.risks.closing}</p>
                 </div>
                 <label className="flex items-start gap-3 mt-4 cursor-pointer">
                   <input
@@ -243,21 +230,21 @@ ${new Date().toISOString()}
                     onChange={handleChange}
                     className="mt-1 w-5 h-5 rounded border-earth-700/30 text-sacred-gold focus:ring-sacred-gold"
                   />
-                  <span className="text-earth-800 text-sm">I acknowledge and accept the risks associated with this experience</span>
+                  <span className="text-earth-800 text-sm">{t.sections.risks.checkbox}</span>
                 </label>
               </div>
 
               {/* Section 3: Medical Disclosure */}
               <div className="bg-white p-8 rounded-2xl space-y-4">
-                <h2 className="text-xl font-serif text-earth-800">3. Medical Disclosure & Contraindications</h2>
+                <h2 className="text-xl font-serif text-earth-800">{t.sections.medical.title}</h2>
                 <div className="text-sm text-earth-700/80 leading-relaxed space-y-3">
-                  <p>I confirm that I have disclosed all relevant medical and psychological information in my screening questionnaire, including:</p>
+                  <p>{t.sections.medical.intro}</p>
                   <ul className="list-disc pl-5 space-y-1">
-                    {medicalList.map((item, idx) => (
+                    {t.sections.medical.items.map((item, idx) => (
                       <li key={idx}>{item}</li>
                     ))}
                   </ul>
-                  <p>I understand that withholding or falsifying medical information could result in serious harm to myself, and I release the facilitators from any liability resulting from undisclosed conditions.</p>
+                  <p>{t.sections.medical.closing}</p>
                 </div>
                 <label className="flex items-start gap-3 mt-4 cursor-pointer">
                   <input
@@ -267,18 +254,18 @@ ${new Date().toISOString()}
                     onChange={handleChange}
                     className="mt-1 w-5 h-5 rounded border-earth-700/30 text-sacred-gold focus:ring-sacred-gold"
                   />
-                  <span className="text-earth-800 text-sm">I confirm that I have truthfully disclosed all medical and psychological information</span>
+                  <span className="text-earth-800 text-sm">{t.sections.medical.checkbox}</span>
                 </label>
               </div>
 
               {/* Section 4: Confidentiality */}
               <div className="bg-white p-8 rounded-2xl space-y-4">
-                <h2 className="text-xl font-serif text-earth-800">4. Confidentiality</h2>
+                <h2 className="text-xl font-serif text-earth-800">{t.sections.confidentiality.title}</h2>
                 <div className="text-sm text-earth-700/80 leading-relaxed space-y-3">
-                  <p>I understand that my personal information, screening responses, and anything shared during sessions will be held in strict confidence by the facilitators.</p>
-                  <p>I also agree to maintain confidentiality regarding:</p>
+                  <p>{t.sections.confidentiality.intro}</p>
+                  <p>{t.sections.confidentiality.alsoAgree}</p>
                   <ul className="list-disc pl-5 space-y-1">
-                    {confidentialityList.map((item, idx) => (
+                    {t.sections.confidentiality.items.map((item, idx) => (
                       <li key={idx}>{item}</li>
                     ))}
                   </ul>
@@ -291,16 +278,17 @@ ${new Date().toISOString()}
                     onChange={handleChange}
                     className="mt-1 w-5 h-5 rounded border-earth-700/30 text-sacred-gold focus:ring-sacred-gold"
                   />
-                  <span className="text-earth-800 text-sm">I agree to maintain confidentiality as described above</span>
+                  <span className="text-earth-800 text-sm">{t.sections.confidentiality.checkbox}</span>
                 </label>
               </div>
 
               {/* Section 5: Media */}
               <div className="bg-white p-8 rounded-2xl space-y-4">
-                <h2 className="text-xl font-serif text-earth-800">5. Photography, Recording & Media</h2>
+                <h2 className="text-xl font-serif text-earth-800">{t.sections.media.title}</h2>
                 <div className="text-sm text-earth-700/80 leading-relaxed space-y-3">
-                  <p>I understand that no photography, video, or audio recording is permitted during the ceremony without explicit consent from all parties present.</p>
-                  <p>I agree not to record, photograph, or share any media from the ceremony or ceremony space without prior written permission.</p>
+                  {t.sections.media.paragraphs.map((paragraph, idx) => (
+                    <p key={idx}>{paragraph}</p>
+                  ))}
                 </div>
                 <label className="flex items-start gap-3 mt-4 cursor-pointer">
                   <input
@@ -310,18 +298,19 @@ ${new Date().toISOString()}
                     onChange={handleChange}
                     className="mt-1 w-5 h-5 rounded border-earth-700/30 text-sacred-gold focus:ring-sacred-gold"
                   />
-                  <span className="text-earth-800 text-sm">I agree to the media and recording policy</span>
+                  <span className="text-earth-800 text-sm">{t.sections.media.checkbox}</span>
                 </label>
               </div>
 
               {/* Section 6: Voluntary Participation & Liability */}
               <div className="bg-white p-8 rounded-2xl space-y-4">
-                <h2 className="text-xl font-serif text-earth-800">6. Voluntary Participation & Release of Liability</h2>
+                <h2 className="text-xl font-serif text-earth-800">{t.sections.voluntary.title}</h2>
                 <div className="text-sm text-earth-700/80 leading-relaxed space-y-3">
-                  <p>I confirm that my participation in this ceremony is entirely voluntary. I have not been coerced, pressured, or manipulated into participating.</p>
-                  <p>I understand that I may withdraw my participation at any time before the ceremony begins. Once the medicine has been administered, the experience must be allowed to complete naturally.</p>
-                  <p><strong>Release of Liability:</strong> To the fullest extent permitted by law, I release, waive, and discharge the facilitators, and any assistants, from any and all liability, claims, demands, or causes of action that may arise from my participation in this ceremony.</p>
-                  <p>This release applies to any injury, illness, damage, or loss—whether physical, psychological, emotional, or material—that may result from my participation, regardless of cause.</p>
+                  {t.sections.voluntary.paragraphs.map((paragraph, idx) => (
+                    <p key={idx}>{paragraph}</p>
+                  ))}
+                  <p><strong>{t.sections.voluntary.releaseTitle}</strong> {t.sections.voluntary.releaseText}</p>
+                  <p>{t.sections.voluntary.releaseClosing}</p>
                 </div>
                 <label className="flex items-start gap-3 mt-4 cursor-pointer">
                   <input
@@ -331,17 +320,17 @@ ${new Date().toISOString()}
                     onChange={handleChange}
                     className="mt-1 w-5 h-5 rounded border-earth-700/30 text-sacred-gold focus:ring-sacred-gold"
                   />
-                  <span className="text-earth-800 text-sm">I confirm my voluntary participation and release of liability</span>
+                  <span className="text-earth-800 text-sm">{t.sections.voluntary.checkbox}</span>
                 </label>
               </div>
 
               {/* Emergency Contact */}
               <div className="bg-white p-8 rounded-2xl space-y-6">
-                <h2 className="text-xl font-serif text-earth-800">Emergency Contact</h2>
-                <p className="text-sm text-earth-700/70">Please provide an emergency contact who can be reached if needed.</p>
+                <h2 className="text-xl font-serif text-earth-800">{t.emergencyContact.title}</h2>
+                <p className="text-sm text-earth-700/70">{t.emergencyContact.description}</p>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-earth-800 font-medium mb-2">Contact Name *</label>
+                    <label className="block text-earth-800 font-medium mb-2">{t.emergencyContact.name} {t.required}</label>
                     <input
                       type="text"
                       name="emergencyContactName"
@@ -352,7 +341,7 @@ ${new Date().toISOString()}
                     />
                   </div>
                   <div>
-                    <label className="block text-earth-800 font-medium mb-2">Contact Phone *</label>
+                    <label className="block text-earth-800 font-medium mb-2">{t.emergencyContact.phone} {t.required}</label>
                     <input
                       type="tel"
                       name="emergencyContactPhone"
@@ -367,10 +356,10 @@ ${new Date().toISOString()}
 
               {/* Signature */}
               <div className="bg-white p-8 rounded-2xl space-y-6">
-                <h2 className="text-xl font-serif text-earth-800">Digital Signature</h2>
+                <h2 className="text-xl font-serif text-earth-800">{t.signature.title}</h2>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-earth-800 font-medium mb-2">Full Legal Name *</label>
+                    <label className="block text-earth-800 font-medium mb-2">{t.signature.fullName} {t.required}</label>
                     <input
                       type="text"
                       name="name"
@@ -381,7 +370,7 @@ ${new Date().toISOString()}
                     />
                   </div>
                   <div>
-                    <label className="block text-earth-800 font-medium mb-2">Email *</label>
+                    <label className="block text-earth-800 font-medium mb-2">{t.signature.email} {t.required}</label>
                     <input
                       type="email"
                       name="email"
@@ -393,7 +382,7 @@ ${new Date().toISOString()}
                   </div>
                 </div>
                 <div>
-                  <label className="block text-earth-800 font-medium mb-2">Date</label>
+                  <label className="block text-earth-800 font-medium mb-2">{t.signature.date}</label>
                   <input
                     type="date"
                     name="date"
@@ -404,15 +393,15 @@ ${new Date().toISOString()}
                   />
                 </div>
                 <div>
-                  <label className="block text-earth-800 font-medium mb-2">Type your full name as your digital signature *</label>
-                  <p className="text-sm text-earth-700/60 mb-2">By typing your name below, you confirm that you have read, understood, and agree to all terms in this document.</p>
+                  <label className="block text-earth-800 font-medium mb-2">{t.signature.signatureLabel} {t.required}</label>
+                  <p className="text-sm text-earth-700/60 mb-2">{t.signature.signatureHint}</p>
                   <input
                     type="text"
                     name="signature"
                     value={formData.signature}
                     onChange={handleChange}
                     required
-                    placeholder="Type your full legal name"
+                    placeholder={t.signature.signaturePlaceholder}
                     className="w-full px-4 py-3 rounded-xl border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 bg-white font-serif text-lg"
                   />
                 </div>
@@ -425,18 +414,18 @@ ${new Date().toISOString()}
                   disabled={formStatus === 'sending' || !allAgreementsChecked || !formData.signature}
                   className="px-12 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-colors font-medium text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {formStatus === 'sending' ? 'Submitting...' : 'Sign & Submit Consent'}
+                  {formStatus === 'sending' ? t.submit.sending : t.submit.button}
                 </button>
 
                 {!allAgreementsChecked && (
                   <p className="mt-4 text-earth-700/60 text-sm">
-                    Please read and agree to all sections above
+                    {t.submit.incomplete}
                   </p>
                 )}
 
                 {formStatus === 'error' && (
                   <p className="mt-4 text-desert-clay">
-                    Something went wrong. Please try again or email directly.
+                    {t.submit.error}
                   </p>
                 )}
               </div>

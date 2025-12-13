@@ -1,0 +1,138 @@
+{
+  "header": {
+    "title": "Contraindicaciones de Bufo Alvarius",
+    "subtitle": "La seguridad es sagrada. Esta página describe quién NO debe participar en ceremonias de Bufo Alvarius.",
+    "description": "5-MeO-DMT es una medicina poderosa. Estas contraindicaciones existen para proteger tu vida y bienestar. Por favor lee cuidadosamente y evalúa tu situación honestamente."
+  },
+  "notice": {
+    "title": "Esto no es orientación opcional",
+    "text": "Estas contraindicaciones son absolutas. Si alguna aplica a ti, no podemos facilitarte una ceremonia. Esto no es rechazo—es protección. Algunas condiciones pueden ser potencialmente mortales cuando se combinan con 5-MeO-DMT."
+  },
+  "medications": {
+    "title": "Contraindicaciones de Medicamentos",
+    "description": "Los siguientes medicamentos interactúan peligrosamente con 5-MeO-DMT y deben descontinuarse por un período específico antes de la ceremonia.",
+    "warning": "Nunca dejes de tomar medicamentos sin consultar a tu médico.",
+    "absolute": {
+      "title": "Contraindicaciones Absolutas (No puede participar)",
+      "items": [
+        { "name": "IMAOs", "description": "(Inhibidores de la Monoaminooxidasa) - Incluyendo Nardil, Parnate, Marplan, y Ayahuasca/Harmalina. Mínimo 14 días sin tomarlos." },
+        { "name": "ISRS", "description": "(Inhibidores Selectivos de la Recaptación de Serotonina) - Prozac, Zoloft, Lexapro, Celexa, Paxil, etc. Mínimo 2-6 semanas sin tomarlos dependiendo del medicamento." },
+        { "name": "IRSN", "description": "(Inhibidores de la Recaptación de Serotonina-Norepinefrina) - Effexor, Cymbalta, Pristiq. Mínimo 2-4 semanas sin tomarlos." },
+        { "name": "Antidepresivos Tricíclicos", "description": "- Amitriptilina, Nortriptilina, Imipramina. Mínimo 2 semanas sin tomarlos." },
+        { "name": "Litio", "description": "- Combinación extremadamente peligrosa. No puede participar." },
+        { "name": "Tramadol", "description": "- Riesgo de síndrome serotoninérgico. Mínimo 1 semana sin tomarlo." }
+      ]
+    },
+    "assessment": {
+      "title": "Requiere Evaluación y Plan de Reducción",
+      "items": [
+        { "name": "Benzodiacepinas", "description": "- Xanax, Valium, Klonopin, Ativan. Puede reducir efectividad y requiere plan de reducción." },
+        { "name": "Antipsicóticos", "description": "- Seroquel, Risperdal, Abilify. Contraindicados; requiere consulta psiquiátrica." },
+        { "name": "Medicamentos para Presión Arterial", "description": "- Algunas interacciones posibles. Requiere evaluación caso por caso." },
+        { "name": "Hierba de San Juan", "description": "- ISRS natural. Mínimo 2 semanas sin tomarla." },
+        { "name": "5-HTP", "description": "- Precursor de serotonina. Mínimo 1 semana sin tomarlo." }
+      ]
+    },
+    "note": {
+      "important": "Importante:",
+      "text": "Esta no es una lista completa. Siempre divulga TODOS los medicamentos, suplementos y sustancias durante la evaluación. En caso de duda, lo discutimos juntos."
+    }
+  },
+  "cardiovascular": {
+    "title": "Condiciones Cardiovasculares",
+    "description": "5-MeO-DMT causa aumentos temporales pero significativos en la frecuencia cardíaca y presión arterial. Las siguientes condiciones son contraindicaciones absolutas:",
+    "items": [
+      { "name": "Enfermedad cardíaca", "description": "- Incluyendo enfermedad de las arterias coronarias, insuficiencia cardíaca, cardiomiopatía" },
+      { "name": "Presión arterial alta no controlada", "description": "- Hipertensión que no está bien manejada" },
+      { "name": "Historial de ataque cardíaco o derrame cerebral", "description": "" },
+      { "name": "Arritmias", "description": "- Latido cardíaco irregular, fibrilación auricular" },
+      { "name": "Aneurismas", "description": "- Aneurismas cerebrales o aórticos" },
+      { "name": "Trastornos de coagulación sanguínea", "description": "" },
+      { "name": "Cirugía reciente", "description": "- Dentro de los últimos 6 meses" }
+    ]
+  },
+  "psychiatric": {
+    "title": "Condiciones Psiquiátricas y Neurológicas",
+    "description": "5-MeO-DMT es un psicodélico poderoso que puede desestabilizar estados mentales vulnerables. Las siguientes condiciones están contraindicadas:",
+    "absolute": {
+      "title": "Contraindicaciones Absolutas",
+      "items": [
+        { "name": "Esquizofrenia", "description": "- Historia personal o familiar fuerte" },
+        { "name": "Trastornos psicóticos", "description": "- Cualquier historia de psicosis, brotes psicóticos o pensamiento delirante" },
+        { "name": "Trastorno bipolar", "description": "- Tipo I o II, especialmente con episodios maníacos" },
+        { "name": "Trastornos graves de personalidad", "description": "- Trastorno límite, antisocial o esquizotípico de la personalidad" },
+        { "name": "Ideación suicida activa", "description": "- Pensamientos suicidas actuales o intento reciente" },
+        { "name": "Hospitalización psiquiátrica", "description": "- Dentro del último año" }
+      ]
+    },
+    "assessment": {
+      "title": "Requiere Evaluación Cuidadosa",
+      "items": [
+        { "name": "Depresión severa", "description": "- Actualmente en un episodio depresivo severo" },
+        { "name": "Trastornos de ansiedad severos", "description": "- Trastorno de pánico no manejado o TEPT severo" },
+        { "name": "Trastornos disociativos", "description": "- TID o disociación severa" },
+        { "name": "Trauma mayor reciente", "description": "- Dentro de los últimos 6 meses" }
+      ]
+    },
+    "neurological": {
+      "title": "Contraindicaciones Neurológicas",
+      "items": [
+        { "name": "Epilepsia o trastornos convulsivos", "description": "- Cualquier historia de convulsiones" },
+        { "name": "Tumores cerebrales o lesiones", "description": "" },
+        { "name": "Lesión cerebral traumática", "description": "- TEC reciente o severo" }
+      ]
+    }
+  },
+  "other": {
+    "title": "Otras Contraindicaciones",
+    "pregnancy": {
+      "title": "Embarazo y Lactancia",
+      "text": "5-MeO-DMT nunca debe tomarse durante el embarazo o la lactancia. Los efectos en el desarrollo fetal son desconocidos y potencialmente dañinos.",
+      "label": "Contraindicación absoluta."
+    },
+    "respiratory": {
+      "title": "Condiciones Respiratorias",
+      "items": [
+        { "name": "Asma severo", "description": "- No controlado o que requiere esteroides diarios" },
+        { "name": "EPOC", "description": "- Enfermedad pulmonar obstructiva crónica" },
+        { "name": "Apnea del sueño", "description": "- Severa o no tratada" }
+      ]
+    },
+    "medical": {
+      "title": "Otras Condiciones Médicas",
+      "items": [
+        { "name": "Glaucoma", "description": "- 5-MeO-DMT aumenta la presión intraocular" },
+        { "name": "Enfermedad hepática o renal", "description": "- Deterioro severo que afecta el metabolismo" },
+        { "name": "Diabetes", "description": "- No controlada o insulinodependiente (requiere evaluación)" }
+      ]
+    },
+    "substance": {
+      "title": "Uso de Sustancias",
+      "items": [
+        { "name": "Adicción activa", "type": "absolute", "description": "- Actualmente en abuso activo de sustancias (alcohol, opioides, estimulantes)" },
+        { "name": "Uso reciente de psicodélicos", "type": "assessment", "description": "- Esperar al menos 2 semanas entre experiencias psicodélicas" },
+        { "name": "Cannabis", "type": "assessment", "description": "- Abstenerse al menos 24-48 horas antes de la ceremonia" },
+        { "name": "Alcohol", "type": "assessment", "description": "- Abstenerse al menos 48 horas antes de la ceremonia" }
+      ]
+    },
+    "age": {
+      "title": "Requisitos de Edad",
+      "text": "Los participantes deben tener al menos 21 años. El cerebro continúa desarrollándose hasta aproximadamente los 25 años, y los psicodélicos potentes no se recomiendan para mentes en desarrollo."
+    }
+  },
+  "questions": {
+    "title": "¿Preguntas?",
+    "unsure": "Si no estás seguro/a de si una condición aplica a ti",
+    "unsureText": "— pregunta. Siempre es mejor discutir que asumir. Algunas condiciones requieren evaluación individual en lugar de exclusión automática.",
+    "contraindicated": "Si tienes una contraindicación",
+    "contraindicatedText": "— esto no significa que no puedas hacer trabajo de sanación profunda. Ofrecemos sesiones de integración, sanación energética, constelaciones familiares y mentoría que no involucran medicina.",
+    "medications": "Si estás tomando medicamentos",
+    "medicationsText": "— nunca dejes de tomar medicamentos sin consultar primero a tu médico. Podemos discutir un plan de reducción seguro juntos, pero la supervisión médica es esencial."
+  },
+  "cta": {
+    "text": "Si has leído esta página y crees que eres un/a candidato/a seguro/a para la ceremonia de Bufo Alvarius, el siguiente paso es el cuestionario de evaluación.",
+    "screening": "Comenzar Evaluación",
+    "contact": "Hacer una Pregunta",
+    "note": "Toda la información de evaluación se mantiene estrictamente confidencial."
+  }
+}

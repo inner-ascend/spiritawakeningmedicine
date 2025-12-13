@@ -102,23 +102,23 @@ export default function OnePagerPage() {
 
               {/* Experience highlights from Ceremonies page */}
               <div className="bg-earth-900/50 rounded-2xl p-8 my-12">
-                <h3 className="text-2xl font-serif text-sacred-white mb-6 text-center">{t.whatIsBufo.experience.experience.title}</h3>
+                <h3 className="text-2xl font-serif text-sacred-white mb-6 text-center">{t.whatIsBufo.experience.title}</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple mt-1 text-xl">◆</span>
-                    <span><strong className="text-sacred-white">{t.whatIsBufo.experience.experience.speed}</strong> {t.whatIsBufo.experience.experience.speedValue}</span>
+                    <span><strong className="text-sacred-white">{t.whatIsBufo.experience.speed}</strong> {t.whatIsBufo.experience.speedValue}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple mt-1 text-xl">◆</span>
-                    <span><strong className="text-sacred-white">{t.whatIsBufo.experience.experience.duration}</strong> {t.whatIsBufo.experience.experience.durationValue}</span>
+                    <span><strong className="text-sacred-white">{t.whatIsBufo.experience.duration}</strong> {t.whatIsBufo.experience.durationValue}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple mt-1 text-xl">◆</span>
-                    <span><strong className="text-sacred-white">{t.whatIsBufo.experience.experience.intensity}</strong> {t.whatIsBufo.experience.experience.intensityValue}</span>
+                    <span><strong className="text-sacred-white">{t.whatIsBufo.experience.intensity}</strong> {t.whatIsBufo.experience.intensityValue}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple mt-1 text-xl">◆</span>
-                    <span><strong className="text-sacred-white">{t.whatIsBufo.experience.experience.outcome}</strong> {t.whatIsBufo.experience.experience.outcomeValue}</span>
+                    <span><strong className="text-sacred-white">{t.whatIsBufo.experience.outcome}</strong> {t.whatIsBufo.experience.outcomeValue}</span>
                   </p>
                 </div>
               </div>
@@ -255,7 +255,7 @@ export default function OnePagerPage() {
               <div className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
                 <div className="aspect-[4/5] relative">
                   <ResponsiveImage
-                    src="/images/atmosphere/ceremony-07.jpeg"
+                    src="/images/photos-new/IMG_9531.jpeg"
                     alt="Integration and embodiment"
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -484,8 +484,8 @@ export default function OnePagerPage() {
       {/* ========== SECTION 9: IMAGE BREAK - Mazunte Beach ========== */}
       <div className="h-[60vh] relative overflow-hidden">
         <img
-          src="/images/locations/mazunte-beach-sunset.jpg"
-          alt="Mazunte beach at sunset - Oaxaca, Mexico"
+          src="/images/photos-new/IMG_9548.jpeg"
+          alt="Sacred ceremony moment"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-earth-900/40 to-earth-900/70 flex items-center justify-center">
@@ -589,25 +589,52 @@ export default function OnePagerPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
-                The Sacred Space
+                {t.gallery.title}
               </h2>
               <p className="text-lg text-desert-sand/70 max-w-2xl mx-auto">
-                A glimpse into the ceremony environment we create together
+                {t.gallery.description}
               </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
               {[
+                { src: '/images/new-gallery/IMG_7127.jpeg', alt: 'Preparation setting' },
+                { src: '/images/photos-new/IMG_9409.jpeg', alt: 'Sacred ceremony' },
                 { src: '/images/atmosphere/ceremony-20.jpeg', alt: 'Ceremony atmosphere' },
+                { src: '/images/photos-new/DSCF8199.jpeg', alt: 'Ceremony space' },
+                { src: '/images/new-gallery/IMG_8616.jpeg', alt: 'Ceremony setting' },
+                { src: '/images/photos-new/IMG_9416.jpeg', alt: 'Sacred moment' },
                 { src: '/images/atmosphere/ceremony-21.jpeg', alt: 'Sacred ceremony space' },
+                { src: '/images/photos-new/IMG_0105.jpeg', alt: 'Ritual atmosphere' },
+                { src: '/images/new-gallery/IMG_5460.jpeg', alt: 'Sacred ceremony space' },
+                { src: '/images/photos-new/IMG_9509.jpeg', alt: 'Integration circle' },
                 { src: '/images/atmosphere/ceremony-22.jpeg', alt: 'Preparation setting' },
+                { src: '/images/photos-new/DSCF8209.jpeg', alt: 'Sacred space' },
+                { src: '/images/new-gallery/IMG_7454.jpeg', alt: 'Ritual space' },
+                { src: '/images/photos-new/IMG_9548.jpeg', alt: 'Ceremony practice' },
                 { src: '/images/atmosphere/ceremony-23.jpeg', alt: 'Integration circle' },
+                { src: '/images/photos-new/IMG_9574.jpeg', alt: 'Sacred container' },
+                { src: '/images/new-gallery/IMG_7709.jpeg', alt: 'Sacred atmosphere' },
+                { src: '/images/photos-new/IMG_9586.jpeg', alt: 'Ceremony environment' },
                 { src: '/images/atmosphere/ceremony-24.jpg', alt: 'Sacred ceremony moment' },
+                { src: '/images/photos-new/IMG_9869.jpeg', alt: 'Sacred space' },
+                { src: '/images/new-gallery/IMG_6828.jpeg', alt: 'Ceremony atmosphere' },
+                { src: '/images/photos-new/IMG_9878.jpeg', alt: 'Ritual moment' },
                 { src: '/images/atmosphere/ceremony-25.jpg', alt: 'Ceremony practice' },
+                { src: '/images/photos-new/DSCF8420.jpeg', alt: 'Integration space' },
+                { src: '/images/new-gallery/IMG_7369.jpeg', alt: 'Ceremony practice' },
+                { src: '/images/photos-new/IMG_0096.jpeg', alt: 'Sacred atmosphere' },
                 { src: '/images/atmosphere/ceremony-26.jpg', alt: 'Ritual space' },
+                { src: '/images/photos-new/IMG_0098.jpeg', alt: 'Ceremony container' },
+                { src: '/images/new-gallery/IMG_8404.jpeg', alt: 'Sacred space' },
+                { src: '/images/photos-new/80DF527C-26B1-403B-9E62-6C5F7BF55541.jpeg', alt: 'Sacred moment' },
                 { src: '/images/atmosphere/ceremony-27.jpg', alt: 'Sacred container' },
+                { src: '/images/new-gallery/IMG_7161.jpeg', alt: 'Integration circle' },
                 { src: '/images/atmosphere/ceremony-28.jpg', alt: 'Ceremony environment' },
                 { src: '/images/atmosphere/ceremony-29.jpg', alt: 'Sacred atmosphere' },
+                { src: '/images/new-gallery/IMG_7227.JPG', alt: 'Sacred ceremony moment' },
+                { src: '/images/new-gallery/IMG_7470.jpeg', alt: 'Sacred container' },
+                { src: '/images/new-gallery/IMG_8738.jpeg', alt: 'Sacred moment' },
               ].map((image, index) => (
                 <div key={index} className="aspect-square relative overflow-hidden rounded-lg group">
                   <ResponsiveImage
@@ -826,32 +853,32 @@ export default function OnePagerPage() {
               <div className="bg-ocean-turquoise/10 rounded-2xl p-8">
                 <h3 className="text-2xl font-serif text-earth-800 mb-6 flex items-center gap-3">
                   <span className="text-ocean-turquoise text-2xl">◈</span>
-                  Safety Protocols
+                  {t.safety.protocols.title}
                 </h3>
                 <div className="space-y-3 text-earth-700/80">
                   <p className="flex items-start gap-3">
                     <span className="text-ocean-turquoise">✓</span>
-                    <span>Somatic grounding techniques throughout</span>
+                    <span>{t.safety.protocols.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-ocean-turquoise">✓</span>
-                    <span>Breath anchoring and co-regulation</span>
+                    <span>{t.safety.protocols.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-ocean-turquoise">✓</span>
-                    <span>Full presence and energetic holding</span>
+                    <span>{t.safety.protocols.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-ocean-turquoise">✓</span>
-                    <span>Intentional, conservative dosing</span>
+                    <span>{t.safety.protocols.item4}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-ocean-turquoise">✓</span>
-                    <span>Emergency protocols in place</span>
+                    <span>{t.safety.protocols.item5}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-ocean-turquoise">✓</span>
-                    <span>Integration check-ins at 48hrs and 2 weeks</span>
+                    <span>{t.safety.protocols.item6}</span>
                   </p>
                 </div>
               </div>
@@ -859,32 +886,32 @@ export default function OnePagerPage() {
               <div className="bg-sacred-purple/10 rounded-2xl p-8">
                 <h3 className="text-2xl font-serif text-earth-800 mb-6 flex items-center gap-3">
                   <span className="text-sacred-purple text-2xl">◈</span>
-                  Our Ethics
+                  {t.safety.ethics.title}
                 </h3>
                 <div className="space-y-3 text-earth-700/80">
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple">✓</span>
-                    <span>Natural Bufo secretion obtained ethically—toads never harmed. We honor the desert, the lineage, and the beings who carry this medicine.</span>
+                    <span>{t.safety.ethics.item1}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple">✓</span>
-                    <span>Lineage-guided practices by trained specialists</span>
+                    <span>{t.safety.ethics.item2}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple">✓</span>
-                    <span>Deep respect for Seri lineage and traditions</span>
+                    <span>{t.safety.ethics.item3}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple">✓</span>
-                    <span>No spiritual bypassing—real integration required</span>
+                    <span>{t.safety.ethics.item4}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple">✓</span>
-                    <span>Full consent and autonomy honored</span>
+                    <span>{t.safety.ethics.item5}</span>
                   </p>
                   <p className="flex items-start gap-3">
                     <span className="text-sacred-purple">✓</span>
-                    <span>Strict confidentiality maintained</span>
+                    <span>{t.safety.ethics.item6}</span>
                   </p>
                 </div>
               </div>
@@ -950,9 +977,9 @@ export default function OnePagerPage() {
             <div className="max-w-2xl mx-auto">
               {/* Primary CTA: Medical Screening */}
               <div className="bg-earth-900/50 backdrop-blur-xl rounded-2xl p-10 border border-sacred-gold/30 text-center mb-8">
-                <h3 className="text-2xl font-serif text-sacred-white mb-4">Ready to Begin?</h3>
+                <h3 className="text-2xl font-serif text-sacred-white mb-4">{t.contact.readyTitle}</h3>
                 <p className="text-desert-sand/80 leading-relaxed mb-8">
-                  Start by completing the medical screening. This helps us understand if this work is right for you.
+                  {t.contact.readyDescription}
                 </p>
                 <a
                   href="/bufo-screening"
@@ -960,13 +987,13 @@ export default function OnePagerPage() {
                   rel="noopener noreferrer"
                   className="inline-block px-10 py-5 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-all font-medium text-xl shadow-lg"
                 >
-                  Start Medical Screening
+                  {t.contact.screeningButton}
                 </a>
               </div>
 
               {/* Secondary: Questions via WhatsApp */}
               <div className="bg-earth-900/50 backdrop-blur-xl rounded-2xl p-6 border border-desert-sand/10 text-center mb-8">
-                <p className="text-desert-sand/70 mb-4">Have questions first?</p>
+                <p className="text-desert-sand/70 mb-4">{t.contact.questionsTitle}</p>
                 <a
                   href="https://wa.me/33646396325?text=Hello%2C%20I%20have%20a%20question%20about%20your%20ceremonies."
                   target="_blank"
@@ -976,18 +1003,18 @@ export default function OnePagerPage() {
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                   </svg>
-                  Ask a Question on WhatsApp
+                  {t.contact.whatsappButton}
                 </a>
               </div>
 
               {/* Other Contact Options */}
               <div className="grid md:grid-cols-3 gap-4">
                 <a
-                  href="mailto:hello@inner-ascend.com"
+                  href={`mailto:${t.contact.email.address}`}
                   className="bg-earth-900/50 backdrop-blur-xl rounded-2xl p-6 border border-desert-sand/10 text-center hover:border-sacred-gold/30 transition-colors"
                 >
-                  <h4 className="text-lg font-serif text-sacred-white mb-2">Email</h4>
-                  <p className="text-sacred-gold text-sm">hello@inner-ascend.com</p>
+                  <h4 className="text-lg font-serif text-sacred-white mb-2">{t.contact.email.title}</h4>
+                  <p className="text-sacred-gold text-sm">{t.contact.email.address}</p>
                 </a>
 
                 <a
@@ -996,13 +1023,13 @@ export default function OnePagerPage() {
                   rel="noopener noreferrer"
                   className="bg-earth-900/50 backdrop-blur-xl rounded-2xl p-6 border border-desert-sand/10 text-center hover:border-sacred-gold/30 transition-colors"
                 >
-                  <h4 className="text-lg font-serif text-sacred-white mb-2">Instagram</h4>
-                  <p className="text-sacred-gold text-sm">@inner__ascend</p>
+                  <h4 className="text-lg font-serif text-sacred-white mb-2">{t.contact.instagram.title}</h4>
+                  <p className="text-sacred-gold text-sm">{t.contact.instagram.handle}</p>
                 </a>
 
                 <div className="bg-earth-900/50 backdrop-blur-xl rounded-2xl p-6 border border-desert-sand/10 text-center">
-                  <h4 className="text-lg font-serif text-sacred-white mb-2">Location</h4>
-                  <p className="text-sacred-gold text-sm">Mazunte, Oaxaca, Mexico</p>
+                  <h4 className="text-lg font-serif text-sacred-white mb-2">{t.contact.location.title}</h4>
+                  <p className="text-sacred-gold text-sm">{t.contact.location.place}</p>
                 </div>
               </div>
             </div>
@@ -1010,7 +1037,7 @@ export default function OnePagerPage() {
             {/* Softer Closing */}
             <div className="mt-16 text-center">
               <p className="text-2xl font-serif text-desert-sand/70 italic">
-                Walk slowly. If this is your path, you'll know.
+                {t.contact.closing}
               </p>
             </div>
           </div>

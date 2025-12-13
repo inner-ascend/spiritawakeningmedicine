@@ -2,8 +2,19 @@ import { Link } from 'react-router-dom';
 import { AlertTriangle, Heart, Brain, Pill, ShieldAlert, HelpCircle } from 'lucide-react';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
+import { useLanguage } from '../../contexts/LanguageContext';
+import translationsEN from '../../translations/bufo/contraindications-en.json';
+import translationsES from '../../translations/bufo/contraindications-es.json';
+
+const translations = {
+  en: translationsEN,
+  es: translationsES,
+};
 
 const BufoContraindicationsPage = () => {
+  const { language } = useLanguage();
+  const t = translations[language] || translations.en;
+
   return (
     <div className="min-h-screen bg-sacred-cream">
       <Navigation />
@@ -15,13 +26,13 @@ const BufoContraindicationsPage = () => {
               <ShieldAlert className="w-8 h-8 text-desert-400" />
             </div>
             <h1 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
-              Bufo Alvarius Contraindications
+              {t.header.title}
             </h1>
             <p className="text-xl text-sacred-white/90 leading-relaxed mb-4">
-              Safety is sacred. This page outlines who should NOT participate in Bufo Alvarius ceremonies.
+              {t.header.subtitle}
             </p>
             <p className="text-sacred-white/70 leading-relaxed">
-              5-MeO-DMT is a powerful medicine. These contraindications exist to protect your life and wellbeing. Please read carefully and honestly assess your situation.
+              {t.header.description}
             </p>
           </div>
         </div>
@@ -35,10 +46,10 @@ const BufoContraindicationsPage = () => {
               <AlertTriangle className="w-6 h-6 text-desert-500 flex-shrink-0 mt-1" />
               <div>
                 <h2 className="text-lg font-medium text-earth-900 mb-2">
-                  This is not optional guidance
+                  {t.notice.title}
                 </h2>
                 <p className="text-earth-700 leading-relaxed">
-                  These contraindications are absolute. If any apply to you, we cannot facilitate a ceremony for you. This is not rejection—it's protection. Some conditions can be life-threatening when combined with 5-MeO-DMT.
+                  {t.notice.text}
                 </p>
               </div>
             </div>
@@ -57,78 +68,46 @@ const BufoContraindicationsPage = () => {
                 <div className="w-12 h-12 bg-desert-400/20 rounded-full flex items-center justify-center">
                   <Pill className="w-6 h-6 text-desert-500" />
                 </div>
-                <h2 className="text-2xl font-serif text-earth-900">Medication Contraindications</h2>
+                <h2 className="text-2xl font-serif text-earth-900">{t.medications.title}</h2>
               </div>
 
               <p className="text-earth-700 mb-6 leading-relaxed">
-                The following medications interact dangerously with 5-MeO-DMT and must be discontinued for a specific period before ceremony. <strong>Never stop medications without consulting your prescribing doctor.</strong>
+                {t.medications.description} <strong>{t.medications.warning}</strong>
               </p>
 
               <div className="space-y-6">
                 <div className="border-l-4 border-red-400 pl-6">
                   <h3 className="text-lg font-medium text-earth-900 mb-2">
-                    Absolute Contraindications (Cannot participate)
+                    {t.medications.absolute.title}
                   </h3>
                   <ul className="space-y-2 text-earth-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>MAOIs</strong> (Monoamine Oxidase Inhibitors) - Including Nardil, Parnate, Marplan, and Ayahuasca/Harmaline. Minimum 14 days off required.</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>SSRIs</strong> (Selective Serotonin Reuptake Inhibitors) - Prozac, Zoloft, Lexapro, Celexa, Paxil, etc. Minimum 2-6 weeks off required depending on medication.</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>SNRIs</strong> (Serotonin-Norepinephrine Reuptake Inhibitors) - Effexor, Cymbalta, Pristiq. Minimum 2-4 weeks off required.</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Tricyclic Antidepressants</strong> - Amitriptyline, Nortriptyline, Imipramine. Minimum 2 weeks off required.</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Lithium</strong> - Extremely dangerous combination. Cannot participate.</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Tramadol</strong> - Risk of serotonin syndrome. Minimum 1 week off required.</span>
-                    </li>
+                    {t.medications.absolute.items.map((item, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="text-red-500 mt-1">•</span>
+                        <span><strong>{item.name}</strong> {item.description}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div className="border-l-4 border-amber-400 pl-6">
                   <h3 className="text-lg font-medium text-earth-900 mb-2">
-                    Requires Assessment & Tapering Plan
+                    {t.medications.assessment.title}
                   </h3>
                   <ul className="space-y-2 text-earth-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-500 mt-1">•</span>
-                      <span><strong>Benzodiazepines</strong> - Xanax, Valium, Klonopin, Ativan. May reduce effectiveness and require tapering plan.</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-500 mt-1">•</span>
-                      <span><strong>Antipsychotics</strong> - Seroquel, Risperdal, Abilify. Contraindicated; requires psychiatric consultation.</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-500 mt-1">•</span>
-                      <span><strong>Blood Pressure Medications</strong> - Some interactions possible. Requires case-by-case evaluation.</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-500 mt-1">•</span>
-                      <span><strong>St. John's Wort</strong> - Natural SSRI. Minimum 2 weeks off required.</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-500 mt-1">•</span>
-                      <span><strong>5-HTP</strong> - Serotonin precursor. Minimum 1 week off required.</span>
-                    </li>
+                    {t.medications.assessment.items.map((item, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="text-amber-500 mt-1">•</span>
+                        <span><strong>{item.name}</strong> {item.description}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
 
               <div className="mt-6 p-4 bg-sacred-cream rounded-xl">
                 <p className="text-earth-600 text-sm leading-relaxed">
-                  <strong>Important:</strong> This is not a complete list. Always disclose ALL medications, supplements, and substances during screening. When in doubt, we discuss it together.
+                  <strong>{t.medications.note.important}</strong> {t.medications.note.text}
                 </p>
               </div>
             </div>
@@ -139,42 +118,20 @@ const BufoContraindicationsPage = () => {
                 <div className="w-12 h-12 bg-desert-400/20 rounded-full flex items-center justify-center">
                   <Heart className="w-6 h-6 text-desert-500" />
                 </div>
-                <h2 className="text-2xl font-serif text-earth-900">Cardiovascular Conditions</h2>
+                <h2 className="text-2xl font-serif text-earth-900">{t.cardiovascular.title}</h2>
               </div>
 
               <p className="text-earth-700 mb-6 leading-relaxed">
-                5-MeO-DMT causes temporary but significant increases in heart rate and blood pressure. The following conditions are absolute contraindications:
+                {t.cardiovascular.description}
               </p>
 
               <ul className="space-y-3 text-earth-700">
-                <li className="flex items-start gap-3">
-                  <span className="text-red-500 mt-1">•</span>
-                  <span><strong>Heart disease</strong> - Including coronary artery disease, heart failure, cardiomyopathy</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-500 mt-1">•</span>
-                  <span><strong>Uncontrolled high blood pressure</strong> - Hypertension that is not well-managed</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-500 mt-1">•</span>
-                  <span><strong>History of heart attack or stroke</strong></span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-500 mt-1">•</span>
-                  <span><strong>Arrhythmias</strong> - Irregular heartbeat, atrial fibrillation</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-500 mt-1">•</span>
-                  <span><strong>Aneurysms</strong> - Brain or aortic aneurysms</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-500 mt-1">•</span>
-                  <span><strong>Blood clotting disorders</strong></span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-500 mt-1">•</span>
-                  <span><strong>Recent surgery</strong> - Within the last 6 months</span>
-                </li>
+                {t.cardiovascular.items.map((item, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <span className="text-red-500 mt-1">•</span>
+                    <span><strong>{item.name}</strong>{item.description && ` ${item.description}`}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -184,87 +141,53 @@ const BufoContraindicationsPage = () => {
                 <div className="w-12 h-12 bg-desert-400/20 rounded-full flex items-center justify-center">
                   <Brain className="w-6 h-6 text-desert-500" />
                 </div>
-                <h2 className="text-2xl font-serif text-earth-900">Psychiatric & Neurological Conditions</h2>
+                <h2 className="text-2xl font-serif text-earth-900">{t.psychiatric.title}</h2>
               </div>
 
               <p className="text-earth-700 mb-6 leading-relaxed">
-                5-MeO-DMT is a powerful psychedelic that can destabilize vulnerable mental states. The following conditions are contraindicated:
+                {t.psychiatric.description}
               </p>
 
               <div className="space-y-6">
                 <div className="border-l-4 border-red-400 pl-6">
                   <h3 className="text-lg font-medium text-earth-900 mb-2">
-                    Absolute Contraindications
+                    {t.psychiatric.absolute.title}
                   </h3>
                   <ul className="space-y-2 text-earth-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Schizophrenia</strong> - Personal or strong family history</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Psychotic disorders</strong> - Any history of psychosis, psychotic breaks, or delusional thinking</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Bipolar disorder</strong> - Type I or II, especially with manic episodes</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Severe personality disorders</strong> - Borderline, antisocial, or schizotypal personality disorder</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Active suicidal ideation</strong> - Current suicidal thoughts or recent attempt</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Psychiatric hospitalization</strong> - Within the last year</span>
-                    </li>
+                    {t.psychiatric.absolute.items.map((item, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="text-red-500 mt-1">•</span>
+                        <span><strong>{item.name}</strong> {item.description}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div className="border-l-4 border-amber-400 pl-6">
                   <h3 className="text-lg font-medium text-earth-900 mb-2">
-                    Requires Careful Assessment
+                    {t.psychiatric.assessment.title}
                   </h3>
                   <ul className="space-y-2 text-earth-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-500 mt-1">•</span>
-                      <span><strong>Severe depression</strong> - Currently in a severe depressive episode</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-500 mt-1">•</span>
-                      <span><strong>Severe anxiety disorders</strong> - Unmanaged panic disorder or severe PTSD</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-500 mt-1">•</span>
-                      <span><strong>Dissociative disorders</strong> - DID or severe dissociation</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-500 mt-1">•</span>
-                      <span><strong>Recent major trauma</strong> - Within the last 6 months</span>
-                    </li>
+                    {t.psychiatric.assessment.items.map((item, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="text-amber-500 mt-1">•</span>
+                        <span><strong>{item.name}</strong> {item.description}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div className="border-l-4 border-red-400 pl-6">
                   <h3 className="text-lg font-medium text-earth-900 mb-2">
-                    Neurological Contraindications
+                    {t.psychiatric.neurological.title}
                   </h3>
                   <ul className="space-y-2 text-earth-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Epilepsy or seizure disorders</strong> - Any history of seizures</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Brain tumors or lesions</strong></span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Traumatic brain injury</strong> - Recent or severe TBI</span>
-                    </li>
+                    {t.psychiatric.neurological.items.map((item, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="text-red-500 mt-1">•</span>
+                        <span><strong>{item.name}</strong>{item.description && ` ${item.description}`}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -276,79 +199,57 @@ const BufoContraindicationsPage = () => {
                 <div className="w-12 h-12 bg-desert-400/20 rounded-full flex items-center justify-center">
                   <AlertTriangle className="w-6 h-6 text-desert-500" />
                 </div>
-                <h2 className="text-2xl font-serif text-earth-900">Other Contraindications</h2>
+                <h2 className="text-2xl font-serif text-earth-900">{t.other.title}</h2>
               </div>
 
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-lg font-medium text-earth-900 mb-3">Pregnancy & Nursing</h3>
+                  <h3 className="text-lg font-medium text-earth-900 mb-3">{t.other.pregnancy.title}</h3>
                   <p className="text-earth-700 leading-relaxed">
-                    <strong>Absolute contraindication.</strong> 5-MeO-DMT should never be taken during pregnancy or while breastfeeding. The effects on fetal development are unknown and potentially harmful.
+                    <strong>{t.other.pregnancy.label}</strong> {t.other.pregnancy.text}
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-medium text-earth-900 mb-3">Respiratory Conditions</h3>
+                  <h3 className="text-lg font-medium text-earth-900 mb-3">{t.other.respiratory.title}</h3>
                   <ul className="space-y-2 text-earth-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Severe asthma</strong> - Uncontrolled or requiring daily steroids</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>COPD</strong> - Chronic obstructive pulmonary disease</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Sleep apnea</strong> - Severe or untreated</span>
-                    </li>
+                    {t.other.respiratory.items.map((item, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="text-red-500 mt-1">•</span>
+                        <span><strong>{item.name}</strong> {item.description}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-medium text-earth-900 mb-3">Other Medical Conditions</h3>
+                  <h3 className="text-lg font-medium text-earth-900 mb-3">{t.other.medical.title}</h3>
                   <ul className="space-y-2 text-earth-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Glaucoma</strong> - 5-MeO-DMT increases intraocular pressure</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Liver or kidney disease</strong> - Severe impairment affecting metabolism</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Diabetes</strong> - Uncontrolled or insulin-dependent (requires assessment)</span>
-                    </li>
+                    {t.other.medical.items.map((item, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className="text-red-500 mt-1">•</span>
+                        <span><strong>{item.name}</strong> {item.description}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-medium text-earth-900 mb-3">Substance Use</h3>
+                  <h3 className="text-lg font-medium text-earth-900 mb-3">{t.other.substance.title}</h3>
                   <ul className="space-y-2 text-earth-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-red-500 mt-1">•</span>
-                      <span><strong>Active addiction</strong> - Currently in active substance abuse (alcohol, opioids, stimulants)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-500 mt-1">•</span>
-                      <span><strong>Recent psychedelic use</strong> - Wait at least 2 weeks between psychedelic experiences</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-500 mt-1">•</span>
-                      <span><strong>Cannabis</strong> - Abstain for at least 24-48 hours before ceremony</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-500 mt-1">•</span>
-                      <span><strong>Alcohol</strong> - Abstain for at least 48 hours before ceremony</span>
-                    </li>
+                    {t.other.substance.items.map((item, index) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <span className={`${item.type === 'absolute' ? 'text-red-500' : 'text-amber-500'} mt-1`}>•</span>
+                        <span><strong>{item.name}</strong> {item.description}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-medium text-earth-900 mb-3">Age Requirements</h3>
+                  <h3 className="text-lg font-medium text-earth-900 mb-3">{t.other.age.title}</h3>
                   <p className="text-earth-700 leading-relaxed">
-                    Participants must be at least <strong>21 years old</strong>. The brain continues developing until approximately age 25, and powerful psychedelics are not recommended for developing minds.
+                    {t.other.age.text}
                   </p>
                 </div>
               </div>
@@ -360,18 +261,18 @@ const BufoContraindicationsPage = () => {
                 <div className="w-12 h-12 bg-desert-400/20 rounded-full flex items-center justify-center">
                   <HelpCircle className="w-6 h-6 text-desert-500" />
                 </div>
-                <h2 className="text-2xl font-serif text-earth-900">Questions?</h2>
+                <h2 className="text-2xl font-serif text-earth-900">{t.questions.title}</h2>
               </div>
 
               <div className="space-y-4 text-earth-700 leading-relaxed">
                 <p>
-                  <strong>If you're unsure whether a condition applies to you</strong> — ask. It's always better to discuss than to assume. Some conditions require individual assessment rather than automatic exclusion.
+                  <strong>{t.questions.unsure}</strong> {t.questions.unsureText}
                 </p>
                 <p>
-                  <strong>If you have a contraindication</strong> — this doesn't mean you can't do deep healing work. We offer integration sessions, energy healing, family constellations, and mentorship that don't involve medicine.
+                  <strong>{t.questions.contraindicated}</strong> {t.questions.contraindicatedText}
                 </p>
                 <p>
-                  <strong>If you're on medications</strong> — never stop medications without consulting your prescribing doctor first. We can discuss a safe tapering timeline together, but medical supervision is essential.
+                  <strong>{t.questions.medications}</strong> {t.questions.medicationsText}
                 </p>
               </div>
             </div>
@@ -379,7 +280,7 @@ const BufoContraindicationsPage = () => {
             {/* CTA Section */}
             <div className="text-center space-y-6">
               <p className="text-earth-600 italic">
-                If you've read through this page and believe you're a safe candidate for Bufo Alvarius ceremony, the next step is the screening questionnaire.
+                {t.cta.text}
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -387,18 +288,18 @@ const BufoContraindicationsPage = () => {
                   to="/bufo-screening"
                   className="px-8 py-4 bg-desert-500 text-white rounded-full hover:bg-desert-600 transition-colors font-medium"
                 >
-                  Begin Screening
+                  {t.cta.screening}
                 </Link>
                 <Link
                   to="/#contact"
                   className="px-8 py-4 border-2 border-desert-500 text-desert-600 rounded-full hover:bg-desert-500 hover:text-white transition-colors font-medium"
                 >
-                  Ask a Question
+                  {t.cta.contact}
                 </Link>
               </div>
 
               <p className="text-earth-500 text-sm">
-                All screening information is kept strictly confidential.
+                {t.cta.note}
               </p>
             </div>
 

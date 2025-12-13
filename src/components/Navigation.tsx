@@ -1,21 +1,29 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [langMenuOpen, setLangMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const { language, setLanguage } = useLanguage();
 
-  const languages = [
-    { code: 'en', label: 'English', flag: '🇺🇸' },
-    { code: 'es', label: 'Español', flag: '🇪🇸' },
-  ] as const;
+  const toggleLanguage = () => {
+    setLanguage(language === 'en' ? 'es' : 'en');
+  };
 
   // Check if we're on the one-pager (home page)
   const isOnePager = location.pathname === '/';
+
+  // Track scroll for transparent header
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Handle smooth scroll for anchor links
   const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, anchor: string) => {
@@ -44,7 +52,11 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-earth-900/80 border-b border-desert-sage/20">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      scrolled || mobileMenuOpen
+        ? 'backdrop-blur-xl bg-earth-900/80 border-b border-desert-sage/20'
+        : 'bg-transparent border-b border-transparent'
+    }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -92,35 +104,13 @@ export default function Navigation() {
                   </svg>
                   WhatsApp
                 </a>
-                {/* Language Switcher */}
-                <div className="relative">
-                  <button
-                    onClick={() => setLangMenuOpen(!langMenuOpen)}
-                    className="flex items-center gap-1.5 px-3 py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm"
-                  >
-                    <Globe className="w-4 h-4" />
-                    <span className="uppercase">{language}</span>
-                  </button>
-                  {langMenuOpen && (
-                    <div className="absolute right-0 top-full mt-2 bg-earth-800 rounded-lg shadow-xl border border-desert-sage/20 overflow-hidden min-w-[120px]">
-                      {languages.map((lang) => (
-                        <button
-                          key={lang.code}
-                          onClick={() => {
-                            setLanguage(lang.code as 'en' | 'es');
-                            setLangMenuOpen(false);
-                          }}
-                          className={`w-full px-4 py-2 text-left text-sm hover:bg-earth-700 transition-colors flex items-center gap-2 ${
-                            language === lang.code ? 'text-sacred-gold' : 'text-desert-sand/80'
-                          }`}
-                        >
-                          <span>{lang.flag}</span>
-                          <span>{lang.label}</span>
-                        </button>
-                      ))}
-                    </div>
-                  )}
-                </div>
+                {/* Language Switcher - One Click Toggle */}
+                <button
+                  onClick={toggleLanguage}
+                  className="px-3 py-1.5 text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm border border-desert-sand/30 rounded-full hover:border-sacred-gold/50"
+                >
+                  {language === 'en' ? 'ES' : 'EN'}
+                </button>
               </>
             ) : (
               // Multi-page navigation (for standalone pages)
@@ -151,35 +141,13 @@ export default function Navigation() {
                   </svg>
                   WhatsApp
                 </a>
-                {/* Language Switcher for multi-page */}
-                <div className="relative">
-                  <button
-                    onClick={() => setLangMenuOpen(!langMenuOpen)}
-                    className="flex items-center gap-1.5 px-3 py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm"
-                  >
-                    <Globe className="w-4 h-4" />
-                    <span className="uppercase">{language}</span>
-                  </button>
-                  {langMenuOpen && (
-                    <div className="absolute right-0 top-full mt-2 bg-earth-800 rounded-lg shadow-xl border border-desert-sage/20 overflow-hidden min-w-[120px]">
-                      {languages.map((lang) => (
-                        <button
-                          key={lang.code}
-                          onClick={() => {
-                            setLanguage(lang.code as 'en' | 'es');
-                            setLangMenuOpen(false);
-                          }}
-                          className={`w-full px-4 py-2 text-left text-sm hover:bg-earth-700 transition-colors flex items-center gap-2 ${
-                            language === lang.code ? 'text-sacred-gold' : 'text-desert-sand/80'
-                          }`}
-                        >
-                          <span>{lang.flag}</span>
-                          <span>{lang.label}</span>
-                        </button>
-                      ))}
-                    </div>
-                  )}
-                </div>
+                {/* Language Switcher - One Click Toggle */}
+                <button
+                  onClick={toggleLanguage}
+                  className="px-3 py-1.5 text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm border border-desert-sand/30 rounded-full hover:border-sacred-gold/50"
+                >
+                  {language === 'en' ? 'ES' : 'EN'}
+                </button>
               </>
             )}
           </div>
@@ -221,25 +189,17 @@ export default function Navigation() {
                   </svg>
                   WhatsApp
                 </a>
-                {/* Mobile Language Switcher */}
-                <div className="flex items-center gap-3 py-2 border-t border-desert-sage/20 mt-2 pt-4">
-                  <Globe className="w-4 h-4 text-desert-sand/60" />
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => {
-                        setLanguage(lang.code as 'en' | 'es');
-                        setMobileMenuOpen(false);
-                      }}
-                      className={`px-3 py-1 rounded-full text-sm transition-colors ${
-                        language === lang.code
-                          ? 'bg-sacred-gold text-earth-900'
-                          : 'text-desert-sand/80 hover:text-sacred-gold'
-                      }`}
-                    >
-                      {lang.flag} {lang.label}
-                    </button>
-                  ))}
+                {/* Mobile Language Switcher - One Click Toggle */}
+                <div className="py-2 border-t border-desert-sage/20 mt-2 pt-4">
+                  <button
+                    onClick={() => {
+                      toggleLanguage();
+                      setMobileMenuOpen(false);
+                    }}
+                    className="px-4 py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm border border-desert-sand/30 rounded-full hover:border-sacred-gold/50"
+                  >
+                    {language === 'en' ? 'Cambiar a Español' : 'Switch to English'}
+                  </button>
                 </div>
               </>
             ) : (
@@ -275,25 +235,17 @@ export default function Navigation() {
                   </svg>
                   WhatsApp
                 </a>
-                {/* Mobile Language Switcher */}
-                <div className="flex items-center gap-3 py-2 border-t border-desert-sage/20 mt-2 pt-4">
-                  <Globe className="w-4 h-4 text-desert-sand/60" />
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => {
-                        setLanguage(lang.code as 'en' | 'es');
-                        setMobileMenuOpen(false);
-                      }}
-                      className={`px-3 py-1 rounded-full text-sm transition-colors ${
-                        language === lang.code
-                          ? 'bg-sacred-gold text-earth-900'
-                          : 'text-desert-sand/80 hover:text-sacred-gold'
-                      }`}
-                    >
-                      {lang.flag} {lang.label}
-                    </button>
-                  ))}
+                {/* Mobile Language Switcher - One Click Toggle */}
+                <div className="py-2 border-t border-desert-sage/20 mt-2 pt-4">
+                  <button
+                    onClick={() => {
+                      toggleLanguage();
+                      setMobileMenuOpen(false);
+                    }}
+                    className="px-4 py-2 text-desert-sand/80 hover:text-sacred-gold transition-colors text-sm border border-desert-sand/30 rounded-full hover:border-sacred-gold/50"
+                  >
+                    {language === 'en' ? 'Cambiar a Español' : 'Switch to English'}
+                  </button>
                 </div>
               </>
             )}

@@ -1,0 +1,108 @@
+{
+  "header": {
+    "title": "Consent & Liability Waiver",
+    "subtitle": "Bufo Alvarius Ceremony"
+  },
+  "success": {
+    "title": "Consent Form Received",
+    "subtitle": "Thank you for completing the consent and waiver.",
+    "description": "Your signed consent has been recorded. We'll be in touch with the next steps for your ceremony preparation, including scheduling your preparation session and confirming location details.",
+    "saveNote": "Please save a copy of this consent for your records.",
+    "returnHome": "Return Home"
+  },
+  "warning": {
+    "title": "Please Read Carefully",
+    "text": "This document outlines the nature of the Bufo Alvarius ceremony, associated risks, and your rights and responsibilities as a participant. By signing below, you acknowledge that you have read, understood, and agree to all terms."
+  },
+  "sections": {
+    "nature": {
+      "title": "1. Nature of the Experience",
+      "paragraphs": [
+        "I understand that the Bufo Alvarius ceremony involves the use of 5-MeO-DMT, a naturally occurring psychoactive compound derived from the secretions of the Bufo Alvarius toad. This is a powerful entheogenic substance that can produce profound alterations in consciousness.",
+        "I understand that this ceremony is offered as a spiritual practice and personal growth experience. It is NOT a medical treatment, therapy, or substitute for professional mental health care.",
+        "I acknowledge that the facilitators are not medical doctors, psychiatrists, or licensed therapists, and do not diagnose, treat, or claim to cure any medical or psychological condition."
+      ],
+      "checkbox": "I have read and understand the nature of the Bufo Alvarius experience"
+    },
+    "risks": {
+      "title": "2. Acknowledgment of Risks",
+      "intro": "I understand that participation in this ceremony carries inherent risks, including but not limited to:",
+      "items": [
+        "Intense emotional and psychological experiences",
+        "Temporary loss of motor control and bodily awareness",
+        "Temporary changes in perception, thought, and sense of self",
+        "Physical reactions such as nausea, vomiting, changes in heart rate or blood pressure",
+        "Re-emergence of past traumas or suppressed emotions",
+        "Rare but possible adverse psychological reactions",
+        "In extremely rare cases, medical emergencies"
+      ],
+      "closing": "I accept full responsibility for my decision to participate and understand that the facilitators cannot guarantee any specific outcome or the absence of adverse effects.",
+      "checkbox": "I acknowledge and accept the risks associated with this experience"
+    },
+    "medical": {
+      "title": "3. Medical Disclosure & Contraindications",
+      "intro": "I confirm that I have disclosed all relevant medical and psychological information in my screening questionnaire, including:",
+      "items": [
+        "All current medications (especially SSRIs, MAOIs, antidepressants, antipsychotics)",
+        "Any history of heart conditions, high blood pressure, or cardiovascular issues",
+        "Any history of psychosis, schizophrenia, bipolar disorder, or psychiatric hospitalization",
+        "Current pregnancy or possibility of pregnancy",
+        "Any other physical or mental health conditions"
+      ],
+      "closing": "I understand that withholding or falsifying medical information could result in serious harm to myself, and I release the facilitators from any liability resulting from undisclosed conditions.",
+      "checkbox": "I confirm that I have truthfully disclosed all medical and psychological information"
+    },
+    "confidentiality": {
+      "title": "4. Confidentiality",
+      "intro": "I understand that my personal information, screening responses, and anything shared during sessions will be held in strict confidence by the facilitators.",
+      "alsoAgree": "I also agree to maintain confidentiality regarding:",
+      "items": [
+        "The identity and personal information of any other participants (if applicable)",
+        "The specific location of the ceremony space",
+        "Any personal details shared by the facilitators"
+      ],
+      "checkbox": "I agree to maintain confidentiality as described above"
+    },
+    "media": {
+      "title": "5. Photography, Recording & Media",
+      "paragraphs": [
+        "I understand that no photography, video, or audio recording is permitted during the ceremony without explicit consent from all parties present.",
+        "I agree not to record, photograph, or share any media from the ceremony or ceremony space without prior written permission."
+      ],
+      "checkbox": "I agree to the media and recording policy"
+    },
+    "voluntary": {
+      "title": "6. Voluntary Participation & Release of Liability",
+      "paragraphs": [
+        "I confirm that my participation in this ceremony is entirely voluntary. I have not been coerced, pressured, or manipulated into participating.",
+        "I understand that I may withdraw my participation at any time before the ceremony begins. Once the medicine has been administered, the experience must be allowed to complete naturally."
+      ],
+      "releaseTitle": "Release of Liability:",
+      "releaseText": "To the fullest extent permitted by law, I release, waive, and discharge the facilitators, and any assistants, from any and all liability, claims, demands, or causes of action that may arise from my participation in this ceremony.",
+      "releaseClosing": "This release applies to any injury, illness, damage, or loss—whether physical, psychological, emotional, or material—that may result from my participation, regardless of cause.",
+      "checkbox": "I confirm my voluntary participation and release of liability"
+    }
+  },
+  "emergencyContact": {
+    "title": "Emergency Contact",
+    "description": "Please provide an emergency contact who can be reached if needed.",
+    "name": "Contact Name",
+    "phone": "Contact Phone"
+  },
+  "signature": {
+    "title": "Digital Signature",
+    "fullName": "Full Legal Name",
+    "email": "Email",
+    "date": "Date",
+    "signatureLabel": "Type your full name as your digital signature",
+    "signatureHint": "By typing your name below, you confirm that you have read, understood, and agree to all terms in this document.",
+    "signaturePlaceholder": "Type your full legal name"
+  },
+  "submit": {
+    "button": "Sign & Submit Consent",
+    "sending": "Submitting...",
+    "incomplete": "Please read and agree to all sections above",
+    "error": "Something went wrong. Please try again or email directly."
+  },
+  "required": "*"
+}

@@ -1,0 +1,83 @@
+{
+  "header": {
+    "title": "Evaluación Bufo Alvarius",
+    "subtitle": "Gracias por tu interés en este trabajo sagrado.",
+    "description": "Antes de continuar, comenzamos con una evaluación para entender tu historial médico, estado emocional actual y qué te está llamando a este viaje. Esta medicina es poderosa y no es para todos — la seguridad y la alineación son lo primero."
+  },
+  "success": {
+    "title": "Gracias",
+    "subtitle": "Tu evaluación ha sido recibida.",
+    "description": "Revisaremos tus respuestas cuidadosamente y te responderemos dentro de 48 horas. Este es un proceso sagrado, y nos tomamos el tiempo para sentir cada solicitud con presencia y cuidado.",
+    "nextSteps": "Si avanzamos, te enviaremos un formulario de consentimiento y responsabilidad para completar antes de programar las sesiones de preparación.",
+    "closing": "Mientras tanto, confía en tu viaje.",
+    "returnHome": "Volver al Inicio"
+  },
+  "basicInfo": {
+    "title": "Información Básica",
+    "name": "Nombre Completo",
+    "email": "Correo Electrónico",
+    "age": "Edad",
+    "location": "Ubicación (Ciudad, País)"
+  },
+  "questions": {
+    "title": "Preguntas de Evaluación",
+    "q1": {
+      "label": "1. ¿Qué te está llamando a esta experiencia ahora mismo?",
+      "placeholder": "Comparte qué te atrae a este trabajo..."
+    },
+    "q2": {
+      "label": "2. ¿Has trabajado con plantas medicinales o psicodélicos antes?",
+      "hint": "(Ayahuasca, psilocibina, LSD, MDMA, ketamina, Bufo, etc.)",
+      "placeholder": "Si es así, describe tus experiencias..."
+    },
+    "q3": {
+      "label": "3. ¿Tienes alguna condición médica?",
+      "hint": "(Condiciones cardíacas, presión arterial alta, asma, condiciones neurológicas, etc.)",
+      "placeholder": "Lista cualquier condición médica o escribe 'Ninguna'..."
+    },
+    "q4": {
+      "label": "4. ¿Estás tomando algún medicamento actualmente?",
+      "hint": "Especialmente: ISRS, IMAO, antidepresivos, antipsicóticos, benzodiacepinas",
+      "placeholder": "Lista todos los medicamentos actuales o escribe 'Ninguno'..."
+    },
+    "q5": {
+      "label": "5. ¿Algún historial de bipolaridad, esquizofrenia, psicosis u hospitalización psiquiátrica?",
+      "placeholder": "Comparte cualquier historial relevante o escribe 'No'..."
+    },
+    "q6": {
+      "label": "6. ¿Cómo ha sido tu estado mental/emocional en los últimos 3 meses?",
+      "placeholder": "Describe tu estado emocional y mental reciente..."
+    },
+    "q7": {
+      "label": "7. ¿Estás atravesando un estrés vital importante actualmente?",
+      "hint": "(Ruptura reciente, muerte de un ser querido, trauma, depresión, pérdida de trabajo, etc.)",
+      "placeholder": "Comparte eventos de vida significativos o fuentes de estrés..."
+    },
+    "q8": {
+      "label": "8. ¿Cuál es tu intención para este viaje?",
+      "placeholder": "¿Qué esperas explorar, sanar o comprender?"
+    },
+    "q9": {
+      "label": "9. ¿Has tenido ataques de pánico o ansiedad fuerte alguna vez?",
+      "placeholder": "Describe cualquier historial con ansiedad o pánico..."
+    },
+    "q10": {
+      "label": "10. ¿Te sientes arraigado/a y apoyado/a en tu vida ahora mismo?",
+      "placeholder": "¿Tienes un sistema de apoyo? ¿Te sientes estable?"
+    },
+    "q11": {
+      "label": "11. ¿Algo más que quieras compartir?",
+      "placeholder": "Cualquier contexto adicional, preguntas o cosas que quieras que sepamos..."
+    }
+  },
+  "notice": {
+    "important": "Importante:",
+    "text": "Esta evaluación ayuda a garantizar tu seguridad y preparación. Bufo Alvarius es una medicina poderosa con contraindicaciones reales. Las respuestas honestas nos protegen a ambos y nos permiten guiarte correctamente. Toda la información se mantiene estrictamente confidencial."
+  },
+  "submit": {
+    "button": "Enviar Evaluación",
+    "sending": "Enviando...",
+    "error": "Algo salió mal. Por favor intenta de nuevo o escríbenos directamente."
+  },
+  "required": "*"
+}

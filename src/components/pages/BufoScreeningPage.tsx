@@ -3,6 +3,15 @@ import emailjs from '@emailjs/browser';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
 import { CheckCircle } from 'lucide-react';
+import { useLanguage } from '../../contexts/LanguageContext';
+
+import translationsEN from '../../translations/bufo/screening-en.json';
+import translationsES from '../../translations/bufo/screening-es.json';
+
+const translations = {
+  en: translationsEN,
+  es: translationsES,
+};
 
 interface ScreeningFormData {
   name: string;
@@ -23,6 +32,9 @@ interface ScreeningFormData {
 }
 
 export default function BufoScreeningPage() {
+  const { language } = useLanguage();
+  const t = translations[language] || translations.en;
+
   const [formData, setFormData] = useState<ScreeningFormData>({
     name: '',
     email: '',
@@ -130,25 +142,25 @@ ${formData.q11_additional}
                 <CheckCircle className="w-10 h-10 text-ocean-turquoise" />
               </div>
               <h1 className="text-4xl font-serif text-sacred-white mb-6">
-                Thank You
+                {t.success.title}
               </h1>
               <p className="text-xl text-desert-sand/90 mb-4">
-                Your screening has been received.
+                {t.success.subtitle}
               </p>
               <p className="text-desert-sand/70 leading-relaxed mb-4">
-                We'll review your answers carefully and get back to you within 48 hours. This is a sacred process, and we take the time to feel into each application with presence and care.
+                {t.success.description}
               </p>
               <p className="text-desert-sand/60 leading-relaxed mb-8">
-                If we move forward, we'll send you a consent and liability form to complete before we schedule preparation sessions.
+                {t.success.nextSteps}
               </p>
               <p className="text-desert-sand/50 italic mb-8">
-                In the meantime, trust your journey.
+                {t.success.closing}
               </p>
               <a
                 href="/"
                 className="inline-block px-8 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-colors font-medium"
               >
-                Return Home
+                {t.success.returnHome}
               </a>
             </div>
           </div>
@@ -167,13 +179,13 @@ ${formData.q11_additional}
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-serif text-sacred-white mb-6">
-              Bufo Alvarius Screening
+              {t.header.title}
             </h1>
             <p className="text-xl text-desert-sand/90 leading-relaxed mb-4">
-              Thank you for your interest in this sacred work.
+              {t.header.subtitle}
             </p>
             <p className="text-desert-sand/70 leading-relaxed">
-              Before we go further, we begin with a screening to understand your medical background, current emotional state, and what's calling you to this journey. This medicine is powerful and not for everyone — safety and alignment come first.
+              {t.header.description}
             </p>
           </div>
         </div>
@@ -187,11 +199,11 @@ ${formData.q11_additional}
 
               {/* Basic Info */}
               <div className="bg-white p-8 rounded-2xl space-y-6">
-                <h2 className="text-2xl font-serif text-earth-800 mb-4">Basic Information</h2>
+                <h2 className="text-2xl font-serif text-earth-800 mb-4">{t.basicInfo.title}</h2>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-earth-800 font-medium mb-2">Full Name *</label>
+                    <label className="block text-earth-800 font-medium mb-2">{t.basicInfo.name} {t.required}</label>
                     <input
                       type="text"
                       name="name"
@@ -202,7 +214,7 @@ ${formData.q11_additional}
                     />
                   </div>
                   <div>
-                    <label className="block text-earth-800 font-medium mb-2">Email *</label>
+                    <label className="block text-earth-800 font-medium mb-2">{t.basicInfo.email} {t.required}</label>
                     <input
                       type="email"
                       name="email"
@@ -216,7 +228,7 @@ ${formData.q11_additional}
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-earth-800 font-medium mb-2">Age *</label>
+                    <label className="block text-earth-800 font-medium mb-2">{t.basicInfo.age} {t.required}</label>
                     <input
                       type="number"
                       name="age"
@@ -228,7 +240,7 @@ ${formData.q11_additional}
                     />
                   </div>
                   <div>
-                    <label className="block text-earth-800 font-medium mb-2">Location (City, Country) *</label>
+                    <label className="block text-earth-800 font-medium mb-2">{t.basicInfo.location} {t.required}</label>
                     <input
                       type="text"
                       name="location"
@@ -243,10 +255,10 @@ ${formData.q11_additional}
 
               {/* Screening Questions */}
               <div className="bg-white p-8 rounded-2xl space-y-8">
-                <h2 className="text-2xl font-serif text-earth-800 mb-4">Screening Questions</h2>
+                <h2 className="text-2xl font-serif text-earth-800 mb-4">{t.questions.title}</h2>
 
                 <div>
-                  <label className="block text-earth-800 font-medium mb-2">1. What is calling you to this experience right now? *</label>
+                  <label className="block text-earth-800 font-medium mb-2">{t.questions.q1.label} {t.required}</label>
                   <textarea
                     name="q1_calling"
                     value={formData.q1_calling}
@@ -254,13 +266,13 @@ ${formData.q11_additional}
                     required
                     rows={3}
                     className="w-full px-4 py-3 rounded-xl border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 bg-white resize-none"
-                    placeholder="Share what's drawing you to this work..."
+                    placeholder={t.questions.q1.placeholder}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-earth-800 font-medium mb-2">2. Have you worked with any plant medicines or psychedelics before? *</label>
-                  <p className="text-sm text-earth-700/60 mb-2">(Ayahuasca, psilocybin, LSD, MDMA, ketamine, Bufo, etc.)</p>
+                  <label className="block text-earth-800 font-medium mb-2">{t.questions.q2.label} {t.required}</label>
+                  <p className="text-sm text-earth-700/60 mb-2">{t.questions.q2.hint}</p>
                   <textarea
                     name="q2_medicine_experience"
                     value={formData.q2_medicine_experience}
@@ -268,13 +280,13 @@ ${formData.q11_additional}
                     required
                     rows={3}
                     className="w-full px-4 py-3 rounded-xl border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 bg-white resize-none"
-                    placeholder="If yes, please describe your experiences..."
+                    placeholder={t.questions.q2.placeholder}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-earth-800 font-medium mb-2">3. Do you have any medical conditions? *</label>
-                  <p className="text-sm text-earth-700/60 mb-2">(Heart conditions, high blood pressure, asthma, neurological conditions, etc.)</p>
+                  <label className="block text-earth-800 font-medium mb-2">{t.questions.q3.label} {t.required}</label>
+                  <p className="text-sm text-earth-700/60 mb-2">{t.questions.q3.hint}</p>
                   <textarea
                     name="q3_medical_conditions"
                     value={formData.q3_medical_conditions}
@@ -282,13 +294,13 @@ ${formData.q11_additional}
                     required
                     rows={2}
                     className="w-full px-4 py-3 rounded-xl border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 bg-white resize-none"
-                    placeholder="Please list any medical conditions or write 'None'..."
+                    placeholder={t.questions.q3.placeholder}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-earth-800 font-medium mb-2">4. Are you currently taking any medications? *</label>
-                  <p className="text-sm text-earth-700/60 mb-2">Especially: SSRIs, MAOIs, antidepressants, antipsychotics, benzodiazepines</p>
+                  <label className="block text-earth-800 font-medium mb-2">{t.questions.q4.label} {t.required}</label>
+                  <p className="text-sm text-earth-700/60 mb-2">{t.questions.q4.hint}</p>
                   <textarea
                     name="q4_medications"
                     value={formData.q4_medications}
@@ -296,12 +308,12 @@ ${formData.q11_additional}
                     required
                     rows={2}
                     className="w-full px-4 py-3 rounded-xl border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 bg-white resize-none"
-                    placeholder="Please list all current medications or write 'None'..."
+                    placeholder={t.questions.q4.placeholder}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-earth-800 font-medium mb-2">5. Any history of bipolar, schizophrenia, psychosis, or psychiatric hospitalization? *</label>
+                  <label className="block text-earth-800 font-medium mb-2">{t.questions.q5.label} {t.required}</label>
                   <textarea
                     name="q5_mental_health_history"
                     value={formData.q5_mental_health_history}
@@ -309,12 +321,12 @@ ${formData.q11_additional}
                     required
                     rows={2}
                     className="w-full px-4 py-3 rounded-xl border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 bg-white resize-none"
-                    placeholder="Please share any relevant history or write 'No'..."
+                    placeholder={t.questions.q5.placeholder}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-earth-800 font-medium mb-2">6. How has your mental/emotional state been in the last 3 months? *</label>
+                  <label className="block text-earth-800 font-medium mb-2">{t.questions.q6.label} {t.required}</label>
                   <textarea
                     name="q6_current_state"
                     value={formData.q6_current_state}
@@ -322,13 +334,13 @@ ${formData.q11_additional}
                     required
                     rows={3}
                     className="w-full px-4 py-3 rounded-xl border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 bg-white resize-none"
-                    placeholder="Describe your recent emotional and mental state..."
+                    placeholder={t.questions.q6.placeholder}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-earth-800 font-medium mb-2">7. Are you currently going through major life stress? *</label>
-                  <p className="text-sm text-earth-700/60 mb-2">(Recent breakup, death of loved one, trauma, depression, job loss, etc.)</p>
+                  <label className="block text-earth-800 font-medium mb-2">{t.questions.q7.label} {t.required}</label>
+                  <p className="text-sm text-earth-700/60 mb-2">{t.questions.q7.hint}</p>
                   <textarea
                     name="q7_life_stress"
                     value={formData.q7_life_stress}
@@ -336,12 +348,12 @@ ${formData.q11_additional}
                     required
                     rows={2}
                     className="w-full px-4 py-3 rounded-xl border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 bg-white resize-none"
-                    placeholder="Share any significant life events or stressors..."
+                    placeholder={t.questions.q7.placeholder}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-earth-800 font-medium mb-2">8. What is your intention for this journey? *</label>
+                  <label className="block text-earth-800 font-medium mb-2">{t.questions.q8.label} {t.required}</label>
                   <textarea
                     name="q8_intention"
                     value={formData.q8_intention}
@@ -349,12 +361,12 @@ ${formData.q11_additional}
                     required
                     rows={3}
                     className="w-full px-4 py-3 rounded-xl border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 bg-white resize-none"
-                    placeholder="What do you hope to explore, heal, or understand?"
+                    placeholder={t.questions.q8.placeholder}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-earth-800 font-medium mb-2">9. Have you ever had panic attacks or strong anxiety? *</label>
+                  <label className="block text-earth-800 font-medium mb-2">{t.questions.q9.label} {t.required}</label>
                   <textarea
                     name="q9_anxiety"
                     value={formData.q9_anxiety}
@@ -362,12 +374,12 @@ ${formData.q11_additional}
                     required
                     rows={2}
                     className="w-full px-4 py-3 rounded-xl border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 bg-white resize-none"
-                    placeholder="Describe any history with anxiety or panic..."
+                    placeholder={t.questions.q9.placeholder}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-earth-800 font-medium mb-2">10. Do you feel grounded and supported in your life right now? *</label>
+                  <label className="block text-earth-800 font-medium mb-2">{t.questions.q10.label} {t.required}</label>
                   <textarea
                     name="q10_support"
                     value={formData.q10_support}
@@ -375,19 +387,19 @@ ${formData.q11_additional}
                     required
                     rows={2}
                     className="w-full px-4 py-3 rounded-xl border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 bg-white resize-none"
-                    placeholder="Do you have a support system? Do you feel stable?"
+                    placeholder={t.questions.q10.placeholder}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-earth-800 font-medium mb-2">11. Anything else you'd like to share?</label>
+                  <label className="block text-earth-800 font-medium mb-2">{t.questions.q11.label}</label>
                   <textarea
                     name="q11_additional"
                     value={formData.q11_additional}
                     onChange={handleChange}
                     rows={3}
                     className="w-full px-4 py-3 rounded-xl border border-earth-700/20 focus:border-sacred-gold focus:outline-none focus:ring-2 focus:ring-sacred-gold/20 bg-white resize-none"
-                    placeholder="Any additional context, questions, or things you want us to know..."
+                    placeholder={t.questions.q11.placeholder}
                   />
                 </div>
               </div>
@@ -395,7 +407,7 @@ ${formData.q11_additional}
               {/* Important Notice */}
               <div className="bg-desert-clay/10 p-6 rounded-xl border-l-4 border-desert-clay">
                 <p className="text-earth-700 leading-relaxed">
-                  <strong className="text-earth-800">Important:</strong> This screening helps ensure your safety and readiness. Bufo Alvarius is a powerful medicine with real contraindications. Honest answers protect both of us and allow us to guide you properly. All information is kept strictly confidential.
+                  <strong className="text-earth-800">{t.notice.important}</strong> {t.notice.text}
                 </p>
               </div>
 
@@ -406,12 +418,12 @@ ${formData.q11_additional}
                   disabled={formStatus === 'sending'}
                   className="px-12 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-colors font-medium text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {formStatus === 'sending' ? 'Sending...' : 'Submit Screening'}
+                  {formStatus === 'sending' ? t.submit.sending : t.submit.button}
                 </button>
 
                 {formStatus === 'error' && (
                   <p className="mt-4 text-desert-clay">
-                    Something went wrong. Please try again or email directly.
+                    {t.submit.error}
                   </p>
                 )}
               </div>

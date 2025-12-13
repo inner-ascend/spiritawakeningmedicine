@@ -21,6 +21,7 @@ import BufoScreeningPage from './components/pages/BufoScreeningPage';
 import BufoConsentPage from './components/pages/BufoConsentPage';
 import BufoContraindicationsPage from './components/pages/BufoContraindicationsPage';
 import ScrollToTop from './components/ScrollToTop';
+import FloatingLanguageToggle from './components/FloatingLanguageToggle';
 
 
 // Event Route Component
@@ -44,6 +45,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <FloatingLanguageToggle />
       <Routes>
         <Route path="/" element={<OnePagerPage />} />
         <Route path="/about" element={<AboutPage />} />

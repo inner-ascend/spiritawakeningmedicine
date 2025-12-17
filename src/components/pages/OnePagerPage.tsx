@@ -484,7 +484,7 @@ export default function OnePagerPage() {
       {/* ========== SECTION 9: IMAGE BREAK - Mazunte Beach ========== */}
       <div className="h-[60vh] relative overflow-hidden">
         <img
-          src="/images/photos-new/IMG_9548.jpg"
+          src="/images/atmosphere/ceremony-24.jpg"
           alt="Sacred ceremony moment"
           className="w-full h-full object-cover"
         />
@@ -600,39 +600,31 @@ export default function OnePagerPage() {
               {[
                 { src: '/images/new-gallery/IMG_7127.jpg', alt: 'Preparation setting' },
                 { src: '/images/photos-new/IMG_9409.jpg', alt: 'Sacred ceremony' },
-                { src: '/images/atmosphere/ceremony-20.jpg', alt: 'Ceremony atmosphere' },
+                { src: '/images/atmosphere/ceremony-20.jpeg', alt: 'Ceremony atmosphere' },
                 { src: '/images/photos-new/DSCF8199.jpg', alt: 'Ceremony space' },
                 { src: '/images/new-gallery/IMG_8616.jpg', alt: 'Ceremony setting' },
                 { src: '/images/photos-new/IMG_9416.jpg', alt: 'Sacred moment' },
-                { src: '/images/atmosphere/ceremony-21.jpg', alt: 'Sacred ceremony space' },
+                { src: '/images/atmosphere/ceremony-21.jpeg', alt: 'Sacred ceremony space' },
                 { src: '/images/photos-new/IMG_0105.jpg', alt: 'Ritual atmosphere' },
                 { src: '/images/new-gallery/IMG_5460.jpg', alt: 'Sacred ceremony space' },
                 { src: '/images/photos-new/IMG_9509.jpg', alt: 'Integration circle' },
-                { src: '/images/atmosphere/ceremony-22.jpg', alt: 'Preparation setting' },
+                { src: '/images/atmosphere/ceremony-22.jpeg', alt: 'Preparation setting' },
                 { src: '/images/photos-new/DSCF8209.jpg', alt: 'Sacred space' },
                 { src: '/images/new-gallery/IMG_7454.jpg', alt: 'Ritual space' },
-                { src: '/images/photos-new/IMG_9548.jpg', alt: 'Ceremony practice' },
-                { src: '/images/atmosphere/ceremony-23.jpg', alt: 'Integration circle' },
-                { src: '/images/photos-new/IMG_9574.jpg', alt: 'Sacred container' },
+                { src: '/images/atmosphere/ceremony-23.jpeg', alt: 'Integration circle' },
                 { src: '/images/new-gallery/IMG_7709.jpg', alt: 'Sacred atmosphere' },
-                { src: '/images/photos-new/IMG_9586.jpg', alt: 'Ceremony environment' },
                 { src: '/images/atmosphere/ceremony-24.jpg', alt: 'Sacred ceremony moment' },
-                { src: '/images/photos-new/IMG_9869.jpg', alt: 'Sacred space' },
                 { src: '/images/new-gallery/IMG_6828.jpg', alt: 'Ceremony atmosphere' },
-                { src: '/images/photos-new/IMG_9878.jpg', alt: 'Ritual moment' },
                 { src: '/images/atmosphere/ceremony-25.jpg', alt: 'Ceremony practice' },
                 { src: '/images/photos-new/DSCF8420.jpg', alt: 'Integration space' },
                 { src: '/images/new-gallery/IMG_7369.jpg', alt: 'Ceremony practice' },
-                { src: '/images/photos-new/IMG_0096.jpg', alt: 'Sacred atmosphere' },
                 { src: '/images/atmosphere/ceremony-26.jpg', alt: 'Ritual space' },
-                { src: '/images/photos-new/IMG_0098.jpg', alt: 'Ceremony container' },
                 { src: '/images/new-gallery/IMG_8404.jpg', alt: 'Sacred space' },
-                { src: '/images/photos-new/80DF527C-26B1-403B-9E62-6C5F7BF55541.jpg', alt: 'Sacred moment' },
                 { src: '/images/atmosphere/ceremony-27.jpg', alt: 'Sacred container' },
                 { src: '/images/new-gallery/IMG_7161.jpg', alt: 'Integration circle' },
                 { src: '/images/atmosphere/ceremony-28.jpg', alt: 'Ceremony environment' },
                 { src: '/images/atmosphere/ceremony-29.jpg', alt: 'Sacred atmosphere' },
-                { src: '/images/new-gallery/IMG_7227.JPG', alt: 'Sacred ceremony moment' },
+                { src: '/images/new-gallery/IMG_7227.jpg', alt: 'Sacred ceremony moment' },
                 { src: '/images/new-gallery/IMG_7470.jpg', alt: 'Sacred container' },
                 { src: '/images/new-gallery/IMG_8738.jpg', alt: 'Sacred moment' },
               ].map((image, index) => (

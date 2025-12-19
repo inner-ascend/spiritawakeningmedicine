@@ -31,10 +31,10 @@ export default function SupportPage() {
                   For questions about services, bookings, or your journey with us:
                 </p>
                 <a
-                  href="mailto:hello@inner-ascend.com"
+                  href="mailto:hello@sacredtoad.co"
                   className="inline-block px-8 py-3 bg-sacred-gold text-earth-900 rounded-full font-medium hover:bg-sacred-amber transition-all"
                 >
-                  Email: hello@inner-ascend.com
+                  Email: hello@sacredtoad.co
                 </a>
               </div>
 
@@ -90,10 +90,10 @@ export default function SupportPage() {
 
                   <div>
                     <h3 className="text-lg font-medium text-sacred-gold mb-2">
-                      What is Inner Ascend?
+                      What is Sacred Toad?
                     </h3>
                     <p className="text-sacred-moon/70">
-                      Inner Ascend is our community for conscious entrepreneurs, healers, and visionaries.
+                      Sacred Toad is our community for conscious entrepreneurs, healers, and visionaries.
                       Learn more on our <Link to="/inner-ascend" className="text-sacred-gold hover:underline">Community page</Link>.
                     </p>
                   </div>

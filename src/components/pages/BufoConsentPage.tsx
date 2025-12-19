@@ -104,9 +104,9 @@ ${new Date().toISOString()}
         {
           from_name: formData.name,
           from_email: formData.email,
-          subject: 'Bufo Consent & Waiver - SIGNED - Inner Ascend',
+          subject: 'Bufo Consent & Waiver - SIGNED - Sacred Toad',
           message: formattedMessage,
-          to_email: 'hello@inner-ascend.com'
+          to_email: 'hello@sacredtoad.co'
         },
         'v57Ta98pwBDWpoe8o'
       );

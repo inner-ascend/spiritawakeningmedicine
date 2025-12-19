@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="grid md:grid-cols-5 gap-12 mb-16">
             {/* Brand Column */}
             <div className="space-y-4">
-              <h3 className="text-xl font-serif text-sacred-gold">Inner Ascend</h3>
+              <h3 className="text-xl font-serif text-sacred-gold">Sacred Toad</h3>
               <p className="text-desert-sand/60 text-sm leading-relaxed">
                 Sacred Bufo Alvarius ceremonies held with reverence for indigenous lineage and trauma-informed practice.
               </p>
@@ -88,18 +88,18 @@ export default function Footer() {
               <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">Connect</h4>
               <div className="space-y-3">
                 <a
-                  href="mailto:hello@inner-ascend.com"
+                  href="mailto:hello@sacredtoad.co"
                   className="block text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm"
                 >
-                  hello@inner-ascend.com
+                  hello@sacredtoad.co
                 </a>
                 <a
-                  href="https://instagram.com/inner__ascend"
+                  href="https://instagram.com/sacredtoad.co"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm"
                 >
-                  @inner__ascend
+                  @sacredtoad.co
                 </a>
                 <div className="text-desert-sand/60 text-sm">
                   <p>Mazunte, Oaxaca</p>
@@ -116,7 +116,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-desert-sand/50 text-sm text-center md:text-left">
               <p className="flex items-center gap-2 justify-center md:justify-start">
-                © {new Date().getFullYear()} Inner Ascend
+                © {new Date().getFullYear()} Sacred Toad
                 All rights reserved
               </p>
             </div>

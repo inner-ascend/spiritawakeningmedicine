@@ -118,9 +118,9 @@ ${formData.q11_additional}
         {
           from_name: formData.name,
           from_email: formData.email,
-          subject: 'Bufo Screening Submission - Inner Ascend',
+          subject: 'Bufo Screening Submission - Sacred Toad',
           message: formattedMessage,
-          to_email: 'hello@inner-ascend.com'
+          to_email: 'hello@sacredtoad.co'
         },
         'v57Ta98pwBDWpoe8o'
       );

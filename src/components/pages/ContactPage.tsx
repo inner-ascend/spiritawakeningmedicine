@@ -52,7 +52,7 @@ export default function ContactPage() {
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
-          to_email: 'hello@inner-ascend.com'
+          to_email: 'hello@sacredtoad.co'
         },
         'v57Ta98pwBDWpoe8o'
       );
@@ -385,7 +385,7 @@ export default function ContactPage() {
                   {t.otherWays.email.description}
                 </p>
                 <a
-                  href="mailto:hello@inner-ascend.com"
+                  href="mailto:hello@sacredtoad.co"
                   className="text-sunset-rose hover:text-sacred-amber transition-colors font-medium"
                 >
                   {t.otherWays.email.address}

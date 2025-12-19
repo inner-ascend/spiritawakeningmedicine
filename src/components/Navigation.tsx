@@ -67,13 +67,13 @@ export default function Navigation() {
               className="flex items-center gap-3"
             >
               <span className="text-xl font-serif text-sacred-gold">
-                Inner Ascend
+                Sacred Toad
               </span>
             </a>
           ) : (
             <Link to="/" className="flex items-center gap-3">
               <span className="text-xl font-serif text-sacred-gold">
-                Inner Ascend
+                Sacred Toad
               </span>
             </Link>
           )}

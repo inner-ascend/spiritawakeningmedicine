@@ -293,10 +293,10 @@ export default function RetreatsPage() {
             <div className="text-center space-y-8">
               <div className="bg-earth-700/40 backdrop-blur-xl border border-desert-sand/20 rounded-2xl p-12">
                 <p className="text-2xl font-serif text-sacred-white mb-6">
-                  Join the Waitlist for 2025 Retreats
+                  Join the Waitlist for 2026 Retreats
                 </p>
                 <p className="text-lg text-desert-sand/80 leading-relaxed max-w-2xl mx-auto mb-8">
-                  We're currently planning our 2025 retreat calendar. Get notified first when new retreat dates are announced,
+                  We're currently planning our 2026 retreat calendar. Get notified first when new retreat dates are announced,
                   and receive early-bird pricing for being on the waitlist.
                 </p>
                 <div className="space-y-4">

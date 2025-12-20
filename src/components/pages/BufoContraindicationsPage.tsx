@@ -286,13 +286,13 @@ const BufoContraindicationsPage = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   to="/bufo-screening"
-                  className="px-8 py-4 bg-desert-500 text-white rounded-full hover:bg-desert-600 transition-colors font-medium"
+                  className="px-8 py-4 bg-sacred-gold text-earth-900 rounded-full hover:bg-sacred-amber transition-colors font-medium"
                 >
                   {t.cta.screening}
                 </Link>
                 <Link
                   to="/#contact"
-                  className="px-8 py-4 border-2 border-desert-500 text-desert-600 rounded-full hover:bg-desert-500 hover:text-white transition-colors font-medium"
+                  className="px-8 py-4 border-2 border-earth-700 text-earth-700 rounded-full hover:bg-earth-700 hover:text-sacred-cream transition-colors font-medium"
                 >
                   {t.cta.contact}
                 </Link>

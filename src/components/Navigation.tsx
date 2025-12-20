@@ -45,18 +45,38 @@ export default function Navigation() {
   // Site name translations
   const siteName = language === 'es' ? 'Medicina del Sapo Sagrado' : 'Sacred Toad Medicine';
 
-  // Navigation items for one-pager (anchor links)
+  // Navigation items translations for one-pager sections
+  const navLabels = language === 'es' ? {
+    medicine: 'La Medicina',
+    whoFor: 'Para Quién',
+    journey: 'El Viaje',
+    ceremony: 'Ceremonia',
+    facilitators: 'Facilitadores',
+    pricing: 'Inversión',
+    faq: 'FAQ'
+  } : {
+    medicine: 'The Medicine',
+    whoFor: 'Who It\'s For',
+    journey: 'The Journey',
+    ceremony: 'Ceremony',
+    facilitators: 'Facilitators',
+    pricing: 'Investment',
+    faq: 'FAQ'
+  };
+
+  // Navigation items for one-pager - anchor links to sections
   const onePageNavItems = [
-    { label: 'About', href: '#about', color: 'hover:text-desert-clay' },
-    { label: 'Ceremonies', href: '#ceremonies', color: 'hover:text-sacred-purple' },
-    { label: 'Retreats', href: '#retreats', color: 'hover:text-ocean-coral' },
-    { label: 'Pricing', href: '#pricing', color: 'hover:text-sacred-gold' },
-    { label: 'FAQ', href: '#faq', color: 'hover:text-jungle-sage' },
+    { label: navLabels.medicine, href: '#medicine', color: 'hover:text-desert-clay' },
+    { label: navLabels.whoFor, href: '#who-its-for', color: 'hover:text-sacred-purple' },
+    { label: navLabels.ceremony, href: '#ceremony', color: 'hover:text-ocean-coral' },
+    { label: navLabels.facilitators, href: '#facilitators', color: 'hover:text-jungle-emerald' },
+    { label: navLabels.pricing, href: '#pricing', color: 'hover:text-sacred-gold' },
+    { label: navLabels.faq, href: '#faq', color: 'hover:text-jungle-sage' },
   ];
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled || mobileMenuOpen
+      scrolled || mobileMenuOpen || !isOnePager
         ? 'backdrop-blur-xl bg-earth-900/80 border-b border-desert-sage/20'
         : 'bg-transparent border-b border-transparent'
     }`}>

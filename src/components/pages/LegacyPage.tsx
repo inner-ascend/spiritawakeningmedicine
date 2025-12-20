@@ -446,7 +446,7 @@ export default function LegacyPage() {
                 </div>
               </a>
               <a
-                href="https://astral-integration.com"
+                href="https://astralintegration.co"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative shadow-lg group overflow-hidden rounded-lg"

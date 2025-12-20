@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useParams } from 'react-router-dom';
 import './i18n';
 import EventPreview from './components/EventPreview';
@@ -22,6 +22,7 @@ import BufoConsentPage from './components/pages/BufoConsentPage';
 import BufoContraindicationsPage from './components/pages/BufoContraindicationsPage';
 import ScrollToTop from './components/ScrollToTop';
 import FloatingLanguageToggle from './components/FloatingLanguageToggle';
+import { useLanguage } from './contexts/LanguageContext';
 
 
 // Event Route Component
@@ -40,10 +41,25 @@ function PlaceRoute() {
   return <PlacePreview placeId={id || ''} language={language} />;
 }
 
+// Component to handle dynamic document title
+function DocumentTitle() {
+  const { language } = useLanguage();
+
+  useEffect(() => {
+    const title = language === 'es'
+      ? 'Medicina del Sapo Sagrado - Ceremonias 5-MeO-DMT | Mazunte, México'
+      : 'Sacred Toad Medicine - 5-MeO-DMT Ceremonies | Mazunte, Mexico';
+    document.title = title;
+  }, [language]);
+
+  return null;
+}
+
 // Main App with Routing
 function App() {
   return (
     <Router>
+      <DocumentTitle />
       <ScrollToTop />
       <FloatingLanguageToggle />
       <Routes>

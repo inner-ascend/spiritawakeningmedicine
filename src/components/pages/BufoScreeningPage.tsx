@@ -118,7 +118,7 @@ ${formData.q11_additional}
         {
           from_name: formData.name,
           from_email: formData.email,
-          subject: 'Bufo Screening Submission - Sacred Toad',
+          subject: 'Bufo Screening Submission - Sacred Toad Medicine',
           message: formattedMessage,
           to_email: 'hello@sacredtoad.co'
         },

@@ -90,10 +90,10 @@ export default function SupportPage() {
 
                   <div>
                     <h3 className="text-lg font-medium text-sacred-gold mb-2">
-                      What is Sacred Toad?
+                      What is Sacred Toad Medicine?
                     </h3>
                     <p className="text-sacred-moon/70">
-                      Sacred Toad is our community for conscious entrepreneurs, healers, and visionaries.
+                      Sacred Toad Medicine is our community for conscious entrepreneurs, healers, and visionaries.
                       Learn more on our <Link to="/inner-ascend" className="text-sacred-gold hover:underline">Community page</Link>.
                     </p>
                   </div>

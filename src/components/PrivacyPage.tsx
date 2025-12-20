@@ -24,7 +24,7 @@ export default function PrivacyPage() {
                 <section>
                   <h2 className="text-2xl font-serif text-earth-800 mb-4">Our Commitment to Your Privacy</h2>
                   <p className="text-earth-700 leading-relaxed">
-                    At Sacred Toad, we deeply respect your privacy and the sacred nature of the work we do together.
+                    At Sacred Toad Medicine, we deeply respect your privacy and the sacred nature of the work we do together.
                     This policy outlines how we collect, use, and protect your personal information.
                   </p>
                 </section>
@@ -104,7 +104,7 @@ export default function PrivacyPage() {
                 <section>
                   <h2 className="text-2xl font-serif text-earth-800 mb-4">Medical Disclaimer</h2>
                   <p className="text-earth-700 leading-relaxed">
-                    The services offered by Sacred Toad are complementary practices and are not a substitute
+                    The services offered by Sacred Toad Medicine are complementary practices and are not a substitute
                     for medical or psychological treatment. Any health information shared is kept confidential and
                     is used solely to ensure your safety during ceremonies and sessions.
                   </p>

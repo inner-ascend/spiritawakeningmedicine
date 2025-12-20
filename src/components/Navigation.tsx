@@ -42,6 +42,9 @@ export default function Navigation() {
     }
   };
 
+  // Site name translations
+  const siteName = language === 'es' ? 'Medicina del Sapo Sagrado' : 'Sacred Toad Medicine';
+
   // Navigation items for one-pager (anchor links)
   const onePageNavItems = [
     { label: 'About', href: '#about', color: 'hover:text-desert-clay' },
@@ -67,13 +70,13 @@ export default function Navigation() {
               className="flex items-center gap-3"
             >
               <span className="text-xl font-serif text-sacred-gold">
-                Sacred Toad
+                {siteName}
               </span>
             </a>
           ) : (
             <Link to="/" className="flex items-center gap-3">
               <span className="text-xl font-serif text-sacred-gold">
-                Sacred Toad
+                {siteName}
               </span>
             </Link>
           )}

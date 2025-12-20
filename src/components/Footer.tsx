@@ -1,7 +1,34 @@
 import { Link } from 'react-router-dom';
 import { Heart } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Footer() {
+  const { language } = useLanguage();
+
+  // Translations
+  const t = {
+    siteName: language === 'es' ? 'Medicina del Sapo Sagrado' : 'Sacred Toad Medicine',
+    description: language === 'es'
+      ? 'Ceremonias sagradas de Bufo Alvarius con reverencia por el linaje indígena y práctica informada en trauma.'
+      : 'Sacred Bufo Alvarius ceremonies held with reverence for indigenous lineage and trauma-informed practice.',
+    explore: language === 'es' ? 'Explorar' : 'Explore',
+    about: language === 'es' ? 'Nosotros' : 'About',
+    ceremonies: language === 'es' ? 'Ceremonias' : 'Ceremonies',
+    retreats: language === 'es' ? 'Retiros' : 'Retreats',
+    collaborations: language === 'es' ? 'Colaboraciones' : 'Collaborations',
+    pricing: language === 'es' ? 'Precios' : 'Pricing',
+    resources: language === 'es' ? 'Recursos' : 'Resources',
+    preparation: language === 'es' ? 'Preparación' : 'Preparation',
+    integration: language === 'es' ? 'Integración' : 'Integration',
+    testimonials: language === 'es' ? 'Testimonios' : 'Testimonials',
+    contact: language === 'es' ? 'Contacto' : 'Contact',
+    facilitators: language === 'es' ? 'Facilitadores' : 'Facilitators',
+    connect: language === 'es' ? 'Conectar' : 'Connect',
+    allRights: language === 'es' ? 'Todos los derechos reservados' : 'All rights reserved',
+    madeWith: language === 'es' ? 'Hecho con' : 'Made with',
+    forSeekers: language === 'es' ? 'para buscadores e iniciados' : 'for seekers & initiates',
+  };
+
   return (
     <footer className="bg-earth-900 border-t border-desert-sage/20 text-desert-sand">
       <div className="container mx-auto px-4 py-20">
@@ -10,59 +37,59 @@ export default function Footer() {
           <div className="grid md:grid-cols-5 gap-12 mb-16">
             {/* Brand Column */}
             <div className="space-y-4">
-              <h3 className="text-xl font-serif text-sacred-gold">Sacred Toad</h3>
+              <h3 className="text-xl font-serif text-sacred-gold">{t.siteName}</h3>
               <p className="text-desert-sand/60 text-sm leading-relaxed">
-                Sacred Bufo Alvarius ceremonies held with reverence for indigenous lineage and trauma-informed practice.
+                {t.description}
               </p>
             </div>
 
             {/* Explore Column */}
             <div className="space-y-4">
-              <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">Explore</h4>
+              <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">{t.explore}</h4>
               <nav className="flex flex-col space-y-2">
                 <Link to="/about" className="text-desert-sand/60 hover:text-desert-clay transition-colors text-sm">
-                  About
+                  {t.about}
                 </Link>
                 <Link to="/ceremonies" className="text-desert-sand/60 hover:text-sacred-purple transition-colors text-sm">
-                  Ceremonies
+                  {t.ceremonies}
                 </Link>
                 <Link to="/retreats" className="text-desert-sand/60 hover:text-ocean-coral transition-colors text-sm">
-                  Retreats
+                  {t.retreats}
                 </Link>
                 <Link to="/collaborations" className="text-desert-sand/60 hover:text-jungle-emerald transition-colors text-sm">
-                  Collaborations
+                  {t.collaborations}
                 </Link>
                 <Link to="/pricing" className="text-desert-sand/60 hover:text-mineral-copper transition-colors text-sm">
-                  Pricing
+                  {t.pricing}
                 </Link>
               </nav>
             </div>
 
             {/* Resources Column */}
             <div className="space-y-4">
-              <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">Resources</h4>
+              <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">{t.resources}</h4>
               <nav className="flex flex-col space-y-2">
                 <Link to="/preparation" className="text-desert-sand/60 hover:text-desert-sage transition-colors text-sm">
-                  Preparation
+                  {t.preparation}
                 </Link>
                 <Link to="/integration" className="text-desert-sand/60 hover:text-ocean-turquoise transition-colors text-sm">
-                  Integration
+                  {t.integration}
                 </Link>
                 <Link to="/faq" className="text-desert-sand/60 hover:text-jungle-sage transition-colors text-sm">
                   FAQ
                 </Link>
                 <Link to="/testimonials" className="text-desert-sand/60 hover:text-ocean-turquoise transition-colors text-sm">
-                  Testimonials
+                  {t.testimonials}
                 </Link>
                 <Link to="/contact" className="text-desert-sand/60 hover:text-sunset-rose transition-colors text-sm">
-                  Contact
+                  {t.contact}
                 </Link>
               </nav>
             </div>
 
             {/* Facilitators Column */}
             <div className="space-y-4">
-              <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">Facilitators</h4>
+              <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">{t.facilitators}</h4>
               <nav className="flex flex-col space-y-2">
                 <a
                   href="https://nina-moore.com"
@@ -85,7 +112,7 @@ export default function Footer() {
 
             {/* Connect Column */}
             <div className="space-y-4">
-              <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">Connect</h4>
+              <h4 className="text-sm font-semibold text-desert-sand/80 uppercase tracking-wider">{t.connect}</h4>
               <div className="space-y-3">
                 <a
                   href="mailto:hello@sacredtoad.co"
@@ -116,14 +143,14 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-desert-sand/50 text-sm text-center md:text-left">
               <p className="flex items-center gap-2 justify-center md:justify-start">
-                © {new Date().getFullYear()} Sacred Toad
-                All rights reserved
+                © {new Date().getFullYear()} {t.siteName}
+                {t.allRights}
               </p>
             </div>
 
             <div className="text-desert-sand/40 text-xs italic text-center md:text-right">
               <p className="flex items-center gap-2 justify-center md:justify-end">
-                Made with <Heart className="w-3 h-3 text-sacred-gold/60 fill-sacred-gold/60" /> for seekers & initiates
+                {t.madeWith} <Heart className="w-3 h-3 text-sacred-gold/60 fill-sacred-gold/60" /> {t.forSeekers}
               </p>
             </div>
           </div>

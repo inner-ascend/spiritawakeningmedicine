@@ -20,6 +20,7 @@ import ResourcesPage from './components/pages/ResourcesPage';
 import BufoScreeningPage from './components/pages/BufoScreeningPage';
 import BufoConsentPage from './components/pages/BufoConsentPage';
 import BufoContraindicationsPage from './components/pages/BufoContraindicationsPage';
+import LegacyPage from './components/pages/LegacyPage';
 import ScrollToTop from './components/ScrollToTop';
 import FloatingLanguageToggle from './components/FloatingLanguageToggle';
 import { useLanguage } from './contexts/LanguageContext';
@@ -87,6 +88,8 @@ function App() {
         <Route path="/place/:id" element={<PlaceRoute />} />
         <Route path="/support" element={<SupportPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
+        {/* Legacy backup of homepage */}
+        <Route path="/legacy" element={<LegacyPage />} />
         {/* Catch all other routes and redirect to home */}
         <Route path="*" element={<OnePagerPage />} />
       </Routes>

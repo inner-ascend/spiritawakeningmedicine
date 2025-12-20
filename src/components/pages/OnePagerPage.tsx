@@ -509,7 +509,7 @@ export default function OnePagerPage() {
               </div>
               <p className="text-sacred-white/70 text-sm mt-3 group-hover:text-sacred-gold transition-colors">Nina →</p>
             </a>
-            <a href="https://astralintegration.co" target="_blank" rel="noopener noreferrer" className="group">
+            <a href="https://jordiamat.com" target="_blank" rel="noopener noreferrer" className="group">
               <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-desert-sand/20 group-hover:border-sacred-gold/50 transition-colors">
                 <img src="/images/portraits/astral-portrait.jpg" alt="Astral Amat" className="w-full h-full object-cover" />
               </div>

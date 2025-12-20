@@ -44,7 +44,7 @@ export default function Footer() {
                   Nina Moore →
                 </a>
                 <a
-                  href="https://astralintegration.co"
+                  href="https://jordiamat.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-desert-sand/60 hover:text-sacred-gold transition-colors text-sm"
